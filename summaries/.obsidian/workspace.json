@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "The Laws of Human Nature - Robert Greene.md",
-                "mode": "source",
+                "file": "Power & Influence/Yes! 50 Scientifically Proven Ways - Goldstein, Martin & Cialdini.md",
+                "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "The Laws of Human Nature - Robert Greene"
+              "title": "Yes! 50 Scientifically Proven Ways - Goldstein, Martin & Cialdini"
             }
           }
         ]
@@ -53,7 +53,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "file:yes",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -74,7 +74,8 @@
               "title": "Bookmarks"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -182,41 +183,41 @@
   },
   "active": "c298a3f33e9afa4f",
   "lastOpenFiles": [
-    "The 50th Law - 50 Cent & Robert Greene.md.tmp.441060.1774444495930",
-    "Interviews with the Masters - Robert Greene.md.tmp.441060.1774444495239",
-    "Managing with Power - Jeffrey Pfeffer.md.tmp.441060.1774444470997",
-    "Thriving at Work - Dennis Mark & Michael Dam.md.tmp.441060.1774444459903",
-    "Nice Girls Don't Get the Corner Office - Lois P. Frankel.md.tmp.441060.1774444441806",
-    "An Elegant Puzzle - Will Larson.md.tmp.441060.1774444421220",
-    "Words That Change Minds - Shelle Rose Charvet.md.tmp.441060.1774444420830",
-    "Tribe of Mentors - Timothy Ferriss.md.tmp.441060.1774444411284",
-    "Managing Up - Mary Abbajay.md.tmp.441060.1774444411063",
-    "The Right and Wrong Stuff - Carter Cast.md.tmp.441060.1774444403268",
-    "The Credibility Code - Cara Hale Alter.md.tmp.441060.1774444403109",
-    "_temp_33strategies_combined.md",
-    "_temp_33strategies_B.md",
-    "_temp_48laws_combined.md",
-    "_temp_48laws_A.md",
-    "_temp_48laws_B.md",
-    "_temp_33strategies_A.md",
-    "greene_laws-of-human-nature.md",
-    "Your Brain at Work - David Rock.md",
-    "Measure What Matters - John Doerr.md",
-    "Nice Girls Don't Get the Corner Office - Lois P. Frankel.md",
-    "Range - David Epstein.md",
-    "Never Split the Difference - Chris Voss.md",
-    "An Elegant Puzzle - Will Larson.md",
-    "abbajay_managing-up.md",
-    "Tribes - Seth Godin.md",
-    "Tribe of Mentors - Timothy Ferriss.md",
-    "Thinking Strategically - Avinash K. Dixit & Barry J. Nalebuff.md",
-    "The Laws of Human Nature - Robert Greene.md",
+    "Robert Greene Canon/The Daily Laws - Robert Greene.md",
     "The Daily Laws - Robert Greene.md",
-    "The 50th Law - 50 Cent & Robert Greene.md",
-    "The 48 Laws of Power - Robert Greene.md",
-    "The 33 Strategies of War - Robert Greene.md",
-    "Strategize to Win - Carla A. Harris.md",
-    "Relentless - Tim S. Grover.md",
-    "Mindset - Carol S. Dweck.md"
+    "Mindset & Self-Mastery/The Daily Stoic - Ryan Holiday.md",
+    "Power & Influence/The Charisma Myth - Olivia Fox Cabane.md",
+    "Power & Influence/Games People Play - Eric Berne.md",
+    "Power & Influence/Influence - Robert Cialdini.md",
+    "Power & Influence/Like Switch - Jack Schafer.md",
+    "Power & Influence/Pre-Suasion - Robert Cialdini.md",
+    "Awareness & Protection/The Gaslight Effect - Robin Stern.md",
+    "Workplace Navigation/Snakes in Suits - Babiak & Hare.md",
+    "Awareness & Protection/The Sociopath Next Door - Martha Stout.md",
+    "Strategy & Systems Thinking/Storytelling with Data - Cole Nussbaumer Knaflic.md",
+    "Awareness & Protection/Emotional Blackmail - Susan Forward.md",
+    "Strategy & Systems Thinking/The Checklist Manifesto - Atul Gawande.md",
+    "Awareness & Protection/In Sheep's Clothing - George K. Simon.md",
+    "Strategy & Systems Thinking/How to Measure Anything - Douglas Hubbard.md",
+    "Leadership & Management/The Phoenix Project - Gene Kim.md",
+    "Wisdom & Big Ideas/The Richest Man in Babylon - George C. Clason.md",
+    "Leadership & Management/The Lean Startup - Eric Ries.md",
+    "Strategy & Systems Thinking/Seeking Wisdom - Peter Bevelin.md",
+    "Power & Influence/The Art of Reading Minds - Henrik Fexeus.md",
+    "Strategy & Systems Thinking/Digital Transformation - Thomas M. Siebel.md",
+    "Strategy & Systems Thinking/Thinking in Systems - Donella H. Meadows.md",
+    "Career Strategy/Strategize to Win - Carla A. Harris.md",
+    "Mindset & Self-Mastery/Man's Search for Meaning - Viktor Frankl.md",
+    "Mindset & Self-Mastery/12 Rules for Life - Jordan Peterson.md",
+    "Wisdom & Big Ideas",
+    "Awareness & Protection",
+    "Personal Brand & Presence",
+    "Mindset & Self-Mastery",
+    "Psychology & Decision Making",
+    "Strategy & Systems Thinking",
+    "Workplace Navigation",
+    "Leadership & Management",
+    "Career Strategy",
+    "Power & Influence"
   ]
 }
