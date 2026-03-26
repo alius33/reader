@@ -797,7 +797,7 @@ flowchart TD
     E --> H
     F --> H
     G --> H
-    H[Indispensable to Many\nDependent on None]
+    H[Indispensable to Many<br>Dependent on None]
     style A fill:#2980b9,color:#fff
     style H fill:#27ae60,color:#fff
 ```

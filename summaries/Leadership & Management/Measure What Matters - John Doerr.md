@@ -76,6 +76,8 @@ The book's deeper argument is that OKRs are not just a productivity tool but a c
 | **Scoring** | 0.0–1.0 scale with colour coding (green/yellow/red), followed by subjective self-assessment |
 | **Sell Your Reds** | Leaders present at-risk OKRs and the group volunteers resources to help |
 | **The OKR Lifecycle** | Set, Check In, Score, Reflect, Reset — a quarterly rhythm with mid-cycle flexibility |
+| **Sufficiency & Necessity Tests** | Every KR must be needed for the Objective, and collectively the KRs must be enough |
+| **Continuous Performance Management** | Replacing annual reviews with ongoing conversations, feedback, and recognition |
 
 ---
 
@@ -90,16 +92,21 @@ The book's deeper argument is that OKRs are not just a productivity tool but a c
   - Knowledge workers cannot be managed like factory hands
   - You cannot stand behind a software engineer or a marketing strategist and watch the widgets come off the line
   - Instead, you must define what the worker is expected to produce, agree on how success will be measured, and then get out of the way
+- Drucker saw that the industrial-era model of management — direct supervision, time-and-motion studies, command-and-control hierarchy — was fundamentally incompatible with the emerging knowledge economy
+- His answer was a system where managers and workers jointly defined objectives, agreed on how progress would be measured, and then trusted the worker to find the best path
 
 ---
 
 - <b style="color: #e74c3c">MBOs worked in theory but decayed in practice</b>
 - Over the two decades following Drucker's book, they calcified into exactly the kind of bureaucracy Drucker warned against:
-  - Annual goal-setting became a ritual
+  - Annual goal-setting became a ritual divorced from daily work
   - Goals were set privately between manager and employee, often negotiated downward to guarantee a good score
   - They were tied directly to compensation, which meant people aimed low to protect their bonuses
   - Because they were annual, by the time anyone checked in on them, the world had moved on and the goals were irrelevant
 - What began as a tool for autonomy became a tool for control
+- The disease was predictable: any system tied to compensation will be gamed, and any system reviewed only annually will drift into irrelevance
+
+---
 
 ### Andy Grove Reinvents the System
 
@@ -117,13 +124,26 @@ The book's deeper argument is that OKRs are not just a productivity tool but a c
   - **Public goals** — every person's objectives were visible to every other person, creating transparency and peer accountability
   - **Bottom-up origination** — roughly half of objectives should originate from frontline employees who understood the work's reality, not just from executives with a strategy deck
   - **Divorced from compensation** — if you tied stretch goals to bonuses, people would stop stretching; the whole point was to create a system where ambition was safe
-- Grove's famous articulation was characteristically blunt: "The key result has to be measurable. Did I do that or did I not do it? Yes? No? Simple."
+
+| Feature | Drucker's MBOs | Grove's OKRs |
+|---------|---------------|--------------|
+| Cycle length | Annual | Quarterly |
+| Visibility | Private (manager-employee) | Public (entire organisation) |
+| Direction | Top-down only | 50% top-down, 50% bottom-up |
+| Link to pay | Directly tied to compensation | Deliberately divorced from pay |
+| Failure tolerance | Failure punished | Failure on stretch goals expected |
+| Review style | Year-end judgement | Continuous check-ins |
+
+This table captures the structural transformation Grove engineered — every flaw in MBOs has a corresponding fix in OKRs.
 
 ---
 
+- Grove's famous articulation was characteristically blunt: "The key result has to be measurable. Did I do that or did I not do it? Yes? No? Simple."
 - The Intel culture that emerged from this system was famously driven, transparent, and results-oriented:
   - Engineers at every level could see what their CEO was working on, what he was measuring, and how he was scoring himself
   - The information asymmetry that plagues most organisations — where the top knows everything and the bottom knows nothing — was structurally reduced
+- Grove ran Intel's OKR process personally for years, reviewing objectives with individual contributors and modelling the behaviour he expected from everyone else
+- His intensity was legendary — he would challenge weak objectives, reject vague Key Results, and push people to set targets that made them uncomfortable
 
 ```mermaid
 flowchart LR
@@ -137,12 +157,16 @@ flowchart LR
 
 The OKR lineage runs from Drucker's original insight through Grove's radical redesign to Doerr's evangelism across Silicon Valley and beyond.
 
+---
+
 ### Doerr Carries the Gospel to Google
 
 *The pivotal moment came in 1999, when a venture capitalist walked into a conference room with forty Googlers and a single slide — and changed how the company would operate for the next quarter-century.*
 
 - Doerr joined Intel as a young engineer in the mid-1970s, sat in Grove's now-legendary OKR seminar, and became a convert
+- The seminar itself was typical Grove: no PowerPoint, no corporate jargon, just a direct explanation of how to define what matters, measure it, and hold yourself accountable
 - When he transitioned to venture capital at Kleiner Perkins, he brought OKRs with him as a standard recommendation for portfolio companies
+- Over the years, he refined his pitch, learning which objections organisations raised and how to address them
 
 > [!example] Doerr's Pitch to Google (1999)
 > - Google was tiny — about forty employees, two products, and a vision to "organise the world's information"
@@ -150,12 +174,15 @@ The OKR lineage runs from Drucker's original insight through Grove's radical red
 > - In a conference room on a Thursday afternoon, he presented a single-page slide with one Objective and three Key Results
 > - Page and Brin immediately saw the value: a lightweight system that could scale with their ambitions without adding layers of bureaucracy
 > - Google adopted OKRs that quarter and has used them every quarter since
+> - The simplicity of the pitch was the point — if a goal-setting system requires a manual, it will not survive contact with real work
 > **The lesson:** The right system, introduced at the right moment, can become the connective tissue of an organisation for decades.
 
 - As Google grew from forty to tens of thousands of employees, OKRs became the shared language that made it possible for teams in Mountain View, Zurich, and Bangalore to understand:
   - What the company was trying to achieve
   - What their role was in that effort
   - How they would know if they were succeeding
+- The system scaled because it was lightweight — no specialised software was needed at first, no dedicated staff, no complex training programme
+- New hires learned OKRs in onboarding, set their first ones in their first quarter, and were expected to score and reflect publicly
 
 ---
 
@@ -182,6 +209,8 @@ flowchart TB
 
 The four superpowers form an interlocking system: focus without tracking decays, alignment without stretch produces mediocrity, and all four require each other to function.
 
+---
+
 ### Superpower 1: Focus and Commit to Priorities
 
 *The first discipline is ruthless subtraction — choosing what matters is simultaneously choosing what does not.*
@@ -192,6 +221,10 @@ The four superpowers form an interlocking system: focus without tracking decays,
   - Every commitment forfeits the chance to commit to something else
   - <b style="color: #27ae60">When you try to focus on everything, you focus on nothing</b>
   - The act of choosing what matters is simultaneously the act of choosing what does not
+- Focus is the hardest superpower to practice because it requires saying no to good ideas:
+  - Most organisations are not drowning in bad ideas — they are drowning in good ones
+  - The discipline of OKRs is not in saying no to stupid things but in saying "not now" to smart things
+  - This is emotionally difficult and politically fraught, which is why most organisations never do it
 
 > [!tip] Core Insight
 > "Ideas are easy. Execution is everything." Intel did not win because it had better ideas than Motorola — it won because it could execute on a small number of ideas with superhuman discipline.
@@ -215,6 +248,7 @@ The four superpowers form an interlocking system: focus without tracking decays,
 >   - Marketing: KRs for analyst mindshare
 >   - Engineering: KRs for performance benchmarks
 > - What made it extraordinary was not the number of people involved — it was that thousands of people were pointed at ONE goal
+> - Intel's sales team was told to target 2,000 design wins in a single year — an audacious number that would have seemed absurd without the focus of the entire company behind it
 > - The entire company focused its energy on a single competitive battle and won decisively, establishing Intel's dominance for a generation
 > **The lesson:** Focus is not about doing one thing — it is about pointing everything at one goal.
 
@@ -222,6 +256,12 @@ The four superpowers form an interlocking system: focus without tracking decays,
   - If you do not yet know which market to serve or which product to build, committing too narrowly too early can mean missing a pivot opportunity
   - The lesson is not that you can only do one thing — it is that everything you do should serve the same small number of goals
   - If you cannot articulate those goals yet, your first OKR should be about figuring them out
+- Even within a focused set of OKRs, the order of priority matters:
+  - Doerr recommends ranking Objectives, not just listing them
+  - When resources are scarce, the team must know which Objective to protect first
+  - Unranked priorities are no priorities at all
+
+---
 
 ### Superpower 2: Align and Connect for Teamwork
 
@@ -236,6 +276,21 @@ The four superpowers form an interlocking system: focus without tracking decays,
   - Top-down mandates create compliance but not commitment
   - When people help choose their own goals, they own the outcome psychologically
   - A California study Doerr cites found that people who wrote down and shared their goals were **43% more likely** to achieve them than those who merely thought about goals privately
+
+```mermaid
+flowchart TB
+    CEO[CEO Sets Direction] --> TL[Team Leads Propose OKRs]
+    IC[Individual Contributors Propose OKRs] --> TL
+    TL --> N[Negotiation & Alignment]
+    N --> PG[Published Goals — Visible to All]
+    PG --> SA[Social Accountability]
+    PG --> DE[Dependency Discovery]
+    PG --> DR[Duplication Removal]
+    style CEO fill:#2980b9,color:#fff
+    style PG fill:#27ae60,color:#fff
+```
+
+Alignment is not a one-way cascade — it emerges from the negotiation between top-down direction and bottom-up ownership, made visible through public goals.
 
 > [!tip] Core Insight
 > Alignment does not happen in the setting of goals — it happens in the conversation about goals. The negotiation between top-down direction and bottom-up ownership is where real alignment emerges.
@@ -255,6 +310,7 @@ The four superpowers form an interlocking system: focus without tracking decays,
 > - Teams that had been unknowingly duplicating each other's work discovered the overlap and consolidated
 > - Dependencies that had been discovered only when something broke were surfaced in advance and managed proactively
 > - Cross-functional coordination improved not because anyone ordered it, but because the information was available for anyone who wanted to look
+> - The cost savings were substantial — but the larger benefit was speed, because teams stopped waiting for nasty surprises
 > **The lesson:** Transparency does not require directives — it enables self-organising coordination.
 
 > [!example] MyFitnessPal's Alignment Cascade
@@ -262,11 +318,18 @@ The four superpowers form an interlocking system: focus without tracking decays,
 > - The founders set top-level objectives and then asked each team to propose their own key results
 > - The negotiation between top-down direction and bottom-up ownership created alignment that felt earned rather than imposed
 > - When the team hit its 100-million-user milestone, the founders credited OKR-driven alignment as the key factor
+> - The process also surfaced misalignment early — teams whose proposed KRs did not connect to any company Objective were asked to explain why, which sometimes revealed that the team was working on something the company no longer needed
 > **The lesson:** Alignment works best when it is negotiated, not dictated.
 
 - <b style="color: #e74c3c">Bottom-up goal-setting only works when contributors have sufficient strategic context</b>:
   - Without understanding the "why" behind the company's direction, frontline-originated OKRs may be well-intentioned but misaligned
   - Doerr recommends that leaders communicate direction clearly and then ask: "Given this Objective, what Key Results would you set?"
+  - The information must flow before the goals can flow — bottom-up without context is just chaos with good intentions
+- Alignment is not a one-time event but an ongoing process:
+  - As priorities shift mid-quarter, alignment must be re-checked
+  - The public visibility of OKRs makes this possible — if a team's goals no longer connect to the company's direction, it is visible to everyone, not just the manager
+
+---
 
 ### Superpower 3: Track for Accountability
 
@@ -279,6 +342,8 @@ The four superpowers form an interlocking system: focus without tracking decays,
   - Provides the dopamine of visible progress, which research shows is more motivating than public recognition or monetary incentives
 - <b style="color: #27ae60">"The single greatest motivator is making progress in meaningful work"</b> — Teresa Amabile's research, cited extensively by Doerr
   - Not bonuses. Not praise. Progress itself
+  - When people can see their Key Results moving from 0.3 to 0.5 to 0.7, the act of tracking becomes its own motivational engine
+  - This is why colour-coded dashboards matter — they make progress (and its absence) viscerally visible
 
 > [!example]- YouTube's Billion-Hour Goal (2012–2016)
 > - This is the book's strongest and most detailed case study
@@ -314,6 +379,7 @@ The four superpowers form an interlocking system: focus without tracking decays,
 > - Nobody checked in, nobody colour-coded their progress, nobody course-corrected
 > - The OKRs were "zombie OKRs" — technically alive but functionally dead
 > - It was only when Kim made tracking a personal crusade — texting, Slacking, and physically grabbing people who had not updated their status — that OKRs became a living system
+> - Kim's persistence was not about compliance for its own sake — it was about making the system real enough to change behaviour
 > **The lesson:** OKRs without tracking are just wish lists.
 
 - <b style="color: #e74c3c">There is a fine line between tracking and surveillance</b>:
@@ -321,6 +387,12 @@ The four superpowers form an interlocking system: focus without tracking decays,
   - Over-monitoring destroys the psychological safety needed for stretch goals
   - If every missed milestone triggers an inquisition, people will stop setting ambitious milestones
   - The tracking cadence should match the work's natural rhythm: sprint teams at sprint boundaries, project teams at milestone points — not at arbitrary intervals chosen for bureaucratic convenience
+- The technology of tracking matters less than the habit:
+  - Google used spreadsheets for years before investing in dedicated OKR software
+  - The discipline of updating your status every week — forcing yourself to assign a colour to each Key Result — is what creates accountability
+  - No tool can substitute for the human habit of honest self-assessment
+
+---
 
 ### Superpower 4: Stretch for Amazing
 
@@ -332,6 +404,11 @@ The four superpowers form an interlocking system: focus without tracking decays,
   - They make incremental approaches obviously insufficient, forcing creative rethinking of the problem
   - A 10% improvement means doing the same thing slightly better
   - <b style="color: #27ae60">A 10x improvement means inventing a new way to do it entirely</b>
+- The psychology behind stretch goals draws on research showing that moderately difficult goals produce better performance than easy ones:
+  - Easy goals produce boredom and coasting
+  - Impossible goals produce despair and learned helplessness
+  - The sweet spot — where Doerr places aspirational OKRs — is the zone of "challenging but theoretically achievable"
+  - A 0.7 score on a stretch goal represents more real-world value than a 1.0 on a sandbagged target
 - Larry Page's <b style="color: #2980b9">"gospel of 10x"</b> is central to this chapter:
   - Page was famous within Google for rejecting proposals that merely improved on the status quo
   - He wanted transformations, not optimisations
@@ -378,6 +455,7 @@ The four superpowers form an interlocking system: focus without tracking decays,
   - If failure on an aspirational OKR carries real consequences — damaged reputation, lost compensation, reduced trust — then people will sandbag
   - They will set goals they know they can hit at 1.0 and call them "stretch"
   - Doerr insists that the organisational response to a 0.7 on a stretch goal must be celebration, not punishment
+  - The leader's own behaviour is the test: when the CEO scores a 0.6 on a stretch goal and discusses it openly without defensiveness, the organisation learns that stretch is real, not theatre
 
 ---
 
@@ -390,6 +468,8 @@ The four superpowers form an interlocking system: focus without tracking decays,
 | Expected score | 1.0 (full delivery) | 0.7 (sweet spot) |
 | Failure rate | Near zero — requires post-mortem | 40% failure is normal and healthy |
 | Purpose | Core deliverables, promises, table stakes | Big bets, breakthrough thinking |
+| Resource allocation | Fully resourced from day one | May require creative resourcing |
+| Accountability | Missing triggers investigation | Missing triggers learning |
 | Examples | Product releases, revenue targets, compliance | Gmail's 1GB, Chrome's market dominance, YouTube's billion hours |
 
 - <b style="color: #2980b9">Committed OKRs</b> are goals that must be achieved in full:
@@ -397,6 +477,7 @@ The four superpowers form an interlocking system: focus without tracking decays,
   - Tied to core deliverables — product releases, revenue targets, hiring plans, compliance deadlines
   - Missing a committed OKR is a serious event that requires a post-mortem and a recovery plan
   - These are the table-stakes goals: the things the organisation has promised to its customers, shareholders, or partners
+  - They must be fully resourced from day one — if you commit to a goal without providing the resources to achieve it, the commitment is a lie
 
 ---
 
@@ -405,12 +486,31 @@ The four superpowers form an interlocking system: focus without tracking decays,
   - These goals exist to push teams beyond what they believe possible
   - They are where breakthrough thinking happens — where a team starts with "we don't know how to do this" and ends with something genuinely new
   - Google's most transformative products were all born from aspirational OKRs
+  - Aspirational OKRs can persist across multiple quarters — a goal that scores 0.3 in Q1 might score 0.5 in Q2 and 0.7 in Q3 as the team learns and iterates
 - <b style="color: #e74c3c">The failure to distinguish between the two is one of the most common mistakes</b> Doerr sees in OKR deployments:
   - If every OKR is treated as committed, nobody stretches — the risk of failure is too high
   - If every OKR is treated as aspirational, nobody delivers — there is always the excuse that "0.7 is good enough"
+  - Teams must know which basket each OKR falls into before the quarter begins, not after
 - The art is in the ratio, and the ratio itself is a cultural decision:
   - Risk-averse organisations (banks, regulated industries, safety-critical systems) lean toward committed OKRs with a small number of aspirational bets
   - Innovation-driven organisations lean toward aspiration, with committed OKRs reserved for genuinely non-negotiable deliverables
+  - There is no universal formula — the ratio reflects the organisation's risk appetite and strategic moment
+
+```mermaid
+flowchart LR
+    OKR[OKR Set for Quarter] --> C{Committed or Aspirational?}
+    C -->|Committed| C1[Must score 1.0]
+    C -->|Aspirational| A1[Target 0.7]
+    C1 --> PM[Miss = Post-mortem]
+    A1 --> L[Miss = Learning]
+    PM --> R[Recovery plan]
+    L --> P[Persist or pivot]
+    style OKR fill:#2980b9,color:#fff
+    style C1 fill:#e74c3c,color:#fff
+    style A1 fill:#27ae60,color:#fff
+```
+
+The two-basket system ensures clarity: everyone knows whether a goal is a promise or a bet before the quarter begins.
 
 ---
 
@@ -420,6 +520,10 @@ The four superpowers form an interlocking system: focus without tracking decays,
 
 - One of the book's most practically valuable insights comes from Andy Grove's insistence on <b style="color: #2980b9">paired Key Results</b>
 - <b style="color: #27ae60">Every quantitative KR should have a qualitative counterpart</b> to prevent perverse optimisation — the phenomenon where an organisation gets exactly what it measures, at the catastrophic expense of everything it does not
+- The pairing principle recognises a fundamental truth about metrics:
+  - Any single metric can be gamed
+  - The game becomes visible only when you measure the thing the single metric ignores
+  - Paired KRs create a tension that prevents optimisation from becoming destructive
 
 > [!example] The Ford Pinto Disaster (1970s)
 > - Ford set two design metrics for the Pinto: under 2,000 pounds and under $2,000
@@ -427,6 +531,7 @@ The four superpowers form an interlocking system: focus without tracking decays,
 > - The result was a car with a fuel tank positioned so that rear-end collisions at low speeds could cause fatal fires
 > - Hundreds died
 > - Ford's engineers were not incompetent — they were optimising for the metrics they were given, and those metrics did not include "don't kill the customers"
+> - The engineers knew about the design flaw — but the metrics did not incentivise fixing it
 > **The lesson:** Metrics without quality counterparts can be lethal.
 
 > [!example] The Wells Fargo Scandal
@@ -434,6 +539,7 @@ The four superpowers form an interlocking system: focus without tracking decays,
 > - The target was aggressive and directly tied to compensation
 > - The result was millions of fraudulent accounts opened without customer consent, billions in fines, and the destruction of the bank's reputation
 > - The employees were not malicious — they were rational actors in an incentive system that measured one thing and ignored everything else
+> - A paired KR — such as "customer satisfaction above 90%" or "zero compliance violations" — would have created tension against the pure volume metric
 > **The lesson:** When you measure only quantity, you get quantity at the expense of everything else.
 
 > [!tip] Core Insight
@@ -479,11 +585,16 @@ The OKR lifecycle is a continuous loop — each quarterly reset feeds lessons ba
 - <b style="color: #27ae60">OKRs are living instruments, not frozen contracts</b>
 - When circumstances change mid-cycle — a market shift, a competitor move, a key person leaving — the OKR should change too
 - Stubbornly holding to an outdated goal is worse than dropping it and explaining why
+- The quarterly cadence provides natural breakpoints, but Doerr emphasises that mid-cycle adjustments are not only acceptable but expected:
+  - A Key Result that becomes irrelevant due to a competitor's move should be dropped, not pursued out of habit
+  - A new opportunity that emerges mid-quarter deserves consideration, even if it means adding to the quarter's OKRs
+  - The discipline is in the intentional decision-making, not in rigid adherence to a plan set three months ago
 
 > [!example] The Gates Foundation's Mid-Cycle Pivot
 > - The Gates Foundation discovered mid-cycle that their yam-based nutritional data was flawed
 > - Rather than ploughing ahead with bad data to protect a KR score, they changed the data set and adjusted the KR
 > - The goal was not to score well — it was to do the work well
+> - The willingness to modify a KR mid-cycle — and to explain the change publicly — demonstrated the kind of intellectual honesty that makes OKRs a genuine tool rather than a performance ritual
 > **The lesson:** Adapting a KR mid-cycle is not failure — it is intellectual honesty.
 
 ---
@@ -494,12 +605,17 @@ The OKR lifecycle is a continuous loop — each quarterly reset feeds lessons ba
 
 - Every OKR deployment needs a designated <b style="color: #2980b9">shepherd</b> — someone who ensures everyone sets, updates, and scores their OKRs on time
 - Without one, compliance drifts and the system decays into an exercise people tolerate rather than a tool they use
+- The shepherd role is not about authority — it is about persistence and genuine enthusiasm:
+  - The best shepherds combine follow-through with a deep understanding of why the system matters
+  - They can explain the value proposition to sceptics, not just enforce deadlines
+  - They protect the system from both neglect (nobody updates) and overengineering (too many OKRs, too many rules)
 
 > [!example] Google's Public Accountability (Jonathan Rosenberg)
 > - Jonathan Rosenberg, then Senior Vice President of Products, would publicly email a list of every person who had not submitted their OKRs on time
 > - The email was not hostile — it was matter-of-fact
 > - But the social pressure of being named on a company-wide list was remarkably effective
 > - People who had let their OKRs lapse suddenly found time to complete them
+> - Rosenberg's approach worked because it was consistent and impersonal — everyone was treated the same, from new hires to senior directors
 > **The lesson:** Social visibility is a powerful compliance mechanism when wielded without malice.
 
 > [!example] Nuna's CEO as Shepherd (Jini Kim)
@@ -507,6 +623,7 @@ The OKR lifecycle is a continuous loop — each quarterly reset feeds lessons ba
 > - She would text, Slack, and physically walk over to people who had not set their goals
 > - Her persistence bordered on obsessive — and it worked
 > - The message was unmistakable: if the CEO cares this much about OKRs, they must matter
+> - Kim's personal investment also gave her insight into where the system was struggling — she could feel the resistance points and address them
 > **The lesson:** When the leader shepherds personally, the system's importance is beyond question.
 
 ---
@@ -516,11 +633,14 @@ The OKR lifecycle is a continuous loop — each quarterly reset feeds lessons ba
 > - He declared that OKRs would be the operating system of the company
 > - Previous OKR attempts had been surface-level: people set goals because they were told to, then ignored them
 > - Glasgow changed the dynamic by making OKR reviews the centrepiece of the company's leadership rhythm, tying meeting agendas to OKR progress, and personally following up on every at-risk goal
+> - The transformation was not instant — it took multiple quarters of consistent shepherding before OKRs became genuinely embedded
 > **The lesson:** The shepherd must have organisational authority — a junior administrator cannot effectively shepherd executives.
 
 - The shepherd must balance enforcement with support:
   - <b style="color: #e74c3c">Over-policing makes the process feel bureaucratic rather than empowering</b>
   - The best shepherds combine persistence with genuine enthusiasm for the system — not compliance officers, but evangelists
+  - They celebrate good OKRs publicly, helping people see what "good" looks like
+  - They coach people who struggle with the format, rather than simply rejecting weak submissions
 
 > [!tip] Core Insight
 > The shepherd role requires someone who can look a VP in the eye and say, "Your OKRs are overdue" — while also making the system feel like a gift rather than a burden.
@@ -550,6 +670,7 @@ The OKR lifecycle is a continuous loop — each quarterly reset feeds lessons ba
   - Instead of a parade of green lights designed to make everyone look good, the meeting becomes an honest reckoning with difficulty
   - It also breaks silos: when someone from marketing volunteers to help engineering with a red OKR, cross-functional relationships deepen
   - People who would never have worked together discover shared interests and complementary skills
+  - The reds become opportunities for connection, not sources of shame
 
 ---
 
@@ -557,10 +678,12 @@ The OKR lifecycle is a continuous loop — each quarterly reset feeds lessons ba
 - The psychological effect was powerful:
   - Admitting difficulty became a sign of strategic awareness rather than weakness
   - Leaders who sold their reds well — who could clearly articulate what was stuck and why — were seen as more capable, not less
+  - The ability to diagnose and communicate a problem became a valued leadership skill
 - Glasgow also introduced a binary system: <b style="color: #2980b9">no yellow OKRs</b>
   - Every goal was either green (on track) or red (needs help)
   - The elimination of the yellow category — which Doerr notes is where organisations hide their uncertainty — forced honesty
   - There was no comfortable middle ground where you could claim things were "mostly fine"
+  - This binary forced a decision: either you are confident, or you need help — and needing help is not failure
 
 ---
 
@@ -590,10 +713,11 @@ OKRs and CFRs form two halves of a complete system — the numbers tell you wher
 - Regular one-on-ones between managers and their reports, driven by the <b style="color: #27ae60">subordinate's agenda</b>, not the manager's
 - These are not status updates — the OKR dashboard handles status
 - Conversations cover:
-  - Goal progress in context
-  - Obstacles that the numbers cannot capture
+  - Goal progress in context — what the numbers do not capture
+  - Obstacles that the data cannot reveal
   - Coaching on skills and approach
   - Development toward longer-term aspirations
+  - Relationship health between team members
 
 > [!abstract] Doerr's Conversation Template
 > 1. What are you working on?
@@ -603,6 +727,12 @@ OKRs and CFRs form two halves of a complete system — the numbers tell you wher
 
 - The shift from "What did you do this week?" to <b style="color: #27ae60">"What do you need from me?"</b> transforms the managerial relationship
 - The manager becomes a resource provider and obstacle-remover rather than a scorekeeper
+- Doerr emphasises that the frequency matters as much as the content:
+  - Monthly one-on-ones are the minimum
+  - Weekly is better for fast-moving environments
+  - The regularity itself sends a signal: your development matters enough to schedule time for it
+
+---
 
 ### Feedback
 
@@ -615,9 +745,13 @@ OKRs and CFRs form two halves of a complete system — the numbers tell you wher
   - Is considered worth the investment by only **6% of HR leaders**
 - <b style="color: #e74c3c">The annual review is a relic of a slower era</b>
   - In a world where quarterly goals shift and daily decisions compound, feedback that arrives once a year is feedback that arrives too late to matter
+  - The annual review is not just slow — it is actively harmful because it creates a twelve-month gap between behaviour and consequence
+  - By the time the feedback arrives, neither the manager nor the employee can accurately reconstruct what happened or why
 - "Bad companies are destroyed by crisis. Good companies survive them. Great companies are improved by them." — Andy Grove
   - Honest feedback — even when it stings — is how organisations improve
-  - But the feedback must be timely
+  - But the feedback must be timely, specific, and actionable — not a vague "you need to improve your communication skills" delivered once a year
+
+---
 
 ### Recognition
 
@@ -629,6 +763,8 @@ OKRs and CFRs form two halves of a complete system — the numbers tell you wher
   - **Specific** — "You unblocked the Q3 product launch by solving the authentication issue in two days" rather than "Great job this month"
   - **Frequent** — not a quarterly ceremony but a daily habit
   - **Tied to goals** — connected to OKRs so that recognition reinforces priorities
+  - **Peer-driven** — coming from colleagues, not just managers, because peer recognition carries a different and often more credible weight
+- The distinction matters because generic praise is noise — specific recognition reinforces the behaviours that advance the organisation's Objectives
 
 ---
 
@@ -654,7 +790,11 @@ OKRs and CFRs form two halves of a complete system — the numbers tell you wher
 > [!tip] Core Insight
 > Annual reviews cost enormous management time and are valued by almost nobody. Replacing them with continuous, structured conversations improves retention, engagement, and real-time problem-solving.
 
+---
+
 ### The Zume Pizza Experiment
+
+*A startup that adopted CFRs from founding day shows what management maturity looks like when it is baked in rather than bolted on.*
 
 > [!example] Zume Pizza's CFR Culture from Day One
 > - Zume Pizza, a robotics-driven pizza delivery startup, adopted CFRs alongside OKRs from its founding
@@ -662,9 +802,12 @@ OKRs and CFRs form two halves of a complete system — the numbers tell you wher
 > - The conversations followed Doerr's template: goal progress, obstacles, coaching, and development
 > - For a startup where the average employee age was in the twenties and few had worked in a structured corporate environment before, the CFR framework provided a maturity of management practice that would normally take years to develop
 > - Employees reported that the regularity and structure of the conversations made them feel valued — not because the co-CEOs were saying nice things, but because they were genuinely listening, genuinely adjusting, and genuinely invested in each person's growth
+> - New hires who had never experienced structured feedback before said the CFR process was the most professionally development they had ever received
 > **The lesson:** CFRs provide instant management maturity, even for first-time leaders.
 
 ### The Pact Story
+
+*An employee-driven feedback system shows that inverting the traditional power dynamic — giving the subordinate control of the agenda — transforms feedback from threat to resource.*
 
 > [!example] Pact's Employee-Driven "Propel" System
 > - Pact, a mobile app for charitable giving, developed a system called **"Propel"** that combined monthly one-on-ones with quarterly OKR reviews
@@ -672,6 +815,7 @@ OKRs and CFRs form two halves of a complete system — the numbers tell you wher
 > - At Pact, the employee — not the manager — controlled the conversation
 > - They chose what to discuss, what feedback to seek, and what coaching they wanted
 > - This inversion of the traditional power dynamic — where the manager interrogates and the employee defends — created a culture where feedback was sought rather than feared
+> - The founders observed that employees who controlled their own feedback agenda engaged more deeply with their own development
 > **The lesson:** When employees control the agenda, feedback becomes a resource they seek rather than a threat they endure.
 
 ---
@@ -679,6 +823,13 @@ OKRs and CFRs form two halves of a complete system — the numbers tell you wher
 ## Culture Eats OKRs for Breakfast
 
 *What happens when the culture is not ready for OKRs? This chapter addresses the question the rest of the book largely sidesteps — and the answer is uncomfortable.*
+
+- Doerr acknowledges that OKRs are a tool, not a cure:
+  - They cannot create trust where none exists
+  - They cannot force transparency in a culture of secrecy
+  - They cannot make people stretch in an environment where failure is punished
+- <b style="color: #e74c3c">OKRs amplify whatever culture already exists</b> — in a healthy culture, they accelerate execution; in a dysfunctional one, they expose the dysfunction
+- The implication is uncomfortable: before deploying OKRs, organisations may need to do the harder work of building psychological safety, establishing trust, and creating genuine executive commitment
 
 > [!example]- Lumeris: The Full Cautionary Tale
 > - Lumeris, a healthcare analytics company, deployed OKRs for three quarterly cycles with high "participation rates"
@@ -693,6 +844,7 @@ OKRs and CFRs form two halves of a complete system — the numbers tell you wher
 >   - Autocratic leaders who hoarded information and punished dissent were removed
 >   - Interviewers were retrained to screen for cultural fit, not just technical competence
 > - Only after this painful, multi-quarter cultural overhaul could OKRs take genuine root
+> - The lesson is stark: the problem was never the tool — it was the soil the tool was planted in
 > **The lesson:** OKRs cannot substitute for culture. They can amplify a healthy culture or expose a sick one, but they cannot create health where it does not exist.
 
 > [!tip] Core Insight
@@ -706,6 +858,10 @@ OKRs and CFRs form two halves of a complete system — the numbers tell you wher
   - OKRs provided that language
   - The act of writing down "end extreme poverty" as an Objective and then asking "how would we know?" forced the team to think rigorously about what was measurable, what was achievable, and what was aspirational
   - The OKR process did not replace culture — it created the foundation on which a culture of disciplined idealism could be built
+- The difference between Lumeris and the ONE Campaign is instructive:
+  - Lumeris had an existing culture that was hostile to the values OKRs require (transparency, vulnerability, honest scoring)
+  - The ONE Campaign had no existing culture at all — it was a blank slate
+  - OKRs can build culture from scratch more easily than they can overwrite a toxic culture
 - "It almost doesn't matter what you know. It's what you can do with whatever you know or can learn that counts." — Andy Grove
   - Tools and knowledge are necessary but not sufficient
   - Execution — the ability to translate insight into action, repeatedly, at scale — is what separates great organisations from mediocre ones
@@ -721,11 +877,13 @@ OKRs and CFRs form two halves of a complete system — the numbers tell you wher
   - The Objective should be ambitious and feel slightly uncomfortable
   - If it is achievable with business-as-usual effort, it is not an Objective — it is a task
   - The language should be qualitative and inspirational: "Build the most loved product in the category" rather than "Increase market share by 3%"
+  - Good Objectives are memorable — if people cannot recall their Objectives without looking them up, the Objectives are too complex or too numerous
 - **Writing good Key Results:**
   - Key Results must be measurable, time-bound, and verifiable
   - At the end of the quarter, there should be no argument about whether a KR was achieved
   - <b style="color: #e74c3c">"Improve customer satisfaction" is not a KR</b> — "Achieve NPS of 70 by end of Q2" is
   - Each KR should be necessary for the Objective, and collectively the KRs should be sufficient — if all KRs are green, the Objective must logically follow
+  - Avoid activity-based KRs ("Launch three campaigns") in favour of outcome-based ones ("Increase qualified leads by 30%")
 
 ---
 
@@ -735,6 +893,18 @@ OKRs and CFRs form two halves of a complete system — the numbers tell you wher
 > 3. Every KR that survives both tests earns its place on the list.
 
 - <b style="color: #27ae60">The sufficiency test is perhaps the most valuable diagnostic tool in the entire book</b>
+- It forces the writer to think backwards from the Objective and ask: "What would have to be true for this to be accomplished?"
+- Many OKR failures trace back to Key Results that are tangentially related to the Objective but not actually sufficient to achieve it
+
+---
+
+- **Common OKR mistakes** that the Google playbook warns against:
+  - **Too many Objectives** — more than 5 per quarter means insufficient focus
+  - **Activity KRs disguised as outcome KRs** — "Hold three meetings" is an activity; "Resolve three cross-team dependencies" is an outcome
+  - **Sandbagged targets** — if you are scoring 1.0 every quarter, your aspirational OKRs are not aspirational
+  - **Orphan KRs** — Key Results that do not connect to any company or team Objective
+  - **Set-and-forget** — writing OKRs at the start of the quarter and never looking at them again
+
 - **Scoring guidelines:**
 
 | Score Range | Colour | Meaning | Response |
@@ -745,6 +915,10 @@ OKRs and CFRs form two halves of a complete system — the numbers tell you wher
 
 - For committed OKRs, anything below 1.0 needs a post-mortem
 - For aspirational OKRs, 0.7 is the sweet spot — it means the goal was set at the right level of difficulty
+- Google wipes scores at the end of each cycle — they do not accumulate into a permanent record:
+  - This prevents score anxiety from creeping in
+  - Each quarter is a fresh start
+  - The scores exist to inform reflection, not to build a case for or against anyone
 
 ---
 
@@ -762,10 +936,14 @@ OKRs and CFRs form two halves of a complete system — the numbers tell you wher
 - The Foundation adopted OKRs to bring Silicon Valley discipline to global health:
   - The results were mixed at first — the data infrastructure in sub-Saharan Africa was nothing like Google's
   - Tracking vaccination rates required building new data collection systems from scratch
+  - The measurement challenge was not intellectual but logistical — getting reliable data from regions with limited infrastructure
   - But the discipline of asking "how would we know?" forced the Foundation to invest in measurement infrastructure that ultimately made every programme more effective
 - Gates is quoted as a passionate advocate for OKRs in non-profit work, arguing that <b style="color: #2980b9">the absence of a profit motive makes measurement more important, not less</b>:
   - When you cannot rely on the market to tell you whether your product is working (because your "customers" are too poor to buy anything), you must create your own feedback loops
   - OKRs provide the structure for those loops
+  - The Foundation's experience demonstrates that OKRs are domain-agnostic — the system works whether you are shipping software or delivering vaccines
+
+---
 
 ### Zume Pizza: OKRs from Day One
 
@@ -777,7 +955,13 @@ OKRs and CFRs form two halves of a complete system — the numbers tell you wher
 > - The result was a startup culture where OKRs were not perceived as a management imposition but as "how we do things here"
 > - New hires learned the system in their first week
 > - Within a few quarters, the 50/50 balance between top-down and bottom-up OKRs had emerged naturally, without needing to be mandated
+> - The founders' willingness to score themselves honestly — including public reds — gave the entire team permission to be honest about their own struggles
 > **The lesson:** When leaders model OKR behaviour from day one — including honest scoring and public admission of failure — the system embeds itself in the culture naturally.
+
+- The contrast between Zume and Lumeris is striking:
+  - Zume embedded OKRs at founding, when the culture was forming — the system shaped the culture
+  - Lumeris tried to retrofit OKRs onto an existing culture that resisted transparency — the culture defeated the system until the culture itself was overhauled
+  - The takeaway: OKRs are far easier to embed when the culture is still malleable
 
 ---
 
@@ -788,12 +972,17 @@ OKRs and CFRs form two halves of a complete system — the numbers tell you wher
 - <b style="color: #27ae60">OKRs cannot succeed without conviction and modelling from the top</b>
 - The CEO or leader must personally set, share, and be held accountable for their own OKRs
 - If the leader does not do it, nobody will take the system seriously
+- The leader's behaviour is the signal:
+  - If the CEO sets OKRs but never reviews them publicly, the message is: these are optional
+  - If the CEO scores a stretch OKR at 0.6 and discusses it openly, the message is: honest assessment is safe
+  - If the CEO asks "Where are your OKRs?" in every meeting, the message is: this is how we run the company
 
 | Company | Leader | What they did | Effect |
 |---------|--------|---------------|--------|
 | Google | Larry Page | Personally reviewed every software engineer's OKRs for years | Sent an unmistakable signal: this matters |
 | Nuna | Jini Kim | Publicly shared her own OKRs, including self-assigned grades and reds | Made it safe to struggle |
 | Lumeris | Art Glasgow | Declared OKRs the company's operating system; personally shepherded the process | Transformed a failed experiment into genuine adoption |
+| Zume Pizza | Alex Garden & Julia Collins | Wrote every first-cycle OKR themselves and scored publicly | Embedded OKRs into founding culture |
 
 - "It's not a key result unless it has a number." — Marissa Mayer
   - Vague aspirations are not goals
@@ -823,13 +1012,15 @@ The book's most significant weakness is survivorship bias. Doerr only tells stor
 
 The ideal reader for this book is someone who leads teams, runs programmes, or is responsible for organisational execution and wants a lightweight, proven framework for translating strategy into action. The system requires no expensive software, no consultants, and no multi-year implementation programme. It can be adopted by a team of five or a company of five thousand. Its quarterly cadence forces regular reckoning with reality, and its transparency requirement surfaces dysfunction that would otherwise fester in private. For the individual contributor or the technically-minded person who has never had a formal system for goal-setting, this book provides a clear and immediately applicable methodology.
 
-Where the book falls short is in its treatment of the cultural prerequisites. Doerr acknowledges — particularly in the Lumeris chapters — that OKRs require trust, psychological safety, and genuine executive commitment. But he does not dwell on how hard these things are to build or how rare they are in practice. Most organisations are not Google. Most managers are not Andy Grove. Most teams operate in environments where admitting failure is risky, where metrics are gamed, and where transparency is a slogan rather than a practice. Doerr's system is genuinely powerful, but it is only as good as the culture it operates within — and culture is the one thing his system cannot install by itself.
+Where the book falls short is in its treatment of the cultural prerequisites. Doerr acknowledges — particularly in the Lumeris chapters — that OKRs require trust, psychological safety, and genuine executive commitment. But he does not dwell on how hard these things are to build or how rare they are in practice. Most organisations are not Google. Most managers are not Andy Grove. Most teams operate in environments where admitting failure is risky, where metrics are gamed, and where transparency is a slogan rather than a practice. Doerr's system is genuinely powerful, but it is only as good as the culture it operates within — and culture is the one thing his system cannot install by itself. For readers grappling with cultural prerequisites, [[The Culture Code - Daniel Coyle]] offers a deeper exploration of how to build the safety and trust that OKRs demand.
 
 ---
 
 ## Related Reading
 
-- [[grove_high-output-management|High Output Management]] — Andy Grove's foundational management text, where the OKR concept was first articulated alongside production principles for knowledge work
-- [[pink_drive|Drive]] — Daniel Pink's exploration of intrinsic motivation, which provides the psychological research base for why stretch goals and autonomy (central to OKRs) outperform carrots and sticks
-- [[sull_simple-rules|Simple Rules]] — Donald Sull's work on how organisations thrive with a small number of clear, actionable principles rather than complex strategy documents
-- [[lencioni_five-dysfunctions|The Five Dysfunctions of a Team]] — addresses the trust and accountability dynamics that must be in place before OKRs can function as Doerr describes
+- [[The Effective Executive - Peter Drucker]] — Drucker's foundational management text, where the philosophy behind MBOs originated and where the principle of effectiveness over efficiency is first articulated
+- [[The Culture Code - Daniel Coyle]] — explores how to build the psychological safety and trust that OKRs require to function, complementing Doerr's mechanical system with cultural depth
+- [[The Lean Startup - Eric Ries]] — shares OKRs' emphasis on short cycles, measurable learning, and pivoting based on evidence rather than opinion
+- [[The Phoenix Project - Gene Kim]] — illustrates what happens when a dysfunctional organisation finds its operating rhythm, with parallels to Doerr's arguments about focus and tracking
+- [[Essentialism - Greg McKeown]] — the philosophical case for Doerr's first superpower (focus), arguing that the disciplined pursuit of less is the key to contribution
+- [[The Checklist Manifesto - Atul Gawande]] — another argument for lightweight systems that dramatically improve execution, complementing OKRs' structured simplicity

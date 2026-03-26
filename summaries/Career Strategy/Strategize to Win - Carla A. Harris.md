@@ -15,12 +15,7 @@ year: 2014
 
 ## About the Author
 
-Carla A. Harris is Vice Chairman, Managing Director, and Senior Client Advisor at Morgan Stanley, where she has spent more than three decades.
-She has led landmark transactions worth billions across technology, media, and telecom sectors.
-*Fortune* has named her to its "Most Powerful Women in Business" list multiple times, and she has served on numerous corporate and non-profit boards.
-She is also a certified gospel recording artist — a fact that reflects her conviction that professional identity should not be one-dimensional.
-Her perspective is shaped by a specific and revealing vantage point: navigating the highest levels of Wall Street as a Black woman in a predominantly white, male industry.
-That experience gives her a sharp, unsentimental eye for the gap between how organisations say they work and how they actually work.
+Carla A. Harris is Vice Chairman, Managing Director, and Senior Client Advisor at Morgan Stanley, where she has spent more than three decades. She has led landmark transactions worth billions across technology, media, and telecom sectors. *Fortune* has named her to its "Most Powerful Women in Business" list multiple times, and she has served on numerous corporate and non-profit boards. She is also a certified gospel recording artist — a fact that reflects her conviction that professional identity should not be one-dimensional. Her perspective is shaped by a specific and revealing vantage point: navigating the highest levels of Wall Street as a Black woman in a predominantly white, male industry. That experience gives her a sharp, unsentimental eye for the gap between how organisations say they work and how they actually work.
 
 ---
 
@@ -82,6 +77,8 @@ The three career phases are not sequential stages you graduate through — they 
 | **Evolutionary vs Revolutionary Ideas** | Frame proposals based on whether they extend what exists or require behaviour change |
 | **The Five Professional Profiles** | Five workplace archetypes that shape how others perceive your readiness for leadership |
 | **Imbalance of Trade** | Invest first in relationships, creating a surplus of goodwill the other person will want to balance |
+| **The Risk Premium** | Changing companies costs accumulated currency — price that into every offer |
+| **The Trust Factor** | Reliability, consistency, and vulnerability compound into the highest form of relationship capital |
 
 ---
 
@@ -95,6 +92,7 @@ The three career phases are not sequential stages you graduate through — they 
 - They chase titles, prestige, and compensation without asking what activities actually energise them
 - The result: roles that look impressive on paper but leave them miserable in practice
 - <b style="color: #e74c3c">Miserable people do not build the kind of performance currency that compounds over time</b>
+- Harris observed this pattern repeatedly on Wall Street — talented people entering high-prestige roles, burning out within two years, and losing both time and the currency they might have built in a role that actually suited them
 
 ---
 
@@ -106,13 +104,17 @@ The three career phases are not sequential stages you graduate through — they 
 - <b style="color: #2980b9">The Content Page</b> forces honesty about what you actually want to spend your days doing:
   - Do you like analysing data? Persuading people? Building things?
   - Solving complex problems under time pressure?
+  - Writing? Teaching? Managing teams?
+  - The key discipline is radical specificity — not "I like business" but "I like taking ambiguous financial data and turning it into a narrative that changes someone's decision"
 - <b style="color: #2980b9">The Jobs Page</b> follows content, not the reverse:
   - Starting with jobs instead of content means fitting yourself into someone else's definition of a role
   - Starting from content means building outward from your own preferences
+  - Harris points out that several seemingly different job titles may contain the same content — and that you would never discover this if you fixated on one title
 - <b style="color: #2980b9">The Skills Page</b> reveals gaps — and gaps can be closed:
   - Job descriptions are aspirational wish lists
   - The real question is what successful incumbents actually have
   - Gaps can be closed through deliberate acquisition of experience, not just formal education
+  - Harris recommends talking to three to five people currently in your target role and asking what they actually do all day — the answers almost always differ from the job posting
 
 > [!example] The Aspiring VC Who Had It Backwards
 > - A young professional Harris mentored had been applying to venture capital firms for months with no success
@@ -122,6 +124,24 @@ The three career phases are not sequential stages you graduate through — they 
 > - The exercise did not kill his ambition but redirected it: he took a role at a startup to build operating experience
 > - His explicit intention was to use that as a launching pad into VC two years later
 > **The lesson:** Content first, then jobs, then skills. Most people reverse the order and wonder why they feel stuck.
+
+---
+
+- Harris also introduces the <b style="color: #2980b9">career module concept</b> in this chapter:
+  - Rather than thinking of a career as a single linear path, think of it as six to eight blocks of roughly five years each
+  - Each module should deliberately build a specific capability or credential
+  - Some modules will be at the same company; others will require moving
+  - The module framework prevents the common trap of staying in one role for eight years because the work is comfortable, only to discover that the market has moved and your skills have not
+  - <b style="color: #27ae60">Each five-year module should have a clear objective — what will you have learned, built, or earned by the end of it?</b>
+
+> [!example] The Banking Analyst Who Planned in Modules
+> - A junior analyst at a major bank mapped her first three modules before accepting her first role
+> - Module 1 (years 1-5): investment banking — learn financial modelling, deal execution, and how capital markets work
+> - Module 2 (years 6-10): private equity — apply the analytical skills from banking to evaluating and managing companies directly
+> - Module 3 (years 11-15): operating role at a portfolio company — translate financial skills into operational leadership
+> - Each module built on the previous one, and each was chosen for its content alignment with her interests, not its prestige
+> - By year twelve, she was a COO at a mid-market company, a role she never would have reached by staying in banking
+> **The lesson:** Planning in modules turns a career from something that happens to you into something you design.
 
 > [!tip] Core Insight
 > The power of the framework lies in the sequence. Content first. Then jobs. Then skills. Reversing the order is the single most common career-planning mistake.
@@ -140,12 +160,17 @@ The three career phases are not sequential stages you graduate through — they 
 - Of these three, <b style="color: #2980b9">Fit</b> is the most subjective and often the most decisive:
   - Two candidates may be equally qualified on Can Do and equally motivated on Will Do
   - The one who feels like a better cultural fit will get the offer
+  - Fit is assessed in the first ninety seconds of an interview — often before a single substantive question has been asked
 
 ---
 
 - Job descriptions are incomplete maps of what the employer actually values:
   - The stated requirements list hard skills and qualifications
   - The unstated requirements — the ones that actually determine the outcome — are about trust, ambiguity tolerance, and whether the candidate will make the hiring manager's life easier or harder
+- Harris breaks down the mechanics of what interviewers actually evaluate:
+  - **Can Do** is the easiest to assess and the least differentiating — most shortlisted candidates meet the technical threshold
+  - **Will Do** is assessed through stories, not claims — "tell me about a time when" questions are designed to reveal motivation patterns, not check boxes
+  - **Fit** is the invisible filter — it operates through body language, energy, humour, and whether the interviewer can picture working with you at midnight on a difficult project
 
 > [!example] Harris's McDonald's Gambit at Morgan Stanley
 > - Harris arrived at Morgan Stanley with only one line of professional experience: managing a McDonald's restaurant
@@ -159,10 +184,38 @@ The three career phases are not sequential stages you graduate through — they 
 
 > "Figure out what the buyer is buying, then sell that."
 
+---
+
 - <b style="color: #27ae60">This principle extends beyond interviews to every professional interaction</b>:
   - When pitching an idea to a sceptical executive: "What does this person actually care about?"
   - When negotiating compensation: "What does the employer value enough to pay for?"
+  - When seeking a sponsor: "What does this senior leader need from someone at my level?"
 - The discipline of understanding the buyer's real criteria — as opposed to their stated criteria — is one of the most transferable skills in the book
+
+```mermaid
+flowchart TD
+    A[What the Buyer Says] --> B[Job Description]
+    A --> C[Stated Requirements]
+    D[What the Buyer Buys] --> E[Can Do]
+    D --> F[Will Do]
+    D --> G[Fit]
+    G --> H[Decisive Factor]
+    B -.->|Incomplete map| D
+    style H fill:#27ae60,color:#fff
+    style G fill:#2980b9,color:#fff
+```
+
+The gap between what the buyer says they want and what they actually evaluate is where most candidates lose. Fit — the most subjective and least discussed dimension — is usually the deciding factor.
+
+> [!example] The Overqualified Candidate Who Lost on Fit
+> - A senior professional applied for a leadership role at a financial services firm
+> - His credentials were impeccable — Ivy League degrees, fifteen years of relevant experience, outstanding references
+> - He was the strongest candidate on Can Do by a wide margin
+> - During the interview, he was formal, precise, and correct — but cold
+> - The hiring manager later told Harris: "I couldn't picture working with him on a Saturday"
+> - The role went to a candidate with less experience but stronger interpersonal warmth
+> - The overqualified candidate never understood why he lost — he assumed credentials would carry the day
+> **The lesson:** Can Do gets you into the final round. Fit determines who wins it. You can be the most qualified person in the room and still lose if the buyer cannot picture working alongside you.
 
 > [!tip] Core Insight
 > Job descriptions tell you what the company thinks it wants. The buyer's actual decision is driven by unstated criteria — cultural fit, trust, and whether you will make their life easier.
@@ -179,6 +232,10 @@ The three career phases are not sequential stages you graduate through — they 
   - The path from accounting to strategic finance may look obvious on paper, but if no one has ever made that transition at your firm, you are trying to create a path, not walk one
   - Creating a new path requires a senior leader willing to spend significant political capital on your behalf
   - It is not impossible, but it should never be assumed
+- Harris is blunt about the mechanism:
+  - Decision-makers think in patterns — they promote people who look like previous successful promotions
+  - If every person who has ever moved from department A to department B had a specific profile, that profile becomes the template
+  - If your profile does not match the template, you are fighting cognitive inertia as well as organizational structure
 
 > [!example] Ted's Two Lost Years in Accounting
 > - Ted, an MBA graduate, entered a financial services firm in the accounting department
@@ -209,12 +266,20 @@ The three career phases are not sequential stages you graduate through — they 
 
 > "Every job you take is a five-year bet."
 
+---
+
 > [!abstract] Compensation Defence Protocol
 > 1. Research market rate before accepting any offer
 > 2. Negotiate in terms of the role's value rather than your current salary
 > 3. If you accept below market for strategic reasons — to enter a new industry, to gain specific experience — insist on a written review date
 > 4. Attach specific milestones that will trigger a compensation adjustment
 > 5. Never allow a starting deficit to compound unchallenged
+
+- Harris is particularly pointed about how compensation anchoring interacts with gender and race:
+  - Studies consistently show that women and minorities are offered lower starting salaries than their peers for identical roles
+  - Because the deficit compounds through every subsequent offer, the gap widens over a career
+  - <b style="color: #e74c3c">A single bad negotiation at age twenty-five can cost hundreds of thousands over a thirty-year career</b>
+  - Harris does not offer a systemic solution — she offers an individual one: negotiate harder, earlier, and with more information than your counterpart expects
 
 > [!tip] Core Insight
 > Your starting salary is not a starting point — it is a gravitational anchor that pulls on every future offer. Negotiate as if your entire career trajectory depends on it, because it does.
@@ -234,6 +299,11 @@ The three career phases are not sequential stages you graduate through — they 
   - Performance currency has diminishing returns
   - At senior levels, everyone competing for the same role already delivers strong results
   - Performance currency gets you into the conversation; it does not win the conversation
+- The mechanism behind diminishing returns:
+  - At junior levels, the range of performance quality is wide — some people are clearly better than others
+  - As you advance, the floor rises — the weakest people at each level have already been filtered out
+  - By the time you are competing for a senior role, you are competing against people who are all excellent
+  - In a field of equally excellent performers, performance itself ceases to be the differentiator
 
 ---
 
@@ -278,6 +348,24 @@ The three career phases are not sequential stages you graduate through — they 
 
 > "Under-promise and over-deliver. Score your points early."
 
+---
+
+- Harris also addresses the <b style="color: #2980b9">visibility problem</b> with performance currency:
+  - Doing excellent work that nobody sees earns you nothing
+  - Performance currency requires an audience — someone with decision-making authority must observe or hear about your contribution
+  - This is not about self-promotion in the shallow sense — it is about ensuring that the work you do reaches the people who make advancement decisions
+  - Many professionals, particularly those from cultures that discourage self-promotion, do excellent work in isolation and wonder why they are never recognised
+  - <b style="color: #e74c3c">The tree that falls in the forest makes no sound if no decision-maker is listening</b>
+
+> [!example] The Silent Performer Who Got Passed Over
+> - A mid-level professional at a consulting firm consistently produced the strongest analyses on her team
+> - Her peers relied on her work; her direct manager knew she was excellent
+> - But her direct manager had limited influence on promotion decisions — those were made by a committee of partners who had never worked with her directly
+> - When promotion time came, the committee discussed candidates they knew personally
+> - Her name came up only briefly — her manager advocated for her, but without the weight of personal experience, the committee moved on
+> - A less talented peer who had worked directly with two of the committee members was promoted instead
+> **The lesson:** Performance currency that no decision-maker witnesses is invisible currency. Ensure your work reaches the people who make the decisions.
+
 > [!tip] Core Insight
 > Performance currency is cognitive anchoring applied to professional reputation. The first impression is not just a first impression — it is the frame that shapes every evaluation that follows.
 
@@ -306,6 +394,9 @@ The three career phases are not sequential stages you graduate through — they 
   - Coffee meetings, shared commutes, brief check-ins that serve no immediate purpose beyond maintaining the connection
   - Each positive interaction deposits a small amount into the relationship account
   - Over months and years, these deposits compound into trust
+  - Harris recommends a concrete cadence: monthly contact with important relationships, quarterly contact with the broader network
+  - The contact does not need to be substantive — a forwarded article, a quick congratulations on a win, a two-minute hallway conversation
+  - <b style="color: #27ae60">The goal is presence, not depth — you are staying on the person's mental map</b>
 
 > [!example] Harris and the Hostile Trader — A Campaign of Coffee
 > - A trader on Morgan Stanley's trading floor initially refused to work with Harris
@@ -328,6 +419,10 @@ The three career phases are not sequential stages you graduate through — they 
   - People track social debts intuitively, even unconsciously
   - If you consistently help someone — sharing insights, making introductions, solving their problems — they feel an obligation to reciprocate
   - <b style="color: #e74c3c">But it only works if the investment is authentic — transparently transactional behaviour destroys trust faster than no investment at all</b>
+- Harris distinguishes between two types of relationship-building:
+  - **Transactional** — I help you so that you will help me (visible, calculated, often counterproductive)
+  - **Investive** — I help you because building genuine connections is how I operate (invisible, authentic, and it compounds)
+  - The paradox is that the investive approach, which appears less strategic, produces far superior strategic results
 
 > "Performance currency gets you in the door; relationship currency gets you to the top."
 
@@ -337,9 +432,9 @@ The three career phases are not sequential stages you graduate through — they 
   - Trust is the ultimate form of relationship currency — earned slowly and lost quickly
   - The professionals who advance fastest are not necessarily the most talented — they are the ones who have built the deepest reservoirs of trust with decision-makers
   - Trust is built through three channels:
-    - **Reliability** — doing what you say you will do
-    - **Consistency** — behaving the same way regardless of audience
-    - **Vulnerability** — being willing to admit mistakes and ask for help
+    - **Reliability** — doing what you say you will do, consistently, without exception
+    - **Consistency** — behaving the same way regardless of audience — the same person in front of the CEO as in front of the intern
+    - **Vulnerability** — being willing to admit mistakes and ask for help — counter-intuitively, this builds trust faster than projecting invulnerability
 
 - The asymmetry warning:
   - Performance currency is visible — it shows up in deliverables, metrics, and reviews
@@ -379,6 +474,8 @@ At junior levels, performance currency dominates advancement decisions. At senio
 | **The SNEP** | Reflexive sceptic who defaults to "no" on every proposal | Low — not malicious but draining | Fighting them wastes energy; route around them |
 | **The Saboteur** | Actively works against you — through subtle undermining, not overt attacks | Negative — rare but real | Confrontation usually backfires; neutralise through relationships |
 
+Harris warns that most professionals have a dangerously inaccurate map of which players occupy which roles in their career. They assume supporters are sponsors, overlook SNEPs until damage is done, and fail to identify saboteurs until the pattern is unmistakable.
+
 ---
 
 - <b style="color: #27ae60">The Sponsor is the most important person in your professional life</b>:
@@ -386,12 +483,15 @@ At junior levels, performance currency dominates advancement decisions. At senio
   - When a promotion decision is being made behind closed doors, the sponsor says: "I have worked with this person, I trust their judgment, and I am willing to stake my reputation on their readiness"
   - The cost to the sponsor is real: if the person they championed fails, the sponsor's judgment is questioned
   - That is what makes sponsorship valuable — it is expensive social capital, spent deliberately
+  - Harris uses a vivid metaphor: the sponsor "carries your paper into the room" — your resume, your track record, your case for advancement
+  - Without a sponsor, your paper sits on a desk that no one opens
 
 > "Your sponsor carries your paper into the room."
 
 - Harris is adamant: <b style="color: #27ae60">you need two to three sponsors at any given time</b>
   - Relying on a single sponsor is dangerous because sponsors change roles, leave companies, fall out of favour, or simply move on
   - If your sole sponsor departs and you have no replacement, you are suddenly invisible in the rooms where decisions are made
+  - The diversification principle applies to sponsors just as it applies to investment portfolios
 
 > [!example] Kelly's Supporter Who Couldn't Deliver
 > - Kelly was a high-performing professional whose boss was enthusiastic about her work but lacked political capital within the organisation
@@ -408,6 +508,8 @@ At junior levels, performance currency dominates advancement decisions. At senio
   - Every proposal, every new initiative, every change is met with reasons it will not work
   - <b style="color: #e74c3c">Do not fight them — they are not worth the energy</b>
   - The correct strategy is to route around them — build consensus with others first, then present the SNEP with a fait accompli
+  - Harris notes that SNEPs are often intelligent and experienced — their reflexive scepticism may even contain useful information
+  - The problem is not their judgment but their temperament: they cannot distinguish between genuine risk and habitual resistance
 
 - **The Saboteur**:
   - Rare but real — they may feel threatened by your success, bear a grudge, or simply be someone who tears others down to elevate themselves
@@ -431,6 +533,16 @@ At junior levels, performance currency dominates advancement decisions. At senio
   - The question is not "who is advising me?" but "who is spending capital on me when I am not in the room?"
   - <b style="color: #e74c3c">If you cannot answer the second question, you have a mentorship problem disguised as a sponsorship problem</b>
 
+| Dimension | Mentor | Sponsor |
+|-----------|--------|---------|
+| **Cost to them** | Low (time, advice) | High (reputation, political capital) |
+| **What they do** | Tell you what to think about | Advocate for you to decision-makers |
+| **Where they operate** | In conversations with you | In rooms without you |
+| **How many you need** | Many (diverse perspectives) | Two to three (with real power) |
+| **How to find them** | Ask | Earn (through demonstrated value) |
+
+This comparison matters because the strategies for cultivating mentors and sponsors are fundamentally different. You can ask someone to be your mentor. You cannot ask someone to be your sponsor — you earn sponsorship by demonstrating that championing you will reflect well on their judgment.
+
 > [!tip] Core Insight
 > The question that determines your trajectory is not "who is advising me?" but "who is spending their own capital on me in rooms I am not in?" If you cannot name two to three such people, you have a sponsorship gap.
 
@@ -450,6 +562,10 @@ At junior levels, performance currency dominates advancement decisions. At senio
 - <b style="color: #27ae60">The gap between what is said and what is done is the single most important career diagnostic</b>:
   - If your manager says "you are doing a great job" but you are not being promoted, given new responsibilities, or included in strategic conversations — the words are noise
   - The actions are the signal
+- Harris identifies several specific signals to watch for:
+  - **Inclusion signals** — being invited to meetings outside your formal scope, being asked for your opinion on strategic questions, being introduced to senior visitors
+  - **Exclusion signals** — being left off invitations you previously received, being passed over for stretch assignments, hearing about decisions after they have been made
+  - **Transition signals** — your manager suggesting lateral moves, being asked to train your replacement, being moved to a "special projects" role with vague scope
 
 ---
 
@@ -501,6 +617,8 @@ The diagnostic is simple: track what the organisation does, not what it says. Wh
   - When you detect a gap between verbal feedback and actual behaviour, ask direct, clarifying questions
   - <b style="color: #e74c3c">Do not accept vague reassurances</b> — press for specifics: "What would need to change for me to be considered for X?"
   - The answer — or the evasion of the answer — is itself a signal
+  - Harris recommends keeping a written record of commitments your manager makes — not as ammunition, but as a diagnostic tool
+  - If the same commitment appears three times without action, it is not a commitment — it is a deflection
 
 > [!tip] Core Insight
 > If your manager says you are doing great but you are not being promoted, included, or given stretch assignments, the words are noise. The actions are the signal. Track behaviour, not rhetoric.
@@ -529,11 +647,32 @@ The diagnostic is simple: track what the organisation does, not what it says. Wh
 
 ---
 
+- Harris unpacks why each non-Chief profile fails at senior levels:
+  - **The Good Soldier** is rewarded at junior levels where obedience is valued — but senior roles require independent judgment, and Good Soldiers have never demonstrated it
+  - **The Yes Man** is comfortable to have around — but when a real decision needs to be made, no one trusts the Yes Man's opinion because they have never offered a genuine one
+  - **The Arguer** creates real value by challenging weak thinking — but the cost in social friction is judged too high; decision-makers do not want to fight through resistance every time they propose something
+  - **The Safe Pair of Hands** is the most frustrating archetype because they are genuinely excellent at execution — but leadership requires navigating ambiguity, not just executing with precision
+
+> [!example] The Good Soldier Who Hit a Ceiling
+> - A senior associate at a law firm had done everything asked of her for nine years — perfectly
+> - Every assignment completed on time, every client satisfied, every partner who worked with her gave positive feedback
+> - When she was passed over for partner, the feedback was: "We do not know what she thinks"
+> - In nine years of flawless execution, she had never expressed a strategic opinion, challenged a partner's reasoning, or proposed an alternative approach
+> - She had demonstrated that she could execute someone else's vision — but not that she could create her own
+> - The partners could not picture her leading a practice group because she had never shown them what leadership from her would look like
+> **The lesson:** The Good Soldier earns gratitude but not advancement. Leadership requires demonstrating judgment, not just obedience.
+
+---
+
 - Harris also addresses <b style="color: #2980b9">communication across generations</b>:
   - Different generational cohorts have different expectations about formality, directness, and the role of hierarchy
   - What reads as respectful deference to a Boomer executive may read as passivity to a Gen X manager
   - What reads as refreshing directness to a Millennial peer may read as insubordination to a senior partner
   - The discipline is reading your audience and calibrating accordingly — the same message, delivered differently, can produce opposite reactions
+- Harris provides a specific calibration framework:
+  - **Observe before you communicate** — watch how successful people at your target level communicate in your specific organisation
+  - **Mirror the energy** — match formality, directness, and pace to your audience
+  - **Separate the message from the medium** — the same critical feedback can be delivered in a way that builds trust or destroys it
 
 > [!tip] Core Insight
 > Your professional profile is not what you do — it is how you are perceived when you are not in the room. Only The Chief archetype is consistently associated with senior advancement, but it requires calibration: enough independent judgment to be seen as a leader, not so much that you are seen as unmanageable.
@@ -571,6 +710,18 @@ The diagnostic is simple: track what the organisation does, not what it says. Wh
   - A new data analytics platform pitched as "a replacement for our current system" = revolutionary (threatening)
   - The same platform pitched as "an upgrade that builds on what we have learned from the current system" = evolutionary (inviting)
   - The content may be identical — the framing determines the reception
+
+> [!example] The Technology Overhaul That Succeeded by Looking Incremental
+> - A technology director at a financial services firm needed to replace the entire trading platform — a genuinely revolutionary change
+> - Previous attempts to propose the replacement had been killed by senior traders who were comfortable with the existing system
+> - The director reframed the project as a series of "enhancements" — each one small enough to be non-threatening
+> - Enhancement 1 added a new data feed to the existing platform
+> - Enhancement 2 modernised the interface while keeping the workflow identical
+> - Enhancement 3 moved the back end to new infrastructure while preserving the front end
+> - By the time Enhancement 5 was complete, every component of the original system had been replaced — but no single step had felt revolutionary
+> **The lesson:** Revolutionary change, delivered as a series of evolutionary steps, avoids triggering the defenders of the status quo.
+
+---
 
 - Harris advises defaulting to evolutionary framing whenever possible:
   - Revolutionary framing should be reserved for situations where the status quo is so clearly broken that everyone already agrees it needs to change
@@ -643,6 +794,23 @@ Before pitching any idea, categorise it. Default to evolutionary framing — it 
 > - When the manager eventually left the firm, she was the natural choice for his replacement
 > **The lesson:** You do not defeat a credit-stealing manager by confrontation. You defeat them by making yourself visible through channels they do not control.
 
+---
+
+- The diagnostic sequence matters:
+  - Harris insists on diagnosing in order: seat first, then house, then person
+  - If the seat is the problem, changing companies solves nothing — you will land in the same type of role at a new firm
+  - If the house is the problem, no amount of internal manoeuvring will fix a cultural or structural issue
+  - If the person is the problem, leaving is the most expensive solution — and usually unnecessary
+
+> [!example] The VP Who Confused the Seat for the House
+> - A vice president at a technology company was convinced the company was the problem — the culture felt stifling, innovation seemed impossible, and she dreaded Monday mornings
+> - She was preparing to resign when Harris asked her to separate the three variables
+> - The house was actually strong — the company was growing, the leadership was competent, and the mission aligned with her values
+> - The person was not a problem — her manager was supportive and fair
+> - The seat was the problem — she was in operations, and everything she loved (strategy, client interaction, creative problem-solving) had been stripped from the role during a restructuring
+> - She moved to a strategy role within the same company, kept her accumulated currency, and within six months was thriving
+> **The lesson:** The most expensive career decisions are driven by misdiagnosis. Separate the variables before you act.
+
 - The only exception Harris acknowledges:
   - When the blocking person has absolute control over your career and no counter-balance exists
   - In a very small organisation, or under a manager who reports directly to the CEO with no peers and no oversight, the "work around" strategy may genuinely be impossible
@@ -694,12 +862,31 @@ Diagnose before you act. The seat, the house, and the person each require differ
   - **What you are gaining:** an unknown culture, an unproven team, a manager you have never worked with, a set of expectations you may or may not be able to meet
   - The gap between what you are giving up and what you are gaining is the <b style="color: #2980b9">risk premium</b>, and it should be reflected in compensation
 
+> [!abstract] The Risk Premium Calculation
+> 1. Quantify your accumulated currency at your current company — how long did it take to build, and what is it worth in terms of access, trust, and protection?
+> 2. Estimate the rebuilding time at the new company — typically eighteen to twenty-four months to reach equivalent standing
+> 3. Calculate the financial value of the gap — during the rebuilding period, you are more vulnerable to restructuring, less likely to receive top-tier assignments, and less visible to decision-makers
+> 4. Add a premium to the offer that compensates for this vulnerability period
+> 5. If the new company will not pay the premium, that tells you something about how they value you
+
+---
+
 - The one exception — the industry switch:
   - When entering a new field where you have no relevant experience, both you and the employer are sharing the risk
   - The employer is gambling that your transferable skills will translate
   - You are gambling that the new industry will suit you
   - Lateral or even slightly reduced compensation can be rational — but it should be explicitly time-bounded
   - Harris advises negotiating a written review date, typically six months, with specific milestones that will trigger a compensation adjustment if met
+  - <b style="color: #e74c3c">Without a written review date, the "temporary" discount becomes permanent</b>
+
+> [!example] The Consultant Who Negotiated a Reset Clause
+> - A management consultant was transitioning to an operating role at a technology company
+> - The company offered lateral compensation, arguing that she had no industry experience
+> - She accepted the logic but negotiated a clause: if she met three specific performance milestones within six months, her compensation would be adjusted to the seventy-fifth percentile of market rate
+> - She met all three milestones within four months
+> - The company honoured the clause — and privately, the hiring manager told Harris that the negotiation itself had increased his confidence in the candidate
+> - She had demonstrated exactly the kind of commercial judgment they were hiring for
+> **The lesson:** Accepting a strategic discount is rational. Accepting a permanent discount is careless. Build reset mechanisms into every concession.
 
 > [!tip] Core Insight
 > A lateral salary move to a new company is not lateral — you are surrendering years of accumulated performance and relationship currency. Price that risk into every offer.
@@ -712,6 +899,10 @@ Diagnose before you act. The seat, the house, and the person each require differ
 
 - Industries contract, companies merge, managers change, projects get cancelled
 - The professionals who sustain long careers are not the ones who avoid disruption — disruption is unavoidable — but the ones who manage through it effectively
+- Harris observed this pattern acutely during the 2008 financial crisis:
+  - Entire teams were eliminated overnight
+  - The professionals who survived were not necessarily the most talented — they were the ones with the deepest relationship currency and the broadest sponsor networks
+  - When decisions about who stays and who goes are made in forty-eight hours, the people making those decisions rely on trust and familiarity, not performance reviews
 
 Harris offers several principles for navigating career disruption:
 
@@ -745,6 +936,37 @@ Harris offers several principles for navigating career disruption:
 > - She was promoted; several of her peers, who had been waiting anxiously for instructions, were let go
 > **The lesson:** Disruption is when visibility is highest and competition is lowest. The professionals who act while others freeze are the ones who emerge stronger.
 
+---
+
+- **Build a disruption-ready network**:
+  - Harris argues that your external network is your insurance policy against internal disruption
+  - If your entire professional network is inside one company, a restructuring can eliminate your entire support system overnight
+  - Maintain relationships outside your company — in your industry, in adjacent industries, in your alumni networks
+  - These external relationships have zero value during normal times and enormous value during disruption
+  - <b style="color: #27ae60">The time to build your external network is when you do not need it</b>
+
+> [!example] The Executive Whose External Network Saved His Career
+> - A senior executive at a media company was let go during an industry contraction
+> - Unlike many of his peers, he had maintained active relationships with people across the industry — not for transactional reasons, but through genuine frequency of touch over many years
+> - Within two weeks of his departure, he had received three offers — all from people he had helped, mentored, or simply stayed in contact with during the preceding decade
+> - His peers, who had invested exclusively in internal relationships, took six to twelve months to find comparable roles
+> **The lesson:** Internal relationships build your career inside one company. External relationships insure your career across all companies. You need both.
+
+```mermaid
+flowchart LR
+    A[Disruption Hits] --> B{What Do You Do?}
+    B --> C[Freeze and Wait]
+    B --> D[Act and Deliver]
+    C --> E[Invisible When<br>Decisions Are Made]
+    D --> F[Visible and<br>Differentiated]
+    F --> G[Promoted or<br>Protected]
+    E --> H[Vulnerable to<br>Elimination]
+    style D fill:#27ae60,color:#fff
+    style C fill:#e74c3c,color:#fff
+```
+
+The professionals who treat disruption as a window — not a wall — are the ones who emerge from it in a stronger position than they entered.
+
 > [!tip] Core Insight
 > Disruption dissolves the status quo. For a brief window, precedents loosen and mobility increases. The professionals who move through that window gain ground. The ones who wait find new constraints hardened around them.
 
@@ -771,7 +993,7 @@ The book's weakness is intellectual depth. Harris provides no citations to resea
 
 The reader who will benefit most from this book is the mid-career professional in a large organisation who has been relying on performance alone and wondering why advancement has stalled. If you have ever thought "my work should speak for itself" and been frustrated that it did not, this book will explain why — and give you a concrete alternative. It is less useful for people in small companies, startups, or non-corporate environments where the dynamics Harris describes may not apply. It is also less useful for people who are already sophisticated about organisational politics; for them, the two-currency model will feel familiar even if the terminology is new.
 
-Compared to other books in this space, *Strategize to Win* occupies a practical middle ground. It is less theatrical and less historically grounded than Robert Greene's work on power dynamics, but more actionable for day-to-day corporate life. It is less research-heavy than Herminia Ibarra's *Act Like a Leader*, but more prescriptive — Harris tells you what to do, not just what to think about. It pairs well with [[Never Split the Difference - Chris Voss|Never Split the Difference]] for the negotiation chapters and with [[cialdini_influence|Influence]] for the psychological mechanisms (reciprocity, anchoring, social proof) that underpin Harris's relationship model. Read it as a field manual, not a theory book. The operating system is sound even if the theoretical foundations are thin.
+Compared to other books in this space, *Strategize to Win* occupies a practical middle ground. It is less theatrical and less historically grounded than Robert Greene's work on power dynamics, but more actionable for day-to-day corporate life. It is less research-heavy than Herminia Ibarra's *Act Like a Leader*, but more prescriptive — Harris tells you what to do, not just what to think about. It pairs well with [[Never Split the Difference - Chris Voss|Never Split the Difference]] for the negotiation chapters and with [[Influence - Robert Cialdini|Influence]] for the psychological mechanisms (reciprocity, anchoring, social proof) that underpin Harris's relationship model. Read it as a field manual, not a theory book. The operating system is sound even if the theoretical foundations are thin.
 
 ---
 
@@ -779,5 +1001,8 @@ Compared to other books in this space, *Strategize to Win* occupies a practical 
 
 - [[The 48 Laws of Power - Robert Greene|The 48 Laws of Power]] — the power dynamics that Harris acknowledges but never confronts directly; Greene provides the missing political layer
 - [[Never Split the Difference - Chris Voss|Never Split the Difference]] — tactical negotiation techniques that complement Harris's compensation anchoring principle
-- [[cialdini_influence|Influence]] — the psychology behind reciprocity, anchoring, and social proof that underpins Harris's relationship-currency model
-- [[ibarra_act-like-a-leader|Act Like a Leader, Think Like a Leader]] — challenges Harris's "plan then execute" model with the argument that identity shifts come from action, not analysis
+- [[Influence - Robert Cialdini|Influence]] — the psychology behind reciprocity, anchoring, and social proof that underpins Harris's relationship-currency model
+- [[Expect to Win - Carla A. Harris|Expect to Win]] — Harris's first book, covering the earlier phase of her career with more personal narrative and foundational principles
+- [[Corporate Confidential - Cynthia Shapiro|Corporate Confidential]] — the unwritten rules that Harris signals obliquely; Shapiro names them explicitly
+- [[Power - Jeffrey Pfeffer|Power]] — the academic framework for the organisational dynamics Harris navigates intuitively
+- [[Stealing the Corner Office - Brendan Reid|Stealing the Corner Office]] — a more aggressive, less diplomatic take on the same territory Harris covers

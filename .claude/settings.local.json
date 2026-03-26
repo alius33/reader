@@ -2,7 +2,19 @@
   "permissions": {
     "allow": [
       "Bash(ls \"C:/Users/maila/Music/reader/summaries/\"*.md)",
-      "Bash(python3 -c \":*)"
+      "Bash(python3 -c \":*)",
+      "Bash(ls -1 /c/Users/maila/Music/reader/analysis/*.md)",
+      "Bash(xargs -I {} basename {})",
+      "Bash(sed 's/_[^_]*$//')",
+      "Bash(find /c/Users/maila/Music/reader/summaries -name *.md -not -name _index.md -type f)",
+      "Bash(xargs -I {} basename {} .md)",
+      "Bash(for f:*)",
+      "Bash(do basename:*)",
+      "Bash(find C:UsersmailaMusicreadersummaries -name *.md -not -path */.obsidian/* -not -name _index.md -empty)",
+      "Bash(xargs -0 wc -l)",
+      "Bash(sed 's/\\\\.md$//')",
+      "Bash(sed 's/\\\\.[^.]*$//')",
+      "Bash(python scripts/validate.py --analysis --all --report)"
     ]
   }
 }

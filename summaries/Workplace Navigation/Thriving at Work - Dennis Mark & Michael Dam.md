@@ -61,6 +61,21 @@ Both authors observed the same pattern repeatedly throughout their careers: tech
 - The Western expectation that employees will advocate for themselves, push back on unreasonable demands, and actively campaign for their own advancement clashes with these cultural instincts
 - <b style="color: #27ae60">Understanding this clash — and learning to bridge it without losing your authenticity — is critical for professionals navigating between these worlds</b>
 
+```mermaid
+flowchart LR
+    A[Technical Competence] --> D[Career Success]
+    B[Soft Skills] --> D
+    C[Political Awareness] --> D
+    A -.- E["Schools teach this"]
+    B -.- F["Nobody teaches these"]
+    C -.- F
+    style D fill:#27ae60,color:#fff
+    style E fill:#2980b9,color:#fff
+    style F fill:#e74c3c,color:#fff
+```
+
+The formula's implication is stark: technical excellence without soft skills and political awareness leaves you invisible to the people who control advancement, while even moderate technical competence combined with strong interpersonal skills and political navigation produces disproportionate career returns.
+
 ---
 
 ## Key Concepts at a Glance
@@ -77,6 +92,8 @@ Both authors observed the same pattern repeatedly throughout their careers: tech
 | **Influence mapping** | The org chart shows reporting lines, not influence lines — map who decides, who influences, and who controls access |
 | **Managing up** | Your relationship with your manager determines access, ratings, visibility, and promotion more than any other factor |
 | **Saying no as prioritisation** | Frame overload as a zero-sum resource allocation exercise, forcing the requester to decide what gets dropped |
+| **Visibility-Credibility-Expertise** | The three elements form a virtuous cycle — each reinforces the others to produce disproportionate influence |
+| **Cultural code-switching** | Professionals from collectivist backgrounds must learn to self-promote without violating their own values |
 
 ---
 
@@ -89,9 +106,14 @@ Both authors observed the same pattern repeatedly throughout their careers: tech
 - Most people treat networking as a job-search activity — something you do when you are desperate
 - The authors argue this is backwards
 - <b style="color: #27ae60">The time to build relationships is when you have nothing to ask for</b>, because that is when the relationships feel genuine rather than transactional
+- A network is not a list of contacts — it is a web of relationships where each party has demonstrated value to the other over time
+- The psychology is simple: people help people they know, like, and feel indebted to
+  - If your first interaction with someone is asking for a favour, you have no deposits in the relationship account
+  - If you have spent years quietly helping them, sharing information, or making introductions, the ask feels like a natural exchange
 
 > [!example] The HP Colleague Who Never Asked for a Favour
 > - A colleague at HP spent years quietly helping people across different departments — reviewing proposals, making introductions, sharing market intelligence
+> - He treated every interaction as an opportunity to contribute rather than extract
 > - When a VP role opened that was not publicly advertised, three different people in the network told him about it on the same day
 > - He got the interview before the posting went live
 > - The colleague had never asked any of these people for a favour — the referrals came as a natural return on years of goodwill
@@ -101,6 +123,7 @@ Both authors observed the same pattern repeatedly throughout their careers: tech
 > - After being laid off from a tech company, one of the authors scrambled to activate a network that did not exist
 > - Cold emails went unanswered
 > - Former colleagues he had never maintained contact with politely declined to help
+> - LinkedIn connections who barely remembered him offered sympathetic but empty encouragement
 > - The lesson was stark: a network is an investment that must be made continuously, not a resource that can be created on demand
 > **The lesson:** You cannot withdraw from an account you never deposited into.
 
@@ -111,8 +134,10 @@ The authors provide tactical advice on networking:
 
 - Attend industry events with the goal of making two genuine connections, not fifty business card exchanges
 - Follow up within 48 hours with a personalised reference to the conversation
-- Offer value before asking for anything
+- Offer value before asking for anything — share an article, make an introduction, offer expertise
 - Maintain relationships through periodic check-ins even when there is nothing specific to discuss
+- <b style="color: #2980b9">The 2-2-2 rule</b>: every two weeks, reconnect with two people you have not spoken to recently — a five-minute coffee or a short message is sufficient
+- The key metric is not the size of your network but the number of people who would take your call unprompted
 
 ---
 
@@ -123,6 +148,7 @@ The authors provide tactical advice on networking:
 - Dennis Mark, who hired hundreds of people at HP, shares a revealing detail:
   - Most hiring managers spend less than 30 seconds on the first scan of a resume
   - If the key qualifications are not immediately visible — in the top third of the first page — the resume goes to the reject pile regardless of what is on page two
+  - Resumes are not read — they are scanned, and the scan follows a predictable pattern: name, current role, top three bullet points
 - <b style="color: #e74c3c">Burying your key qualifications below the fold is a silent rejection trigger</b>
 
 > [!example] The Abstract vs. Concrete Candidate at NetApp
@@ -136,6 +162,12 @@ The authors provide tactical advice on networking:
   - Widely known but rarely executed well
   - The common failure is spending too long on Situation and Task and rushing through Action and Result
   - The interviewer cares most about what you actually did and what happened because of it
+  - A rough ratio: 15% Situation, 10% Task, 50% Action, 25% Result
+- The authors also stress the importance of **asking questions** during interviews:
+  - Candidates who ask no questions signal disinterest or passivity
+  - Candidates who ask only about compensation and benefits signal a transactional mindset
+  - The best questions demonstrate that you have researched the company and are thinking about how you would contribute
+  - "What does success look like in the first six months?" is a question that simultaneously signals ambition, humility, and practical focus
 
 ---
 
@@ -144,12 +176,17 @@ The authors provide tactical advice on networking:
 *Your first weeks in a new role are an asymmetric opportunity — small actions create lasting impressions that take months of counter-evidence to revise.*
 
 - The onboarding chapters emphasise a principle the authors return to throughout the book: <b style="color: #27ae60">first impressions are disproportionately sticky</b>
-- People form judgements quickly and update them slowly
+- People form judgements quickly and update them slowly — a phenomenon psychologists call the **primacy effect**
 - The early weeks in any new role are asymmetric — you can establish a positive reputation with relatively small actions, but recovering from a negative first impression requires months of counter-evidence
+- The authors recommend a structured approach to the first 90 days:
+  - **Days 1-30:** Listen, observe, learn the landscape — who holds power, who controls information, who are the informal leaders
+  - **Days 31-60:** Begin contributing, but frame contributions as building on what exists rather than replacing it
+  - **Days 61-90:** Start shaping, proposing changes, and demonstrating your unique value
 
 > [!example] The Listener at Seagate
 > - A new hire at Seagate spent his first month primarily listening
 > - He attended meetings, took notes, asked thoughtful questions, and resisted the temptation to announce how things were done at his previous company
+> - His questions revealed that he was paying close attention: "You mentioned the Q3 pipeline gap — how has the team addressed that before?"
 > - Within six weeks, senior colleagues were actively seeking his input
 > - He had not proven technical superiority — his questions had been perceptive enough to signal competence without threatening anyone
 > **The lesson:** Listening first earns you the right to be heard later.
@@ -157,9 +194,22 @@ The authors provide tactical advice on networking:
 > [!example] The Oracle Comparison That Backfired at HP
 > - A manager joined HP from a competitor and immediately began criticising existing processes in her first team meeting
 > - Her suggestions were technically sound, but the delivery — "At Oracle we did it this way" — alienated her team within the first week
+> - Team members began avoiding her, withholding information, and pushing back on reasonable requests
 > - Three months later, she had the right ideas and no one willing to execute them
-> - She left within a year
+> - She left within a year, blaming the team for being "resistant to change"
 > **The lesson:** Being right is worthless if no one is willing to follow you.
+
+> [!tip] Core Insight
+> The first 90 days are not about proving your brilliance — they are about building the relationships and credibility that will allow your brilliance to be heard when it matters.
+
+---
+
+The authors identify a specific trap for high-achievers joining new organisations:
+
+- <b style="color: #e74c3c">The "I was hired to change things" fallacy</b> — the belief that because you were brought in from outside, the organisation expects immediate disruption
+- Even when this is technically true (the job description may literally say "drive transformation"), the people you need to implement the change were not consulted about your hiring
+- They see a stranger criticising their work — not a saviour arriving with better ideas
+- The authors recommend earning the right to change things by first demonstrating that you understand and respect what exists
 
 ---
 
@@ -171,6 +221,8 @@ The authors provide tactical advice on networking:
 
 - The communication section begins with a deceptively simple observation: <b style="color: #27ae60">clarity beats eloquence</b>
 - The person who is understood immediately wields more influence than the person who is admired for their prose
+- This is especially counterintuitive for people trained in academic or technical writing, where thoroughness and precision are valued
+- In corporate environments, thoroughness without brevity is noise
 
 The authors provide a framework they call <b style="color: #2980b9">bottom-line-up-front (BLUF)</b>, borrowed from military communication:
 
@@ -178,6 +230,8 @@ The authors provide a framework they call <b style="color: #2980b9">bottom-line-
 - Then provide the supporting evidence
 - Then handle objections
 - Most people do this backwards — building up to their conclusion — which means the busy executive has stopped reading before reaching the point
+- The psychology is straightforward: executives make dozens of decisions per day and have learned to allocate attention ruthlessly
+  - If you do not signal your point in the first sentence, you have already lost the competition for their attention
 
 > [!example] The 40-Slide Deck at HP
 > - A junior product manager at HP presented a 40-slide deck building methodically to a recommendation on slide 37
@@ -193,6 +247,14 @@ The authors provide a framework they call <b style="color: #2980b9">bottom-line-
 - For written communication, the authors emphasise that emails are not essays:
   - The most effective format: a subject line that states the action required, the first sentence containing the request or key information, and bullet points for supporting details
   - <b style="color: #e74c3c">Emails longer than one screen are rarely read in full</b> — and the most important information tends to be buried at the bottom, precisely where it is least likely to be seen
+  - The authors recommend the "newspaper test": if the reader only sees the subject line and the first sentence, do they know what you need from them?
+
+> [!abstract] The Effective Email Format
+> 1. **Subject line** states the action required: "Decision needed: Q3 budget allocation by Friday"
+> 2. **First sentence** contains the request or key information
+> 3. **Bullet points** for supporting details — no dense paragraphs
+> 4. **Bold** the deadline or critical action item
+> 5. **Keep to one screen** — if it requires scrolling, it needs to be a meeting, not an email
 
 ---
 
@@ -204,6 +266,13 @@ The authors provide a framework they call <b style="color: #2980b9">bottom-line-
   - <b style="color: #2980b9">Informational presentations</b> — conveying data, results, or status
   - <b style="color: #2980b9">Persuasive presentations</b> — advocating for a decision, resource, or course of action
 
+| Presentation Type | Goal | Structure | Common Mistake |
+|------------------|------|-----------|----------------|
+| **Informational** | Share data, results, status | Data → analysis → implications | Burying the key finding |
+| **Persuasive** | Advocate for a decision | Problem → solution → objection → ask | No specific ask |
+
+Each type demands a different structure, and conflating them is the most common presentation failure the authors observe.
+
 > [!abstract] Persuasive Presentation Framework
 > 1. Start with the problem the audience cares about
 > 2. Present your proposed solution
@@ -211,15 +280,23 @@ The authors provide a framework they call <b style="color: #2980b9">bottom-line-
 > 4. Close with a specific ask
 
 - The common mistake is opening with background that the audience already knows, which signals that you have prepared your presentation for yourself rather than for them
+- Another failure: ending with a summary slide rather than an ask
+  - A summary tells the audience what they just heard — an ask tells them what you need
+  - <b style="color: #e74c3c">If you do not ask, you do not get</b>
 
 > [!example] Dam's Missing Ask at NetApp
 > - Michael Dam presented a pricing strategy change to a Senior VP at NetApp
-> - He had prepared an exhaustive market analysis
+> - He had prepared an exhaustive market analysis — competitor pricing, margin scenarios, customer sensitivity data
 > - The VP listened for three minutes and said: "I trust your analysis. What do you need from me?"
 > - Dam realised he had prepared to convince but had not prepared to ask
+> - He had no specific request ready — no dollar figure, no timeline, no resource allocation
 > **The lesson:** Every presentation to a decision-maker should end with a clear, specific request — "I need your approval," "I need $200K in budget," "I need you to raise this with the board."
 
-- <b style="color: #e74c3c">If you do not ask, you do not get</b>
+The authors also address presentation anxiety, noting that:
+
+- Nervousness decreases with repetition — the first presentation is always the hardest
+- Rehearsing out loud (not just reviewing slides) reduces anxiety and improves timing
+- <b style="color: #27ae60">The audience wants you to succeed</b> — most presentation anxiety is based on the false assumption that the audience is hoping you will fail
 
 ---
 
@@ -242,13 +319,55 @@ Conflating these types is the primary cause of meeting dysfunction.
 > 2. Start every meeting by stating its purpose and the decision or outcome expected
 > 3. Assign a note-taker before the meeting begins
 > 4. Close with explicit action items, owners, and deadlines
+> 5. Send a summary email within 2 hours
 
 > [!example] The VP Who Ended Every Meeting on Time at HP
 > - A VP at HP ended every meeting exactly on time, regardless of where the discussion stood
 > - He would announce "We have two minutes left — let's capture actions" with mechanical precision
 > - Within a month, his entire organisation had learned to structure their contributions efficiently because they knew the clock was immovable
 > - His meetings ran 30% shorter than average and produced clearer outcomes, because participants came prepared knowing they would not be given extra time
+> - Other teams began requesting transfers to his group partly because his meeting discipline freed up hours per week
 > **The lesson:** An immovable clock teaches an entire organisation to be concise.
+
+The authors also note a subtler meeting skill:
+
+- **Strategic silence** — knowing when not to speak in a meeting is as important as knowing when to contribute
+- People who speak on every topic dilute their impact
+- People who speak rarely but substantively are listened to more carefully when they do
+- <b style="color: #2980b9">The credibility-per-word ratio</b> increases with selectivity — the less you speak, the more weight each contribution carries
+
+---
+
+### Cross-Cultural Communication
+
+*The authors devote specific attention to professionals from collectivist cultures operating in individualist corporate environments, where the rules of engagement are fundamentally different.*
+
+- In many Asian and Latin American cultures, self-promotion is considered distasteful, and deference to seniority is the default
+- In Western (particularly American) corporate environments, the expectation is reversed:
+  - Employees are expected to advocate for themselves
+  - Silence is interpreted as having nothing to contribute
+  - Deference is interpreted as lacking confidence or competence
+- The gap is not about ability — it is about <b style="color: #2980b9">cultural code-switching</b>
+
+```mermaid
+flowchart LR
+    A["Collectivist Norms"] --> C["Tension"]
+    B["Individualist Workplace"] --> C
+    C --> D["Code-Switching Skill"]
+    D --> E["Bridge Both Worlds"]
+    style A fill:#2980b9,color:#fff
+    style B fill:#e74c3c,color:#fff
+    style E fill:#27ae60,color:#fff
+```
+
+The tension between collectivist instincts and individualist expectations creates a gap that must be bridged through deliberate practice — not by abandoning your values but by expanding your repertoire.
+
+- The authors recommend treating self-promotion as a learnable skill rather than a personality trait:
+  - Practise talking about your accomplishments in low-stakes settings first
+  - Frame self-promotion as informing rather than boasting — "I want to make sure you're aware that..." rather than "I did this amazing thing"
+  - Use third-party validation: "The client mentioned that..." or "The VP noted that..."
+- <b style="color: #27ae60">Reframe self-promotion as a service to your manager</b> — they need to know what you have done in order to advocate for you
+  - You are not bragging — you are providing them with the ammunition they need for calibration meetings
 
 ---
 
@@ -263,6 +382,7 @@ Conflating these types is the primary cause of meeting dysfunction.
 - Each broken commitment or betrayed confidence is a withdrawal worth multiples of the deposit
 - The asymmetry is critical — trust takes years to build and moments to destroy
 - This makes trust preservation as important as trust building
+- The authors estimate the asymmetry ratio at roughly 5:1 — it takes five kept commitments to build the trust that one broken commitment destroys
 
 > [!example] The Most Reliable Person at Seagate
 > - A VP at Seagate, whenever he needed something done urgently, always called the same person
@@ -270,6 +390,7 @@ Conflating these types is the primary cause of meeting dysfunction.
 > - Not the most talented person on the team — not the most senior — simply the most reliable
 > - Her career advanced steadily while more talented but less consistent colleagues were passed over
 > - She had accumulated a reserve of trust that made her the default choice for high-visibility assignments
+> - Those high-visibility assignments, in turn, gave her the exposure she needed for promotion — a virtuous cycle initiated by simple reliability
 > **The lesson:** Reliability beats talent when the stakes are high.
 
 > [!example] The Public Reversal
@@ -278,6 +399,7 @@ Conflating these types is the primary cause of meeting dysfunction.
 > - The person he had promised to support never trusted him again
 > - More importantly, everyone in the room who witnessed the reversal quietly downgraded their assessment of his reliability
 > - The boss may have been satisfied in the moment, but the colleague's reputation for dependability was permanently damaged across the entire group
+> - In subsequent meetings, people stopped sharing their plans with him in advance — he had become an unreliable ally
 > **The lesson:** One public betrayal destroys trust not just with the victim but with every witness.
 
 > [!tip] Core Insight
@@ -286,15 +408,17 @@ Conflating these types is the primary cause of meeting dysfunction.
 The authors identify key trust behaviours:
 
 - **Trust-building:**
-  - Deliver on every commitment, even small ones
+  - Deliver on every commitment, even small ones — especially small ones, because they signal whether your word is reliable
   - Be honest when you cannot meet a deadline rather than going silent
-  - Share credit generously
+  - Share credit generously — people notice who amplifies others
   - Never reveal confidential information, even when doing so would benefit you
   - Maintain consistent behaviour regardless of who is in the room
 - **Trust-destroying:**
   - <b style="color: #e74c3c">Saying one thing in private and another in public</b>
   - Taking credit for others' work
   - Maintaining hidden agendas
+  - Gossiping about colleagues — even when the gossip is accurate
+  - Making commitments you do not intend to keep
 
 ---
 
@@ -327,6 +451,9 @@ The three elements reinforce each other in a virtuous cycle — credibility make
   - After three or four delivered commitments, people start assuming you will deliver the fifth
   - After one missed commitment, they start hedging
 - <b style="color: #e74c3c">Visibility without credibility is toxic, and expertise without credibility is academic</b>
+- The authors stress that credibility is not about perfection — it is about honesty
+  - If you are going to miss a deadline, communicating that early preserves credibility
+  - Going silent and missing the deadline destroys it
 
 ---
 
@@ -344,7 +471,7 @@ The three elements reinforce each other in a virtuous cycle — credibility make
 > - When the performance review came, he expected a top rating
 > - Instead, he received a mediocre ranking
 > - The reason: in the forced-ranking meeting, other managers said they were not aware of his contributions
-> - His own manager tried to advocate for him but was outnumbered
+> - His own manager tried to advocate for him but was outnumbered by managers who had prepared better cases for their own people
 > - Results he knew were excellent were invisible to the people who controlled his rating
 > - From that point on, he never assumed that good work would speak for itself
 > **The lesson:** Excellence that nobody sees is indistinguishable from mediocrity in a calibration meeting.
@@ -353,6 +480,7 @@ The three elements reinforce each other in a virtuous cycle — credibility make
 > - A colleague at HP who was objectively less skilled technically but consistently volunteered for cross-functional projects, presented at quarterly reviews, and made a point of sharing his work with executives from other departments
 > - His name came up in evaluation meetings because multiple managers knew him
 > - When a promotion opportunity arose, he was the obvious candidate — not because he was the best performer, but because he was the best-known performer
+> - His visibility created a self-reinforcing cycle: high visibility led to better assignments, which led to more visibility
 > **The lesson:** In forced-ranking systems, being known is a prerequisite for being rated highly.
 
 ---
@@ -360,6 +488,9 @@ The three elements reinforce each other in a virtuous cycle — credibility make
 **Expertise** means becoming the recognised go-to person in a specific area that the organisation values:
 
 - When executives need help with something and your name is the one that comes up, the normal power dynamic inverts — they come to you, rather than you seeking access to them
+- The authors distinguish between having expertise and being known for it:
+  - Many people possess deep expertise but have never positioned themselves as the go-to person
+  - The positioning requires deliberate effort — volunteering for relevant projects, presenting on the topic, writing internal whitepapers, mentoring others in the area
 
 > [!example] Dennis Mark's Business Dashboard at HP
 > - Dennis Mark developed a business dashboard at HP that became the standard reporting tool for management
@@ -376,6 +507,14 @@ The triangle's key insight:
 - Visibility alone makes you known but unimpressive
 - Expertise alone makes you useful but siloed
 - All three together create **disproportionate influence** relative to formal authority
+
+| Element | Alone | Combined with Others |
+|---------|-------|---------------------|
+| **Credibility** | Reliable but forgettable | Foundation for trust-based influence |
+| **Visibility** | Known but unimpressive | Platform for amplifying expertise |
+| **Expertise** | Useful but siloed | Engine for organic authority |
+
+The strongest careers are built by deliberately developing all three elements simultaneously rather than hoping that expertise alone will be enough.
 
 ---
 
@@ -404,14 +543,16 @@ The triangle's key insight:
   - The authors describe a colleague who would agree enthusiastically to proposals in meetings and then work behind the scenes to undermine them
   - Because his public face was so agreeable, it took months for people to connect the pattern of sabotage to its source
   - The counter-strategy is vigilance: pay attention to what happens after meetings, not just what is said during them
+  - Track commitments versus delivery — a pattern of public agreement followed by private obstruction is the signature of a Hidden Dragon
 
 The common counter-strategy across all types:
 
 - Stay professional
 - Force specifics — vague complaints and claims dissolve under questioning
-- Maintain paper trails
+- Maintain paper trails — email confirmations of verbal agreements
 - Escalate through proper channels when necessary
 - <b style="color: #e74c3c">Engaging emotionally with any of these types is almost always counterproductive</b> — the person causing the problem is rarely the person who changes, so the goal is containment and self-protection, not reform
+- The authors note that in some cases, the best strategy is simply distance — not every difficult colleague requires a tactical response; sometimes the optimal move is to minimise exposure and redirect your energy
 
 ---
 
@@ -423,6 +564,8 @@ The common counter-strategy across all types:
   - <b style="color: #2980b9">Developmental feedback</b> — designed to help someone improve
   - <b style="color: #2980b9">Evaluative feedback</b> — designed to assess performance
 - Conflating the two is why most feedback conversations fail
+- When someone hears evaluative language ("Your communication skills are weak"), they shift into defensive mode
+- When they hear developmental language ("Here's something I noticed that might help"), they are more likely to engage
 
 > [!abstract] The SBI Feedback Model
 > 1. **Situation** — When and where the behaviour occurred
@@ -432,12 +575,17 @@ The common counter-strategy across all types:
 - The key is specificity:
   - <b style="color: #e74c3c">"You need to communicate better" is useless feedback</b> because it gives no actionable information
   - "In yesterday's client meeting, you interrupted the client twice while she was explaining her concerns, and she visibly disengaged after the second interruption" is feedback someone can act on
+  - The difference is not diplomatic language — it is concrete observation versus abstract judgement
 
 When receiving feedback, the authors offer a more counterintuitive recommendation:
 
 - <b style="color: #27ae60">Ask for feedback proactively and often, especially the negative kind</b>
 - Most people wait for feedback to be delivered to them, which means they only hear it during formal reviews when the stakes are high and the environment is tense
 - Asking "What's one thing I could do differently?" in a routine one-to-one normalises the conversation and surfaces problems while they are still small enough to fix
+- The authors also recommend a cooling-off period: when you receive critical feedback, your first instinct will be to defend or explain
+  - Resist that instinct
+  - Say "Thank you, let me think about that" and process it later when the emotional reaction has subsided
+  - The person who receives feedback gracefully earns more feedback — and more feedback means faster growth
 
 ---
 
@@ -472,6 +620,7 @@ The four steps move from understanding to action — each builds on the intellig
 > - When Dam dug into BTP's situation, he discovered that their real concern was revenue predictability, not price per unit
 > - They were a small company dependent on a few large customers, and what they feared most was demand volatility
 > - This insight unlocked a deal structure that neither side would have reached through pure price haggling
+> - The breakthrough came not from pushing harder on price but from asking better questions about what BTP actually needed
 > **The lesson:** The stated issue is rarely the real issue — dig deeper before making your first offer.
 
 ---
@@ -507,6 +656,7 @@ The four steps move from understanding to action — each builds on the intellig
 - Understanding the other party's constraints and minimum terms helps you calibrate your ask
 - If you can identify their floor, you can pitch just above it — maximising your gain while staying within the zone where a deal is possible
 - The more you know about their constraints, alternatives, and pressures, the more precisely you can target your proposal
+- Sources of intelligence: public filings, industry benchmarks, mutual contacts, and the negotiation conversation itself — what they react to reveals what matters to them
 
 > [!tip] Core Insight
 > The best negotiators do not push harder — they understand deeper. Knowing the other side's true priorities unlocks deals that pure price haggling never reaches.
@@ -528,6 +678,7 @@ Cautions:
 
 - All options must be genuinely acceptable to you — offering a package you would regret is worse than offering no choice at all
 - <b style="color: #e74c3c">Too many options create decision paralysis</b> — two to three is the optimal range
+- Each option should differ on a meaningful dimension, not just price — otherwise you are simply offering three price points, which is haggling with extra steps
 
 ---
 
@@ -544,7 +695,20 @@ Cautions:
 > - Six months later, nothing happened
 > - A year later, she raised it again and was told the timeline had changed
 > - She had no written commitment, no defined milestones, and no leverage — because she had already moved
+> - Three years later, she still held the same title
 > **The lesson:** Verbal promises without documentation are not commitments — the negotiation is not complete until the terms are in writing.
+
+The authors provide a checklist of elements to negotiate before accepting:
+
+- Base salary and bonus structure
+- Title and reporting line
+- Scope and team size
+- Equity or stock options (if applicable)
+- Review timeline and promotion criteria
+- Relocation support
+- Flexibility arrangements
+- Development budget
+- <b style="color: #2980b9">Written confirmation of all agreed terms</b> — if it is not in writing, it does not exist
 
 ---
 
@@ -566,6 +730,9 @@ Cautions:
 
 - The strategic implication: energy spent negotiating within-band raises — while not wasted — has dramatically lower return than energy spent positioning for a promotion
 - Many employees focus on the wrong lever because raises feel more immediate and less risky to ask for
+- The authors recommend thinking about compensation strategy over a 10-year horizon:
+  - One promotion every 2-3 years produces dramatically better outcomes than annual 3-5% raises at the same level
+  - The compounding effect means that a promotion received two years earlier can be worth six figures over a career
 
 ---
 
@@ -585,11 +752,16 @@ Cautions:
   - You are not the person refusing work — you are the person asking management to make a resource allocation decision
   - <b style="color: #e74c3c">"I can't do this" positions you as uncooperative</b>
   - "I'm currently committed to A, B, and C — which of these should I deprioritise to take on D?" positions you as a team player constrained by physics
+- The power of the reframe is that it makes the cost of the new request visible:
+  - Most managers do not realise how much their team is already carrying
+  - When they see the full list of commitments, many will withdraw the request or reassign it
+  - When they insist, at least you have a documented agreement about what gets dropped
 
 The authors also caution against over-use:
 
 - The zero-sum framing is a tool for material scope additions, not routine requests
 - Someone who pushes back on everything develops a reputation for inflexibility that is harder to overcome than the occasional overloaded week
+- <b style="color: #27ae60">Reserve the reframe for genuine overload situations — not for work you simply do not want to do</b>
 
 ---
 
@@ -599,6 +771,8 @@ The authors also caution against over-use:
 
 - The authors argue that <b style="color: #27ae60">managing your manager is the single highest-leverage skill in corporate life</b>, more important than any technical ability
 - They provide a depth of tactical detail that most workplace books lack
+- The reasoning is structural: your manager controls your access to information, your visibility to senior leaders, your performance rating, and your promotion timeline
+  - No other single relationship has this much impact on your career trajectory
 
 ### Adapt First, Then Shape
 
@@ -627,12 +801,14 @@ The authors also caution against over-use:
 - If you can identify what your manager struggles with and quietly fill that gap, you become uniquely valuable — not just for your assigned work but as a force-multiplier for their effectiveness
 - <b style="color: #27ae60">Managers reward people who make their lives easier and reduce their stress</b>
 - The person who compensates for the boss's weakness gains trust, access, and influence disproportionate to their formal role
+- This is not about doing the manager's job — it is about supplementing their capabilities in areas where they are weakest
 
 > [!example] Taking Over Budget Management
 > - One of the authors took over budget management for a VP who was visibly uncomfortable with financial details
 > - The VP was an excellent strategist and communicator but would defer, delay, or delegate anything involving spreadsheets and forecasts
 > - By quietly taking on the budget process — preparing the numbers, presenting them in the VP's preferred format, handling the detail questions in management meetings — the author became indispensable
 > - The VP extended trust, access, and influence that went far beyond what the author's formal role would have justified
+> - The VP began including him in strategic discussions that had nothing to do with budgets — simply because he had earned a seat at the table
 > **The lesson:** Fill your manager's gaps discreetly — the reward is outsized trust and access.
 
 > [!example] The Meeting Summary Email
@@ -647,6 +823,7 @@ The authors also caution against over-use:
   - <b style="color: #e74c3c">Publicly highlighting a manager's weakness while "helping" them is not management — it is humiliation</b>
   - The person whose help makes the manager look competent earns loyalty
   - The person whose help makes the manager look dependent earns resentment
+  - The distinction is subtle but career-defining
 
 ---
 
@@ -661,6 +838,7 @@ The authors also caution against over-use:
 - The authors describe this as one of the most consistent pet peeves across every manager they interviewed or worked with:
   - <b style="color: #27ae60">Managers would rather hear bad news early — even before you have a solution — than be blindsided in a meeting</b>
   - The early warning gives them time to prepare, to manage their own boss's reaction, and to frame the problem before it frames them
+  - "I don't have a solution yet, but I want you to know that X has happened" is always better than silence followed by a surprise
 
 The qualifier:
 
@@ -719,6 +897,7 @@ The qualifier:
   - The constant flow of information satisfies their need for control
   - Over time — when they realise that monitoring you produces no surprises — they ease off naturally
 - <b style="color: #e74c3c">The mistake most people make is resisting the micromanagement, which confirms the micromanager's fear that they need to watch you more closely</b>
+- Resistance creates a vicious cycle: more resistance leads to more monitoring leads to more frustration leads to more resistance
 
 **The Clueless and Dangerous:**
 
@@ -737,6 +916,15 @@ The qualifier:
   - Document agreed priorities in writing so you have a reference point when the winds change
   - When the manager proposes a new direction, ask: "How does this relate to what we agreed last week?"
   - The documentation creates friction against impulsive changes without directly challenging the manager's authority
+
+**The Absent Manager:**
+
+- The absent manager is not hostile — they are simply not present, either physically or mentally
+- The danger is invisibility: without a manager actively advocating for you, your work disappears in calibration meetings
+- Counter-strategy:
+  - Build relationships with your manager's peers and superiors directly
+  - Volunteer for cross-functional projects that create visibility outside your immediate team
+  - Seek a mentor or sponsor who can serve as an advocate in the rooms your manager never enters
 
 ---
 
@@ -772,9 +960,11 @@ In most large organisations, your rating is determined not by your manager alone
 > 2. Provide your manager a structured evidence package one month before the review cycle
 > 3. Suggest specific people who can give positive feedback if approached
 > 4. Frame accomplishments in terms of business impact, not activity
+> 5. Connect each accomplishment to a stated organisational priority
 
 - "I completed 47 tasks" is not evidence
 - "I delivered the product launch two weeks early, which contributed to $2M in first-quarter revenue" is evidence that a manager can use in a calibration meeting
+- The difference is not semantic — it is the difference between a claim and a case
 
 The distinction between the **"what's"** and the **"how's"**:
 
@@ -797,11 +987,13 @@ The distinction between the **"what's"** and the **"how's"**:
   - HR will investigate harassment claims because failing to do so creates liability
   - HR will process your complaint through the proper channels
   - But they are evaluated on management satisfaction and legal compliance, not employee happiness
+- This does not mean HR is the enemy — it means HR is a tool, and like any tool, it has specific uses:
 
 > [!example] The Credit-Stealing Manager Report
 > - A colleague reported that her manager was taking credit for her work
 > - HR listened, documented the complaint, spoke to the manager, and concluded that the situation was a "communication issue" requiring no action
 > - The colleague felt betrayed, but from HR's perspective, the situation involved no legal exposure and no policy violation — so there was nothing to act on
+> - Worse, the manager learned that the colleague had gone to HR, which damaged their working relationship further
 > **The lesson:** HR solves compliance problems, not career problems.
 
 Practical advice on using HR:
@@ -838,6 +1030,9 @@ The bottom-right quadrant is where most careers stall — urgent trivia crowds o
 > 1. **Block 90 minutes daily** for important-but-not-urgent work before the day's reactive demands begin — this is the only time most professionals have for trajectory-changing work
 > 2. **Conduct a weekly review** where you assess what you spent your time on and whether it aligned with your priorities — most people cannot accurately recall how they spent the previous week, meaning they manage by feel rather than by data
 
+- The authors note that the 90-minute block is not about productivity tricks — it is about protecting the work that matters from the work that merely feels urgent
+- <b style="color: #27ae60">The highest-value work in any career is almost never urgent</b> — networking, strategic thinking, skill development, and relationship building all feel optional in the moment but determine your trajectory over years
+
 ---
 
 ### Navigating Organisational Change
@@ -860,7 +1055,14 @@ The authors recommend three responses to organisational change:
 > - Each time, he immediately identified who would be making staffing decisions in the new structure and arranged informal conversations to understand their priorities
 > - He positioned his work in terms of the new organisation's objectives, not the old one's
 > - While colleagues waited anxiously for announcements, he was already integrating himself into the new power structure
+> - By the third reorganisation, he was being consulted about the new structure rather than waiting to hear about it
 > **The lesson:** During change, the proactive survive and the passive are reorganised out.
+
+The authors also address the emotional dimension of change:
+
+- Reorganisations trigger a grief response — people mourn the loss of familiar structures, relationships, and routines
+- Acknowledging this emotional reality while still acting strategically is the hallmark of someone who navigates change well
+- <b style="color: #e74c3c">The worst response to change is paralysis</b> — waiting for clarity before acting, when the clarity comes too late to matter
 
 ---
 
@@ -874,8 +1076,11 @@ The authors recommend three responses to organisational change:
 - The chapter provides a glossary of common business idioms with explanations and usage examples
 - More usefully, it advises non-native speakers to build their own glossary over time:
   - Write down unfamiliar phrases when you hear them
-  - Look them up
+  - Look them up after the meeting
   - Practise using them until they feel natural
+- The broader point extends beyond language to cultural norms:
+  - How meetings are run, how disagreement is expressed, how decisions are communicated — all of these vary by company culture, national culture, and industry
+  - The person who reads these unwritten rules quickly gains an advantage that has nothing to do with competence
 
 ---
 
@@ -911,12 +1116,13 @@ Goodwill operates like compound interest — the longer it accumulates without w
 > - By creating a tool that executives across the organisation relied on, he accumulated goodwill with dozens of people who benefited from his work
 > - When he needed support for a budget request months later, he did not have to lobby — people he had helped volunteered their support because they felt they owed him
 > - The goodwill had been deposited without any explicit expectation of return, which made it more valuable, not less
+> - The dashboard became a gateway to relationships that would have taken years to build through conventional networking
 > **The lesson:** The most powerful political assets are created by solving real problems — not by playing politics.
 
 The model has limits the authors are honest about:
 
 - Goodwill has a shelf life — deposits made years ago lose value if the relationship is not maintained
-- Some people simply do not reciprocate
+- Some people simply do not reciprocate — they take without returning, and continued investment in these relationships produces diminishing returns
 - In toxic environments, goodwill can be exploited without return — you give and give and receive nothing, because the institutional culture does not reward reciprocity
 - But in functional organisations, <b style="color: #27ae60">the person with the largest balance of goodwill across the widest network has the most political capital</b>
 - This is the foundation of sustainable influence — not fear, not authority, not manipulation, but a pattern of helpfulness that creates an army of people who feel positively inclined toward you when your name comes up
@@ -950,6 +1156,8 @@ The three layers operate simultaneously — the formal decider signs off, but th
 > - As Chief of Staff to a Senior VP at NetApp, Dam controlled the VP's meeting agenda, determined which issues were presented as urgent versus routine, filtered incoming requests, and shaped the briefing materials the VP read before making decisions
 > - He had no formal decision-making authority — every decision was technically the VP's
 > - But he wielded significant influence over which decisions were made, when they were made, and what information they were based on
+> - People who understood this sought Dam's input before presenting to the VP
+> - People who bypassed him often found their proposals mysteriously delayed or deprioritised
 > **The lesson:** The person who controls what the decision-maker sees often shapes the decision more than the person who makes it.
 
 - In most organisations, these gatekeepers are invisible on the org chart:
@@ -962,6 +1170,7 @@ The authors recommend that before attempting to influence any important decision
 
 - Map all three layers: the formal decider, the informal influencers, and the access controllers
 - Then build your approach around the map, not around the org chart
+- The difference between a proposal that succeeds and one that fails is often not the quality of the proposal but the quality of the political mapping that preceded it
 
 ---
 
@@ -996,3 +1205,5 @@ The book is best understood as a **checklist of hygiene factors** — things tha
 - [[The First 90 Days - Michael D. Watkins|The First 90 Days]] — essential companion for the onboarding and new-manager chapters, with a more structured transition framework
 - [[Never Split the Difference - Chris Voss|Never Split the Difference]] — Chris Voss's negotiation framework addresses the power-asymmetry gap that this book leaves open
 - [[Secrets to Winning at Office Politics - Marie G. McIntyre|Office Politics]] — Oliver James's deeper and more cynical examination of workplace political dynamics
+- [[How to Win Friends and Influence People - Dale Carnegie|How to Win Friends and Influence People]] — the foundational text on interpersonal influence that underpins much of this book's advice on trust and visibility
+- [[Influence - Robert Cialdini|Influence]] — Cialdini's research on reciprocity directly supports the goodwill-as-currency model that Mark and Dam describe

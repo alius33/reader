@@ -64,6 +64,8 @@ The architecture of the book follows naturally from this framework. Alter walks 
 | **Derailers** | Invisible habits like fillers, uptalk, and fidgeting that silently destroy presence |
 | **The Gesture Box** | The zone from sternum to hips where gestures appear most natural and controlled |
 | **Projection as Calibrated Energy** | Projection is not raw volume but volume, eye contact, vitality, and expression aimed at the furthest listener |
+| **The Internal-External Gap** | The disconnect between how you experience yourself and how others experience you |
+| **The Duck-on-Water Principle** | Glide smoothly on the surface while paddling furiously underneath -- never self-comment on mistakes |
 
 ---
 
@@ -76,6 +78,10 @@ The architecture of the book follows naturally from this framework. Alter walks 
 - In one study, students watched silent two-second clips of teachers they had never met and rated them on various qualities
   - Those ratings correlated strongly with the ratings given by students who had taken the teacher's full-semester course
   - Two seconds of silent footage predicted the same outcome as four months of personal experience
+- The implications are staggering:
+  - Your audience is not waiting for your argument to unfold
+  - They are not reserving judgement until they hear your data
+  - They have already formed a powerful first draft of their opinion -- and everything you say after that either confirms or must overcome the draft
 
 > [!tip] Core Insight
 > Your audience is not waiting to hear your argument before deciding whether you are credible. They have already decided -- or at least formed a powerful first draft -- before you finish your first sentence. Nonverbal signals are the filter, not the supplement.
@@ -83,6 +89,8 @@ The architecture of the book follows naturally from this framework. Alter walks 
 - The nonverbal signals you broadcast in those opening moments are not supplementary to your message -- they are the filter through which your message will be received:
   - If the filter says "uncertain," then even a brilliant argument sounds tentative
   - If the filter says "authoritative," then even a modest claim sounds confident
+  - If the filter says "warm and competent," then even a disagreeable message lands as considered
+  - If the filter says "nervous and fidgety," then even an agreeable message sounds unreliable
 
 ---
 
@@ -90,6 +98,25 @@ The architecture of the book follows naturally from this framework. Alter walks 
 - Content expertise, strategic thinking, technical knowledge -- none of these register with the audience if the physical delivery fails to open the gate
 - This is why people with genuine expertise sometimes struggle to be heard, while people with less substance but stronger physical signals are listened to with rapt attention
 - <b style="color: #e74c3c">The playing field is not fair</b> -- but it is readable, and once you understand the rules, you can play by them deliberately
+- Alter is not cynical about this reality -- she treats it as a design feature of human cognition
+  - Our ancestors needed to make rapid assessments of strangers: friend or threat, competent or incompetent, trustworthy or deceptive
+  - Thin slicing is evolutionarily useful, even when it produces errors in modern contexts
+  - The point is not to lament the injustice but to understand the mechanism and work with it
+
+```mermaid
+flowchart TD
+    A["First 2 Seconds"] --> B["Nonverbal Filter Forms"]
+    B --> C{"Filter Assessment"}
+    C -->|"Confident signals"| D["Message received<br>as authoritative"]
+    C -->|"Uncertain signals"| E["Message received<br>as tentative"]
+    D --> F["Credibility established"]
+    E --> G["Credibility undermined"]
+    style A fill:#2980b9,color:#fff
+    style F fill:#27ae60,color:#fff
+    style G fill:#e74c3c,color:#fff
+```
+
+The thin-slicing mechanism means that nonverbal signals function as a pre-filter -- they shape how every subsequent piece of content is interpreted.
 
 ---
 
@@ -111,36 +138,46 @@ Most professionals cluster at Level 3 across most behaviours. Level 4 is the tar
   - Someone with Level 1 eye contact does not look at the audience at all
   - Someone with Level 1 volume whispers or trails off into inaudibility
   - This level is rare in professionals but devastating when it appears
+  - It produces a visceral response in the audience -- not just "this person is weak" but "something is wrong"
 - **Level 2 -- Below Average:**
   - Level 2 eye contact means glancing at people briefly but never holding a gaze
   - Level 2 volume means being heard in a quiet room but losing the audience in any setting with background noise
+  - Level 2 is where most people who "need coaching" sit -- visible enough to be a problem, not visible enough for the person to notice on their own
 - **Level 3 -- Adequate:**
   - This is where most professionals live -- the communication equivalent of a C grade
   - No one complains, but no one is impressed either
   - <b style="color: #e74c3c">The danger of Level 3 is its invisibility</b> -- you never get feedback that you are forgettable
+  - Level 3 communicators get the meeting done, give the presentation adequately, survive the interview without embarrassment
+  - But they are not remembered, not promoted on the basis of their presence, and not selected for the high-visibility assignments
 - **Level 4 -- Optimal:**
   - <b style="color: #27ae60">Strong enough to differentiate you from the majority of Level 3 communicators</b>
   - Level 4 volume fills the room without shouting
   - Level 4 eye contact holds for three to five seconds per person, long enough to register as genuine connection
   - Level 4 posture is upright and grounded without rigidity
+  - Level 4 is where people start saying things like "she has presence" or "he commands the room" -- and they cannot articulate why, because the signals are processed below conscious awareness
 - **Level 5 -- Too Much:**
   - Level 5 volume is shouting; Level 5 eye contact is staring; Level 5 posture is wooden rigidity
   - In reality, Level 5 is extremely rare
   - For every person who speaks too loudly, two hundred speak too softly
   - The asymmetry is enormous: the risk of overshooting is almost always smaller than the risk of undershooting, yet the fear of overshooting dominates most people's self-regulation
+  - <b style="color: #e74c3c">The fear of Level 5 is what keeps most professionals permanently parked at Level 3</b>
 
 ---
 
 - The genius of the scale is that it gives people a concrete, non-judgemental diagnostic
 - Instead of "you need more executive presence," the scale allows: "your eye contact is at Level 2, your volume is at Level 3, your posture is at Level 4"
 - Each behaviour gets its own rating, its own diagnosis, and its own targeted improvement path
+- This precision matters because credibility is not monolithic
+  - A person can have excellent posture (Level 4) but terrible vocal projection (Level 2)
+  - Another person can have commanding volume (Level 4) but no eye contact (Level 1)
+  - The scale allows you to identify the weakest link and focus your practice there
 
 ```mermaid
 flowchart LR
-    A["Level 1\nAbsent"] --> B["Level 2\nBelow Average"]
-    B --> C["Level 3\nAdequate"]
-    C --> D["Level 4\nOptimal"]
-    D --> E["Level 5\nToo Much"]
+    A["Level 1<br>Absent"] --> B["Level 2<br>Below Average"]
+    B --> C["Level 3<br>Adequate"]
+    C --> D["Level 4<br>Optimal"]
+    D --> E["Level 5<br>Too Much"]
     style C fill:#f39c12,color:#fff
     style D fill:#27ae60,color:#fff
 ```
@@ -156,6 +193,30 @@ Most professionals cluster at Level 3 (amber) and need to push toward Level 4 (g
 - <b style="color: #2980b9">The Three Pillars</b> are **posture**, **voice**, and **eye contact**
 - These are the non-negotiable baseline
 - Without all three at Level 4, nothing else matters
+- Alter's hierarchy is explicit: get these three right first, then worry about gestures, facial expression, and vocal variety
+  - The pillars are foundational because they are always visible
+  - You can choose not to gesture, but you cannot choose not to have posture
+  - You can choose not to speak, but the moment you do, your volume and inflection are broadcasting
+  - You can choose to close your eyes, but the moment you open them, your gaze patterns are being read
+
+```mermaid
+flowchart TD
+    A["The Three Pillars"] --> B["Posture"]
+    A --> C["Voice"]
+    A --> D["Eye Contact"]
+    B --> E["Stillness + grounding"]
+    C --> F["Volume + inflection"]
+    D --> G["3-5 second holds"]
+    E --> H["Credibility<br>Established"]
+    F --> H
+    G --> H
+    style A fill:#2980b9,color:#fff
+    style H fill:#27ae60,color:#fff
+```
+
+All three pillars must reach Level 4 before any other communication behaviour can meaningfully contribute to perceived credibility.
+
+---
 
 ### Posture: The Silent Broadcast
 
@@ -164,6 +225,9 @@ Most professionals cluster at Level 3 (amber) and need to push toward Level 4 (g
 - Alter argues that posture is the single most powerful nonverbal signal because it is always on
   - You cannot stop broadcasting it, and you cannot choose not to be seen
   - Every moment you are visible, your posture is telling the room something about your confidence, your comfort, and your authority
+- Posture is also the hardest signal to fake, because it is the most automated
+  - A person can consciously project their voice or force eye contact for a few minutes
+  - But posture tends to revert to its default within seconds of the conscious effort relaxing
 
 > [!tip] Core Insight
 > The key principle is stillness. A still torso, a level head, minimal extraneous movement -- these are among the most powerful authority signals available.
@@ -172,6 +236,10 @@ Most professionals cluster at Level 3 (amber) and need to push toward Level 4 (g
   - <b style="color: #27ae60">Eagles and owls sit still on their perches</b>, scanning the environment with calm control -- they are read as regal, wise, and powerful
   - <b style="color: #e74c3c">Small birds -- sparrows, wrens, starlings -- twitch, hop, and dart</b> -- they are read as nervous, inconsequential, and prey-like
   - Every weight shift, every foot shuffle, every head bob costs credibility in real time
+- The analogy maps precisely onto human behaviour:
+  - The CEO who sits still, hands resting calmly on the table, head level, eyes steady, is read as being in command
+  - The junior analyst who shifts in the chair, crosses and uncrosses legs, adjusts glasses, and taps a pen is read as anxious and out of their depth
+  - Neither person may be aware of what their body is doing -- but the room is reading it continuously
 
 ---
 
@@ -181,6 +249,10 @@ Most professionals cluster at Level 3 (amber) and need to push toward Level 4 (g
   - A person whose entire body moves constantly reads as scattered
   - A person whose entire body is frozen reads as tense
   - The middle ground -- still centre, animated periphery -- is what reads as genuine authority
+- This distinction matters because many people, on hearing "be more still," overcorrect into rigidity
+  - Rigidity looks tense, uncomfortable, and unnatural
+  - It signals effort, not ease
+  - True authority looks effortless -- the body is quiet because the mind is settled, not because the muscles are locked
 
 > [!example] Bill the Architect -- Losing Pitches Despite the Best Designs
 > - Bill, an architect, could not understand why he kept losing project pitches despite having the best designs in the room
@@ -201,7 +273,8 @@ Most professionals cluster at Level 3 (amber) and need to push toward Level 4 (g
 > 2. Keep the head level -- not tilted, not bobbing
 > 3. Imagine a string pulling the crown of the head upward
 > 4. When seated, sit forward on the chair with the spine supported by its own strength, not by the backrest
-> 5. These sound trivially simple -- which is why most people assume they are already doing them, and why video feedback is so consistently shocking
+> 5. When standing, avoid leaning on the lectern, the table, or the wall -- each lean surrenders energy
+> 6. These sound trivially simple -- which is why most people assume they are already doing them, and why video feedback is so consistently shocking
 
 ---
 
@@ -214,6 +287,10 @@ Most professionals cluster at Level 3 (amber) and need to push toward Level 4 (g
   - Only one in two hundred speaks too loudly
   - The ratio is **40:1** in favour of undershooting
   - <b style="color: #e74c3c">Yet the fear of being too loud keeps the vast majority of underpowered speakers from correcting the problem</b>
+- This asymmetry is one of the book's most powerful data points because it explodes a common assumption:
+  - People believe the risk of being too loud is roughly equal to the risk of being too soft
+  - The actual risk ratio is wildly skewed -- 40 to 1
+  - Almost no one overshoots, but the phantom fear of overshooting keeps millions of people stuck at Level 3
 
 ---
 
@@ -228,6 +305,10 @@ Most professionals cluster at Level 3 (amber) and need to push toward Level 4 (g
   - Their internal experience of effort does not match the external experience of output
   - They feel like they are projecting, but the person at the back of the table hears only a murmur
   - The internal meter is miscalibrated, and without external feedback the miscalibration persists indefinitely
+- This miscalibration has a neurological basis:
+  - When you speak, you hear your own voice through bone conduction as well as air conduction
+  - Your voice sounds louder and deeper to you than it does to anyone else
+  - The person standing ten feet away hears only the air conduction version -- which is significantly softer and thinner than what you hear internally
 
 > [!example] Grant the Software Executive -- Confidence Without Volume
 > - Grant, a software executive, felt confident and assertive in meetings but his team consistently ignored his input
@@ -236,6 +317,14 @@ Most professionals cluster at Level 3 (amber) and need to push toward Level 4 (g
 > - His internal experience of confidence was real, but his external signal was timidity
 > - The gap between intention and perception was the entire problem
 > **The lesson:** Feeling confident does not make you sound confident -- external calibration is the only reliable check.
+
+> [!example] The Workshop Participant Who "Couldn't Be Louder"
+> - A woman in one of Alter's workshops insisted she could not speak any louder
+> - Alter asked her to imagine speaking to someone across a noisy restaurant -- her volume immediately doubled
+> - She was not physically limited; she was psychologically limited
+> - Her internal governor was set to "polite indoor voice," and she had never had reason to override it
+> - The capacity was there; the permission was not
+> **The lesson:** Most volume problems are not physical limitations but psychological governors set too low.
 
 - The fix is deceptively simple: calibrate your volume so the person furthest from you hears every word without effort
   - Not shouting -- that is Level 5
@@ -257,6 +346,12 @@ Most professionals cluster at Level 3 (amber) and need to push toward Level 4 (g
 
 Diaphragmatic breathing underpins all four dimensions -- it is the single physical skill that improves volume, resonance, pace control, and inflection simultaneously.
 
+- **Pace** deserves special attention:
+  - Nervous speakers accelerate -- the faster they speak, the faster the audience loses them
+  - But the opposite error -- speaking so slowly that every sentence feels laborious -- is equally damaging
+  - The ideal is a varied pace: normal speed for exposition, slightly faster for energy and excitement, noticeably slower for emphasis and key points
+  - <b style="color: #27ae60">The strategic slowdown is one of the most underused tools in the communicator's arsenal</b> -- dropping your pace for a single sentence signals "this is the important part"
+
 ---
 
 ### Eye Contact: The Credibility Multiplier
@@ -265,6 +360,10 @@ Diaphragmatic breathing underpins all four dimensions -- it is the single physic
 
 - Holding eye contact for <b style="color: #2980b9">three to five seconds per person</b> -- not scanning the room, not darting from face to face -- is the single behaviour that most transforms the perception of confidence and connection
 - Most people operate at one to two seconds, which registers as evasive or distracted
+- The difference between two seconds and four seconds sounds trivial -- but the perceptual impact is enormous
+  - Two seconds feels glancing and uncommitted
+  - Four seconds feels like a genuine conversation between two individuals
+  - The listener at the receiving end of four-second eye contact feels personally addressed, which transforms passive listening into active engagement
 
 Why is eye contact so powerful? Alter identifies two mechanisms:
 
@@ -272,10 +371,13 @@ Why is eye contact so powerful? Alter identifies two mechanisms:
   - Strong eye contact from the speaker compels attention from the listener
   - When you look someone in the eye for a full phrase, they feel individually addressed, personally acknowledged, and therefore more engaged
   - They are more likely to nod, to pay attention, and to feel connected to your message
+  - This creates a virtuous cycle: your eye contact produces their engagement, which produces your confidence, which improves your delivery
 - **Second, strong eye contact focuses the speaker's own thinking:**
   - <b style="color: #27ae60">Darting eyes scatter thought; focused eyes focus thought</b>
   - When your gaze is anchored on one person for a complete idea, your brain organises itself around completing that idea coherently
   - When your eyes are flitting across the room, your brain follows them into fragmentation
+  - This is why speakers who look at their slides, at the ceiling, or at the floor tend to lose their train of thought more frequently
+  - The eyes are not just output devices -- they are steering mechanisms for cognitive processing
 
 > [!example] Nikhil -- Rewriting a Cultural Subroutine
 > - Nikhil, a workshop participant, found sustained eye contact genuinely uncomfortable
@@ -284,6 +386,14 @@ Why is eye contact so powerful? Alter identifies two mechanisms:
 > - The solution was not to override his cultural instincts overnight but to desensitise gradually -- starting with three-second holds in safe, low-stakes conversations, then extending the duration and raising the stakes over weeks
 > - By the end of his coaching, Nikhil could maintain four-second eye contact in board presentations without conscious effort
 > **The lesson:** Even deeply ingrained cultural subroutines can be rewritten through gradual, low-stakes practice.
+
+> [!example] The Presenter Who Talked to the Projector Screen
+> - A workshop participant consistently delivered his presentations to the projector screen rather than to the audience
+> - He would turn to check the slide and then remain facing the screen while speaking -- sometimes for thirty seconds at a time
+> - The audience saw his back and heard a muffled voice directed away from them
+> - He was unaware of the habit until he saw the video -- from his perspective, he was simply referencing his slides
+> - The fix was simple: glance at the slide, turn back to the audience, then speak
+> **The lesson:** You cannot build credibility with the back of your head.
 
 ---
 
@@ -297,6 +407,10 @@ Why is eye contact so powerful? Alter identifies two mechanisms:
   - Below three seconds feels fleeting and inattentive
   - Beyond five seconds, without softening facial animation, eye contact can begin to feel confrontational
   - Cultural variation exists, and Alter acknowledges it, though the book operates primarily within Western professional norms
+- Eye contact also functions as a status signal:
+  - Higher-status individuals tend to hold eye contact while speaking and reduce it while listening
+  - Lower-status individuals tend to avoid eye contact while speaking and increase it while listening (looking up at the speaker deferentially)
+  - By consciously maintaining strong eye contact while you speak, you are signalling equal status regardless of your actual position in the hierarchy
 
 ---
 
@@ -307,6 +421,9 @@ Why is eye contact so powerful? Alter identifies two mechanisms:
 - The second tier of credibility behaviours, after the three pillars, involves the hands
 - Alter identifies three categories of hand position
 - Research on congenitally blind individuals shows that they gesture while speaking even though they have never seen anyone gesture -- the impulse is innate, not learned
+- This means suppressing gesture -- holding your hands behind your back, stuffing them in your pockets, gripping a pen for dear life -- is working against your neurology
+  - It requires effort that would be better spent on your message
+  - It produces a visible tension that the audience reads as discomfort
 
 ### Masking Positions
 
@@ -316,6 +433,9 @@ Why is eye contact so powerful? Alter identifies two mechanisms:
   - Gripping the lectern, holding a pen like a security blanket
 - <b style="color: #e74c3c">All of these signal discomfort, defensiveness, or a desire to self-soothe</b>
 - They tell the room that the speaker is not fully at ease, even when the speaker feels perfectly fine
+- The problem is compounded by frequency:
+  - People tend to adopt their masking position as a default whenever they are not actively gesturing
+  - This means the majority of the presentation is spent in a position that signals defensiveness
 
 > [!example] The Senior Engineer with Hidden Hands
 > - A senior engineer habitually clasped his hands behind his back when presenting
@@ -330,6 +450,10 @@ Why is eye contact so powerful? Alter identifies two mechanisms:
 - Gestures that originate from within this box and move outward look natural, controlled, and purposeful
 - Gestures that originate from outside the box -- wide sweeping arms, hands raised above the head, or below the waist -- look theatrical or desperate depending on context
 - The navel is the **sweet spot** -- the default resting position from which gestures initiate naturally
+- Why the navel? Because it is the body's centre of gravity
+  - Hands resting at navel height look relaxed and ready
+  - They can initiate gestures in any direction without the arm having to travel far
+  - They neither signal defensiveness (too low) nor aggression (too high)
 
 ### Three Gesture Types
 
@@ -341,12 +465,14 @@ Why is eye contact so powerful? Alter identifies two mechanisms:
 
 Reach gestures are the safest default; chop gestures are the most powerful but the most easily overdone.
 
----
-
 - <b style="color: #27ae60">Start gesturing with your first word</b>
 - Many speakers begin with their hands locked or hidden and only start gesturing once they relax, which may be minutes into their talk
   - By then, the first impression is already set
 - Beginning with hands at navel height and moving them outward with the first phrase signals immediate ease and engagement
+- The relationship between gesture types and the AvA scale is direct:
+  - Reach and show gestures lean toward approachability
+  - Chop gestures lean toward authority
+  - A speaker who uses all three in appropriate proportions can calibrate their presence moment by moment
 
 ---
 
@@ -358,6 +484,7 @@ Reach gestures are the safest default; chop gestures are the most powerful but t
 - These are the invisible leaks in the system
 - You could have Level 4 posture, volume, and eye contact, and a single persistent derailer could undermine all three
 - <b style="color: #e74c3c">The danger of derailers is precisely their invisibility</b>: because the speaker is unaware of them, they persist indefinitely unless someone points them out
+- Alter catalogues several categories of derailers, each with its own mechanism of damage
 
 ### Filler Words
 
@@ -367,6 +494,9 @@ Reach gestures are the safest default; chop gestures are the most powerful but t
 - Four out of five professionals use fillers excessively, according to Alter's workshop data
 - The problem is not that fillers exist -- one or two per paragraph is natural and human
 - The problem is when fillers become compulsive, filling every pause and cushioning every assertion
+- The damage operates on two levels:
+  - **Signal level:** each filler tells the listener "I am uncertain about what I am saying"
+  - **Cumulative level:** a stream of fillers creates cognitive noise that makes the listener work harder to extract meaning from the speech
 
 > [!example] Caroline Kennedy's "You Know" (2008-2009)
 > - During her campaign for Hillary Clinton's vacated New York Senate seat, Kennedy sat for an interview with the New York Daily News
@@ -388,11 +518,14 @@ Reach gestures are the safest default; chop gestures are the most powerful but t
 - Why do fillers persist? Because they serve a real psychological function:
   - They are **placeholders for silence** -- the speaker's brain abhors a vocal vacuum
   - When thinking, hesitating, or transitioning between ideas, the instinct is to fill the gap with sound rather than leaving it empty
+  - Silence feels dangerous to the speaker -- it feels like losing control of the conversation
+  - But the listener experiences silence completely differently
 - The counterintuitive truth:
   - <b style="color: #27ae60">A deliberate pause actually increases perceived intelligence and confidence</b>
   - The listener interprets the pause as thoughtfulness, composure, and command
   - The speaker who pauses deliberately appears to be choosing their words carefully
   - The speaker who fills with "um" appears to be struggling to find words at all
+  - Great orators throughout history have understood this -- the pause is not an absence of speech but a form of speech
 
 > [!abstract] The Filler Replacement Drill
 > 1. Practise speaking for 30 seconds on any topic
@@ -413,6 +546,7 @@ Reach gestures are the safest default; chop gestures are the most powerful but t
 - Alter traces the spread of uptalk from its origins in 1980s "valley girl" speech patterns in Southern California to its current pervasiveness across professional communication
   - The pattern has become so common that many people do not recognise they are doing it
   - They hear their own speech as neutral and are genuinely surprised when video reveals the rising inflection
+  - Uptalk has spread across genders, ages, and regions -- it is no longer limited to any demographic
 
 ---
 
@@ -421,10 +555,14 @@ Reach gestures are the safest default; chop gestures are the most powerful but t
   - But among senior audiences -- executives, board members, decision-makers -- uptalk consistently registers as lacking conviction
   - The senior listener hears the rising inflection and instinctively interprets it as the speaker being unsure of their own claims
   - Whether this interpretation is fair is irrelevant; it is consistent and powerful
+- Alter distinguishes between three contexts for upward inflection:
+  - **Legitimate questions** -- upward inflection is correct and expected
+  - **Lists** -- upward inflection on items 1 through n-1 signals "there is more coming"; the final item drops to signal completion
+  - **Declarative statements** -- upward inflection is always a derailer, converting authority into uncertainty
 
 > [!abstract] Fixing Uptalk
 > 1. End every declarative statement with a pitch that drops -- a vocal period rather than a vocal question mark
-> 2. Practise with simple, factual statements first: "My name is Sarah" ↓ "I work in finance" ↓ "This project launched in January" ↓
+> 2. Practise with simple, factual statements first: "My name is Sarah" (down) "I work in finance" (down) "This project launched in January" (down)
 > 3. Build to more complex professional statements
 > 4. The only appropriate context for upward inflection is actual questions and item-by-item lists (where upward inflection signals "there is more coming," and the final item drops to signal completion)
 
@@ -443,6 +581,10 @@ Reach gestures are the safest default; chop gestures are the most powerful but t
   - A fumbled word, corrected without facial commentary, is a non-event -- the listener's brain auto-corrects and moves on
   - But a fumbled word followed by a wince, an "I'm sorry," or a visible grimace becomes a **credibility moment**
   - The speaker has flagged their own imperfection and invited the listener to register it
+- The psychology is simple:
+  - The audience takes its cue from the speaker
+  - If the speaker treats a stumble as trivial, the audience does too
+  - If the speaker treats a stumble as significant, the audience registers that significance
 
 > [!example] Kimi's Pre-emptive Apologies
 > - Kimi, a workshop participant, began every presentation with an apology
@@ -451,6 +593,13 @@ Reach gestures are the safest default; chop gestures are the most powerful but t
 > - But the cumulative effect was to tell the room, repeatedly, that she was not competent
 > - The room believed her -- not because it was true, but because she said it so often and so convincingly
 > **The lesson:** The audience takes its cue from the speaker's self-assessment, not from the speaker's actual performance.
+
+> [!example] The Surgeon Who Apologised Mid-Presentation
+> - A surgeon presenting at a medical conference stumbled over a technical term and immediately said, "Sorry, I'm terrible with these long words"
+> - The audience laughed politely, but the damage was done -- for the rest of the presentation, they were primed to notice any further stumbles
+> - A colleague presenting the same day stumbled over a similar term, corrected it without any facial reaction, and continued
+> - The audience did not register the second stumble at all
+> **The lesson:** The wince costs more than the stumble.
 
 - <b style="color: #27ae60">The fix: when you stumble, correct the word and continue without changing your facial expression, without breaking eye contact, and without apologising</b>
   - No wince, no shrug, no "sorry"
@@ -470,6 +619,10 @@ Reach gestures are the safest default; chop gestures are the most powerful but t
   - <b style="color: #27ae60">Purposeful movement</b> -- walking to the whiteboard, gesturing toward a slide, stepping toward a listener for emphasis -- adds energy and variety
   - <b style="color: #e74c3c">Purposeless movement</b> -- pacing, rocking, tapping -- leaks energy and focus
 - The test is simple: if the movement serves the message, keep it; if it serves the speaker's nervous system, eliminate it
+- Alter notes that fidgeting is particularly damaging in seated settings:
+  - Standing, a speaker can at least channel nervous energy into purposeful movement
+  - Seated, the energy has nowhere to go -- so it leaks out as pen-clicking, paper-shuffling, chair-rocking, and finger-drumming
+  - In meetings, where you are seated and visible for long periods, fidgeting is a continuous credibility drain
 
 ---
 
@@ -494,12 +647,16 @@ Neither pole is inherently better -- the question is always what the situation r
 - A one-on-one mentoring conversation requires more approachability
 - A board presentation requires both -- authority when presenting the data, approachability when fielding questions
 - <b style="color: #27ae60">The skill is calibration, not maximisation</b>
+- The common mistakes:
+  - People who default to authority become rigid and intimidating when the situation calls for connection
+  - People who default to approachability become warm but weightless when the situation calls for command
+  - Neither is wrong in absolute terms -- both are wrong when applied to the wrong context
 
 ```mermaid
 flowchart LR
-    A["Authority\n(Command)"] <-->|"Calibrate to context"| B["Approachability\n(Connection)"]
-    A --> C["Keynotes\nBoard presentations\nCrisis moments"]
-    B --> D["Mentoring\nTeam check-ins\nQ&A sessions"]
+    A["Authority<br>(Command)"] <-->|"Calibrate to context"| B["Approachability<br>(Connection)"]
+    A --> C["Keynotes<br>Board presentations<br>Crisis moments"]
+    B --> D["Mentoring<br>Team check-ins<br>Q&A sessions"]
     style A fill:#2980b9,color:#fff
     style B fill:#27ae60,color:#fff
 ```
@@ -521,8 +678,13 @@ The best communicators operate fluidly across this spectrum rather than being an
 | **Gestures** | Relaxed, open | Emphatic, chopping |
 | **Gaze** | Direct but soft | Locked, intense |
 | **Voice** | Strong but not strained | High tension, forced |
+| **Body energy** | Calm, centred, settled | Leaning forward, coiled, tense |
 | **Overall impression** | Calm control | Barely contained intensity |
 | **Audience reaction** | Respect -- want to listen and follow | Resistance -- want to push back or disengage |
+
+- The distinction is fundamentally about tension:
+  - Authority is relaxed strength -- the person could escalate but chooses not to
+  - Aggression is forced strength -- the person is already at maximum intensity and has nowhere to go
 
 > [!example] The Woman Told She Was "Too Authoritative"
 > - A woman in one of Alter's workshops had been told by her boss that she was "too authoritative" and needed to soften her style
@@ -573,6 +735,13 @@ The best communicators operate fluidly across this spectrum rather than being an
   - When you finish speaking and someone else begins: spine relaxes slightly, head tilts toward the speaker, hands come to rest, eyes focus on the speaker's face
   - <b style="color: #27ae60">The transition itself signals awareness and social intelligence</b>
 
+> [!example] The Meeting Wallflower
+> - A talented product manager consistently made strong points in meetings but was routinely overlooked
+> - Video review showed the problem: she made her points from catcher posture -- leaned back, head tilted, voice soft, hands in her lap
+> - Her words said "I have an opinion," but her body said "please don't notice me"
+> - After learning to shift into pitcher posture before speaking -- sitting forward, levelling her head, projecting her voice -- her contributions began landing with the weight they deserved
+> **The lesson:** The posture you speak from determines whether your words are received as assertions or afterthoughts.
+
 ---
 
 ## Projection and Connection
@@ -596,11 +765,20 @@ The best communicators operate fluidly across this spectrum rather than being an
   - The number should be taken loosely (Alter herself does not defend it as rigorous science), but the principle is sound
   - Audiences have a finite supply of compensatory effort
   - <b style="color: #27ae60">Proper projection -- aiming your energy at the back of the room -- makes listening effortless and extends the window of attention considerably</b>
+- Projection is not just a vocal phenomenon:
+  - It includes facial expression -- expressions that are large enough to be read from the back row
+  - It includes eye contact -- sweeping the room systematically so everyone feels included
+  - It includes physical vitality -- the energy of the body matching the energy of the voice
+  - A person who projects vocally but has a dead face creates a dissonant signal
+  - A person who has an animated face but a weak voice creates a different kind of dissonance
+  - True projection is the alignment of all channels at the appropriate intensity for the size of the room
 
 > [!abstract] Projection Calibration
 > 1. Before you begin speaking, identify the person furthest from you
 > 2. Calibrate your volume, eye contact, and energy so that person hears every word without straining
 > 3. Everyone between you and that person will be automatically served
+> 4. Adjust upward as the room gets larger, noisier, or more formal
+> 5. Adjust downward as the room gets smaller, quieter, or more intimate
 
 ---
 
@@ -614,6 +792,10 @@ The best communicators operate fluidly across this spectrum rather than being an
   - Raised eyebrows (signals "this matters, are you with me?")
   - Reaching gestures toward specific people (makes individuals feel personally included)
   - Strategic pauses (creates space for the listener's internal processing and response)
+- The mechanism behind reciprocal responses is <b style="color: #2980b9">mirror neurons</b>:
+  - When you nod, the listener's mirror neurons fire, producing an impulse to nod back
+  - When you lean forward, the listener's body subtly mirrors the lean
+  - By managing your own nonverbal output, you are indirectly managing the audience's engagement
 
 > [!example] The Unresponsive Garage Attendant
 > - An employee was famously unresponsive, stone-faced, and resistant to any social interaction
@@ -651,12 +833,20 @@ The best communicators operate fluidly across this spectrum rather than being an
 - Alter also raises the issue of the <b style="color: #2980b9">resting face</b> -- what your face does when you are not consciously managing it:
   - Some people's resting faces look angry, sad, bored, or confused
   - The resting face is another subroutine, and it runs continuously
+  - In meetings, the resting face is your default broadcast -- and if it reads as bored or hostile, that is the message every person in the room receives when they glance at you
 
 > [!example] Greta's Closed Eyes
 > - Greta, a workshop participant, discovered through video playback that she closed her eyes when she was concentrating deeply
 > - She thought she was showing intense focus
 > - The room saw someone who had fallen asleep
 > **The lesson:** Your internal experience of concentration has no bearing on what your face actually shows.
+
+> [!example] The VP with the Angry Resting Face
+> - A vice president was told by multiple colleagues that he always seemed angry
+> - He was not angry; his resting face -- furrowed brow, downturned mouth, narrowed eyes -- simply defaulted to an expression that read as hostile
+> - He had no idea until the feedback became impossible to ignore
+> - The fix required him to practise a slightly lifted brow and relaxed jaw as his new default -- not a smile, just a neutral that did not read as angry
+> **The lesson:** Your resting face is your most frequent broadcast -- and most people have never seen it.
 
 - The fix for listening posture mirrors the fix for speaking posture:
   - Keep the head level, keep the eyes on the speaker, orient the body toward the speaker
@@ -679,6 +869,10 @@ The best communicators operate fluidly across this spectrum rather than being an
   - You do not choose to speak softly -- your volume is set by a subroutine you last calibrated in childhood
   - You do not choose to avoid eye contact -- your gaze patterns were established long before you entered the professional world
   - These behaviours are invisible to the person performing them because they are automatic
+- The gap is also maintained by social politeness:
+  - People rarely give honest nonverbal feedback
+  - No one tells you "you fidget constantly" or "your voice is too soft" because it feels rude
+  - So the gap persists, reinforced by silence
 
 ---
 
@@ -698,6 +892,14 @@ Alter provides several case studies that illustrate the gap's consequences:
 > - He was smiling internally, but the signal was not reaching his facial muscles
 > **The lesson:** Feeling an expression is not the same as showing one.
 
+> [!example] The Manager Who Looked Disinterested
+> - A manager thought she was showing interest in her team's ideas during one-on-ones
+> - She would nod internally but keep her face neutral, lean back in her chair, and look at her notepad
+> - Her team read this as disinterest and stopped bringing ideas to her
+> - When she saw the video, she understood -- her internal interest produced zero external signal
+> - The fix was to make her interest visible: lean forward, make eye contact, nod visibly, let her face react
+> **The lesson:** Internal engagement without external expression is invisible -- and invisible engagement is the same as no engagement.
+
 - These stories illustrate a common theme:
   - People are consistently wrong about their own nonverbal behaviours
   - Not slightly wrong -- <b style="color: #e74c3c">dramatically wrong</b>
@@ -714,9 +916,9 @@ Alter provides several case studies that illustrate the gap's consequences:
 
 ```mermaid
 flowchart LR
-    A["Stage 1\nUnconsciously\nIncompetent"] -->|"Video feedback"| B["Stage 2\nConsciously\nIncompetent"]
-    B -->|"Deliberate practice"| C["Stage 3\nConsciously\nCompetent"]
-    C -->|"Repetition in\nlow-stakes settings"| D["Stage 4\nUnconsciously\nCompetent"]
+    A["Stage 1<br>Unconsciously<br>Incompetent"] -->|"Video feedback"| B["Stage 2<br>Consciously<br>Incompetent"]
+    B -->|"Deliberate practice"| C["Stage 3<br>Consciously<br>Competent"]
+    C -->|"Repetition in<br>low-stakes settings"| D["Stage 4<br>Unconsciously<br>Competent"]
     style A fill:#e74c3c,color:#fff
     style D fill:#27ae60,color:#fff
 ```
@@ -733,15 +935,18 @@ The journey from blind incompetence to automatic mastery requires different inte
   - This is the uncomfortable stage after watching your first video playback
   - You can see the fidgeting, hear the filler words, notice the darting eyes, but cannot stop them in real time
   - This stage feels like regression because awareness precedes ability
+  - Many people get stuck here because the discomfort of awareness makes them avoid further practice
 - **Stage 3 -- Consciously Competent:**
   - You can perform the correct behaviour, but only with deliberate effort and concentration
   - You can hold eye contact for four seconds, but only if you are actively thinking about it
   - The moment your attention shifts to content, the old subroutine reasserts itself
   - This is the fragile stage -- the skill exists but is not yet habitual
+  - <b style="color: #e74c3c">This is also the stage where high-stakes situations are most dangerous</b> -- the new skill competes with content for conscious processing bandwidth
 - **Stage 4 -- Unconsciously Competent:**
   - <b style="color: #27ae60">The new behaviour is automatic -- it is the new subroutine</b>
   - You hold eye contact for four seconds without thinking about it
   - Under pressure, the new behaviour persists because it is embedded in muscle memory, not in conscious effort
+  - This is the only stage where the skill is reliable under stress
 
 ---
 
@@ -754,6 +959,8 @@ The journey from blind incompetence to automatic mastery requires different inte
   - Alter uses the analogy of ice skating: you cannot deliver a speech while learning to skate
   - You can only deliver a speech while skating if skating is already automatic
   - Similarly, you cannot hold eye contact while also thinking about your content if eye contact is still a conscious skill
+  - The practice must happen in environments where the content stakes are zero -- casual conversations, coffee orders, corridor chats
+  - In these environments, the full bandwidth of conscious attention can be devoted to the new behaviour
 
 > [!tip] Core Insight
 > Under the adrenaline of a major presentation, conscious processing capacity is taxed to its limit. Any skill that still requires conscious effort will be the first to collapse. Only subroutines survive adrenaline.
@@ -773,18 +980,26 @@ The journey from blind incompetence to automatic mastery requires different inte
 > 3. Each interaction is a miniature practice session
 > 4. Over days and weeks, the conscious skill becomes a subroutine
 > 5. The subroutine survives progressively higher-stakes situations
+> 6. Only when the current skill is automatic should you add the next one
+
+- The one-skill-at-a-time discipline is crucial:
+  - Trying to fix posture, volume, eye contact, and fillers simultaneously is a recipe for paralysis
+  - The conscious mind cannot monitor four things at once
+  - Pick the weakest link, practise it until automatic, then move to the next
 
 ```mermaid
 flowchart TD
-    A["Choose ONE skill"] --> B["Practise in\nlow-stakes settings"]
-    B --> C["Coffee orders\nCorridor chats\nCasual calls"]
-    C --> D["Skill becomes\nautomatic"]
-    D --> E["Subroutine survives\nhigh-stakes moments"]
+    A["Choose ONE skill"] --> B["Practise in<br>low-stakes settings"]
+    B --> C["Coffee orders<br>Corridor chats<br>Casual calls"]
+    C --> D["Skill becomes<br>automatic"]
+    D --> E["Subroutine survives<br>high-stakes moments"]
+    E --> F["Choose next skill"]
+    F --> B
     style A fill:#2980b9,color:#fff
     style E fill:#27ae60,color:#fff
 ```
 
-The key insight is that mastery transfers upward from calm to chaos, never the reverse.
+The key insight is that mastery transfers upward from calm to chaos, never the reverse -- and the cycle repeats for each new skill.
 
 ---
 
@@ -806,7 +1021,7 @@ The key insight is that mastery transfers upward from calm to chaos, never the r
 
 The book's weaknesses are real but bounded. Alter treats credibility as a purely individual communication skill, disconnected from context, status dynamics, and the political realities of organisations. Whether your nonverbal signals land depends not only on their quality but on who you are relative to the people in the room -- a dimension Alter largely ignores. A junior person projecting Level 4 authority signals may be received very differently from a senior person doing the same, and the book does not address this variation. The evidence base is almost entirely anecdotal -- drawn from workshop observations rather than controlled studies. The "18-minute learning wall" is cited without a proper source, and the claim that "two hours of practice" rewrites a subroutine lacks empirical grounding.
 
-The book also assumes Western business norms as the default, with only passing acknowledgement of cultural variation. And there is no treatment of remote or hybrid communication, where many of these principles require significant adaptation (eye contact means looking at the camera, not the screen; the gesture box is smaller; vocal expression carries more weight because visual cues are limited).
+The book also assumes Western business norms as the default, with only passing acknowledgement of cultural variation. Eye contact norms, personal space expectations, and vocal volume standards differ dramatically across cultures, and what reads as "optimal" in a San Francisco boardroom may read as aggressive in Tokyo or disrespectful in parts of South Asia. There is also no treatment of remote or hybrid communication, where many of these principles require significant adaptation (eye contact means looking at the camera, not the screen; the gesture box is smaller; vocal expression carries more weight because visual cues are limited).
 
 That said, the core insight is sound and actionable: credibility is not a mystery -- it is a set of behaviours, and behaviours can be changed. If you have ever been told you are "hard to read," "too quiet," or "not executive enough" without being given anything concrete to fix, this book is the antidote. It replaces vague, unfixable feedback with specific, observable targets. The reader who takes the book seriously -- who actually records themselves on video, identifies their Level 3 behaviours, and practises the upgrades in low-stakes settings -- will see measurable improvement. Among books on communication and presence, *The Credibility Code* occupies a useful tactical niche. It is less strategic than Sylvia Ann Hewlett's *Executive Presence*, less theatrical than Amy Cuddy's body-language work, and less comprehensive than a full executive coaching programme. But for a self-directed reader who wants a clear, structured manual for the physical mechanics of credibility -- the equivalent of a workshop in book form -- it delivers exactly what it promises.
 
@@ -816,7 +1031,8 @@ That said, the core insight is sound and actionable: credibility is not a myster
 
 ## Related Reading
 
-- [[The 48 Laws of Power - Robert Greene|The 48 Laws of Power]] -- where Alter focuses on how to project credibility, Greene focuses on the power dynamics that determine whose credibility matters
-- [[Power - Jeffrey Pfeffer|Power: Why Some People Have It and Others Don't]] -- Pfeffer's research-grounded argument that self-presentation and political skill determine career outcomes more than merit
-- [[The First 90 Days - Michael D. Watkins|The First 90 Days]] -- Watkins on establishing credibility in new roles, where Alter's nonverbal principles are most immediately applicable
-- [[Executive Presence - Sylvia Ann Hewlett|Executive Presence]] -- Hewlett's broader treatment of presence as a leadership competency, which contextualises Alter's behavioural toolkit within organisational politics
+- [[The Charisma Myth - Olivia Fox Cabane|The Charisma Myth]] -- Cabane explores the psychological and behavioural components of charisma, overlapping with Alter's authority-approachability framework but adding warmth and presence as distinct dimensions
+- [[What Every Body Is Saying - Joe Navarro|What Every Body Is Saying]] -- Navarro provides the reading side of nonverbal communication where Alter provides the broadcasting side -- together they cover both decoding and encoding body language
+- [[Like Switch - Jack Schafer|The Like Switch]] -- Schafer's work on rapport and likability complements Alter's focus on credibility -- the approachability end of the AvA spectrum explored in depth
+- [[How to Win Friends and Influence People - Dale Carnegie|How to Win Friends and Influence People]] -- Carnegie's classic on interpersonal connection, where Alter's nonverbal techniques provide the physical delivery system for Carnegie's principles
+- [[Crucial Conversations - Kerry Patterson|Crucial Conversations]] -- Patterson et al on high-stakes dialogue, where Alter's authority-without-aggression framework directly supports the ability to stay calm and commanding under pressure

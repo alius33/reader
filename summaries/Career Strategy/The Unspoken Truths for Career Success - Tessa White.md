@@ -49,6 +49,8 @@ White's argument is not cynical so much as diagnostic.
 | **If-Then Proposals** | Convert a rejected ask into a conditional experiment that removes risk for the company |
 | **The Choices Discussion** | Manage overwork by presenting your manager with a prioritised list and asking them to decide |
 | **The Feedback Four-Pack** | Seek perception feedback from four different sources to close the gap between self-image and reality |
+| **The 10 Percent Miracle** | Reclaim forty-eight minutes daily for high-impact gap work |
+| **Halfway Conversations** | Decode the coded language managers use to signal serious concerns without saying them plainly |
 
 ---
 
@@ -72,6 +74,16 @@ The seven lies are:
 - Hard work does matter — but it is necessary, not sufficient
 - Managers do sometimes develop their people — but only when it serves their own targets
 - Loyalty is valued — right up until the moment a restructuring makes your role redundant
+- Each lie operates as an invisible ceiling: you cannot push past a barrier you do not know exists
+
+Where do these lies come from?
+
+- **Parents and schools** — institutions that reward effort, obedience, and patience
+  - "Work hard, keep your head down, and good things will happen" is advice that works in a classroom but fails in a boardroom
+  - Schools reward compliance; companies reward impact
+- **Early career conditioning** — first managers who may have been genuinely supportive, creating the false impression that all managers operate this way
+- **Corporate messaging** — mission statements, values walls, and all-hands meetings that describe the company as a meritocracy where talent naturally rises
+  - This messaging is not deliberately deceptive — it describes the aspiration, not the operating reality
 
 > [!tip] Core Insight
 > The workplace runs on invisible rules absorbed from parents, schools, and early managers. White positions herself not as a motivational speaker but as someone describing the rules of a game that most players do not even know they are playing.
@@ -87,11 +99,17 @@ The seven lies are:
 - Every decision — hiring, promotion, restructuring, recognition — is filtered through the question: "Does this contribute to the bottom line?"
 - This is not malice — it is the operating logic of an entity that exists to generate returns for shareholders
 - Understanding this transforms frustration into prediction: if you know the company optimises for profit, you can predict which asks will succeed and which will fail before you make them
+- Even non-profit organisations and government entities have a version of this: they optimise for mission delivery within budget constraints
+- The practical implication: every proposal you make should lead with financial impact, cost avoidance, or strategic value — not with what you want or need
 
 <b style="color: #2980b9">Truth 2: Companies only spend money when it comes back.</b>
 
 - Investment in people is not altruism
 - Training, raises, promotions, and perks are allocated based on expected return
+- White watched companies cut development budgets during downturns but maintain them for "high-potential" employees — the investment continued only where the return was clearest
+- This truth explains why performance alone does not guarantee a raise:
+  - A raise is an investment
+  - The company will make that investment only if it believes the return (retention of a valuable person, increased output, reduced recruitment cost) exceeds the cost
 
 > [!example] The Two Pitches for the Same Programme
 > - A mid-level manager pitched a professional development programme to his VP
@@ -108,6 +126,9 @@ The seven lies are:
 - Your manager's primary incentive is to deliver on their own targets within their budget
 - They will advocate for you when your advancement serves that goal — when losing you would hurt their numbers, when promoting you makes their team look good, when your raise can be justified to their own boss
 - They will not advocate when it does not
+- This is not personal — it is structural
+  - A manager who loves you as a person but whose bonus is tied to headcount costs will not fight for your raise if it hurts their own numbers
+  - A manager who barely knows you will fight for your promotion if losing you to another team would derail a critical project
 
 > [!example] The Supportive Manager Who Did Nothing
 > - A client had an excellent relationship with her manager — regular praise, strong reviews, genuine personal warmth
@@ -117,12 +138,22 @@ The seven lies are:
 > - The manager was not evil — he was aligned to his own incentives, exactly as the model predicts
 > **The lesson:** A manager's verbal support means nothing until it converts into visible action.
 
+> [!example] The Manager Who Fought Hard — For Her Own Reasons
+> - A different client was surprised when her manager aggressively fought for a twenty-percent raise and a title change
+> - The client had not even asked — the manager initiated it
+> - The reason: the manager had just learned that a competitor was recruiting her best people
+> - Losing the client would have cost the manager a critical Q4 deliverable that her own promotion depended on
+> - The manager's advocacy was genuine — but it was triggered by the manager's self-interest, not by the client's merit alone
+> **The lesson:** Manager advocacy is not charity. It activates when your advancement aligns with their incentives.
+
 ---
 
 <b style="color: #2980b9">Truth 4: HR minimises risk.</b>
 
 - HR's institutional function is to protect the company from legal, financial, and reputational risk
 - It is not a neutral counsellor, not a therapist, not an employee advocate
+- When HR investigates a complaint, it is assessing the company's exposure, not adjudicating fairness
+- White describes this without apology — she was an HR executive and she is describing how the function actually operates, not how employees imagine it operates
 
 > [!example] White's Own HR Investigation
 > - An employee came to White in confidence to report that his manager was creating a hostile work environment
@@ -162,6 +193,13 @@ The Company Alignment Model shows that every corporate decision passes through t
 - **The bad-intent list** — everything that could explain the setback as unfairness, conspiracy, or malice
 - **The good-intent list** — everything that could explain it as miscommunication, competing priorities, budget constraints, or incomplete information
 
+The mechanism behind the model:
+
+- Human beings default to threat detection — we are wired to assume the worst because our ancestors who assumed a rustling bush was a predator survived more often than those who assumed it was the wind
+- This survival instinct is maladaptive in the workplace: the "threat" interpretation produces defensive behaviours (withdrawal, aggression, passive resistance) that make the situation worse
+- <b style="color: #27ae60">The good-intent list forces you to generate alternative hypotheses, which produces moves instead of paralysis</b>
+- Even if the bad-intent interpretation is true, the actions it generates (resentment, withdrawal, angry job-hunting) are almost always worse than the actions generated by the good-intent interpretation
+
 > [!example] Marcus the Software Engineer
 > - Marcus was passed over for a team lead role
 > - His bad-intent list: the hiring manager already had someone in mind; the interview process was a formality; his manager did not advocate because she wanted to keep him doing technical work
@@ -170,15 +208,38 @@ The Company Alignment Model shows that every corporate decision passes through t
 > - The good-intent list produced action: scheduling a conversation with the hiring manager, making his leadership interest visible, volunteering for a cross-functional project
 > **The lesson:** The good-intent list produces moves. The bad-intent list produces paralysis.
 
-- <b style="color: #27ae60">White does not claim the good-intent list is always correct — she claims it is always more useful</b>
-- Even if the bad-intent interpretation is true, the actions it generates (resentment, withdrawal, angry job-hunting) are almost always worse than the actions generated by the good-intent interpretation
+> [!example] The Project Manager Who Got Reassigned
+> - A project manager was removed from a high-profile account and assigned to a smaller one without explanation
+> - Her bad-intent list: the VP lost confidence in her; she was being sidelined before termination; someone else was being groomed for her role
+> - Her good-intent list: the smaller account might have a specific problem the VP trusted her to fix; the reassignment might be temporary; the VP might not realise how the move appeared
+> - She used the good-intent list to open a GAP conversation with the VP
+> - The truth: the smaller account was on the verge of being lost, and the VP had moved his strongest relationship manager there as a rescue mission — a compliment, not a demotion
+> - If she had acted on the bad-intent list, she would have started job-hunting and missed what turned out to be a career-defining save
+> **The lesson:** The interpretation you choose determines the actions you take. Choose the one that gives you the most options.
+
 - She applies Stephen Covey's circle of influence model: focus on what you can control, not on what you cannot
   - You cannot control whether the system is rigged
   - You can control whether you seek feedback, build visibility, and communicate your ambitions clearly
 - The reframe is not about being naive — it is about being strategic about where you spend your emotional and professional energy
+- <b style="color: #e74c3c">The bad-intent list is seductive because it feels true and requires no action</b> — it gives you permission to be a victim, which is comfortable but career-ending
 
 > [!tip] Core Insight
 > Generate two interpretations of every setback. Act on the one that gives you more moves, regardless of which one feels more true.
+
+```mermaid
+flowchart TD
+    A[Setback Occurs] --> B[Generate Bad-Intent List]
+    A --> C[Generate Good-Intent List]
+    B --> D[Resentment / Withdrawal]
+    C --> E[Strategic Action]
+    D --> F[Stagnation]
+    E --> G[New Information / Moves]
+    style A fill:#2980b9,color:#fff
+    style F fill:#e74c3c,color:#fff
+    style G fill:#27ae60,color:#fff
+```
+
+The Reframe Model is a decision-forcing function: by requiring you to generate two interpretations before acting, it prevents the automatic threat response from dictating your behaviour.
 
 ---
 
@@ -191,6 +252,10 @@ The mechanism:
 - Human beings are conflict-averse
 - Managers, who are human beings, soften negative feedback, delay difficult conversations, and package criticism in so much positive framing that the criticism itself becomes invisible
 - <b style="color: #e74c3c">By the time a manager has decided someone needs to be fired, the employee has typically received only vague coded hints</b> — comments like "maybe consider being more collaborative" that the employee heard as minor suggestions when the manager meant them as final warnings
+- The perception gap is not a flaw in any individual manager — it is a structural feature of human communication under power asymmetry
+  - The person with power softens the message because delivering harsh truth is uncomfortable
+  - The person without power hears what they want to hear because the alternative is too threatening
+  - Both sides contribute to the gap, and neither side corrects it
 
 > [!example]- White's Own Near-Termination
 > - Early in her career, White was a rising star — high performer, strong reviews, fast promotions
@@ -202,6 +267,16 @@ The mechanism:
 > - Her methodical approach, celebrated at her previous company, read as slow, bureaucratic, and out of touch
 > - Her managers had tried to signal this — "we move fast here," "don't overthink it" — but these signals were too soft for her to decode as existential warnings
 > **The lesson:** You cannot trust passive feedback to tell you how you are actually perceived. You need to actively seek it.
+
+> [!example] The Reliable Engineer's Surprise PIP
+> - A software engineer had received "meets expectations" reviews for three consecutive years
+> - He interpreted this as solid performance — he was meeting the bar
+> - In year four, he was placed on a Performance Improvement Plan
+> - He was blindsided — how could "meets expectations" lead to a PIP?
+> - The answer: "meets expectations" at his company was code for "not growing"
+> - The company's actual standard was continuous improvement; "meets expectations" meant you were treading water while others were swimming forward
+> - His managers had never said this explicitly — the coding was so embedded in the culture that they assumed he understood it
+> **The lesson:** Decoded language varies by company. The same words can mean radically different things in different organisational contexts.
 
 "Your perception gap is wider than you think," White writes.
 
@@ -218,6 +293,15 @@ The mechanism:
 
 The questions White recommends are deliberately hard to deflect: "What is the one thing I could do differently that would make the biggest impact?" and "If you had to describe my reputation in two words, what would they be?"
 
+- Why four sources instead of one:
+  - Any single source has blind spots and biases
+  - Your manager may soften; your friendly peer may omit uncomfortable truths; the neutral peer may not see enough of your work
+  - <b style="color: #27ae60">The pattern across all four sources is your true perception</b> — if three of four mention the same issue, that is signal, not noise
+- The cross-department manager is the most underused source:
+  - They see you without the protective framing of your team
+  - They experience you the way clients, partners, and senior leaders do
+  - Their feedback is often the most surprising and the most actionable
+
 ---
 
 <b style="color: #2980b9">Halfway conversations</b> — the epidemic of workplace interactions where something important is almost said but never quite lands:
@@ -225,7 +309,15 @@ The questions White recommends are deliberately hard to deflect: "What is the on
 - The manager who says "keep up the good work" when they mean "you need to change direction"
 - The colleague who says "interesting approach" when they mean "this will never work"
 - The executive who says "we should discuss this further" when they mean "no"
+- The performance review that says "consider being more strategic" when it means "you are not being considered for promotion"
 - <b style="color: #27ae60">Learning to decode these halfway conversations is a survival skill that no one teaches explicitly but that everyone who advances eventually learns</b>
+
+White's advice for decoding halfway conversations:
+
+- When you receive vague feedback, ask for specifics: "Can you give me an example of what you mean?"
+- When you hear "interesting," ask: "What concerns do you have about the approach?"
+- When you hear "we should discuss further," ask: "What would need to change for this to move forward?"
+- <b style="color: #e74c3c">The single most dangerous halfway conversation is the positive one</b> — when a manager praises you effusively but never mentions you in promotion discussions, the praise is a substitute for advocacy, not a precursor to it
 
 ---
 
@@ -240,6 +332,10 @@ The questions White recommends are deliberately hard to deflect: "What is the on
 - <b style="color: #27ae60">Job descriptions are generic documents, often outdated, written for recruitment compliance rather than as performance guides</b>
 - They describe the minimum requirements for a role, not the activities that create outsized value
 - The gap between what the JD says and what actually needs doing is where advancement lives
+- White draws a critical distinction:
+  - **Job description work** keeps you employed — it is the baseline
+  - **Gap work** gets you promoted — it is the differentiator
+  - The people who get stuck are the ones who perfect their job description and wonder why they are not advancing
 
 > [!example] The Recruiter Who Fixed Retention
 > - A recruiter's job description said: source candidates, screen resumes, schedule interviews
@@ -276,6 +372,15 @@ The questions White recommends are deliberately hard to deflect: "What is the on
 - Start with <b style="color: #27ae60">winnable gaps</b> — small, visible problems you can solve quickly without additional resources
 - Build a track record of gap-closing
 - Then escalate to larger, cross-functional gaps that carry more visibility and strategic weight
+- The sequence matters: if you try to close a large, strategic gap before you have credibility from closing smaller ones, you will be seen as overreaching
+
+How to identify gaps:
+
+- Listen to what leaders complain about repeatedly in town halls, all-hands, and strategy meetings
+- Watch where processes break down and create frustration for multiple teams
+- Notice what customers or clients complain about that nobody is addressing
+- Pay attention to what the company says in its annual report or strategy documents versus what it actually does day to day
+- <b style="color: #e74c3c">The trap is solving gaps that nobody cares about</b> — optimising a process that nobody uses, or fixing a problem that leadership does not consider a priority
 
 ---
 
@@ -294,6 +399,15 @@ The questions White recommends are deliberately hard to deflect: "What is the on
 - The difference is not hours worked or even quality of output on assigned tasks
 - <b style="color: #27ae60">It is whether the person's work addresses something the leadership team cares about and whether leadership can see it</b>
 
+White describes the mechanics of succession planning meetings from the inside:
+
+- Leaders gather quarterly or annually to categorise their teams
+- Each person is placed on a grid — typically a 9-box model crossing performance with potential
+- **Performance** is measured against assigned objectives
+- **Potential** is measured against a murkier set of criteria: strategic thinking, cross-functional influence, leadership presence, and — critically — gap-closing behaviour
+- A person who scores "high performance, low potential" is a steady employee: keep them, pay them fairly, but do not invest disproportionately
+- A person who scores "high performance, high potential" is top talent: invest, develop, accelerate
+
 > [!example] Two Analysts, Two Outcomes
 > - Analyst One worked sixty-hour weeks, produced flawless reports, and was considered the most reliable person on the team
 > - Analyst Two worked forty hours, produced good-but-not-extraordinary reports, but spent a chunk of her time investigating why the reports were not being used by the decision-makers they were intended for
@@ -303,6 +417,15 @@ The questions White recommends are deliberately hard to deflect: "What is the on
 >   - Analyst Two was categorised as "high potential — accelerate"
 > - Analyst One had worked harder — Analyst Two had worked on the right thing
 > **The lesson:** The company does not owe you advancement because you are exhausted. It invests in people who demonstrably move the needle.
+
+The visibility component is just as important as the work itself:
+
+- Gap work that nobody knows about does not get you promoted — it gets you exploited
+- White recommends making your gap work visible through:
+  - Sharing results in team meetings and cross-functional forums
+  - Copying relevant stakeholders on updates
+  - Framing your work in terms the organisation rewards: revenue impact, cost reduction, risk mitigation
+- <b style="color: #e74c3c">This is not self-promotion for its own sake — it is ensuring that the people who make promotion decisions have the information they need to advocate for you</b>
 
 > [!tip] Core Insight
 > "The company is not good or bad — it is a profit-making entity." It defines "moving the needle" in terms of its own priorities, not yours. Work on the right thing, not on everything.
@@ -326,6 +449,10 @@ The Handoff (Step 3) is what distinguishes this model from ordinary confrontatio
 - The phrases assume good intent, which prevents the other person from becoming defensive
 - They invite explanation rather than demanding justification
 - They make it possible for someone to save face while correcting course — because you have explicitly left room for the possibility that you might be wrong
+- Psychologically, the Handoff works because it gives the other person an exit:
+  - If they acted badly, they can reframe their behaviour as a misunderstanding and correct course without admitting wrongdoing
+  - If they acted for reasons you did not know about, the Handoff surfaces that information
+  - Either way, the conversation moves toward resolution rather than escalation
 
 ---
 
@@ -350,6 +477,17 @@ The Handoff (Step 3) is what distinguishes this model from ordinary confrontatio
 > - The boss admitted she had been routing meetings to Tyler because a senior client had once complained about the sales director's presentation style — feedback she had never passed on directly
 > - This was a textbook perception gap: a single client complaint was reshaping his entire workload, and he had no idea
 > **The lesson:** The GAP conversation surfaces hidden information. Without it, problems compound invisibly.
+
+> [!example] The Manager Who Kept Cancelling One-on-Ones
+> - A mid-level employee's manager had cancelled their one-on-one meeting five times in six weeks
+> - The employee was anxious: was the manager avoiding her? Was a layoff coming?
+> - She used the GAP model:
+>   - **Gap:** "Our one-on-ones have been cancelled five out of the last six weeks"
+>   - **Consequences:** "I have decisions backing up that need your input, and I am unsure of my standing"
+>   - **Handoff:** "Is there something going on that I should know about?"
+> - The manager was embarrassed — the cancellations were not intentional; she was overwhelmed with a cross-functional initiative and had been triaging her calendar by cutting recurring meetings
+> - The resolution: they moved to a shorter biweekly format that the manager could protect
+> **The lesson:** The GAP conversation reveals that most slights are accidental — the product of competing priorities, not deliberate neglect.
 
 ```mermaid
 flowchart LR
@@ -376,6 +514,7 @@ The GAP model's deepest contribution is what it prevents: <b style="color: #e74c
 - The fatal flaw is twofold:
   - Failing to ask questions — which leads to errors from ignorance
   - Failing to set boundaries — which leads to burnout from eagerness to please
+- <b style="color: #2980b9">The Doer's paradox:</b> the harder you try to impress by saying yes to everything, the faster you become known as the person who overcommits and underdelivers
 
 > [!example] David the Eager New Hire
 > - David was so eager to impress that he said yes to every request, worked through weekends, and never asked clarifying questions because he did not want to look incompetent
@@ -384,6 +523,14 @@ The GAP model's deepest contribution is what it prevents: <b style="color: #e74c
 > - His manager's assessment: "David is willing but unreliable"
 > - The irony was brutal: his attempt to appear maximally competent had produced the opposite perception
 > **The lesson:** Build a reputation for reliability rather than heroism. Consistent quality beats unsustainable intensity.
+
+What Stage 1 success actually looks like:
+
+- Deliver what you promise, on time, every time
+- Ask clarifying questions before starting work, not after making mistakes
+- Say "I can take that on, but it means X will be delayed — which is the priority?" instead of "yes" to everything
+- Build relationships with peers who can teach you the unwritten rules
+- <b style="color: #e74c3c">Do not attempt gap work at Stage 1</b> — you do not yet have the credibility or context to identify real gaps versus imaginary ones
 
 ---
 
@@ -403,6 +550,13 @@ The GAP model's deepest contribution is what it prevents: <b style="color: #e74c
 > - When Priya finally asked why, the manager said: "You do great work when I tell you what to do. But I need someone who can figure out what to do without me."
 > **The lesson:** "Money goes to those who ask, not those who wait" — and the same applies to opportunity.
 
+> [!example] The Warehouse Supervisor Who Saw the Pattern
+> - A warehouse supervisor noticed that order errors spiked every Monday because weekend shift workers followed a different checklist than weekday staff
+> - Without asking permission, he unified the checklists, ran a two-week pilot, and presented the results to his manager: error rates dropped forty percent
+> - He was promoted to operations lead within six months
+> - His predecessor had seen the same problem but waited for someone else to fix it
+> **The lesson:** Stage 2 is where initiative separates the promotable from the competent.
+
 > [!tip] Core Insight
 > At each career stage, the skills that earned your last promotion will never earn your next one. The transition demands fundamentally different capabilities.
 
@@ -414,6 +568,7 @@ The GAP model's deepest contribution is what it prevents: <b style="color: #e74c
 
 - The key skills are working with data across teams, resolving conflict productively, and building influence beyond your direct reports
 - <b style="color: #e74c3c">The fatal flaw is silo mentality</b> — defining your world by the borders of your own department
+- Stage 3 is where the GAP Communication Model becomes essential — you are now navigating relationships with people who do not report to you, who have their own priorities, and who will not follow your instructions simply because you ask
 
 > [!example] The Brilliant Finance Manager
 > - A finance manager was brilliant within her team but treated every request from other departments as an interruption
@@ -434,6 +589,20 @@ The GAP model's deepest contribution is what it prevents: <b style="color: #e74c
 - The causal chain: voice leads to engagement, engagement leads to visibility, visibility leads to advancement
 - <b style="color: #e74c3c">Silence does not just cost you recognition — it costs you the internal engagement that makes work feel meaningful</b>, which makes you more likely to leave, which makes you even less visible — a downward spiral
 
+```mermaid
+flowchart LR
+    A[Speak Up] --> B[Engagement]
+    B --> C[Visibility]
+    C --> D[Advancement]
+    E[Stay Silent] --> F[Disengagement]
+    F --> G[Invisibility]
+    G --> H[Stagnation]
+    style D fill:#27ae60,color:#fff
+    style H fill:#e74c3c,color:#fff
+```
+
+The data is clear: voice and visibility are causally linked to advancement, and silence creates a self-reinforcing downward spiral.
+
 ---
 
 ### Chapter 11: Stage 4 — The Builder
@@ -442,6 +611,11 @@ The GAP model's deepest contribution is what it prevents: <b style="color: #e74c
 
 - You are building compelling proposals, fighting for resources against competing priorities, and constructing things that did not exist before
 - <b style="color: #e74c3c">The fatal flaw at Stage 4 is staying in the weeds</b> — if you are still managing day-to-day operations at this level, you are doing the wrong job
+- The Stage 4 skill set:
+  - Building business cases that win budget allocation against competing proposals
+  - Selling ideas upward, laterally, and downward simultaneously
+  - Tolerating the uncertainty of strategic work where outcomes are measured in quarters, not weeks
+  - Letting go of the operational control that defined your identity in Stages 1-3
 
 > [!example] The Hands-On VP of Engineering
 > - A newly promoted VP of engineering continued to attend every sprint review, review every pull request, and personally debug production issues
@@ -456,6 +630,7 @@ The second fatal flaw White identifies at Stage 4 is unexpected: <b style="color
 - At this level, your proposals will be challenged, your budgets will be cut, and your ideas will be rejected — not because you are wrong, but because you are competing for finite resources against other leaders who are also not wrong
 - The ability to absorb rejection, recalibrate, and come back with a stronger case is a defining skill
 - Some of the most brilliant Stage 3 performers flamed out at Stage 4 because they took strategic disagreement as personal rejection
+- <b style="color: #27ae60">At Stage 4, "no" is not a verdict — it is information about what the organisation currently values and what your proposal is missing</b>
 
 ---
 
@@ -465,6 +640,10 @@ The second fatal flaw White identifies at Stage 4 is unexpected: <b style="color
 
 - The key skills are listening to external signals (market shifts, customer behaviour, regulatory changes), leading humanely at scale, and growing the organisation
 - <b style="color: #e74c3c">The fatal flaw is inward focus</b> — spending too much time on internal operations and not enough on the external environment that determines the organisation's future
+- Stage 5 leaders who fail are typically Stage 4 builders who never stopped building internally:
+  - They optimise existing systems instead of scanning for disruption
+  - They focus on quarterly results instead of three-year positioning
+  - They manage their direct reports instead of shaping the organisation's relationship with its market
 
 White spends less time on Stage 5, acknowledging that most readers will not be operating at this level. But she makes one point that applies to everyone: <b style="color: #27ae60">each stage requires fundamentally different skills, and the skills that got you promoted will not get you promoted again.</b>
 
@@ -473,6 +652,14 @@ The critical insight across all five stages: **the Stage 3-to-4 transition is wh
 - The shift from doing excellent collaborative work to securing resources and building strategy is not incremental
 - It is a fundamentally different job that requires a fundamentally different mindset
 - Many people who were outstanding collaborators become mediocre builders — not because they lost ability, but because they continued applying Stage 3 skills to a Stage 4 job
+
+| Stage | Core Job | Key Skill | Fatal Flaw |
+|-------|----------|-----------|------------|
+| **1. Doer** | Execute reliably | Consistency, questions | Overcommitting, not asking |
+| **2. Achiever** | Produce results independently | Judgement, initiative | Waiting for permission |
+| **3. Collaborator** | Partner across functions | Influence, conflict resolution | Silo mentality |
+| **4. Builder** | Create strategy, secure resources | Business cases, resilience | Staying in the weeds |
+| **5. Expander** | Position the organisation externally | External scanning, vision | Inward focus |
 
 ```mermaid
 flowchart LR
@@ -499,10 +686,12 @@ The five stages show that career growth is not a single continuous climb but a s
   - The company determines a percentage pool — typically two to four percent of total payroll — and distributes it across the team according to a forced distribution
   - Even if you are the best performer, your raise is constrained by the size of the pool and the number of people sharing it
   - Roughly eighty percent of annual-cycle increases fall below five percent
+  - The math is immovable: if the pool is three percent and your team has ten people, the maximum any single person can receive is capped by the need to distribute something to everyone
 - <b style="color: #2980b9">Out-of-cycle increases</b> are different
   - They require a specific business justification — a retention risk, a competing offer, a change in scope
   - They bypass the pre-allocated budget because they are treated as individual business decisions rather than batch distributions
   - Roughly eighty percent of out-of-cycle increases exceed five percent
+  - They are funded from discretionary budgets, not from the annual raise pool
 
 > [!tip] Core Insight
 > If you want a meaningful pay increase, the annual review is the worst time to pursue it. The best time is when you have leverage — demonstrable results, a competing offer, a change in responsibilities, or a combination of several.
@@ -510,6 +699,10 @@ The five stages show that career growth is not a single continuous climb but a s
 - <b style="color: #27ae60">Seventy percent of managers expect candidates to negotiate salary and benefits</b>
 - The system is designed with the assumption that people will push — most people do not
 - The ones who do are rewarded not because they are greedy, but because they are playing the game as it was designed to be played
+- White draws a distinction between negotiation and entitlement:
+  - Negotiation is backed by data, leverage, and a business case
+  - Entitlement is backed by tenure, effort, and a sense of fairness
+  - The first succeeds; the second fails — and the difference has nothing to do with who deserves the raise more
 
 > [!example] The Senior Consultant Who Never Asked
 > - A senior consultant had been underpaid for years relative to her peers
@@ -518,6 +711,15 @@ The five stages show that career growth is not a single continuous climb but a s
 > - The money had been available the entire time
 > - No one had offered it because she had never asked
 > **The lesson:** "Money goes to those who ask, not those who wait."
+
+> [!example] The Account Executive Who Timed It Wrong
+> - An account executive asked for a raise during the annual review cycle
+> - His manager sympathised but could only offer three percent — the budget was already allocated
+> - Three months later, the same account executive closed the company's largest deal in two years
+> - He went back and asked for an out-of-cycle adjustment, framed around the deal's revenue impact
+> - He received a twelve percent increase and a bonus
+> - The annual cycle gave him three percent; timing his ask to coincide with leverage gave him twelve
+> **The lesson:** When you ask matters as much as what you ask for.
 
 ---
 
@@ -553,6 +755,13 @@ The five stages show that career growth is not a single continuous climb but a s
 > - No single lever would have produced that outcome — the stack did
 > **The lesson:** Individual levers can be dismissed. A stack of four or five levers creates a position that is very difficult to refuse.
 
+White adds a caution about competing offers:
+
+- <b style="color: #e74c3c">Never use a competing offer as a bluff</b> — if the company calls it, you must be willing to leave
+- Bluffing with an offer you do not intend to accept destroys trust permanently
+- Even if the bluff works in the short term, your manager will view you as a flight risk and may begin planning your replacement
+- The best competing offers are genuine: you have explored the market, found something attractive, and are sincerely weighing your options
+
 ---
 
 ### Chapter 14: If-Then Proposals
@@ -565,6 +774,7 @@ The five stages show that career growth is not a single continuous climb but a s
 - They prefer paying after results are demonstrated rather than before
 - The if-then structure removes the risk of a permanent commitment — the company pays only if you deliver
 - This works because it matches the company's natural alignment: results first, investment second
+- It also works psychologically: saying "no" to a conditional experiment feels unreasonable in a way that saying "no" to a direct request does not
 
 > [!example] The Marketing Director's Remote Work Bid
 > - A marketing director asked for a remote work arrangement and was told no
@@ -581,6 +791,10 @@ The five stages show that career growth is not a single continuous climb but a s
 
 - The technique is most effective for raises, role expansions, and flexibility arrangements
 - <b style="color: #e74c3c">It is less effective for structural changes</b> like new headcount or reporting line changes that require upfront investment regardless of outcome
+- The key design principles for if-then proposals:
+  - The "if" must be measurable — both parties must agree on what success looks like
+  - The timeframe must be short enough to maintain urgency but long enough to demonstrate results
+  - The "then" must be specific — "revisit my compensation" is too vague; "adjust my base salary to $X" is concrete
 
 ---
 
@@ -606,16 +820,25 @@ The lesson is structural, not emotional:
 - <b style="color: #27ae60">If you deliver the same results in forty hours that someone else delivers in sixty, you are the more efficient asset</b>
 - Working longer hours does not make you more valuable — it makes you more expensive per unit of output
 - If you are willing to work sixty hours for the same pay, the company has no incentive to change the arrangement
+- The loyalty trap is self-reinforcing:
+  - You work extra hours expecting recognition
+  - The company accepts the extra work as your new baseline
+  - Your "normal" becomes sixty hours, so sixty hours earns no special recognition
+  - You escalate to seventy hours, which becomes the new baseline
+  - The cycle continues until burnout
 
 ---
 
 <b style="color: #2980b9">The 10 Percent Miracle</b> — reclaiming ten percent of your working day (roughly forty-eight minutes):
 
-- Cut unnecessary meetings
-- Batch email into two daily sessions
+- Cut unnecessary meetings — audit every recurring meeting and ask: "Does my attendance change the outcome?"
+- Batch email into two daily sessions — reactive email checking fragments attention
 - Redirect the recovered time toward high-impact gap work
 - The premise: most knowledge workers spend a significant portion of their day on low-value activities that exist out of habit rather than necessity
 - Even a modest reallocation produces visible results
+- The math: forty-eight minutes per day is four hours per week, sixteen hours per month — a full two working days dedicated to gap work that nobody else is doing
+
+White connects this to the steady-vs-top-talent distinction: the forty-eight minutes you reclaim from low-value work is often the difference between executing your job description and closing a gap that leadership cares about. <b style="color: #27ae60">The 10 Percent Miracle is not about working more — it is about redirecting time you are already spending.</b>
 
 ---
 
@@ -635,6 +858,10 @@ Why this works:
 - The manager now owns the prioritisation decision
 - The framing presents the choice not as your limitation but as the team's opportunity cost
 - It implies that excellence is possible — if the manager is willing to make the tradeoff
+- Even when the manager says "do it all," you have created a paper trail:
+  - You flagged the risk
+  - The manager chose to accept it
+  - When something slips, the conversation becomes "I raised this concern on [date]" rather than "I failed to deliver"
 
 > [!example] The Operations Manager's Six Projects
 > - An operations manager was carrying six projects simultaneously, four of which were visible to senior leadership
@@ -670,6 +897,14 @@ Why this works:
 - <b style="color: #e74c3c">The same behaviour that makes you a star at one company can get you fired at another</b>
 - White returns to her own story: at her previous company, her methodical approach was celebrated; at the new company, the same approach was nearly grounds for termination
 - Nothing about her skills, knowledge, or work ethic had changed — the political fingerprint had changed
+- This is why job transitions are so dangerous: people carry their operating style from one culture to another without recalibrating
+
+How to read a political fingerprint:
+
+- **Watch what gets rewarded** — not what the values wall says, but what actually earns praise, promotions, and resources in practice
+- **Watch what gets punished** — who gets sidelined, and what did they do? The punishment pattern reveals the culture's real boundaries
+- **Ask "how do things get done here?"** — listen to the stories people tell about successful projects; the process they describe is the political fingerprint in action
+- **Look at meeting culture** — are decisions made before meetings (by powerful individuals) or during meetings (by group consensus)? This single observation tells you whether the culture is autonomous or committee-driven
 
 ---
 
@@ -714,6 +949,15 @@ Political alignment is not about personality — it is about reading the environ
 - **Pathology** — favouritism, discrimination, nepotism, and retaliation
 - Politics is gravity — you can resent it, but it will affect you regardless
 - <b style="color: #e74c3c">Pathology is a broken system that may require departure rather than adaptation</b>
+
+White is careful to draw the line:
+
+- Not every frustrating workplace dynamic is pathology — most of it is politics
+- A manager who promotes someone with better visibility over someone with better output is not engaging in pathology — they are operating within a system that rewards visibility
+- A manager who promotes their unqualified friend over a qualified candidate is engaging in pathology
+- The distinction matters because politics can be navigated; pathology often cannot
+- <b style="color: #27ae60">Misdiagnosing politics as pathology leads to resentment and withdrawal when adaptation would have worked</b>
+- Misdiagnosing pathology as politics leads to self-blame and futile adaptation when departure is the right move
 
 The people who advance are not the ones who "play politics" in the popular, manipulative sense:
 
@@ -784,3 +1028,5 @@ Compared to other books on corporate navigation — Donald Asher's *Who Gets Pro
 - [[Strategize to Win - Carla A. Harris|Strategize to Win]] — Carla Harris on the champion-sponsor dynamic that White's leverage model complements
 - [[Never Split the Difference - Chris Voss|Never Split the Difference]] — Chris Voss's negotiation tactics pair well with White's leverage taxonomy
 - [[The First 90 Days - Michael D. Watkins|The First 90 Days]] — Michael Watkins on transitions, which maps to White's stage-transition framework
+- [[Crucial Conversations - Kerry Patterson|Crucial Conversations]] — Patterson's dialogue framework is a natural companion to White's GAP Communication Model
+- [[The 48 Laws of Power - Robert Greene|The 48 Laws of Power]] — Greene's power dynamics provide the strategic context that White's tactical tools operate within

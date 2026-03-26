@@ -45,6 +45,20 @@ Brendan Reid is a career marketing executive who spent over twenty years climbin
   - The company pivots strategy and the results you delivered under the old strategy become irrelevant
   - But the perception that you are a big-picture thinker, a calm hand in a crisis, a person who lifts others up — that perception travels with you across managers, departments, and even companies
 
+```mermaid
+flowchart LR
+    A[Hard Work] --> B[Results]
+    B --> C{Who Knows?}
+    C -->|Your Manager| D[Career Security]
+    C -->|Decision-Makers| E[Promotion]
+    F[Perception Management] --> G[Reputation]
+    G --> E
+    style D fill:#e74c3c,color:#fff
+    style E fill:#27ae60,color:#fff
+```
+
+Most professionals pour all their energy into the top path (work to results) and ignore the bottom path (perception to reputation). The second path is what actually determines who advances.
+
 > [!tip] Core Insight
 > Stop investing 100% of your energy in execution. Reid prescribes 60-70% execution (enough to remain credible) with 30-40% invested in skill expansion, influence management, and strategic self-promotion. The game has two dimensions — performance and perception — and most talented people are playing only one of them.
 
@@ -104,6 +118,12 @@ Brendan Reid is a career marketing executive who spent over twenty years climbin
 - The implication of all three patterns is stark:
   - If you are building a professional strategy that assumes merit is noticed and rewarded, you are building on sand
   - Build instead on the assumption that <b style="color: #27ae60">perception is rewarded</b> — and design every move accordingly
+- Reid extends the self-preservation model deeper:
+  - Hiring committees do not assess candidates objectively — they assess risk to themselves
+  - A manager who hires a weak performer looks like a bad judge of talent
+  - But a manager who hires a consensus candidate and the hire fails can say "everyone agreed" — the blame is diffused
+  - <b style="color: #e74c3c">This is why consensus hiring produces mediocre results</b> — the process is optimised for risk-avoidance, not talent identification
+  - The candidate who is "nobody's first choice but everyone's second" wins the job because they threaten nobody
 
 "The corporation is not broken," Reid writes. "It was never designed to reward merit in the first place."
 
@@ -133,6 +153,11 @@ Brendan Reid is a career marketing executive who spent over twenty years climbin
 > - When the promotion committee convened, three directors spoke up for Sandra
 > - Nobody mentioned Brian — nobody even knew who Brian was
 > **The lesson:** Top performance is invisible if the people who decide promotions have never seen you do it.
+
+- The Career Scorecard concept reveals a painful asymmetry:
+  - The company scorecard is transparent — you can read the targets, measure against them, and know where you stand
+  - The personal scorecard is opaque — you rarely know how decision-makers perceive you, what they think of when your name comes up, or whether anyone would champion your promotion
+  - This opacity is what makes the influencer plan (introduced later) so critical — it is the mechanism for making the invisible scorecard visible
 
 > [!tip] Core Insight
 > Until you accept that the company's success metrics and your personal advancement metrics are different instruments, you will keep over-investing in execution and under-investing in perception.
@@ -173,6 +198,10 @@ Each archetype represents a different way that genuine competence becomes a trap
   - By becoming the person everyone relies on for their current function, they bind themselves so tightly to one boss and one set of responsibilities that nobody can imagine them anywhere else
   - Their reliability becomes a cage
   - The organisation cannot afford to promote them because nobody else can do what they do
+- The mechanism is psychological — decision-makers think in images:
+  - When they hear the Go-to Guy's name, the image that appears is of someone deeply embedded in their current role
+  - The image of someone running a bigger operation, leading a different team, or thinking strategically simply does not form
+  - <b style="color: #e74c3c">You cannot be promoted into a role if nobody can picture you in it</b>
 
 > [!example] Marcus — Competence as Prison
 > - Marcus, a brilliant operations manager at a logistics company, had built all the department's reporting systems himself
@@ -194,6 +223,10 @@ Each archetype represents a different way that genuine competence becomes a trap
   - Every time the boss calls with a crisis, every time colleagues seek your expertise, it feels like validation
   - But validation and advancement are not the same thing
   - The Go-to Guy is valued — just not valued enough to promote
+- Reid's antidote to the Go-to Guy trap is deliberate:
+  - Train your replacement — make your current role survivable without you
+  - Broaden your exposure — work on projects outside your core function
+  - Build relationships with decision-makers who do not see you only as the person who keeps the department running
 
 ---
 
@@ -227,6 +260,11 @@ Each archetype represents a different way that genuine competence becomes a trap
 > - When asked to lead a pricing review, he built a decision framework: defined the constraints, presented three genuine alternatives (including Victor's approach), created scoring criteria, and facilitated the group to evaluate each option
 > - The group chose a strategy — Otto was promoted
 > **The lesson:** The person who structures the decision is credited with leadership, regardless of who had the best idea.
+
+- The contrast between Victor and Otto is the sharpest illustration of Reid's thesis:
+  - Victor had the superior idea — demonstrably, provably superior
+  - Otto had the superior method — a process that created allies instead of enemies
+  - In a system where advancement depends on broad support, Otto's mediocre idea delivered through an inclusive process beats Victor's brilliant idea delivered through an adversarial one
 
 ---
 
@@ -317,6 +355,11 @@ The <b style="color: #2980b9">Jack of All Trades</b> thrives for two reasons:
 > - His former colleagues, many of whom were far more technically capable, were laid off
 > **The lesson:** Breadth provides career insurance. Depth is a leveraged bet on the current environment staying the same.
 
+- Reid draws an important distinction: he is not advocating for incompetence
+- He is observing that the tactic of deliberate breadth — learning enough about many domains to be conversant — creates a specific perception
+- That perception — versatility, adaptability, cross-functional thinking — happens to be exactly what decision-makers look for when filling leadership roles
+- <b style="color: #27ae60">The lesson for talented people is not to abandon depth, but to layer breadth on top of it</b>
+
 ---
 
 ### Mr. Big Picture
@@ -390,6 +433,9 @@ The <b style="color: #2980b9">Jack of All Trades</b> thrives for two reasons:
   - Leadership is defined partly by the ability to develop others
   - But organisations almost never measure whether someone is actually developing others effectively
   - They measure the *appearance* of development — coaching conversations, mentoring relationships, feedback sessions
+- Reid is careful to note: <b style="color: #27ae60">the lesson is not to be insincere — it is to ensure that genuine helping is visible</b>
+  - If you are already coaching colleagues, mentoring juniors, or reviewing others' work, make sure the right people see it
+  - Help that is invisible to decision-makers has no career value, however genuine it may be
 
 ---
 
@@ -405,8 +451,14 @@ The <b style="color: #2980b9">Jack of All Trades</b> thrives for two reasons:
 
 - <b style="color: #e74c3c">These archetypes serve as cautionary tales</b> — each represents a way of spending professional energy that produces zero advancement return
 - The Social Chair confuses being liked with being valued
+  - Being liked produces social comfort
+  - Being valued produces advocacy — and only advocacy creates promotion momentum
 - The Gossip trades short-term social currency for long-term exclusion
+  - The moment you are identified as someone who shares information indiscriminately, you are excluded from every conversation where the real decisions are made
+  - You become a security risk, not a trusted advisor
 - The No-Change Agent bets their entire career on stability in an unstable world
+  - In an era of constant restructuring, digital transformation, and strategic pivots, resisting change is a fast track to irrelevance
+  - The organisation does not need people who remember how things were done — it needs people who can figure out how things should be done next
 
 ---
 
@@ -470,6 +522,13 @@ The <b style="color: #2980b9">Jack of All Trades</b> thrives for two reasons:
   - They push back, deflect, and critically, they remember
 - You become an adversary, not a colleague
 - In organisations where mediocrity is the unspoken standard, the person demanding excellence is the deviant — they are the one creating "conflict," the one making people "uncomfortable"
+
+| Approach | Perception by Colleague | Perception by Leadership | Career Outcome |
+|----------|------------------------|-------------------------|----------------|
+| **Accountability** | Threat, adversary | "Creates conflict" | Stalled or punished |
+| **Helping** | Grateful, ally | "Develops others" | Promoted |
+
+The table reveals the fundamental asymmetry: accountability and helping often fix the same problem, but the perception they generate could not be more different.
 
 ---
 
@@ -546,6 +605,20 @@ The <b style="color: #2980b9">Jack of All Trades</b> thrives for two reasons:
 - This is the opposite of the Passion Player's dynamic:
   - The Passion Player advocates for everything, so their advocacy carries no special weight
   - The objective thinker advocates for almost nothing, so when they do, the room listens
+
+```mermaid
+flowchart LR
+    A[Passion Player] --> B[Advocates for Everything]
+    B --> C[Each Advocacy Carries Less Weight]
+    C --> D[Ignored Over Time]
+    E[Studied Neutrality] --> F[Rarely Advocates]
+    F --> G[Each Advocacy Carries Maximum Weight]
+    G --> H[Highly Influential]
+    style D fill:#e74c3c,color:#fff
+    style H fill:#27ae60,color:#fff
+```
+
+The Passion Player's advocacy inflates like a currency — the more they advocate, the less each instance is worth. Studied neutrality creates scarcity, and scarcity creates value.
 
 ---
 
@@ -662,6 +735,7 @@ Field goals keep you employed; touchdowns get you promoted. The asymmetry betwee
 - Crisis resolutions carry a particular advantage: fixing someone else's mess is rarely punished and always noticed
 - The worst case is that the project continues to fail and you are seen as someone who tried
 - The best case is that you become the turnaround story
+- Reid notes that the <b style="color: #27ae60">willingness to volunteer for troubled projects is itself a signal</b> — it communicates confidence, initiative, and resilience to decision-makers, even before you deliver any results
 
 ---
 
@@ -765,6 +839,8 @@ Reid prescribes a <b style="color: #2980b9">three-phase promotion model</b>:
 
 - The distinction Reid draws is between <b style="color: #2980b9">horizontal networking</b> (building relationships with peers) and <b style="color: #2980b9">vertical networking</b> (building relationships with people who control your advancement)
 - Both have value, but most professionals over-invest in horizontal networking because it is comfortable and under-invest in vertical networking because it feels transactional
+- Reid is not saying to ignore your peers — that would create a different set of problems
+- He is saying to be deliberate about where you invest the majority of your relationship-building energy
 
 ---
 
@@ -781,6 +857,12 @@ Reid prescribes a <b style="color: #2980b9">three-phase promotion model</b>:
 > **The lesson:** Your manager, however flawed, is the gatekeeper to your next role. Complaining about them is cathartic; investing in them is strategic.
 
 "Never gossip. Never gripe. Your peers are the last people who can help your career, and the first people who can damage it."
+
+- Reid extends this into a broader observation about <b style="color: #2980b9">information discipline</b>:
+  - What you say to peers will eventually reach leadership — assume everything you share is public
+  - Complaining about a manager to a peer feels private; it never is
+  - Sharing frustrations about the company creates a perception of negativity — and negativity is career poison
+  - The safest assumption: anything you say at work will be heard by the person you least want to hear it
 
 ---
 
@@ -927,6 +1009,7 @@ Reid prescribes a structured approach:
 - Step 3 is the step most people skip, and it is the most important:
   - It forces the influencer to articulate the gap between where you are and where you want to be, giving you a concrete development roadmap
   - It creates accountability on their side — once they know what you want, they are implicitly committed to either helping you get there or explaining why you cannot
+  - <b style="color: #27ae60">It signals ambition — and ambition, when expressed as a question rather than a demand, is universally read as a positive trait</b>
 
 > [!example] Daniel — "I Didn't Know You Wanted It"
 > - Daniel, a sales manager, had been at the same level for four years
@@ -975,7 +1058,8 @@ Its greatest weakness is the systematic undervaluation of genuine competence. Re
 ## Related Reading
 
 - [[The 48 Laws of Power - Robert Greene|The 48 Laws of Power]] — the philosophical foundation for everything Reid describes tactically; Greene's power dynamics explain *why* Reid's tactics work
-- [[ferrazzi_never-eat-alone|Never Eat Alone]] — the relationship-building playbook that complements Reid's influencer plan framework
-- [[cialdini_influence|Influence]] — the psychology of persuasion underlying why perception-management works on decision-makers
-- [[goldsmith_what-got-you-here|What Got You Here Won't Get You There]] — addresses the behavioural blind spots that keep talented people stuck, from the coaching side
-- [[Power - Jeffrey Pfeffer|Power: Why Some People Have It and Others Don't]] — the academic version of Reid's argument, with research backing the same conclusions
+- [[How to Win Friends and Influence People - Dale Carnegie|How to Win Friends and Influence People]] — Carnegie's relationship-building principles underpin Reid's advice on helping rather than holding accountable
+- [[Influence - Robert Cialdini|Influence]] — the psychology of persuasion underlying why perception-management works on decision-makers
+- [[7 Rules of Power - Jeffrey Pfeffer|Power: Why Some People Have It and Others Don't]] — the academic version of Reid's argument, with research backing the same conclusions
+- [[The Charisma Myth - Olivia Fox Cabane|The Charisma Myth]] — the mechanics of presence and impression management that Reid's advice implicitly requires
+- [[Games People Play - Eric Berne|Games People Play]] — the transactional dynamics beneath the surface of every corporate interaction Reid describes

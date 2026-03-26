@@ -63,6 +63,8 @@ The good news: <b style="color: #27ae60">EP is learnable</b>
 | **The Feedback Gap** | EP feedback is the rarest and most valuable development input, and it is systematically withheld |
 | **The Double Bind** | Women and minorities face a narrower band of acceptable EP behaviours (the Goldilocks Syndrome) |
 | **Authenticity vs. Conformity** | Conform enough to earn credibility, then spend that credibility on authenticity |
+| **The Bleached-Out Professional** | Someone who conforms so completely their distinctiveness disappears — professionally counterproductive |
+| **Non-Negotiables** | The principles and values you refuse to compromise, even at the cost of leaving an institution |
 
 The pillars are not independent — appearance is the entrance exam, communication is the delivery mechanism, and gravitas is the substance that earns trust once you have passed the first two gates.
 
@@ -88,6 +90,8 @@ The three pillars operate as a sequential gate: fail appearance and communicatio
 > - Her mother pressed a fox-fur collar on her as a mark of distinction
 > - It was exactly wrong — a signal of working-class aspiration in a context where understated academic dress was the currency
 > - The collar marked her as an outsider before she opened her mouth
+> - The other students wore muted tweeds and rumpled wool — the studied understatement of people who did not need to try
+> - Hewlett was trying, visibly, and that visible effort was itself the problem
 > **The lesson:** Signals must be calibrated to context, not to intention.
 
 > [!example] The Hippie Academic at Barnard
@@ -96,6 +100,7 @@ The three pillars operate as a sequential gate: fail appearance and communicatio
 > - This worked inside the university, where it signalled membership in the academic tribe
 > - But when she began to move into corporate advisory work and media appearances, the same look read as unprofessional and unserious
 > - She was sending signals calibrated for one context into a completely different one
+> - The rules had changed, but her appearance had not — she was still dressing for a world she no longer inhabited
 > **The lesson:** What works in one professional world can destroy you in another.
 
 > [!example]- Hewlett's *Today* Show Disaster (2002)
@@ -104,12 +109,18 @@ The three pillars operate as a sequential gate: fail appearance and communicatio
 > - She describes the experience as a public humiliation that took six years to recover from
 > - She hired a media coach, learned to anticipate hostile framing, practised controlling her body language under pressure
 > - She eventually rebuilt her media presence from the ground up
+> - The reconstruction was not cosmetic — she had to learn an entirely new set of communication skills, from vocal pacing to posture to the management of hostile questions
+> - By 2008, she could walk into a live television interview and project calm authority under pressure
 > **The lesson:** EP failures are recoverable — but recovery demands years of deliberate practice, not a weekend seminar.
 
 These personal stories serve a structural purpose:
 
 - They establish that Hewlett, the book's own expert, failed at EP repeatedly and had to learn it through deliberate practice
 - If the founder of the Center for Talent Innovation can freeze on camera and wear the wrong coat to Cambridge, the reader can be forgiven for their own EP gaps — and more importantly, can close them
+- Hewlett uses her own failures as a credibility-building device:
+  - An expert who has never struggled with the subject teaches from theory
+  - An expert who has failed at it and rebuilt teaches from experience
+  - The reader trusts the second kind more — and rightly so
 
 ---
 
@@ -159,6 +170,10 @@ The implications are uncomfortable:
 
 - Someone with inferior technical skills but superior presence can, and regularly does, outperform someone with better skills but weaker presence
 - Hewlett does not celebrate this — she documents it and says: <b style="color: #e74c3c">work with the world as it is, not as you think it should be</b>
+- The parallel to hiring research is direct:
+  - Studies consistently show that interviewers' gut reactions in the first ten seconds of an interview predict hiring decisions better than structured assessments
+  - This is not because gut reactions are more accurate — it is because humans cannot override first impressions with subsequent data
+  - The first impression sets a filter, and all subsequent information passes through that filter
 
 ---
 
@@ -232,6 +247,7 @@ The critical distinction is between composure and detachment:
 > - "I'd like my life back," he said during a press conference
 > - The phrase became a symbol of executive tone-deafness
 > - His calm appeared self-serving — he seemed to be managing the crisis for his own comfort rather than for the communities, workers, and ecosystems it was destroying
+> - The juxtaposition with Dudley is instructive: same crisis, same company, but one man's composure read as leadership while the other's read as detachment
 > **The lesson:** Composure without empathy reads as indifference — and indifference destroys gravitas faster than panic does.
 
 > [!example] Jamie Dimon Before Congress
@@ -279,6 +295,11 @@ The qualifier is important:
 - Bob Dudley himself cautioned against being "too decisive too quickly"
 - The art is timing the decision to the moment of maximum impact — waiting long enough to have the facts, but not so long that the window of action has closed
 - Decisiveness is a performance art: it must appear deliberate, not desperate
+- The best deciders Hewlett profiles share a common pattern:
+  - They gather information quickly but not exhaustively
+  - They frame the decision as a binary or ternary choice, not an open-ended exploration
+  - They state their recommendation with conviction, not hedging
+  - They absorb accountability explicitly: "If this goes wrong, it is on me"
 
 ---
 
@@ -299,18 +320,21 @@ The qualifier is important:
 > - In both cases, her insistence on speaking truth cost her the immediate role
 > - But each time, Krawcheck was hired into a bigger role by someone who valued her integrity
 > - Her truth-telling built a reputation that compounded over time, even as it produced short-term losses
+> - She went on to found Ellevest, a women-focused investment platform, where her reputation for integrity became her primary brand asset
 > **The lesson:** Truth-telling can destroy the current position while building the long-term reputation — the compound interest of integrity.
 
 > [!example] Katherine Phillips Names the Elephant
 > - Phillips, a professor at Kellogg and later Columbia, built her academic reputation by being the person who would name the uncomfortable dynamic in the room
 > - In faculty meetings, committee sessions, and tenure discussions, she would surface what everyone else was politely ignoring
 > - This made her unpopular with some colleagues but invaluable to administrators who needed honest intelligence about what was actually happening in their departments
+> - Her candour earned her trust from above even as it generated friction laterally
 > **The lesson:** The person who names what the room is avoiding becomes indispensable to those who need the truth.
 
 > [!example] Chris Christie During Superstorm Sandy
 > - Christie's blunt, no-nonsense communication during the hurricane response — including his public willingness to work with President Obama despite being a Republican governor — was widely interpreted as truth-telling over partisan loyalty
 > - His approval ratings surged
 > - Hewlett attributes this directly to the gravitas that candour under pressure conferred
+> - The public rewarded him for saying what the situation demanded rather than what his party expected
 > **The lesson:** When crisis strips away the usual political calculus, authentic candour generates enormous trust.
 
 The caveat Hewlett attaches is crucial:
@@ -319,6 +343,10 @@ The caveat Hewlett attaches is crucial:
 - Tiger Tyagarajan, CEO of Genpact, tells Hewlett that he actively seeks people who will walk into his office and say "here is where I differ"
 - <b style="color: #e74c3c">But if the challenge appears self-serving or insubordinate — if the person seems to be grandstanding rather than serving the organisation — it destroys gravitas rather than building it</b>
 - The motivation must be visibly selfless, even when it is not entirely so
+- The frame matters as much as the content:
+  - "I disagree because this will hurt the company" builds gravitas
+  - "I disagree because I think I know better" destroys it
+  - The substance may be identical — only the framing differs
 
 ---
 
@@ -347,7 +375,14 @@ The caveat Hewlett attaches is crucial:
 > [!example] Kent Gardiner's Mediation Instincts
 > - In mediation settings, Gardiner's ability to read the emotional subtext of a negotiation — sensing when one party was about to walk out, when another was ready to concede, when the room needed a break — was what made him effective
 > - His legal skill was the baseline; his EQ was the differentiator
+> - He describes this not as intuition but as pattern recognition developed over years of close observation
 > **The lesson:** In professional contexts, EQ is not softness — it is diagnostic precision about the emotional state of the room.
+
+The mechanism connecting EQ to gravitas:
+
+- A leader who can read the room correctly and respond with the appropriate emotional tone demonstrates a form of control that transcends technical mastery
+- It signals that you are not just managing the task — you are managing the people, the dynamics, and the unspoken currents beneath the surface
+- <b style="color: #27ae60">This is what separates managers from leaders in the EP framework</b>: managers address the problem; leaders address the room
 
 ---
 
@@ -384,6 +419,15 @@ Hewlett also tells her own story as a cautionary tale:
 - It took six years of deliberate work — hiring coaches, building new media relationships, publishing carefully positioned research — to rebuild
 - <b style="color: #e74c3c">Reputations can be curated, but they can also be destroyed, and rebuilding is far harder than building from scratch</b>
 
+The mechanism behind reputation curation:
+
+- Reputations are not built by single dramatic actions but by consistent patterns that others observe and aggregate over time
+- The brain processes reputation through the same heuristics it uses for brand recognition:
+  - Frequency of positive signals matters more than intensity
+  - Consistency matters more than any single dramatic gesture
+  - A reputation that contradicts itself confuses the observer and defaults to the negative interpretation
+- This is why Hewlett insists on sustained, consistent action rather than dramatic pivots
+
 ---
 
 ### Vision and Charisma
@@ -399,6 +443,10 @@ Hewlett also tells her own story as a cautionary tale:
   - Vision without composure is dangerous
   - Composure without vision is merely competent
   - The ideal is both — but if you must choose where to invest your EP development energy, invest in composure first
+- The cultural shift is significant:
+  - The pre-2008 era rewarded leaders who could paint a compelling future
+  - The post-2008 era rewards leaders who can be trusted not to blow things up while pursuing that future
+  - Both skills matter — but trust now precedes inspiration in the hierarchy
 
 ---
 
@@ -428,6 +476,18 @@ The data upends the conventional assumption that mastering the content is the pr
 > [!tip] Core Insight
 > Content accounts for only 15% of persuasive impact. Technical experts who lead with data are actively undermining their own executive presence.
 
+```mermaid
+flowchart LR
+    A[Passion 27%] --> E[Persuasive Impact]
+    B[Voice Quality 23%] --> E
+    C[Presence 15%] --> E
+    D[Content 15%] --> E
+    style A fill:#27ae60,stroke:#333,color:#fff
+    style D fill:#f0f0f0,stroke:#999
+```
+
+Passion and voice quality together account for 50% of impact — more than three times the weight of content alone.
+
 ---
 
 ### Superior Speaking Skills
@@ -446,6 +506,9 @@ Hewlett connects this to TED talks as a cultural phenomenon:
 - The most-viewed TED talks are not necessarily the ones with the most rigorous data or the most novel ideas
 - They are the ones where the speaker's delivery creates an emotional connection with the audience
 - Sir Ken Robinson's talk on education — the most-viewed TED talk of all time at the book's writing — succeeds not because his argument is uniquely original but because his delivery is warm, funny, confident, and paced with the instincts of a performer
+- The implication for professionals is direct:
+  - If you are spending 90% of your preparation time on content and 10% on delivery, you have the ratio inverted
+  - Hewlett recommends spending at least half your preparation time on delivery — pacing, vocal variety, physical movement, and emotional connection
 
 ---
 
@@ -481,6 +544,13 @@ Hewlett connects this to TED talks as a cultural phenomenon:
 > - When the slides were stripped back to three anchor images, the same presenter — with the same content — suddenly commanded attention
 > **The lesson:** Slides can become a wall between you and the room — strip them back to anchor images.
 
+The paradox of preparation:
+
+- You must know your material thoroughly enough to present without notes
+- But you must also appear natural enough that it does not look rehearsed
+- The sweet spot is what actors call "the illusion of the first time" — you know every word, but it sounds like you are thinking of it right now
+- This requires more preparation, not less — you have to know the material so deeply that you can let go of the script entirely
+
 ---
 
 ### Silence as a Power Tool
@@ -513,6 +583,7 @@ The qualifier is important:
 - The audience can tell the difference instantly:
   - Intentional silence is accompanied by steady eye contact and relaxed posture
   - Uncertain silence is accompanied by fidgeting and broken gaze
+- The physical cues distinguish power silence from panicked silence — the body tells the truth that the absence of words conceals
 
 ---
 
@@ -558,13 +629,20 @@ The warning Hewlett attaches:
 - Many technically strong professionals undermine themselves by beginning every statement with qualifiers:
   - "I might be wrong, but..."
   - "This may not be relevant, but..."
+  - "I'm not sure, however..."
 - These verbal tics signal uncertainty, and the audience codes them as evidence of low confidence regardless of the substance that follows
+- Hewlett recommends a simple discipline: eliminate qualifying preambles entirely
+  - Say "I recommend we..." not "I think maybe we should consider..."
+  - The content can be identical — the framing changes everything
 
 **Body language and posture:**
 
 - Listeners form impressions from posture, gesture, and facial expression before processing verbal content
 - Slumping, fidgeting, and avoiding eye contact communicate subordination
 - An open posture, steady gaze, and deliberate gestures communicate authority
+- The research on **power posing** is relevant here — while the claims about hormonal effects have been contested, the perceptual effects are well-documented:
+  - People who take up more physical space are perceived as more authoritative
+  - People who compress their bodies are perceived as less confident
 
 **Humour and banter** rank last but serve as a social lubricant:
 
@@ -607,6 +685,13 @@ The communication behaviours are ranked from highest impact (speaking skills) to
 > [!tip] Core Insight
 > You have 250 milliseconds before anyone hears a word you say. The visual impression sets the filter through which all subsequent information is processed.
 
+The neuroscience behind this:
+
+- The brain's threat-assessment system (the amygdala) processes visual information faster than the prefrontal cortex can engage rational evaluation
+- This means the emotional verdict on your appearance precedes any cognitive assessment of your competence
+- You cannot reason your way past a negative first impression — you can only override it with sustained positive signals, which takes significantly more energy than getting the first impression right
+- This is why appearance, despite being worth only 5% in the long run, functions as a gate: it sets the initial filter through which all subsequent EP signals are processed
+
 ---
 
 ### The Five Components
@@ -627,6 +712,8 @@ Key distinctions:
   - Clean, well-fitting clothes; neat grooming; attention to details like shoes and accessories
   - A well-groomed person of average attractiveness projects more EP than an attractive person who looks like they just rolled out of bed
 - **Fitness signals** are not about aesthetics but about the signals a well-maintained physical presence sends about stamina and self-management
+  - Senior executives interpreted physical fitness as evidence of discipline, energy, and the ability to sustain high performance under pressure
+  - The logic: if you can manage your own body, you can probably manage a team
 - **Clothing positioning** works through visual categorisation:
   - People unconsciously sort others into hierarchical levels based on dress
   - If you dress like everyone at your current level, you are categorised at your current level
@@ -641,6 +728,8 @@ Key distinctions:
 > - She was technically excellent, but she wore a dress with loose, flapping sleeves that moved visibly every time she drew the bow
 > - The visual distraction was so powerful that the judges could not focus on the music
 > - She did not get the position
+> - The irony is that her clothing choice was aesthetically attractive — the dress was beautiful
+> - But beauty is irrelevant when it distracts from performance
 > **The lesson:** Appearance is not separate from performance — it is the frame through which performance is perceived. A distracting appearance actively degrades the audience's ability to assess your substance.
 
 > [!example] The Casual Friday Mistake
@@ -648,6 +737,7 @@ Key distinctions:
 > - The client had flown in from overseas and was dressed formally
 > - The executive's clothing sent the signal — entirely unintentionally — that the meeting was not important enough to dress for
 > - The client read it as disrespect, and the relationship suffered permanent damage
+> - The executive had the best pitch deck, the best data, and the best solution — none of it mattered
 > **The lesson:** Dress signals are read as signals of respect or disrespect — intention is irrelevant; reception is everything.
 
 > [!example] Kalinda's Wardrobe Shift
@@ -676,11 +766,20 @@ Key distinctions:
   - They are told they are doing great work — and they are — but they are not told that their presence, delivery, or appearance is undermining their candidacy for the next level
   - They leave the conversation thinking "I just need to work harder" when the real issue has nothing to do with work quality
 
+The feedback gap creates a vicious cycle:
+
+- The person does not know what to fix
+- So they double down on what they can see — the work itself
+- Which makes them even more technically competent but does not address the EP deficit
+- Which leads to another pass-over, another round of confusion, and eventually either frustration or departure
+- The organisation loses the very talent it most needs to develop
+
 > [!example] The Pharmaceutical Executive's Lost Years
 > - A pharmaceutical executive discovered she lacked EP only when her boss was replaced
 > - Her previous manager had given her strong performance reviews for years without once mentioning that her communication style — hesitant, qualifier-laden, apologetic — was the reason she was not advancing
 > - Her new boss, who had no relationship to protect and nothing to lose, told her within three months
 > - She was initially devastated — years of advancement had been lost because no one would give her the one piece of feedback that could have changed her trajectory
+> - Once she knew the problem, she fixed it within a year — the gap was not in her ability but in her awareness
 > **The lesson:** The feedback that matters most is the feedback that is most dangerous to give — and therefore most likely to be withheld.
 
 > [!example] Joe Stringer's Agony at EY
@@ -711,7 +810,21 @@ Hewlett compares EP development to physical therapy: you do not rehabilitate an 
 > [!example] Christina's Three-Second Pause
 > - Christina's boss gave her specific guidance before a key board presentation — not "be more confident" but "when you state the quarterly number, stop talking for three full seconds before moving to the next slide"
 > - Christina followed the instruction and the board's reception of her presentation changed noticeably
+> - The three-second pause did two things: it gave the number time to land, and it projected the confidence of someone who was not rushing to fill silence
+> - One micro-behaviour, precisely specified, produced a visible change in perception
 > **The lesson:** The difference between useless and actionable feedback is the difference between vague direction and concrete behaviour.
+
+The contrast between useful and useless EP feedback:
+
+| Useless feedback | Actionable feedback |
+|-----------------|-------------------|
+| "Be more strategic" | "When you present, open with the business impact, not the methodology" |
+| "Show more confidence" | "Eliminate 'I think' and 'maybe' from your opening sentences" |
+| "Improve your presence" | "Stand still when you make your key point — stop swaying" |
+| "Be more polished" | "Your shoes are scuffed; invest in a shoe-shine kit" |
+| "Speak up more" | "In the next meeting, make your first comment within the first ten minutes" |
+
+The left column is what most people receive. The right column is what actually produces change.
 
 ---
 
@@ -730,6 +843,18 @@ Hewlett compares EP development to physical therapy: you do not rehabilitate an 
   - After 42, they begin to face age-related scrutiny that men at the same age do not encounter at the same intensity
   - The window is absurdly narrow, and Hewlett does not pretend otherwise
 
+```mermaid
+flowchart LR
+    A[Too Restrained] -->|"Dismissed as weak"| B[The Narrow Band]
+    B -->|"Acceptable range"| C[Leadership Perception]
+    D[Too Forceful] -->|"Labelled aggressive"| B
+    style B fill:#27ae60,stroke:#333,color:#fff
+    style A fill:#e74c3c,stroke:#333,color:#fff
+    style D fill:#e74c3c,stroke:#333,color:#fff
+```
+
+The Goldilocks Syndrome: the acceptable band of EP behaviour is narrower for women and minorities, creating a tightrope where the same behaviour that earns a man respect can earn a woman backlash.
+
 ---
 
 ### The Specific Traps
@@ -742,12 +867,16 @@ For women, the double bind manifests in several specific ways:
 | **Appearance** | Too much attention = vain; too little = unprofessional | Women's appearance is policed more intensely |
 | **Emotional expression** | Too much = hysterical; too little = cold | Narrow band of acceptable emotion |
 | **Voice quality** | Higher pitch = less authoritative | Perceived authority regardless of content |
+| **Ambition** | Too visible = ruthless; too hidden = uninterested | Men's ambition is expected; women's is suspect |
 
 For minorities, the patterns are different but equally constraining:
 
 - **Communication style** faces code-switching pressure — professional environments often implicitly demand white-coded communication norms
 - **Assertiveness** triggers different responses — research shows assertive behaviour from Black professionals is perceived as more threatening than identical behaviour from white professionals
 - **Appearance norms** are culturally loaded — natural hair, culturally specific clothing, and other identity markers create friction with mainstream corporate appearance expectations
+- **The cost of code-switching** is not just psychological — it is cognitive
+  - Maintaining two parallel communication systems requires mental energy that could otherwise be invested in the work itself
+  - This is a hidden tax on minority professionals that majority professionals never pay
 
 ---
 
@@ -762,6 +891,10 @@ For minorities, the patterns are different but equally constraining:
   - Focus energy on behaviours within your control rather than on the injustice of the system
 
 This is one of the most politically honest sections of the book. Most leadership books either ignore the double bind entirely or treat it as a motivational obstacle to overcome. Hewlett does neither — she documents it, quantifies it, and says: this is the landscape. Navigate it strategically.
+
+- The book does not offer false comfort — it does not say "just be yourself and things will work out"
+- It says: the rules are different for different people, the rules are unfair, and the most effective response is strategic awareness combined with gradual institutional change
+- Individual EP development and systemic reform are not competing strategies — they are complementary ones
 
 ---
 
@@ -780,6 +913,7 @@ This is one of the most politically honest sections of the book. Most leadership
 - Hewlett argues this is not just personally costly but professionally counterproductive:
   - <b style="color: #e74c3c">The bleached-out professional is, by definition, interchangeable</b>
   - They have traded their distinctive value for institutional camouflage, and institutional camouflage does not get promoted
+  - The irony is painful: conformity is intended to reduce risk, but it also eliminates the distinctiveness that makes someone memorable and promotable
 
 ---
 
@@ -810,6 +944,7 @@ The sequential model: credibility earned through conformity buys the freedom to 
 > - Then, from that position of earned trust, he left to create *Windrush*, a documentary about the Caribbean immigrant experience in Britain that became one of the most important television events of its era
 > - The documentary was explicitly about Black identity, racial history, and the immigrant experience — topics that LWT's mainstream programming would not have touched
 > - Phillips could make it because he had first proven he could succeed on the system's terms
+> - The credibility he had earned through conventional success gave him the platform for unconventional work
 > **The lesson:** He earned the latitude to be different by first demonstrating he could be the same.
 
 > [!example] Carolyn Buck Luce's Corporate-to-Mission Pivot
@@ -823,6 +958,7 @@ The sequential model: credibility earned through conformity buys the freedom to 
 > - After her media disaster and six years of reputation rebuilding, Hewlett did not attempt to return as the same public figure she had been before
 > - She returned with a more controlled, more deliberate public presence — one that was still authentically her but shaped by hard-won knowledge about what works and what does not
 > - The authenticity was real, but it was also strategic
+> - She brought her Welsh directness and her academic rigour, but she packaged it in a delivery system that corporate audiences could receive
 > **The lesson:** Authenticity and strategy are not opposites — the most effective authenticity is the kind that has been tested and refined.
 
 > [!tip] Core Insight
@@ -843,6 +979,13 @@ The sequential model: credibility earned through conformity buys the freedom to 
 - The second is the sign that you are in the wrong institution
 - Not every battle is worth fighting in the moment — but some battles are worth walking away from the institution over
 - Knowing which is which is the essence of the authenticity-conformity balance
+
+> [!abstract] The Non-Negotiables Framework
+> 1. **Identify your core values** — the 3-5 things you will not compromise under any circumstances
+> 2. **Distinguish style from substance** — changing how you present is accommodation; changing what you believe is erasure
+> 3. **Test the environment** — does the institution require style adjustments or identity suppression?
+> 4. **Set a threshold** — if accommodations cross from strategic to existential, the institution is wrong for you
+> 5. **Act on the threshold** — staying past the point of identity erasure damages you more than leaving does
 
 ```mermaid
 flowchart TD
@@ -890,5 +1033,8 @@ The book is most valuable for mid-career professionals who are technically compe
 
 - [[The 48 Laws of Power - Robert Greene|The 48 Laws of Power]] — Greene's tactical manual for navigating power, with extensive overlap on reputation management, image-crafting, and the gap between substance and perception
 - [[Power - Jeffrey Pfeffer|Power: Why Some People Have It and Others Don't]] — Pfeffer's research-based argument that power is a skill, not a birthright, with complementary evidence on why merit alone does not produce advancement
+- [[The Charisma Myth - Olivia Fox Cabane|The Charisma Myth]] — Cabane's practical framework for developing charisma as a learnable skill, with specific exercises that complement Hewlett's diagnostic approach
 - [[The First 90 Days - Michael D. Watkins|The First 90 Days]] — Watkins on establishing credibility in new roles, where executive presence is the mechanism for making early impressions stick
+- [[The Credibility Code - Cara Hale Alter|The Credibility Code]] — Alter's companion guide on the specific physical behaviours (posture, gesture, vocal tone) that signal credibility
+- [[Gravitas - Caroline Goyder|Gravitas]] — Goyder's exploration of presence from a performance and voice coaching perspective, complementing Hewlett's data-driven approach
 - [[So Good They Can't Ignore You - Cal Newport|So Good They Can't Ignore You]] — Newport's counterargument that rare and valuable skills (career capital) are the foundation; Hewlett adds that capital alone is insufficient without the signalling layer of EP

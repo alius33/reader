@@ -69,6 +69,8 @@ Carla A. Harris rose to Managing Director in equity capital markets at Morgan St
 | **The Corporate Ecosystem Model** | Bosses evaluate through the lens of their own type; misalignment means you are valued but never adequately compensated |
 | **Manage Your Mistakes** | Own the error immediately, state the lesson, enlist support, then stop discussing it |
 | **The Personal Board of Directors** | Curate a group of advisers, mentors, and sponsors who collectively cover guidance, development, and advocacy |
+| **The Four-Quadrant Network** | Build relationships upward, laterally, downward, and externally for complete coverage |
+| **Integration Over Balance** | Merge outside passions into your professional identity rather than treating them as competing demands |
 
 ---
 
@@ -122,6 +124,21 @@ The mechanism is straightforward: <b style="color: #2980b9">authenticity produce
   - **Suppression** hides who you are
   - **Calibration** adjusts how you express who you are based on context
 - Harris advocates calibration, not suppression
+
+```mermaid
+flowchart LR
+    A[Authentic Self] --> B{Expression Mode}
+    B -->|Suppression| C[Hidden Identity]
+    B -->|Calibration| D[Contextual Adaptation]
+    C --> E[Missed Opportunities]
+    C --> F[Cognitive Drain]
+    D --> G[Memorable Presence]
+    D --> H[Genuine Connections]
+    style C fill:#e74c3c,color:#fff
+    style D fill:#27ae60,color:#fff
+```
+
+The distinction between suppression and calibration is the bridge between being yourself and being effective — suppression removes your differentiator, while calibration deploys it with awareness of context.
 
 ---
 
@@ -180,6 +197,14 @@ The mechanism is straightforward: <b style="color: #2980b9">authenticity produce
 - The agenda protects against both:
   - **Premature departure** — emotional reaction to a temporary setback
   - **Excessive loyalty** — refusing to leave an environment that has already refused you
+
+> [!example] The Colleague Who Stayed Too Long (Wall Street)
+> - Harris describes a colleague who had been at the same firm for over a decade, repeatedly passed over for Managing Director
+> - Each year, the colleague received excellent performance reviews but was told "not yet" when promotion time came
+> - The colleague stayed out of loyalty and a belief that persistence would eventually be rewarded
+> - After twelve years, the colleague finally left — and was promoted to Managing Director at the new firm within eighteen months
+> - The original firm had never intended to promote this person — the signals were clear, but loyalty had blinded the colleague to what the organisation was communicating through its actions
+> **The lesson:** The career agenda should have triggered a departure years earlier. Loyalty without reciprocity is not strategy — it is denial.
 
 ---
 
@@ -261,6 +286,16 @@ flowchart LR
 
 The 90-day progression moves from quiet competence-building to deliberate visibility — the timing matters because speaking too early undermines credibility, while speaking too late wastes the impression window.
 
+> [!example] The New VP Who Skipped the Window (Morgan Stanley)
+> - A newly hired Vice President at Morgan Stanley arrived with impressive credentials and immediately began pushing for changes in how the team operated
+> - Within the first two weeks, he was challenging established processes, suggesting new systems, and openly questioning senior colleagues' decisions
+> - His ideas were often good — but the team had not yet decided whether he belonged
+> - By month three, the perception was set: smart but arrogant, technically capable but culturally tone-deaf
+> - He spent the next two years trying to shake a reputation that the first two weeks had cemented
+> - A peer who started the same week took a different approach — she spent the first three months learning, asking questions, and building relationships before gradually introducing improvements
+> - She was promoted a year before the VP who had arrived with objectively stronger credentials
+> **The lesson:** The 90-day window is about earning the right to be heard. Skip the earning phase, and even good ideas land badly.
+
 ---
 
 ## Pearl 4: Perception Is the Copilot to Reality
@@ -314,6 +349,13 @@ The 90-day progression moves from quiet competence-building to deliberate visibi
   - Over time, the repetition does its work
   - People begin using those exact words — or close synonyms — when they talk about you in rooms you are not in
 
+> [!abstract] Implementing the Three Adjectives
+> 1. **Audit:** What three words does the organisation currently use to describe you? Ask trusted colleagues
+> 2. **Choose:** Select three words that are authentic to you AND valued by the organisation
+> 3. **Embed:** Use those words to describe your own work in conversations, emails, and presentations
+> 4. **Reinforce:** Ensure your behaviour — dress, communication style, how you handle pressure — consistently embodies those adjectives
+> 5. **Verify:** After three to six months, ask again what words people associate with you. If they match, the framework is working
+
 ---
 
 > [!example] The Associate Who Dressed for the Job (Morgan Stanley)
@@ -336,6 +378,23 @@ The 90-day progression moves from quiet competence-building to deliberate visibi
   - The people who believe their output is self-evidently excellent are the people who watch less talented colleagues get promoted while they stand by in bewilderment
 
 > "Perception is the copilot to reality."
+
+```mermaid
+flowchart TD
+    A[Your Career Outcome] --> B[Performance]
+    A --> C[Perception]
+    B --> D[What you actually deliver]
+    C --> E[Self-Presentation]
+    C --> F[Beholder's Baggage]
+    E --> G[You control this]
+    F --> H[You cannot control this]
+    G --> I[Three Adjectives Framework]
+    H --> J[Overwhelm with clarity]
+    style G fill:#27ae60,color:#fff
+    style H fill:#e74c3c,color:#fff
+```
+
+The Perception Equation shows that career outcomes depend on two inputs — only one of which you control. The strategic response is to invest all energy in the controllable half while accepting you cannot eliminate the uncontrollable half.
 
 ---
 
@@ -430,6 +489,14 @@ The critical insight is that sponsor relationships are different in kind from me
   - At least one sponsor with a seat at the decision table
 - The board does not need to know each other — it is not a formal structure
 - It is a mental model for ensuring that your advisory network has no critical gaps
+
+> [!example] The Board That Saved a Career Pivot (Harris anecdote)
+> - Harris describes a colleague who was considering leaving Wall Street for a nonprofit leadership role
+> - The colleague's mentor — a longtime Wall Street executive — strongly advised against it, citing the compensation loss and career risk
+> - But the colleague's personal board included someone from the nonprofit world, who provided a completely different perspective: the skills she had built on Wall Street were rare in the nonprofit sector and would make her immediately valuable
+> - A third board member — an executive coach with no stake in either outcome — helped her evaluate the move against her career agenda, not against anyone else's expectations
+> - The colleague made the move and thrived — the board's diversity of perspective was what allowed a clear decision
+> **The lesson:** A board composed entirely of people who share your industry and worldview will reinforce your biases rather than illuminating your blind spots.
 
 ### The Hard Truth About Friendly Senior People
 
@@ -529,6 +596,15 @@ The critical insight is that sponsor relationships are different in kind from me
 - Outside these moments, let the work accumulate
 - The point is not to talk all the time — the point is to talk at the moments when it counts, and to never, ever stay silent at those moments
 
+> [!example] The Analyst Who Asked for the Order (Morgan Stanley)
+> - A junior analyst at Morgan Stanley had delivered an exceptional year — outperforming peers on every objective metric
+> - She assumed the bonus pool and year-end review would reflect her contribution
+> - They did not — her bonus was in line with her peers, not above them
+> - When she asked her manager why, he said he had not realised she expected more — she had never communicated it
+> - Her peers, meanwhile, had been flagging their results throughout the year: "I want you to know that the Smith deal closed above target" and "I expect my contribution to be reflected at year-end"
+> - The analyst learned that voice is not just about promotion conversations — it is about establishing a running record of your value that decision-makers can reference when it matters
+> **The lesson:** Expectation without articulation is just hope. The organisation rewards what it hears about, not what it silently observes.
+
 ---
 
 ## Pearl 7: Taking Risks
@@ -610,6 +686,22 @@ The critical insight is that sponsor relationships are different in kind from me
 > - All three questions answered yes — she took the risk
 > **The lesson:** Even if the specific role had not worked out, the skills, relationships, and options she gained would have left her better positioned than before.
 
+```mermaid
+flowchart TD
+    A[Risk Decision] --> B{Type of Risk?}
+    B -->|Latent| C[Cannot choose — can only prepare]
+    B -->|Forward| D{Three Questions Test}
+    D -->|All Yes| E[Take the risk]
+    D -->|Mixed| F[Evaluate trade-offs]
+    D -->|All No| G[Decline]
+    E --> H[New skills + relationships + optionality]
+    C --> I[Build forward-risk capital as insurance]
+    style E fill:#27ae60,color:#fff
+    style C fill:#e74c3c,color:#fff
+```
+
+The risk framework reveals that inaction is itself a form of risk — latent risks accumulate whether you act or not, and only forward risks create the capital to absorb them.
+
 ---
 
 ## Pearl 8: Networking as Power Infrastructure
@@ -687,6 +779,14 @@ Harris identifies four types of network relationships, each serving a distinct f
 - It feels like genuine human connection — shared interests, mutual respect, curiosity about the other person
 - The strategic value emerges naturally from relationships that are authentic, not from relationships that are performed
 
+> [!example] The Executive Assistant Network (Wall Street lore)
+> - Harris describes a colleague who routinely bypassed the formal meeting-request process by cultivating strong relationships with executive assistants across the firm
+> - When the colleague needed time with a senior leader, she did not send a cold calendar request — she called the assistant, with whom she had a genuine, warm relationship built over years of small courtesies
+> - The assistant would find time on the calendar that was technically full
+> - Meanwhile, colleagues who treated assistants as invisible barriers to the people they actually wanted to reach found their requests perpetually delayed
+> - The colleague's access to senior leaders — and therefore her ability to build sponsor relationships — was directly proportional to the quality of her assistant relationships
+> **The lesson:** The most powerful nodes in a network are not always the most obvious ones. Ignoring the people who control access is a strategic error disguised as a status judgement.
+
 ---
 
 ## Pearl 9: Finding Balance Through Integration
@@ -719,9 +819,24 @@ Harris identifies four types of network relationships, each serving a distinct f
   - **Chronic exhaustion** damages relationships — you become irritable, short-tempered, and unable to bring genuine warmth to the very interactions that sustain your network
   - **Fatigue** weakens your advocacy — a tired person does not project confidence, does not exercise voice, does not take forward risks
   - **Prolonged stress** without recovery erodes the resilience you need when genuine crises arrive
+
+### The Integration Test
+
+- Harris offers a practical test for whether your outside interests are integrated or merely adjacent:
+  - Do the people you work with know about your outside passions?
+  - Have those passions ever opened a conversation, deepened a relationship, or created a connection that would not have existed otherwise?
+  - Do your outside activities restore your energy for professional challenges, or do they merely consume time you feel guilty about?
+- If the answers are yes, yes, and restore — your life is integrated
+- If the answers are no, no, and guilty — you are living in the balance paradigm, and it is costing you
+
+---
+
 - The integrated life is not the balanced life
 - It is the life where your interests, your passions, and your professional identity reinforce each other rather than competing for scarce time and attention
 - Integration means asking: "How can what I love outside of work strengthen what I do inside of work?" — and finding answers that are genuine, not cynical or forced
+
+> [!tip] Core Insight
+> Integration is not about turning hobbies into networking opportunities. It is about being a complete person at work — and letting that completeness become a competitive advantage.
 
 ---
 
@@ -761,6 +876,15 @@ Harris identifies four types of network relationships, each serving a distinct f
     - You signal uncertainty that others pick up on and respond to
 - Over months and years, the accumulated effect of those small behavioural differences compounds into vastly different career trajectories
 
+> [!example] The Two Presentations (Harris anecdote)
+> - Harris contrasts two presentations she gave at Morgan Stanley — one during her confident period, one during her doubting period
+> - The content was comparable in quality
+> - In the first, she walked in expecting to impress — she made eye contact, spoke with conviction, handled questions with ease, and left the room knowing she had commanded attention
+> - In the second, she walked in hoping not to embarrass herself — she read from her notes more, hedged her conclusions, and answered questions with excessive qualification
+> - The first presentation led to a high-profile assignment; the second led to polite applause and no follow-up
+> - Same person, similar content, radically different outcomes — the variable was expectation
+> **The lesson:** Expectation is not about what you know or what you deliver. It is about the energy you bring into the room, and people respond to that energy before they process your content.
+
 ### The Necessary Caveats
 
 - Harris is careful to distinguish the expect-to-win mindset from delusional thinking:
@@ -796,6 +920,14 @@ Harris identifies four types of network relationships, each serving a distinct f
   - A restructuring is not just a business event — it is a threat to your sense of self
 - Whether that stability comes from faith, philosophy, family, community, creative expression, or some other source, the principle is the same:
   - You need something that holds steady when the professional world shakes
+
+### The Resilience Architecture
+
+- Harris's broader point is architectural — you need to build a life that can absorb professional shocks without collapsing:
+  - **Faith** (or its secular equivalents) provides identity stability — you are not just your job title
+  - **Community** outside work provides emotional support that does not depend on organisational outcomes
+  - **Creative expression** provides an outlet that is entirely within your control when the professional world is not
+  - **Physical health** provides the energy and resilience that high-pressure environments demand
 - Harris's singing, her faith community, and her personal relationships gave her a foundation that made her career resilient without making it everything
 - The person who brings their whole self to work — but whose self is larger than the work — is the person who can weather the inevitable storms without breaking
 
@@ -840,8 +972,26 @@ The model explains why some people work extraordinarily hard and receive positiv
 - When you are **misaligned** — you are valued but not rewarded
   - Your boss appreciates your contribution but does not elevate it to the level of their own working style
   - You are useful but not, in their eyes, promotion-ready — because you are not doing what they would do
+
+### Diagnosing and Responding to Misalignment
+
 - Harris's practical advice: before accepting a role or a reporting line, assess whether your dominant working style matches your prospective boss's style
 - <b style="color: #e74c3c">If it does not, expect to be valued but underpaid</b> — and either engineer a change or accept the trade-off with open eyes
+- The options when misaligned:
+  - **Adapt:** Learn to demonstrate the qualities your boss values most, without abandoning your natural style
+  - **Compensate:** Find a sponsor whose style matches yours and who can advocate for you on terms that differ from your boss's lens
+  - **Move:** Request a transfer to a manager whose style matches yours
+  - **Leave:** If the organisation's leadership is dominated by the opposite type, you may be structurally disadvantaged regardless of individual manager alignment
+
+> [!example] The Workhorse Under a Political Maniac (Harris anecdote)
+> - Harris describes a colleague who was the hardest worker on the floor — consistently the last person at the desk, always over-prepared, always over-delivered
+> - His boss was a classic political maniac — valued relationships, lunches, conference appearances, and the ability to work a room
+> - The colleague received consistently positive performance reviews — "great work, keep it up" — but was never promoted
+> - His peers who spent less time at their desks but more time in the boss's orbit were advancing faster
+> - The colleague interpreted this as unfairness — and in a narrow sense, it was
+> - But the structural explanation was simpler: his boss valued relationship skills above output, and the colleague was investing in the wrong currency
+> - When he eventually moved to a workhorse boss, he was promoted within a year
+> **The lesson:** Being valued is not the same as being rewarded. The currency of reward is defined by the boss, not by the employee.
 
 ---
 
@@ -872,6 +1022,18 @@ The model explains why some people work extraordinarily hard and receive positiv
 - What they are evaluating is not whether you are perfect — no one is — but how quickly you recover and what you learn
 - The professional who owns a mistake, learns from it, and moves forward with confidence demonstrates exactly the resilience that senior leaders value
 
+### The Two Anti-Patterns
+
+- Harris identifies two common mistakes in handling mistakes — both equally damaging:
+  - **Over-apologising:** Repeating the apology in multiple conversations, referencing the mistake weeks later, asking for reassurance that you have been forgiven
+    - This signals insecurity and keeps the mistake alive in the organisation's memory
+    - Every mention is a fresh reminder of the error
+  - **Deflecting:** Blaming circumstances, pointing to other people's contributions, offering elaborate justifications
+    - This signals a lack of accountability and destroys trust
+    - Even if the circumstances genuinely contributed, the deflection is what people remember
+- <b style="color: #e74c3c">Both anti-patterns extend the lifespan of the mistake</b> far beyond what the mistake itself would have created
+- The clean approach — own, learn, enlist, stop — extinguishes the narrative as quickly as possible
+
 ---
 
 ## Key Quotes
@@ -895,9 +1057,7 @@ The book's greatest contribution is the **sponsor/mentor/adviser taxonomy**. Thi
 
 The book's limitations are real. It is shaped by Wall Street — a specific, high-competition, high-reward environment where the rules of engagement are unusually explicit and the consequences of failure are unusually visible. Some of Harris's advice — particularly the voice and self-advocacy principles — needs adaptation for cultures and industries where directness is punished rather than rewarded. There is a survivorship bias in Harris's perspective: her framework worked brilliantly for someone with her talent, drive, and opportunities, but she underestimates environments where structural barriers are severe enough that no amount of perception management, sponsorship recruitment, or voice exercise can overcome them. The networking chapter, while structurally sound with its four-quadrant model, is the book's weakest — it lacks the specificity and tactical depth that the perception and sponsorship chapters deliver.
 
-The faith chapter is genuine and clearly important to Harris, but it weakens the book's universality. For readers with a faith tradition, it offers a meaningful integration of spirituality and ambition. For readers without one, it reads as personal testimony rather than actionable framework, and the energy would have been better spent deepening the networking or risk-taking chapters.
-
-Despite these limitations, the core message stands: career advancement requires active management of perception, deliberate recruitment of sponsors, strategic use of voice, and calculated risk-taking. This is as close to a universal career truth as any single book delivers. Harris did not invent these ideas — elements appear in every serious treatment of corporate navigation — but she synthesised them into a coherent, personally tested system that is more actionable than most. For anyone in a large organisation who has ever wondered why their hard work is not translating into advancement, this book provides the answer and the playbook.
+The faith chapter is genuine and clearly important to Harris, but it weakens the book's universality. For readers with a faith tradition, it offers a meaningful integration of spirituality and ambition. For readers without one, it reads as personal testimony rather than actionable framework, and the energy would have been better spent deepening the networking or risk-taking chapters. Despite these limitations, the core message stands: career advancement requires active management of perception, deliberate recruitment of sponsors, strategic use of voice, and calculated risk-taking. This is as close to a universal career truth as any single book delivers. Harris did not invent these ideas — elements appear in every serious treatment of corporate navigation — but she synthesised them into a coherent, personally tested system that is more actionable than most. For anyone in a large organisation who has ever wondered why their hard work is not translating into advancement, this book provides the answer and the playbook.
 
 ---
 
@@ -907,4 +1067,6 @@ Despite these limitations, the core message stands: career advancement requires 
 - [[Strategize to Win - Carla A. Harris|Strategize to Win]] — Harris's 2014 sequel, expanding the success equation into performance currency, relationship currency, and strategic currency
 - [[Never Split the Difference - Chris Voss|Never Split the Difference]] — Chris Voss's negotiation manual; pairs with Harris's "ask for the order" principle with specific tactical scripts
 - [[Fierce Conversations - Susan Scott|Fierce Conversations]] — Susan Scott on having the conversations that matter; the operational companion to Harris's "exercise your voice"
-- [[cialdini_influence|Influence]] — the psychology behind why Harris's perception and voice principles work
+- [[Influence - Robert Cialdini|Influence]] — the psychology behind why Harris's perception and voice principles work
+- [[Executive Presence - Sylvia Ann Hewlett|Executive Presence]] — Hewlett's research-based framework on presence; complements Harris's Three Adjectives with systematic data on what senior leaders actually evaluate
+- [[Stealing the Corner Office - Brendan Reid|Stealing the Corner Office]] — Reid's contrarian take on the same terrain; where Harris is earnest, Reid is ruthlessly tactical

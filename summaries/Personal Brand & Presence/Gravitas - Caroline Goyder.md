@@ -38,9 +38,9 @@ She brings both academic grounding and frontline coaching experience to the book
 ```mermaid
 flowchart TD
     A["Deep Diaphragmatic Breath"] --> B["Calmed Nervous System"]
-    B --> C["Grounded Body\n(Still, open, upright)"]
-    C --> D["Strong Voice\n(Resonance, pace, pause)"]
-    D --> E["Clear Purpose\n(Why am I speaking?)"]
+    B --> C["Grounded Body<br>(Still, open, upright)"]
+    C --> D["Strong Voice<br>(Resonance, pace, pause)"]
+    D --> E["Clear Purpose<br>(Why am I speaking?)"]
     E --> F["GRAVITAS"]
     G["Anxiety"] -->|"Blocks"| B
     style A fill:#2980b9,color:#fff
@@ -454,12 +454,12 @@ flowchart TD
 
 ```mermaid
 flowchart TD
-    A["Take action\n(speak up, present, assert)"] --> B["Receive positive response\n(attention, agreement, respect)"]
-    B --> C["Interpret response as evidence\nof competence"]
+    A["Take action<br>(speak up, present, assert)"] --> B["Receive positive response<br>(attention, agreement, respect)"]
+    B --> C["Interpret response as evidence<br>of competence"]
     C --> D["Confidence increases"]
     D --> A
-    E["Avoid action\n(stay silent, decline, hedge)"] --> F["Receive no response\n(invisible, overlooked)"]
-    F --> G["Interpret absence as evidence\nof inadequacy"]
+    E["Avoid action<br>(stay silent, decline, hedge)"] --> F["Receive no response<br>(invisible, overlooked)"]
+    F --> G["Interpret absence as evidence<br>of inadequacy"]
     G --> H["Confidence decreases"]
     H --> E
     style A fill:#27ae60,color:#fff
@@ -964,12 +964,12 @@ quadrantChart
 
 ```mermaid
 flowchart TD
-    A["VENTRAL VAGAL\n(Social engagement)"] --> B["Calm, present, connected\nExpressive face, warm voice\nCan read and respond to others"]
-    C["SYMPATHETIC\n(Fight or flight)"] --> D["Anxious, reactive, defended\nFlat or tense face, high voice\nCannot read the room"]
-    E["DORSAL VAGAL\n(Freeze/shutdown)"] --> F["Collapsed, dissociated, blank\nFrozen face, weak voice\nDisconnected from everything"]
-    G["Deep breathing\n(4-8 pattern)"] -->|"Activates"| A
-    H["Perceived threat\n(social or physical)"] -->|"Activates"| C
-    I["Overwhelming threat\n(inescapable)"] -->|"Activates"| E
+    A["VENTRAL VAGAL<br>(Social engagement)"] --> B["Calm, present, connected<br>Expressive face, warm voice<br>Can read and respond to others"]
+    C["SYMPATHETIC<br>(Fight or flight)"] --> D["Anxious, reactive, defended<br>Flat or tense face, high voice<br>Cannot read the room"]
+    E["DORSAL VAGAL<br>(Freeze/shutdown)"] --> F["Collapsed, dissociated, blank<br>Frozen face, weak voice<br>Disconnected from everything"]
+    G["Deep breathing<br>(4-8 pattern)"] -->|"Activates"| A
+    H["Perceived threat<br>(social or physical)"] -->|"Activates"| C
+    I["Overwhelming threat<br>(inescapable)"] -->|"Activates"| E
     style A fill:#27ae60,color:#fff
     style C fill:#e74c3c,color:#fff
     style E fill:#e74c3c,color:#fff
@@ -1010,20 +1010,20 @@ flowchart TD
 ```mermaid
 flowchart TD
     subgraph foundation ["FOUNDATION (Physical)"]
-        Breath["1. BREATH\nDiaphragmatic breathing\n4-in, 8-out\nActivates ventral vagal"]
-        Ground["2. GROUND\nFeet planted, weight even\nStillness, stability\nProprioceptive feedback"]
-        Voice["3. VOICE\nResonance from chest\nLower pitch, slower pace\nPower of the pause"]
+        Breath["1. BREATH<br>Diaphragmatic breathing<br>4-in, 8-out<br>Activates ventral vagal"]
+        Ground["2. GROUND<br>Feet planted, weight even<br>Stillness, stability<br>Proprioceptive feedback"]
+        Voice["3. VOICE<br>Resonance from chest<br>Lower pitch, slower pace<br>Power of the pause"]
     end
     subgraph presence ["PRESENCE (Psychological)"]
-        Circle["4. SECOND CIRCLE\nFocused outward\nPresent with the audience\nNeither withdrawn nor pushing"]
-        Listen["5. LISTEN\nLevel 3 (global)\nFull-signal reception\nStillness + curiosity"]
+        Circle["4. SECOND CIRCLE<br>Focused outward<br>Present with the audience<br>Neither withdrawn nor pushing"]
+        Listen["5. LISTEN<br>Level 3 (global)<br>Full-signal reception<br>Stillness + curiosity"]
     end
     subgraph meaning ["MEANING (Intentional)"]
-        Purpose["6. PURPOSE\nWhy am I speaking?\nWhat do I want them to feel/think/do?\nConviction drives delivery"]
-        Story["7. STORY\nNarrative structure\nPersonal connection\nEmotional engagement"]
+        Purpose["6. PURPOSE<br>Why am I speaking?<br>What do I want them to feel/think/do?<br>Conviction drives delivery"]
+        Story["7. STORY<br>Narrative structure<br>Personal connection<br>Emotional engagement"]
     end
     Breath --> Ground --> Voice --> Circle --> Listen --> Purpose --> Story
-    Story --> Gravitas["GRAVITAS\n(The integration of all seven elements)"]
+    Story --> Gravitas["GRAVITAS<br>(The integration of all seven elements)"]
     style Breath fill:#2980b9,color:#fff
     style Gravitas fill:#27ae60,color:#fff
 ```

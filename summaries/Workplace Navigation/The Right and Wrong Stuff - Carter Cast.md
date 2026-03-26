@@ -1,7 +1,7 @@
 ---
 date: 2026-03-25
 type: book-summary
-tags: [book-summary, career-derailers, self-awareness, leadership-development]
+tags: [book-summary, career-derailers, self-awareness, leadership-development, workplace-navigation]
 author: Carter Cast
 title: "The Right and Wrong Stuff"
 year: 2018
@@ -53,6 +53,9 @@ The implication is clear and somewhat lonely: fixing a derailer often produces m
 | **The Core Quadrant Analysis** | Daniel Ofman's tool for seeing how overused strengths become weaknesses, with shadow, balancing quality, and allergic reaction |
 | **The Horney-Hogan Framework** | Dark-side personality tendencies under stress, categorised into three coping strategies: moving against, away from, or toward people |
 | **The Constituency Principle** | Broad advocacy across levels and functions is the only durable protection against organisational change |
+| **Learning Agility** | The willingness to be a beginner and learn from novel experiences — the single factor most associated with career promotion |
+| **The Three Distinctive Strengths** | Initiative, relationships, and drive — the behavioural differentiators that separate those who advance from those who stall |
+| **The Feedback Death Spiral** | Defensive people receive less feedback, grow larger blind spots, and are eventually blindsided by consequences nobody warned them about |
 
 ---
 
@@ -68,12 +71,15 @@ The implication is clear and somewhat lonely: fixing a derailer often produces m
 >   - Dismissing ideas that were not his own
 >   - Creating an atmosphere where people stopped volunteering candid opinions
 > - Cast's first instinct was to argue; his second was to rationalise; his third — the one that eventually saved his career — was to sit with the review long enough to wonder if it might be true
+> - He spent several painful weeks revisiting conversations and meetings, recognising a pattern he had been blind to
+> - The review was not a surprise to anyone except Cast himself — colleagues had been experiencing the damage for years
 > **The lesson:** Self-awareness is not optional — it is the master skill of career survival.
 
 This experience gave Cast two foundational insights that structure the entire book:
 
 - <b style="color: #27ae60">Self-awareness is the master skill of career survival</b>, and most people drastically overestimate how much of it they possess
   - The research bears this out: 90% of managers believe they are in the top 10% of performers — a statistical impossibility that reveals the depth of the self-deception problem
+  - This is not modesty-fishing — the data consistently shows that the gap between perceived performance and actual performance is enormous, and it widens at higher levels of seniority
 - Organisations are terrible at delivering the kind of feedback Cast received
   - His boss at Frito-Lay was exceptional precisely because he was willing to have a conversation most managers would rather avoid
   - Cast later learned that "delivering hard messages" ranks as the number one thing managers hate doing
@@ -87,6 +93,7 @@ This experience gave Cast two foundational insights that structure the entire bo
 > - Cast's motives were achievement and autonomy — he loved building things and working independently
 > - He found himself drained by the very activities the role demanded most, and energised by activities the role rarely offered
 > - The mismatch was not one of capability but of motivation — a subtler and more insidious form of career risk
+> - Over time, the slow drain of competent-but-joyless work eroded both his energy and his effectiveness
 > **The lesson:** You can fail in a role not because you lack the ability, but because the role's daily demands drain rather than energise you.
 
 These two experiences — the interpersonal derailment at Frito-Lay and the motivational mismatch at Walmart.com — became the twin pillars of Cast's research. The book is, in a sense, a systematic investigation of his own failures, broadened through research into a general theory of how brilliant careers come undone.
@@ -103,6 +110,8 @@ These two experiences — the interpersonal derailment at Frito-Lay and the moti
   - People did not derail because they lacked skills
   - They derailed because they could not manage their temper, could not adapt to new situations, could not let go of doing the work themselves, or could not stop saying yes to everything
 - "The strengths movement, taken too far, masks critical blind spots," Cast writes
+- The CCL research spans decades and thousands of executives, making the behavioural finding one of the most robust in the management literature
+- Cast also draws on Hogan's database of over one million personality assessments, which reveals that personality-driven derailers are shockingly common and shockingly consistent across industries and cultures
 
 > [!tip] Core Insight
 > A derailer does not reduce your strengths by some fixed amount — it divides them, potentially to nothing. Working on your worst weakness can produce more career return than building another strength.
@@ -120,6 +129,7 @@ Cast illustrates this with a simple mathematical example:
 - Reducing the derailer from 4 to 2 **doubles** the trajectory to 40
 - Adding 20 more points to the right stuff (a massive investment) only moves the trajectory from 20 to 25
 - <b style="color: #27ae60">Self-improvement on your weaknesses may matter more than self-improvement on your strengths</b>
+- The mathematical logic is unforgiving: no amount of numerator growth can compensate for a large enough denominator
 
 ```mermaid
 flowchart LR
@@ -136,12 +146,27 @@ The formula reveals why reducing a derailer (shrinking the denominator) produces
 
 ---
 
+### The Five Archetypes at a Glance
+
+| Archetype | Core Derailer | Behaviour Under Stress | Most Dangerous At |
+|-----------|--------------|----------------------|-------------------|
+| **Captain Fantastic** | Interpersonal toxicity | Arrogance, defensiveness, dismissiveness | Every level — the #1 derailer overall |
+| **Solo Flier** | Inability to delegate | Micromanagement, doing others' work | First management transition |
+| **Version 1.0** | Resistance to change | Rigidity, fear, clinging to old models | Market or strategy shifts |
+| **One-Trick Pony** | Overspecialisation | Functional narrowness, strategic blindness | Mid-career broadening window |
+| **Whirling Dervish** | Overcommitment | Saying yes to everything, unreliability | Roles requiring prioritisation |
+
+Cast's research shows that most people carry elements of two or three archetypes, though one typically dominates. Understanding your primary archetype is the first step toward containing it.
+
+---
+
 ## Chapter 2: Captain Fantastic — The Interpersonal Derailer
 
 *Cast's research reveals that interpersonal toxicity — not strategic failure, not ethical lapses — is the single most common reason careers derail across all demographics, industries, and levels.*
 
 - <b style="color: #2980b9">Captain Fantastic</b> is the number one derailer across all demographics, industries, and organisational levels
 - This is the person whose interpersonal issues — arrogance, defensiveness, poor emotional composure, inability to listen, contempt for dissenting views — poison every relationship around them
+- They are typically high performers, which makes the problem harder to address: organisations tolerate the behaviour because the results justify it — until they do not
 
 ### The Mechanism
 
@@ -164,6 +189,8 @@ The formula reveals why reducing a derailer (shrinking the denominator) produces
 - Cast connects this to research showing that <b style="color: #e74c3c">people with inflated self-assessments are six times more likely to derail</b>
 - The finding is not that confidence is bad — it is that **uncalibrated** confidence is catastrophic
 - There is a difference between believing in your abilities and being unable to hear evidence that your abilities have limits
+- The Dunning-Kruger effect compounds this: the people most likely to overestimate their competence are the least equipped to recognise that they are doing so
+- Cast notes that this blind spot is self-reinforcing — success breeds confidence, confidence discourages feedback-seeking, and the absence of feedback inflates confidence further
 
 ### Stories and Examples
 
@@ -172,6 +199,8 @@ The formula reveals why reducing a derailer (shrinking the denominator) produces
 > - A subordinate later told him, privately and carefully, that the room had gone silent after the incident
 > - "Everyone just shut down," the subordinate said
 > - Cast had not noticed — he had been too busy being right to notice that he had destroyed the room's willingness to be honest with him
+> - The subordinate who told him took a personal risk in doing so — most people would have stayed quiet
+> - Cast later realised this was a pattern, not an isolated incident — the same dynamic had played out in dozens of previous meetings
 > **The lesson:** Being right means nothing if everyone around you stops being honest.
 
 > [!example] The Tech Executive Who Couldn't Be Told Bad News
@@ -183,6 +212,16 @@ The formula reveals why reducing a derailer (shrinking the denominator) produces
 > - A single product miss, which might have been recoverable under a different leader, became a catastrophe because the team was too afraid to deliver bad news early enough to course-correct
 > - He was fired not for the miss but for the culture that made the miss unrecoverable
 > **The lesson:** Results-driven toxicity is tolerated until results falter — then the culture you built becomes the thing that destroys you.
+
+> [!example] The Marketing Director Who Mistook Aggression for Passion
+> - A marketing director at a consumer goods company was known for fierce advocacy of her ideas — she called it passion
+> - Her colleagues called it something else: intimidation
+> - In meetings, she would interrupt, roll her eyes at counterarguments, and visibly check out when others were presenting
+> - She interpreted the silence that followed as agreement — it was actually resignation
+> - Two successive 360 reviews flagged interpersonal issues; she dismissed both as "people being too sensitive"
+> - When a new CEO reorganised the marketing function, she was the only director not offered a role in the new structure
+> - The CEO told HR: "I need people who can collaborate. She cannot."
+> **The lesson:** Dismissing feedback as sensitivity is the hallmark of Captain Fantastic — and the path to irrelevance.
 
 - Cast also references Spencer Stuart research on CEO derailment:
   - Interpersonal issues are the leading predictor of executive failure, ahead of strategic mistakes, ethical lapses, or external market shocks
@@ -196,6 +235,7 @@ The formula reveals why reducing a derailer (shrinking the denominator) produces
 - Cast's prescription for Captain Fantastic is <b style="color: #2980b9">equanimity</b> — a term he borrows from contemplative traditions
 - Equanimity is the ability to be both a participant in a situation and an observer of your own behaviour within it
 - It is the capacity to feel the surge of defensiveness when someone challenges you, recognise it as defensiveness rather than righteous indignation, and choose not to act on it
+- Cast describes equanimity not as suppressing emotions but as creating a gap between stimulus and response — a gap wide enough to make a conscious choice
 
 > [!abstract] Three Practices for Building Equanimity
 > 1. **The rubber band technique:** Wear a rubber band on your wrist and snap it — gently — every time you notice yourself becoming defensive in a conversation. The physical interruption breaks the automatic response cycle.
@@ -216,6 +256,7 @@ The reciprocal structure makes the conversation feel collaborative rather than i
 
 - <b style="color: #2980b9">The Solo Flier</b> is the brilliant individual contributor who cannot let go
 - Promoted into management, they continue to do the work themselves — micromanaging, failing to delegate, and inadvertently telling their team: "I do not trust you"
+- The Solo Flier pattern is particularly common in technical fields, where the promoted person's identity is deeply intertwined with their craft
 
 ### The Mechanism
 
@@ -224,6 +265,7 @@ The reciprocal structure makes the conversation feel collaborative rather than i
 - The problem is identity:
   - The Solo Flier's sense of professional self-worth is built on being the person who does the work
   - Delegating feels like surrendering the thing that makes them valuable
+  - There is a genuine loss involved — they are being asked to give up the activity that provides their deepest professional satisfaction
 
 ---
 
@@ -240,6 +282,9 @@ The reciprocal structure makes the conversation feel collaborative rather than i
 - This allergic reaction is why simply telling a Solo Flier to "delegate more" does not work
 - The instruction requires them to embrace the very quality they find most threatening
 - <b style="color: #e74c3c">The intervention has to be deeper — it has to change how the Solo Flier defines their own value</b>
+- Cast notes that many Solo Fliers experienced a formative professional failure — a time when someone else's work fell short and they had to rescue the situation
+  - That experience taught them an unconscious lesson: the only reliable work is your own
+  - That lesson, perfectly rational in the original context, becomes a prison in the new one
 
 > [!tip] Core Insight
 > Delegation is not a time-management technique. It is an identity shift — from "I am valuable because I do the work" to "I am valuable because I enable others to do the work."
@@ -265,6 +310,15 @@ The reciprocal structure makes the conversation feel collaborative rather than i
 > - The difference was not superior strategy — it was the shift from doing to enabling
 > **The lesson:** The highest-leverage management activity is removing obstacles, not demonstrating personal expertise.
 
+> [!example] The Engineering Lead Who Rewrote Everyone's Code
+> - An engineering lead at a software company would review pull requests and routinely rewrite entire sections
+> - Her team's code quality improved marginally, but her team's morale collapsed
+> - Junior engineers stopped investing effort in their code — "Why bother? She is going to rewrite it anyway"
+> - Senior engineers left for companies where their work would be trusted
+> - The engineering lead was working seventy-hour weeks and could not understand why output was declining
+> - Her manager finally intervened: "You are doing the work of six engineers and getting the output of two"
+> **The lesson:** When a leader does everyone's work, the team learns that effort is futile — and stops trying.
+
 - Cast also cites David Allen's <b style="color: #2980b9">"mind like water" concept</b>: the best managers respond to events with proportional force, like water responding to a stone — neither over-reacting nor under-reacting
 - The Solo Flier's response is always disproportionate, because every task triggers the same instinct: "I should do this myself"
 
@@ -283,6 +337,7 @@ The reciprocal structure makes the conversation feel collaborative rather than i
 
 - <b style="color: #2980b9">Version 1.0</b> is the second most common derailer
 - This is the person who cannot adapt — they are running the same software they installed a decade ago, and the operating environment has moved on without them
+- Unlike Captain Fantastic, whose derailer is visible and interpersonal, Version 1.0's derailer is quiet and gradual — they simply become less and less relevant
 
 ### The Mechanism
 
@@ -299,6 +354,11 @@ The reciprocal structure makes the conversation feel collaborative rather than i
 - Learning agility is not intelligence
   - It is the willingness to be a beginner, to tolerate discomfort, and to seek out experiences that challenge existing competence
   - <b style="color: #27ae60">Many intelligent people are terrible learners because they are unwilling to be beginners</b>
+- Cast breaks learning agility into four components:
+  - **Mental agility** — comfort with complexity and ambiguity; the ability to hold multiple mental models simultaneously
+  - **People agility** — skill at reading and adapting to different people and interpersonal situations
+  - **Change agility** — curiosity about new ideas and willingness to experiment
+  - **Results agility** — the ability to deliver results in first-time, unfamiliar situations
 
 > [!tip] Core Insight
 > Learning agility is not how smart you are — it is how willing you are to be bad at something long enough to become good at it.
@@ -321,6 +381,7 @@ The reciprocal structure makes the conversation feel collaborative rather than i
 > - He deliberately rotated through headquarters marketing, field sales, trade marketing, and general management
 > - Each rotation forced him to learn a new function from scratch, building integrative thinking
 > - When he stepped into the CEO role, he could speak the language of every function in the business — not because he had studied them abstractly, but because he had done them
+> - His willingness to be a beginner in each new function, accepting temporary incompetence for long-term breadth, was the key differentiator
 > **The lesson:** Deliberate functional rotation builds the integrative thinking that senior leadership demands.
 
 > [!example]- The Research Scientist Stuck in "Be Right" Mode
@@ -330,6 +391,7 @@ The reciprocal structure makes the conversation feel collaborative rather than i
 > - He continued to operate in "be right" mode, treating every disagreement as a scientific debate to be won rather than a perspective to be integrated
 > - His team's submissions were consistently late because every decision became a battle
 > - He was eventually reassigned — not because he lacked intelligence, but because his version of intelligence was incompatible with the role
+> - The irony was that his scientific rigour — the quality that made him exceptional in research — became the precise quality that made him ineffective as a leader
 > **The lesson:** The mindset that makes you excellent as a specialist can make you impossible as a leader of diverse teams.
 
 ### The Antidote
@@ -337,6 +399,7 @@ The reciprocal structure makes the conversation feel collaborative rather than i
 - Cast's prescription for Version 1.0 is to develop <b style="color: #27ae60">learning agility as a deliberate practice</b>
 - He recommends maintaining a personal **learn/leverage ratio**: how much time you spend acquiring new skills versus exploiting existing ones
   - If the ratio tips too far toward leverage, you are becoming a Version 1.0
+  - Cast suggests tracking this quarterly — a simple audit of how much time went to learning versus leveraging existing competence
 - He also recommends **comfort-zone expansion**: deliberately seeking one experience per month that forces you to operate outside your area of expertise
   - Leading a project in an unfamiliar function
   - Volunteering for a task force on a topic you know little about
@@ -353,6 +416,7 @@ The point is not to become a generalist. It is to keep the learning muscles acti
 - <b style="color: #2980b9">The One-Trick Pony</b> is the deep specialist who lacks strategic breadth
 - They are extraordinary within their domain and invisible outside it
 - Their expertise, which once made them indispensable, gradually becomes a ceiling
+- Cast notes that this archetype is especially common in technical and finance functions, where deep expertise is heavily rewarded early in a career
 
 ### The Mechanism
 
@@ -361,6 +425,7 @@ The point is not to become a generalist. It is to keep the learning muscles acti
 - You cannot coordinate what you do not understand:
   - A CFO who does not understand supply chain will make financial decisions that are technically optimal and operationally catastrophic
   - A CTO who does not understand sales will build products that are technically elegant and commercially irrelevant
+  - A CMO who does not understand engineering will promise timelines that are commercially attractive and technically impossible
 
 ---
 
@@ -373,6 +438,18 @@ The point is not to become a generalist. It is to keep the learning muscles acti
   - In a consumer goods company, the critical path often runs through marketing and general management
   - In a technology company, it might run through engineering and product
   - Understanding your company's critical path and ensuring you have exposure to at least two of its stations is one of the most important early career decisions you can make
+
+```mermaid
+flowchart LR
+    A[Deep Specialist<br>Years 1-8] -->|Broadening window| B[T-Shaped Professional<br>Years 8-15]
+    B -->|Integration| C[Strategic Leader<br>Year 15+]
+    A -->|Missed window| D[One-Trick Pony<br>Ceiling]
+    style A fill:#2980b9,color:#fff
+    style C fill:#27ae60,color:#fff
+    style D fill:#e74c3c,color:#fff
+```
+
+The broadening window is not infinite — those who miss it find that their depth becomes a cage rather than a foundation.
 
 > [!tip] Core Insight
 > Deep expertise earns respect; strategic breadth earns promotion. You need both — depth to be credible, breadth to be promotable.
@@ -394,6 +471,7 @@ The point is not to become a generalist. It is to keep the learning muscles acti
 > - His CEO eventually told him: "You are the best CTO I have ever worked with, but I will never promote you to COO because you do not care about half the business"
 > - Aaron's response was revealing: "That is not my job"
 > - It was exactly the mindset that made promotion impossible
+> - By defining his identity as "the technology person," Aaron had drawn a boundary around his relevance that no amount of technical brilliance could overcome
 > **The lesson:** Declaring something "not my job" is declaring yourself ineligible for every job above your current one.
 
 > [!example] The Lateral Move That Built a Division President
@@ -402,6 +480,7 @@ The point is not to become a generalist. It is to keep the learning muscles acti
 > - A mentor intervened: "You can already build products. What you cannot do is sell them. If you ever want to run a business, you need to learn what happens after the product ships."
 > - He took the move, spent two years in business development, and went on to become a division president
 > - He later described those two years as the most important of his career — not because of what he accomplished, but because of what he learned to see
+> - The lateral move gave him language, relationships, and perspective that his vertical promotions never had
 > **The lesson:** A lateral move that broadens your understanding of the value chain can be more valuable than a vertical move that deepens the same narrow track.
 
 Cast also reprises **Brock Leach** from the Version 1.0 chapter, whose deliberate rotation through multiple functions at PepsiCo built the integrative thinking that neither Gail nor Aaron possessed. Leach did not become mediocre at everything — he became competent across functions and excellent in two. That combination is what senior leadership requires.
@@ -422,6 +501,7 @@ Cast also reprises **Brock Leach** from the Version 1.0 chapter, whose deliberat
 - <b style="color: #2980b9">The Whirling Dervish</b> is the talented person who overcommits, underdelivers, and gradually destroys their credibility
 - These are not lazy people — they are ambitious, eager, and genuinely enthusiastic about new initiatives
 - The problem is that their enthusiasm outruns their capacity
+- Cast notes that the Whirling Dervish is often the most likeable person in the organisation — energetic, optimistic, always willing to help — which makes the pattern harder to confront
 
 ### The Mechanism
 
@@ -431,6 +511,7 @@ Cast also reprises **Brock Leach** from the Version 1.0 chapter, whose deliberat
   - **Not understanding workflow** — failing to grasp the dependencies, handoffs, and bottlenecks that turn a simple commitment into a complex chain of obligations
   - **Being a pleaser** — someone whose need for social approval makes saying no feel psychologically impossible
   - **Grandiosity** — taking on more than is realistic because the ego demands a larger stage
+- Cast notes that these root causes often overlap — a Whirling Dervish who is both a pleaser and a poor planner will overcommit faster and more dangerously than one who has only one of these tendencies
 
 ---
 
@@ -440,6 +521,9 @@ Cast also reprises **Brock Leach** from the Version 1.0 chapter, whose deliberat
   - People stop giving you important assignments — not because they doubt your talent, but because they doubt your follow-through
   - You get fewer opportunities, which means fewer chances to rebuild trust
   - The label hardens into a permanent reputation
+- Cast draws an important distinction between the Whirling Dervish and the merely busy:
+  - A busy person has a lot to do and manages it through prioritisation
+  - A Whirling Dervish has too much to do and manages it through heroic effort that eventually collapses
 
 > [!tip] Core Insight
 > Saying yes to everything is not a sign of ambition — it is a sign of poor judgement. Your credibility is built on what you finish, not what you start.
@@ -454,7 +538,7 @@ Cast also reprises **Brock Leach** from the Version 1.0 chapter, whose deliberat
 > - The remaining two shipped, but late and over budget
 > - Her bosses did not question her ability — they questioned her judgement
 > - "She is fantastic at starting things and terrible at finishing them," one told Cast
-> - The label stuck
+> - The label stuck — and once attached, it filtered how every subsequent action was interpreted
 > **The lesson:** The ability to get things approved means nothing without the discipline to see them through.
 
 > [!example] The VP of Sales Who Triaged Ruthlessly
@@ -472,6 +556,7 @@ Cast also reprises **Brock Leach** from the Version 1.0 chapter, whose deliberat
 > - When promoted to managing partner, she continued this pattern across a portfolio of twelve engagements
 > - Her first annual review was scathing: half her projects behind schedule, client satisfaction scores dropped, three associates requested transfers
 > - Her Whirling Dervish pattern was intertwined with Solo Flier tendencies — a combination Cast notes is common and particularly destructive
+> - The overcommitment made delegation necessary; the micromanagement instinct made delegation impossible
 > **The lesson:** Overcommitment and micromanagement feed each other — the more you take on, the less you can delegate, and the more everything suffers.
 
 ### The Antidote
@@ -522,6 +607,11 @@ The three distinctive strengths create a reinforcing cycle — each feeds the ot
 - Cast notes that learning agility is the quality Korn Ferry's research most strongly associates with promotion at every level
 - It is not intelligence — many intelligent people are terrible learners because they are unwilling to be beginners
 - Learning orientation is the willingness to be bad at something long enough to become good at it
+- Cast identifies four sub-dimensions of learning agility:
+  - Mental agility — comfort with complexity
+  - People agility — skill with interpersonal dynamics
+  - Change agility — openness to experimentation
+  - Results agility — ability to deliver in novel contexts
 
 ---
 
@@ -532,12 +622,14 @@ The three distinctive strengths create a reinforcing cycle — each feeds the ot
 - IQ accounts for only about 25% of variance in job success
 - Much of the remaining variance is explained by the ability to work effectively with others
 - <b style="color: #27ae60">Interpersonal skill is not a nice-to-have supplement to technical ability — it is the differentiator that separates the technically competent from the organisationally effective</b>
+- Cast notes that relationship-building is often the weakest of the three strengths because it is the least measurable and the most uncomfortable to develop
 
 **3. <b style="color: #2980b9">Drive for Results / Perseverance</b>**
 
 - The discipline to push through obstacles and deliver consistently
 - Cast distinguishes this from mere busyness (the Whirling Dervish pattern)
 - Drive for results is focused persistence — the ability to identify the most important goal, commit to it, and sustain effort through setbacks, distractions, and the inevitable moments when the work stops being interesting and starts being hard
+- The key word is **focused** — perseverance without prioritisation is just the Whirling Dervish in different clothes
 
 ---
 
@@ -561,6 +653,7 @@ The three distinctive strengths create a reinforcing cycle — each feeds the ot
 - "Above a certain level of cognitive ability, what differentiates the successful from the unsuccessful is how well they work with others and how well they manage themselves," Cast writes
 - <b style="color: #e74c3c">The person who is brilliant and relationally mediocre will, on average, be outperformed by the person who is smart enough and relationally excellent</b>
 - The research is consistent across industries, levels, and cultures
+- Cast connects this to the Captain Fantastic archetype: many Captain Fantastics are genuinely brilliant, and their brilliance reinforces their conviction that intelligence alone should be sufficient — which is precisely the delusion that derails them
 
 ---
 
@@ -627,12 +720,21 @@ Each transition demands fundamentally different skills — and the behaviours th
 ### The Universal Lesson
 
 - At each transition, the behaviours that earned the promotion become insufficient or actively harmful in the new role
-- "What got you here won't get you there" is the cliché, but Cast adds nuance:
+- "What got you here won't get you there" is the cliche, but Cast adds nuance:
   - It is not just that old behaviours are no longer helpful — they are often the specific behaviours you need to stop
   - The detail orientation that made you a great analyst makes you a micromanaging manager
   - The functional expertise that made you a great VP makes you a narrow-minded GM
   - The decisive action-taking that made you a great GM makes you an authoritarian CEO
 - <b style="color: #27ae60">The prescription is to approach every transition with explicit attention to the "stop doing list"</b> — the behaviours that served you in the old role and will harm you in the new one
+
+| Transition | Key Shift | Stop Doing | Start Doing |
+|-----------|----------|-----------|-------------|
+| Self → Others | Doing → Enabling | Personal execution | Coaching, delegating |
+| Others → Functions | Team → System | Solving team problems | Designing cross-team workflows |
+| Functions → Business Units | Functional → Integrative | Leading one discipline | Synthesising across all disciplines |
+| Business Units → Enterprise | Operational → Visionary | Managing operations | Managing meaning and culture |
+
+Each row represents a fundamental identity shift — not just new tasks, but a new definition of what makes you valuable.
 
 ---
 
@@ -653,6 +755,11 @@ Each transition demands fundamentally different skills — and the behaviours th
 | **Purpose** | Meaningful contribution beyond profit | Mission-driven organisations | Purely transactional environments |
 
 Cast distinguishes between **personal power** (the desire to control others) and **institutional power** (the desire to direct the organisation toward a vision). People high in institutional power are natural leaders — they find energy in shaping outcomes. People low in power find these activities exhausting.
+
+- The crucial insight is that motives are not skills — they cannot be developed through training
+- They are deeply ingrained preferences that determine which activities feel effortless and which feel draining
+- A mismatch between your motives and your role's demands is not a performance problem — it is an energy problem
+- You can compensate for a motive mismatch with effort, but the effort is unsustainable
 
 > [!tip] Core Insight
 > The question that matters most — and that most people never ask — is not "Can I do this?" but "Does this role demand, day to day, the kind of work that energises me?"
@@ -684,7 +791,7 @@ Cast distinguishes between **personal power** (the desire to control others) and
 > - She eventually left for another start-up, took a 30% pay cut, and described it as the best career decision she ever made
 > **The lesson:** A title that excites you on paper can exhaust you in practice if the motive fit is wrong.
 
-Because motive misalignment produces a slow drain rather than an acute crisis, people often spend years in roles that are wrong for them before recognising the source of their dissatisfaction.
+Because motive misalignment produces a slow drain rather than an acute crisis, people often spend years in roles that are wrong for them before recognising the source of their dissatisfaction. Cast argues that understanding your motive profile is one of the most important — and most neglected — forms of self-knowledge.
 
 ---
 
@@ -694,6 +801,7 @@ Because motive misalignment produces a slow drain rather than an acute crisis, p
 
 - Cast devotes significant attention to the Hogan Development Survey, which measures eleven "dark side" personality tendencies that emerge under stress
 - These are not clinical pathologies — they are normal personality traits that, amplified by pressure, become destructive behavioural patterns
+- The Hogan framework is built on decades of data from over one million assessments worldwide
 
 ### The Three Coping Strategies
 
@@ -705,6 +813,10 @@ Because motive misalignment produces a slow drain rather than an acute crisis, p
 | **Moving away from people** | Avoidance, withdrawal, or perfectionism-paralysis | Version 1.0 | Cautious (risk-aversion), Reserved (emotional withdrawal), Leisurely (passive aggression) |
 | **Moving toward people** | Compliance, ingratiation, people-pleasing | Whirling Dervish | Dutiful (excessive deference), Diligent (fear-driven perfectionism) |
 
+- Cast notes that most people default to one of these three strategies under pressure, and knowing your default strategy is the first step toward managing it
+- The strategy itself is not the problem — it is the automatic, unconscious application of it that causes damage
+- Someone who moves against people under stress is not inherently destructive — but someone who does so without awareness can be
+
 ---
 
 ### The 98% Finding
@@ -715,6 +827,7 @@ Because motive misalignment produces a slow drain rather than an acute crisis, p
   - Diligence becomes reliability
   - Colourfulness becomes charisma
 - The danger is when stress amplifies them beyond the productive range, turning assets into liabilities
+- Cast provides a useful metaphor: dark-side tendencies are like the volume dial on a speaker — at moderate levels, the music is clear and enjoyable; at maximum, it distorts into noise
 
 ```mermaid
 flowchart LR
@@ -726,6 +839,24 @@ flowchart LR
 ```
 
 The value of the Horney-Hogan framework is that it allows you to predict your own behaviour under stress before the stress arrives — self-knowledge becomes an early warning system.
+
+### The Eleven Dark-Side Dimensions
+
+| Dimension | Moderate Form (Asset) | Overdriven Form (Liability) |
+|-----------|----------------------|---------------------------|
+| **Excitable** | Passionate, enthusiastic | Volatile, emotionally unpredictable |
+| **Sceptical** | Perceptive, politically aware | Cynical, mistrustful, prone to grievance |
+| **Cautious** | Careful, thoughtful | Paralysed by fear of failure |
+| **Reserved** | Independent, self-sufficient | Emotionally unavailable, cold |
+| **Leisurely** | Agreeable on surface | Passive-aggressive, quietly resistant |
+| **Bold** | Confident, ambitious | Grandiose, entitled, unable to learn |
+| **Mischievous** | Charming, risk-taking | Manipulative, boundary-violating |
+| **Colourful** | Engaging, expressive | Attention-seeking, dramatic |
+| **Imaginative** | Creative, visionary | Eccentric, impractical |
+| **Diligent** | Meticulous, reliable | Perfectionist, micromanaging |
+| **Dutiful** | Loyal, cooperative | Submissive, unable to stand alone |
+
+Cast emphasises that these are not either/or categories — everyone has a profile across all eleven, and the profile shifts depending on stress levels, context, and fatigue.
 
 ---
 
@@ -750,6 +881,7 @@ The value of the Horney-Hogan framework is that it allows you to predict your ow
 > - In his exit interview, he learned for the first time that his peers had been complaining about him for years
 > - His direct reports had been requesting transfers; his boss had been fielding complaints quarterly
 > - But none of this had ever reached him, because everyone preferred the comfort of avoidance to the discomfort of honesty
+> - Five years of positive reviews had created a false sense of security that made the firing devastating rather than correctable
 > **The lesson:** Positive reviews do not mean the absence of problems — they often mean the absence of courage.
 
 ---
@@ -762,12 +894,15 @@ The value of the Horney-Hogan framework is that it allows you to predict your ow
   - Organisations are not neutral playing fields
   - They have favourites, factions, and blind spots of their own
   - A person can do everything right and still be passed over because the system was not designed to see them
+- This acknowledgement is important because it sets a boundary on the book's central thesis: self-improvement is necessary but not always sufficient
 
 ### The DIY Imperative
 
 - Cast's conclusion from the organisational evidence is bracing: <b style="color: #27ae60">do not count on your organisation for career development</b>
 - "Developing Others" ranks 67th of 67 in manager competency research — dead last
 - The data does not suggest that organisations are mediocre at development — it suggests that development is the thing organisations care about least
+- Cast identifies a paradox: organisations invest heavily in talent acquisition and almost nothing in talent development
+  - They will spend six months and hundreds of thousands of dollars finding the right person, then provide almost no support for that person's growth once hired
 
 > [!tip] Core Insight
 > The organisation will provide structure and resources. It will not provide honest answers about what is going wrong. That, you have to find for yourself.
@@ -803,6 +938,19 @@ The value of the Horney-Hogan framework is that it allows you to predict your ow
 - The inner circle provides insight and sponsorship
 - The breadth provides resilience
 - <b style="color: #27ae60">When a restructuring happens, when a boss leaves, when a political wind shifts, the person with five advocates at different levels survives what the person with one does not</b>
+
+```mermaid
+flowchart TD
+    A[You] --> B[Inner Circle<br>2-3 Deep Advocates]
+    A --> C[Breadth Network<br>20+ Positive Contacts]
+    B -->|Honest feedback| A
+    B -->|Active sponsorship| D[Career Resilience]
+    C -->|Passive protection| D
+    C -->|Options during change| D
+    style D fill:#27ae60,color:#fff
+```
+
+The inner circle provides depth of insight; the breadth network provides breadth of protection. Both are necessary — depth without breadth creates the single-advocate trap.
 
 ---
 
@@ -847,8 +995,9 @@ The value of the Horney-Hogan framework is that it allows you to predict your ow
 >    - What do I do that gets in my way?
 >    - If you were coaching me, what is the one thing you would tell me to change?
 > 3. The third question is the critical one — framed as coaching advice, it gives people permission to be candid
+> 4. Look for patterns across respondents — a single data point is an opinion; a pattern is a signal
 
-Most people will be polite with the first two questions. The third, framed as coaching advice, gives them permission to be candid.
+Most people will be polite with the first two questions. The third, framed as coaching advice, gives them permission to be candid. Cast emphasises that the value of the informal 360 is not in any single response but in the patterns that emerge across respondents — if three out of five people mention the same issue, that issue is real regardless of how you feel about it.
 
 ### The Core Quadrant Self-Assessment
 
@@ -859,6 +1008,7 @@ Most people will be polite with the first two questions. The third, framed as co
   - **Allergy:** Why do you resist the balancing quality? (e.g., patience feels like passivity)
 - <b style="color: #27ae60">The allergy is the key diagnostic</b>
   - If you have a strong negative reaction to the balancing quality — if patience makes your skin crawl, if delegation feels like surrender, if saying no feels like selfishness — that reaction is pointing directly at your derailer
+  - The intensity of your allergic reaction is proportional to the severity of your derailer — the more strongly you resist the balancing quality, the more you need it
 
 ---
 
@@ -867,6 +1017,7 @@ Most people will be polite with the first two questions. The third, framed as co
 - Rank the five motives (achievement, affiliation, power, autonomy, purpose) in order of how strongly they drive you
 - Then ask someone who knows you well to rank them for you
 - The gap between the two rankings reveals where your self-knowledge is calibrated and where it is not
+- Cast notes that most people are reasonably accurate about their top motive but poor at identifying their second and third — which are precisely the ones that create the most trouble when unexamined
 
 ```mermaid
 flowchart TD
@@ -917,3 +1068,5 @@ That said, for anyone who suspects they may be getting in their own way — and 
 - [[So Good They Can't Ignore You - Cal Newport|So Good They Can't Ignore You]] — Cal Newport's case for building career capital through deliberate practice; complements Cast's "right stuff" formula with a deeper model of skill development
 - [[The First 90 Days - Michael D. Watkins|The First 90 Days]] — Michael Watkins' framework for navigating role transitions; provides the tactical detail Cast's career transitions chapter gestures at but does not fully deliver
 - [[Mindset - Carol S. Dweck|Mindset]] — Carol Dweck's research on growth versus fixed mindset; the psychological foundation that explains why some people can hear Cast's feedback and change while others cannot
+- [[What Got You Here Won't Get You There - Marshall Goldsmith|What Got You Here Won't Get You There]] — Marshall Goldsmith's catalogue of the behavioural habits that hold successful people back; the most natural companion volume to Cast's derailment archetypes
+- [[Snakes in Suits - Babiak & Hare|Snakes in Suits]] — Babiak and Hare's analysis of psychopathy in the workplace; addresses the organisational dysfunction dimension that Cast acknowledges but does not explore

@@ -110,6 +110,10 @@ The book's architecture maps business frameworks onto three life domains, with e
 
 The core metaphor is <b style="color: #2980b9">marginal thinking</b> — the habit of asking "What is the incremental cost of this decision?" rather than "What is the full cost of the path this decision puts me on?"
 
+- The marginal cost of any single compromise looks trivially low
+- But the full cost of the path that compromise puts you on compounds over years
+- This is why the smartest analysts in the room can end up with the worst personal outcomes — they are optimising each decision locally while ignoring the trajectory
+
 > [!example] Blockbuster's Marginal Death
 > - Netflix launched as a tiny DVD-by-mail startup
 > - The cost of responding to Netflix seemed negligible compared to Blockbuster's existing rental revenue
@@ -168,6 +172,32 @@ Herzberg identified two categories of factors:
 
 ---
 
+```mermaid
+flowchart LR
+    subgraph Hygiene["Hygiene Factors"]
+        H1[Compensation]
+        H2[Job Security]
+        H3[Status]
+        H4[Working Conditions]
+    end
+    subgraph Motivators["Motivator Factors"]
+        M1[Challenge]
+        M2[Recognition]
+        M3[Responsibility]
+        M4[Personal Growth]
+    end
+    Hygiene -->|"Adequate = removes pain"| N[Not Dissatisfied]
+    Hygiene -->|"More = no extra happiness"| N
+    Motivators -->|"Present = genuine fulfilment"| S[Deeply Satisfied]
+    Motivators -->|"More = deepening satisfaction"| S
+    style N fill:#f39c12,color:#fff
+    style S fill:#27ae60,color:#fff
+```
+
+Hygiene and motivation operate on entirely separate tracks — you can be not dissatisfied and still deeply unfulfilled, because the two systems respond to different inputs.
+
+---
+
 > [!example]- The High-Achiever Trap at HBS
 > - Christensen's classmates graduated with exceptional options
 > - Many were drawn to the highest-paying offers — investment banking, management consulting, corporate law
@@ -191,10 +221,22 @@ Herzberg identified two categories of factors:
 
 ---
 
+> [!example] The Doctor Who Became a Stockbroker
+> - Christensen describes a former medical professional who left medicine for Wall Street
+> - The salary tripled; the work became meaningless to him
+> - He missed the feeling of making a tangible difference in someone's life
+> - The motivators he had taken for granted — seeing patients recover, being thanked, solving diagnostic puzzles — vanished entirely
+> - He discovered that no amount of bonus money could replace the sense of contribution he had walked away from
+> - Yet he could not easily return — his lifestyle had expanded to fill his income
+> **The lesson:** When you trade motivators for hygiene, you only discover the cost after the lifestyle trap has closed.
+
 - <b style="color: #e74c3c">The nuance Christensen acknowledges:</b> Hygiene factors must be adequate before motivators can take effect
   - If you cannot feed your family, or your manager is abusive, or your job is genuinely insecure, those problems must be addressed first
   - The theory does not say money does not matter
   - It says money matters up to a threshold — and beyond that threshold, more money buys you nothing that matters
+- Christensen is careful to note that the threshold differs for everyone:
+  - Someone with student debt and a young family has a higher hygiene threshold than a single person with no obligations
+  - The point is not to pursue poverty — it is to recognise when hygiene is adequate and shift your attention to motivators
 
 > [!tip] Core Insight
 > Satisfaction and dissatisfaction are independent dimensions. You can eliminate every source of unhappiness and still feel empty — because removing pain and creating meaning are entirely different operations.
@@ -211,6 +253,11 @@ This chapter borrows from Henry Mintzberg's research on how strategy actually fo
   - <b style="color: #2980b9">Deliberate plans</b> — what you set out to do
   - <b style="color: #2980b9">Emergent opportunities</b> — what you discover along the way
 - The interaction between these two is where real strategy lives
+- Most people assume strategy is entirely deliberate — you make a plan, you execute it
+- Mintzberg's research showed that reality is far messier:
+  - Intended strategies often fail or become irrelevant
+  - Opportunities that nobody anticipated often become the real strategy
+  - The skill is not in planning perfectly but in recognising which emergent opportunities deserve commitment
 
 > [!example]- Honda and the Super Cub
 > - In the early 1960s, Honda sent a team to the United States with a deliberate strategy: sell large motorcycles to compete with Harley-Davidson and European manufacturers
@@ -326,6 +373,17 @@ The framework creates a clear toggle: stay open until you find the right fit, th
   - But the compound effect is a life that drifts further and further from the one you intended
 - <b style="color: #e74c3c">By the time the consequences become visible — a distant spouse, children who do not confide in you, health problems that could have been prevented — the drift has been going on for years</b>
 
+> [!example] The "Steve" Story — Resource Allocation in Action
+> - Christensen tells the story of a student he calls "Steve" who was wrestling with two competing offers after graduation
+> - One was a prestigious consulting position with high pay and intense travel demands
+> - The other was a smaller role that would allow him to be home every evening
+> - Steve chose the consulting job, telling himself it was temporary — just a few years to build financial security
+> - Three years became five, then seven
+> - His marriage survived, but the deep connection he had planned to build with his children never materialised
+> - He had been physically absent during the years when presence mattered most
+> - His calendar told the story his intentions never could
+> **The lesson:** "Temporary" resource misallocation has a way of becoming permanent — because the circumstances that justify the temporary never actually change.
+
 > [!abstract] The Resource Allocation Audit
 > 1. Look at your calendar from last week
 > 2. Where did your time actually go?
@@ -382,6 +440,24 @@ The framework creates a clear toggle: stay open until you find the right fit, th
 > - She had committed years of her life based on an untested assumption
 > **The lesson:** The more a commitment matters to you, the more aggressively you must test the assumptions it depends on.
 
+```mermaid
+flowchart TD
+    A[Major Decision] --> B[List Assumptions]
+    B --> C[Rank by Importance]
+    B --> D[Rank by Uncertainty]
+    C --> E[High Importance + High Uncertainty]
+    D --> E
+    E --> F[Test These First]
+    F -->|"Confirmed"| G[Proceed with Confidence]
+    F -->|"Disproved"| H[Revise or Abandon Plan]
+    style E fill:#e74c3c,color:#fff
+    style G fill:#27ae60,color:#fff
+```
+
+Discovery-driven planning forces you to identify and test the assumptions that carry the most risk before committing resources you cannot recover.
+
+---
+
 > [!abstract] Discovery-Driven Planning for Life Decisions
 > 1. Before accepting a new role, changing cities, starting a business, or making any major commitment — **write down what must be true** for it to succeed
 > 2. Rank those assumptions by two criteria:
@@ -389,6 +465,11 @@ The framework creates a clear toggle: stay open until you find the right fit, th
 >    - How **uncertain** they are
 > 3. The assumptions that are both **highly important** and **highly uncertain** are the ones to test first
 > 4. Test as cheaply and quickly as possible — before you are fully committed
+
+- <b style="color: #27ae60">The key distinction is between assumptions that are merely important and assumptions that are both important and uncertain</b>:
+  - An assumption like "I need to earn at least $X to cover my expenses" is important but relatively easy to verify
+  - An assumption like "This company's culture will allow me to grow" is both important and highly uncertain — it requires deliberate investigation
+- Christensen emphasises that most people test the easy assumptions and ignore the hard ones — precisely because the hard ones are uncomfortable to examine
 
 > [!tip] Core Insight
 > Every plan is built on a stack of assumptions. The ones that destroy you are the ones you never questioned. Test the most critical assumptions before committing — not after.
@@ -445,6 +526,16 @@ Applied to relationships, the parallel is stark and uncomfortable.
 > - It outperformed family income, parental education, and school quality as a predictor
 > **The lesson:** The investment that matters most happens before it is obvious that it matters at all.
 
+> [!example] The Classmate Who Invested Late
+> - Christensen describes a classmate who spent his thirties and forties building a career of exceptional achievement
+> - By his fifties, he had the title, the income, and the recognition — and a marriage that existed in name only
+> - His children were polite but distant; they did not call unless obligated
+> - He attempted to "reinvest" in his family with grand gestures — expensive holidays, gifts, planned activities
+> - None of it worked because the foundation had never been built
+> - The daily presence, the small moments of connection, the years of being there — those could not be purchased retroactively
+> - He was trying to plant a tree and sit in its shade on the same afternoon
+> **The lesson:** Relationship capital compounds slowly over years. Attempting to build it rapidly after decades of neglect is like trying to cram for a test that covers an entire lifetime.
+
 > [!tip] Core Insight
 > Relationships require investment long before they show signs of distress. By the time the damage is visible, years of neglect have already compounded beyond easy repair.
 
@@ -458,6 +549,11 @@ This chapter introduces Christensen's famous <b style="color: #2980b9">jobs-to-b
 
 - The theory begins with a question that reframes how you think about needs
 - Instead of asking "What kind of person buys this product?" (demographics, psychographics, market segments), ask: <b style="color: #27ae60">"What job is the customer hiring this product to do?"</b>
+- The distinction matters because:
+  - Demographics tell you who the person is
+  - The job tells you what the person needs
+  - The same person has different jobs at different times
+  - Different people have the same job in different contexts
 
 > [!example]- The Milkshake Study
 > - A fast-food chain wanted to sell more milkshakes
@@ -506,6 +602,17 @@ This chapter introduces Christensen's famous <b style="color: #2980b9">jobs-to-b
 - <b style="color: #27ae60">Understanding what job someone needs you to do is fundamentally different from projecting what you think they need</b>
 - Most relationship failures are not failures of effort — they are failures of understanding
 - Your effort communicates that you do not see someone clearly enough to know what they actually need
+- The mechanism is identical to the milkshake study:
+  - The fast-food chain worked incredibly hard to improve the product along dimensions that did not matter to the commuter's job
+  - Scott worked incredibly hard at a domestic task that did not address Barbara's actual need
+  - In both cases, maximum effort produced zero results because the effort was aimed at the wrong job
+
+**The sacrifice dimension:**
+
+- Christensen adds a layer to the jobs-to-be-done framework that most business books skip: <b style="color: #2980b9">sacrifice</b>
+- When you sacrifice for someone — genuinely give up something that matters to you — it transforms the relationship from preference to identity
+- You no longer merely like spending time with them; they become part of who you are
+- <b style="color: #e74c3c">This is why making everything easy for someone can paradoxically weaken the bond</b> — ease does not create devotion; sacrifice does
 
 > [!tip] Core Insight
 > People do not sustain relationships based on demographics or categories. They "hire" you to do a specific job in their lives. Get the job wrong, and even maximum effort produces resentment instead of gratitude.
@@ -528,6 +635,7 @@ The framework has three components:
 
 - Two people with identical resources will produce radically different outcomes depending on their processes
 - Priorities determine where resources and processes are directed
+- The hierarchy matters: priorities drive which processes you develop, and processes determine how effectively you deploy your resources
 
 ---
 
@@ -574,6 +682,16 @@ Each outsourcing decision looked rational in isolation, but the cumulative effec
   - The problems get solved
 - But the child never develops the **processes** — resilience, problem-solving, self-confidence, emotional regulation — that come only from wrestling with hard problems and sometimes failing
 - <b style="color: #27ae60">Resources can be given to a child; processes cannot — processes must be earned through experience</b>
+
+---
+
+**The schools of experience:**
+
+- Christensen extends the capabilities framework with <b style="color: #2980b9">schools of experience</b> — the idea that the most valuable thing any experience provides is not the credential or the salary but the processes it forces you to develop
+- A difficult first job that requires you to lead a struggling team teaches more than a prestigious role that requires you to execute a proven playbook
+- Parents who schedule every hour of their child's day are, in Christensen's language, enrolling them in schools that teach no processes:
+  - Structured activities teach compliance and execution
+  - Unstructured time teaches self-direction, creativity, and boredom tolerance
 
 - Christensen describes parents who enrol their children in an endless succession of organised activities — soccer, piano, debate club, SAT prep — believing they are building capability
 - But if every hour is structured by adults, the child never learns to:
@@ -781,6 +899,16 @@ The 98% path requires a new decision at every junction — and each decision is 
   - The decision is made once, and it holds forever
   - When a line is 98%, every single situation requires a new decision — and the decision is always biased toward the convenient exception
 
+---
+
+| Approach | Decision cost | Outcome over time | Risk |
+|----------|--------------|-------------------|------|
+| **100% commitment** | One decision, made once | Boundary holds permanently | May seem rigid in the moment |
+| **98% commitment** | New decision every time | Boundary erodes gradually | "Just this once" compounds |
+| **Case-by-case** | Continuous negotiation | No stable boundary at all | Drift without awareness |
+
+The table reveals why 100% is actually easier than 98%: it reduces an infinite series of difficult decisions to a single one.
+
 > [!tip] Core Insight
 > Bright-line principles are easier to maintain than almost-bright-line principles. The 100% commitment eliminates all future decision costs; the 98% commitment forces a new negotiation every time — and you will lose some of those negotiations.
 
@@ -804,6 +932,8 @@ He frames purpose as having three components:
   - What have they built?
   - How do they treat people?
 - <b style="color: #27ae60">The more specific the likeness, the more useful it is as a decision filter</b>
+- Christensen draws from his own experience: he spent an hour every evening at Oxford thinking about what kind of person he wanted to become
+- That practice — sustained over two years — produced a clarity of purpose that guided decisions for the rest of his life
 
 ---
 
@@ -813,6 +943,9 @@ He frames purpose as having three components:
 - It is the corporate equivalent of Enron's Code of Ethics — a beautiful document with no connection to reality
 - True commitment means that your purpose shapes your behaviour not just when it is convenient but precisely when it is inconvenient
 - The moments when it costs you something to live by your purpose are the moments when the commitment is real
+- Christensen connects this directly to the 100% principle:
+  - If your purpose includes being a person of integrity, that purpose must hold in the exact moments when compromise is most tempting
+  - If your purpose includes being a present parent, that purpose must hold on the exact evenings when work is most demanding
 
 **3. Metrics — how you measure progress:**
 
@@ -869,6 +1002,15 @@ Purpose has three interlocking components — a vivid image of the person you wa
 
 <b style="color: #27ae60">Purpose is the antidote to drift</b> — the mechanism that allows you to say: "My time goes here, not there. My energy goes to this, not that. This opportunity, however attractive, does not serve the person I am trying to become — so I will let it pass."
 
+> [!example] Christensen's Oxford Evenings
+> - Every evening at Oxford, Christensen spent a full hour in contemplation
+> - He was not praying for career success or academic achievement
+> - He was asking a single question: what kind of person do I want to become?
+> - Over two years, this practice produced a deeply specific image — not of career milestones or financial targets, but of the kind of husband, father, community member, and teacher he wanted to be
+> - That image became his likeness — the reference point against which every subsequent decision was measured
+> - Decades later, when career opportunities, health crises, and family challenges arose, he had a filter that had been refined through years of sustained reflection
+> **The lesson:** Purpose does not arrive in a flash of insight — it is built through sustained, deliberate reflection over months and years.
+
 > [!tip] Core Insight
 > Purpose is not a luxury — it is the decision engine that prevents your life from being hijacked by whatever screams loudest. Without it, the urgent always defeats the important.
 
@@ -910,6 +1052,8 @@ Compared to other books in this territory, *How Will You Measure Your Life?* is 
 
 - [[christensen_innovators-dilemma|The Innovator's Dilemma]] — Christensen's foundational work on disruptive innovation, the theory that underpins several frameworks in this book
 - [[pink_drive|Drive]] — Daniel Pink's exploration of intrinsic motivation, which complements and extends Herzberg's two-factor theory
-- [[frankl_mans-search-for-meaning|Man's Search for Meaning]] — Viktor Frankl's non-religious framework for purpose, a useful counterweight to Christensen's faith-informed perspective
+- [[Man's Search for Meaning - Viktor Frankl]] — Viktor Frankl's non-religious framework for purpose, a useful counterweight to Christensen's faith-informed perspective
 - [[Range - David Epstein|Range]] — David Epstein's argument for broad experience over early specialisation, which intersects with the "schools of experience" framework
-- [[mckeown_essentialism|Essentialism]] — Greg McKeown's case for disciplined pursuit of less, which reinforces the resource allocation argument
+- [[Essentialism - Greg McKeown]] — Greg McKeown's case for disciplined pursuit of less, which reinforces the resource allocation argument
+- [[Deep Work - Cal Newport]] — Cal Newport's framework for protecting focused time against distraction, which parallels the resource allocation audit
+- [[The Effective Executive - Peter Drucker]] — Drucker's argument that effectiveness is a learnable discipline, not a talent — connecting to Christensen's process-over-resources insight

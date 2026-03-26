@@ -116,6 +116,13 @@ Azzarello makes a crucial distinction between working *in* the business and work
 - **Working in the business** means doing tasks — writing reports, attending meetings, responding to requests, handling escalations
 - **Working on the business** means stepping back to ask: What are the three things that will matter most six months from now? Am I spending my time on those things, or am I spending it on everything else?
 
+The difference is altitude:
+
+- Working *in* is ground-level — reactive, tactical, task-driven
+- Working *on* is aerial — proactive, strategic, outcome-driven
+- Most people spend ninety percent of their time at ground level and wonder why they never see the full picture
+- <b style="color: #e74c3c">Busyness is the enemy of strategic thinking</b> — when every hour is consumed by requests, there is no capacity left to think about what actually matters
+
 > [!tip] Core Insight
 > You must accept that some things will not get done, some people will be disappointed, and some balls will drop. The alternative — doing everything at a mediocre level — is worse, because mediocre performance across the board produces neither forgiveness nor standout results.
 
@@ -132,6 +139,14 @@ Azzarello makes a crucial distinction between working *in* the business and work
   - But remarkable success on the critical few generates **forgiveness** for gaps on the rest
   - <b style="color: #e74c3c">Mediocre performance across everything generates neither forgiveness nor praise</b>
 - **"Being forgiven requires actually succeeding,"** she writes
+
+The logic chain is tight:
+
+- If you try to do ten things well, you will do ten things at seventy percent
+- If you try to do three things brilliantly and manage seven things at fifty percent, you will be remembered for the three brilliant outcomes
+- The seventy-percent-across-the-board professional is forgettable
+- The three-brilliant-outcomes professional is promotable
+- The key is that the brilliant outcomes must be the *right* ones — the ones the organisation cares about most
 
 > [!example] The COO's Single Bet
 > - A COO inherited a sprawling agenda of infrastructure, technology, and operational projects
@@ -159,6 +174,9 @@ Azzarello introduces the <b style="color: #2980b9">21-times rule</b> to support 
 - This creates what she calls **social norms** around your priorities:
   - The organisation learns that requesting your time for non-priority work will be declined
   - It stops asking
+- The 21-times rule also applies to team alignment:
+  - Your team needs to hear the priorities repeated until they can recite them back to you
+  - If your team cannot articulate the Can't Fail outcomes without your help, you have not communicated them enough
 
 > [!abstract] How to Identify Your Can't Fails
 > 1. List all current work
@@ -166,6 +184,17 @@ Azzarello introduces the <b style="color: #2980b9">21-times rule</b> to support 
 > 3. Let the answer reveal the true Can't Fails
 > 4. Ratify them with your boss — not as a unilateral declaration, but as a negotiated agreement
 > 5. Without your boss's buy-in, ruthless prioritisation looks like insubordination
+
+---
+
+The interplay between priorities and boss management is critical:
+
+- You cannot simply decide to drop things — you need explicit agreement from your boss about what will be deprioritised
+- This conversation is itself a strategic act:
+  - It signals that you are thinking at the right level
+  - It forces your boss to articulate what they truly care about
+  - It creates a shared understanding that protects you when someone complains about the work you dropped
+- <b style="color: #27ae60">The negotiated priority list is your shield</b> — when someone comes to you with urgent-but-unimportant work, you can point to the agreement and say, "That is not in our Can't Fail list"
 
 ---
 
@@ -198,6 +227,14 @@ She introduces the concept of <b style="color: #2980b9">prime time</b> — the w
 - Protect it for strategic thinking, difficult problems, and creative work
 - Move email and meetings to your low-energy hours
 
+The broader principle extends beyond daily scheduling:
+
+- Energy is affected by the type of work you do, not just the hours
+- Work that aligns with your strengths and feels meaningful *generates* energy
+- Work that feels pointless, bureaucratic, or misaligned with your values *drains* energy
+- The DO-LOOK-CONNECT model is itself an energy argument:
+  - People stuck in DO-only mode are often exhausted precisely because they are doing the wrong work with no recognition and no support
+
 > [!example] The Director Who Gained a Day Per Week
 > - A director Azzarello coached was working twelve-hour days but feeling increasingly ineffective
 > - When they audited his calendar, they found his mornings — his clearest thinking time — were consumed by standing meetings and inbox triage
@@ -209,8 +246,33 @@ She introduces the concept of <b style="color: #2980b9">prime time</b> — the w
 > [!tip] Core Insight
 > Energy is not just about sleep and exercise. Resentment drains energy. Workhorse mode drains energy. Doing work you know is low-value drains energy. Doing meaningful work, feeling visible, and having supportive relationships all *build* energy.
 
-- The DO-LOOK-CONNECT model is itself an energy argument:
-  - People stuck in DO-only mode are often exhausted precisely because they are doing the wrong work with no recognition and no support
+---
+
+Azzarello also addresses the emotional dimension of energy:
+
+- **Resentment** is a major energy drain — feeling unrecognised, undervalued, or exploited creates a chronic low-grade anger that saps motivation
+- **Guilt** about not doing everything drains energy — the workhorse mentality produces guilt about every ball dropped, which paradoxically makes the remaining work harder
+- **Isolation** drains energy — working alone without mentors, allies, or supporters creates a feeling of being trapped
+- The fix for all three is the same: invest in the LOOK and CONNECT pillars that most people neglect
+- <b style="color: #27ae60">When you feel visible, supported, and valued, the same workload feels lighter</b>
+
+```mermaid
+flowchart TD
+    A[Energy Sources] --> B[Meaningful work]
+    A --> C[Recognition]
+    A --> D[Supportive relationships]
+    E[Energy Drains] --> F[Resentment]
+    E --> G[Guilt]
+    E --> H[Isolation]
+    B --> I[High Performance]
+    C --> I
+    D --> I
+    F --> J[Burnout]
+    G --> J
+    H --> J
+```
+
+Energy is not just physical — resentment, guilt, and isolation drain it as effectively as sleep deprivation, while recognition, meaning, and connection restore it.
 
 ---
 
@@ -275,6 +337,17 @@ The escape came when he shifted his approach:
 
 ---
 
+The workhorse trap has a psychological dimension that makes it especially sticky:
+
+- Workhorses often *enjoy* being the hero — there is a dopamine hit in being the one who saves the day
+- The constant stream of problems to solve provides a sense of purpose and competence
+- Stepping back from that role feels like losing your identity, not gaining a promotion
+- Azzarello acknowledges this openly — the transition is not just strategic, it is emotional
+- You have to grieve the loss of your old role before you can fully inhabit the new one
+- <b style="color: #e74c3c">The comfort of being essential at the wrong level is the enemy of growth</b>
+
+---
+
 ### Chapter 6: The Level Dilemma — What "Good" Means Changes
 
 *Each time you step up, the definition of excellence changes completely — and most people fail transitions because they keep performing at the old level's definition of good.*
@@ -291,6 +364,13 @@ The transition from each level to the next requires *abandoning* the behaviours 
 
 - The brilliant engineer who becomes a manager and still writes all the code is not demonstrating dedication — they are failing to do the new job
 - The exceptional manager who becomes a VP and still runs every team meeting is not showing leadership — they are competing with their own subordinates
+
+This is counterintuitive because the behaviours you are abandoning are the very ones that earned you the promotion:
+
+- You were promoted *because* you were the best coder, the best analyst, the best deal-closer
+- The promotion rewards those skills — and then immediately makes them irrelevant
+- <b style="color: #27ae60">The qualities that got you promoted are not the qualities that will make you successful at the next level</b>
+- This is the cruelest irony of career advancement
 
 > [!example] Natalie the Proposal Reviewer
 > - Natalie, a regional sales director, personally reviewed every proposal her team submitted
@@ -313,6 +393,14 @@ The transition from each level to the next requires *abandoning* the behaviours 
 - <b style="color: #27ae60">Delegation is not about offloading tasks you do not want to do</b>
 - It is about building capability in your team so the highest-value work gets done at the right levels
 - If you have ten people on your team, developing each of them to work at your level creates ten times more value than adding yourself as an eleventh worker at their level
+
+The mathematics of delegation:
+
+- One person working at full capacity produces X value
+- Ten people working at eighty percent capacity each produce 8X value
+- The leader who does all the work themselves caps the team at 1X
+- The leader who delegates effectively and accepts eighty percent quality multiplies the team's output by a factor of eight
+- <b style="color: #e74c3c">Perfectionism at the individual level destroys value at the team level</b>
 
 > [!example] Azzarello's Accidental Leadership Lesson
 > - Early in her career, Azzarello was given responsibility for an R&D organisation that worked on technology she did not understand
@@ -346,6 +434,10 @@ She also introduces the idea of <b style="color: #2980b9">delegating to a proces
 - If no one on your team can handle a particular task, you can still systematise it
 - Create a checklist, a decision tree, a template — so that the task no longer requires your personal judgment every time
 - The process becomes the delegate
+- This is especially powerful for recurring decisions:
+  - If you make the same type of judgment call repeatedly, codify the criteria
+  - The next person facing that decision can use the criteria instead of seeking you out
+  - You are freed from the decision without the decision quality degrading
 
 ```mermaid
 flowchart TD
@@ -373,6 +465,14 @@ Delegation — whether to a person or a process — is the mechanism that shifts
 - She does not deny that it can be
 - <b style="color: #e74c3c">Doing great work in silence and hoping someone notices is not modesty — it is career negligence</b>
 
+The distinction she makes is between self-promotion and value communication:
+
+- **Self-promotion** is talking about yourself — "Look at what I did"
+- **Value communication** is talking about outcomes — "Here is what this means for the business"
+- The first is annoying; the second is essential
+- People who avoid all communication about their work because they fear seeming self-promotional are making a category error
+- They are conflating two very different activities
+
 ### Chapter 8: "Do What You Love" Is Bad Advice
 
 *Azzarello opens the LOOK Better section with a provocative contrarian argument that challenges the popular wisdom about following your passion.*
@@ -387,6 +487,8 @@ The nuance she introduces:
 - There is a distinction between *loving the work* and *loving the outcomes*
 - You may not love the process of stakeholder management, but you can love the outcome of having influence and resources
 - <b style="color: #27ae60">Effective professionals learn to love the game, not just the craft</b> — and part of the game is making sure the right people see you playing it well
+- The craft is what you do at your desk; the game is what you do with the people around you
+- Both are necessary, and neither is sufficient alone
 
 ---
 
@@ -407,6 +509,13 @@ The mechanism is self-reinforcing:
 - High credibility reduces friction → easier to deliver results → builds more credibility
 - Low credibility increases friction → harder to deliver results → further erodes credibility
 - <b style="color: #e74c3c">The rich get richer and the poor get poorer — not because of talent differences, but because of credibility differences</b>
+
+This self-reinforcing nature makes credibility especially dangerous when it turns negative:
+
+- Once you have lost credibility with a key stakeholder, every subsequent interaction starts from a deficit
+- You spend more energy defending and explaining than creating value
+- The extra energy spent on defence leaves less for results, which further erodes credibility
+- Breaking a negative credibility spiral often requires a dramatic intervention — a visible win, a new role, or a complete reset of the relationship
 
 > [!example] The VP Who Couldn't Get Budget
 > - A VP of engineering had built an exceptional product but could never get budget for the initiatives he proposed
@@ -435,6 +544,13 @@ The mechanism is self-reinforcing:
 - If you need to educate someone about what you do, you are by definition not relevant to them
 - Relevance is a gift; education is a tax
 
+The inside/outside voice distinction maps to a deeper truth about communication:
+
+- Most people communicate based on what *they* know, not what the *audience* cares about
+- They describe their work in the terms they use daily, because those terms are the most precise
+- Precision is not the goal of stakeholder communication — resonance is
+- A less precise statement in the audience's language is infinitely more effective than a precisely accurate statement in your own
+
 > [!example] The Marketing VP Speaking the Wrong Language
 > - A marketing VP consistently struggled to get budget approval
 > - His presentations were excellent by marketing standards — detailed campaign analytics, click-through rates, engagement metrics, conversion funnels
@@ -459,6 +575,15 @@ She extends this to written communication:
 - If a sentence contains jargon specific to your function, rewrite it
 - If a metric is meaningful only within your team, either translate it to a business metric or leave it out
 - The test is simple: <b style="color: #e74c3c">would a senior executive in a different function understand every word? If not, you are speaking inside voice</b>
+
+> [!example] The IT Director Who Learned to Speak Finance
+> - An IT director had been trying for months to get approval for a major infrastructure upgrade
+> - His proposals were filled with technical specifications — server capacity, network throughput, latency improvements
+> - The CFO kept asking, "But what does this mean for the business?"
+> - After learning the outside voice principle, the IT director reframed his proposal entirely
+> - Instead of "reduce server latency by 40%," he wrote "reduce checkout abandonment by 12%, recovering approximately $800K in annual revenue"
+> - The CFO approved the budget in the same meeting
+> **The lesson:** The technology had not changed — the language had.
 
 ---
 
@@ -490,6 +615,16 @@ Her method:
 - When people cannot predict how you will show up — brilliant one day, distracted the next — they stop trusting you, even when your best days are extraordinary
 - Predictability is a form of respect for the people you work with
 
+---
+
+Azzarello makes an important distinction between brand and reputation:
+
+- **Reputation** is what people say about you based on past performance
+- **Brand** is the deliberate, forward-looking pattern you are building
+- You cannot control your reputation — it is already formed by past actions
+- You *can* control your brand — it is shaped by the behaviours you choose going forward
+- The gap between your current reputation and your desired brand is your development agenda
+
 > [!abstract] Brand Development Process
 > 1. Gather feedback from 5-15 people on what they see as "always true" about you
 > 2. Look for patterns — these patterns are your brand, whether you chose them or not
@@ -512,6 +647,15 @@ Azzarello recommends creating a <b style="color: #2980b9">stakeholder communicat
 
 - A deliberate map of who matters, what they care about, and how often you should be in front of them
 - This includes your boss, your boss's peers, your boss's boss, key clients, and **"influencers"** — people who may not have formal decision-making authority but whose opinions carry weight
+
+The stakeholder map should categorise people by their relationship to your career:
+
+| Category | Who they are | Frequency of contact |
+|----------|-------------|---------------------|
+| **Decision-makers** | People who directly decide promotions, budgets, and roles | Monthly minimum |
+| **Influencers** | People whose opinions decision-makers trust | Quarterly |
+| **Peers** | People at your level who can become advocates or blockers | Ongoing |
+| **Team** | Your direct reports and their teams | Daily/weekly |
 
 > [!example] Azzarello's Visibility Transformation
 > - After the "nobody knows you" wake-up call, Azzarello created a list of thirty executives she needed to know
@@ -561,6 +705,13 @@ The resistance comes from multiple sources — Azzarello addresses each one:
 - **Self-sufficiency:** admirable as a value, counterproductive as a career strategy
 - **Indebtedness:** the best mentoring relationships are reciprocal, and most senior people *want* to help — it satisfies their desire to teach and builds their own network
 
+The deeper insight is about leverage:
+
+- A person working alone has only their own knowledge, experience, and perspective
+- A person who asks for help gains access to other people's knowledge, experience, and perspective
+- The difference in quality of output is not marginal — it is multiplicative
+- <b style="color: #27ae60">The most successful people are not the most talented — they are the most helped</b>
+
 > [!example] How Azzarello Became the Best Deal-Maker
 > - Azzarello became known as the best deal-maker in her company
 > - Not because she was naturally gifted at deal-making, but because she sought help from the corporate development team
@@ -580,6 +731,12 @@ The resistance comes from multiple sources — Azzarello addresses each one:
 | **Formal mentor** | Career advocate who actively champions you | High — spends political capital | Recommends you for roles, introduces you to decision-makers, vouches for you in rooms you are not in |
 | **Informal mentor** | Someone you learn from without formal arrangement | Low — may not even know they are mentoring you | Patterns to observe, occasional questions, absorbed wisdom |
 | **Business advisor** | Subject-matter expert consulted on specific problems | Medium — discrete, task-based | Deep expertise in a specific domain (finance, technology, legal) |
+
+Each type serves a different purpose and requires a different approach:
+
+- **Formal mentors** require a deliberate ask — you must explicitly request the relationship and be specific about what you need
+- **Informal mentors** require observation and occasional questions — the relationship is implicit, and the learning happens through watching
+- **Business advisors** require a clear exchange — you bring them a specific problem, they bring specific expertise, and the relationship is bounded by the problem
 
 > [!abstract] Azzarello's Recruitment Formula
 > - **10 informal mentors per year** — observe, ask occasional questions, absorb patterns
@@ -604,6 +761,21 @@ The <b style="color: #2980b9">"extra team"</b> is a concept distinct from mentor
   - Former colleagues who provide external perspectives
   - People you have helped who now feel motivated to reciprocate
   - Specialists in other functions whose expertise complements yours
+
+```mermaid
+flowchart TD
+    A[Your Formal Team] --> B[Direct reports]
+    C[Your Extra Team] --> D[Peers in other departments]
+    C --> E[Former colleagues]
+    C --> F[Specialists in other functions]
+    C --> G[People you have helped]
+    A --> H[Your Total Capacity]
+    C --> H
+    H --> I[Outcomes that exceed your formal authority]
+    style C fill:#2980b9,color:#fff
+```
+
+Your total capacity is the sum of your formal team and your extra team — the extra team often provides the resources, perspectives, and access that your formal authority cannot.
 
 > [!example] The Product Manager's Informal Alliance
 > - A product manager was struggling to get engineering support for her projects
@@ -634,6 +806,11 @@ She contrasts this with <b style="color: #e74c3c">extractive networking</b>:
 - Extractive networking feels efficient but produces brittle connections
 - People helped through extractive networking feel used and avoid future contact
 - People helped through generous networking feel grateful and seek future contact
+
+| Approach | Method | Feeling it creates | Result |
+|----------|--------|-------------------|--------|
+| **Generous** | Help first, ask later | Gratitude, reciprocity | Deep, durable connections |
+| **Extractive** | Ask first, promise later | Obligation, resentment | Brittle, transactional connections |
 
 Her practical advice:
 
@@ -718,6 +895,12 @@ The mechanism:
 - Decision-makers operate under time pressure and trust constraints
 - They default to known quantities because evaluating unknown quantities is expensive and risky
 
+This connects directly back to the LOOK Better pillar:
+
+- If you have done the stakeholder management work, you are already known to the people who generate the list
+- If you have not, no amount of qualification will compensate for being unknown
+- The list is the mechanism through which visibility converts to opportunity
+
 > [!example] How Azzarello Got Her Career-Making Role
 > - Azzarello would never have been considered for running a $1 billion software business based on her resume alone
 > - Her background was atypical for the role, and the hiring manager did not know her
@@ -783,6 +966,20 @@ The three pillars form a reinforcing loop — progress on any one accelerates pr
 - <b style="color: #e74c3c">Do not add the three pillars on top of your current workload</b>
 - The whole point of Ruthless Priorities is that you must drop things to create space
 - If you do not make room by eliminating low-value work, you will never have the energy or time for the LOOK and CONNECT work that your career requires
+
+---
+
+Azzarello acknowledges the implementation challenge honestly:
+
+- Most people who read the book will agree with the framework and then do nothing
+- The reason is not lack of motivation — it is that the DO-only habits are deeply ingrained
+- The workhorse identity is comfortable, even when it is limiting
+- Changing requires tolerating the discomfort of doing less execution work, which initially feels like failing
+- The turning point comes when you see the first results from the LOOK and CONNECT investments:
+  - The first stakeholder who mentions your name in a meeting you were not in
+  - The first mentor who gives you intelligence you would never have discovered alone
+  - The first time your Can't Fail outcome succeeds spectacularly while the things you dropped turned out not to matter
+- These early wins create the motivation to continue
 
 ---
 

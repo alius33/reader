@@ -73,6 +73,7 @@ What gives the book its durability is that Berkun writes about project managemen
 | **The Coding Pipeline** | Implementation as flow control — triage separates shipping from accumulating |
 | **The Political Power Taxonomy** | Five types of organisational power and the distinction between granted and earned power |
 | **Conflict Resolution Through Interests** | Negotiate over interests, not positions — the shared interest defuses the adversarial dynamic |
+| **Communication and Writing** | Most project failures are communication failures in disguise — writing forces thinking |
 
 ---
 
@@ -100,6 +101,10 @@ What gives the book its durability is that Berkun writes about project managemen
   - Every musician is more skilled at their instrument than the conductor is
   - But without the conductor, the ensemble produces noise rather than music
   - The conductor's value is not in playing better but in making the whole greater than the sum of its parts
+- This analogy carries a further implication that Berkun makes explicit:
+  - The conductor must understand every instrument well enough to know when something is off
+  - They do not need to play the violin better than the first violinist, but they need to hear when the violins are out of balance with the cellos
+  - The PM must understand enough of engineering, design, and business to recognise misalignment — even if they cannot do any of those jobs as well as the specialists
 
 ---
 
@@ -143,6 +148,13 @@ flowchart TD
 The PM sits at the centre of all three perspectives, synthesising competing demands into coherent decisions that no single specialist could make alone.
 
 ---
+
+- The three perspectives are not equal at all times — their relative weight shifts across the project lifecycle:
+  - Early planning: business perspective dominates (what should we build and why?)
+  - Design phase: customer perspective should dominate (what do users actually need?)
+  - Implementation: technology perspective takes the lead (how do we build it reliably?)
+  - End-game: all three converge — what ships must satisfy business goals, technical standards, and customer expectations simultaneously
+- <b style="color: #27ae60">The PM who understands this shifting balance adjusts their advocacy accordingly</b>
 
 > [!example] The IE 4.0 Rendering Engine Debate
 > - The engineering team wanted to rebuild the browser's rendering engine from scratch — technically exciting and architecturally sound
@@ -190,6 +202,20 @@ The PM sits at the centre of all three perspectives, synthesising competing dema
 - The decisions made in weeks three, four, and five were all predicated on week two's assumptions
 - By the time the error is discovered, the cumulative damage is far greater than the original mistake
 
+```mermaid
+flowchart LR
+    E1[Week 2 Error] --> E2[Week 3 Decisions Based on Wrong Assumptions]
+    E2 --> E3[Week 4 Cascading Delays]
+    E3 --> E4[Week 5 Compounding Impact]
+    E4 --> E5[Discovery: 2-Month Delay]
+    style E1 fill:#e74c3c,color:#fff
+    style E5 fill:#e74c3c,color:#fff
+```
+
+The snowball effect shows how a small estimation error in week two compounds through every subsequent milestone, producing a delay far larger than the original mistake.
+
+---
+
 > [!example] The Disappearing API
 > - A team at Microsoft estimated a six-month timeline based on careful analysis
 > - Three months in, they discovered that a core dependency — an operating system API they were building on — had changed without warning
@@ -197,8 +223,6 @@ The PM sits at the centre of all three perspectives, synthesising competing dema
 > - But the cascading effects on design, testing, and integration pushed the project back by two months
 > - The original estimate was not wrong — it was built on an assumption that turned out to be false
 > **The lesson:** No amount of estimation rigour can prevent assumptions from being invalidated. The snowball effect means even small surprises cascade.
-
----
 
 > [!example] The Compressed Schedule
 > - A PM was pressured by senior management to compress a twelve-month schedule to nine months
@@ -225,6 +249,10 @@ The PM sits at the centre of all three perspectives, synthesising competing dema
   - It also reveals which specific tasks carry the most uncertainty
 - Build buffer into the schedule proportional to the number of unknowns
 - Use milestone checkpoints to recalibrate as information improves
+- Berkun warns against two common pathologies:
+  - **Sandbagging** — engineers who pad estimates excessively to protect themselves
+  - **Hero culture** — environments where admitting uncertainty is treated as weakness, producing aggressive estimates that consistently fail
+- <b style="color: #e74c3c">Both pathologies stem from the same root: a culture where estimation is a negotiation rather than an investigation</b>
 
 ---
 
@@ -251,6 +279,10 @@ The five qualities of an effective vision:
 - <b style="color: #e74c3c">One person should own the vision</b> — Berkun reserves some of his sharpest language for committee-produced vision documents:
   - <b style="color: #e74c3c">"Kitchen-sink statements"</b> — documents that try to include every stakeholder's pet priority
   - <b style="color: #e74c3c">"Wimp-o-matic non-commitments"</b> — statements so vague that nobody could disagree with them, which means nobody can be guided by them either
+- The root cause of bad visions is a failure of courage:
+  - A good vision must exclude — it must say "we are not doing this" clearly enough to disappoint people
+  - Committee visions avoid exclusion because no one wants to be the person who cut someone else's priority
+  - The result is a document that reads like a corporate brochure: everything is important, which means nothing is
 
 > [!example] The Forty-Page Vision That Committed to Nothing
 > - Berkun inherited a vision document on a Microsoft project that ran to forty pages, written by six people
@@ -271,6 +303,9 @@ The five qualities of an effective vision:
 
 - A vision should be visible — posted on walls, read aloud in meetings, actively referenced in decision-making
 - <b style="color: #27ae60">If it is not being used, it is not a vision — it is an artefact</b>
+- Berkun tests his own visions by asking team members, unprompted, to state the project's top three priorities:
+  - If they agree, the vision is working
+  - If they disagree, the vision has failed — regardless of how polished the document looks
 
 ---
 
@@ -331,6 +366,15 @@ Design moves from broad exploration through deliberate checkpoints that progress
 > - The team that lost was frustrated, but the project moved forward
 > **The lesson:** "What problem are you trying to solve?" sometimes needs to be followed by "And who decides?"
 
+- Berkun identifies a common anti-pattern he calls <b style="color: #2980b9">design by committee</b>:
+  - When no single person has the authority or courage to commit, the design becomes a patchwork of compromises
+  - Every stakeholder gets a piece of what they want, but no coherent vision holds the pieces together
+  - The result is a product that is not bad in any single dimension but fails to excel in any — mediocre by consensus
+- The antidote is clear design ownership:
+  - One person — PM, lead designer, or architect — owns the design and is accountable for its coherence
+  - Others contribute expertise, raise concerns, and advocate for their perspective
+  - But when the debate reaches an impasse, the owner decides
+
 ---
 
 ## Design as Conversation
@@ -371,6 +415,12 @@ Design moves from broad exploration through deliberate checkpoints that progress
 
 > [!tip] Core Insight
 > "What problem are you trying to solve?" is the single most powerful question in project management. It resets confused discussions, aligns divergent teams, and forces people to distinguish between the problem and their preferred solution.
+
+- Berkun also emphasises the importance of <b style="color: #2980b9">open questions vs closed questions</b> in the design conversation:
+  - Open questions ("how might we improve the onboarding flow?") expand the design space
+  - Closed questions ("should the button be blue or green?") contract it
+  - <b style="color: #27ae60">Use open questions early and closed questions late</b> — reversing the order is one of the most common design process mistakes
+  - Teams that jump to closed questions too early lock in design directions before they understand the problem
 
 ---
 
@@ -425,6 +475,13 @@ High-impact, irreversible decisions deserve extensive analysis. Low-impact, easi
   - **Binary decisions** — where you already know enough and just need to commit
 - <b style="color: #e74c3c">The most common failure mode</b>: treating binary decisions as information decisions — requesting more analysis, scheduling more meetings, waiting for data that will not change the conclusion — as a way of avoiding the discomfort of deciding
 
+> [!example] The Analysis Paralysis Postmortem
+> - After a project shipped late, the postmortem revealed that the team had spent a combined three weeks across the project on decisions that could have been made in a single meeting
+> - The culprit was not any single decision but a pattern: every choice, no matter how small, triggered a round of analysis, consultation, and review
+> - The PM had confused thoroughness with leadership
+> - The next project, the same PM adopted a simple rule: decisions under a certain impact threshold got fifteen minutes maximum
+> **The lesson:** Decision-making speed is itself a resource. Spending it on low-stakes choices starves high-stakes ones.
+
 ---
 
 ## Saying No
@@ -470,6 +527,10 @@ High-impact, irreversible decisions deserve extensive analysis. Low-impact, easi
 > **The lesson:** Saying no is not refusal. It is explanation: "If we take this on, here is what we stop doing. Is that the trade-off you want?"
 
 - Framed this way, saying no becomes a service to the organisation — it forces the kind of strategic clarity that most teams desperately need but nobody wants to provide
+- Berkun notes that the PM who says no skillfully actually builds stronger relationships than the PM who says yes to everything:
+  - Stakeholders learn they can trust the PM's commitments because those commitments are realistic
+  - When the PM does say yes, stakeholders know it means the work will actually get done
+  - The PM who says yes to everything teaches stakeholders that commitments are meaningless
 
 ---
 
@@ -514,6 +575,11 @@ High-impact, irreversible decisions deserve extensive analysis. Low-impact, easi
   - The PM who says "that was engineering's fault" may be factionally correct
   - But they have also announced to the room that they do not consider themselves responsible for the project's success
   - If the PM is not responsible, what are they for?
+- Berkun draws a distinction between two types of accountability:
+  - **Backward-looking accountability** — who caused this problem? (blame)
+  - **Forward-looking accountability** — who will fix this problem? (ownership)
+  - <b style="color: #27ae60">The best PMs focus almost exclusively on forward-looking accountability</b>
+  - They acknowledge what happened, learn from it, and immediately redirect energy toward the solution
 
 ---
 
@@ -526,6 +592,18 @@ High-impact, irreversible decisions deserve extensive analysis. Low-impact, easi
   - Too little pressure: work expands to fill the time available, urgency evaporates, people optimise for comfort
   - Too much pressure: quality drops, mistakes multiply, morale craters, the best people start looking for the exit
   - <b style="color: #27ae60">The optimal zone is narrow, and it is the leader's job to find it</b>
+
+```mermaid
+flowchart LR
+    A[Too Little Pressure] --> B[Complacency]
+    C[Optimal Pressure] --> D[Peak Performance]
+    E[Too Much Pressure] --> F[Burnout & Collapse]
+    style A fill:#2980b9,color:#fff
+    style C fill:#27ae60,color:#fff
+    style E fill:#e74c3c,color:#fff
+```
+
+The narrow optimal zone between complacency and burnout is where peak performance happens — the leader's job is to keep the team in that zone.
 
 ---
 
@@ -613,6 +691,10 @@ These questions are not meant for formal reports. They are a constant background
   - Less time in status meetings and report-writing
   - More time in conversations, hallway chats, and one-on-ones where real information surfaces
   - The most important project information rarely appears in formal channels
+- Berkun's metaphor also extends to risk management:
+  - A pilot who flies ahead of the plane has already identified the next three potential hazards and has a response plan for each
+  - Similarly, the proactive PM maintains a <b style="color: #2980b9">risk register</b> — not as a bureaucratic artefact, but as a living mental model of what could go wrong and what the response would be
+  - <b style="color: #27ae60">The PM who has already thought about a crisis before it happens responds calmly. The PM encountering it for the first time panics.</b>
 
 ---
 
@@ -673,6 +755,14 @@ These questions are not meant for formal reports. They are a constant background
   - Cuts through normal approval processes that slow organisations down
   - Does not replace the broader team — it exists to handle the handful of critical decisions that cannot wait
   - <b style="color: #27ae60">Speed matters more than consensus in the end-game</b>
+
+> [!example] The End-Game War Room
+> - During the final weeks of an IE release, Berkun's team established a physical war room where the war team met twice daily
+> - Every critical bug was triaged within hours, not days
+> - The war team had authority to make ship/no-ship decisions on individual features without escalation
+> - This compressed what would normally be a week-long approval cycle into a single afternoon
+> - The product shipped on schedule — not because everything was perfect, but because the team had the speed and authority to make the hard calls fast
+> **The lesson:** End-game decisions need a different governance model. The normal chain of command is too slow when you are days from launch.
 
 ---
 
@@ -748,6 +838,10 @@ The most effective leaders combine both types — granted power opens doors, but
   - Good local leadership can insulate a team from broader organisational chaos
   - The PM who creates a healthy local environment demonstrates — through action, not argument — what good management looks like
   - Over time, that local example can influence the broader organisation
+- This is one of Berkun's most empowering ideas:
+  - You do not need to fix the entire organisation to be effective
+  - You need to create a space where your team can do their best work
+  - <b style="color: #27ae60">Control what you can control — and do it visibly enough that others notice</b>
 
 ---
 
@@ -832,6 +926,8 @@ Moving from positions to interests transforms an impasse into a solvable problem
 - Berkun is a strong advocate for <b style="color: #2980b9">writing things down</b> — not for bureaucratic documentation, but for the discipline that writing imposes on thinking:
   - A thought that seems clear in your head often reveals itself as muddled when you try to express it on paper
   - The act of writing forces precision
+  - Writing also creates a shared artefact that others can react to, correct, and build upon
+  - Verbal agreements are unreliable — people remember different versions of the same conversation
 
 > [!example] The "Lightweight" Process That Collapsed
 > - A PM prided himself on running "lightweight" processes — no documents, no formal plans, just conversations and trust
@@ -853,6 +949,13 @@ Moving from positions to interests transforms an impasse into a solvable problem
 - He advocates for <b style="color: #2980b9">"good enough" documentation</b>:
   - Documents that are clear, brief, and useful, even if they are not comprehensive
   - A one-page decision record that explains what was decided and why is more valuable than a ten-page analysis that is never read
+
+> [!example] The One-Page Decision Record
+> - A PM on a Microsoft team introduced a simple one-page template for recording major decisions: what was decided, who was involved, what alternatives were considered, and why this option was chosen
+> - Each record took ten minutes to write
+> - Six months later, when a new team member questioned a design choice, the PM could pull up the decision record and explain the reasoning instantly
+> - On a different team without decision records, the same kind of question triggered a week-long debate because nobody could remember why the original choice had been made
+> **The lesson:** Ten minutes of writing today saves hours of re-litigating tomorrow. The value of documentation is not in the writing — it is in the remembering.
 
 ---
 
@@ -930,8 +1033,8 @@ Despite these limitations, it remains essential reading for anyone who manages c
 
 ## Related Reading
 
-- [[demarco-lister_peopleware|Peopleware]] — DeMarco and Lister's classic on the human side of software projects, complementing Berkun's execution focus with deeper treatment of team dynamics and organisational culture
-- [[brooks_mythical-man-month|The Mythical Man-Month]] — Brooks's foundational text on why adding people to a late project makes it later, and the deep structural challenges of large-system development
-- [[fisher-ury_getting-to-yes|Getting to Yes]] — the negotiation framework Berkun explicitly references, essential for the conflict resolution and stakeholder management dimensions of PM work
-- [[mcconnell_software-estimation|Software Estimation]] — McConnell's rigorous treatment of the estimation problem Berkun raises, with more structured methods for managing uncertainty
-- [[kerzner_project-management|Project Management: A Systems Approach]] — Kerzner's comprehensive reference for the process and methodology side that Berkun deliberately de-emphasises
+- [[The Effective Executive - Peter Drucker|The Effective Executive]] — Drucker's classic on what makes leaders productive, with deep overlap on decision-making, saying no, and the discipline of focus
+- [[The Phoenix Project - Gene Kim|The Phoenix Project]] — a novelised treatment of IT project management that dramatises many of the same principles Berkun teaches, particularly around bottlenecks and flow
+- [[The Lean Startup - Eric Ries|The Lean Startup]] — Ries's approach to building under uncertainty, complementing Berkun's planning frameworks with a more iterative, experiment-driven model
+- [[Crucial Conversations - Kerry Patterson|Crucial Conversations]] — the interpersonal communication skills that underpin Berkun's emphasis on difficult conversations, saying no, and navigating conflict
+- [[The Culture Code - Daniel Coyle|The Culture Code]] — Coyle's research on what makes teams effective, extending Berkun's treatment of trust and team dynamics with deeper evidence from psychology and organisational science

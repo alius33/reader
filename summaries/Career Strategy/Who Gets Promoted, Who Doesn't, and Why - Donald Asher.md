@@ -164,6 +164,18 @@ A candidate must clear all three filters sequentially — strength on benefits c
 
 ---
 
+### Anticipation — The Ultimate Positioning Move
+
+*The most powerful position is not applying for a role — it is being the obvious answer to a problem before anyone else identifies it.*
+
+- <b style="color: #27ae60">Being first means you define the frame</b> — by the time a role is formally posted, the competition has been alerted and HR has defined requirements that may not favour you
+- Asher argues that the professionals who advance fastest are not reacting to posted openings but anticipating organisational needs
+- They scan the landscape for:
+  - Frustrations that senior leaders have expressed but no one has addressed
+  - Initiatives that will require new leadership once they reach critical mass
+  - Departures, retirements, and restructurings that will create vacuums
+- By the time the role is formally announced, the anticipator has already been solving the problem — the promotion is a formality
+
 > [!example] Mary C. and the Power of Anticipation
 > - Mary C. was a mid-level administrator at a university
 > - She noticed the university president was growing frustrated with a particular bureaucratic inefficiency — a problem that had annoyed people for years without anyone taking ownership
@@ -172,9 +184,23 @@ A candidate must clear all three filters sequentially — strength on benefits c
 > - Six months later, she was promoted to assistant dean — leapfrogging several more senior candidates who had been "waiting their turn"
 > **The lesson:** The people who advance most effectively anticipate organisational needs and position themselves as the answer before the role is even posted.
 
-- <b style="color: #27ae60">Being first means you define the frame</b> — by the time a role is formally posted, the competition has been alerted and HR has defined requirements that may not favour you
-
 ---
+
+### The Replacement Cost Trap
+
+*Being indispensable sounds like a career asset — Asher explains why it is often a career prison.*
+
+- <b style="color: #2980b9">The Replacement Cost Trap</b> is the dark side of excellence
+- When you become the only person who can do what you do:
+  - Your boss cannot afford to lose you
+  - Your boss's boss cannot afford the disruption of extracting you
+  - HR sees the cost of replacing you as a reason not to promote you
+- The irony is devastating: the harder you work to make yourself valuable in your current role, the more expensive you become to move
+- Asher's solution is counterintuitive — <b style="color: #27ae60">train your replacement before you need one</b>:
+  - Document your processes so others can take them over
+  - Cross-train a colleague to cover your critical functions
+  - Make your departure smooth, not catastrophic
+- When the cost of replacing you drops, the cost vector clears, and the promotion path opens
 
 > [!example] Mateo the Irreplaceable — The Replacement Cost Trap
 > - Mateo was a technical specialist covering three different functions at a mid-size company
@@ -183,6 +209,15 @@ A candidate must clear all three filters sequentially — strength on benefits c
 > - He had made himself so deeply embedded — his knowledge was in no one else's head, his fingerprints on every process — that extracting him was perceived as more disruptive than hiring someone from outside for the new position
 > - Mateo's excellence had become his prison
 > **The lesson:** Being too valuable where you are makes it too expensive to move you — indispensability is a trap, not a credential.
+
+> [!example] The Database Administrator Who Stayed Forever
+> - A database administrator at a financial services firm had built every critical reporting system the company used
+> - She was the only person who understood the legacy architecture, the only one who could fix production issues at 2 a.m.
+> - Over seven years, she watched three colleagues promoted to IT management while she remained in her role
+> - Each time, the justification was the same: "We can't afford to lose her in that seat right now"
+> - She had never documented her systems, never cross-trained anyone, never made it easy for the organisation to imagine life without her in that specific chair
+> - By the time she realised the trap, she had to spend eighteen months training a replacement before the organisation would even consider her for advancement
+> **The lesson:** If no one else can do your job, you will never leave your job.
 
 ---
 
@@ -217,6 +252,37 @@ A candidate must clear all three filters sequentially — strength on benefits c
   - Initiative becomes overreach
 - <b style="color: #e74c3c">Reputation is not something you can afford to leave to chance</b>
 
+```mermaid
+flowchart LR
+    A[Your Actual Work] --> B[Fragments Observed]
+    B --> C[Stories Told by Others]
+    C --> D[Gossip Network]
+    D --> E[Narrative Forms]
+    E -->|Positive| F[Charitable Interpretation]
+    E -->|Negative| G[Hostile Interpretation]
+    style F fill:#27ae60,color:#fff
+    style G fill:#e74c3c,color:#fff
+```
+
+The gap between what you actually do and what people believe you do is filled entirely by narrative — and you either shape that narrative or someone else does.
+
+---
+
+### The Confidence-Competence Illusion
+
+- Asher identifies a persistent cognitive bias in how decision-makers evaluate candidates:
+  - People who present with certainty are assumed to know more than people who present with nuance
+  - The person who says "I am confident this will work" is rated higher than the person who says "This should work, though there are risks we should monitor"
+  - The second person may be more competent — they understand the complexity — but they appear less decisive
+- This creates a structural advantage for confident communicators:
+  - They are perceived as leadership material because leaders are expected to project certainty
+  - Cautious, analytical types are perceived as good subordinates — reliable, but not ready to lead
+- <b style="color: #e74c3c">The competence-confidence gap is one of the most common reasons technically excellent people are passed over</b>
+- Asher's advice is not to fake confidence but to develop genuine confidence through preparation:
+  - Know your material so well that you can speak without hedging
+  - Practise articulating your positions until the caveats are internalised, not vocalised
+  - Reserve qualifications for the appropriate audience — your boss in a private meeting, not a room full of senior leaders
+
 ---
 
 > [!example] The Hotel Department Head — Mastering Gossip Dynamics
@@ -244,17 +310,37 @@ A candidate must clear all three filters sequentially — strength on benefits c
 - The problem it solves:
   - Most people cannot accurately recall their achievements from six months ago
   - When review time comes, they scramble to remember, producing a thin, unimpressive self-assessment
+  - Memory is biased toward recency — the last two months overshadow the preceding ten
 - The brag sheet creates a contemporaneous record and serves a deeper purpose:
   - It trains you to notice and value your own contributions
   - This builds the genuine confidence that feeds into the perception cycle
   - You cannot project confidence if you do not believe in your own track record
 
-How to deploy the brag sheet:
-- It is not for reading aloud in meetings
-- It provides talking points to your boss before a review
-- It populates your self-assessment in performance systems
-- It selectively shares wins with senior leaders in a way that feels informative rather than boastful
+> [!abstract] How to Deploy the Brag Sheet
+> 1. Record accomplishments, metrics, and positive feedback within 24 hours of occurrence
+> 2. Use it to provide talking points to your boss before a review
+> 3. Populate your self-assessment in performance systems with specific data
+> 4. Selectively share wins with senior leaders in a way that feels informative rather than boastful
+> 5. Frame wins by crediting the team and the boss while positioning yourself as the narrator — the person who understands what happened and why it mattered
+
 - <b style="color: #27ae60">The best brag reports credit the team and the boss while positioning you as the narrator</b> — the person who understands what happened and why it mattered
+- The brag sheet is not for reading aloud in meetings — it is source material for strategic communication
+
+---
+
+### The "Be Well Liked, Not Loved" Principle
+
+- Asher draws a surprising distinction between being loved and being well liked:
+  - Being deeply loved by your team makes your departure a tragedy
+  - Being well liked makes your departure a graduation — people are happy for you, not devastated
+- The loved person triggers the replacement cost trap emotionally:
+  - Team members protest: "We cannot lose her"
+  - Bosses hesitate: "The team will fall apart without her"
+- The well-liked person triggers something different:
+  - Team members say: "She deserves this"
+  - Bosses think: "The team will be fine — she has trained them well"
+- <b style="color: #27ae60">The ideal is warm professional respect, not deep personal attachment</b>
+- This is not about being cold or distant — it is about ensuring your relationships empower your advancement rather than anchoring you
 
 ---
 
@@ -287,6 +373,25 @@ How to deploy the brag sheet:
 - They read about industries adjacent to their own
 - They volunteer for projects outside their comfort zone
 - They seek assignments that stretch their capabilities, even when less glamorous than what they could be doing within their established domain
+- Asher observes a pattern among the fastest risers he coached:
+  - They spent roughly 20% of their development energy on their current role
+  - And 80% on the skills their target role would require
+  - This ratio inverts the instinct of most professionals, who spend 95% improving where they already are
+
+---
+
+### Credentials and Formal Education
+
+- Asher addresses the question of whether formal credentials — MBAs, certifications, advanced degrees — accelerate promotion
+- His answer is nuanced:
+  - Credentials open doors in some organisations and mean nothing in others
+  - The value depends on the industry, the company culture, and what the credential signals
+- In credential-heavy industries (consulting, finance, law), the right degree is table stakes — without it, you are not even considered
+- In credential-light industries (technology, media, entrepreneurship), demonstrated capability matters more than parchment
+- <b style="color: #2980b9">The signalling function</b> of a credential is often more important than the knowledge it represents:
+  - An MBA from a top school signals ambition, analytical capability, and a certain type of peer network
+  - A professional certification signals commitment to a discipline and willingness to invest in yourself
+- Asher's advice: get the credential if it is required by your target role or industry, but never mistake the credential for the skill
 
 ---
 
@@ -311,6 +416,15 @@ How to deploy the brag sheet:
 > - He was blindsided — he had spent years becoming the best engineer in the building, and the building was now asking for something he had never practised
 > **The lesson:** Waiting until the role opens to start learning is always too late.
 
+> [!example] The Accountant Who Joined the Board
+> - An accountant at a mid-size firm noticed that the partners who made it to the executive committee were not the best technicians
+> - They were the ones who understood business development, client management, and strategic planning
+> - She began attending industry conferences not as a technical attendee but as a networker
+> - She volunteered to lead the firm's pro bono programme — a role that required client-facing skills, budgeting, and managing volunteers
+> - None of this was in her job description, but all of it was in the job description of the role she wanted
+> - When a partner slot opened, she was the only candidate who had practised running something
+> **The lesson:** The skills that get you promoted are rarely the skills that make you excellent at your current job.
+
 ---
 
 ## Chapter 4: All Business Is Sales
@@ -320,6 +434,8 @@ How to deploy the brag sheet:
 - "If you are not selling your company, you are selling yourself," he writes — "if you are not selling yourself, you are selling your ideas"
 - <b style="color: #27ae60">Anyone who needs others to adopt their ideas, approve their proposals, or select them for advancement is selling</b>
 - The distinction between "technical professional" and "salesperson" is, in Asher's view, a false one
+- Most professionals resist this idea because they associate selling with manipulation, exaggeration, or inauthenticity
+- But Asher redefines selling as something simpler: communicating value in terms the buyer cares about
 
 > [!tip] Core Insight
 > Presenting your case through a single channel is far less effective than presenting it through multiple channels. Each channel reinforces the others, creating the impression that "everyone" knows this person is ready.
@@ -340,6 +456,22 @@ How to deploy the brag sheet:
     - A visible project deliverable
     - A word from a client
   - Each channel reinforces the others
+- The multi-channel effect creates a perception of consensus:
+  - When the decision-maker hears your name from multiple sources, they assume "everyone" knows you are ready
+  - This social proof effect is far more persuasive than any single argument, no matter how well crafted
+
+---
+
+### Reframing for Different Audiences
+
+- Asher extends the sales analogy to audience segmentation:
+  - The same candidacy should be framed differently for different stakeholders
+  - Your boss cares about team stability and personal credit
+  - HR cares about compliance, process, and risk mitigation
+  - Senior leadership cares about strategic impact and organisational capability
+- <b style="color: #27ae60">The underlying qualifications are identical — the framing changes to match each audience's priorities</b>
+- This is not manipulation — it is communication competence
+- The professional who presents the same pitch to every audience is not being "authentic" — they are being lazy
 
 ---
 
@@ -361,6 +493,13 @@ How to deploy the brag sheet:
 > - The underlying proposals were identical — but the framing changed to match each audience's priorities
 > **The lesson:** The case for your advancement should be framed differently for your boss (team stability), HR (compliance and process), and senior leadership (strategic impact). Same person, same qualifications, different framings.
 
+> [!example] The Engineer Who Spoke Two Languages
+> - A software engineer wanted to move into product management
+> - When she pitched the idea to her engineering manager, she framed it as: "I can bridge the communication gap between engineering and product — the team will ship faster with fewer misunderstandings"
+> - When she pitched the same move to the VP of Product, she framed it as: "I bring technical credibility that the product team currently lacks — engineers will trust my specifications because I have built systems myself"
+> - Both framings were true — but each spoke to what that specific decision-maker cared about most
+> **The lesson:** The same career move can serve multiple stakeholders' interests — your job is to articulate the version that matters to each one.
+
 ---
 
 ## Chapter 5: The Ascension Plan — Strategy, Not Hope
@@ -368,6 +507,7 @@ How to deploy the brag sheet:
 *Asher argues that leaving your career advancement to chance is as foolish as leaving your financial future to chance, and introduces a structured, documented plan for getting promoted.*
 
 - <b style="color: #e74c3c">Leaving career advancement to chance is as foolish as leaving finances to chance</b>
+- Most professionals have detailed financial plans but no career plan
 - Asher advocates creating a deliberate, documented plan — the <b style="color: #2980b9">Ascension Plan</b>
 
 > [!abstract] The Six Components of an Ascension Plan
@@ -380,6 +520,17 @@ How to deploy the brag sheet:
 
 > [!tip] Core Insight
 > Without event triggers and an escape clause, an ascension plan becomes a wish list. The escape clause is not a bluff — it is a genuine commitment to yourself that prevents permanent stagnation.
+
+---
+
+### The Escape Clause — Why It Matters
+
+- The escape clause serves multiple functions:
+  - It prevents sunk-cost thinking — "I have been here eight years, I cannot leave now"
+  - It forces honesty — if you set a trigger and it does not fire, you must confront the reality that this organisation is not going to promote you
+  - It creates genuine leverage — a professional with real alternatives negotiates differently from one who is trapped
+- <b style="color: #27ae60">The escape clause transforms you from a supplicant to a negotiator</b>
+- Without it, you are asking for a promotion — with it, you are evaluating whether to stay
 
 ---
 
@@ -413,9 +564,19 @@ How to deploy the brag sheet:
   - The promising party was transferred
   - They left the organisation
   - They simply forgot
+  - Budgets changed or reorganisations intervened
 - The antidote is simple but socially awkward: request a written memo for your personnel file
 - Frame it not as distrust but as documentation: "I want to make sure we are both aligned on the plan and that there is a record if either of us moves on"
 - <b style="color: #27ae60">The professionals who consistently advance are not more trusting — they are more systematic about converting trust into documentation</b>
+
+> [!example] The Marketing Director and the Vanishing Promotion
+> - A marketing director was promised a VP title by her CEO during a one-on-one conversation
+> - The CEO said it would happen "in the next cycle" and she should "sit tight"
+> - She did not ask for written confirmation — it seemed unnecessary given the personal relationship
+> - Six months later, the CEO was replaced in a board action
+> - The new CEO had no knowledge of the promise, no documentation existed, and the marketing director was back at square one
+> - She had lost six months of positioning time that she could have spent on her external search
+> **The lesson:** Verbal promises have a shelf life equal to the tenure of the person making them. Without documentation, the promise dies when they leave.
 
 ---
 
@@ -429,6 +590,7 @@ How to deploy the brag sheet:
 - <b style="color: #27ae60">Your fates are linked whether you like it or not</b>:
   - If your boss is wounded politically — embroiled in controversy, losing influence, associated with a failed initiative — you are wounded by association
   - If your boss is promoted, a vacuum opens behind them and opportunities flow to their team
+- This is not about servility — it is about understanding a structural dependency
 
 > [!tip] Core Insight
 > Your boss is not just your manager — they are your primary reputation channel. Make them look good and the credit finds its way back to you. Let them be blindsided and you become the person who should have warned them.
@@ -449,6 +611,12 @@ How to deploy the brag sheet:
 - Asher calls negative gossip about your boss <b style="color: #e74c3c">"radioactive"</b> — once you are associated with criticism of your boss, the contamination spreads
 - Even if the criticism is accurate, even if others share your views privately, being identified as the person who badmouths the boss marks you as disloyal
 - <b style="color: #e74c3c">Disloyalty is punished faster and more severely than incompetence</b>
+- The reason is structural:
+  - Incompetence can be managed, trained, or worked around
+  - Disloyalty threatens the entire trust architecture of the organisation
+  - A manager who cannot trust their reports is a manager who cannot function
+- Asher is clear: private disagreement, delivered respectfully and one-on-one, is appropriate and even valued
+- Public criticism, even among peers, is career poison
 
 > [!example] The Sales Team Leader — Radioactive Gossip
 > - A sales team leader criticised his boss's decision-making at a team dinner
@@ -463,6 +631,10 @@ How to deploy the brag sheet:
 
 - Asher is equally clear about the limit of boss-management
 - When a boss is genuinely destructive — actively sabotaging your career, blocking all advancement, or creating a hostile environment — the correct response is not to fight from below
+- The structural disadvantage is too severe:
+  - Your boss has positional power, information access, and political capital that you lack
+  - HR, despite its stated mission, will almost always side with management in ambiguous cases
+  - The emotional cost of fighting a toxic boss from below is disproportionate to the likely reward
 
 > [!example] Rob M. — The Cost of Ignoring Politics
 > - Rob M., an executive, ignored a rival's political machinations because he believed his work would speak for itself
@@ -478,8 +650,30 @@ How to deploy the brag sheet:
 - Going over your boss's head is almost always dangerous, but there are safe techniques:
   - **The win report cc:** the safest first contact with senior leaders is to cc them on a win report that credits your boss and the team — this creates visibility upward without threatening your boss
   - **The absence window:** if your boss is away on travel or leave, making legitimate contact with senior leaders during their absence is another low-risk technique
+  - **The cross-functional project:** volunteering for a project sponsored by a senior leader gives you legitimate exposure without circumventing your boss
 - <b style="color: #e74c3c">Any hint that you are lobbying for yourself behind your boss's back will be interpreted as disloyalty</b> — even if the senior leader is sympathetic
 - The contact must always be about the work, not about your career
+
+```mermaid
+flowchart TD
+    A[Want Senior Visibility] --> B{Safe Channels?}
+    B --> C[Win Report CC]
+    B --> D[Absence Window]
+    B --> E[Cross-Functional Project]
+    C --> F[Credits Boss + Team]
+    D --> F
+    E --> F
+    F --> G[Visibility Without Threat]
+    A --> H{Unsafe Channels?}
+    H --> I[Direct Lobbying]
+    H --> J[Complaint About Boss]
+    I --> K[Perceived Disloyalty]
+    J --> K
+    style G fill:#27ae60,color:#fff
+    style K fill:#e74c3c,color:#fff
+```
+
+The key distinction is whether the contact serves the work or serves your career — the former is legitimate, the latter is dangerous.
 
 ---
 
@@ -539,6 +733,11 @@ How to deploy the brag sheet:
 
 - <b style="color: #e74c3c">The problem: gunslingers often look like superstars in the early stages</b>
 - The tell is sustainability — does this person build things that last, or do they create spectacles that burn out?
+- Gunslingers share several characteristics:
+  - They generate enormous enthusiasm quickly
+  - They make big promises and deliver short-term results
+  - They burn through political capital, goodwill, and team energy
+  - When they crash — and they always crash — everyone in their orbit goes down with them
 - Even genuine superstar suction is temporary:
   - If the superstar stalls, loses political support, or leaves the organisation, the suction disappears
   - You must have your own trajectory established by the time their ride ends
@@ -608,6 +807,15 @@ Guardian angels deliver four specific things:
 - "Make friends before you need them," Asher writes
 - <b style="color: #27ae60">The time to build your network of guardian angels is two years before you are desperate for a promotion</b>
 
+### How to Lose a Guardian Angel
+
+- Asher warns that guardian angel relationships are fragile and easily destroyed:
+  - **Asking for too much too soon** — treating a new relationship as a favour bank before trust has been established
+  - **Being a liability** — if the guardian angel's advocacy for you reflects badly on their judgment, they will quietly withdraw
+  - **Ignoring reciprocity** — even though the relationship is asymmetric in seniority, it must be symmetric in value; you offer usefulness, information, or loyalty in exchange for advocacy
+  - **Going dark** — relationships require maintenance; if you only surface when you need something, the guardian angel will notice
+- <b style="color: #e74c3c">The fastest way to lose a guardian angel is to make them regret their investment in you</b>
+
 ---
 
 ## Chapter 9: Move — Mobility as Career Strategy
@@ -631,6 +839,9 @@ Guardian angels deliver four specific things:
   - **Leaving too early** — before maximising what the current employer can offer — means starting negotiations at a lower baseline
   - **Leaving too late** — after stagnation and plateaued growth — means the external market sees you as someone who was stuck
 - <b style="color: #27ae60">The art is in timing the departure to maximise the story your resume tells</b>
+- Asher recommends a simple test:
+  - If you are still receiving title bumps, scope expansions, and meaningful new challenges, stay
+  - If the last meaningful advancement was more than eighteen months ago and no concrete plan exists for the next one, start looking
 
 ---
 
@@ -645,12 +856,21 @@ Guardian angels deliver four specific things:
 - If the answer is **no** — you would not take this job today knowing what you know:
   - Start looking immediately
   - The fact that you have been there five years, built relationships, and have institutional knowledge does not change the forward-looking calculus
-  - The only question is: from this point forward, is this the best use of your professional life?
+  - The only question is: from this point forward, is the best use of your professional life?
 
 > [!tip] Core Insight
 > Past investment is a sunk cost. The only question that matters is whether you would take this job today at today's price, knowing everything you know now.
 
 ---
+
+### Leverage and the External Offer
+
+- Asher addresses the delicate art of using external offers for internal leverage
+- The rules are strict:
+  - The offer must be genuine — a fabricated offer is career suicide if discovered
+  - You must be genuinely willing to accept it — a bluff that gets called destroys your credibility permanently
+  - Present it not as a threat but as a dilemma: "I have been offered this opportunity and I am genuinely torn — I would prefer to stay, but I need to understand what my path looks like here"
+- <b style="color: #e74c3c">Never use an external offer more than once with the same employer</b> — the second time, they will let you go
 
 > [!example] The Software Scientist and the Written Offer
 > - A software scientist obtained a written job offer from a competitor with absolutely no intention of accepting it
@@ -696,6 +916,11 @@ Guardian angels deliver four specific things:
   - The nimble professional has documented their work so others can take it over
   - Has skills that transfer across contexts
   - Has relationships that survive organisational restructurings
+- The nimble professional treats every role as temporary — not in a cynical way, but in a realistic one:
+  - Organisations restructure
+  - Bosses leave
+  - Industries shift
+  - The only constant is your ability to adapt
 
 ```mermaid
 flowchart TD
@@ -722,6 +947,25 @@ The prepared and nimble professional capitalises on the same opportunities that 
   - From volunteering for risky projects
   - From having the difficult conversations that advancement requires
 - The antidote is not recklessness but <b style="color: #27ae60">calibrated courage</b> — understanding that the cost of a failed attempt is almost always lower than the cost of never trying
+- Asher identifies the asymmetry of career risk:
+  - The downside of applying for a role and not getting it is mild embarrassment
+  - The downside of never applying is years of stagnation
+  - The expected value of action almost always exceeds the expected value of inaction
+  - Yet most professionals default to inaction because the embarrassment is immediate and vivid while the stagnation is gradual and invisible
+
+---
+
+### The Career as Portfolio
+
+- Asher closes by encouraging readers to think of their career not as a single trajectory but as a <b style="color: #2980b9">portfolio of bets</b>:
+  - Some bets will pay off — the right boss, the right timing, the right organisation
+  - Some will not — the reorganisation that eliminates your role, the boss who leaves before delivering on their promise
+  - The key is to have enough bets active that any single failure does not end your advancement
+- This means:
+  - Maintaining multiple relationships, not depending on one guardian angel
+  - Developing skills across multiple domains, not just one speciality
+  - Keeping an external network warm, not just an internal one
+  - Having an ascension plan with multiple pathways, not just one route
 
 ---
 
@@ -782,7 +1026,10 @@ Despite these limitations, the core frameworks hold up remarkably well. This is 
 ## Related Reading
 
 - [[The 48 Laws of Power - Robert Greene|The 48 Laws of Power]] — the definitive guide to power dynamics that Asher's book acknowledges but never deeply engages with
-- [[covey_7-habits|The 7 Habits of Highly Effective People]] — a complementary perspective that emphasises character and effectiveness where Asher emphasises positioning
-- [[cialdini_influence|Influence: The Psychology of Persuasion]] — the science behind why Asher's "all business is sales" chapter works
+- [[Stealing the Corner Office - Brendan Reid|Stealing the Corner Office]] — a complementary take on the same territory, with sharper tactical advice on internal positioning
+- [[Influence - Robert Cialdini|Influence]] — the science behind why Asher's "all business is sales" chapter works
 - [[Never Split the Difference - Chris Voss|Never Split the Difference]] — tactical negotiation skills for the moments when the promotion conversation actually happens
 - [[Fierce Conversations - Susan Scott|Fierce Conversations]] — how to have the direct, honest conversations that Asher's framework requires but never teaches you how to execute
+- [[Power - Jeffrey Pfeffer|Power]] — a more rigorous academic treatment of the same organisational dynamics Asher describes from a coaching perspective
+- [[Career Warfare - David D'Alessandro|Career Warfare]] — another practitioner's view of corporate advancement, with more emphasis on reputation management
+- [[Rise - Patty Azzarello|Rise]] — a complementary framework for career advancement that adds structure where Asher offers intuition

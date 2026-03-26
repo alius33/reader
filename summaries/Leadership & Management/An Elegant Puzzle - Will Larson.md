@@ -15,7 +15,7 @@ year: 2019
 
 ## About the Author
 
-Will Larson is an engineering leader who has held senior roles at Yahoo!, Digg, Uber, and Stripe. His career has spanned the full spectrum of organisational scale, from early-stage startups collapsing under their own ambition to hypergrowth companies doubling their engineering headcount every six months. At Digg, he watched a company shrink from hundreds of engineers to a skeleton crew, learning what happens when organisational systems fail catastrophically. At Uber, he lived through the chaos of engineering headcount doubling repeatedly in a matter of years, watching every process, tool, and organisational structure buckle under the pressure of growth. At Stripe, he found a company that took infrastructure and developer experience seriously, and began codifying the patterns he had seen work and fail across his career. That range — from implosion to hypergrowth to operational maturity — gave him a pattern-recognition eye for the structural problems that recur every time an organisation outgrows its current systems. Larson also writes the widely read blog *Irrational Exuberance*, where many of the book's ideas were first developed and stress-tested against reader feedback before being assembled into this book.
+Will Larson is an engineering leader who has held senior roles at Yahoo!, Digg, Uber, and Stripe. His career has spanned the full spectrum of organisational scale, from early-stage startups collapsing under their own ambition to hypergrowth companies doubling their engineering headcount every six months. At Digg, he watched a company shrink from hundreds of engineers to a skeleton crew, learning what happens when organisational systems fail catastrophically. At Uber, he lived through the chaos of engineering headcount doubling repeatedly in a matter of years, watching every process, tool, and organisational structure buckle under the pressure of growth. At Stripe, he found a company that took infrastructure and developer experience seriously, and began codifying the patterns he had seen work and fail across his career. Larson also writes the widely read blog *Irrational Exuberance*, where many of the book's ideas were first developed and stress-tested against reader feedback.
 
 ---
 
@@ -44,6 +44,20 @@ Larson borrows heavily from two intellectual traditions:
 - From Donella Meadows' *[[Thinking in Systems - Donella H. Meadows|Thinking in Systems]]*, he takes the <b style="color: #2980b9">stocks and flows</b> model — the idea that surface events are symptoms of deeper accumulations and rates of change
 - From Richard Rumelt's *Good Strategy/Bad Strategy*, he takes the discipline of <b style="color: #2980b9">strategy as diagnosis plus policies plus actions</b> — the insistence that real strategy requires uncomfortable trade-offs rather than wish-lists dressed in strategic language
 - He translates both into the specific vocabulary of engineering organisations, producing a book that feels more like an engineering manual for organisations than a traditional management text
+
+```mermaid
+flowchart TD
+    A[Systems Thinking] --> B[Diagnose the Structure]
+    B --> C[Design Interventions]
+    C --> D[Compounding Returns]
+    E[Heroic Management] --> F[Fight Fires]
+    F --> G[Temporary Relief]
+    G --> H[Same Problems Recur]
+    style A fill:#27ae60,color:#fff
+    style E fill:#e74c3c,color:#fff
+```
+
+The core contrast of the book: systems-oriented managers build compounding advantages while heroic managers cycle endlessly through the same crises.
 
 ---
 
@@ -79,6 +93,7 @@ Larson borrows heavily from two intellectual traditions:
 
 - Larson argues that every team exists in one of four states, and the single most important diagnostic question a manager can ask is: "Which state is this team in?"
 - <b style="color: #27ae60">Each state has one and only one systemic fix</b> — applying the wrong fix wastes resources and demoralises the team
+- The framework is deceptively simple, but its power lies in the constraints it imposes — it tells you not just what to do, but what NOT to do at each stage
 
 | State | Symptoms | Fix |
 |-------|----------|-----|
@@ -110,6 +125,7 @@ Each team progresses from left to right only when the correct structural interve
 - <b style="color: #e74c3c">No amount of process improvement, motivational speeches, or prioritisation exercises helps a team that simply does not have the capacity to do the work</b>
 - A team that is falling behind and does not get headcount will continue falling behind until people burn out and leave, at which point the team falls behind even faster
 - This is a death spiral, and the only intervention that breaks it is capacity
+- Managers often resist this diagnosis because requesting headcount feels like admitting failure — but the failure is in the system design, not the team's effort
 
 > [!example] Uber's Hypergrowth Capacity Crisis
 > - A product team responsible for a critical feature suddenly had its scope triple as user growth exploded
@@ -125,6 +141,8 @@ Each team progresses from left to right only when the correct structural interve
 - They ship what is urgent, but nothing gets better
 - The fix is to **consolidate effort** and limit work in progress
 - Larson uses the analogy of a swimmer who can keep their head above water but cannot make progress toward shore — they need to stop flailing and focus their strokes in one direction
+- The temptation is to add more work-in-progress, reasoning that the team "can handle it" because nothing is explicitly failing
+- But the cost is invisible: every quarter of treading water is a quarter of debt accumulating
 
 > [!example] Stripe's Platform Team Paralysis
 > - A platform team responsible for developer tooling was simultaneously supporting three product launches, maintaining an ageing internal system, and migrating to a new infrastructure provider
@@ -141,11 +159,14 @@ Each team progresses from left to right only when the correct structural interve
 - The fix is to **add time** and protect the team from stakeholder impatience
 - Debt repayment is invisible work — customers do not see it, product managers cannot point to it in a roadmap, and executives tend to view it with suspicion
 - The manager's job here is to shield the team, buying them the time to do unglamorous but essential work
+- Larson emphasises that this shielding function is one of the most important — and most undervalued — things a manager does
+- Without it, teams oscillate between treading water and repaying debt, never fully completing the debt work before being pulled back to urgent feature requests
 
 > [!example] Infrastructure Debt Repayment at Uber
 > - Infrastructure teams attempted to repay years of accumulated technical debt while product teams pressured them for new features
 > - The managers who succeeded learned to communicate debt repayment in business terms — "if we do not address this now, the system will fail at 2x our current scale, and that is six months away"
 > - The managers who failed caved to stakeholder pressure and returned to treading water, never finishing the debt work
+> - The successful managers built dashboards showing the reliability risks of unaddressed debt, giving executives concrete numbers rather than abstract warnings
 > **The lesson:** Framing debt repayment in business outcomes is the key to buying the time to complete it.
 
 **Innovating** is the fourth state:
@@ -153,6 +174,7 @@ Each team progresses from left to right only when the correct structural interve
 - The fix is to **maintain slack** and ensure the team's work is valued and visible
 - The greatest danger here is not external but internal: other managers, seeing a team with apparent slack, will lobby to reallocate that capacity to their own struggling teams
 - If they succeed, the innovating team drops back to repaying debt or treading water, and the organisation loses its only engine of forward motion
+- Larson notes that very few teams across an entire organisation reach this state at any given time — perhaps ten to twenty per cent — and protecting those teams is disproportionately important
 
 > [!example] Digg's Destroyed Innovation Engine
 > - A team had reached the innovating state and was producing genuinely novel work on content recommendation algorithms
@@ -175,6 +197,8 @@ Each team progresses from left to right only when the correct structural interve
 - When resources are scarce — and Larson argues they are always scarce — the temptation is to spread them evenly across all teams
 - A little hiring here, a little process improvement there
 - Larson calls this <b style="color: #e74c3c">"peanut buttering"</b> and considers it one of the most common and destructive management mistakes
+- It feels fair because every team gets something
+- But fairness in resource allocation and effectiveness in resource allocation are often at odds
 
 The alternative is <b style="color: #27ae60">concentrated investment</b>:
 - Focus all available resources on moving one team fully through its state transition before moving to the next
@@ -185,6 +209,7 @@ The mechanism is straightforward:
 - Value comes from finished work, not work in progress
 - A team that has moved fully through a state transition can now contribute to the broader organisation — by absorbing scope from struggling teams, by mentoring, by producing tools that others can use
 - A team still stuck mid-transition consumes resources without producing returns
+- This is the same principle that makes limiting work-in-progress effective at the individual level, applied at the organisational level
 
 > [!example] Uber's Hiring Rotation
 > - Rather than giving every team one new hire per quarter, Larson gave one team three hires in a single quarter
@@ -202,16 +227,28 @@ The mechanism is straightforward:
 
 - <b style="color: #2980b9">Six to eight engineers</b> per manager is the sweet spot for hands-on management
   - The manager has enough time for meaningful one-on-ones, coaching, and technical engagement
+  - The team is large enough to have redundancy and diverse perspectives
 - **Eight to twelve** is manageable for experienced managers with senior, autonomous teams that require less direction
+  - Works best when the team has strong tech leads who absorb some of the day-to-day coordination
 - <b style="color: #e74c3c">Fewer than four</b> creates fragility
   - The loss of one person destabilises the team
   - Two-person teams are especially dangerous because a single departure eliminates fifty per cent of the team's capacity and all of its redundancy
+  - Larson has seen two-person teams fail catastrophically at every company he has worked at
 
 > [!example] Digg's Infrastructure Fragility
 > - A critical infrastructure team was allowed to shrink to three engineers through attrition
 > - When one went on paternity leave, the remaining two were unable to maintain the system, let alone improve it
 > - An incident during this period took the site down for several hours
+> - The post-mortem focused on technical root causes, but the real root cause was structural — a team too small to absorb a single absence
 > **The lesson:** The team size made the system structurally fragile — a design failure, not a people failure.
+
+Larson also addresses the question of **managers of managers**:
+- A manager of managers should typically oversee four to six teams
+- Fewer than four creates a layer of management that adds coordination cost without sufficient scope to justify it
+- More than six makes it impossible to maintain meaningful relationships with the team leads
+- The ideal is enough teams to see patterns across them, but few enough to invest in each one individually
+
+---
 
 ### Protecting Gelled Teams
 
@@ -222,10 +259,17 @@ The mechanism is straightforward:
 - Disassembling it destroys value that cannot be quickly rebuilt
 - When you break up a gelled team and redistribute its members, you do not get the benefit of their expertise — you get the cost of their ramp-up time in a new context, plus the loss of the working relationships that made them effective
 
+Why gelled teams are so valuable:
+- Communication overhead drops dramatically — team members develop shared shorthand, anticipate each other's questions, and resolve ambiguity informally
+- Code review quality improves because reviewers understand the codebase and the author's intent
+- Estimation accuracy improves because the team has calibrated against its own velocity
+- Psychological safety develops, allowing people to take risks, admit mistakes, and challenge each other constructively
+
 If people must move, Larson recommends fixed-term <b style="color: #2980b9">rotations</b>:
 - Temporary assignments where the engineer retains identity in their home team
 - The engineer returns after the rotation ends
 - This preserves the team's gel while allowing the organisation to respond to shifting priorities
+- Rotations also serve a developmental purpose — exposing engineers to different parts of the system and different working styles
 
 > [!example] Uber's Constant Team Reshuffling
 > - Rapid priority changes led to frequent team reshuffling
@@ -244,17 +288,21 @@ If people must move, Larson recommends fixed-term <b style="color: #2980b9">rota
 - The code review process that works for ten engineers does not work for a hundred
 - The deployment pipeline that handles ten deploys per day collapses at a hundred
 - The meeting structure that coordinates three teams cannot coordinate thirty
+- This is not a failure of the system — it is a natural consequence of the fact that systems are designed for a specific scale, and that scale has a ceiling
 
 > [!example] Uber's Recurring System Failures
 > - Engineering grew from roughly two hundred to over two thousand in a few years
 > - Every six months, something that had worked perfectly suddenly stopped working
 > - The on-call rotation, the release process, the cross-team communication channels — all were designed for one scale and broke at the next
+> - The teams that adapted fastest were the ones whose managers expected the breakdowns and had already begun designing replacements
 > **The lesson:** Expect to rebuild systems roughly twice every three years in a fast-growing environment — this is normal, not failure.
 
 The implication for managers:
 - <b style="color: #27ae60">Expect rebuilding — do not be surprised by it</b>
 - The mistake is not that the system broke; the mistake is being surprised that it broke, or clinging to a system that has outgrown its design
 - Every system comes with an invisible expiry date stamped at roughly 10x its design scale
+- Larson recommends that managers periodically ask: "What scale was this system designed for, and how close are we to that ceiling?"
+- When you are within 2x of the ceiling, begin designing the replacement — do not wait for the failure
 
 ---
 
@@ -266,16 +314,41 @@ The implication for managers:
   - Document everything you do
   - Test the list with close colleagues who can catch what you missed
   - Identify the gaps between what you do and what someone else could do
-  - Systematically close those gaps
+  - Systematically close those gaps by training, documenting, or delegating
 
 The value of this exercise is not primarily in preparing for your departure — it is in <b style="color: #27ae60">revealing the implicit value you add</b>:
 - Leaders fill hundreds of small gaps every day: the email they forward to the right person, the context they provide in a meeting, the conflict they defuse before it escalates
 - Most of this work is invisible
 - Succession planning makes it visible
+- Once visible, it can be valued, distributed, and systematised
 
 It also reveals <b style="color: #e74c3c">bus-factor risk</b>:
 - The things that would break if you disappeared tomorrow
 - Larson's experience at Digg, where key people left and systems failed because knowledge had never been documented or distributed, taught him that succession planning is not a luxury for stable organisations — it is a survival mechanism for fragile ones
+- The exercise is most valuable precisely when you have no plans to leave — it reveals single points of failure while you still have time to address them
+
+---
+
+### Reorganisations
+
+*Larson treats reorgs as a tool — powerful but overused, with costs that leaders chronically underestimate.*
+
+- A reorg is appropriate when the current structure makes the right work impossible to do
+- <b style="color: #e74c3c">It is not appropriate when the problem is leadership, execution, or culture</b> — reorgs cannot fix these, and the disruption costs are real
+- Every reorg involves a period of reduced productivity as teams reform, relationships rebuild, and people adjust to new reporting lines, new peers, and new expectations
+
+Larson's reorg checklist:
+- Is the problem structural, or is it a people or process problem wearing a structural disguise?
+- Have you exhausted less disruptive alternatives — scope transfers, rotations, new communication channels?
+- Can you articulate the specific outcomes the reorg will produce?
+- Do you have a plan for the transition period, including how to maintain productivity during the disruption?
+
+> [!example] Unnecessary Reorg at Uber
+> - A director reorganised three teams because cross-team collaboration was poor
+> - The real problem was not structure but a lack of shared goals and regular communication
+> - After the reorg, the same people who had struggled to collaborate were now on the same team — and still struggled, because the underlying issue was unclear ownership and conflicting incentives
+> - A lighter intervention — shared OKRs and a weekly cross-team sync — would have addressed the problem without the disruption
+> **The lesson:** A reorg is a structural fix; applying it to a coordination problem creates disruption without solving the root cause.
 
 ---
 
@@ -320,11 +393,18 @@ This diagram shows the reinforcing loop Larson describes: shortcuts create debt,
 - A company can have a strong recruiting flow (many candidates entering the funnel) but still fail to hire because its interview-to-offer flow or its offer-to-acceptance flow is too low
 - The naive response is to tell recruiters to find more candidates
 - The systems response is to identify which flow is actually constrained — perhaps the interview process is too slow, or the offer package is uncompetitive — and fix that specific bottleneck
+- Larson saw this repeatedly at Uber, where the instinctive response to hiring shortfalls was always "more sourcing" when the actual bottleneck was interview scheduling capacity
 
 **Applied to developer velocity:**
 - The stock of technical debt accumulates through a flow of shortcuts and quick fixes
 - It drains velocity through an information link: as the debt stock rises, the time spent working around it rises too, reducing the flow of useful output
 - This creates a reinforcing loop that can only be broken by temporarily accepting reduced output while the debt stock is drawn down
+
+**Applied to incidents:**
+- The stock of production incidents is fed by a flow of new complexity (new services, new features, new integrations)
+- It is drained by a flow of operational investment (monitoring, testing, documentation, runbooks)
+- When the inflow exceeds the outflow, the incident stock grows and on-call becomes unsustainable
+- The fix is not to hire more on-call engineers — it is to adjust the balance between the two flows
 
 > [!tip] Core Insight
 > Stop reacting to events and start adjusting flows. The surface problem is almost never the real problem — trace the stocks and flows to find the true constraint.
@@ -357,6 +437,8 @@ The hardest part is the <b style="color: #2980b9">diagnosis</b>:
 > [!example] Larson's Experience at Yahoo!
 > - At Yahoo!, Larson observed strategies built on euphemistic diagnoses that avoided naming politically uncomfortable truths
 > - The resulting policies and actions were equally euphemistic — they avoided solving the real problems
+> - Teams wrote strategy documents that read like wish lists: "improve reliability, increase velocity, enhance developer experience"
+> - Nobody disagreed with these goals, which is precisely why they failed as strategy — they provided no guidance on what to sacrifice
 > **The lesson:** If the diagnosis avoids naming the problem, everything downstream will avoid solving it.
 
 > [!example] Stripe's Rigorous Diagnosis Process
@@ -373,6 +455,8 @@ The hardest part is the <b style="color: #2980b9">diagnosis</b>:
 *A vision is distinct from a strategy — where strategy addresses the current challenge, vision describes a future state where current trade-offs no longer exist.*
 
 - A good vision enables <b style="color: #27ae60">decentralised decision-making</b>: anyone in the organisation should be able to read it and know what to do when facing an ambiguous choice, without escalating to leadership
+- The difference between strategy and vision is temporal: strategy is about the next six to twelve months; vision is about the next two to five years
+- Strategy requires trade-offs; vision describes a world where those trade-offs have been resolved
 
 Larson's vision template includes:
 - A vision statement
@@ -414,6 +498,21 @@ The test of a good vision is <b style="color: #2980b9">autonomy</b>:
 - The key insight is that teams which can see their position relative to peers tend to <b style="color: #27ae60">self-correct without being told to</b>
 - People want to be responsible
 - Providing them with context and benchmarks activates intrinsic motivation far more effectively than mandates or directives
+- The approach respects autonomy while creating accountability — a rare combination
+
+```mermaid
+flowchart LR
+    A[Explore Metric] --> B[Dive into Drivers]
+    B --> C[Attribute by Team]
+    C --> D[Contextualise vs Peers]
+    D --> E[Nudge with Data]
+    E --> F[Set Baseline Target]
+    F --> G[Review & Iterate]
+    style A fill:#2980b9,color:#fff
+    style G fill:#27ae60,color:#fff
+```
+
+The seven steps move from understanding to action — each step builds on the previous, and skipping steps undermines the process.
 
 > [!example] Stripe's Infrastructure Cost Dashboard
 > - Rather than telling teams to reduce their cloud spending — which would have been perceived as an authoritarian mandate — Larson built a dashboard showing each team's spending per engineer, benchmarked against the organisational average
@@ -425,6 +524,7 @@ The test of a good vision is <b style="color: #2980b9">autonomy</b>:
 > [!example] Uber's On-Call Burden Dashboard
 > - A dashboard showing which teams had the most frequent pages, benchmarked against peers, triggered teams to investigate their own reliability issues
 > - The teams with the worst numbers were embarrassed, but the embarrassment was created by data transparency, not by a manager pointing a finger
+> - Teams that had previously resisted investing in reliability began filing their own operational improvement tickets
 > **The lesson:** Data-driven visibility lets peer pressure do the work that directives cannot.
 
 The limitation, which Larson acknowledges:
@@ -432,6 +532,7 @@ The limitation, which Larson acknowledges:
 - If a team can see that its metric is poor but lacks the authority to reprioritise its work, the data creates frustration rather than action
 - <b style="color: #e74c3c">Metrics-driven change works in organisations that combine transparency with empowerment</b>
 - In organisations that combine transparency with rigidity, it merely makes dysfunction more visible
+- The precondition for the whole approach is that teams have the latitude to act on what the data tells them
 
 ---
 
@@ -440,6 +541,10 @@ The limitation, which Larson acknowledges:
 *Larson is emphatic that individual heroics cannot address systemic technical debt — the only mechanism that scales is a planned migration executed in three phases.*
 
 "Migrations are the only scalable fix for technical debt."
+
+- The logic is simple: if you have a hundred services on an old system, you cannot fix the old system in place — you must move them to a new system
+- Any approach that requires each team to independently fix their own piece will produce ninety per cent adoption and permanent fragmentation
+- Only a centrally planned, centrally executed migration can achieve one hundred per cent adoption
 
 > [!abstract] The Three-Phase Migration Playbook
 > 1. **De-risk** — run a pilot with a friendly team to validate the approach and uncover hidden costs; choose a team that is enthusiastic, technically capable, and forgiving of rough edges
@@ -464,6 +569,7 @@ The hardest part is finishing:
 - The teams that have not migrated at this stage are usually the ones with the least capacity, the most complex edge cases, or the weakest motivation
 - They will never voluntarily prioritise migration work over their own roadmap
 - <b style="color: #e74c3c">The migration team must absorb that work or accept permanent fragmentation</b>
+- Leadership pressure to declare victory at ninety per cent and move on is intense — and must be resisted
 
 > [!example] Uber's Service Provisioning Migration
 > - The first eighty per cent of teams migrated within two months, using the self-service tooling Larson's team had built
@@ -485,29 +591,54 @@ The hardest part is finishing:
 
 - Larson defines a spectrum of <b style="color: #2980b9">alignment intensity</b> that managers should consciously choose for each area they oversee
 
-| Degree | Meaning |
-|--------|---------|
-| **I'll do it** | You handle it directly |
-| **Preview** | They draft, you approve before action |
-| **Review** | They act, you review after |
-| **Notes** | They share notes for your awareness |
-| **No surprises** | They handle it, you just don't want to be blindsided |
-| **Let me know** | Fully delegated, check in only if needed |
+| Degree | Meaning | When to use |
+|--------|---------|-------------|
+| **I'll do it** | You handle it directly | New, high-stakes, or when you are the most qualified |
+| **Preview** | They draft, you approve before action | Early in a relationship, or high-risk decisions |
+| **Review** | They act, you review after | Established trust, moderate-risk domains |
+| **Notes** | They share notes for your awareness | Strong trust, routine operations |
+| **No surprises** | They handle it, you just don't want to be blindsided | High trust, stable teams |
+| **Let me know** | Fully delegated, check in only if needed | Expert reports, mature processes |
 
 The diagnostic question: for each person or area you manage, which degree of alignment are you currently operating at, and is that the right one?
 - If you cannot imagine moving anything below "preview," you may be micromanaging
 - If everything is at "let me know" and things are breaking, you may have over-delegated
+- The right degree changes over time — as trust builds, it should shift toward delegation; during crises or transitions, it should shift back toward tighter control
 
 > [!example] Larson's Own Transition at Uber
 > - At Digg, managing a single team, everything was at "I'll do it" or "preview"
 > - At Uber, managing an organisation of several teams, he initially attempted to maintain the same level of control
 > - The result was predictable: he became a bottleneck, his direct reports felt untrusted, and he was exhausted
 > - He deliberately recalibrated, pushing most items to "review" or "notes" and reserving "preview" only for the highest-stakes decisions
+> - The shift felt uncomfortable at first — like letting go of quality — but the teams performed better with more autonomy
 > **The lesson:** The degree of control that works for one team becomes a bottleneck at organisational scale.
 
 The framework also works in reverse:
 - When a new manager joins, start with a higher degree of control and explicitly negotiate downward as trust is established
 - This is more honest than pretending to delegate from day one and then intervening when things go wrong
+
+---
+
+### Model, Document, Share
+
+*Larson's approach to leading change without authority — a three-step pattern for driving adoption through demonstration rather than mandate.*
+
+- <b style="color: #2980b9">Model</b> — do the thing yourself first, proving that it works and building credibility
+- <b style="color: #2980b9">Document</b> — write down what you did, why it worked, and how others can replicate it
+- <b style="color: #2980b9">Share</b> — make the documentation available and let people adopt it voluntarily
+
+This approach works because it respects autonomy:
+- Nobody is being told what to do
+- The change agent is demonstrating value, not demanding compliance
+- Adoption happens because people see the benefit, not because they were ordered to adopt
+- It is slower than mandates but produces more durable change, because people who adopt voluntarily are more likely to sustain the practice
+
+> [!example] Larson's On-Call Runbook at Stripe
+> - He noticed that on-call handoffs were inconsistent — some teams had detailed runbooks, others had nothing
+> - Rather than mandating a standard runbook format, he created one for his own team, documented the template, and shared it in the engineering wiki
+> - Within six months, most teams had adopted the format — not because they were told to, but because they saw it working
+> - The teams that adopted it had fewer escalations and shorter incident resolution times
+> **The lesson:** Demonstration is more persuasive than mandate.
 
 ---
 
@@ -523,6 +654,11 @@ The framework also works in reverse:
 > 3. **The explicit ask** — what you want from this audience
 > 4. **Data-driven diagnosis** — the evidence supporting your position
 > 5. **Decision-making principles** — how you recommend the audience think about the trade-offs
+
+The structure is deliberately inverted from academic writing:
+- Academic writing builds from evidence to conclusion
+- Executive communication leads with the conclusion and provides evidence for those who want to dig in
+- This is not dumbing things down — it is respecting the executive's time and attention pattern
 
 > [!example] Larson's Failed Presentation at Yahoo!
 > - He prepared an academic-style presentation that built up methodically from data to analysis to conclusion
@@ -541,6 +677,7 @@ The corollary is that executives engage through what Larson calls <b style="colo
 - They hear the headline, then drill into whatever seems most suspicious or important
 - If the presenter has anticipated this and structured the supporting material to answer likely questions, the presentation feels effortless
 - If the supporting material follows a different logic than what the executive is looking for, the presentation feels evasive, even when it is not
+- The best presenters prepare not just the deck, but a mental map of the five or six questions executives are most likely to ask
 
 ---
 
@@ -556,6 +693,7 @@ The corollary is that executives engage through what Larson calls <b style="colo
 - Exceptions undermine that constraint
 - Every time a manager grants an exception, they create <b style="color: #e74c3c">exception debt</b>
 - Other teams see the exception, feel it is unfair, and either demand their own exceptions or lose faith in the policy
+- The exception does not just apply to one team — it rewrites the implicit rules for everyone
 
 Larson's alternative is to treat exceptions as <b style="color: #2980b9">test cases</b>:
 - When someone requests an exception, the appropriate response is not to grant or deny it immediately but to document it
@@ -573,7 +711,7 @@ This approach has two virtues:
 > - Within a week, two more teams requested the same exemption, citing the precedent
 > - By the next release cycle, the freeze was functionally meaningless
 > - The original exception had not just allowed one team to ship — it had destroyed the policy
-> - The team rebuilt the freeze policy with explicit criteria for exemptions
+> - The team rebuilt the freeze policy with explicit criteria for exemptions, built into the policy itself rather than granted ad hoc
 > **The lesson:** One exception creates a precedent; two create an expectation; three destroy the policy.
 
 > [!tip] Core Insight
@@ -587,12 +725,14 @@ This approach has two virtues:
 
 - Every yes is an implicit no to something else, because resources are finite
 - The manager who agrees to every request is not helping the organisation — they are overloading their team, diluting focus, and ensuring that nothing gets done well
+- The cost of a yes is always paid, whether or not the manager acknowledges it — it is paid in delayed projects, in stretched engineers, in quality that slips
 
 Larson's preferred technique is to <b style="color: #27ae60">rephrase the no as a trade-off</b>:
 - "We can do X, but it means delaying Y. Which do you prefer?"
 - This turns a confrontational moment into a prioritisation conversation
 - It forces the requester to own the consequences of their request
 - The truly helpful manager is the one who protects the team's capacity by saying no to low-priority work so that high-priority work can be done excellently
+- The technique also builds trust over time — stakeholders learn that when this manager says yes, it means yes with full commitment, not yes with fingers crossed
 
 ---
 
@@ -610,12 +750,13 @@ Larson's preferred technique is to <b style="color: #27ae60">rephrase the no as 
 - Worrying about a problem without acting on it is not one of the three options
 - Deferring it indefinitely is not one of the three options
 - Partially addressing it and hoping it goes away is not one of the three options
+- The constraint is what makes the framework useful — it forces decisions where inaction is the default
 
 > [!example] Larson's Mental Load at Uber
 > - At Uber, the volume of management problems scaled with the organisation
 > - Larson found himself carrying a mental list of dozens of unresolved issues, worrying about them without making progress on any
 > - The three-treatment model forced a decision: each issue was either handled now, solved systemically, or assigned to someone else
-> - The mental load dropped immediately
+> - The mental load dropped immediately — not because the problems went away, but because each one had a clear owner and a clear path
 > **The lesson:** Unresolved problems are not being managed — they are being carried. Force a decision.
 
 ---
@@ -626,12 +767,17 @@ Larson's preferred technique is to <b style="color: #27ae60">rephrase the no as 
 
 | Failure Mode | Behaviour | Consequence |
 |-------------|-----------|-------------|
-| **Only maintaining** | Handles daily flow competently but never initiates improvement | Team runs smoothly but never gets better |
-| **Optimising locally** | Makes own team efficient while ignoring impact on adjacent teams | Information hoarding, cross-team friction |
-| **Chasing silver bullets** | Constantly seeks one transformative change instead of steady incremental work | Lots of excitement, very little sustained progress |
-| **Solving for narrative** | Makes decisions based on how they look in a promotion packet | Invisible to the manager themselves; genuinely dangerous |
+| **Only maintaining** | Handles daily flow competently but never initiates improvement | Team runs smoothly but never gets better; gradually falls behind as the organisation evolves |
+| **Optimising locally** | Makes own team efficient while ignoring impact on adjacent teams | Information hoarding, cross-team friction, organisational fragmentation |
+| **Chasing silver bullets** | Constantly seeks one transformative change instead of steady incremental work | Lots of excitement, very little sustained progress; team suffers from initiative fatigue |
+| **Solving for narrative** | Makes decisions based on how they look in a promotion packet | Invisible to the manager themselves; genuinely dangerous because it feels like good decision-making |
 
 These failure modes are especially treacherous because a manager stuck in one of them often looks busy and committed from the outside — it is only the pattern of outcomes that reveals the problem.
+
+- The "only maintaining" manager is the hardest to identify because nothing is visibly broken
+- The "optimising locally" manager may receive praise from their own team while causing damage elsewhere
+- The "chasing silver bullets" manager generates energy and enthusiasm that can mask the absence of progress
+- The "solving for narrative" manager is the most dangerous because the misalignment between their incentives and the organisation's needs is invisible — even to them
 
 ---
 
@@ -644,6 +790,7 @@ These failure modes are especially treacherous because a manager stuck in one of
 - The rest of the organisation should be kept stable
 - Change is expensive, and changing everything at once creates chaos
 - The manager's job is to identify which plates are actively limiting growth and apply targeted interventions, while leaving the rest alone
+- This connects directly to the "systems survive one order of magnitude" principle — growth plates are the systems approaching their 10x ceiling
 
 ---
 
@@ -655,6 +802,7 @@ The key practice is to <b style="color: #27ae60">make your manager's job easy</b
 - Provide the information they need before they ask for it
 - Frame problems with recommended solutions rather than open-ended complaints
 - Understand what your manager is being measured on so that your work aligns with their incentives
+- When you bring a problem, bring at least one proposed solution — this transforms the conversation from "help me" to "here is what I think, do you agree?"
 
 "Make your manager's life easier, and they will make your life easier."
 
@@ -663,6 +811,7 @@ The key practice is to <b style="color: #27ae60">make your manager's job easy</b
 > - The other came with a list of problems, a recommended solution for each, and a question: "Does this approach work, or should I adjust?"
 > - The second manager consistently received more autonomy, more resources, and more support
 > - Not because the VP played favourites, but because the second manager made the relationship productive rather than burdensome
+> - The first manager's problems were real, but the VP's time was finite, and the first manager consumed it without adding value
 > **The lesson:** Bring solutions, not just problems — it transforms the dynamic from burden to partnership.
 
 ---
@@ -711,10 +860,12 @@ The better measure of career growth is scope — the breadth and complexity of w
 
 - <b style="color: #2980b9">Opportunity</b> means access to professional growth and challenging work
 - <b style="color: #2980b9">Membership</b> means the ability to participate as yourself, without assimilating into a dominant culture
+- These are distinct dimensions — a company can provide opportunity without membership (you can advance, but only by fitting in) or membership without opportunity (you are welcomed, but never given stretch assignments)
 
 The key insight is that both require <b style="color: #27ae60">structured process</b>, not good intentions:
 - Without structure, opportunity flows through existing networks — people assign challenging work to those they already know and trust, which replicates existing demographics
 - Without structure, membership depends on cultural fit — a concept that often means "people like the people who are already here"
+- Good intentions without structure produce the same outcomes as no intentions at all
 
 For opportunity, Larson recommends **open application processes**:
 - Rather than tapping someone on the shoulder for a leadership opportunity, post the opportunity publicly and let anyone apply
@@ -730,7 +881,7 @@ For opportunity, Larson recommends **open application processes**:
 
 For membership, Larson recommends:
 - Employee resource groups
-- Recurring social events
+- Recurring social events that do not centre on alcohol or activities that exclude certain groups
 - Visible signals that diverse identities are valued
 - These are not substitutes for structural change, but they create the conditions under which structural change is possible
 
@@ -746,11 +897,14 @@ For membership, Larson recommends:
 When a group of peer managers treats each other as their <b style="color: #2980b9">first team</b>:
 - They can make trade-offs that benefit the organisation as a whole — moving scope between teams, sharing headcount, coordinating on strategy
 - The learning rate is higher: instead of learning only from the challenges your own team faces, you learn from all the challenges across the peer group
+- Cross-team initiatives become easier because the managers involved trust each other
+- Resource allocation conversations become collaborative rather than adversarial
 
 The failure mode:
 - In organisations that reward zero-sum competition between managers, first-team behaviour is a vulnerability
 - A manager who shares resources with peers while peers hoard resources will be slowly stripped of capacity
 - Larson acknowledges this but argues that first-team behaviour, when reciprocated, produces outcomes that competitive behaviour cannot match
+- The first-team mindset requires mutual trust — it cannot be adopted unilaterally in a hostile environment
 
 ---
 
@@ -767,6 +921,7 @@ The consequences compound in multiple directions:
 - The hero alienates colleagues who feel their contributions are invisible
 - The hero burns out, because heroic effort is by definition unsustainable
 - The project remains structurally fragile because the systemic problem was never fixed — it was merely overwhelmed by individual effort
+- Other engineers learn that the path to recognition is heroic effort, not sustainable excellence — creating a culture that rewards crisis over prevention
 
 > [!example]- Uber's Infrastructure Migration Hero
 > - A critical infrastructure migration was falling behind schedule
@@ -800,6 +955,7 @@ The fix is not to punish heroics but to <b style="color: #27ae60">reset the syst
 - The fewer freedoms, the easier coordination becomes, but the more talented people chafe and eventually leave
 - There is no universal right answer
 - <b style="color: #e74c3c">Problems arise when companies claim to offer freedom but implicitly constrain it</b>, or when they constrain freedom without acknowledging the cost
+- A company that says "use any tool you want" but then penalises engineers who choose non-standard tools is being dishonest about its freedoms
 
 ---
 
@@ -812,6 +968,7 @@ The fix is not to punish heroics but to <b style="color: #27ae60">reset the syst
 *Larson observes that when he asks people what they want from their career, eleven out of twelve say "get promoted" — and shows why crafting a unique narrative is a better strategy.*
 
 - This creates a constrained pool of opportunity where everyone is competing for the same few slots, using the same criteria, following the same path
+- The promotion ladder has a fixed number of rungs and an ever-growing crowd pushing toward them
 
 The alternative is to craft a <b style="color: #2980b9">career narrative</b>:
 - A personalised story of capability growth that is uniquely yours
@@ -822,6 +979,7 @@ The power of a narrative is that it is <b style="color: #27ae60">non-competitive
 - A promotion ladder has one slot and ten candidates
 - A career narrative has an audience of one
 - A narrative that reads "I became the person who could take a zero-to-one infrastructure project from concept to production across multiple business units" is not competing with anyone — it is a unique story that only you can tell
+- It also makes you more portable — a narrative transfers across companies; a position on a specific company's ladder does not
 
 Larson is careful to note:
 - The narrative does not replace the ladder
@@ -836,17 +994,36 @@ Larson is careful to note:
 
 - Candidates enter at the top and flow through screening, phone interviews, on-site interviews, and offers
 - They exit either as hires or rejections at each stage
+- The hiring funnel is a stock-and-flow system, and the diagnostic approach is identical to any other stock-and-flow analysis
 
 The key diagnostic is to identify <b style="color: #2980b9">where candidates are dropping out</b>:
-- **Top of funnel** (not enough candidates) — the fix is sourcing
-- **Middle of funnel** (candidates failing interviews) — the fix might be recalibrating the interview bar or improving the candidate experience
+- **Top of funnel** (not enough candidates) — the fix is sourcing: referral programmes, job postings, recruiter outreach, employer branding
+- **Middle of funnel** (candidates failing interviews) — the fix might be recalibrating the interview bar, improving the candidate experience, or restructuring interviews to test relevant skills
 - **Bottom of funnel** (offers being rejected) — the fix is compensation, employer branding, or closing technique
 
 <b style="color: #e74c3c">Pouring more candidates into a broken funnel does not produce more hires</b> — it produces more wasted effort and more rejected candidates who now have a negative impression of the company.
 
+```mermaid
+flowchart TD
+    A[Sourcing] --> B[Screening]
+    B --> C[Phone Interview]
+    C --> D[On-Site Interview]
+    D --> E[Offer]
+    E --> F[Acceptance]
+    B -->|Drop-off| G[Fix: Better sourcing]
+    C -->|Drop-off| H[Fix: Better candidate experience]
+    D -->|Drop-off| I[Fix: Recalibrate interview bar]
+    E -->|Drop-off| J[Fix: Better compensation/closing]
+    style A fill:#2980b9,color:#fff
+    style F fill:#27ae60,color:#fff
+```
+
+The hiring funnel as a stock-and-flow system — the diagnostic is to find where the constraint actually lives, not to assume it is always at the top.
+
 > [!example] Uber's Interview Redesign
 > - Larson participated in redesigning the engineering interview process to focus on specific technical and collaborative skills rather than abstract puzzle-solving
-> - The result was a more diverse candidate pool, a higher offer acceptance rate, and new hires who ramped up faster
+> - The old interview process tested for general intelligence using algorithm puzzles that had little relationship to the actual work
+> - The result of the redesign was a more diverse candidate pool, a higher offer acceptance rate, and new hires who ramped up faster
 > - They had been evaluated on relevant capabilities rather than general intelligence or cultural fit
 > **The lesson:** Interviews should test for the actual skills the role requires, not for proxies.
 
@@ -869,6 +1046,11 @@ For engineers who are genuinely struggling, Larson recommends a structured appro
 - The tone should be supportive, not punitive — the goal is to help the person succeed, not to build a case for termination
 - But some improvement plans end in the person leaving, and that is sometimes the right outcome for both the individual and the organisation
 
+Larson also addresses the challenge of **managing high performers**:
+- High performers need different things than struggling performers — they need scope, challenge, and visibility, not more structure
+- The common mistake is to treat all reports the same way, which under-serves both struggling and excelling engineers
+- High performers who do not receive adequate scope and recognition will leave — they have options
+
 ---
 
 ## Key Quotes
@@ -888,7 +1070,7 @@ For engineers who are genuinely struggling, Larson recommends a structured appro
 
 *An Elegant Puzzle* is one of the best books on engineering management written in the last decade, and its greatest contribution is intellectual seriousness. Larson does not pretend management is simpler than it is, nor does he hide behind motivational generalities. The frameworks — the four states model, stocks and flows, strategy as diagnosis, the migration playbook, the controls spectrum, metrics-driven change — are genuinely useful and immediately applicable. They provide a vocabulary for diagnosing problems that most managers sense intuitively but cannot articulate, and a set of tools for addressing those problems structurally rather than heroically. The book treats managers as engineers of organisations, and the result is a text that feels more like a well-documented API than a leadership memoir.
 
-The book's most significant limitation is its context. Nearly all examples come from Silicon Valley hypergrowth companies — Uber, Stripe, Digg — and Larson's advice assumes a degree of managerial control over hiring, team composition, and organisational design that does not exist in many large enterprises, regulated industries, or matrix organisations. The team sizing heuristics assume co-located product engineering teams with dedicated managers. The migration playbook assumes you can assign a dedicated team to do long-tail work. The metrics-driven change framework assumes teams have the autonomy to reprioritise based on data. In organisations where headcount approvals take months, where team composition is decided by committees, and where priorities are set by distant stakeholders, the advice must be heavily adapted. Larson is writing for a world of high autonomy and rapid iteration; many readers live in a world of deep hierarchy and slow bureaucracy.
+The book's most significant limitation is its context. Nearly all examples come from Silicon Valley hypergrowth companies — Uber, Stripe, Digg — and Larson's advice assumes a degree of managerial control over hiring, team composition, and organisational design that does not exist in many large enterprises, regulated industries, or matrix organisations. The team sizing heuristics assume co-located product engineering teams with dedicated managers. The migration playbook assumes you can assign a dedicated team to do long-tail work. The metrics-driven change framework assumes teams have the autonomy to reprioritise based on data. In organisations where headcount approvals take months, where team composition is decided by committees, and where priorities are set by distant stakeholders, the advice must be heavily adapted.
 
 The other blind spot is politics. Larson acknowledges that organisational politics exist — briefly, in the reorg chapter — but offers no framework for navigating them. The book assumes a broadly meritocratic world where good systems produce good outcomes. This is true as far as it goes, but it is incomplete. In many organisations, the biggest constraint is not system design but the political dynamics that determine whether your systems get adopted, funded, and championed. A beautifully designed process that the wrong executive blocks is just a document. A mediocre process that the right executive sponsors ships and scales. Larson has no vocabulary for this dimension of management, and the reader must look elsewhere — to books on organisational politics, influence, and power — for the human dynamics that his systems-first approach sets aside.
 
@@ -899,7 +1081,8 @@ Despite these limitations, the book's core thesis is sound and important: the ma
 ## Related Reading
 
 - [[Thinking in Systems - Donella H. Meadows|Thinking in Systems]] — Donella Meadows' foundational text on systems thinking, which Larson draws on heavily
-- [[rumelt_good-strategy-bad-strategy|Good Strategy/Bad Strategy]] — Richard Rumelt's strategy framework, which Larson adapts for engineering organisations
-- [[lencioni_five-dysfunctions|The Five Dysfunctions of a Team]] — complements Larson's structural view with a focus on team trust and interpersonal dynamics
+- [[The Effective Executive - Peter Drucker|The Effective Executive]] — Drucker's classic on what makes managers productive, complementing Larson's structural focus with individual effectiveness
+- [[The Lean Startup - Eric Ries|The Lean Startup]] — Eric Ries on iterative development and validated learning, a related systems-thinking approach to building organisations
+- [[The Phoenix Project - Gene Kim|The Phoenix Project]] — the fictional companion to many of Larson's ideas about flow, bottlenecks, and systems thinking in technology organisations
 - [[The 48 Laws of Power - Robert Greene|The 48 Laws of Power]] — the political lens that Larson's systems-first approach conspicuously lacks
-- [[kowitz_sprint|Sprint]] — Jake Knapp's design sprint methodology, another practitioner toolkit for structured problem-solving
+- [[The Culture Code - Daniel Coyle|The Culture Code]] — Daniel Coyle on the interpersonal dynamics that create team cohesion, complementing Larson's structural view

@@ -34,7 +34,9 @@ year: 2013
 - The word "strategy" is among the most overused and least understood terms in business
 - Most of what passes for strategy — mission statements, long-range plans, budget exercises, competitive analyses — <b style="color: #e74c3c">is not strategy at all</b>
 - Strategy is an integrated set of choices that uniquely positions an organisation to create value and sustain competitive advantage
-- The emphasis is on "integrated" and "choices" — each word carries load
+- The emphasis is on "integrated" and "choices" — each word carries load:
+  - "Integrated" means the choices must fit together as a mutually reinforcing system — a brilliant where-to-play on the wrong how-to-win is worse than no strategy at all
+  - "Choices" means deliberate exclusion — choosing what NOT to do is as important as choosing what to do
 
 The authors call their framework the <b style="color: #2980b9">Strategic Choice Cascade</b>, and it consists of five questions that must be answered as a mutually reinforcing system:
 
@@ -63,6 +65,7 @@ The cascade is iterative, not linear — choices at each level constrain and rei
 
 - The cascade also nests: a company has a corporate-level cascade, each business unit has its own, each brand has its own, and even internal functions can have their own version
 - Every layer must reinforce the layers above and below it
+- This nesting principle means strategy is not just a CEO activity — <b style="color: #27ae60">every manager at every level is a strategist</b>, responsible for making choices within the context set by the level above
 
 The book's most provocative claim is about what strategy is NOT:
 
@@ -72,6 +75,13 @@ The book's most provocative claim is about what strategy is NOT:
 - It is emphatically not the comfortable decision to keep all options open
 - The most common strategic failure is not making bad choices — <b style="color: #27ae60">it is refusing to make choices at all</b>
 - An organisation that tries to serve every segment, compete in every geography, and be excellent at everything has no strategy — it has a wish list
+
+Why the refusal to choose is so pervasive:
+
+- Choosing means risk — every genuine choice has a meaningful chance of being wrong
+- Keeping options open feels safer because no single decision can be blamed
+- Organisations reward consensus, and consensus is the enemy of choice — a strategy that everyone agrees with usually means no one was forced to give anything up
+- The result is a "strategy" that is really a list of everything the organisation already does, plus a few aspirational additions — comfortable, comprehensive, and strategically worthless
 
 ---
 
@@ -88,6 +98,7 @@ The book's most provocative claim is about what strategy is NOT:
 | **The Strategy Logic Flow** | Seven analytical questions across four dimensions that structure where-to-play and how-to-win analysis |
 | **Six strategy traps** | Common failure patterns — Do-it-all, Don Quixote, Waterloo, Something-for-everyone, Dreams, Programme-of-the-month |
 | **Six signs of winning** | Diagnostic indicators including distinctive activity systems, adoring customers, and thriving competitors |
+| **Nesting cascades** | Every level of the organisation has its own cascade, constrained by and reinforcing the level above |
 
 ---
 
@@ -97,9 +108,11 @@ The book's most provocative claim is about what strategy is NOT:
 
 - Lafley describes arriving as CEO of P&G in June 2000 during what he calls a "crisis":
   - The company had just issued its third profit warning in a year
-  - The stock had lost half its value
-  - Morale was shattered
-- His response was not to launch a cost-cutting exercise — it was to ask five questions
+  - The stock had lost half its value — roughly $85 billion in market capitalisation wiped out
+  - Morale was shattered, and many of P&G's best people were leaving
+  - The board was restless, the media hostile, and Wall Street openly questioning whether P&G could recover
+- His response was not to launch a cost-cutting exercise or a reorganisation — it was to ask five questions
+- This was itself a strategic choice — Lafley bet that P&G's problems were not operational but strategic
 
 The <b style="color: #2980b9">Strategic Choice Cascade</b> is introduced here as the book's central intellectual contribution:
 
@@ -129,11 +142,50 @@ The <b style="color: #2980b9">Strategic Choice Cascade</b> is introduced here as
 > - The integrated choice created a new market segment and turned Oil of Olay into a multi-billion dollar brand
 > **The lesson:** Neither the where-to-play nor the how-to-win would have worked in isolation — the power was in their integration.
 
+---
+
 Lafley also introduces what he calls the <b style="color: #e74c3c">"comfortable trap"</b> of refusing to choose:
 
 - Many P&G businesses, before the transformation, had strategies that were really just lists of goals — grow revenue, increase market share, expand internationally
 - These had no prioritisation, no exclusion, and no integrated logic
 - "Strategy is choice," Lafley writes. "Specifically, an integrated set of choices."
+- The function of a strategic choice is to narrow the field — to say "we will do THIS and not THAT"
+- Without this narrowing, resources spread thin, competitive positions blur, and the organisation drifts toward mediocrity
+
+> [!example] P&G Before Lafley: The Comfort of No Choice
+> - Before Lafley's arrival, P&G's corporate "strategy" was essentially a financial plan — targets for revenue growth, margin improvement, and market share in each category
+> - Each business unit had its own growth targets, but few had made genuine choices about where to play or how to win
+> - The laundry division, for instance, competed with fifteen detergent brands across every geography and price point
+> - Nobody had asked: which of these brands can actually win? Which should we walk away from?
+> - The result was internal competition, resource fragmentation, and strategic confusion
+> - Each brand team was working hard, but their efforts were frequently cancelling each other out
+> **The lesson:** Activity without choice is not strategy — it is motion disguised as progress.
+
+---
+
+The chapter also introduces the concept of <b style="color: #2980b9">nesting cascades</b>:
+
+- P&G's corporate cascade defined the company-wide winning aspiration, where-to-play (which categories, which geographies), and how-to-win (differentiation through consumer understanding and innovation)
+- Each business unit (beauty, home care, baby care) had its own cascade nested within the corporate one
+- Each brand within a business unit had its own cascade nested within the business-unit cascade
+- Even individual functions — R&D, marketing, supply chain — developed their own cascades
+
+```mermaid
+flowchart TD
+    A[Corporate Cascade] --> B[Business Unit Cascade]
+    B --> C[Brand Cascade]
+    C --> D[Function Cascade]
+    A -->|Constrains| B
+    B -->|Constrains| C
+    C -->|Constrains| D
+    D -->|Informs| C
+    C -->|Informs| B
+    B -->|Informs| A
+    style A fill:#2980b9,color:#fff
+    style D fill:#27ae60,color:#fff
+```
+
+The nesting structure ensures strategic coherence across the entire organisation — no brand-level choice can contradict the business-unit strategy, and no business-unit strategy can contradict the corporate strategy.
 
 ---
 
@@ -146,13 +198,24 @@ Lafley also introduces what he calls the <b style="color: #e74c3c">"comfortable 
   - **Playing to win** means aspiring to lead your chosen space — to be the best, not merely present
   - **Playing to play** means aspiring merely to participate — to be in the game without committing to dominate it
 - Playing to play is the more dangerous posture because it never triggers the hard choices and significant investments that winning requires
+- A playing-to-play mindset produces strategies designed to avoid failure rather than to achieve victory — and strategies designed to avoid failure almost always produce mediocrity
 
-> [!example]- Saturn: $20 Billion Spent Playing to Play (1985–2010)
+Why playing to play is so seductive:
+
+- It feels prudent — "let's be realistic about what we can achieve"
+- It avoids the discomfort of committing to a bold goal that might not be reached
+- It protects egos — if you never aspire to win, you can never be accused of losing
+- <b style="color: #e74c3c">But modest aspirations generate modest investments, which generate modest results, which confirm the original modest aspiration</b> — a self-fulfilling prophecy of mediocrity
+
+> [!example]- Saturn: $20 Billion Spent Playing to Play (1985-2010)
 > - General Motors invested over $20 billion across twenty years to create Saturn as its answer to Japanese small cars
 > - But GM never truly aspired to win in small cars — it aspired to participate, to have an entry in the segment
 > - The investment was spread across too many compromises: Saturn had its own factory and distribution network but was never given the freedom to truly differentiate
+> - Saturn's early reviews were enthusiastic, and the brand developed a loyal cult following
+> - But GM gradually pulled Saturn back into the corporate fold, sharing platforms and parts with other GM brands
+> - The distinctiveness that had attracted customers eroded year by year
 > - Meanwhile, Toyota, Honda, and Nissan were playing to win — investing in manufacturing excellence, product quality, and customer loyalty with the explicit intention of dominating the segment
-> - Saturn died, and GM's two decades of investment yielded nothing
+> - Saturn died in 2010, and GM's two decades of investment yielded nothing
 > - The lesson was not that GM lacked resources — it had more resources than any competitor
 > **The lesson:** A participation aspiration never generates the focus and commitment that winning demands.
 
@@ -170,17 +233,19 @@ Lafley also introduces what he calls the <b style="color: #e74c3c">"comfortable 
 > - GBS went from a cost centre to a strategic innovation engine
 > **The lesson:** Even an internal function can define winning — and the audacity to do so transforms performance.
 
+---
+
 The chapter also insists that winning aspirations must be framed around the <b style="color: #27ae60">customer</b>, not around financial metrics:
 
 - "Maximise shareholder value" is not a winning aspiration — it is a financial outcome that results from having one
+- A financial aspiration tells you nothing about WHERE to compete or HOW to win — it only tells you what you hope the scoreboard says at the end
 - P&G's home-care winning aspiration was not "grow revenue by 8%" but "reinvent cleaning experiences, taking the hard work out of household chores"
 - That aspiration led to:
   - **Swiffer** — replacing the mop and bucket with a disposable cleaning pad
   - **Mr. Clean Magic Eraser** — a cleaning tool that required no chemical cleaner at all
   - **Febreze** — eliminating odours rather than masking them
 - None of these products would have emerged from a financial aspiration — they emerged because someone asked: what does the consumer actually need?
-
----
+- <b style="color: #27ae60">The consumer-centric aspiration opened entirely new competitive spaces</b> that a financial aspiration would never have revealed
 
 > [!example] Beauty Care's Consumer-Centric Aspiration
 > - Lafley's team defined winning not as "selling more shampoo" but as "helping women feel beautiful"
@@ -189,7 +254,10 @@ The chapter also insists that winning aspirations must be framed around the <b s
 >   - Luxury fragrances
 >   - Prestige skin care
 > - If the aspiration had been product-centred ("be the best shampoo company"), none of those expansions would have seemed logical
+> - The aspiration did not dictate a specific where-to-play — it opened a wide space of possibilities and then required a disciplined choice among them
 > **The lesson:** How you frame the aspiration determines which strategic moves become visible.
+
+---
 
 The chapter also addresses who defines winning:
 
@@ -197,6 +265,7 @@ The chapter also addresses who defines winning:
 - P&G's home-care team initially benchmarked against Unilever and Colgate-Palmolive — the usual suspects
 - When pushed to identify who was actually performing best, they discovered <b style="color: #2980b9">Reckitt Benckiser</b> — a smaller, more focused company outperforming even P&G's strong results
 - Benchmarking against the best competitor, regardless of size or familiarity, revealed the true competitive frontier and forced a much more aggressive strategic response
+- <b style="color: #e74c3c">Benchmarking against comfortable rivals produces comfortable strategies</b>
 
 ---
 
@@ -207,20 +276,29 @@ The chapter also addresses who defines winning:
 - The where-to-play question is about defining the playing field — and, crucially, about defining where you will NOT play
 - Lafley and Martin identify <b style="color: #2980b9">five dimensions</b> of the where-to-play choice:
 
-| Dimension | What it covers |
-|-----------|---------------|
-| **Geography** | Which countries, regions, or markets to compete in |
-| **Product/service** | Which offerings to include or exclude |
-| **Customer segment** | Which consumers to target and which to walk away from |
-| **Distribution channel** | Which routes to market (retail, online, direct, wholesale) |
-| **Vertical stage** | Which parts of the value chain to own versus outsource |
+| Dimension | What it covers | Example |
+|-----------|---------------|---------|
+| **Geography** | Which countries, regions, or markets to compete in | P&G focused on ten priority countries that represented disproportionate growth potential |
+| **Product/service** | Which offerings to include or exclude | Selling off food brands to concentrate on home and personal care |
+| **Customer segment** | Which consumers to target and which to walk away from | Olay targeting women 35+ rather than "all women" |
+| **Distribution channel** | Which routes to market (retail, online, direct, wholesale) | Olay choosing mass retail over department stores |
+| **Vertical stage** | Which parts of the value chain to own versus outsource | Outsourcing manufacturing of non-core products |
 
 - An organisation that tries to play everywhere plays nowhere well
+- <b style="color: #27ae60">The most powerful where-to-play moves are acts of subtraction, not addition</b>
 
 > [!tip] Core Insight
 > The most powerful where-to-play moves in this book are acts of subtraction, not addition — cutting fields, brands, and geographies to concentrate resources on winnable positions.
 
 ---
+
+The mechanism behind why subtraction works:
+
+- Resources — capital, talent, management attention — are always finite
+- When resources are spread across many playing fields, each field receives an investment below the threshold needed for competitive advantage
+- Concentrating resources on fewer fields pushes investment above that threshold
+- <b style="color: #e74c3c">The danger of addition is invisible</b> — each new playing field seems individually attractive, but the cumulative effect is resource dilution across the entire portfolio
+- Lafley calls this the "tyranny of OR" turned on its head — most leaders see where-to-play as an additive question ("which fields should we add?") when it is fundamentally a subtractive one ("which fields should we leave?")
 
 > [!example] Bounty Paper Towels: Subtraction as Strategy (Late 1990s)
 > - Bounty was struggling — the brand had expanded internationally and diversified into adjacent products (food containers, paper cups, other paper goods)
@@ -239,6 +317,7 @@ The chapter also addresses who defines winning:
 > - The strategic choice was to go from fifteen brands to five — concentrating all resources on the brands that could win
 > - The remaining brands received enough investment to dominate their segments
 > - The eliminated brands freed up capital and talent for the winners
+> - P&G also redefined each remaining brand's target consumer with unusual precision, reducing overlap and giving each brand a clear competitive space
 > **The lesson:** More brands means less investment per brand — fewer brands means enough investment to win.
 
 ---
@@ -251,7 +330,10 @@ The chapter also addresses who defines winning:
 >   - Sporty, lifestyle fragrances (Lacoste)
 > - This gave P&G time to build fragrance capabilities, distribution relationships, and consumer understanding without facing the full competitive response
 > - Once the beachhead was established, P&G could expand into more competitive segments from a position of strength
+> - The strategy echoed military doctrine: never attack the enemy where they are strongest; find the undefended flank
 > **The lesson:** Enter markets where incumbents won't fight hardest — build strength before confronting them directly.
+
+---
 
 > [!example] Citrus Hill: Choosing the Wrong Field
 > - P&G entered the orange juice market with Citrus Hill, believing its consumer-marketing capabilities would translate
@@ -259,6 +341,7 @@ The chapter also addresses who defines winning:
 > - P&G's marketing capabilities could not overcome these structural disadvantages
 > - The where-to-play choice was fatally disconnected from P&G's how-to-win capability
 > - Citrus Hill was eventually killed, having never returned its cost of capital
+> - Lafley uses this example repeatedly throughout the book as the canonical illustration of what happens when where-to-play and how-to-win are considered in isolation
 > **The lesson:** A brilliant playing field on which you cannot win is worthless — where-to-play and how-to-win must be considered together.
 
 The broader lesson is that <b style="color: #27ae60">where-to-play and how-to-win must be considered together</b>:
@@ -266,6 +349,14 @@ The broader lesson is that <b style="color: #27ae60">where-to-play and how-to-wi
 - The playing field determines what capabilities are needed
 - The available capabilities determine which fields are winnable
 - A powerful competitive advantage on the wrong field is as useless as a brilliant field on which you cannot win
+- The cascade is not a sequence where you first choose where to play and then choose how to win — the two choices must be made simultaneously, each informing and constraining the other
+
+The chapter also addresses the temptation to play in "attractive" industries:
+
+- Many strategists default to choosing attractive playing fields — high-growth markets, large profit pools, fashionable industries
+- But an attractive industry filled with strong competitors may offer no path to winning
+- <b style="color: #e74c3c">An unattractive industry where you have a genuine competitive advantage is strategically superior to an attractive industry where you have none</b>
+- The right question is not "is this industry attractive?" but "can we WIN in this industry given our specific capabilities and competitive position?"
 
 ---
 
@@ -281,12 +372,21 @@ The broader lesson is that <b style="color: #27ae60">where-to-play and how-to-wi
 - The margin advantage comes from the cost side
 - The key word is "structurally" — this is not about cutting costs through efficiency drives or layoffs
 - It means building a cost position that competitors cannot match because of differences in scale, process, or business model
+- Examples of structural cost advantages:
+  - Walmart's distribution system — hub-and-spoke warehouse network built over decades, impossible to replicate quickly
+  - Southwest Airlines' single-aircraft-type fleet — simpler maintenance, training, and parts inventory
+  - Amazon's fulfilment infrastructure — scale advantages that grew more powerful over time
 
 <b style="color: #2980b9">Differentiation</b>:
 
 - Delivering an offering perceived as distinctively more valuable by customers, commanding a price premium they willingly pay
 - The margin advantage comes from the revenue side
 - The key word is "perceived" — the offering must be SEEN as more valuable, not just BE more valuable in some objective sense
+- Differentiation requires understanding what customers value and delivering it better than anyone else
+- Examples of differentiation advantages:
+  - Apple — design, ecosystem integration, brand prestige
+  - Starbucks — the "third place" experience beyond home and work
+  - P&G's Tide — superior cleaning performance validated by decades of consumer testing
 
 ---
 
@@ -305,6 +405,8 @@ Both strategies produce the same fundamental outcome: a wider gap between revenu
 - <b style="color: #e74c3c">There is no third way</b>, the authors insist — though the best strategies often incorporate elements of both
 - Toyota, for instance, is primarily a differentiator (quality, reliability, resale value) but also achieves extraordinary cost discipline through its manufacturing system
 - The distinction is about primary orientation, not absolute purity
+- The danger is what Porter calls being <b style="color: #e74c3c">"stuck in the middle"</b> — neither the cheapest nor the most differentiated
+- Stuck-in-the-middle companies have no compelling reason for any customer to choose them over alternatives
 
 > [!tip] Core Insight
 > Cost leadership and differentiation both produce the same result — a wider margin than competitors can match. The question is which side of the equation you attack.
@@ -324,6 +426,8 @@ Both strategies produce the same fundamental outcome: a wider gap between revenu
 >   - **Marketing:** designed as a reinforcing system with product, price, and channel
 > - The masstige strategy turned Oil of Olay from a declining brand into a multi-billion-dollar franchise
 > - It created an entirely new market segment that competitors struggled to follow
+> - Department-store brands could not compete on price; mass-market brands could not compete on efficacy
+> - P&G's integrated capability system made the masstige position structurally defensible
 > **The lesson:** The most powerful how-to-win choices create new market segments rather than fighting over existing ones.
 
 > [!example] Glad/Clorox Joint Venture: Creative Structural Solutions
@@ -334,6 +438,7 @@ Both strategies produce the same fundamental outcome: a wider gap between revenu
 >   - P&G's polymer technology and innovation capability
 >   - Clorox's brand strength and distribution
 > - The partnership produced Glad ForceFlex and Glad Press'n Seal, both category leaders
+> - Neither company could have achieved the same result alone — the how-to-win choice was the partnership itself
 > **The lesson:** A how-to-win choice can involve creative structural solutions — partnerships, joint ventures — not just internal capability building.
 
 ---
@@ -343,6 +448,18 @@ The chapter also discusses the microeconomic foundations in an appendix worth un
 - In a commodity market where all offerings are identical, the only way to earn above-average returns is to have a lower cost structure than competitors
 - In a differentiated market where customers perceive meaningful differences, the player with the most valued differentiation commands a price premium
 - A <b style="color: #e74c3c">"stuck in the middle" position</b> — neither the cheapest nor the most differentiated — is structurally unprofitable
+- The microeconomics are simple but powerful:
+  - If you are the cost leader, you can match any competitor's price and still earn a higher margin
+  - If you are the differentiator, you earn a price premium that more than covers any additional cost
+  - If you are neither, your margin is squeezed from both sides
+
+| Position | Revenue | Cost | Margin | Sustainability |
+|----------|---------|------|--------|----------------|
+| **Cost leader** | Market price | Below competitors | Structurally wider | High — requires matching the entire cost system |
+| **Differentiator** | Above market price | At or above market | Structurally wider | High — requires matching the entire value proposition |
+| **Stuck in the middle** | Market price | At market cost | Average or below | Low — no structural protection |
+
+This table is the economic engine beneath every strategic choice in the book.
 
 ---
 
@@ -354,8 +471,17 @@ The chapter also discusses the microeconomic foundations in an appendix worth un
 - An individual capability can be copied:
   - If your advantage is great R&D, a competitor can hire scientists
   - If your advantage is efficient manufacturing, a competitor can buy machines
+  - If your advantage is strong branding, a competitor can hire an agency
 - But a bundle of capabilities that reinforce each other creates compounding returns that are <b style="color: #27ae60">exponentially harder to replicate</b>
 - A competitor would need to copy not just one capability but the entire system simultaneously — and the connections between capabilities are often invisible from the outside
+
+The mathematics of capability systems:
+
+- An individual capability provides a linear advantage — you are somewhat better at one thing
+- Two reinforcing capabilities provide a compounding advantage — each makes the other more effective
+- Five reinforcing capabilities create an advantage that is practically impossible to replicate
+- <b style="color: #27ae60">The connections between capabilities are more valuable than the capabilities themselves</b>
+- This is why "best practices" benchmarking often fails — you can copy a practice but not the system that makes it work
 
 ---
 
@@ -376,6 +502,10 @@ flowchart LR
     C --> D[Go-to-Market]
     D --> E[Global Scale]
     E -->|Funds| A
+    A -->|Reveals needs| B
+    B -->|Creates products| C
+    C -->|Drives demand| D
+    D -->|Generates revenue| E
     style A fill:#2980b9,color:#fff
     style E fill:#27ae60,color:#fff
 ```
@@ -383,6 +513,16 @@ flowchart LR
 The system was circular and self-reinforcing — each capability made the others stronger.
 
 ---
+
+> [!example] P&G's "Living It" and "Working It" Programmes
+> - P&G's consumer-understanding capability went far beyond focus groups and surveys
+> - In the "Living It" programme, researchers spent days living with consumers in their homes — shopping with them, cleaning with them, cooking with them
+> - In the "Working It" programme, researchers worked alongside retail employees in stores
+> - These immersive experiences revealed insights that traditional research methods missed:
+>   - Consumers did not want a better mop — they wanted to stop mopping entirely (insight that led to Swiffer)
+>   - Consumers associated cleaning with effort, and anything that reduced effort felt "premium"
+> - This deep understanding fed directly into innovation and brand building
+> **The lesson:** Capability advantage is built through proprietary methods, not generic tools — no competitor could replicate P&G's consumer insights by simply running more focus groups.
 
 > [!example]- Gillette Acquisition: Capability Systems in Action (2005)
 > - When P&G acquired Gillette for $57 billion, the strategic logic was not just about adding a strong brand — it was about how Gillette's capabilities would reinforce P&G's existing system
@@ -394,17 +534,34 @@ The system was circular and self-reinforcing — each capability made the others
 >   - P&G's consumer understanding could improve Gillette's innovation targeting
 >   - P&G's retail relationships could expand Gillette's distribution
 >   - P&G's global scale could reduce Gillette's manufacturing costs
+>   - Gillette's geographic strength could open new markets for P&G's existing brands
 > - The acquisition worked because the capability fit was genuine, not cosmetic
+> - Within three years, the combined system was generating synergies far beyond the original acquisition projections
 > **The lesson:** Acquisitions succeed when the acquired company's capabilities reinforce the acquirer's existing system — not when they merely add revenue.
+
+---
 
 > [!example] P&G's 1980s Acquisition Spree: Growth Without Strategy
 > - P&G bought Orange Crush, Bain de Soleil, and a string of other brands with no connection to P&G's existing capabilities
 > - The result was a "mishmash of acquisitions that never returned the cost of capital"
 > - The company was buying growth rather than choosing growth — using acquisitions to avoid the hard strategic work of building advantage
+> - These brands could not benefit from P&G's core capabilities because they operated in categories where those capabilities were irrelevant
+> - Orange Crush, for example, competed in beverages where P&G had no consumer understanding, no brand-building expertise, and no go-to-market advantage
 > **The lesson:** Acquisition is a poor substitute for strategic discipline. An organisation that cannot think strategically in one context will not suddenly develop that capability in a new one.
 
 > [!tip] Core Insight
 > The test for a genuine capability system: if removing one capability would weaken the others (not just itself), the system is real. If capabilities can be removed without affecting the rest, you have a list of strengths, not a system.
+
+---
+
+The chapter also introduces the concept of <b style="color: #2980b9">Connect + Develop</b> — P&G's open-innovation model:
+
+- Traditionally, P&G developed everything internally — the "not invented here" culture
+- Lafley recognised that in a world with millions of scientists and engineers outside P&G's walls, internal-only innovation was a losing proposition
+- Connect + Develop aimed to source 50% of innovations from outside the company
+- This was itself a capability choice — P&G's capability system expanded to include the ability to identify, evaluate, and integrate external innovations
+- The model required new management systems: screening processes, partnership agreements, intellectual property frameworks
+- <b style="color: #27ae60">Connect + Develop did not replace internal R&D — it amplified it</b>, giving P&G access to a global innovation network while maintaining internal capabilities for integration and development
 
 ---
 
@@ -414,6 +571,8 @@ The system was circular and self-reinforcing — each capability made the others
 
 - This is the chapter most people skip and the one Lafley argues is most important
 - A brilliant strategy without management systems to embed it is just a wish list
+- Management systems are the mechanisms through which strategic choices become embedded in daily operations
+- Without them, strategy lives in a PowerPoint deck that everyone forgets the moment they return to their desks
 
 > [!example]- P&G's Strategy Review Transformation Under Lafley
 > - When Lafley became CEO, strategy reviews were what he calls "corporate theatre":
@@ -432,7 +591,7 @@ The system was circular and self-reinforcing — each capability made the others
 >   - Strategic questions agreed in advance, with three to four hours spent in genuine dialogue
 >   - The business leader was not selling a strategy — they were working through a strategic problem with the CEO
 > - The old system incentivised defence; the new system incentivised discovery
-> - Quality of strategic choices improved markedly
+> - Quality of strategic choices improved markedly because leaders could be honest about uncertainties
 > **The lesson:** The format of strategy conversations determines whether they produce performances or decisions.
 
 ---
@@ -447,21 +606,37 @@ The chapter introduces the <b style="color: #2980b9">OGSM framework</b> — Obje
 
 - OGSM forces alignment between the strategic cascade and the daily actions of every team and individual
 - <b style="color: #27ae60">Every person in the organisation should be able to trace their daily work back to a strategic choice</b>
+- When someone cannot make that connection, either the management system is broken or their work is not strategically relevant
+- The power of OGSM is its simplicity — it fits on a single page, which prevents the sprawl that infects most planning documents
+
+---
+
+The chapter identifies four essential functions that management systems must perform:
+
+| Function | What it does | Without it |
+|----------|-------------|-----------|
+| **Regular cadence** | Test strategy against reality on a predictable schedule | Strategies drift without anyone noticing until a crisis forces attention |
+| **Aligned measures** | Ensure everyone optimises for the same strategic outcome | People optimise for the wrong things — local metrics that undermine the whole |
+| **Communication norms** | Surface problems early through assertive inquiry | Problems go unaddressed until they become crises |
+| **Talent development** | Build the strategists needed to sustain advantage over time | The organisation runs out of people capable of making the next generation of strategic choices |
+
+---
 
 Even Lafley acknowledges that transforming management systems is extremely difficult:
 
 - An anonymous P&G division president admits that the old sell-and-defend culture "got in the way" even after Lafley tried to create openness
 - People who were being evaluated by the person across the table were naturally reluctant to expose problems
 - <b style="color: #e74c3c">The management system had to fight against deeply ingrained organisational behaviour — and the fight was never fully won</b>
+- Lafley estimates it took five to seven years for the new strategy-review culture to take hold — and even then, it was unevenly adopted across the organisation
+- The lesson: management systems are not installed like software — they are cultivated like culture, and culture changes slowly
 
----
-
-What management systems must do:
-
-- Create **regular cadence** for testing strategy against reality — without it, strategies drift
-- Create **aligned measures** — without them, people optimise for the wrong things
-- Create **communication norms** — without them, problems go unaddressed until they become crises
-- Create **talent development systems** — without them, the organisation cannot develop the strategists needed to sustain advantage over time
+> [!example] P&G's Talent Development as a Management System
+> - Lafley treated talent development as a strategic management system, not an HR function
+> - High-potential leaders were deliberately rotated through assignments that required strategic thinking — leading a brand, running a country operation, managing a category
+> - The rotation was designed to build strategic capability, not just functional expertise
+> - Each rotation presented a new strategic cascade to build, a new where-to-play and how-to-win to define
+> - Over time, this produced a leadership bench with deep strategic muscle — people who had made real strategic choices, not just managed existing operations
+> **The lesson:** Strategic capability is built through practice — the management system must create opportunities for leaders to practice making and living with strategic choices.
 
 > [!tip] Core Insight
 > Management systems are not administrative overhead — they are the mechanism through which strategy survives contact with daily operations. Without them, even brilliant strategies erode into wish lists.
@@ -474,28 +649,63 @@ What management systems must do:
 
 - Martin presents the <b style="color: #2980b9">Strategy Logic Flow</b> — seven analytical questions organised across four dimensions:
 
-| Dimension | Core question |
-|-----------|--------------|
-| **Industry analysis** | What is the structure and attractiveness of the industry? Where are the profit pools? |
-| **Customer value analysis** | What do channel customers and end consumers value? What are unmet needs? |
-| **Relative position analysis** | How does the company fare against competitors on dimensions that matter? |
-| **Competitive reaction analysis** | What will competitors do in response to your strategic choices? |
+| Dimension | Core question | What it reveals |
+|-----------|--------------|-----------------|
+| **Industry analysis** | What is the structure and attractiveness of the industry? Where are the profit pools? | Whether the playing field offers enough margin to sustain advantage |
+| **Customer value analysis** | What do channel customers and end consumers value? What are unmet needs? | Where differentiation opportunities exist and what form they should take |
+| **Relative position analysis** | How does the company fare against competitors on dimensions that matter? | Current competitive standing and gaps to close |
+| **Competitive reaction analysis** | What will competitors do in response to your strategic choices? | Whether the chosen position is defensible against predictable competitor responses |
+
+---
 
 - The key insight is that <b style="color: #e74c3c">most organisations over-analyse</b>:
   - They conduct comprehensive SWOT analyses
   - They generate mountains of data
+  - They commission expensive consulting studies
   - They still fail to make a clear strategic choice
 - The Strategy Logic Flow prevents this by focusing analysis on the specific questions that drive the where-to-play and how-to-win decision
 - <b style="color: #27ae60">Analysis that does not change the answer to one of the four questions is wasted effort</b>
 
+```mermaid
+flowchart TD
+    A[Industry Analysis] --> E[Where to Play]
+    B[Customer Value] --> E
+    C[Relative Position] --> F[How to Win]
+    D[Competitive Reaction] --> F
+    E <-->|Must integrate| F
+    style A fill:#2980b9,color:#fff
+    style B fill:#2980b9,color:#fff
+    style E fill:#27ae60,color:#fff
+    style F fill:#27ae60,color:#fff
+```
+
+The four analytical dimensions feed into the two central strategic choices — where to play and how to win.
+
 ---
+
+Martin distinguishes between <b style="color: #2980b9">lazy analysis</b> (his term of approval) and exhaustive analysis:
+
+- Lazy analysis starts with a strategic question and asks: what is the minimum information I need to answer this question with confidence?
+- Exhaustive analysis starts with a data-collection plan and asks: what do we know? What else can we find out?
+- Lazy analysis takes weeks; exhaustive analysis takes months
+- <b style="color: #27ae60">Lazy analysis produces decisions; exhaustive analysis produces reports</b>
+- The Strategy Logic Flow is designed to enable lazy analysis by specifying exactly which questions need answers
 
 > [!example] P&G R&D Portfolio Reviews: Analysis as Strategic Weapon
 > - Instead of reviewing every project against a generic scorecard, Martin pushed the teams to ask: which of these projects, if successful, would materially change our where-to-play or how-to-win position?
 > - Projects that would not change the strategic position — even if they were technically interesting — were deprioritised
 > - Projects that could shift the competitive landscape received disproportionate investment
+> - This single question — "does this change our strategic position?" — eliminated hundreds of hours of analysis on projects that were interesting but strategically irrelevant
 > - R&D was transformed from a capability looking for applications into a strategic weapon aimed at specific competitive outcomes
 > **The lesson:** The purpose of analysis is to sharpen choices, not to postpone them.
+
+> [!example] The Customer Value Map
+> - Martin introduced a tool called the "customer value map" at P&G — a visual representation of what customers valued most and how each competitor delivered against those dimensions
+> - The map revealed clusters of unserved or underserved value — white spaces where no competitor was strong
+> - These white spaces became the primary targets for where-to-play choices
+> - The Olay masstige positioning emerged directly from a customer value map that showed a gap between mass-market efficacy and prestige pricing
+> - The map also revealed where competitors were overserving customers — delivering more value than customers cared about, at costs those customers would not pay for
+> **The lesson:** Customer value analysis reveals both opportunities (underserved needs) and traps (overserved segments where additional investment produces no additional willingness to pay).
 
 > [!tip] Core Insight
 > The Strategy Logic Flow does not ask "what is true?" — it asks "what do we need to know to make this specific choice?" Analysis without a decision target is intellectual entertainment, not strategy work.
@@ -508,6 +718,10 @@ What management systems must do:
 
 - The core idea is deceptively simple: instead of arguing about which strategic option is best, ask <b style="color: #27ae60">"What would have to be true for this option to be a great choice?"</b>
 - This single question transforms strategy conversations from unproductive advocacy ("I'm right, you're wrong") into productive inquiry ("under what conditions would each option succeed?")
+- The shift is psychological as much as analytical:
+  - When you argue for your option, every counterargument feels like an attack on your judgment
+  - When you explore what would have to be true, you are working on a shared puzzle — no ego is at stake
+  - <b style="color: #27ae60">The question removes the person from the position</b>
 
 > [!abstract] Martin's Seven-Step Reverse-Engineering Process
 > 1. **Frame the choice** as mutually exclusive options — until alternatives are articulated, teams talk endlessly without making progress
@@ -548,6 +762,7 @@ The process works because it transforms who argues for what — sceptics design 
 > - This simple reframing unlocked the conversation within hours
 > - Both sides could engage with the other option's conditions without feeling they were conceding their position
 > - The team identified two critical barriers, designed tests for each, and reached a decision that both sides committed to
+> - Crucially, the commitment was genuine — because the sceptics had designed the tests, they could not dismiss the results
 > **The lesson:** Asking "what would have to be true?" removes ego from the equation — people engage with conditions rather than defending positions.
 
 > [!example] Olay Masstige: Reverse Engineering in Practice
@@ -556,11 +771,25 @@ The process works because it transforms who argues for what — sceptics design 
 >   - Mass-market retailers would give the product premium shelf positioning
 >   - Consumers aged 35+ would actually pay $18-25 for skin care in a drugstore
 > - Each condition was tested with increasing rigour:
->   - R&D test: blind product comparisons against prestige competitors
->   - Retail test: conversations with key retail partners
->   - Consumer test: concept testing and in-market pilots
+>   - R&D test: blind product comparisons against prestige competitors — the product had to match or exceed Lancome and Clinique on independent testing
+>   - Retail test: conversations with key retail partners about premium shelf space and merchandising
+>   - Consumer test: concept testing and in-market pilots in three representative markets
 > - All three barriers were cleared, and the team moved forward with confidence
+> - The reverse-engineering process gave the Olay team something advocacy-based strategy conversations never provide: confidence backed by evidence
 > **The lesson:** Reverse engineering converts strategic hunches into testable hypotheses — confidence comes from evidence, not assertion.
+
+---
+
+> [!example] Lafley's Use of Reverse Engineering for the Gillette Acquisition
+> - Before committing $57 billion to acquire Gillette, Lafley applied the reverse-engineering methodology
+> - The team specified what would have to be true for the acquisition to be a great choice:
+>   - Gillette's capabilities must genuinely reinforce P&G's existing system (not merely add revenue)
+>   - P&G must be able to integrate Gillette without destroying the cultural elements that made Gillette strong
+>   - The combined company must achieve specific synergies within three years
+>   - Regulatory approval must be obtainable without divesting critical brands
+> - Each barrier was tested, and the Gillette deal proceeded only after the most critical barriers were cleared
+> - The process gave the board confidence that the acquisition logic was sound, not merely hopeful
+> **The lesson:** Reverse engineering works for any high-stakes decision — not just strategy choices but acquisitions, partnerships, and major investments.
 
 ---
 
@@ -570,6 +799,15 @@ The <b style="color: #2980b9">"mutually assured destruction" dynamic</b> that ma
 - In practice, this mutual accountability pushes all participants toward fair, rigorous testing
 - <b style="color: #e74c3c">No one wants to be the person who killed their own option by setting a precedent of unfair tests</b>
 - The result is a testing process that all parties trust — which is the precondition for genuine commitment to the outcome
+- Martin observes that this dynamic works even in highly political environments, because the incentive structure is self-enforcing
+
+Why the "lazy person's approach" matters:
+
+- Testing the biggest barrier first means you can eliminate an option with the minimum possible analysis
+- If the biggest barrier fails, you stop — no need to test the remaining conditions
+- This prevents the common trap of spending months on comprehensive analysis before making a decision
+- <b style="color: #27ae60">Start with the condition most likely to be false — if it holds, then test the next most uncertain condition</b>
+- Most options are eliminated by the first or second barrier, making the process extremely efficient
 
 ---
 
@@ -595,9 +833,11 @@ The discipline has two moves:
   - Do not soften your view into meaninglessness
   - Do not hide behind questions when you actually have a strong opinion
   - Put your thinking on the table so others can engage with it
+  - Say "I believe X because of evidence A, B, and C" — not "some people think X might be worth considering"
 - **The inquiry part:** ask genuine questions — not rhetorical ones designed to lead others to your conclusion
   - "What am I not seeing?" is a genuine question
-  - "Don't you think we should focus on the consumer?" is not
+  - "Don't you think we should focus on the consumer?" is not — it is advocacy disguised as inquiry
+  - Genuine inquiry means you are willing to be wrong — you are not fishing for agreement
 
 ---
 
@@ -611,6 +851,13 @@ Why assertive inquiry matters for strategy:
 - <b style="color: #e74c3c">Pure advocacy</b> — where each person fights for their view — ensures only the most politically powerful information surfaces
 - Pure inquiry — where no one commits to a position — ensures no one takes responsibility for pushing the conversation forward
 - <b style="color: #27ae60">Assertive inquiry produces better decisions because more information enters the conversation and less gets suppressed by hierarchy or politics</b>
+
+The connection to reverse engineering:
+
+- Assertive inquiry and the reverse-engineering process are complementary tools
+- Reverse engineering structures WHAT to discuss; assertive inquiry structures HOW to discuss it
+- Together, they create a strategic conversation that is both rigorous and inclusive
+- The combination is the book's answer to the political dynamics of strategy — not by eliminating politics, but by creating a process that makes it harder for politics to override evidence
 
 > [!tip] Core Insight
 > The goal is not consensus — it is the best possible decision made with the fullest possible information. Assertive inquiry is the discipline that makes this achievable.
@@ -637,11 +884,58 @@ Why assertive inquiry matters for strategy:
 - <b style="color: #e74c3c">The Do-It-All Strategy</b> is the most common and most seductive:
   - It feels responsible — surely it would be irresponsible NOT to pursue a promising opportunity?
   - But resources are finite, and spreading them evenly across all possibilities guarantees that no position reaches the threshold of competitive advantage
-- **The Don Quixote Strategy** — P&G's Citrus Hill orange juice is the book's example: attacking Tropicana and Minute Maid in their core market without a differentiated how-to-win
-- **The Waterloo Strategy** — Napoleon's defeat was preceded by years of overextension, too many campaigns, too many enemies, too few resources concentrated at any single point
-- **The Something-for-Everyone Strategy** — a where-to-play failure: a generic offering that creates no differentiation and commands no loyalty
-- **The Dreams-That-Never-Come-True Strategy** — a beautiful vision statement and a stirring mission, but no one can explain what specific choices those aspirations require
-- <b style="color: #e74c3c">The Programme-of-the-Month Strategy</b> — adopting Six Sigma, digital transformation, agile, or AI without connecting it to a clear strategic choice produces a strategy identical to every competitor's
+  - The Do-It-All strategy is the default condition of organisations that have not made strategic choices — it is what happens when strategy is absent, not when strategy is present
+  - Lafley describes pre-transformation P&G as a classic Do-It-All organisation: competing in too many categories, with too many brands, in too many geographies, with too little focus on any of them
+
+- **The Don Quixote Strategy** — P&G's Citrus Hill orange juice is the book's example:
+  - Attacking Tropicana and Minute Maid in their core market without a differentiated how-to-win
+  - The competitors had structural advantages in supply chain, distribution, and consumer relationships
+  - P&G's marketing capability, which was a genuine advantage in most categories, was irrelevant in a market where the product was essentially a commodity and distribution was the key competitive dimension
+
+- **The Waterloo Strategy** — Napoleon's defeat was preceded by years of overextension:
+  - Too many campaigns, too many enemies, too few resources concentrated at any single point
+  - The authors use this analogy to describe companies that launch simultaneous strategic initiatives across multiple fronts
+  - Each initiative individually seems worthwhile, but collectively they exhaust the organisation's capacity
+
+---
+
+- **The Something-for-Everyone Strategy** — a where-to-play failure:
+  - A generic offering that creates no differentiation and commands no loyalty
+  - The product or service is acceptable to many but compelling to none
+  - <b style="color: #e74c3c">Trying to serve everyone results in a proposition so diluted that no customer has a strong reason to choose you</b>
+
+- **The Dreams-That-Never-Come-True Strategy**:
+  - A beautiful vision statement and a stirring mission, but no one can explain what specific choices those aspirations require
+  - The winning aspiration exists at the top of the cascade, but nothing below it has been filled in
+  - The dream is real; the strategic choices needed to achieve it are absent
+
+- <b style="color: #e74c3c">The Programme-of-the-Month Strategy</b>:
+  - Adopting Six Sigma, digital transformation, agile, or AI without connecting it to a clear strategic choice produces a strategy identical to every competitor's
+  - The danger is that programmes feel like strategy because they involve action, investment, and change
+  - But action without strategic direction is motion, not progress
+  - If your competitors are adopting the same programme, you are not building competitive advantage — you are maintaining competitive parity at best
+
+```mermaid
+flowchart TD
+    A[Failure to Choose] --> B[Do-It-All]
+    A --> C[Don Quixote]
+    A --> D[Waterloo]
+    A --> E[Something-for-Everyone]
+    A --> F[Dreams]
+    A --> G[Programme-of-Month]
+    B --> H[Resource Dilution]
+    C --> H
+    D --> H
+    E --> I[No Differentiation]
+    F --> I
+    G --> I
+    H --> J[Strategic Failure]
+    I --> J
+    style A fill:#e74c3c,color:#fff
+    style J fill:#e74c3c,color:#fff
+```
+
+All six traps flow from a single root cause — the failure to choose — and converge on the same outcome: strategic failure through either resource dilution or absence of differentiation.
 
 ---
 
@@ -652,6 +946,8 @@ Why assertive inquiry matters for strategy:
 1. **Your activity system looks different from competitors'**
    - If your operations, capabilities, and investment patterns look like those of your major competitors, you do not have a strategy — you have a shared industry recipe
    - <b style="color: #27ae60">Genuine strategy produces a distinctive operating model that others cannot or will not replicate</b>
+   - P&G's activity system — deep consumer understanding feeding innovation feeding brand building feeding retail relationships feeding global scale — was distinctive in the consumer goods industry
+   - Competitors could replicate individual elements but not the system
 
 2. **Customers adore you — and non-customers genuinely cannot understand why**
    - Strong differentiation creates polarisation
@@ -662,13 +958,14 @@ Why assertive inquiry matters for strategy:
 3. **Competitors make good profits doing what they do**
    - A winning strategy does not require competitors to fail
    - It creates a space where you win and competitors can still thrive — by doing something different
-   - <b style="color: #e74c3c">If your gain requires your competitor's loss, you probably have not made a genuine strategic choice</b>
+   - <b style="color: #e74c3c">If your gain requires your competitor's loss, you probably have not made a genuine strategic choice</b> — you are in a zero-sum fight over the same position
+   - The healthiest competitive environments are those where each player has chosen a different where-to-play and how-to-win
 
 ---
 
 4. **You have more resources to spend than competitors on an ongoing basis**
    - The margin advantage from a winning strategy compounds over time
-   - Higher margins fund more R&D → better products → higher margins
+   - Higher margins fund more R&D, which creates better products, which earn higher margins
    - Lower margins force competitors into a resource squeeze, limiting future investment
    - This flywheel is the mechanism through which strategic advantage becomes self-sustaining
 
@@ -680,6 +977,17 @@ Why assertive inquiry matters for strategy:
 6. **Customers look to you first for innovation**
    - When customers expect you to define the future of the category — when they come to you before anyone else with their toughest problems — you own the future of the space in their minds
    - <b style="color: #27ae60">This is the strongest possible market position, because it means your competitors are, at best, following your lead</b>
+   - P&G experienced this in several categories: retailers approached P&G first when exploring category innovation because P&G had the deepest consumer understanding and the strongest track record of successful innovation
+
+---
+
+> [!abstract] Using the Six Signs as a Diagnostic
+> 1. Map your activity system and compare it visually to your top two competitors — are the differences real or cosmetic?
+> 2. Survey your best customers about switching — if they would easily consider alternatives, your differentiation is weaker than you think
+> 3. Check competitor profitability — if they are unprofitable, your "win" may be unsustainable industry compression, not strategic advantage
+> 4. Compare your R&D or investment budget as a percentage of revenue against your top competitors over three years — is the gap widening or narrowing?
+> 5. Track competitive marketing and product launches — are they aimed at you or at each other?
+> 6. Count the number of times customers or partners approach you first for innovation conversations versus how often you approach them
 
 ```mermaid
 flowchart LR
@@ -720,7 +1028,7 @@ The six signs form a self-reinforcing cycle — each indicator feeds the others,
 
 *Playing to Win* is the clearest, most actionable strategy framework published in the last two decades. Its greatest contribution is ruthless simplicity: five questions, two ways to win, and a reverse-engineering process that works in virtually any context. The cascade gives strategists a shared vocabulary that cuts through the fog of corporate jargon, and the "what would have to be true?" methodology provides a concrete tool for turning contentious debates into productive conversations. The P&G case studies are genuinely compelling — this is not theory divorced from practice but a framework tested across an $80B+ company over a decade of measurable results, during a period when most large companies were losing ground.
 
-The book has real limitations that an honest reader should weigh. The case material is drawn almost entirely from P&G, creating significant survivorship bias — the framework is illustrated only by its successes, with failures relegated to an appendix that few readers will study carefully. The "two ways to win" binary (cost leadership or differentiation) oversimplifies reality; the authors themselves acknowledge that Toyota and others blend both, but they do not adequately address how a strategist should think when the answer is genuinely "both." The microeconomic appendix is rigorous but narrow — it treats competitive advantage as if it were purely a function of cost and willingness-to-pay, ignoring network effects, platform dynamics, and ecosystem lock-in that drive many of today's most important competitive battles.
+The book has real limitations that an honest reader should weigh. The case material is drawn almost entirely from P&G, creating significant survivorship bias — the framework is illustrated only by its successes, with failures relegated to brief mentions. The "two ways to win" binary (cost leadership or differentiation) oversimplifies reality; the authors themselves acknowledge that Toyota and others blend both, but they do not adequately address how a strategist should think when the answer is genuinely "both." The microeconomic appendix is rigorous but narrow — it treats competitive advantage as if it were purely a function of cost and willingness-to-pay, ignoring network effects, platform dynamics, and ecosystem lock-in that drive many of today's most important competitive battles. The book was written before the platform economy reached its current dominance, and its framework does not naturally accommodate the winner-take-all dynamics of network-effect businesses.
 
 The most significant gap is the absence of political dynamics. The book describes strategic decision-making as if it happens in a rational, collegial vacuum where the best argument wins. Even Lafley's own anonymous contributor admits that the old sell-and-defend culture persisted because people were being evaluated by the person across the table. Strategy does not happen in a vacuum; it happens in a political environment where stakeholders have conflicting interests, hidden agendas, and varying degrees of power. The book offers no guidance for navigating these realities — it assumes the reader has the authority to simply choose, which is true for CEOs and division presidents but not for the vast majority of strategists who must influence choices they do not control.
 
@@ -735,3 +1043,5 @@ Despite these gaps, anyone who internalises the five questions and the disciplin
 - [[An Elegant Puzzle - Will Larson|An Elegant Puzzle]] — Larson's systems thinking for engineering management connects to the capability-systems and management-systems layers of the cascade
 - [[Working Backwards - Colin Bryar & Bill Carr|Working Backwards]] — Amazon's strategy process is a different answer to the same question: how to make integrated strategic choices at scale
 - [[So Good They Can't Ignore You - Cal Newport|So Good They Can't Ignore You]] — Newport's career-capital theory parallels the capability-building logic of the cascade applied to an individual
+- [[The Effective Executive - Peter Drucker|The Effective Executive]] — Drucker's insistence on contribution and focus echoes throughout Lafley's approach to strategic discipline
+- [[Seeking Wisdom - Peter Bevelin|Seeking Wisdom]] — Bevelin's mental-models approach provides complementary tools for the analytical dimensions of the Strategy Logic Flow

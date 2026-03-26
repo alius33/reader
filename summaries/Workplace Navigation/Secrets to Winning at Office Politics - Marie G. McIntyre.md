@@ -65,6 +65,7 @@ Marie G. McIntyre holds a Ph.D. in organisational psychology and spent over twen
 | **The ROI Mind-set** | Think of yourself as an investment the organisation made, then exceed the expected return |
 | **"Act As If"** | Deliberately perform the behaviours of the role you want before you have it |
 | **Full Circle Management** | Manage upward, lateral, and downward relationships simultaneously |
+| **Goal-Aligned Framing** | Present requests in terms of the other person's goals, not yours |
 
 ---
 
@@ -88,6 +89,24 @@ Marie G. McIntyre holds a Ph.D. in organisational psychology and spent over twen
 | **Sociopaths** | Damage | Advance | Personal empires at the company's expense |
 | **Dimwits** | Damage | Damage | Emotional reaction overrides strategic thinking |
 
+```mermaid
+flowchart TB
+    subgraph "Advances Personal Goals"
+        W["Winners<br>Business ✓ Personal ✓"]
+        S["Sociopaths<br>Business ✗ Personal ✓"]
+    end
+    subgraph "Damages Personal Goals"
+        M["Martyrs<br>Business ✓ Personal ✗"]
+        D["Dimwits<br>Business ✗ Personal ✗"]
+    end
+    W ---|"Strategic generosity"| M
+    S ---|"Selfishness without delivery"| D
+    style W fill:#27ae60,color:#fff
+    style S fill:#e74c3c,color:#fff
+```
+
+The taxonomy is a diagnostic tool, not a personality label — most people shift between types depending on stress, context, and stakes.
+
 ---
 
 ### Winners
@@ -96,6 +115,11 @@ Marie G. McIntyre holds a Ph.D. in organisational psychology and spent over twen
 - Build alliances that serve the organisation and themselves simultaneously
 - Not altruistic — <b style="color: #27ae60">strategically generous</b>
 - Understand that the most durable form of self-interest is enlightened self-interest: helping the organisation succeed in ways that make them visible and valuable
+- Winners ask two questions before any significant action:
+  - Does this advance the organisation's goals?
+  - Does this advance my goals?
+- If the answer to both is yes, they proceed aggressively
+- If only one is yes, they look for a way to align both before moving
 
 ### Martyrs
 
@@ -103,15 +127,27 @@ Marie G. McIntyre holds a Ph.D. in organisational psychology and spent over twen
   - The <b style="color: #2980b9">Crusader</b> — someone who has identified a genuine problem and will not stop talking about it, even when their advocacy style has alienated everyone who might have helped
     - The crusader is often right, which makes their situation particularly tragic
     - Being correct about a problem is worthless if your method of communicating it ensures no one listens
+    - Crusaders confuse moral correctness with political effectiveness — they believe that because they are right, they should eventually win
+    - McIntyre points out that being right changes nothing if you lack the leverage to act on your rightness
   - The <b style="color: #2980b9">Doormat</b> — someone who works selflessly, never says no, picks up every unwanted task, and wonders why they were passed over
     - Confuses effort with visibility and sacrifice with value
+    - The Doormat's tragedy is that their generosity, which would be a virtue in a friendship, becomes a liability in an organisation that rewards those who claim credit
 
 > [!example] The Clean & Beautiful Director
 > - A government programme director ran an award-winning programme that beautified his county
 > - It won external recognition and demonstrably improved community satisfaction
 > - Yet when asked whether the county manager — his ultimate boss — knew about these achievements, he admitted he had never once briefed the county manager on his results
 > - His programme was invisible to the person who mattered most
+> - He had confused doing good work with being seen doing good work
 > **The lesson:** Excellent results without visibility produce zero political return — a textbook Martyr.
+
+> [!example] Sandra the Overworked Volunteer
+> - Sandra had become the go-to person for every unwanted committee, every weekend project, every task that fell through the cracks
+> - She worked sixty-hour weeks and was proud of her dedication
+> - When a promotion opened, she was passed over for a colleague who worked fewer hours but had three high-visibility project successes
+> - Sandra's boss told her she was "invaluable in her current role" — the most devastating compliment a Doormat can receive
+> - She had made herself indispensable at the wrong level
+> **The lesson:** Being indispensable in a role you want to leave is a trap, not an achievement.
 
 ---
 
@@ -120,12 +156,15 @@ Marie G. McIntyre holds a Ph.D. in organisational psychology and spent over twen
 - Advance personal goals while damaging the organisation's
 - Take credit for others' work, shift blame, hoard information, build personal empires at the company's expense
 - <b style="color: #e74c3c">Can thrive under weak oversight, but their position is structurally fragile</b> — when their patron falls or scrutiny arrives, they have no genuine achievements to fall back on
+- McIntyre distinguishes organisational Sociopaths from clinical ones — she is describing a behavioural pattern, not a personality disorder
+- The Sociopath strategy works precisely until it does not — and the collapse is typically swift because the person has burned every bridge on the way up
 
 > [!example] Dave the CEO
 > - Dave, a CEO, treated his company as a personal fiefdom
 > - He hired friends, used company resources for personal projects, and systematically drove out anyone who challenged him
 > - Dave succeeded for years because his board was inattentive and his inner circle was loyal
 > - When results finally deteriorated enough to attract scrutiny, the collapse was swift
+> - He had no genuine achievements to point to — only a network of dependents who scattered the moment he could no longer protect them
 > **The lesson:** Sociopaths build on sand — weak oversight eventually gives way.
 
 ### Dimwits
@@ -133,12 +172,15 @@ Marie G. McIntyre holds a Ph.D. in organisational psychology and spent over twen
 - The name is deliberately provocative — McIntyre does not mean unintelligent
 - She means driven by uncontrolled emotion
 - They fight losing battles out of principle, alienate potential allies through carelessness, and let ego override strategic thinking
+- Dimwit behaviour is often temporary — a normally strategic person under extreme stress can shift into Dimwit mode without realising it
+- The damage, however, is not temporary — a single emotional outburst can undo months of careful positioning
 
 > [!example] Travis and the New Boss
 > - Travis had thrived under his previous manager, but when a new one arrived with different expectations, he reacted with open hostility
 > - He criticised the new boss's decisions in public, refused to adapt to new processes, and treated every change as a personal affront
 > - He was fired within ninety days
 > - Travis was not unintelligent — he was emotionally uncontrolled
+> - His strong performance record, built over years, could not survive three months of Dimwit behaviour
 > **The lesson:** Emotional uncontrol in a political environment is the fastest path to the exit.
 
 > [!tip] Core Insight
@@ -157,11 +199,12 @@ Marie G. McIntyre holds a Ph.D. in organisational psychology and spent over twen
   - Who speaks first in meetings
   - Who the senior leader looks at when making a point
   - Who gets invited to the meetings that happen after the meeting
+- These signals are not hidden — they are simply invisible to people who have never learned to read them
 
 > [!example] Kyle the Software Engineer
 > - Kyle was technically the strongest performer on his team but was repeatedly passed over for project leadership roles
 > - His problem was not capability — he treated every interaction as a technical discussion and never noticed the political subtext
-> - When his manager asked "What do you think about the new CTO's strategy?" Kyle offered a technical critique
+> - When his manager asked "What do you think about the new CTO's strategy?" Kyle offered a detailed technical critique
 > - What his manager was actually asking was "Are you aligned with the direction we are going?"
 > - Kyle's honest technical answer was interpreted as resistance
 > - He was reading the words; everyone else was reading the room
@@ -173,6 +216,29 @@ Marie G. McIntyre holds a Ph.D. in organisational psychology and spent over twen
   - The **foreground** is the stated agenda — the meeting topic, the project plan, the reorganisation announcement
   - The **background** is everything else: who benefits, who loses, who was consulted, who was surprised, what this signals about future direction
 - <b style="color: #e74c3c">Most political failures happen because people respond only to the foreground and are blindsided by the background</b>
+
+- McIntyre offers diagnostic questions for reading the background:
+  - Who initiated this meeting, and why now?
+  - What is not being discussed, and why?
+  - Who is conspicuously absent from the room?
+  - What decision has already been made before this meeting started?
+  - Who gains and who loses from the stated agenda?
+
+> [!example] The Reorganisation Announcement
+> - A VP announced a reorganisation in an all-hands meeting, framing it as a strategic improvement
+> - Most employees focused on the foreground: their new reporting lines, team assignments, and project changes
+> - A few politically intelligent observers noticed the background: two directors who had been rivals for a promotion were now in completely different divisions, one reporting to the VP's ally and one to a neutral party
+> - The reorganisation was not primarily about efficiency — it was about resolving a political stalemate the VP had been managing for months
+> - The people who read the background understood the new power dynamics immediately; the rest figured it out weeks later
+> **The lesson:** The stated reason for a decision is almost never the only reason — and often not the most important one.
+
+---
+
+- McIntyre introduces the concept of <b style="color: #2980b9">political radar</b> — the habit of continuously scanning for signals about shifting power, emerging alliances, and developing conflicts
+- This is not paranoia — it is situational awareness
+- Just as a skilled driver scans mirrors, gauges traffic flow, and anticipates merging patterns without conscious effort, the politically intelligent person reads organisational dynamics as a continuous background process
+- <b style="color: #27ae60">Political intelligence is developed by asking questions, not by making assertions</b>
+- The person who asks "What do you think about the new direction?" learns far more than the person who declares "The new direction is wrong"
 
 > [!tip] Core Insight
 > Every organisational communication has two layers. The politically intelligent person reads both — and responds to the one that actually matters.
@@ -198,6 +264,8 @@ Marie G. McIntyre holds a Ph.D. in organisational psychology and spent over twen
   - "I deserve this promotion because I have worked harder than anyone" — a fairness argument
   - "I am the only person who can deliver this programme, and two other teams are trying to recruit me" — a leverage argument
   - The first makes an emotional appeal; the second changes the decision-maker's incentive structure
+- McIntyre is not saying fairness does not matter morally — she is saying it does not determine outcomes politically
+- The distinction is critical: many good people conflate moral rightness with practical effectiveness, and the confusion costs them dearly
 
 > [!example] Joanne and the Politician's Cousin
 > - Joanne worked in a government agency and was furious that a less qualified colleague — a cousin of a local politician — had been hired into a role she wanted
@@ -206,6 +274,7 @@ Marie G. McIntyre holds a Ph.D. in organisational psychology and spent over twen
 > - But correctness did not matter — the cousin had leverage (a family connection that made firing him politically expensive)
 > - Joanne had fairness — a moral argument that made no structural difference
 > - Years later, the cousin was still employed and Joanne had been labelled a troublemaker
+> - The label stuck not because she was wrong but because her method of being right was politically toxic
 > **The lesson:** Leverage, not fairness, determines outcomes.
 
 ---
@@ -217,6 +286,16 @@ Marie G. McIntyre holds a Ph.D. in organisational psychology and spent over twen
 - The person who was irreplaceable last year may be redundant after a merger
 - The person who had no leverage six months ago may suddenly have it after a competitor makes them an offer
 - <b style="color: #27ae60">The strategic question is always: given your current leverage, what is the highest-return investment you can make to increase it?</b>
+
+> [!example] Monica's Strategic Patience
+> - Monica wanted a promotion but recognised that her leverage was insufficient — she was competent but replaceable, and no senior leader knew her name
+> - Rather than pushing for the promotion immediately, she spent six months on a deliberate leverage-building campaign
+> - She volunteered for a cross-functional project that gave her visibility with the VP of operations
+> - She developed expertise in a regulatory area that was becoming increasingly important to the company
+> - She cultivated a relationship with a respected director who became her informal advocate
+> - When she finally made her case for promotion, the leverage equation had shifted — she was now visibly competent, strategically positioned, and personally endorsed
+> - The promotion was approved on the first request
+> **The lesson:** When your leverage is weak, invest in building it before making the ask — patience is a strategic weapon, not a sign of passivity.
 
 ```mermaid
 flowchart LR
@@ -249,12 +328,22 @@ The four variables of the leverage equation feed into your overall leverage posi
 | **Self-centred goals** | Taking credit, shifting blame, hoarding | Network of allies collapses to zero |
 | **Foolish reactions to change** | Open resistance to new leadership or direction | Fighting the leverage equation |
 
+- These four causes share a common mechanism:
+  - In every case, the person substitutes emotional satisfaction for strategic effectiveness
+  - The angry outburst feels righteous in the moment
+  - The victim narrative feels validating
+  - The credit-grab feels deserved
+  - The resistance to change feels principled
+- But the political cost of each exceeds whatever emotional benefit it provides, usually by orders of magnitude
+
 ---
 
 ### Uncontrolled Emotion
 
 - The most common and most visible cause
 - <b style="color: #e74c3c">The person who yells at their boss in a meeting is not unlucky — they are choosing short-term emotional relief over long-term strategic positioning</b>
+- McIntyre distinguishes between feeling emotions (inevitable and healthy) and acting on emotions (a choice with consequences)
+- The politically intelligent person feels frustration, anger, and resentment — but channels those feelings into strategic action rather than impulsive reaction
 
 > [!example] Brandon's Million-Dollar Outburst
 > - Brandon, a manager, had periodic angry outbursts that had become legendary in his organisation
@@ -262,12 +351,27 @@ The four variables of the leverage equation feed into your overall leverage posi
 > - What Brandon did not know — what he could not know, because no one would tell him — was that a potential business partner had witnessed one of his outbursts
 > - The partner subsequently refused to do business with Brandon's division
 > - The partnership would have been worth millions
+> - Brandon's temper had not just damaged his career — it had damaged the organisation's bottom line in ways he would never learn about
 > **The lesson:** Anger does not just damage your career — it destroys opportunities you never even knew existed.
+
+> [!example] Melanie's Tearful Performance Review
+> - Melanie received a critical performance review and broke down crying in her manager's office
+> - She felt the criticism was unfair, and the tears were genuine — but the political damage was real
+> - Her manager, who had intended the review as constructive feedback, now felt guilty, uncomfortable, and reluctant to give Melanie honest feedback in the future
+> - Melanie's colleagues, who heard about the incident, began viewing her as fragile
+> - The tears had not resolved the performance issue — they had added a perception issue on top of it
+> **The lesson:** Uncontrolled emotion takes many forms — not just anger. Tears, visible sulking, and dramatic sighing all carry political costs.
+
+---
 
 ### Victim Mentality
 
 - Subtler than anger but equally destructive
 - The victim creates a narrative in which they are helpless, circumstances are against them, and the system is rigged
+- McIntyre's key insight: <b style="color: #e74c3c">the victim narrative is self-fulfilling</b>
+  - The person who believes they are being mistreated behaves in ways that make people want to avoid them
+  - The avoidance confirms the narrative, deepening the victimhood
+  - The cycle accelerates until the person is genuinely isolated — which they interpret as proof they were right all along
 
 > [!example] Dorothy's Downward Spiral
 > - Dorothy entered a negative spiral after a difficult performance review
@@ -275,6 +379,7 @@ The four variables of the leverage equation feed into your overall leverage posi
 > - The more she told herself this story, the more her behaviour confirmed it — she became withdrawn, passive-aggressive, and openly bitter
 > - Her colleagues, who had initially been sympathetic, gradually distanced themselves
 > - The victim narrative became self-fulfilling
+> - By the time McIntyre met Dorothy, she had no allies left — not because anyone had conspired against her, but because her own behaviour had driven them all away
 > **The lesson:** The belief that you are being mistreated causes you to act in ways that genuinely make people want to avoid you.
 
 ---
@@ -284,10 +389,21 @@ The four variables of the leverage equation feed into your overall leverage posi
 - This is the Sociopath pattern — pursuing personal advantage at the organisation's expense
 - McIntyre distinguishes between healthy ambition (advancing yourself while delivering value) and toxic self-interest (advancing yourself at others' expense)
 - The self-centred person may succeed in the short term, but their network of allies eventually collapses to zero because everyone learns the relationship is one-directional
+- <b style="color: #e74c3c">The credit-grabber teaches everyone around them to stop sharing information</b> — which eventually starves the credit-grabber of the very material they need
+
+> [!example] Phil the Credit Thief
+> - Phil had a habit of presenting his team's ideas as his own in meetings with senior leadership
+> - It worked for a while — he got positive attention from executives who did not know the ideas originated elsewhere
+> - But his team learned the pattern quickly
+> - They stopped sharing ideas with Phil, started routing their best work through other channels, and began documenting their contributions independently
+> - Phil's pipeline of stolen ideas dried up, and he had no original ones to replace them
+> - The strategy that had built his reputation eventually destroyed it
+> **The lesson:** Credit-grabbing is a depleting strategy — it consumes the trust that produces the work worth grabbing.
 
 ### Foolish Reactions to Change
 
 - Particularly relevant during reorganisations, leadership transitions, and strategic pivots
+- The person who resists change is almost always fighting the leverage equation — the new leadership has the power, and resistance without leverage is self-destruction
 
 > [!example] Debbie's Resistance Coalition
 > - Debbie had been a star performer under one CEO
@@ -296,6 +412,7 @@ The four variables of the leverage equation feed into your overall leverage posi
 > - What Debbie failed to understand was the leverage equation: the new CEO had all the power
 > - Debbie's resistance was not courageous opposition — it was career suicide
 > - Within a year, everyone in her resistance coalition had either been marginalised or had left
+> - The tragedy was that some of Debbie's criticisms were valid — but her method of expressing them guaranteed they would never be heard
 > **The lesson:** When the leverage equation is overwhelmingly against you, resistance is not courage — it is self-destruction.
 
 > [!tip] Core Insight
@@ -327,6 +444,8 @@ The triad is sequential: you must first see your behaviour clearly, then restrai
 
 - The ability to monitor your own behaviour and its impact on others in real time
 - Most people have a significant gap between how they think they come across and how they actually come across
+- McIntyre calls this the <b style="color: #2980b9">intention-perception gap</b> — the space between what you meant and what others experienced
+- Closing this gap requires treating your own behaviour as observable data rather than transparent expression of your good intentions
 
 > [!example] Carlton's Invisible Arrogance
 > - Carlton, a senior manager, had a habit of appearing lost in thought during conversations
@@ -334,17 +453,21 @@ The triad is sequential: you must first see your behaviour clearly, then restrai
 > - To everyone else, he looked arrogant, disengaged, and dismissive
 > - Carlton did not have an attitude problem — he had a self-observation problem
 > - He had no idea how his behaviour was being read
+> - When McIntyre showed him the feedback from his team, he was genuinely shocked — the gap between his intention and their perception was enormous
 > **The lesson:** The gap between intention and perception is the central problem self-observation solves.
 
 - <b style="color: #27ae60">"People assess you solely on observable behaviour, not internal states"</b> is one of the book's most important sentences
 - Your intentions are invisible
 - Your behaviour is the only data other people have
+- A person who intends to be supportive but rolls their eyes during presentations is assessed as dismissive — regardless of their inner warmth
 
 ---
 
 ### Self-Control
 
 - The ability to restrain unhelpful impulses before they become visible actions
+- McIntyre distinguishes between suppression (bottling up emotions, which eventually explodes) and management (acknowledging the feeling internally while choosing a different external response)
+- Self-control is not about becoming emotionless — it is about creating a gap between stimulus and response
 
 > [!example] Eileen's Cafeteria Confession
 > - Eileen was sitting in her company's cafeteria when a colleague asked how things were going
@@ -352,7 +475,19 @@ The triad is sequential: you must first see your behaviour clearly, then restrai
 > - She felt better after venting
 > - Three days later, her boss called her into a meeting — every word Eileen had said had been relayed verbatim
 > - The organisational grapevine is faster and less accurate than anyone believes
+> - Eileen had treated a semi-public space as a confessional — and paid the price
 > **The lesson:** A moment of emotional relief can cost months of accumulated goodwill.
+
+> [!example] Marcus's Email Discipline
+> - Marcus, a project manager, had a rule: never send an email written in anger for at least twenty-four hours
+> - He would write the email — furious, detailed, righteous — and save it as a draft
+> - The next morning, he would reread it with fresh eyes
+> - In most cases, he rewrote the email completely — keeping the substance but removing the emotion
+> - In some cases, he deleted it entirely, realising the issue was not worth the political cost
+> - Over five years, Marcus estimated this practice had prevented at least a dozen career-damaging exchanges
+> **The lesson:** The pause between impulse and action is the most valuable political habit you can develop.
+
+---
 
 ### Selective Behaviour
 
@@ -361,7 +496,14 @@ The triad is sequential: you must first see your behaviour clearly, then restrai
 - Most people have a limited behavioural repertoire — a set of responses they use regardless of whether those responses are effective:
   - The naturally aggressive person uses aggression in meetings, emails, hallway conversations, and one-on-ones
   - The naturally accommodating person accommodates in every direction
+  - The naturally analytical person defaults to data and logic even when the situation calls for emotional connection
 - <b style="color: #27ae60">The key question before every significant interaction: "What behaviour will be most effective here?" rather than "What behaviour feels most natural?"</b>
+
+- McIntyre introduces the idea of a <b style="color: #2980b9">behavioural repertoire audit</b>:
+  - List the five most common situations you face at work (meetings, one-on-ones, presentations, conflicts, requests)
+  - For each, identify your default response
+  - Ask whether that default is the most effective response or merely the most comfortable one
+  - Where there is a gap, develop a specific alternative behaviour
 
 ---
 
@@ -381,6 +523,9 @@ The triad is sequential: you must first see your behaviour clearly, then restrai
 > - He believed he was being thorough and detail-oriented
 > - His team believed he was controlling and distrustful
 > - Until a blunt 360-degree feedback session forced the data into his awareness, Randall genuinely did not know he had a problem
+> - His intention-perception gap was enormous — he saw meticulousness; they experienced surveillance
+> - Once awareness was established, McIntyre helped him identify specific behaviours: checking in on tasks three times daily, rewriting reports his team had completed, sitting in on calls he had delegated
+> - He replaced these with a weekly check-in and a trust protocol: approve the approach upfront, then review only the final output
 > **The lesson:** Awareness is the first and hardest step — most people cannot see their own political damage.
 
 - McIntyre's critical insight about substitution:
@@ -389,6 +534,7 @@ The triad is sequential: you must first see your behaviour clearly, then restrai
   - "When criticised, I will say 'tell me more about that'" succeeds — it provides a specific alternative action
 - Perception change always lags behaviour change — even after you have genuinely changed, people will continue seeing the old you for weeks or months
 - This is dispiriting but predictable, and the only answer is patience
+- McIntyre estimates that perception typically lags behaviour change by three to six months
 
 ---
 
@@ -407,6 +553,12 @@ The triad is sequential: you must first see your behaviour clearly, then restrai
 | **Level 3** | The decision | Engineering an exit — paper trail, restricted opportunities, waiting for restructuring | By the time you see it, recovery is almost impossible |
 
 - <b style="color: #e74c3c">Recovery from Level 3 is almost impossible</b> — the only realistic option is structural change: a new manager, a new team, or a new organisation
+- The critical window is Level 2 — this is when behavioural change can still reverse the trajectory
+- Warning signs of Level 2:
+  - Increased frequency of written feedback (building a file)
+  - Reduced invitations to meetings you previously attended
+  - Conversations becoming more formal and documented
+  - Your manager asking you to cc others on emails that previously went directly between you
 
 > [!tip] Core Insight
 > The tipping point is crossed silently. If you sense increased scrutiny from your manager, treat it as a Level 2 danger signal — not micromanagement — and change your behaviour immediately.
@@ -426,6 +578,8 @@ The triad is sequential: you must first see your behaviour clearly, then restrai
 
 - <b style="color: #2980b9">What the organisation needs</b> is the dimension most people ignore
   - Your contribution matters only insofar as it matches what the organisation currently values
+  - Organisational needs shift — the skill that was critical last year may be commoditised this year
+  - The politically intelligent person continuously monitors what the organisation is investing in, hiring for, and talking about in leadership meetings
 
 > [!example] Greg the Tax Specialist
 > - Greg began his career doing routine tax compliance work — competent but unremarkable, one of several people who could do the same job
@@ -433,6 +587,7 @@ The triad is sequential: you must first see your behaviour clearly, then restrai
 > - He repositioned himself from compliance technician to strategic tax advisor
 > - His skills had not changed dramatically, but the perceived value of his contribution had
 > - He aligned it with something the organisation needed but did not know it needed
+> - Greg's leverage multiplied not because he got better at his job but because he redefined what his job was
 > **The lesson:** Repositioning your contribution to match unmet organisational needs multiplies leverage without requiring new skills.
 
 ---
@@ -440,6 +595,11 @@ The triad is sequential: you must first see your behaviour clearly, then restrai
 - <b style="color: #2980b9">How replaceable you are</b> is the dimension that creates urgency
   - If you are easy to replace, your leverage is low regardless of your contribution
   - Anything that makes you uniquely difficult to replace increases your leverage disproportionately
+  - McIntyre identifies several replaceability factors:
+    - Rare technical expertise
+    - Deep institutional knowledge
+    - Client relationships that would follow you if you left
+    - Visibility with senior leadership that took years to build
 
 - <b style="color: #2980b9">Who supports you</b> is the dimension that converts individual leverage into institutional leverage
   - A strong performance record means little if no one in a position of power will advocate for you
@@ -452,6 +612,17 @@ The triad is sequential: you must first see your behaviour clearly, then restrai
 | **Sponsor** | Committed backer | Puts their own reputation on the line for your advancement |
 
 - <b style="color: #27ae60">The progression from ally to advocate to sponsor is the most important relationship-building investment a person can make</b>
+- Allies are common but their value is limited — they only speak when prompted
+- Advocates are rare and valuable — they mention your name in rooms you are not in
+- Sponsors are the gold standard — they tie their credibility to your success, which means they have a personal incentive to ensure you succeed
+
+> [!example] Rosa's Sponsor Network
+> - Rosa was a mid-level manager who recognised she needed sponsors, not just allies
+> - She identified two senior leaders whose agendas she could genuinely advance
+> - She volunteered for projects that served their priorities, delivered exceptional results, and made sure those results reflected well on them
+> - Over time, both leaders shifted from allies to advocates to sponsors — proactively recommending Rosa for opportunities she had not even known about
+> - When a VP role opened, Rosa had two sponsors lobbying for her before she had even applied
+> **The lesson:** Sponsors are not found — they are built, through a deliberate pattern of delivering value that advances their agenda.
 
 > [!tip] Core Insight
 > Leverage is dynamic. Continuously recalculate your position and identify the single highest-return investment you can make to shift it in your favour.
@@ -475,11 +646,11 @@ The triad is sequential: you must first see your behaviour clearly, then restrai
 
 ```mermaid
 flowchart TB
-    subgraph High Position
+    subgraph "High Position"
         PP[Power Players<br>High Influence]
         ES[Empty Suits<br>Low Influence]
     end
-    subgraph Low Position
+    subgraph "Low Position"
         PD[Persuaders<br>High Influence]
         WK[Weaklings<br>Low Influence]
     end
@@ -502,6 +673,7 @@ The Power Grid reveals that position alone is a poor proxy for power — Persuad
 - McIntyre makes a startling claim: <b style="color: #27ae60">"Culture is not democratic — it is imposed from above"</b>
 - Culture is the emergent pattern of what the most powerful people reward, tolerate, and punish
 - Anyone who wants to succeed must understand and adapt to the culture the Power Elite establish, regardless of whether they agree with it
+- This does not mean abandoning your values — it means understanding which values the organisation will reward and which it will punish, and making informed choices about where to invest your energy
 
 > [!example] The CEO Transition
 > - Under the old CEO, the culture was consensus-driven, collegial, and slow-moving
@@ -509,6 +681,7 @@ The Power Grid reveals that position alone is a poor proxy for power — Persuad
 > - The change happened not through gradual cultural evolution but through a single person replacing the reward and punishment structures
 > - People who had thrived under the old culture suddenly found themselves struggling — not because their skills had changed but because the definition of success had
 > - Those who adapted quickly survived; those who clung to the old ways were gradually marginalised
+> - The transition was complete within eighteen months — not because the old culture was wrong, but because the new Power Elite valued different things
 > **The lesson:** When the Power Elite changes, the definition of success changes with it — adapt or be marginalised.
 
 ---
@@ -520,14 +693,27 @@ The Power Grid reveals that position alone is a poor proxy for power — Persuad
   - Decisions routinely overridden by others
   - Track record of reorganisations that always diminish their scope
   - Tendency to speak confidently about plans that never materialise
+  - Subordinates who bypass them and go directly to someone else for real decisions
 
 - **Persuaders** are the opinion leaders, trusted advisors, and people Power Players consult informally before making decisions
   - Often have expertise, institutional memory, or personal relationships giving them outsized influence despite modest titles
   - <b style="color: #27ae60">Identifying Persuaders is one of the highest-return political activities available</b> — influencing a Persuader often gives indirect access to Power Players you could not reach directly
+  - Signs of a Persuader: Power Players seek their input, their recommendations are frequently adopted, other people reference their opinions
 
 - **Weaklings** are competent but politically invisible
   - Many could become Persuaders if they invested in visibility and relationships
   - They choose not to — either because they do not understand the game or find it distasteful
+  - McIntyre notes that many Weaklings are perfectly content — the category is only a problem if you want influence but are not building it
+
+> [!example] Diana the Project Manager
+> - Diana was brought in to implement strict scheduling discipline in an engineering organisation
+> - She was good at her job — enforced deadlines, tracked progress, held people accountable
+> - But the Power Elite valued technical creativity over process discipline
+> - Engineers who missed deadlines but produced innovative solutions were celebrated
+> - Project managers who enforced deadlines were seen as bureaucratic obstacles
+> - Diana's skills were genuine, but misaligned with what the Power Elite valued
+> - She fought the culture and lost — not because she was wrong, but because she was fighting the Power Elite's definition of value
+> **The lesson:** Being right does not matter when the Power Elite disagrees — alignment with their values is the prerequisite for influence.
 
 ---
 
@@ -540,16 +726,8 @@ The Power Grid reveals that position alone is a poor proxy for power — Persuad
   - What kind of behaviour is celebrated in meetings, in all-hands, in performance reviews?
   - What kind of behaviour is tolerated that should not be?
   - What kind of behaviour is punished that should not be?
-
-> [!example] Diana the Project Manager
-> - Diana was brought in to implement strict scheduling discipline in an engineering organisation
-> - She was good at her job — enforced deadlines, tracked progress, held people accountable
-> - But the Power Elite valued technical creativity over process discipline
-> - Engineers who missed deadlines but produced innovative solutions were celebrated
-> - Project managers who enforced deadlines were seen as bureaucratic obstacles
-> - Diana's skills were genuine, but misaligned with what the Power Elite valued
-> - She fought the culture and lost
-> **The lesson:** Being right does not matter when the Power Elite disagrees — alignment with their values is the prerequisite for influence.
+- <b style="color: #e74c3c">The gap between stated values and actual values is where most political miscalculations happen</b>
+- A company that says it values "work-life balance" but promotes only people who work seventy-hour weeks has a stated value and an actual value — and they are not the same
 
 > [!tip] Core Insight
 > Navigate by the power grid, not the org chart. The real decision-makers are often not the people with the biggest titles.
@@ -562,10 +740,10 @@ The Power Grid reveals that position alone is a poor proxy for power — Persuad
 
 ```mermaid
 flowchart LR
-    A[Performance] -->|creates material for| B[Perception]
-    B -->|attracts| C[Partnerships]
-    C -->|increases| D[Power Assessment]
-    D -->|directs effort to| A
+    A[Performance] -->|"creates material for"| B[Perception]
+    B -->|"attracts"| C[Partnerships]
+    C -->|"increases"| D[Power Assessment]
+    D -->|"directs effort to"| A
     style A fill:#2980b9,color:#fff
     style B fill:#2980b9,color:#fff
     style C fill:#2980b9,color:#fff
@@ -584,6 +762,7 @@ The Four P's form a virtuous cycle — each component feeds the next. McIntyre r
 - <b style="color: #27ae60">"Invisible contributions have no political value"</b>
 - The person who works brilliantly behind the scenes, expecting results to speak for themselves, has misunderstood how organisations work
 - Results do not speak — people speak about results, and only if they know those results exist
+- Performance is not what you do — it is what the organisation sees you doing, assessed against what the organisation currently values
 
 ### Perception
 
@@ -597,14 +776,19 @@ The Four P's form a virtuous cycle — each component feeds the next. McIntyre r
 | **Transparent Tasks** | High | Low | Busyness without substance |
 | **Time Wasters** | Low | Low | Political black holes |
 
----
+- <b style="color: #27ae60">The strategic goal is to maximise time spent on Starmakers and minimise time on Maintenance and Time Wasters</b>
+- McIntyre acknowledges that some Maintenance work is unavoidable — the key is not to eliminate it but to ensure it does not consume all your time while someone else captures the Starmakers
+- Many Martyrs are trapped in the Maintenance quadrant: doing essential work that keeps the organisation running but is invisible to anyone with power
 
 > [!example] Gayle — Strong Performance, Catastrophic Perception
 > - Gayle was a high-performing employee who was universally disliked
 > - Her work was excellent, but her interpersonal style was abrasive — she criticised colleagues publicly, dismissed ideas dismissively, and treated every interaction as a competition
 > - Her Four P's were severely imbalanced: strong Performance, catastrophic Perception
 > - Her results were genuinely good, but no one wanted to work with her, no one advocated for her, and her reputation preceded her into every meeting
+> - Performance without positive perception is like having a product nobody will buy — it does not matter how good it is
 > **The lesson:** Performance without perception is invisible; perception without collegiality is toxic.
+
+---
 
 > [!example] The Burning-House Metaphor
 > - Imagine you rush into a burning building and rescue a child
@@ -612,8 +796,6 @@ The Four P's form a virtuous cycle — each component feeds the next. McIntyre r
 > - If the same fire happens on the main street at noon with news cameras rolling, your heroism makes you a local celebrity
 > - The act is identical — the visibility is what determines the outcome
 > **The lesson:** This is not cynical; it is mechanical. Decision-makers cannot reward what they do not know about.
-
----
 
 ### Partnerships
 
@@ -627,6 +809,7 @@ The Four P's form a virtuous cycle — each component feeds the next. McIntyre r
 - McIntyre distinguishes between networking (collecting contacts) and partnership-building (creating genuine mutual value)
 - <b style="color: #e74c3c">Collecting business cards and LinkedIn connections is not political power</b>
 - Real partnerships are built by helping other people succeed in ways that also serve your interests — the Winner pattern of strategic generosity
+- The test of a real partnership: would this person take a risk for you? Would they spend their own political capital to help you? If the answer is no, you have a contact, not a partner
 
 ### Power Assessment
 
@@ -638,7 +821,14 @@ The Four P's form a virtuous cycle — each component feeds the next. McIntyre r
 > - He eventually learned the SVP was an Empty Suit — impressive title, minimal actual influence
 > - The real decision was being made by a director two levels below the SVP who happened to be the CEO's most trusted advisor
 > - Months of political investment had been directed at the wrong target because the power assessment was wrong
+> - Had he mapped the power grid first, he would have invested in the director from the beginning
 > **The lesson:** Accurate power assessment is the compass — without it, effort flows to the wrong targets.
+
+> [!abstract] The Four P's Self-Audit
+> 1. **Performance:** Am I delivering results that the organisation currently values? (Not: am I working hard?)
+> 2. **Perception:** Do the right people know about my results? Am I spending time on Starmakers or trapped in Maintenance?
+> 3. **Partnerships:** Do I have advocates and sponsors, or just contacts? Would anyone spend political capital for me?
+> 4. **Power Assessment:** Can I accurately map the power grid? Do I know who really makes decisions, or am I navigating by the org chart?
 
 > [!tip] Core Insight
 > Periodically audit yourself across all Four P's. Identify which one is currently weakest, and direct your effort there — the weakest P is the bottleneck limiting all the others.
@@ -673,6 +863,7 @@ The Four P's form a virtuous cycle — each component feeds the next. McIntyre r
   - <b style="color: #e74c3c">Most people default to one position on the continuum and overuse it</b>
   - The naturally aggressive person jumps to Persuade & Convince before gathering enough information
   - The naturally accommodating person stays at Observe & Wait long past the point where action is needed
+  - The naturally analytical person over-invests in data-gathering when a direct conversation would resolve the issue in minutes
   - The key skill is not having a favourite strategy but selecting the right one for each situation
 - <b style="color: #27ae60">"Repeating a failed influence strategy louder does not make it work"</b>
 - When an influence attempt fails, the correct response is to shift along the continuum — not to repeat the same approach with more intensity
@@ -684,7 +875,20 @@ The Four P's form a virtuous cycle — each component feeds the next. McIntyre r
 > - She tried asking, then persuading, then demanding — nothing worked
 > - Finally she hired someone to clean the garage herself
 > - The strategy shift was not along the continuum but off it entirely — solving the problem through a different channel
+> - McIntyre uses this domestic example to illustrate a workplace principle: sometimes the influence target is immovable, and the solution is to route around them
 > **The lesson:** When the frontal approach is not working, flanking is not giving up — it is adapting.
+
+> [!example] Nadine's Lateral Move
+> - Nadine had been trying to convince her manager to let her lead a new product initiative for months
+> - Every time she presented her case, the manager deflected — too busy, not the right time, budget constraints
+> - Nadine realised she was stuck at Persuade & Convince with someone who was never going to say yes directly
+> - She shifted strategy: instead of asking her manager, she began collaborating informally with the VP who would ultimately own the initiative
+> - She contributed ideas, volunteered for related tasks, and made herself the obvious candidate
+> - When the VP eventually requested someone to lead the initiative, he asked for Nadine by name
+> - Her manager could not refuse a request from above — and the result was the same as if he had approved it directly
+> **The lesson:** When the direct path is blocked, finding an alternate route through the power grid is not insubordination — it is political intelligence.
+
+---
 
 ### Goal-Aligned Framing
 
@@ -698,6 +902,7 @@ The Four P's form a virtuous cycle — each component feeds the next. McIntyre r
 > - His boss was unmoved
 > - McIntyre coached Darren to reframe in terms of his boss's priorities: "The Germany office is struggling with integration. I have the technical expertise they need, I speak the language, and I could accelerate the timeline by two months"
 > - The second version addressed the boss's problem, not Darren's desire — it was approved
+> - The substance was identical in both versions — only the framing changed
 > **The lesson:** The substance was the same; the framing was everything.
 
 > [!tip] Core Insight
@@ -710,11 +915,11 @@ The Four P's form a virtuous cycle — each component feeds the next. McIntyre r
 *McIntyre argues that your direct manager — regardless of their competence, character, or fairness — has disproportionate control over your daily experience, your organisational perception, and your career trajectory.*
 
 - This is not because managers are more important than other people — it is because the structure of organisations gives them outsized influence over:
-  - Information flow
-  - Meeting access
-  - Project assignment
-  - Performance evaluation
-  - The narrative about you that reaches higher levels
+  - Information flow — what gets communicated about you to higher levels
+  - Meeting access — which rooms you are invited into
+  - Project assignment — whether you get Starmakers or Maintenance
+  - Performance evaluation — the formal record that follows you
+  - The narrative about you that reaches higher levels — the story your boss tells about your contribution
 
 - A **supportive manager** amplifies your contributions:
   - Mentions your work in meetings you are not in
@@ -732,16 +937,20 @@ The Four P's form a virtuous cycle — each component feeds the next. McIntyre r
 > 2. **Frame requests in terms of what helps them succeed** — your manager is solving their own problems; when your request is also a solution to one of their problems, the decision is easy
 > 3. **Never complain about your boss to anyone who could relay it** — within the organisation, every word is potentially public
 > 4. **Manage the full circle** — invest deliberately in upward, lateral, and downward relationships simultaneously
+> 5. **Anticipate, do not just respond** — the most valued employees bring solutions before the boss realises there is a problem
 
 ### Full Circle Management
 
 - Most people have a natural preference for one direction of influence — upward, lateral, or downward — and underperform in the others
+- <b style="color: #2980b9">Full Circle Management</b> means consciously investing in all three directions simultaneously
 
 > [!example] Kate — The Full Circle Manager
 > - Kate, an HR manager, was respected equally by her boss, her peers, and her team
 > - Her secret was not charisma — it was deliberate attention to all three directions
 > - She invested time in understanding her boss's priorities (upward), helping her peer managers succeed (lateral), and developing her team members' careers (downward)
 > - The result was endorsement from multiple directions — which is what promotion decisions actually require
+> - When her boss was asked about Kate, the answer was positive; when peers were asked, the same; when her team was asked, the same
+> - This 360-degree consistency is rare and extraordinarily powerful
 > **The lesson:** Political power requires endorsement from all directions, not just one.
 
 ---
@@ -756,6 +965,7 @@ The Four P's form a virtuous cycle — each component feeds the next. McIntyre r
 
 - Each was strong in the other two directions
 - <b style="color: #e74c3c">Each was held back by the one they neglected</b>
+- The pattern is consistent: political effectiveness requires minimum competence in all three directions, not excellence in one
 
 ---
 
@@ -773,6 +983,7 @@ The Four P's form a virtuous cycle — each component feeds the next. McIntyre r
 
 - The idea that you do not need to feel confident, qualified, or comfortable to act that way
 - Deliberately performing the behaviours of the role you want shapes others' perception — and eventually shapes your own self-concept
+- The principle works because organisations evaluate people based on behaviour, not feelings
 
 > [!example] McIntyre's Own "Act As If" Moment
 > - As a young professional, McIntyre was promoted into a role she felt utterly unqualified for
@@ -780,6 +991,7 @@ The Four P's form a virtuous cycle — each component feeds the next. McIntyre r
 > - She did not feel like a leader; she was acting as if she were one
 > - Within months, the gap between the act and the reality had narrowed
 > - The behaviour she was performing had become the behaviour she was practising
+> - Her colleagues never knew she felt like an imposter — they only saw the competent leader in front of them
 > **The lesson:** "The mask of competence, worn long enough, becomes competence."
 
 - McIntyre distinguishes "Act As If" from fraud:
@@ -804,10 +1016,10 @@ flowchart TD
     C --> E{Conversion Succeeded?}
     E -->|Yes| F[Productive Relationship]
     E -->|No| G[Containment]
-    D -->|No: Sociopath/Dimwit| G
+    D -->|"No: Sociopath/Dimwit"| G
     D -->|Yes| C
     G --> H{Adversary is Your Boss?}
-    H -->|Yes, Toxic| I[Structural Exit]
+    H -->|"Yes, Toxic"| I[Structural Exit]
     H -->|No| J[Manage & Document]
     style F fill:#27ae60,color:#fff
     style I fill:#e74c3c,color:#fff
@@ -822,6 +1034,7 @@ McIntyre's adversary management follows a clear decision tree: convert first, co
 - McIntyre's first move with any adversary is to look for shared objectives
 - Most workplace conflicts arise not from genuinely opposed interests but from different approaches to shared goals
 - Two people who both want the project to succeed but disagree about methodology are not enemies — they are collaborators who have not yet found their common ground
+- The conversion process requires genuine curiosity about the adversary's perspective — not tactical empathy deployed as a manipulation technique, but actual interest in understanding what they are trying to achieve
 
 > [!abstract] Adversary Conversion Format
 > 1. **Define shared objectives** — what do we both want?
@@ -846,12 +1059,23 @@ McIntyre's adversary management follows a clear decision tree: convert first, co
   - Limit your exposure to the adversary
   - Manage interactions structurally rather than personally
   - Document patterns of problematic behaviour
+  - Involve third parties only when necessary, and only with business justification
 - Containment is not about winning — it is about preventing further damage
 
 - <b style="color: #27ae60">Escalation to management must be framed in business terms, not personal grievance</b>:
   - "I find this person difficult to work with" — a personal complaint
   - "This person's behaviour is affecting project deliverables" — a business case
   - The difference matters enormously because managers evaluate through their own lens: is this a problem I need to solve, or is this two people being immature?
+
+> [!example] Tara's Documentation Strategy
+> - Tara worked with a colleague who consistently missed deadlines, blamed others for the delays, and created chaos that Tara had to clean up
+> - Her initial approach was to complain to her manager — who dismissed it as interpersonal friction
+> - McIntyre coached Tara to shift to documentation: for three months, Tara kept a factual log of missed deadlines, the business impact of each delay, and the additional hours she had spent compensating
+> - When she presented this to her manager, it was no longer a personal complaint — it was a business case with data
+> - The manager took action within two weeks
+> **The lesson:** Framing determines whether management sees a personal squabble or a business problem — the data is the same, but the frame changes everything.
+
+---
 
 ### The Unconvertible
 
@@ -862,8 +1086,6 @@ McIntyre's adversary management follows a clear decision tree: convert first, co
 - <b style="color: #2980b9">The adversarial dynamic is a feature of the situation, not a bug in the relationship</b>
 - McIntyre advises honest acknowledgment of the competition combined with maintained professionalism — you can compete without becoming enemies if both parties treat the competition as structural rather than personal
 
----
-
 ### When the Problem is Your Boss
 
 - When the adversary is your manager — the person with the most structural power over your daily life — McIntyre's advice is notably pragmatic
@@ -872,6 +1094,7 @@ McIntyre's adversary management follows a clear decision tree: convert first, co
   - A **toxic boss** — someone whose behaviour is damaging regardless of how you respond (requires exit)
 - <b style="color: #e74c3c">"Do not confuse managing your boss with tolerating abuse"</b>
 - If the boss is genuinely toxic, the correct move is structural change: a new reporting line, a new team, or a new organisation
+- McIntyre is clear that staying under a toxic boss in the hope that they will change or that upper management will intervene is almost always a losing strategy — toxic bosses are rarely removed quickly, and the damage to your career and health accumulates daily
 
 > [!tip] Core Insight
 > Attempt conversion before escalation. But recognise when conversion is impossible — Sociopaths, Dimwits, and structurally competitive adversaries require containment or exit, not dialogue.
@@ -910,6 +1133,20 @@ McIntyre's adversary management follows a clear decision tree: convert first, co
   - <b style="color: #e74c3c">Loyalty to the old culture is admirable but politically futile</b>
   - The new culture is the only reality that matters
 
+- McIntyre identifies a <b style="color: #2980b9">window of opportunity</b> during transitions:
+  - In the first sixty to ninety days of a new leader's tenure, they are actively scanning for allies, assessing talent, and building their team
+  - People who demonstrate adaptability, competence, and alignment during this window get disproportionate access and trust
+  - People who resist during this window get labelled — and labels are nearly impossible to remove
+  - <b style="color: #27ae60">The first ninety days of any leadership transition are the highest-stakes political period in organisational life</b>
+
+> [!example] Alan's Post-Merger Pivot
+> - Alan's company was acquired, and the new parent organisation had a completely different operating culture
+> - Most of Alan's colleagues either resisted the new culture or withdrew into passive compliance
+> - Alan took a different approach: he requested a meeting with the new division head, asked what the new team's priorities were, and volunteered for the integration project that nobody else wanted
+> - Within six months, Alan had more visibility with the new leadership than people who had been at the acquiring company for years
+> - His former colleagues, who had dismissed the new culture as inferior, were gradually sidelined
+> **The lesson:** During transitions, the people who move first toward the new power structure gain an advantage that late movers can never recover.
+
 > [!tip] Core Insight
 > Change creates political opportunity for those who adapt and political destruction for those who resist. When the power grid is being redrawn, read the new landscape immediately.
 
@@ -938,14 +1175,15 @@ The book's ceiling is moderate for readers who already understand power dynamics
 
 For those who already see the board, the Four P's audit and the influence continuum are the most durable tools. The rest is foundational material that more advanced readers may absorb quickly but should not dismiss — revisiting fundamentals often reveals gaps that sophistication has papered over.
 
-**Rating:** 7/10 — strong fundamentals, limited ceiling for advanced players.
-
 ---
 
 ## Related Reading
 
 - [[The 48 Laws of Power - Robert Greene|The 48 Laws of Power]] — the comprehensive tactical manual for power; where McIntyre is a workplace coach, Greene is the grand strategist
+- [[Power - Jeffrey Pfeffer|Power]] — Pfeffer's academic treatment of organisational power overlaps significantly but adds research depth McIntyre lacks
 - [[Fierce Conversations - Susan Scott|Fierce Conversations]] — complements McIntyre's influence continuum with deeper frameworks for difficult workplace conversations
 - [[Never Split the Difference - Chris Voss|Never Split the Difference]] — extends the leverage and influence principles into high-stakes negotiation tactics
-- [[cialdini_influence|Influence]] — the psychological science behind why McIntyre's influence strategies work
+- [[Influence - Robert Cialdini|Influence]] — the psychological science behind why McIntyre's influence strategies work
 - [[The First 90 Days - Michael D. Watkins|The First 90 Days]] — applies many of McIntyre's principles specifically to leadership transitions and new roles
+- [[Snakes in Suits - Babiak & Hare|Snakes in Suits]] — for deeper understanding of the Sociopath type McIntyre introduces, particularly in corporate settings
+- [[Managing Up - Mary Abbajay|Managing Up]] — extends McIntyre's boss management chapter into a comprehensive system for upward influence
