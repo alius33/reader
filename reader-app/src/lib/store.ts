@@ -15,12 +15,14 @@ export const FONT_OPTIONS: { id: FontFamily; label: string; value: string }[] = 
 interface AppState {
   sidebarOpen: boolean;
   commentsPanelOpen: boolean;
+  tocOpen: boolean;
   darkMode: boolean;
   activeBookId: string | null;
   fontFamily: FontFamily;
 
   toggleSidebar: () => void;
   toggleCommentsPanel: () => void;
+  toggleToc: () => void;
   toggleDarkMode: () => void;
   setActiveBookId: (id: string | null) => void;
   setFontFamily: (font: FontFamily) => void;
@@ -29,12 +31,19 @@ interface AppState {
 export const useStore = create<AppState>()((set) => ({
   sidebarOpen: true,
   commentsPanelOpen: false,
+  tocOpen: false,
   darkMode: false,
   activeBookId: null,
   fontFamily: "system",
 
   toggleSidebar: () => set((s) => ({ sidebarOpen: !s.sidebarOpen })),
   toggleCommentsPanel: () => set((s) => ({ commentsPanelOpen: !s.commentsPanelOpen })),
+  toggleToc: () =>
+    set((s) => {
+      const next = !s.tocOpen;
+      localStorage.setItem("tocOpen", JSON.stringify(next));
+      return { tocOpen: next };
+    }),
   toggleDarkMode: () =>
     set((s) => {
       const next = !s.darkMode;

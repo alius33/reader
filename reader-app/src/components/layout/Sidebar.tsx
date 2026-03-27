@@ -4,6 +4,7 @@ import { useState, useMemo } from "react";
 import Link from "next/link";
 import { useQuery } from "@tanstack/react-query";
 import { useStore } from "@/lib/store";
+import { useIsMobile } from "@/lib/useMediaQuery";
 import { cn } from "@/lib/utils";
 import {
   Search,
@@ -19,6 +20,11 @@ export function Sidebar() {
   const sidebarOpen = useStore((s) => s.sidebarOpen);
   const toggleSidebar = useStore((s) => s.toggleSidebar);
   const activeBookId = useStore((s) => s.activeBookId);
+  const isMobile = useIsMobile();
+
+  const handleNavClick = () => {
+    if (isMobile) toggleSidebar();
+  };
   const [searchQuery, setSearchQuery] = useState("");
   const [expandedCategories, setExpandedCategories] = useState<Set<string>>(
     new Set()
@@ -89,10 +95,13 @@ export function Sidebar() {
   }
 
   return (
-    <aside className="flex w-72 flex-col border-r border-border bg-card">
+    <aside className={cn(
+      "flex w-72 flex-col border-r border-border bg-card",
+      isMobile && "fixed inset-y-0 left-0 z-40 shadow-xl"
+    )}>
       {/* Header */}
       <div className="flex items-center justify-between border-b border-border px-4 py-3">
-        <Link href="/" className="text-sm font-semibold">
+        <Link href="/" className="text-sm font-semibold" onClick={handleNavClick}>
           Reader
         </Link>
         <button
@@ -131,6 +140,7 @@ export function Sidebar() {
               <Link
                 key={book.id}
                 href={`/book/${book.id}`}
+                onClick={handleNavClick}
                 className={cn(
                   "block truncate rounded-md px-2 py-1 text-sm hover:bg-accent",
                   activeBookId === book.id && "bg-accent font-medium"
@@ -167,6 +177,7 @@ export function Sidebar() {
                     <Link
                       key={book.id}
                       href={`/book/${book.id}`}
+                      onClick={handleNavClick}
                       className={cn(
                         "block truncate rounded-md px-2 py-1 text-sm hover:bg-accent",
                         activeBookId === book.id &&

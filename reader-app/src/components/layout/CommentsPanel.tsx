@@ -3,6 +3,7 @@
 import { useState } from "react";
 import { useQuery, useMutation, useQueryClient } from "@tanstack/react-query";
 import { useStore } from "@/lib/store";
+import { useIsMobile } from "@/lib/useMediaQuery";
 import { cn } from "@/lib/utils";
 import { MessageSquare, X, Pencil, Trash2, ChevronRight } from "lucide-react";
 import type { CommentData } from "@/types";
@@ -15,6 +16,7 @@ interface CommentsPanelProps {
 export function CommentsPanel({ bookId, comments }: CommentsPanelProps) {
   const commentsPanelOpen = useStore((s) => s.commentsPanelOpen);
   const toggleCommentsPanel = useStore((s) => s.toggleCommentsPanel);
+  const isMobile = useIsMobile();
   const queryClient = useQueryClient();
   const [editingId, setEditingId] = useState<string | null>(null);
   const [editText, setEditText] = useState("");
@@ -62,8 +64,8 @@ export function CommentsPanel({ bookId, comments }: CommentsPanelProps) {
     );
   }
 
-  return (
-    <aside className="flex w-80 flex-col border-l border-border bg-card">
+  const panelContent = (
+    <>
       {/* Header */}
       <div className="flex items-center justify-between border-b border-border px-4 py-3">
         <h2 className="text-sm font-semibold">
@@ -91,8 +93,8 @@ export function CommentsPanel({ bookId, comments }: CommentsPanelProps) {
               <div key={comment.id} className="px-4 py-3">
                 {/* Selected text */}
                 <div className="mb-2 rounded bg-yellow-50 px-2 py-1 text-xs text-yellow-800 dark:bg-yellow-900/20 dark:text-yellow-200">
-                  "{comment.selectedText.slice(0, 100)}
-                  {comment.selectedText.length > 100 ? "..." : ""}"
+                  &ldquo;{comment.selectedText.slice(0, 100)}
+                  {comment.selectedText.length > 100 ? "..." : ""}&rdquo;
                 </div>
 
                 {/* Comment body */}
@@ -165,6 +167,23 @@ export function CommentsPanel({ bookId, comments }: CommentsPanelProps) {
           </div>
         )}
       </div>
+    </>
+  );
+
+  if (isMobile) {
+    return (
+      <>
+        <div className="fixed inset-0 z-30 bg-black/50" onClick={toggleCommentsPanel} />
+        <aside className="fixed inset-y-0 right-0 z-40 flex w-80 max-w-[calc(100vw-3rem)] flex-col border-l border-border bg-card shadow-xl">
+          {panelContent}
+        </aside>
+      </>
+    );
+  }
+
+  return (
+    <aside className="flex w-80 flex-col border-l border-border bg-card">
+      {panelContent}
     </aside>
   );
 }

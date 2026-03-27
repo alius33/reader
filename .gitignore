@@ -11,3 +11,4 @@ temp_extract*.txt
 reader-app/node_modules/
 reader-app/.next/
 reader-app/.env
+reader-app/tsconfig.tsbuildinfo

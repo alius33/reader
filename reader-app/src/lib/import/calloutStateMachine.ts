@@ -21,7 +21,7 @@ interface CalloutBlock {
 }
 
 export function processCallouts(input: string): string {
-  const lines = input.split("\n");
+  const lines = input.split("\n").map((l) => l.replace(/\r$/, ""));
   const output: string[] = [];
 
   let state: State = "NORMAL";

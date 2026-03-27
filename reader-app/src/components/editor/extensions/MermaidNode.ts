@@ -7,35 +7,68 @@ export interface MermaidOptions {
 let mermaidInstance: typeof import("mermaid").default | null = null;
 let mermaidLoading = false;
 const mermaidCallbacks: (() => void)[] = [];
-let mermaidConfigVersion = 2; // bump to force re-init
+let currentMermaidTheme: string = "";
 
-async function getMermaid() {
-  if (mermaidInstance) return mermaidInstance;
-  if (mermaidLoading) {
-    return new Promise<typeof import("mermaid").default>((resolve) => {
-      mermaidCallbacks.push(() => resolve(mermaidInstance!));
-    });
+function detectDarkMode(): boolean {
+  return typeof document !== "undefined" && document.documentElement.classList.contains("dark");
+}
+
+async function getMermaid(isDark?: boolean) {
+  const dark = isDark ?? detectDarkMode();
+  const desiredTheme = dark ? "dark" : "default";
+
+  if (mermaidInstance && currentMermaidTheme === desiredTheme) return mermaidInstance;
+
+  if (!mermaidInstance) {
+    if (mermaidLoading) {
+      return new Promise<typeof import("mermaid").default>((resolve) => {
+        mermaidCallbacks.push(() => resolve(mermaidInstance!));
+      });
+    }
+    mermaidLoading = true;
+    const mod = await import("mermaid");
+    mermaidInstance = mod.default;
   }
-  mermaidLoading = true;
-  const mod = await import("mermaid");
-  mermaidInstance = mod.default;
+
   mermaidInstance.initialize({
     startOnLoad: false,
-    theme: "default",
+    theme: desiredTheme,
     securityLevel: "loose",
     flowchart: {
-      useMaxWidth: false,
-      htmlLabels: false,
+      useMaxWidth: true,
+      htmlLabels: true,
       padding: 15,
       nodeSpacing: 50,
       rankSpacing: 50,
     },
-    themeVariables: {
-      fontSize: "14px",
-    },
+    themeVariables:
+      desiredTheme === "dark"
+        ? {
+            fontSize: "14px",
+            primaryColor: "#4a6fa5",
+            primaryTextColor: "#e5e7eb",
+            primaryBorderColor: "#4b5563",
+            lineColor: "#6b7280",
+            secondaryColor: "#1e293b",
+            tertiaryColor: "#1e1e2e",
+            nodeTextColor: "#e5e7eb",
+            mainBkg: "#2d3748",
+            nodeBorder: "#4b5563",
+            clusterBkg: "#1a202c",
+            clusterBorder: "#4b5563",
+            titleColor: "#e5e7eb",
+            edgeLabelBackground: "#2d3748",
+          }
+        : { fontSize: "14px" },
   });
-  for (const cb of mermaidCallbacks) cb();
-  mermaidCallbacks.length = 0;
+  currentMermaidTheme = desiredTheme;
+
+  if (mermaidLoading) {
+    for (const cb of mermaidCallbacks) cb();
+    mermaidCallbacks.length = 0;
+    mermaidLoading = false;
+  }
+
   return mermaidInstance;
 }
 
@@ -78,27 +111,10 @@ export const MermaidNode = Node.create<MermaidOptions>({
     return ({ node, getPos, editor }) => {
       const dom = document.createElement("div");
       dom.setAttribute("data-mermaid-diagram", "");
-      Object.assign(dom.style, {
-        border: "1px solid #d1d5db",
-        borderRadius: "6px",
-        marginBlock: "8px",
-        overflow: "hidden",
-        background: "#fff",
-      });
+      dom.className = "mermaid-block";
 
       const header = document.createElement("div");
-      Object.assign(header.style, {
-        display: "flex",
-        alignItems: "center",
-        justifyContent: "space-between",
-        padding: "6px 12px",
-        background: "#f3f4f6",
-        borderBottom: "1px solid #e5e7eb",
-        fontSize: "0.8em",
-        color: "#6b7280",
-        fontWeight: "600",
-        userSelect: "none",
-      });
+      header.className = "mermaid-header-bar";
 
       const label = document.createElement("span");
       label.textContent = "Mermaid Diagram";
@@ -106,42 +122,18 @@ export const MermaidNode = Node.create<MermaidOptions>({
 
       const editBtn = document.createElement("button");
       editBtn.textContent = "Edit Source";
-      Object.assign(editBtn.style, {
-        fontSize: "0.85em",
-        padding: "2px 8px",
-        borderRadius: "4px",
-        border: "1px solid #d1d5db",
-        background: "#fff",
-        cursor: "pointer",
-        color: "#374151",
-      });
+      editBtn.className = "mermaid-edit-btn";
       header.appendChild(editBtn);
       dom.appendChild(header);
 
       // Rendered diagram container
       const diagramContainer = document.createElement("div");
-      Object.assign(diagramContainer.style, {
-        padding: "16px",
-        display: "flex",
-        justifyContent: "center",
-        overflowX: "auto",
-        overflowY: "hidden",
-        minHeight: "100px",
-      });
+      diagramContainer.className = "mermaid-diagram-area";
       dom.appendChild(diagramContainer);
 
       // Source code view (hidden by default)
       const pre = document.createElement("pre");
-      Object.assign(pre.style, {
-        margin: "0",
-        padding: "12px",
-        fontSize: "0.85em",
-        lineHeight: "1.5",
-        overflowX: "auto",
-        whiteSpace: "pre-wrap",
-        fontFamily: "'JetBrains Mono', 'Fira Code', monospace",
-        display: "none",
-      });
+      pre.className = "mermaid-source-pre";
       const code = document.createElement("code");
       code.textContent = node.attrs.source;
       pre.appendChild(code);
@@ -152,15 +144,24 @@ export const MermaidNode = Node.create<MermaidOptions>({
       // Render the mermaid diagram
       async function renderDiagram(source: string) {
         try {
-          const mermaid = await getMermaid();
+          const isDark = detectDarkMode();
+          const mermaid = await getMermaid(isDark);
           const id = `mermaid-${++renderCounter}`;
           const { svg } = await mermaid.render(id, source);
           diagramContainer.innerHTML = svg;
           const svgEl = diagramContainer.querySelector("svg");
+          // Ensure SVG has a viewBox for proper scaling
+          if (svgEl && !svgEl.getAttribute("viewBox")) {
+            const w = svgEl.getAttribute("width");
+            const h = svgEl.getAttribute("height");
+            if (w && h) {
+              svgEl.setAttribute("viewBox", `0 0 ${parseFloat(w)} ${parseFloat(h)}`);
+            }
+          }
           if (svgEl) {
-            svgEl.style.maxWidth = "none";
-            svgEl.style.width = "auto";
+            svgEl.style.width = "100%";
             svgEl.style.height = "auto";
+            svgEl.style.maxWidth = "100%";
           }
           diagramContainer.style.display = "flex";
           pre.style.display = "none";
@@ -175,9 +176,8 @@ export const MermaidNode = Node.create<MermaidOptions>({
             padding: "8px 12px",
             fontSize: "0.8em",
             color: "#dc2626",
-            background: "#fef2f2",
           });
-          errMsg.textContent = "Failed to render diagram — showing source";
+          errMsg.textContent = "Failed to render diagram \u2014 showing source";
           if (!dom.querySelector("[data-mermaid-error]")) {
             errMsg.setAttribute("data-mermaid-error", "");
             dom.insertBefore(errMsg, pre);
@@ -201,20 +201,7 @@ export const MermaidNode = Node.create<MermaidOptions>({
           typeof getPos === "function"
             ? (editor.state.doc.nodeAt(getPos())?.attrs.source ?? node.attrs.source)
             : node.attrs.source;
-        Object.assign(textarea.style, {
-          width: "100%",
-          minHeight: "120px",
-          padding: "12px",
-          fontSize: "0.85em",
-          lineHeight: "1.5",
-          fontFamily: "'JetBrains Mono', 'Fira Code', monospace",
-          border: "none",
-          outline: "none",
-          resize: "vertical",
-          background: "#fff",
-          boxSizing: "border-box",
-          display: "block",
-        });
+        textarea.className = "mermaid-textarea";
 
         pre.style.display = "none";
         dom.appendChild(textarea);

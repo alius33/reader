@@ -4,7 +4,7 @@ export interface CalloutOptions {
   HTMLAttributes: Record<string, unknown>;
 }
 
-const CALLOUT_COLORS: Record<string, { border: string; bg: string; icon: string }> = {
+export const CALLOUT_COLORS: Record<string, { border: string; bg: string; icon: string }> = {
   example:  { border: "#3b82f6", bg: "#eff6ff", icon: "📘" },
   tip:      { border: "#22c55e", bg: "#f0fdf4", icon: "💡" },
   warning:  { border: "#eab308", bg: "#fefce8", icon: "⚠️" },
@@ -63,27 +63,11 @@ export const CalloutNode = Node.create<CalloutOptions>({
 
       const dom = document.createElement("div");
       dom.setAttribute("data-callout", "");
-      Object.assign(dom.style, {
-        borderLeft: `4px solid ${colors.border}`,
-        background: colors.bg,
-        borderRadius: "6px",
-        marginBlock: "8px",
-        padding: "0",
-        overflow: "hidden",
-      });
+      dom.className = `callout-block callout-${calloutType}`;
 
       const header = document.createElement("div");
-      Object.assign(header.style, {
-        display: "flex",
-        alignItems: "center",
-        gap: "6px",
-        padding: "8px 12px",
-        fontWeight: "600",
-        fontSize: "0.9em",
-        color: colors.border,
-        userSelect: "none",
-        cursor: collapsible ? "pointer" : "default",
-      });
+      header.className = "callout-title";
+      if (collapsible) header.style.cursor = "pointer";
 
       const iconSpan = document.createElement("span");
       iconSpan.textContent = colors.icon;
@@ -104,7 +88,7 @@ export const CalloutNode = Node.create<CalloutOptions>({
           display: "inline-block",
           fontSize: "0.85em",
         });
-        chevron.textContent = "▶";
+        chevron.textContent = "\u25B6";
         chevron.style.transform = isCollapsed ? "rotate(0deg)" : "rotate(90deg)";
         header.appendChild(chevron);
       }
@@ -113,10 +97,8 @@ export const CalloutNode = Node.create<CalloutOptions>({
 
       const contentDOM = document.createElement("div");
       contentDOM.setAttribute("data-callout-content", "");
-      Object.assign(contentDOM.style, {
-        padding: "4px 12px 8px",
-        display: isCollapsed ? "none" : "block",
-      });
+      contentDOM.className = "callout-body";
+      if (isCollapsed) contentDOM.style.display = "none";
       dom.appendChild(contentDOM);
 
       if (collapsible) {

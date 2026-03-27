@@ -40,6 +40,13 @@ function PrefsInit() {
       if (fontStored && FONT_OPTIONS.some((f) => f.id === fontStored)) {
         useStore.setState({ fontFamily: fontStored });
       }
+      const tocStored = localStorage.getItem("tocOpen");
+      if (tocStored === "true") {
+        useStore.setState({ tocOpen: true });
+      }
+      if (window.innerWidth < 1024) {
+        useStore.setState({ sidebarOpen: false });
+      }
     } catch {
       // localStorage unavailable
     }

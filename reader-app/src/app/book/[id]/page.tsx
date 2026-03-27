@@ -4,6 +4,7 @@ import { useEffect, useCallback, useRef, useState } from "react";
 import { useParams } from "next/navigation";
 import { useQuery, useMutation, useQueryClient } from "@tanstack/react-query";
 import dynamic from "next/dynamic";
+import { Pencil, BookOpen } from "lucide-react";
 import { AppShell } from "@/components/layout/AppShell";
 import { TableOfContents } from "@/components/layout/TableOfContents";
 import { CommentsPanel } from "@/components/layout/CommentsPanel";
@@ -19,7 +20,10 @@ export default function BookPage() {
   const params = useParams();
   const id = params.id as string;
   const setActiveBookId = useStore((s) => s.setActiveBookId);
+  const toggleCommentsPanel = useStore((s) => s.toggleCommentsPanel);
+  const commentsPanelOpen = useStore((s) => s.commentsPanelOpen);
   const queryClient = useQueryClient();
+  const [mode, setMode] = useState<"read" | "edit">("read");
   const [saveStatus, setSaveStatus] = useState<"saved" | "saving" | "unsaved">("saved");
   const saveTimeoutRef = useRef<NodeJS.Timeout | null>(null);
   const lastUpdatedAt = useRef<string>("");
@@ -97,6 +101,36 @@ export default function BookPage() {
     return () => window.removeEventListener("beforeunload", handler);
   }, [saveStatus]);
 
+  const handleComment = useCallback(
+    async (markId: string, selectedText: string) => {
+      try {
+        const res = await fetch("/api/comments", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({
+            bookId: id,
+            markId,
+            selectedText,
+            commentText: "(new comment)",
+          }),
+        });
+        if (!res.ok) {
+          console.error("Failed to create comment:", res.status);
+          return;
+        }
+        // Refresh the book data to show the new comment
+        queryClient.invalidateQueries({ queryKey: ["book", id] });
+        // Open the comments panel if it isn't already open
+        if (!commentsPanelOpen) {
+          toggleCommentsPanel();
+        }
+      } catch (err) {
+        console.error("Failed to create comment:", err);
+      }
+    },
+    [id, queryClient, commentsPanelOpen, toggleCommentsPanel]
+  );
+
   if (isLoading) {
     return (
       <AppShell>
@@ -126,22 +160,41 @@ export default function BookPage() {
         {/* Main content */}
         <div className="flex-1 overflow-y-auto">
           {/* Book header */}
-          <div className="border-b border-border px-8 py-6">
+          <div className="border-b border-border px-4 py-3 sm:px-8 sm:py-6">
             <div className="mx-auto max-w-4xl">
-              <div className="flex items-center justify-between">
+              <div className="flex flex-col gap-2 sm:flex-row sm:items-center sm:justify-between">
                 <div>
-                  <h1 className="text-2xl font-bold">{book.title}</h1>
+                  <h1 className="text-xl font-bold sm:text-2xl">{book.title}</h1>
                   <p className="mt-1 text-muted-foreground">
                     {book.author}
                     {book.year && ` (${book.year})`}
                   </p>
                 </div>
                 <div className="flex items-center gap-3">
-                  <span className="text-xs text-muted-foreground">
-                    {saveStatus === "saved" && "Saved"}
-                    {saveStatus === "saving" && "Saving..."}
-                    {saveStatus === "unsaved" && "Unsaved changes"}
-                  </span>
+                  {mode === "edit" && (
+                    <span className="text-xs text-muted-foreground">
+                      {saveStatus === "saved" && "Saved"}
+                      {saveStatus === "saving" && "Saving..."}
+                      {saveStatus === "unsaved" && "Unsaved changes"}
+                    </span>
+                  )}
+                  <button
+                    onClick={() => setMode(mode === "read" ? "edit" : "read")}
+                    className="flex items-center gap-1.5 rounded-md border border-border px-3 py-1.5 text-xs font-medium hover:bg-muted transition-colors"
+                    title={mode === "read" ? "Switch to edit mode" : "Switch to read mode"}
+                  >
+                    {mode === "read" ? (
+                      <>
+                        <Pencil className="h-3.5 w-3.5" />
+                        Edit
+                      </>
+                    ) : (
+                      <>
+                        <BookOpen className="h-3.5 w-3.5" />
+                        Reading
+                      </>
+                    )}
+                  </button>
                   <span className="rounded-full bg-primary/10 px-3 py-1 text-xs font-medium">
                     {book.categoryName}
                   </span>
@@ -167,16 +220,15 @@ export default function BookPage() {
             <Editor
               content={book.content}
               onUpdate={handleUpdate}
-              editable={true}
+              mode={mode}
+              onComment={handleComment}
             />
           </div>
         </div>
 
         {/* TOC sidebar */}
         {book.toc && book.toc.length > 0 && (
-          <div className="hidden w-64 shrink-0 xl:block">
-            <TableOfContents entries={book.toc} />
-          </div>
+          <TableOfContents entries={book.toc} />
         )}
 
         {/* Comments panel */}
