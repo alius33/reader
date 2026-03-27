@@ -1,0 +1,67 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model Book {
+  id               String           @id @default(cuid())
+  title            String
+  author           String
+  year             Int?
+  categoryId       String
+  category         Category         @relation(fields: [categoryId], references: [id])
+  tags             Json             // string[]
+  content          Json             // Tiptap JSON document
+  plainText        String           // stripped text for full-text search
+  originalMarkdown String?          // backup of source .md
+  summary          String?          // 30-second blockquote (plain text)
+  wordCount        Int?
+  toc              Json?            // [{ id, text, level }]
+  contentStats     Json?            // { callouts, diagrams, stories, crossRefs }
+  comments         Comment[]
+  crossReferences  CrossReference[] @relation("sourceBook")
+  referencedBy     CrossReference[] @relation("targetBook")
+  lastViewedAt     DateTime?
+  createdAt        DateTime         @default(now())
+  updatedAt        DateTime         @updatedAt
+
+  @@unique([title, author])
+  @@index([categoryId])
+}
+
+model Category {
+  id          String  @id @default(cuid())
+  name        String  @unique
+  description String?
+  sortOrder   Int     @default(0)
+  books       Book[]
+}
+
+model Comment {
+  id           String   @id @default(cuid())
+  markId       String
+  bookId       String
+  book         Book     @relation(fields: [bookId], references: [id], onDelete: Cascade)
+  selectedText String
+  commentText  String
+  createdAt    DateTime @default(now())
+  updatedAt    DateTime @updatedAt
+
+  @@unique([bookId, markId])
+}
+
+model CrossReference {
+  id           String  @id @default(cuid())
+  sourceBookId String
+  targetBookId String?
+  targetTitle  String
+  sourceBook   Book    @relation("sourceBook", fields: [sourceBookId], references: [id])
+  targetBook   Book?   @relation("targetBook", fields: [targetBookId], references: [id])
+  context      String?
+
+  @@unique([sourceBookId, targetTitle])
+}

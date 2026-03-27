@@ -3,3 +3,11 @@ extracted/
 
 # Obsidian workspace (user-specific)
 summaries/.obsidian/workspace.json
+
+# Temp files
+temp_extract*.txt
+
+# Reader app
+reader-app/node_modules/
+reader-app/.next/
+reader-app/.env

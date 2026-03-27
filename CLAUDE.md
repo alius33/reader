@@ -32,6 +32,16 @@ Main title only (no subtitle). Used consistently across `analysis/` and `summari
 - Copyright-compliant (quotes under 15 words, stories paraphrased)
 - Cross-referenced using `[[wikilinks]]`
 
+## Formatting Rules
+
+These rules apply to all summaries (existing and new):
+
+- **Colored text is always bold** — use `<b style="color: #hex">text</b>`, never `<span>`. The three standard colors are: `#2980b9` (blue, primary insight), `#e74c3c` (red, problem/danger), `#27ae60` (green, solution/antidote)
+- **Tables** use standard markdown pipe syntax with header row and separator
+- **Callouts** use Obsidian `> [!type] Title` syntax. Supported types: example, tip, warning, danger, success, info, quote, note
+- **Mermaid diagrams** use fenced code blocks with `mermaid` language tag
+- **Wikilinks** use `[[Title - Author]]` or `[[Title - Author|Display Text]]` format with no path prefix
+
 ## Rules
 
 - Always read `summaries/_index.md` before creating a new summary to check for existing entries

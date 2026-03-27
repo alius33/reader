@@ -1,6 +1,6 @@
 {
-  "theme": "obsidian",
-  "baseFontSize": 18,
+  "theme": "moonstone",
+  "baseFontSize": 12,
   "baseFontSizeAction": true,
   "nativeMenus": false
 }

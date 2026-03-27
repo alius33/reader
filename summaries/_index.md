@@ -25,8 +25,8 @@ Comprehensive, general-purpose book summaries — Shortform-style depth that mak
 | [[Personal Brand & Presence]] | 5 | Executive presence, credibility, networking |
 | [[Awareness & Protection]] | 5 | Manipulation, dark psychology, defensive social intelligence |
 | [[Wisdom & Big Ideas]] | 8 | Collected wisdom, history, economics, broad perspective |
-| [[Parenting & Child Development]] | 0 | Brain science, discipline, communication, raising resilient kids |
-| **Total** | **129** | |
+| [[Parenting & Child Development]] | 15 | Brain science, discipline, communication, raising resilient kids |
+| **Total** | **144** | |
 
 ---
 

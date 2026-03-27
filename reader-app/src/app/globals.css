@@ -1,0 +1,235 @@
+@import "tailwindcss";
+@import "./editor.css";
+
+@plugin "@tailwindcss/typography";
+
+@theme {
+  --color-background: #ffffff;
+  --color-foreground: #0a0a0a;
+  --color-muted: #f5f5f5;
+  --color-muted-foreground: #737373;
+  --color-border: #e5e5e5;
+  --color-ring: #0a0a0a;
+  --color-primary: #0a0a0a;
+  --color-primary-foreground: #ffffff;
+  --color-secondary: #f5f5f5;
+  --color-secondary-foreground: #0a0a0a;
+  --color-accent: #f5f5f5;
+  --color-accent-foreground: #0a0a0a;
+  --color-destructive: #ef4444;
+  --color-destructive-foreground: #ffffff;
+  --color-card: #ffffff;
+  --color-card-foreground: #0a0a0a;
+  --color-popover: #ffffff;
+  --color-popover-foreground: #0a0a0a;
+
+  --radius-sm: 0.25rem;
+  --radius-md: 0.375rem;
+  --radius-lg: 0.5rem;
+
+  --font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+  --font-reading: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+    font-family: var(--font-sans);
+  }
+}
+
+.dark {
+  --color-background: #1e1e1e;
+  --color-foreground: #dcddde;
+  --color-muted: #2b2b2b;
+  --color-muted-foreground: #999;
+  --color-border: #363636;
+  --color-ring: #dcddde;
+  --color-primary: #dcddde;
+  --color-primary-foreground: #1e1e1e;
+  --color-secondary: #2b2b2b;
+  --color-secondary-foreground: #dcddde;
+  --color-accent: #2b2b2b;
+  --color-accent-foreground: #dcddde;
+  --color-destructive: #dc2626;
+  --color-destructive-foreground: #dcddde;
+  --color-card: #1e1e1e;
+  --color-card-foreground: #dcddde;
+  --color-popover: #2b2b2b;
+  --color-popover-foreground: #dcddde;
+}
+
+/*
+ * ============================================================
+ * .reader-content: Obsidian-matching typography for the editor.
+ * This replaces Tailwind's prose class to avoid ALL conflicts
+ * with inline styles (colors, etc).
+ * ============================================================
+ */
+
+.reader-content {
+  font-family: var(--font-reading);
+  font-size: 17px;
+  line-height: 1.65;
+  font-weight: 500;
+  color: var(--color-foreground);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+/* Headings */
+.reader-content h1 { font-size: 2em; font-weight: 700; margin: 1.2em 0 0.4em; }
+.reader-content h2 { font-size: 1.5em; font-weight: 700; margin: 1em 0 0.3em; }
+.reader-content h3 { font-size: 1.25em; font-weight: 650; margin: 0.9em 0 0.25em; }
+.reader-content h4 { font-size: 1.1em; font-weight: 600; margin: 0.8em 0 0.2em; }
+
+/* Paragraphs */
+.reader-content p { margin: 0.4em 0; }
+
+/* Lists — tight like Obsidian */
+.reader-content ul,
+.reader-content ol { margin: 0.25em 0; padding-left: 1.5em; }
+.reader-content li { margin: 0.05em 0; padding-left: 0.2em; }
+.reader-content li > ul,
+.reader-content li > ol { margin: 0.05em 0; }
+.reader-content ul > li::marker { font-size: 0.6em; }
+
+/* Inline formatting */
+.reader-content strong,
+.reader-content b { font-weight: 700; }
+.reader-content em,
+.reader-content i { font-style: italic; }
+.reader-content a { color: #2563eb; text-decoration: underline; }
+.dark .reader-content a { color: #60a5fa; }
+.reader-content code {
+  font-family: var(--font-mono);
+  font-size: 0.85em;
+  padding: 0.15em 0.3em;
+  border-radius: 3px;
+  background: var(--color-muted);
+}
+
+/* Colored text is ALWAYS bold — inline style="color:..." is respected automatically
+   because there is no prose class fighting it */
+.reader-content span[style*="color"],
+.reader-content b[style*="color"],
+.reader-content strong[style*="color"] {
+  font-weight: 700 !important;
+}
+
+/* Blockquotes */
+.reader-content blockquote {
+  margin: 0.5em 0;
+  padding-left: 1em;
+  border-left: 3px solid var(--color-border);
+  color: var(--color-muted-foreground);
+}
+
+/* Horizontal rules */
+.reader-content hr {
+  margin: 1em 0;
+  border: none;
+  border-top: 1px solid var(--color-border);
+}
+
+/* Code blocks */
+.reader-content pre {
+  font-family: var(--font-mono);
+  font-size: 0.85em;
+  line-height: 1.6;
+  padding: 1em;
+  border-radius: 6px;
+  background: var(--color-muted);
+  overflow-x: auto;
+  margin: 0.8em 0;
+}
+.reader-content pre code {
+  padding: 0;
+  background: none;
+}
+
+/* Tables — Obsidian style: horizontal lines only */
+.reader-content table {
+  width: auto;
+  border-collapse: collapse;
+  margin: 0.8em 0;
+  font-size: 0.95em;
+}
+.reader-content th {
+  font-weight: 600;
+  text-align: left;
+  padding: 8px 16px;
+  border: none;
+  border-bottom: 2px solid var(--color-border);
+}
+.reader-content td {
+  padding: 8px 16px;
+  border: none;
+  border-bottom: 1px solid var(--color-border);
+}
+.reader-content tbody tr:last-child td { border-bottom: none; }
+
+/* Mermaid — no constraints */
+.reader-content [data-mermaid-diagram] { max-width: none; }
+.reader-content [data-mermaid-diagram] svg {
+  max-width: none;
+  width: auto;
+  height: auto;
+  overflow: visible;
+}
+
+/*
+ * ============================================================
+ * .prose overrides (for non-editor contexts like explore page).
+ * ============================================================
+ */
+
+.prose {
+  font-family: var(--font-reading) !important;
+  font-size: 17px !important;
+  line-height: 1.65 !important;
+  font-weight: 500 !important;
+}
+.prose ul, .prose ol { margin-top: 0.25em !important; margin-bottom: 0.25em !important; padding-left: 1.5em !important; }
+.prose li { margin-top: 0.05em !important; margin-bottom: 0.05em !important; padding-left: 0.2em !important; }
+.prose li > ul, .prose li > ol { margin-top: 0.05em !important; margin-bottom: 0.05em !important; }
+.prose ul > li::marker { font-size: 0.6em; }
+.prose p { margin-top: 0.4em !important; margin-bottom: 0.4em !important; }
+.prose h1 { margin-top: 1.2em !important; margin-bottom: 0.4em !important; }
+.prose h2 { margin-top: 1em !important; margin-bottom: 0.3em !important; font-weight: 700 !important; }
+.prose h3 { margin-top: 0.9em !important; margin-bottom: 0.25em !important; font-weight: 650 !important; }
+.prose blockquote { margin-top: 0.5em !important; margin-bottom: 0.5em !important; }
+.prose hr { margin-top: 1em !important; margin-bottom: 1em !important; }
+.prose table { width: auto !important; border-collapse: collapse !important; }
+.prose th { font-weight: 600 !important; text-align: left !important; padding: 8px 16px !important; border: none !important; border-bottom: 2px solid var(--color-border) !important; background: transparent !important; }
+.prose td { padding: 8px 16px !important; border: none !important; border-bottom: 1px solid var(--color-border) !important; }
+.prose tbody tr:last-child td { border-bottom: none !important; }
+
+/* Print styles */
+@media print {
+  body {
+    background: white !important;
+    color: black !important;
+  }
+  aside,
+  header,
+  nav,
+  .no-print,
+  button {
+    display: none !important;
+  }
+  main {
+    width: 100% !important;
+    max-width: none !important;
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+  .prose {
+    max-width: none !important;
+  }
+}
