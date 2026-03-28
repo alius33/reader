@@ -86,6 +86,114 @@ Every limbic response is followed by pacifying behaviour — whether the person 
 | **Honesty Gradient** | The further a body part is from the brain, the more honest its signals |
 | **Synchrony** | When words and body language match, the message is likely truthful |
 
+```chartjs
+{
+  "type": "radar",
+  "data": {
+    "labels": ["Feet & Legs", "Torso", "Hands & Arms", "Face", "Pacifiers", "Freeze Response", "Flight Response"],
+    "datasets": [
+      {
+        "label": "Signal Honesty (Limbic Reliability)",
+        "data": [95, 85, 80, 40, 90, 95, 88],
+        "backgroundColor": "rgba(39, 174, 96, 0.2)",
+        "borderColor": "#27ae60"
+      },
+      {
+        "label": "Where Most People Look",
+        "data": [10, 25, 40, 95, 15, 5, 10],
+        "backgroundColor": "rgba(231, 76, 60, 0.2)",
+        "borderColor": "#e74c3c"
+      }
+    ]
+  },
+  "options": {
+    "plugins": { "title": { "display": true, "text": "Navarro's Honesty Gradient — Where to Look vs Where Most Look" } },
+    "scales": { "r": { "min": 0, "max": 100 } }
+  }
+}
+```
+
+The fundamental disconnect: most people fixate on the face — the least honest body part — while ignoring the feet and pacifying behaviours that carry the most reliable limbic signals.
+
+```d3
+{
+  "type": "force",
+  "data": {
+    "nodes": [
+      { "id": "Threat Detected", "group": 1 },
+      { "id": "Freeze", "group": 2 },
+      { "id": "Flight", "group": 2 },
+      { "id": "Fight", "group": 2 },
+      { "id": "Neck Touch", "group": 3 },
+      { "id": "Face Rub", "group": 3 },
+      { "id": "Leg Cleanse", "group": 3 },
+      { "id": "Hair Play", "group": 3 },
+      { "id": "Lip Compression", "group": 3 },
+      { "id": "Comfort Restored", "group": 4 }
+    ],
+    "links": [
+      { "source": "Threat Detected", "target": "Freeze", "value": 10 },
+      { "source": "Threat Detected", "target": "Flight", "value": 8 },
+      { "source": "Threat Detected", "target": "Fight", "value": 5 },
+      { "source": "Freeze", "target": "Neck Touch", "value": 7 },
+      { "source": "Flight", "target": "Leg Cleanse", "value": 6 },
+      { "source": "Fight", "target": "Lip Compression", "value": 5 },
+      { "source": "Freeze", "target": "Face Rub", "value": 6 },
+      { "source": "Flight", "target": "Hair Play", "value": 5 },
+      { "source": "Neck Touch", "target": "Comfort Restored", "value": 7 },
+      { "source": "Face Rub", "target": "Comfort Restored", "value": 6 },
+      { "source": "Leg Cleanse", "target": "Comfort Restored", "value": 5 },
+      { "source": "Hair Play", "target": "Comfort Restored", "value": 5 },
+      { "source": "Lip Compression", "target": "Comfort Restored", "value": 4 }
+    ]
+  },
+  "options": {
+    "title": "Navarro's Limbic Response Network — From Threat to Pacifying Behaviour"
+  }
+}
+```
+
+Every limbic response triggers specific pacifying behaviours — freeze leads most often to neck touching, flight to leg cleansing, and fight to lip compression — creating observable patterns that trained observers can decode in real time.
+
+```chartjs
+{
+  "type": "bar",
+  "data": {
+    "labels": ["Happy Feet", "Steepling", "Thumb Display", "Ventral Fronting", "Eye Flash", "Gravity-Defying"],
+    "datasets": [{
+      "label": "Comfort Signals — Reliability (%)",
+      "data": [90, 95, 85, 88, 80, 82],
+      "backgroundColor": "#27ae60"
+    }]
+  },
+  "options": {
+    "plugins": { "title": { "display": true, "text": "Navarro's Most Reliable Comfort Indicators" } },
+    "scales": { "y": { "beginAtZero": true, "max": 100 } }
+  }
+}
+```
+
+Steepling — fingertips pressed together — is Navarro's single most reliable confidence indicator, appearing consistently across cultures and contexts.
+
+```mermaid
+quadrantChart
+    title Navarro's Body Parts — Honesty vs Observability
+    x-axis Hard to Observe --> Easy to Observe
+    y-axis Low Honesty --> High Honesty
+    quadrant-1 Best Tells
+    quadrant-2 Hidden Gold
+    quadrant-3 Misleading
+    quadrant-4 Obvious but Unreliable
+    Feet: [0.25, 0.92]
+    Legs: [0.35, 0.85]
+    Torso: [0.55, 0.78]
+    Hands: [0.7, 0.72]
+    Arms: [0.65, 0.68]
+    Face: [0.95, 0.35]
+```
+
+The feet sit in the "hidden gold" quadrant — extremely honest but rarely observed — while the face occupies the "obvious but unreliable" zone, which is why Navarro insists readers learn to read the body from the ground up.
+
 ---
 
 ## Chapter 1: Mastering the Secrets of Nonverbal Communication

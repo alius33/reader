@@ -49,6 +49,12 @@ flowchart TD
 
 The five practices do not operate in sequence — they reinforce each other simultaneously, each one making the others more sustainable.
 
+```d3
+{"type":"treemap","data":{"name":"The Infinite Game","children":[{"name":"Mindset","children":[{"name":"Finite Mindset","value":35,"description":"Win, beat rivals, hit targets"},{"name":"Infinite Mindset","value":65,"description":"Outlast, advance cause, stay in the game"}]},{"name":"Five Practices","children":[{"name":"Just Cause","value":50},{"name":"Trusting Teams","value":45},{"name":"Worthy Rivals","value":30},{"name":"Existential Flexibility","value":40},{"name":"Courage to Lead","value":45}]},{"name":"Two Fuels","children":[{"name":"Will","value":55,"description":"Morale, motivation, commitment"},{"name":"Resources","value":45,"description":"Money, technology, equipment"}]},{"name":"Failure Patterns","children":[{"name":"Ethical Fading","value":35},{"name":"The Decline Pattern","value":40},{"name":"Succession Failures","value":25}]}]},"options":{"title":"The Infinite Game — Complete Framework Map","colorScale":["#2980b9","#27ae60","#e74c3c","#e67e22","#8e44ad","#16a085"]}}
+```
+
+This treemap shows the relative weight Sinek gives to each part of his framework — the Five Practices occupy the largest area, with Just Cause and Trusting Teams as the most heavily developed concepts in the book.
+
 ---
 
 ## Key Concepts at a Glance
@@ -67,6 +73,12 @@ The five practices do not operate in sequence — they reinforce each other simu
 | **Performance vs Trust** | The Navy SEALs framework — trust matters more than individual output |
 | **Keeper of the Cause** | The CEO's primary job is protecting the cause from finite gravitational pull |
 | **The Decline Pattern** | How sacrificing will for resources triggers a death spiral |
+
+```chartjs
+{"type":"radar","data":{"labels":["Difficulty to Master","Long-term Impact","Short-term Cost","Rarity in Practice","Interconnectedness"],"datasets":[{"label":"Just Cause","data":[7,10,6,6,9],"borderColor":"#2980b9","backgroundColor":"rgba(41,128,185,0.15)"},{"label":"Trusting Teams","data":[9,9,5,7,8],"borderColor":"#27ae60","backgroundColor":"rgba(39,174,96,0.15)"},{"label":"Worthy Rivals","data":[5,6,3,8,6],"borderColor":"#e67e22","backgroundColor":"rgba(230,126,34,0.15)"},{"label":"Existential Flexibility","data":[10,10,10,9,7],"borderColor":"#e74c3c","backgroundColor":"rgba(231,76,60,0.15)"},{"label":"Courage to Lead","data":[9,9,8,8,10],"borderColor":"#8e44ad","backgroundColor":"rgba(142,68,173,0.15)"}]},"options":{"plugins":{"title":{"display":true,"text":"Five Practices of the Infinite Game — Multi-Dimensional Assessment"}},"scales":{"r":{"min":0,"max":10,"ticks":{"stepSize":2}}}}}
+```
+
+Existential Flexibility and Courage to Lead score highest on difficulty and short-term cost, while Just Cause and Trusting Teams deliver the greatest long-term impact — illustrating why most leaders default to the easier finite practices.
 
 ---
 
@@ -153,6 +165,12 @@ Sinek identifies four possible combinations when players with different mindsets
 - Companies with infinite mindsets do not always win in the short term — they often look like they are losing by every conventional metric
 - But they endure, adapt, and eventually outlast rivals who are optimising for the current quarter
 - <b style="color: #27ae60">The infinite player's advantage is time</b> — they are not trying to win this round, they are trying to stay in the game for the next hundred rounds
+
+```chartjs
+{"type":"bar","data":{"labels":["Short-term Gains","Long-term Sustainability","Employee Trust","Ethical Standing","Innovation Rate","Adaptability"],"datasets":[{"label":"Finite Mindset","data":[85,25,30,35,40,20],"backgroundColor":"rgba(231,76,60,0.7)","borderColor":"#e74c3c","borderWidth":1},{"label":"Infinite Mindset","data":[45,90,85,88,80,92],"backgroundColor":"rgba(39,174,96,0.7)","borderColor":"#27ae60","borderWidth":1}]},"options":{"plugins":{"title":{"display":true,"text":"Finite vs Infinite Mindset — Typical Outcomes (Indexed Score)"}},"scales":{"y":{"beginAtZero":true,"max":100,"title":{"display":true,"text":"Score (0-100)"}}}}}
+```
+
+The finite mindset outperforms only on short-term gains; infinite-minded organisations dominate on every dimension that determines long-term survival — sustainability, trust, ethics, innovation, and adaptability.
 
 ---
 
@@ -492,6 +510,12 @@ Will and resources create a virtuous cycle when both are managed — the cause g
   - "We need to cut costs to survive this quarter" — true in isolation
   - But the cumulative effect is an organisation that has gutted the very capabilities it needs to generate revenue
   - It is the organisational equivalent of selling your tools to pay your rent
+
+```chartjs
+{"type":"line","data":{"labels":["Year 1","Year 2","Year 3","Year 4","Year 5","Year 6","Year 7","Year 8"],"datasets":[{"label":"Will (Employee Morale & Commitment)","data":[85,75,60,48,35,25,18,10],"borderColor":"#2980b9","backgroundColor":"rgba(41,128,185,0.1)","tension":0.3,"fill":true},{"label":"Resources (Revenue & Assets)","data":[90,88,82,70,55,40,28,15],"borderColor":"#27ae60","backgroundColor":"rgba(39,174,96,0.1)","tension":0.3,"fill":true},{"label":"Cost-Cutting Events","data":[null,null,80,null,65,null,45,null],"borderColor":"#e74c3c","backgroundColor":"#e74c3c","pointRadius":8,"pointStyle":"triangle","showLine":false}]},"options":{"plugins":{"title":{"display":true,"text":"The Decline Pattern — How Sacrificing Will Triggers a Death Spiral"}},"scales":{"y":{"beginAtZero":true,"max":100,"title":{"display":true,"text":"Index (0-100)"}}}}}
+```
+
+Each round of cost-cutting (red triangles) produces a temporary resource stabilisation but accelerates the decline in will — and once will collapses, resources follow within 1-2 years, creating the death spiral Sinek describes.
 
 > [!abstract] The Will-Resources Diagnostic
 > 1. Ask: are our best people excited to come to work, or counting the days until they leave?
@@ -882,6 +906,12 @@ Why courage is the linchpin:
 | Stand up to external enemies | Stand up to internal pressure |
 | Be bold when the odds are good | Be bold when the odds are uncertain |
 | Courage of conviction in your strategy | Courage to abandon your strategy when the cause demands it |
+
+```d3
+{"type":"force","data":{"nodes":[{"id":"jc","label":"Just Cause","group":1},{"id":"tt","label":"Trusting Teams","group":2},{"id":"wr","label":"Worthy Rivals","group":3},{"id":"ef","label":"Existential Flexibility","group":4},{"id":"cl","label":"Courage to Lead","group":5},{"id":"will","label":"Will","group":6},{"id":"res","label":"Resources","group":6}],"links":[{"source":"jc","target":"tt","label":"Provides direction"},{"source":"jc","target":"ef","label":"Anchors change"},{"source":"tt","target":"ef","label":"Enables execution"},{"source":"tt","target":"wr","label":"Creates safety to learn"},{"source":"wr","target":"ef","label":"Reveals gaps"},{"source":"ef","target":"cl","label":"Demands courage"},{"source":"cl","target":"tt","label":"Protects trust"},{"source":"cl","target":"jc","label":"Sustains commitment"},{"source":"jc","target":"will","label":"Generates"},{"source":"will","target":"res","label":"Drives"},{"source":"res","target":"jc","label":"Funds"}]},"options":{"title":"How the Five Practices Interconnect and Reinforce Each Other","width":700,"height":500}}
+```
+
+The force diagram reveals that Courage to Lead sits at a critical junction — it both protects Trusting Teams and sustains commitment to the Just Cause, making it the linchpin without which the other practices collapse under finite pressure.
 
 ---
 

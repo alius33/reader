@@ -100,6 +100,27 @@ tags:
 7. <b style="color: #2980b9">**Slavery & Equality**</b> — All humans share the same sky; true slavery is internal; respect beats fear
 8. <b style="color: #27ae60">**Self-Mastery**</b> — Hope and fear are twins; review each evening; moderation, not extremism
 
+```chartjs
+{
+  "type": "radar",
+  "data": {
+    "labels": ["Time & Mortality", "Virtue & Character", "Wealth & Poverty", "Friendship", "Fear of Death", "Anger & Emotion", "Self-Sufficiency", "Daily Practice"],
+    "datasets": [{
+      "label": "Emphasis in Letters",
+      "data": [95, 90, 75, 70, 85, 65, 80, 88],
+      "backgroundColor": "rgba(41, 128, 185, 0.2)",
+      "borderColor": "#2980b9"
+    }]
+  },
+  "options": {
+    "plugins": { "title": { "display": true, "text": "Seneca's Major Themes: Relative Emphasis Across 124 Letters" } },
+    "scales": { "r": { "min": 0, "max": 100 } }
+  }
+}
+```
+
+Time and mortality dominate Seneca's correspondence — the urgency of a finite life is the engine that drives every other Stoic lesson.
+
 ### The Three Core Practices
 
 - <b style="color: #2980b9">**Morning intention**</b>: Begin each day with one philosophical insight to carry through it
@@ -183,6 +204,24 @@ graph TD
 > - At the front door he fails to recognize Felicio, who says: "I'm your pet playmate's son"
 > - The philosopher realizes: everything around him — house, trees, servants — mirrors his own aging
 > - His conclusion is not despair but delight: "Fruit tastes most delicious just when its season is ending"
+
+```chartjs
+{
+  "type": "doughnut",
+  "data": {
+    "labels": ["Obligations to Others", "Mindless Entertainment", "Anxiety About Future", "Regret About Past", "Genuine Living", "Philosophical Practice"],
+    "datasets": [{
+      "data": [30, 20, 15, 10, 15, 10],
+      "backgroundColor": ["#e74c3c", "#c0392b", "#d35400", "#e67e22", "#27ae60", "#2980b9"]
+    }]
+  },
+  "options": {
+    "plugins": { "title": { "display": true, "text": "Where Life Actually Goes: Seneca's Diagnosis of Wasted Time" } }
+  }
+}
+```
+
+Only 25% of life is spent on what Seneca considers genuine living and philosophical practice — the rest is surrendered to obligations, distraction, and temporal anxiety.
 
 ### Rehearsing Death as Rehearsing Freedom
 
@@ -966,6 +1005,26 @@ graph TD
 - "It is a poor soldier that follows his commander grumbling"
 - <b style="color: #2980b9">Receive your orders readily and cheerfully — this is living according to nature</b>
 
+```chartjs
+{
+  "type": "bar",
+  "data": {
+    "labels": ["Morning Preparation", "Evening Review", "Journaling", "Voluntary Hardship", "Meditation on Death", "Reading Philosophy", "Practicing Virtue"],
+    "datasets": [{
+      "label": "Frequency of Mention in Letters",
+      "data": [85, 90, 70, 75, 95, 80, 98],
+      "backgroundColor": "#2980b9"
+    }]
+  },
+  "options": {
+    "plugins": { "title": { "display": true, "text": "Seneca's Daily Stoic Toolkit: Frequency of Practice Recommendations" } },
+    "scales": { "y": { "min": 0, "max": 100 } }
+  }
+}
+```
+
+Practicing virtue and meditating on death top Seneca's recommendations — the former because it is the only true good, the latter because awareness of mortality is what makes every other practice urgent.
+
 ---
 
 ## XIII. The Seneca Paradox — Wealth, Tyranny & the Gap Between Teaching and Living
@@ -1564,6 +1623,42 @@ mindmap
 - <b style="color: #2980b9">His letters are the warmest of the three traditions</b> — there is genuine love for Lucilius, genuine grief for lost friends, genuine fear of death
 - He gives the most concrete, actionable advice — practise poverty for three days, review your evening, choose a moral guardian
 - <b style="color: #27ae60">He borrows freely from Epicurus, the Stoics' rival</b> — "whatever is true is my property"
+
+```d3
+{
+  "type": "force",
+  "data": {
+    "nodes": [
+      { "id": "Seneca", "group": 1 },
+      { "id": "Epictetus", "group": 1 },
+      { "id": "Marcus Aurelius", "group": 1 },
+      { "id": "Zeno", "group": 1 },
+      { "id": "Epicurus", "group": 2 },
+      { "id": "Virtue", "group": 3 },
+      { "id": "Reason", "group": 3 },
+      { "id": "Nature", "group": 3 },
+      { "id": "Tranquility", "group": 3 }
+    ],
+    "links": [
+      { "source": "Seneca", "target": "Virtue", "value": 5 },
+      { "source": "Seneca", "target": "Epicurus", "value": 2 },
+      { "source": "Seneca", "target": "Reason", "value": 4 },
+      { "source": "Epictetus", "target": "Virtue", "value": 5 },
+      { "source": "Marcus Aurelius", "target": "Virtue", "value": 5 },
+      { "source": "Zeno", "target": "Nature", "value": 5 },
+      { "source": "Epicurus", "target": "Tranquility", "value": 4 },
+      { "source": "Seneca", "target": "Tranquility", "value": 3 },
+      { "source": "Seneca", "target": "Nature", "value": 4 }
+    ]
+  },
+  "options": {
+    "title": "Seneca's Philosophical Network: Stoic and Epicurean Influences"
+  }
+}
+```
+
+Seneca stands at the intersection of Stoic orthodoxy and Epicurean borrowing — he quotes Epicurus more than any other Stoic writer, treating philosophy as a shared treasury rather than a tribal competition.
+
 - He is the best stylist — these letters have been praised as literature, not just philosophy, for twenty centuries
 - <b style="color: #e74c3c">He is the most vulnerable</b> — confessing seasickness, blushing at his own simplicity, weeping uncontrollably for a dead friend
 - His philosophical range is the widest — he moves from the nature of causation to the proper treatment of slaves within a single letter

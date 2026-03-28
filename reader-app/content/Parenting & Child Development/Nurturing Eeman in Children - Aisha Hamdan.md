@@ -72,6 +72,119 @@ flowchart TB
 
 ---
 
+```chartjs
+{
+  "type": "radar",
+  "data": {
+    "labels": ["Belief in Allah", "Belief in Angels", "Belief in Prophets", "Belief in Divine Books", "Belief in Day of Resurrection", "Belief in Qadar"],
+    "datasets": [
+      {
+        "label": "Typical Teaching Emphasis",
+        "data": [90, 40, 70, 50, 55, 35],
+        "backgroundColor": "rgba(231, 76, 60, 0.2)",
+        "borderColor": "#e74c3c"
+      },
+      {
+        "label": "Recommended Balance (Hamdan)",
+        "data": [95, 80, 85, 80, 85, 80],
+        "backgroundColor": "rgba(39, 174, 96, 0.2)",
+        "borderColor": "#27ae60"
+      }
+    ]
+  },
+  "options": {
+    "title": "Six Pillars of Eeman: Teaching Emphasis Gap"
+  }
+}
+```
+Most parents overemphasize belief in Allah while neglecting the other five pillars — Hamdan argues all six must be taught with roughly equal depth for balanced faith development.
+
+```d3
+{
+  "type": "treemap",
+  "data": [
+    {"name": "Home Environment", "category": "Environment", "value": 45},
+    {"name": "Peer Influence", "category": "Environment", "value": 30},
+    {"name": "Community/Masjid", "category": "Environment", "value": 25},
+    {"name": "Stories of Prophets", "category": "Teaching", "value": 20},
+    {"name": "Daily Practices", "category": "Teaching", "value": 25},
+    {"name": "Qur'an Connection", "category": "Teaching", "value": 20},
+    {"name": "Self-Esteem Building", "category": "Personality", "value": 15}
+  ],
+  "options": {
+    "title": "Components of Eeman Nurturing: Relative Impact",
+    "colors": ["#2980b9", "#3498db", "#27ae60", "#e74c3c", "#f39c12", "#9b59b6", "#1abc9c"]
+  }
+}
+```
+The home environment has the single greatest impact on a child's spiritual development — more than peers and community combined — reinforcing that tarbiyah begins at home.
+
+```chartjs
+{
+  "type": "line",
+  "data": {
+    "labels": ["0-3 years", "3-5 years", "5-7 years", "7-10 years", "10-13 years", "13+ years"],
+    "datasets": [
+      {
+        "label": "Fitrah Awareness",
+        "data": [90, 85, 80, 75, 65, 55],
+        "borderColor": "#27ae60",
+        "fill": false
+      },
+      {
+        "label": "Parental Influence",
+        "data": [95, 90, 80, 70, 55, 40],
+        "borderColor": "#2980b9",
+        "fill": false
+      },
+      {
+        "label": "Peer Influence",
+        "data": [5, 10, 20, 35, 55, 70],
+        "borderColor": "#e74c3c",
+        "fill": false
+      },
+      {
+        "label": "Internalized Faith (Goal)",
+        "data": [10, 20, 35, 50, 65, 80],
+        "borderColor": "#f39c12",
+        "fill": false
+      }
+    ]
+  },
+  "options": {
+    "title": "Faith Development: The Race Between Influence Sources"
+  }
+}
+```
+As peer influence rises and parental influence declines, the goal is for internalized faith to grow fast enough to become the child's own compass by adolescence.
+
+```mermaid
+mindmap
+  root((Nurturing Eeman))
+    Foundations
+      Aqeedah (Creed)
+      Eeman (Active Faith)
+      Ihsan (Excellence)
+      Fitrah (Innate Disposition)
+    Six Pillars
+      Belief in Allah
+      Belief in Angels
+      Belief in Prophets
+      Belief in Books
+      Belief in Resurrection
+      Belief in Qadar
+    Islamic Personality
+      Self-Esteem
+      Moral Character
+      Social Responsibility
+      Taqwa
+    Three Environments
+      Home
+      Peers
+      Community/Masjid
+```
+The four-part framework moves from theological foundations through doctrinal pillars to character development and environmental management — a complete curriculum for Muslim parents.
+
 ## Part One: The Foundations
 
 ### Chapter 1 — Aqeedah, Eeman, and Ihsan

@@ -74,6 +74,39 @@ Timothy Ferriss is a serial entrepreneur, angel investor, and host of *The Tim F
 | **Light-grip epistemology** | Hold beliefs firmly enough to act but loosely enough to update when new evidence arrives |
 | **Vulnerability as leadership** | Admitting uncertainty in real time is leadership; downloading instructions is just delegation |
 
+```chartjs
+{
+  "type": "bar",
+  "data": {
+    "labels": ["Man's Search for Meaning", "Tao Te Ching", "Sapiens", "Poor Charlie's Almanack", "Meditations", "Siddhartha"],
+    "datasets": [{
+      "label": "Times Gifted by Mentors",
+      "data": [18, 12, 10, 8, 7, 5],
+      "backgroundColor": ["#2980b9", "#27ae60", "#8e44ad", "#e67e22", "#e74c3c", "#3498db"],
+      "borderColor": ["#1f6fa3", "#1e8449", "#6c3483", "#d35400", "#c0392b", "#2471a3"],
+      "borderWidth": 1
+    }]
+  },
+  "options": {
+    "plugins": {
+      "title": {
+        "display": true,
+        "text": "Most-Gifted Books by Mentors"
+      }
+    },
+    "scales": {
+      "y": {
+        "beginAtZero": true,
+        "title": { "display": true, "text": "Number of Mentor Recommendations" }
+      }
+    },
+    "indexAxis": "y"
+  }
+}
+```
+
+Viktor Frankl's *Man's Search for Meaning* dominates the list — suggesting that the world-class performers in this book converge on the insight that purpose, not talent or luck, is the ultimate driver of extraordinary achievement.
+
 ---
 
 ## The Eleven Questions
@@ -304,6 +337,46 @@ The failure-to-learning pipeline only works if you let the emotional stage compl
 
 The convergence across five unrelated mentors — investor, athlete, wrestler, founder, CEO — reveals that radical selectivity is not a personality quirk but a structural requirement of high performance.
 
+```d3
+{
+  "type": "force",
+  "data": {
+    "nodes": [
+      { "id": "Saying No", "group": "theme", "radius": 20 },
+      { "id": "Naval Ravikant", "group": "mentor", "radius": 14 },
+      { "id": "Josh Waitzkin", "group": "mentor", "radius": 14 },
+      { "id": "Kyle Maynard", "group": "mentor", "radius": 14 },
+      { "id": "Jason Fried", "group": "mentor", "radius": 14 },
+      { "id": "Dustin Moskovitz", "group": "mentor", "radius": 14 },
+      { "id": "Time is irreplaceable", "group": "method", "radius": 10 },
+      { "id": "99% filter for depth", "group": "method", "radius": 10 },
+      { "id": "Eliminate all 7s", "group": "method", "radius": 10 },
+      { "id": "No commitments beyond a week", "group": "method", "radius": 10 },
+      { "id": "Say no immediately", "group": "method", "radius": 10 }
+    ],
+    "links": [
+      { "source": "Saying No", "target": "Naval Ravikant", "value": 3 },
+      { "source": "Saying No", "target": "Josh Waitzkin", "value": 3 },
+      { "source": "Saying No", "target": "Kyle Maynard", "value": 3 },
+      { "source": "Saying No", "target": "Jason Fried", "value": 3 },
+      { "source": "Saying No", "target": "Dustin Moskovitz", "value": 3 },
+      { "source": "Naval Ravikant", "target": "Time is irreplaceable", "value": 2 },
+      { "source": "Josh Waitzkin", "target": "99% filter for depth", "value": 2 },
+      { "source": "Kyle Maynard", "target": "Eliminate all 7s", "value": 2 },
+      { "source": "Jason Fried", "target": "No commitments beyond a week", "value": 2 },
+      { "source": "Dustin Moskovitz", "target": "Say no immediately", "value": 2 }
+    ]
+  },
+  "options": {
+    "title": "The Saying-No Network — Five Mentors, Five Methods, One Principle",
+    "width": 700,
+    "height": 450
+  }
+}
+```
+
+Five mentors from completely unrelated domains independently converge on radical selectivity — each arriving at their own method, but all sharing the structural insight that protecting attention is the prerequisite for depth.
+
 ---
 
 ### The Necessary Counterbalance
@@ -474,6 +547,55 @@ flowchart LR
 ```
 
 The career river model is one of the few frameworks in the book that is genuinely structural rather than motivational — it gives you a diagnostic and a prescription, rare in a book that often defaults to inspiration.
+
+```chartjs
+{
+  "type": "radar",
+  "data": {
+    "labels": ["Rule-Following", "Self-Expression", "Vision", "Feedback-Seeking", "Innovation", "Structure"],
+    "datasets": [
+      {
+        "label": "Rigidity Bank",
+        "data": [10, 2, 3, 8, 1, 10],
+        "backgroundColor": "rgba(231, 76, 60, 0.2)",
+        "borderColor": "#e74c3c",
+        "pointBackgroundColor": "#e74c3c"
+      },
+      {
+        "label": "Strong Poet (Centre)",
+        "data": [6, 8, 9, 7, 8, 6],
+        "backgroundColor": "rgba(39, 174, 96, 0.2)",
+        "borderColor": "#27ae60",
+        "pointBackgroundColor": "#27ae60"
+      },
+      {
+        "label": "Chaos Bank",
+        "data": [1, 9, 5, 2, 9, 1],
+        "backgroundColor": "rgba(41, 128, 185, 0.2)",
+        "borderColor": "#2980b9",
+        "pointBackgroundColor": "#2980b9"
+      }
+    ]
+  },
+  "options": {
+    "plugins": {
+      "title": {
+        "display": true,
+        "text": "Career River Model — Diagnostic Profile"
+      }
+    },
+    "scales": {
+      "r": {
+        "beginAtZero": true,
+        "max": 10,
+        "ticks": { "stepSize": 2 }
+      }
+    }
+  }
+}
+```
+
+The Strong Poet occupies the centre of the river — scoring moderately high across all dimensions rather than maximizing any single one — which is why Duncan describes mastery as integration rather than specialisation.
 
 > [!tip] Core Insight
 > The skill is not staying in the middle of the river — it is recognising which bank you are stuck on and choosing which direction to swim at each phase of life.
@@ -680,6 +802,31 @@ Courage starts the cycle; confidence is the reward that arrives after, not the p
 ## Discipline Creates Freedom
 
 *Jocko Willink's mantra captures a genuine paradox that most people get backwards — the most free and effective people in this book are also the most disciplined.*
+
+```d3
+{
+  "type": "heatmap",
+  "data": {
+    "rows": ["Jocko Willink", "Arianna Huffington", "Brené Brown", "Tom Peters", "Tim Ferriss"],
+    "columns": ["Discipline", "Recovery", "Courage", "Depth", "Generosity"],
+    "values": [
+      [10, 4, 9, 7, 5],
+      [6, 10, 7, 5, 8],
+      [5, 7, 10, 9, 8],
+      [7, 5, 8, 10, 7],
+      [8, 6, 7, 6, 9]
+    ]
+  },
+  "options": {
+    "title": "Mentor Practice Profiles — Mapping to Core Themes",
+    "colorScale": "greens",
+    "width": 650,
+    "height": 350
+  }
+}
+```
+
+Each mentor's signature strength illuminates a different facet of the discipline-freedom paradox — Willink through military rigour, Huffington through recovery as discipline, Brown through the courage to be vulnerable, Peters through depth of presence, and Ferriss through generous experimentation.
 
 - <b style="color: #2980b9">Discipline equals freedom</b> — one of the book's most quoted lines
 - The pattern across mentors is consistent:

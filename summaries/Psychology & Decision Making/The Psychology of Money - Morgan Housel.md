@@ -56,6 +56,37 @@ flowchart TD
 
 This diagram captures Housel's core argument: outcomes depend on luck and risk as much as skill, but humans systematically attribute success to ability and failure to misfortune.
 
+```chartjs
+{
+  "type": "line",
+  "data": {
+    "labels": ["Age 10", "Age 20", "Age 30", "Age 40", "Age 50", "Age 60", "Age 65", "Age 70", "Age 80", "Age 90"],
+    "datasets": [
+      {
+        "label": "Warren Buffett's Net Worth ($B)",
+        "data": [0.00001, 0.01, 1, 1.4, 3.8, 16, 42, 58, 73, 84.5],
+        "borderColor": "#27ae60",
+        "fill": true,
+        "backgroundColor": "rgba(39, 174, 96, 0.1)"
+      },
+      {
+        "label": "Jim Simons's Net Worth ($B)",
+        "data": [0, 0, 0, 0, 0, 5, 12, 18, 23, 28],
+        "borderColor": "#2980b9",
+        "fill": true,
+        "backgroundColor": "rgba(41, 128, 185, 0.1)"
+      }
+    ]
+  },
+  "options": {
+    "plugins": { "title": { "display": true, "text": "Compounding in Action: Buffett vs Simons — Time Beats Returns" } },
+    "scales": { "y": { "title": { "display": true, "text": "Net Worth (Billions $)" } } }
+  }
+}
+```
+
+Despite earning triple the annual returns, Simons's fortune is dwarfed by Buffett's — because Buffett started 40 years earlier and 96% of his wealth came after age 65, proving that time is the most powerful variable in compounding.
+
 ---
 
 ## Key Concepts at a Glance
@@ -365,6 +396,48 @@ flowchart TD
 ```
 
 This diagram illustrates the power law at the heart of tail-driven outcomes — the vast majority of bets lose, but the rare extreme winners overwhelm everything else.
+
+```chartjs
+{
+  "type": "doughnut",
+  "data": {
+    "labels": ["Lose Money (~65%)", "Modest Returns (~32%)", "Extraordinary Returns (~3%)"],
+    "datasets": [{
+      "data": [65, 32, 3],
+      "backgroundColor": ["#e74c3c", "#f39c12", "#27ae60"]
+    }]
+  },
+  "options": {
+    "plugins": { "title": { "display": true, "text": "Venture Capital's Brutal Mathematics: Tails Drive Everything" } }
+  }
+}
+```
+
+Only 3% of investments produce extraordinary returns — but those tail events generate nearly all of the industry's total profits, making it mathematically correct to be wrong most of the time.
+
+```d3
+{
+  "type": "treemap",
+  "data": [
+    { "name": "Freedom (Time Control)", "value": 95, "category": "Priceless" },
+    { "name": "Room for Error", "value": 90, "category": "Critical" },
+    { "name": "Compounding (Time)", "value": 88, "category": "Critical" },
+    { "name": "Savings Rate", "value": 85, "category": "Core" },
+    { "name": "Saying 'Enough'", "value": 80, "category": "Core" },
+    { "name": "Staying Wealthy (Paranoia)", "value": 75, "category": "Core" },
+    { "name": "Reasonable > Rational", "value": 70, "category": "Wisdom" },
+    { "name": "Tails Win", "value": 65, "category": "Wisdom" },
+    { "name": "Pessimism Is Seductive", "value": 60, "category": "Awareness" },
+    { "name": "No One's Crazy", "value": 55, "category": "Awareness" }
+  ],
+  "options": {
+    "title": "Housel's Hierarchy of Financial Wisdom",
+    "colorField": "category"
+  }
+}
+```
+
+Housel's hierarchy reveals that the highest financial value is not returns or intelligence but freedom — the ability to control your time — built on a foundation of savings, compounding, and room for error.
 
 ---
 
@@ -978,6 +1051,37 @@ flowchart TD
 ```
 
 This diagram traces the emotional arc of American money culture — from shared prosperity to broken expectations to debt-fuelled maintenance of a lifestyle that wages alone can no longer support.
+
+```chartjs
+{
+  "type": "radar",
+  "data": {
+    "labels": ["Humility", "Long Time Horizon", "Room for Error", "Savings Focus", "Freedom Priority", "Emotional Control"],
+    "datasets": [
+      {
+        "label": "Housel's Philosophy",
+        "data": [90, 95, 95, 90, 95, 85],
+        "backgroundColor": "rgba(39, 174, 96, 0.15)",
+        "borderColor": "#27ae60",
+        "pointBackgroundColor": "#27ae60"
+      },
+      {
+        "label": "Typical Investor",
+        "data": [30, 25, 20, 35, 20, 25],
+        "backgroundColor": "rgba(231, 76, 60, 0.15)",
+        "borderColor": "#e74c3c",
+        "pointBackgroundColor": "#e74c3c"
+      }
+    ]
+  },
+  "options": {
+    "plugins": { "title": { "display": true, "text": "Housel's Financial Philosophy vs The Typical Investor" } },
+    "scales": { "r": { "min": 0, "max": 100 } }
+  }
+}
+```
+
+Housel's approach scores highest on time horizon and room for error — the two most powerful but least intuitive financial principles — while the typical investor underweights exactly these dimensions.
 
 ---
 

@@ -215,6 +215,33 @@ Every specific fear, no matter how varied on the surface, drills down through th
 | **Truth 4** | Everyone feels it — fearless people are just acting anyway |
 | **Truth 5** | Chronic avoidance is worse than acute action |
 
+```chartjs
+{
+  "type": "bar",
+  "data": {
+    "labels": ["Public Speaking", "Career Change", "Ending Relationship", "Starting Business", "Confronting Someone"],
+    "datasets": [
+      {
+        "label": "Cost of Action (Acute Fear, weeks)",
+        "data": [2, 8, 6, 10, 1],
+        "backgroundColor": "#27ae60"
+      },
+      {
+        "label": "Cost of Avoidance (Chronic Dread, months)",
+        "data": [24, 60, 48, 120, 36],
+        "backgroundColor": "#e74c3c"
+      }
+    ]
+  },
+  "options": {
+    "plugins": { "title": { "display": true, "text": "Truth 5: The True Cost Comparison — Action vs Avoidance (Duration)" } },
+    "scales": { "y": { "title": { "display": true, "text": "Duration of Suffering" } } }
+  }
+}
+```
+
+The red bars dwarf the green in every scenario — chronic avoidance costs 5-12x more suffering-time than the acute fear of just doing the thing.
+
 ---
 
 ## Chapter 3: Positive Thinking and the Chatterbox
@@ -297,6 +324,35 @@ The conscious mind acts as a gatekeeper — whichever voice it feeds determines 
 | I hope | I know |
 | If only | Next time |
 | Life is a struggle | Life is an adventure |
+
+```chartjs
+{
+  "type": "radar",
+  "data": {
+    "labels": ["Agency", "Optimism", "Responsibility", "Growth Orientation", "Emotional Resilience", "Future Focus"],
+    "datasets": [
+      {
+        "label": "Pain Vocabulary",
+        "data": [15, 20, 10, 15, 20, 10],
+        "backgroundColor": "rgba(231, 76, 60, 0.2)",
+        "borderColor": "#e74c3c"
+      },
+      {
+        "label": "Power Vocabulary",
+        "data": [90, 85, 95, 90, 80, 88],
+        "backgroundColor": "rgba(39, 174, 96, 0.2)",
+        "borderColor": "#27ae60"
+      }
+    ]
+  },
+  "options": {
+    "plugins": { "title": { "display": true, "text": "Pain vs Power Vocabulary: Psychological Impact Profile" } },
+    "scales": { "r": { "min": 0, "max": 100 } }
+  }
+}
+```
+
+Power vocabulary scores dramatically higher across all psychological dimensions, illustrating how a simple language shift transforms your entire inner posture from helplessness to agency.
 
 - The critical shift in the list is from "I can't" to "I won't" or "I choose not to"
   - "I can't" implies powerlessness — some external force is preventing you
@@ -679,6 +735,31 @@ The mechanism is simple:
 | 8 | Spirituality / higher self |
 | 9 | Health / physical wellbeing |
 
+```d3
+{
+  "type": "treemap",
+  "data": {
+    "name": "Identity",
+    "children": [
+      { "name": "Work / Career", "value": 35 },
+      { "name": "Intimate Relationship", "value": 25 },
+      { "name": "Family", "value": 15 },
+      { "name": "Friends", "value": 10 },
+      { "name": "Personal Growth", "value": 8 },
+      { "name": "Leisure / Creativity", "value": 3 },
+      { "name": "Community", "value": 2 },
+      { "name": "Spirituality", "value": 1 },
+      { "name": "Health", "value": 1 }
+    ]
+  },
+  "options": {
+    "title": "Typical Over-Concentrated Identity Grid (Before Diversification)"
+  }
+}
+```
+
+This treemap shows how most people over-invest in work and romance, leaving six other identity cells dangerously underfilled — exactly the pattern Jeffers warns creates catastrophic vulnerability to loss.
+
 - The goal is not to achieve perfect balance across all nine — that is unrealistic
 - The goal is to ensure you are investing in enough cells that no single loss can destroy you
 - Jeffers suggests that <b style="color: #27ae60">a minimum of five or six active cells provides a resilient identity structure</b>
@@ -805,6 +886,31 @@ The mechanism is simple:
 | **Time** | Full presence and attention | Giving the most scarce resource signals surplus |
 | **Money** | Financial giving, even modest amounts | Proves to your subconscious that you have enough |
 | **Love** | Unconditional, without keeping score | The most challenging and the most transformative |
+
+```chartjs
+{
+  "type": "polarArea",
+  "data": {
+    "labels": ["Thanks", "Information", "Praise", "Time", "Money", "Love"],
+    "datasets": [{
+      "data": [60, 55, 45, 80, 40, 95],
+      "backgroundColor": [
+        "rgba(52, 152, 219, 0.6)",
+        "rgba(46, 204, 113, 0.6)",
+        "rgba(155, 89, 182, 0.6)",
+        "rgba(241, 196, 15, 0.6)",
+        "rgba(230, 126, 34, 0.6)",
+        "rgba(231, 76, 60, 0.6)"
+      ]
+    }]
+  },
+  "options": {
+    "plugins": { "title": { "display": true, "text": "Six Domains of Giving: Transformative Impact on Scarcity Fear" } }
+  }
+}
+```
+
+Love and Time — the two domains requiring the most personal vulnerability — deliver the greatest impact on dissolving the fear of scarcity.
 
 > [!example] The Gratitude Exercise
 > - In a workshop exercise, participants were asked to go home and thank their spouse or partner for something specific, something real, something usually taken for granted

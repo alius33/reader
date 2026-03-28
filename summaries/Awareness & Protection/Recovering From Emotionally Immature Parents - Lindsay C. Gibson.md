@@ -72,6 +72,24 @@ reading-time: "45-55 min"
 | <b style="color: #e74c3c">Passive</b> | Nicer parent who lets the other be the bad guy | Children are unprotected when it matters |
 | <b style="color: #e74c3c">Rejecting</b> | Avoids interaction, expects family to revolve around them | Children feel invisible |
 
+```chartjs
+{
+  "type": "radar",
+  "data": {
+    "labels": ["Emotional Volatility", "Control Needs", "Avoidance", "Empathy Deficit", "Boundary Violation", "Self-Preoccupation"],
+    "datasets": [
+      {"label": "Emotional Type", "data": [10, 6, 3, 7, 8, 7], "borderColor": "#e74c3c", "backgroundColor": "rgba(231,76,60,0.1)"},
+      {"label": "Driven Type", "data": [4, 10, 2, 6, 7, 8], "borderColor": "#f39c12", "backgroundColor": "rgba(243,156,18,0.1)"},
+      {"label": "Passive Type", "data": [2, 3, 9, 5, 4, 6], "borderColor": "#3498db", "backgroundColor": "rgba(52,152,219,0.1)"},
+      {"label": "Rejecting Type", "data": [3, 5, 10, 9, 6, 9], "borderColor": "#8e44ad", "backgroundColor": "rgba(142,68,173,0.1)"}
+    ]
+  },
+  "options": {"plugins": {"title": {"display": true, "text": "Four EI Parent Types: Behavioral Signature Profiles"}}, "scales": {"r": {"beginAtZero": true, "max": 10}}}
+}
+```
+
+*Each EI parent type has a distinctive behavioral signature — Emotional parents spike on volatility, Driven parents on control, Passive parents on avoidance, and Rejecting parents on both avoidance and empathy deficit.*
+
 ### The Four Weapons: Emotional Coercions
 
 *EI parents control you by making you feel things that are to their advantage — and they are masters at it.*
@@ -80,6 +98,12 @@ reading-time: "45-55 min"
 - <b style="color: #e74c3c">Fear</b> — outbursts, meltdowns, threats of abandonment make you tractable
 - <b style="color: #e74c3c">Guilt</b> — for not sacrificing enough, for having a better life than theirs
 - <b style="color: #e74c3c">Shame</b> — the deepest weapon; makes you feel there's something fundamentally wrong with you, not just that you did something wrong
+
+```d3
+{"type":"heatmap","data":{"xLabels":["Self-Doubt","Fear","Guilt","Shame"],"yLabels":["Emotional Parent","Driven Parent","Passive Parent","Rejecting Parent"],"values":[[7,9,6,8],[9,5,7,6],[5,4,8,5],[8,7,5,10]]},"options":{"title":"Emotional Coercion Weapons by EI Parent Type (1-10 Intensity)"}}
+```
+
+*The heatmap reveals each parent type's preferred coercion arsenal — Emotional parents weaponize fear, Driven parents deploy self-doubt, Passive parents leverage guilt, and Rejecting parents specialize in shame.*
 
 ### The Recovery Path
 
@@ -113,6 +137,19 @@ graph TD
 - Two foundation stones: see yourself as <b style="color: #2980b9">equal in importance</b> and maintain <b style="color: #2980b9">unconditional self-connection</b>
 - Focus on one interaction at a time, not fixing the whole relationship
 - You can't change them — but you can change how you respond, and that changes everything
+
+```chartjs
+{
+  "type": "doughnut",
+  "data": {
+    "labels": ["Understand the EIRS", "Spot Emotional Takeovers", "Resist Coercions", "Reclaim Inner World", "Clear Mental Clutter", "Update Self-Concept"],
+    "datasets": [{"data": [15, 15, 20, 20, 15, 15], "backgroundColor": ["#e74c3c", "#e67e22", "#f39c12", "#3498db", "#2980b9", "#27ae60"]}]
+  },
+  "options": {"plugins": {"title": {"display": true, "text": "Gibson's Recovery Path: Six Steps to Emotional Autonomy"}}}
+}
+```
+
+*Gibson's six recovery steps form an integrated system — resisting coercions and reclaiming the inner world carry the heaviest weight because they represent the active transition from understanding to autonomy.*
 
 ---
 
@@ -962,6 +999,12 @@ graph TD
 | One-interaction focus | Make relating manageable | Treat each meeting as brand new |
 | Mindful self-awareness | Stay present around EIPs | "Breathing in, I am here. Breathing out, I am calm" |
 | Clear intimate communication | Express yourself without attacking | Describe behaviour → state feelings → ask intent |
+
+```d3
+{"type":"sankey","data":{"nodes":[{"id":"EIRS Control"},{"id":"Self-Doubt"},{"id":"Fear"},{"id":"Guilt"},{"id":"Shame"},{"id":"Spot Takeovers"},{"id":"Resist Coercions"},{"id":"Reclaim Inner World"},{"id":"Update Self-Concept"},{"id":"Emotional Autonomy"}],"links":[{"source":"EIRS Control","target":"Self-Doubt","value":20},{"source":"EIRS Control","target":"Fear","value":20},{"source":"EIRS Control","target":"Guilt","value":15},{"source":"EIRS Control","target":"Shame","value":15},{"source":"Self-Doubt","target":"Spot Takeovers","value":20},{"source":"Fear","target":"Spot Takeovers","value":20},{"source":"Guilt","target":"Resist Coercions","value":15},{"source":"Shame","target":"Resist Coercions","value":15},{"source":"Spot Takeovers","target":"Reclaim Inner World","value":40},{"source":"Resist Coercions","target":"Reclaim Inner World","value":30},{"source":"Reclaim Inner World","target":"Update Self-Concept","value":70},{"source":"Update Self-Concept","target":"Emotional Autonomy","value":70}]},"options":{"title":"From EIRS Control to Emotional Autonomy: The Recovery Flow"}}
+```
+
+*The sankey traces how the EIRS distributes control through four coercion channels, and how Gibson's recovery steps progressively redirect that energy toward emotional autonomy.*
 
 ---
 

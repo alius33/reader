@@ -210,6 +210,40 @@ Knaflic's six lessons form a sequential pipeline — each step depends on the pr
 | **Scatter plot** | Relationship between two variables | Audience is unfamiliar with the format |
 | **Table** | When the audience needs to look up specific values | Presentations where the audience cannot study at their own pace |
 
+```d3
+{
+  "type": "treemap",
+  "data": {
+    "name": "Chart Selection",
+    "children": [
+      {"name": "Comparison", "children": [
+        {"name": "Horizontal Bar", "value": 30},
+        {"name": "Vertical Bar", "value": 25},
+        {"name": "Stacked Bar", "value": 10}
+      ]},
+      {"name": "Trend", "children": [
+        {"name": "Line Chart", "value": 28},
+        {"name": "Slope Chart", "value": 12}
+      ]},
+      {"name": "Relationship", "children": [
+        {"name": "Scatter Plot", "value": 15}
+      ]},
+      {"name": "Single Value", "children": [
+        {"name": "Simple Text", "value": 18}
+      ]},
+      {"name": "Lookup", "children": [
+        {"name": "Table", "value": 14}
+      ]}
+    ]
+  },
+  "options": {
+    "title": "Knaflic's Chart Vocabulary: Usage Frequency by Communication Purpose"
+  }
+}
+```
+
+Bar charts dominate the chart vocabulary because categorical comparison is the most common data communication need in business settings.
+
 Each chart type has a specific communication purpose — choosing the wrong one forces the audience to work harder to extract the meaning.
 
 ---
@@ -359,6 +393,31 @@ This decision tree captures Knaflic's chart selection logic — start with what 
   - The ideal is to maximise this ratio — every drop of ink should represent data
   - If you can remove an element and the chart still communicates, remove it
 
+```d3
+{
+  "type": "heatmap",
+  "data": {
+    "xLabels": ["Frequency of Use", "Cognitive Cost", "Ease of Removal", "Impact on Clarity"],
+    "yLabels": ["3D Effects", "Chart Borders", "Heavy Gridlines", "Unnecessary Labels", "Legends", "Decimal Places", "Background Fill"],
+    "values": [
+      [3, 9, 9, 9],
+      [8, 4, 10, 3],
+      [9, 5, 8, 5],
+      [7, 7, 6, 7],
+      [8, 6, 7, 6],
+      [6, 3, 9, 3],
+      [5, 4, 10, 4]
+    ]
+  },
+  "options": {
+    "title": "Clutter Audit Matrix: Common Chart Elements Scored by Impact",
+    "colorScale": "warm"
+  }
+}
+```
+
+3D effects score the worst combination of high cognitive cost and high clarity impact — confirming why Knaflic calls them her strongest prohibition.
+
 ---
 
 ### What Counts as Clutter
@@ -460,6 +519,31 @@ These six principles are the brain's built-in visual grammar — Knaflic argues 
 | **Position** | Top-left draws first | Place the most important chart in the upper left |
 | **Bold text** | Weight difference catches eye | Highlight key words in titles and labels |
 | **Enclosure** | Box or shading around data | Isolate a section of a chart for focus |
+
+```chartjs
+{
+  "type": "radar",
+  "data": {
+    "labels": ["Colour", "Size", "Position", "Bold Text", "Enclosure", "Orientation", "Length", "Shape"],
+    "datasets": [{
+      "label": "Preattentive Processing Speed",
+      "data": [95, 80, 75, 70, 65, 55, 60, 50],
+      "backgroundColor": "rgba(41, 128, 185, 0.2)",
+      "borderColor": "#2980b9"
+    }, {
+      "label": "Communication Impact",
+      "data": [90, 75, 70, 85, 60, 40, 65, 35],
+      "backgroundColor": "rgba(39, 174, 96, 0.2)",
+      "borderColor": "#27ae60"
+    }]
+  },
+  "options": {
+    "plugins": { "title": { "display": true, "text": "Preattentive Attributes: Processing Speed vs Communication Impact" } }
+  }
+}
+```
+
+Colour dominates both dimensions, confirming Knaflic's recommendation to make it your primary tool for directing attention.
 
 ---
 
@@ -769,6 +853,30 @@ The narrative arc gives the audience an emotional journey: comfort (setup), tens
 | 3D effects | Flat 2D | Accurate visual proportions |
 | Cluttered slide | Generous white space | Gives the eye room to focus |
 | "Questions?" ending | Clear recommendation | Completes the narrative arc |
+
+```chartjs
+{
+  "type": "bar",
+  "data": {
+    "labels": ["Visual Elements", "Cognitive Load", "Time to Understand", "Audience Engagement", "Decision Speed", "Message Retention"],
+    "datasets": [{
+      "label": "Before (Cluttered)",
+      "data": [100, 85, 90, 25, 20, 15],
+      "backgroundColor": "#e74c3c"
+    }, {
+      "label": "After (Clean)",
+      "data": [30, 25, 15, 85, 90, 80],
+      "backgroundColor": "#27ae60"
+    }]
+  },
+  "options": {
+    "plugins": { "title": { "display": true, "text": "Before vs After: The Transformation Effect Across Six Dimensions" } },
+    "scales": { "y": { "title": { "display": true, "text": "Score (0-100)" } } }
+  }
+}
+```
+
+The transformation reduces visual elements by 70% while nearly quadrupling message retention — proving that less is dramatically more in data communication.
 
 ---
 

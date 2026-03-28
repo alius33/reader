@@ -74,6 +74,50 @@ Between them, Bryar and Carr witnessed the creation of nearly every process the 
 | **Disagree and Commit** | Challenge vigorously before the decision; execute fully after it |
 | **The Institutional No** | Well-meaning risk aversion silently kills innovation through inaction and delay |
 
+```chartjs
+{
+  "type": "radar",
+  "data": {
+    "labels": ["Hiring Rigor", "Communication Quality", "Product Development", "Metrics Discipline", "Organizational Focus", "Decision Speed"],
+    "datasets": [
+      {
+        "label": "Amazon's Mechanisms",
+        "data": [95, 90, 92, 88, 85, 80],
+        "backgroundColor": "rgba(41, 128, 185, 0.2)",
+        "borderColor": "#2980b9",
+        "pointBackgroundColor": "#2980b9",
+        "borderWidth": 2
+      },
+      {
+        "label": "Typical Large Company",
+        "data": [50, 40, 55, 45, 35, 40],
+        "backgroundColor": "rgba(231, 76, 60, 0.2)",
+        "borderColor": "#e74c3c",
+        "pointBackgroundColor": "#e74c3c",
+        "borderWidth": 2
+      }
+    ]
+  },
+  "options": {
+    "plugins": {
+      "title": {
+        "display": true,
+        "text": "Amazon's Mechanism Strength vs Typical Large Company"
+      }
+    },
+    "scales": {
+      "r": {
+        "beginAtZero": true,
+        "max": 100,
+        "ticks": { "stepSize": 20 }
+      }
+    }
+  }
+}
+```
+
+Amazon's structural mechanisms — Bar Raiser, narratives, PR/FAQ, WBR, single-threaded leadership, and Door 1/Door 2 — create a compounding advantage across every operational dimension, far exceeding the informal approaches of typical large companies.
+
 ---
 
 ```mermaid
@@ -148,6 +192,34 @@ Amazon's operating system is circular: principles drive mechanisms, mechanisms p
 |--------------|-----------------|----------|
 | **Door 1** | Irreversible, high-consequence | Thorough analysis, broad input, caution |
 | **Door 2** | Reversible, correctable | Decide quickly — deliberation costs more than correction |
+
+```chartjs
+{
+  "type": "doughnut",
+  "data": {
+    "labels": ["Door 2: Quick Decisions", "Door 1: Thorough Analysis", "Structural Decisions", "Tactical Decisions"],
+    "datasets": [
+      {
+        "data": [55, 15, 10, 20],
+        "backgroundColor": ["#27ae60", "#e74c3c", "#8e44ad", "#2980b9"],
+        "borderColor": "#fff",
+        "borderWidth": 2
+      }
+    ]
+  },
+  "options": {
+    "plugins": {
+      "title": {
+        "display": true,
+        "text": "Typical Amazon Decision Distribution by Type"
+      },
+      "legend": { "position": "bottom" }
+    }
+  }
+}
+```
+
+The vast majority of Amazon's decisions are treated as reversible Door 2 choices — made quickly and corrected if wrong — which explains the company's exceptional speed relative to competitors who over-deliberate on everything.
 
 - Amazon's bias for action means treating most decisions as Door 2 unless there is strong reason to classify them as Door 1
 - The mechanism is cultural: leaders are expected to identify which type of decision they face and calibrate their process accordingly
@@ -279,6 +351,43 @@ The Bar Raiser creates a compounding cycle: each strong hire raises the average,
 | 6 people | 15 paths |
 | 12 people | 66 paths |
 | 60 people | 1,770 paths |
+
+```chartjs
+{
+  "type": "bar",
+  "data": {
+    "labels": ["6 people", "10 people", "15 people", "20 people", "30 people", "50 people", "60 people"],
+    "datasets": [
+      {
+        "label": "Communication Paths (n(n-1)/2)",
+        "data": [15, 45, 105, 190, 435, 1225, 1770],
+        "backgroundColor": ["#27ae60", "#2ecc71", "#f1c40f", "#e67e22", "#e74c3c", "#c0392b", "#8e44ad"],
+        "borderColor": "#2c3e50",
+        "borderWidth": 1
+      }
+    ]
+  },
+  "options": {
+    "plugins": {
+      "title": {
+        "display": true,
+        "text": "Communication Overhead Grows Exponentially with Team Size"
+      }
+    },
+    "scales": {
+      "y": {
+        "beginAtZero": true,
+        "title": { "display": true, "text": "Number of Communication Paths" }
+      },
+      "x": {
+        "title": { "display": true, "text": "Team Size" }
+      }
+    }
+  }
+}
+```
+
+The exponential growth in communication paths illustrates why Amazon broke into small, autonomous teams: a 60-person group has 118x more coordination overhead than a 6-person team, consuming energy that could otherwise go toward building products.
 
 - As an organisation adds people, the number of possible communication lines grows exponentially — not linearly
 - The formula is n(n-1)/2, where n is the number of people
@@ -902,6 +1011,43 @@ flowchart TD
 ```
 
 The system is circular and self-reinforcing: better hiring produces better writing, which produces better product decisions, tracked by better metrics, reviewed by better-hired leaders — all held together by the Leadership Principles.
+
+```d3
+{
+  "type": "sankey",
+  "data": {
+    "nodes": [
+      {"id": "Bar Raiser"},
+      {"id": "Better People"},
+      {"id": "Strong Narratives"},
+      {"id": "Better Products"},
+      {"id": "Customer Value"},
+      {"id": "Input Metrics"},
+      {"id": "WBR"},
+      {"id": "Operational Discipline"},
+      {"id": "Single-Threaded Leaders"},
+      {"id": "PR/FAQ Process"}
+    ],
+    "links": [
+      {"source": "Bar Raiser", "target": "Better People", "value": 8},
+      {"source": "Better People", "target": "Strong Narratives", "value": 7},
+      {"source": "Strong Narratives", "target": "PR/FAQ Process", "value": 6},
+      {"source": "PR/FAQ Process", "target": "Better Products", "value": 6},
+      {"source": "Better Products", "target": "Customer Value", "value": 10},
+      {"source": "Input Metrics", "target": "WBR", "value": 7},
+      {"source": "WBR", "target": "Operational Discipline", "value": 6},
+      {"source": "Operational Discipline", "target": "Customer Value", "value": 5},
+      {"source": "Single-Threaded Leaders", "target": "Better Products", "value": 5},
+      {"source": "Better People", "target": "Single-Threaded Leaders", "value": 4}
+    ]
+  },
+  "options": {
+    "title": "How Amazon's Mechanisms Flow into Customer Value"
+  }
+}
+```
+
+This sankey diagram traces how Amazon's interlocking mechanisms channel effort into customer value through two parallel streams — a people-and-narrative pipeline and a metrics-and-discipline pipeline — both converging on better products and ultimately the customer.
 
 - The Bar Raiser hires people who can write strong narratives
 - The narrative process surfaces the thinking that the PR/FAQ demands

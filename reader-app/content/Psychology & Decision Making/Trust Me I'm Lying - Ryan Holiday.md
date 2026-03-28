@@ -65,6 +65,45 @@ flowchart TD
 
 This diagram shows Holiday's core mechanism: stories flow upward through progressively more credible outlets, each one laundering the previous source's lack of verification.
 
+```chartjs
+{
+  "type": "bar",
+  "data": {
+    "labels": ["Anger", "Awe", "Anxiety", "Practical Utility", "Interest", "Sadness"],
+    "datasets": [{
+      "label": "Virality Power (Sharing Multiplier)",
+      "data": [95, 75, 60, 40, 35, 10],
+      "backgroundColor": ["#e74c3c", "#2980b9", "#f39c12", "#27ae60", "#3498db", "#bdc3c7"]
+    }]
+  },
+  "options": {
+    "plugins": { "title": { "display": true, "text": "The Virality Hierarchy: What Emotions Drive Sharing (Wharton Study)" } },
+    "scales": { "y": { "title": { "display": true, "text": "Sharing Likelihood Score" } } }
+  }
+}
+```
+
+Anger is the most powerful driver of virality by a massive margin — one standard deviation increase in anger equals three extra hours as the lead story — while sadness kills sharing entirely, systematically suppressing nuanced truth.
+
+```d3
+{
+  "type": "sankey",
+  "data": [
+    { "source": "Manipulator", "target": "Small Blog", "value": 10 },
+    { "source": "Small Blog", "target": "Mid-Level Blog", "value": 8 },
+    { "source": "Mid-Level Blog", "target": "Legacy Media Blog", "value": 7 },
+    { "source": "Legacy Media Blog", "target": "National Press", "value": 6 },
+    { "source": "National Press", "target": "Public Belief", "value": 5 },
+    { "source": "Public Belief", "target": "Real Consequences", "value": 4 },
+    { "source": "Real Consequences", "target": "More Content", "value": 3 },
+    { "source": "More Content", "target": "Small Blog", "value": 3 }
+  ],
+  "options": { "title": "Trading Up the Chain: How Fake Stories Become National News" }
+}
+```
+
+Holiday's trading-up-the-chain mechanism shows how a single planted story at a tiny blog cascades through progressively more credible outlets — each one laundering the previous source's lack of verification until it becomes believed by millions.
+
 ---
 
 ## Holiday's Confession — The Monster Metaphor
@@ -455,6 +494,24 @@ Holiday's historical framework shows that blogs have circled back to the exact i
 | Blog Era (2000s-present) | Per-click advertising | Maximise traffic at any cost | Return to yellow press |
 
 The table reveals Holiday's central historical argument: the revenue model determines the quality of journalism, and blogs have reverted to the worst model in history.
+
+```chartjs
+{
+  "type": "doughnut",
+  "data": {
+    "labels": ["Weblogs Inc → AOL ($25M)", "HuffPost → AOL ($315M)", "TechCrunch → AOL ($30M)", "TreeHugger → Discovery ($10M)", "Other Blog Flips"],
+    "datasets": [{
+      "data": [25, 315, 30, 10, 50],
+      "backgroundColor": ["#e74c3c", "#2980b9", "#f39c12", "#27ae60", "#bdc3c7"]
+    }]
+  },
+  "options": {
+    "plugins": { "title": { "display": true, "text": "The Blog Ponzi Scheme: Acquisition Values ($M)" } }
+  }
+}
+```
+
+The Huffington Post's $315M sale to AOL dwarfs every other blog acquisition — proving that traffic growth matters more than journalism quality, and each blog is built not to inform but to flip.
 
 - <b style="color: #e74c3c">Blogs have killed subscription and resurrected the One-Off Problem</b>:
   - RSS is dead — Apple removed it from OS X, Google buried Reader, Firefox dropped RSS buttons

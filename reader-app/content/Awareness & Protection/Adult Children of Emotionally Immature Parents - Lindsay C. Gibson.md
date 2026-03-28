@@ -188,6 +188,22 @@ Dr. Lindsay C. Gibson is a clinical psychologist in private practice in Virginia
 - **Intense but shallow emotions** — dramatic but not deep, like a stone skipping the surface
 - **Cannot hold mixed emotions** — black-and-white thinking rules out ambivalence and nuance
 
+```chartjs
+{
+  "type": "radar",
+  "data": {
+    "labels": ["Empathy", "Self-Reflection", "Stress Tolerance", "Emotional Depth", "Respect for Differences", "Consistency"],
+    "datasets": [
+      {"label": "Emotionally Mature Parent", "data": [9, 9, 8, 9, 8, 9], "borderColor": "#27ae60", "backgroundColor": "rgba(39,174,96,0.15)"},
+      {"label": "Emotionally Immature Parent", "data": [2, 1, 3, 2, 2, 3], "borderColor": "#e74c3c", "backgroundColor": "rgba(231,76,60,0.15)"}
+    ]
+  },
+  "options": {"plugins": {"title": {"display": true, "text": "Emotional Maturity Profile: Mature vs Immature Parents"}}, "scales": {"r": {"beginAtZero": true, "max": 10}}}
+}
+```
+
+*The radar profile shows the stark gap between mature and immature parents — emotionally immature parents score lowest on self-reflection and emotional depth, the very traits needed to break the cycle.*
+
 ```mermaid
 graph TD
     A[Childhood Emotional Shutdown] --> B[Affect Phobia]
@@ -210,6 +226,12 @@ graph TD
 ## 3. What It Feels Like: The Relationship Experience
 
 *Being raised by an emotionally immature parent feels both lonely and exasperating. You keep turning to them for care because your deepest instincts demand it — and they keep failing to show up.*
+
+```d3
+{"type":"treemap","data":{"name":"Impact of EI Parents","children":[{"name":"Emotional Loneliness","value":30},{"name":"Communication Breakdown","value":20},{"name":"Role Reversal","value":18},{"name":"Anger & Resentment","value":15},{"name":"Enmeshment","value":12},{"name":"Time Fragmentation","value":5}]},"options":{"title":"Impact Areas of Emotional Immaturity on Children"}}
+```
+
+*Emotional loneliness dominates the damage landscape — it is the wound from which all other impacts flow, accounting for nearly a third of the total burden on children of emotionally immature parents.*
 
 ### Communication Is Impossible
 
@@ -360,6 +382,12 @@ quadrantChart
 | **Passive** | Conflict and confrontation | Expect no protection | Make excuses for abandoning behaviour |
 | **Rejecting** | Emotional contact itself | Apologise for existing | Give up before asking |
 
+```d3
+{"type":"heatmap","data":{"xLabels":["Emotional Loneliness","Self-Blame","Fear of Intimacy","Perfectionism","People-Pleasing"],"yLabels":["Emotional Parent","Driven Parent","Passive Parent","Rejecting Parent"],"values":[[9,7,8,5,8],[6,9,5,9,7],[7,5,7,3,6],[10,8,10,4,3]]},"options":{"title":"Four Parent Types: Severity of Impact on Children (1-10 scale)"}}
+```
+
+*The heatmap reveals that rejecting parents inflict the deepest emotional loneliness and fear of intimacy, while driven parents produce the highest levels of perfectionism and self-blame — each type leaves a distinct wound signature.*
+
 ---
 
 ## 5. How Children Adapt: Internalizers and Externalizers
@@ -412,6 +440,22 @@ graph LR
 | **Main anxiety** | Guilt, fear of being an impostor | Fear of losing external support |
 | **Biggest risk** | Self-neglect, depression | Substance abuse, broken relationships |
 | **Psychological interest** | Fascinated by inner world | Little interest in self-examination |
+
+```chartjs
+{
+  "type": "bar",
+  "data": {
+    "labels": ["Self-Reflection", "Takes Responsibility", "Guilt Proneness", "Emotional Work", "Seeks External Help", "Acts Impulsively"],
+    "datasets": [
+      {"label": "Internalizer", "data": [9, 9, 8, 9, 2, 2], "backgroundColor": "#2980b9"},
+      {"label": "Externalizer", "data": [2, 2, 2, 2, 8, 8], "backgroundColor": "#e74c3c"}
+    ]
+  },
+  "options": {"plugins": {"title": {"display": true, "text": "Internalizer vs Externalizer: Coping Style Tendencies"}}, "scales": {"y": {"beginAtZero": true, "max": 10}}}
+}
+```
+
+*Internalizers and externalizers are near-perfect mirror images — where one scores high the other scores low, explaining why they so often end up in relationships together, each filling the other's gap.*
 
 - Most readers of this book — and most therapy clients — are <b style="color: #2980b9">internalizers</b>
 - Most emotionally immature parents are <b style="color: #e74c3c">externalizers</b>

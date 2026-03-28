@@ -104,6 +104,12 @@ The 10 skills form a reinforcing loop — each one feeds the next, and evidence 
 | **The Career Roadmap** | Decompose aspirational goals into executable weekly tasks through four stages |
 | **Success Tracking** | Maintain a running evidence portfolio updated every two weeks with metrics and references |
 
+```chartjs
+{"type":"radar","data":{"labels":["Owner Mentality","Lifelong Learning","Impact Focus","Opportunity-Digging","Fixer Mentality","Influence","Relationships","Accountability","Career Planning","Success Tracking"],"datasets":[{"label":"Typical Professional","data":[4,5,3,3,4,3,5,4,2,2],"borderColor":"#e74c3c","backgroundColor":"rgba(231,76,60,0.1)"},{"label":"Invaluable Professional","data":[9,8,9,8,8,8,8,9,8,9],"borderColor":"#27ae60","backgroundColor":"rgba(39,174,96,0.1)"}]},"options":{"plugins":{"title":{"display":true,"text":"10 Skills Self-Assessment — Typical vs Invaluable Professional"}},"scales":{"r":{"beginAtZero":true,"max":10}}}}
+```
+
+The gap between typical and invaluable professionals is largest in career planning and success tracking — the two skills most professionals neglect entirely because they feel like overhead rather than work.
+
 ---
 
 ## Chapter 1: Owner Mentality — Think Like a Business Owner
@@ -372,6 +378,12 @@ The Circle of Passion creates a self-sustaining loop — once you take that firs
 | Low-impact, high-urgency | Question aggressively | Urgency often manufactured by others' priorities or organisational habit — delegate, simplify, or refuse |
 | Low-impact, low-urgency | Eliminate entirely | Nobody will notice it is gone |
 
+```d3
+{"type":"treemap","data":{"name":"Time Allocation","children":[{"name":"High Impact + High Urgency (Do First)","value":20},{"name":"High Impact + Low Urgency (Schedule)","value":10},{"name":"Low Impact + High Urgency (Question)","value":40},{"name":"Low Impact + Low Urgency (Eliminate)","value":30}]},"options":{"title":"Where Professionals Actually Spend Their Time vs Where They Should"}}
+```
+
+Most professionals spend 70% of their time on low-impact work (urgent or not) — the single highest-leverage change is protecting time for the high-impact, low-urgency quadrant where long-term greedy investments live.
+
 > [!tip] Core Insight
 > The most important quadrant is high-impact, low-urgency. This is where long-term greedy investments live — and because these activities never have deadlines, they are always the first sacrificed when urgent-but-unimportant tasks pile up. Protecting this quadrant is the single most important time management discipline.
 
@@ -534,6 +546,12 @@ Opportunity-digging follows a clear sequence: credibility first, then permission
 > 4. **Flip the script** — Reframe your request so that acting on your goal serves their self-interest. You are not asking them to do you a favour. You are showing them how saying yes helps them.
 > 5. **Call for specific action** — Ask for something concrete. Not "think about it" but "approve this by Friday."
 
+```chartjs
+{"type":"doughnut","data":{"labels":["Define Purpose","Identify Barrier","Identify Benefit","Flip the Script","Call to Action"],"datasets":[{"data":[10,15,20,40,15],"backgroundColor":["#3498db","#e67e22","#27ae60","#e74c3c","#8e44ad"]}]},"options":{"plugins":{"title":{"display":true,"text":"Influence Formula — Relative Effort Investment per Step"}}}}
+```
+
+The Flip — reframing your request so it serves the other person's interest — deserves 40% of your preparation effort because it is the creative differentiator that separates persuasion from begging.
+
 - The creative differentiator is step four: <b style="color: #2980b9">the flip</b>
 - The reason most influence attempts fail, Grossman argues, is that people lead with their own goal:
   - "I need you to approve this budget because my team needs resources"
@@ -662,6 +680,12 @@ The Influence Formula flows from self-knowledge through empathy to reframing —
 | Directive | Propose, then defer to their decision | Medium — requires reading their cues |
 | Controlling | Demonstrate competence quietly, build trust slowly | High — initiative may threaten them |
 | Absent | Fill the vacuum but document everything | Medium — you may overstep without cover |
+
+```d3
+{"type":"heatmap","data":{"xLabels":["Proactive Check-ins","Anticipate Needs","Present Solutions","Volunteer Info","Align to Metrics"],"yLabels":["Collaborative","Directive","Controlling","Absent"],"values":[[9,8,7,8,7],[6,5,8,6,7],[3,2,5,3,4],[8,9,9,9,6]]},"options":{"title":"Managing Up — Tactic Effectiveness by Manager Type"}}
+```
+
+Proactive tactics work beautifully with collaborative and absent managers but backfire with controlling managers — reading your manager's type correctly before deploying these tactics is as important as the tactics themselves.
 
 The right approach to managing up depends entirely on the manager's style — one size does not fit all.
 

@@ -112,6 +112,26 @@ Greene's three meta-principles — emotional mastery, strategic deception, and c
 | **Spectacle & Symbol** | Visual drama bypasses rational resistance and projects power |
 | **Self-Re-Creation** | Identity is a project you construct, not a fixed thing you discover |
 
+```chartjs
+{
+  "type": "doughnut",
+  "data": {
+    "labels": ["Reputation & Image (9 laws)", "Information & Deception (6 laws)", "Relationships & Leverage (8 laws)", "Strategic Action (9 laws)", "Emotional Mastery (8 laws)", "Power Structures (8 laws)"],
+    "datasets": [{
+      "data": [9, 6, 8, 9, 8, 8],
+      "backgroundColor": ["#2980b9", "#8e44ad", "#27ae60", "#e74c3c", "#f39c12", "#1abc9c"]
+    }]
+  },
+  "options": {
+    "plugins": {
+      "title": { "display": true, "text": "The 48 Laws Distributed Across Six Power Domains" }
+    }
+  }
+}
+```
+
+The laws distribute remarkably evenly across domains — Greene's system is not about any single dimension of power but about mastering all six simultaneously, with Reputation and Strategic Action receiving the most attention.
+
 ### Quick Lookup Table
 
 | # | Law | Theme |
@@ -176,6 +196,33 @@ Greene's three meta-principles — emotional mastery, strategic deception, and c
   - It does not matter what you are; it matters what people believe you are
   - A strong reputation multiplies every action you take; a weak one undermines even genuine achievements
 - These laws teach you to manage perception as deliberately as you manage any other strategic resource — because in the courts that Greene describes, what is unseen counts for nothing
+
+```d3
+{
+  "type": "treemap",
+  "data": {
+    "name": "48 Laws of Power",
+    "children": [
+      { "name": "Law 1: Never Outshine", "value": 8, "category": "Reputation & Image" },
+      { "name": "Law 5: Guard Reputation", "value": 10, "category": "Reputation & Image" },
+      { "name": "Law 6: Court Attention", "value": 7, "category": "Reputation & Image" },
+      { "name": "Law 25: Re-Create Yourself", "value": 9, "category": "Reputation & Image" },
+      { "name": "Law 3: Conceal Intentions", "value": 9, "category": "Information & Deception" },
+      { "name": "Law 4: Say Less", "value": 8, "category": "Information & Deception" },
+      { "name": "Law 17: Unpredictability", "value": 7, "category": "Information & Deception" },
+      { "name": "Law 15: Crush Enemy Totally", "value": 8, "category": "Strategic Action" },
+      { "name": "Law 29: Plan to the End", "value": 9, "category": "Strategic Action" },
+      { "name": "Law 48: Assume Formlessness", "value": 10, "category": "Emotional Mastery" }
+    ]
+  },
+  "options": {
+    "title": "Key Laws by Domain — Relative Importance in Greene's System",
+    "colorField": "category"
+  }
+}
+```
+
+The treemap reveals that the most consequential laws cluster around reputation management and emotional mastery — the foundational domains that amplify or undermine every other tactical move.
 
 ### Law 1: Never Outshine the Master
 
@@ -1115,6 +1162,51 @@ The ideal power position in relationships is the intersection of maximum indispe
 - The person who controls when the confrontation happens (Law 35), where it happens (Law 8), what options exist (Law 31), and when it ends (Law 29) has already won before the first move is made
 - These are the laws of the chess player, not the brawler — every move is calculated not for its immediate impact but for the position it creates three moves ahead
 
+```chartjs
+{
+  "type": "radar",
+  "data": {
+    "labels": ["Patience Required", "Deception Level", "Risk if Exposed", "Long-Term Payoff", "Emotional Discipline", "Relationship Cost"],
+    "datasets": [
+      {
+        "label": "Reputation & Image",
+        "data": [70, 60, 90, 95, 75, 30],
+        "borderColor": "#2980b9",
+        "backgroundColor": "rgba(41, 128, 185, 0.1)"
+      },
+      {
+        "label": "Information & Deception",
+        "data": [60, 95, 85, 70, 80, 60],
+        "borderColor": "#8e44ad",
+        "backgroundColor": "rgba(142, 68, 173, 0.1)"
+      },
+      {
+        "label": "Strategic Action",
+        "data": [85, 50, 45, 90, 90, 40],
+        "borderColor": "#e74c3c",
+        "backgroundColor": "rgba(231, 76, 60, 0.1)"
+      },
+      {
+        "label": "Emotional Mastery",
+        "data": [90, 30, 20, 95, 95, 15],
+        "borderColor": "#27ae60",
+        "backgroundColor": "rgba(39, 174, 96, 0.1)"
+      }
+    ]
+  },
+  "options": {
+    "plugins": {
+      "title": { "display": true, "text": "Risk-Reward Profiles of Greene's Four Core Power Domains" }
+    },
+    "scales": {
+      "r": { "beginAtZero": true, "max": 100 }
+    }
+  }
+}
+```
+
+Emotional Mastery offers the highest long-term payoff with the lowest risk — confirming Greene's meta-principle that mastering your own reactions is the single most reliable path to power.
+
 ---
 
 ### Law 8: Make Other People Come to You
@@ -1719,6 +1811,43 @@ Greene identifies four types of <b style="color: #2980b9">mirror effects</b>, ea
 ## Power Structures & Systems
 
 *While the other clusters deal with individual relationships and personal mastery, these laws zoom out to the level of systems — how groups form, how leaders maintain control, and how institutions can be steered.*
+
+```d3
+{
+  "type": "force",
+  "data": {
+    "nodes": [
+      { "id": "Emotional Mastery", "group": "Foundation" },
+      { "id": "Reputation & Image", "group": "Projection" },
+      { "id": "Information Control", "group": "Deception" },
+      { "id": "Strategic Action", "group": "Execution" },
+      { "id": "Relationships", "group": "Leverage" },
+      { "id": "Power Structures", "group": "Systems" },
+      { "id": "Law 48: Formlessness", "group": "Foundation" },
+      { "id": "Law 5: Reputation", "group": "Projection" },
+      { "id": "Law 3: Conceal", "group": "Deception" },
+      { "id": "Law 15: Crush Enemy", "group": "Execution" }
+    ],
+    "links": [
+      { "source": "Emotional Mastery", "target": "Reputation & Image", "label": "Self-control enables image management" },
+      { "source": "Emotional Mastery", "target": "Information Control", "label": "Calm enables deception" },
+      { "source": "Information Control", "target": "Strategic Action", "label": "Intelligence precedes action" },
+      { "source": "Reputation & Image", "target": "Relationships", "label": "Reputation attracts allies" },
+      { "source": "Relationships", "target": "Power Structures", "label": "Alliances build systems" },
+      { "source": "Strategic Action", "target": "Power Structures", "label": "Actions shape structures" },
+      { "source": "Law 48: Formlessness", "target": "Emotional Mastery", "label": "Ultimate expression" },
+      { "source": "Law 5: Reputation", "target": "Reputation & Image", "label": "Keystone law" },
+      { "source": "Law 3: Conceal", "target": "Information Control", "label": "Keystone law" },
+      { "source": "Law 15: Crush Enemy", "target": "Strategic Action", "label": "Decisive application" }
+    ]
+  },
+  "options": {
+    "title": "The 48 Laws as an Interconnected System — Domain Dependencies"
+  }
+}
+```
+
+The force network reveals that emotional mastery sits at the center of Greene's system — every other domain depends on it, confirming his meta-principle that mastering your emotions is the single most important prerequisite for power.
 
 - These laws address the structural and systemic dimensions of power — how to operate within organisations, manage followers, navigate institutional dynamics, and understand the invisible architecture that determines who really holds influence
 - Greene's view is that <b style="color: #27ae60">power is not just personal — it is structural</b>

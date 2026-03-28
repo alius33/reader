@@ -72,6 +72,122 @@ flowchart TB
 
 ---
 
+```chartjs
+{
+  "type": "radar",
+  "data": {
+    "labels": ["Child Helpfulness", "Emotional Regulation", "Conflict Resolution", "Autonomy/Confidence", "Parent Stress Level", "Child Entertainment Needs"],
+    "datasets": [
+      {
+        "label": "WEIRD (Western) Parenting",
+        "data": [30, 40, 35, 40, 85, 90],
+        "backgroundColor": "rgba(231, 76, 60, 0.2)",
+        "borderColor": "#e74c3c"
+      },
+      {
+        "label": "Indigenous (TEAM) Parenting",
+        "data": [90, 85, 80, 90, 30, 20],
+        "backgroundColor": "rgba(39, 174, 96, 0.2)",
+        "borderColor": "#27ae60"
+      }
+    ]
+  },
+  "options": {
+    "title": "WEIRD vs. Indigenous Parenting: Child Outcomes Comparison"
+  }
+}
+```
+Indigenous TEAM parenting produces dramatically more helpful, emotionally regulated, and confident children — while simultaneously reducing parent stress and eliminating the need to constantly entertain.
+
+```d3
+{
+  "type": "force",
+  "data": {
+    "nodes": [
+      {"id": "TEAM Framework", "group": "core"},
+      {"id": "Togetherness (Maya)", "group": "pillar"},
+      {"id": "Encouragement (Universal)", "group": "pillar"},
+      {"id": "Autonomy (Hadzabe)", "group": "pillar"},
+      {"id": "Minimal Interference (Inuit)", "group": "pillar"},
+      {"id": "Acomedido", "group": "concept"},
+      {"id": "Never in Anger", "group": "concept"},
+      {"id": "Dramas/Stories", "group": "concept"},
+      {"id": "Real Work Inclusion", "group": "concept"},
+      {"id": "Helpful Child", "group": "outcome"},
+      {"id": "Calm Child", "group": "outcome"},
+      {"id": "Confident Child", "group": "outcome"}
+    ],
+    "links": [
+      {"source": "TEAM Framework", "target": "Togetherness (Maya)", "value": 5},
+      {"source": "TEAM Framework", "target": "Encouragement (Universal)", "value": 5},
+      {"source": "TEAM Framework", "target": "Autonomy (Hadzabe)", "value": 5},
+      {"source": "TEAM Framework", "target": "Minimal Interference (Inuit)", "value": 5},
+      {"source": "Togetherness (Maya)", "target": "Real Work Inclusion", "value": 4},
+      {"source": "Togetherness (Maya)", "target": "Acomedido", "value": 4},
+      {"source": "Minimal Interference (Inuit)", "target": "Never in Anger", "value": 4},
+      {"source": "Minimal Interference (Inuit)", "target": "Dramas/Stories", "value": 4},
+      {"source": "Acomedido", "target": "Helpful Child", "value": 5},
+      {"source": "Real Work Inclusion", "target": "Helpful Child", "value": 4},
+      {"source": "Never in Anger", "target": "Calm Child", "value": 5},
+      {"source": "Dramas/Stories", "target": "Calm Child", "value": 3},
+      {"source": "Autonomy (Hadzabe)", "target": "Confident Child", "value": 5},
+      {"source": "Encouragement (Universal)", "target": "Confident Child", "value": 3}
+    ]
+  },
+  "options": {
+    "title": "TEAM Framework: How Indigenous Cultures Build Three Core Outcomes"
+  }
+}
+```
+Each TEAM pillar connects through specific cultural practices to one of three core outcomes — helpfulness, emotional calm, and confidence.
+
+```chartjs
+{
+  "type": "bar",
+  "data": {
+    "labels": ["Constant Praise", "Child-Centred Play", "Structured Activities", "Nuclear Family Model", "Separation from Work", "Time-Outs", "Chore Charts", "Parenting as Entertainment"],
+    "datasets": [
+      {
+        "label": "WEIRD Cultures (%)",
+        "data": [90, 85, 80, 75, 90, 70, 65, 80],
+        "backgroundColor": "#e74c3c"
+      },
+      {
+        "label": "Indigenous Cultures (%)",
+        "data": [5, 10, 5, 10, 5, 0, 0, 5],
+        "backgroundColor": "#27ae60"
+      }
+    ]
+  },
+  "options": {
+    "title": "Parenting Practices: WEIRD vs. Indigenous Prevalence",
+    "scales": { "y": { "beginAtZero": true, "max": 100 } }
+  }
+}
+```
+Practices that WEIRD parents consider essential are virtually absent in indigenous cultures — and yet indigenous children consistently outperform Western children on helpfulness, emotional regulation, and autonomy.
+
+```mermaid
+timeline
+    title Rosy's Transformation Through the Book
+    Chapter 1-3 : "Destroyer of worlds"
+               : Daily tantrums and combat
+               : Parent-child adversarial dynamic
+    Maya Village : Begins helping with tortillas
+               : Watches other children contribute
+               : First voluntary household help
+    Inuit Arctic : Observes calm adult modeling
+               : Fewer anger outbursts
+               : Learns through stories, not lectures
+    Hadzabe Tanzania : Given freedom to explore
+                    : Self-directed play with peers
+                    : Growing confidence and independence
+    Back Home : Voluntarily helps with cooking
+             : Calmer emotional responses
+             : Plays independently for hours
+```
+Rosy's arc from "destroyer of worlds" to a cooperative, self-regulated child is the book's most convincing evidence that the TEAM framework works.
+
 ## Section 1: The WEIRDest Parents in the World
 
 ### What Is WEIRD?

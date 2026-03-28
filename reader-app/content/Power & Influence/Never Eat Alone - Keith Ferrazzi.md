@@ -50,6 +50,82 @@ Keith Ferrazzi is the son of a steelworker and a house cleaner from Youngstown, 
 | **Mentoring cycle** | Find mentors, become a mentee, then mentor others -- repeat endlessly |
 | **Shared passions** | Using activities you love as the vehicle for deepening relationships |
 
+```chartjs
+{
+  "type": "radar",
+  "data": {
+    "labels": ["Generosity", "Vulnerability", "Accountability", "Candour", "Audacity", "Follow-Up", "Content Creation", "Social Arbitrage"],
+    "datasets": [
+      {
+        "label": "Ferrazzi's Connector Competencies",
+        "data": [95, 80, 85, 75, 90, 95, 80, 90],
+        "backgroundColor": "rgba(39, 174, 96, 0.2)",
+        "borderColor": "#27ae60"
+      },
+      {
+        "label": "Average Networker",
+        "data": [40, 25, 45, 35, 30, 20, 30, 15],
+        "backgroundColor": "rgba(231, 76, 60, 0.2)",
+        "borderColor": "#e74c3c"
+      }
+    ]
+  },
+  "options": {
+    "plugins": { "title": { "display": true, "text": "Connector Skills: Ferrazzi vs Average Networker" } },
+    "scales": { "r": { "min": 0, "max": 100 } }
+  }
+}
+```
+
+Ferrazzi's system demands mastery across all eight connector competencies — the average networker invests heavily in only one or two, leaving massive gaps in follow-up and social arbitrage.
+
+```d3
+{
+  "type": "treemap",
+  "data": [
+    { "name": "Relationship Action Plan", "category": "Strategy", "value": 95 },
+    { "name": "Pinging System", "category": "Maintenance", "value": 90 },
+    { "name": "Conference Commando", "category": "Events", "value": 85 },
+    { "name": "Social Arbitrage", "category": "Strategy", "value": 90 },
+    { "name": "Anchor Tenants", "category": "Events", "value": 75 },
+    { "name": "Blue Flame", "category": "Mindset", "value": 80 },
+    { "name": "Content Creation", "category": "Visibility", "value": 80 },
+    { "name": "Follow-Up Protocol", "category": "Maintenance", "value": 95 },
+    { "name": "Shared Passions", "category": "Mindset", "value": 70 },
+    { "name": "Mentor Cycle", "category": "Strategy", "value": 85 }
+  ],
+  "options": {
+    "title": "Ferrazzi's Networking Toolkit — Relative Impact"
+  }
+}
+```
+
+The Relationship Action Plan and Follow-Up Protocol form the foundation of Ferrazzi's system — without these two operational tools, the more glamorous techniques like Conference Commando and Social Arbitrage have nothing to build on.
+
+```chartjs
+{
+  "type": "bar",
+  "data": {
+    "labels": ["Generosity First", "Build Before Need", "Audacity", "Share Passions", "Follow Up", "Social Arbitrage", "Content is King"],
+    "datasets": [{
+      "label": "Difficulty to Master (1-10)",
+      "data": [3, 6, 8, 4, 5, 7, 6],
+      "backgroundColor": "#e74c3c"
+    }, {
+      "label": "Impact on Network Growth (1-10)",
+      "data": [9, 8, 9, 7, 10, 9, 8],
+      "backgroundColor": "#27ae60"
+    }]
+  },
+  "options": {
+    "plugins": { "title": { "display": true, "text": "Ferrazzi's Principles: Difficulty vs Impact" } },
+    "scales": { "y": { "beginAtZero": true, "max": 10 } }
+  }
+}
+```
+
+Follow-up delivers the highest impact for moderate effort — it is the single most underused skill in professional life and the one that separates Ferrazzi's system from generic networking advice.
+
 ---
 
 ## Connectors' Hall of Fame

@@ -53,6 +53,24 @@ Dr. Susan Forward is a therapist, lecturer, and bestselling author specialising 
 | **Extinction Burst** | The predictable escalation when you first stop complying |
 | **The Contract** | The unspoken agreement between blackmailer and target that keeps the cycle running |
 
+```chartjs
+{
+  "type": "radar",
+  "data": {
+    "labels": ["Fear Deployment", "Obligation Leverage", "Guilt Induction", "Direct Threats", "Self-Harm Threats", "Reward Dangling"],
+    "datasets": [
+      {"label": "Punisher", "data": [8, 5, 4, 9, 1, 2], "borderColor": "#e74c3c", "backgroundColor": "rgba(231,76,60,0.1)"},
+      {"label": "Self-Punisher", "data": [7, 6, 8, 2, 9, 1], "borderColor": "#8e44ad", "backgroundColor": "rgba(142,68,173,0.1)"},
+      {"label": "Sufferer", "data": [4, 9, 9, 1, 3, 2], "borderColor": "#f39c12", "backgroundColor": "rgba(243,156,18,0.1)"},
+      {"label": "Tantalizer", "data": [3, 7, 5, 2, 1, 9], "borderColor": "#3498db", "backgroundColor": "rgba(52,152,219,0.1)"}
+    ]
+  },
+  "options": {"plugins": {"title": {"display": true, "text": "Four Blackmailer Types: Tactical Weapon Profiles"}}, "scales": {"r": {"beginAtZero": true, "max": 10}}}
+}
+```
+
+*Each blackmailer type wields a distinctive combination of FOG weapons — Punishers rely on direct threats, Self-Punishers weaponize self-harm, Sufferers maximize guilt and obligation, and Tantalizers dangle rewards.*
+
 ---
 
 ## Part I: Understanding the Blackmail System
@@ -380,6 +398,12 @@ The three weapons of FOG often operate simultaneously, creating a dense emotiona
 > [!tip] Core Insight
 > Punishers, Self-Punishers, and Sufferers use negative emotions to control you. Tantalizers are different — they use positive emotions. Hope is the most insidious weapon because the target doesn't feel manipulated. They feel motivated.
 
+```d3
+{"type":"heatmap","data":{"xLabels":["Your Fear","Your Obligation","Your Guilt","Your Empathy","Your Conflict Avoidance"],"yLabels":["Punisher","Self-Punisher","Sufferer","Tantalizer"],"values":[[9,4,3,2,7],[7,5,8,9,6],[3,9,9,7,5],[5,7,5,3,8]]},"options":{"title":"Which Blackmailer Exploits Which Vulnerability (1-10 Intensity)"}}
+```
+
+*The heatmap reveals why certain blackmailer types are more effective against certain personality profiles — Punishers exploit fear and conflict avoidance, while Sufferers weaponize obligation and guilt.*
+
 ---
 
 ## Part III: The Blackmail Target
@@ -511,6 +535,19 @@ The unspoken contract creates the illusion of a functioning relationship while b
 
 - <b style="color: #27ae60">The critical principle: you are not responsible for the blackmailer's reaction to your boundary</b>
 - They will escalate. They will test. They will deploy more FOG. This is predictable and temporary.
+
+```chartjs
+{
+  "type": "doughnut",
+  "data": {
+    "labels": ["Stop (Pause Reaction)", "Observe (Name the Pattern)", "Strategise (Plan Response)", "Execute (Hold Boundary)", "Withstand Extinction Burst"],
+    "datasets": [{"data": [20, 25, 25, 20, 10], "backgroundColor": ["#e74c3c", "#f39c12", "#3498db", "#27ae60", "#8e44ad"]}]
+  },
+  "options": {"plugins": {"title": {"display": true, "text": "Forward's Defence Framework: Breaking the Blackmail Cycle"}}}
+}
+```
+
+*Forward's defence framework is weighted toward observation and strategy — recognizing the pattern and planning your response account for half the work of breaking free.*
 
 ---
 
@@ -815,6 +852,12 @@ flowchart TD
 ```
 
 Addressing the root vulnerability transforms every relationship dynamic — not just the one that brought you to the book.
+
+```d3
+{"type":"sankey","data":{"nodes":[{"id":"Blackmailer's Demand"},{"id":"Target's Resistance"},{"id":"FOG Activation"},{"id":"Fear"},{"id":"Obligation"},{"id":"Guilt"},{"id":"Target Caves"},{"id":"Blackmailer Reinforced"},{"id":"Next Demand Escalates"}],"links":[{"source":"Blackmailer's Demand","target":"Target's Resistance","value":40},{"source":"Target's Resistance","target":"FOG Activation","value":40},{"source":"FOG Activation","target":"Fear","value":15},{"source":"FOG Activation","target":"Obligation","value":13},{"source":"FOG Activation","target":"Guilt","value":12},{"source":"Fear","target":"Target Caves","value":15},{"source":"Obligation","target":"Target Caves","value":13},{"source":"Guilt","target":"Target Caves","value":12},{"source":"Target Caves","target":"Blackmailer Reinforced","value":40},{"source":"Blackmailer Reinforced","target":"Next Demand Escalates","value":40}]},"options":{"title":"The Blackmail Reinforcement Loop: How Compliance Escalates Demands"}}
+```
+
+*The sankey shows how compliance flows through FOG channels into reinforcement — each cycle teaches the blackmailer that the formula works, producing bigger demands next time.*
 
 ---
 

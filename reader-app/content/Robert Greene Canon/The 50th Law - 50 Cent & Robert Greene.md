@@ -125,6 +125,39 @@ The fear-to-power reversal is cyclical: each fear confronted builds the courage 
 | **Flexible Morality** | Everyone operates with flexible morality around their self-interest; the question is whether you do so consciously (Ch. 5) |
 | **Surface vs. Deep Knowledge** | Surface knowledge (from reading, seminars) is fragile; deep knowledge (from practice) adapts to novel conditions (Ch. 8) |
 
+```chartjs
+{
+  "type": "radar",
+  "data": {
+    "labels": ["Intense Realism", "Self-Reliance", "Opportunism", "Calculated Momentum", "Strategic Aggression", "Authority", "Deep Connection", "Mastery", "Self-Belief", "The Sublime"],
+    "datasets": [
+      {
+        "label": "50 Cent's Strength Profile",
+        "data": [95, 90, 95, 85, 90, 80, 70, 75, 95, 85],
+        "borderColor": "#e74c3c",
+        "backgroundColor": "rgba(231, 76, 60, 0.15)"
+      },
+      {
+        "label": "Average Person (Greene's Estimate)",
+        "data": [35, 40, 25, 45, 20, 30, 50, 30, 35, 15],
+        "borderColor": "#95a5a6",
+        "backgroundColor": "rgba(149, 165, 166, 0.15)"
+      }
+    ]
+  },
+  "options": {
+    "plugins": {
+      "title": { "display": true, "text": "The 10 Fearlessness Dimensions — 50 Cent vs Average Profile" }
+    },
+    "scales": {
+      "r": { "beginAtZero": true, "max": 100 }
+    }
+  }
+}
+```
+
+The radar reveals the average person's profile is most deficient in strategic aggression, opportunism, and mortality confrontation — the three dimensions that require walking directly into discomfort rather than around it.
+
 ---
 
 ### Thematic Clusters
@@ -2156,6 +2189,30 @@ Active confrontation produces four specific effects:
 
 Greene draws this exercise from Seneca's writings and 50 Cent's lived philosophy, arguing that the daily repetition is what transforms mortality awareness from an abstract concept into an operational filter for decision-making.
 
+```d3
+{
+  "type": "treemap",
+  "data": {
+    "name": "Mortality Practitioners",
+    "children": [
+      { "name": "Seneca — Deliberate Meditation", "value": 20, "category": "Philosophical" },
+      { "name": "Samurai — Morning Rituals", "value": 18, "category": "Warrior" },
+      { "name": "50 Cent — Near-Death Encounter", "value": 25, "category": "Experiential" },
+      { "name": "Montaigne — Skull on Desk", "value": 17, "category": "Philosophical" },
+      { "name": "Steve Jobs — Cancer Diagnosis", "value": 22, "category": "Experiential" },
+      { "name": "Malcolm X — Prison Transformation", "value": 19, "category": "Experiential" },
+      { "name": "Marcus Aurelius — Journal Practice", "value": 16, "category": "Philosophical" }
+    ]
+  },
+  "options": {
+    "title": "Mortality Awareness Traditions — How Different Figures Confronted Death",
+    "colorField": "category"
+  }
+}
+```
+
+Whether through philosophical practice, warrior discipline, or forced confrontation, the effect is consistent — mortality awareness strips away the trivial and produces a ruthless clarity about what genuinely matters.
+
 ---
 
 > [!example] Montaigne — The Tower and the Skull (1570s–1590s)
@@ -2300,6 +2357,37 @@ The system is circular: mortality awareness (Ch. 10) feeds back into intense rea
 | Strategic Aggression → Authority | The capacity to fight protects the position from which you lead |
 | The Sublime → Realism | Mortality awareness strips away the ego, emotion, and social pressure that distort perception |
 
+```chartjs
+{
+  "type": "bar",
+  "data": {
+    "labels": ["Ch 1: Realism", "Ch 2: Self-Reliance", "Ch 3: Opportunism", "Ch 4: Momentum", "Ch 5: Aggression", "Ch 6: Authority", "Ch 7: Connection", "Ch 8: Mastery", "Ch 9: Self-Belief", "Ch 10: Sublime"],
+    "datasets": [
+      {
+        "label": "Fear Confronted (Difficulty)",
+        "data": [70, 65, 80, 60, 85, 75, 55, 90, 70, 95],
+        "backgroundColor": "rgba(231, 76, 60, 0.7)"
+      },
+      {
+        "label": "Power Unlocked (Impact)",
+        "data": [90, 80, 85, 75, 70, 85, 90, 95, 80, 100],
+        "backgroundColor": "rgba(39, 174, 96, 0.7)"
+      }
+    ]
+  },
+  "options": {
+    "plugins": {
+      "title": { "display": true, "text": "Fear-to-Power Conversion — Difficulty vs Impact Across 10 Chapters" }
+    },
+    "scales": {
+      "y": { "beginAtZero": true, "max": 100, "title": { "display": true, "text": "Score" } }
+    }
+  }
+}
+```
+
+The Sublime (mortality confrontation) scores highest on both difficulty and impact — the hardest fear to face unlocks the most transformative power, which is why Greene positions it as the culminating chapter.
+
 ---
 
 - Greene's implicit argument is that these ten powers are not a menu from which you select your favourites — they are a **system** that works only when all components are active:
@@ -2329,6 +2417,31 @@ The system is circular: mortality awareness (Ch. 10) feeds back into intense rea
 | Mix-tape era | 24–27 | Ch. 4 (Momentum), Ch. 6 (Authority) | Flooded streets with music; led distribution personally |
 | Interscope years | 27–30 | Ch. 5 (Aggression), Ch. 7 (Connection) | Ja Rule war; digital audience engagement |
 | Business empire | 30+ | Ch. 2 (Self-Reliance), Walk-Away Principle | Vitamin Water, G-Unit, independence from labels |
+
+```d3
+{
+  "type": "heatmap",
+  "data": {
+    "xLabels": ["Realism", "Self-Reliance", "Opportunism", "Momentum", "Aggression", "Authority", "Connection", "Mastery", "Self-Belief", "Sublime"],
+    "yLabels": ["Childhood (0-8)", "Street (8-18)", "Music (18-24)", "Shooting (24)", "Mix-tapes (24-27)", "Interscope (27-30)", "Empire (30+)"],
+    "values": [
+      [70, 50, 30, 20, 10, 10, 30, 10, 40, 60],
+      [90, 80, 70, 50, 40, 30, 60, 30, 50, 40],
+      [75, 70, 50, 60, 30, 40, 50, 80, 70, 30],
+      [95, 60, 95, 30, 40, 20, 30, 40, 90, 95],
+      [80, 85, 75, 95, 50, 85, 60, 70, 80, 70],
+      [70, 75, 60, 70, 90, 75, 85, 60, 70, 50],
+      [85, 95, 80, 75, 60, 80, 70, 85, 90, 80]
+    ]
+  },
+  "options": {
+    "title": "50 Cent's Fearlessness Development — Which Powers Activated at Each Life Phase",
+    "colorRange": ["#f7fbff", "#e74c3c"]
+  }
+}
+```
+
+The heatmap reveals that the shooting at age 24 was the transformative event — it simultaneously activated realism, opportunism, self-belief, and the sublime, creating the foundation for everything that followed.
 
 The biographical through-line is what distinguishes *The 50th Law* from Greene's other works: instead of drawing on dozens of historical figures for each principle, Greene shows one life demonstrating all ten principles in sequence.
 

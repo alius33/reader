@@ -47,6 +47,12 @@ The three skills form a progression — each one enables the next, and none work
 - Coyle did not develop these three skills from theory — he extracted them by observing what the world's best groups actually do, then tracing those behaviours back to the research that explains why they work
 - The framework is descriptive before it is prescriptive: this is what successful cultures do, not what someone in a laboratory thinks they should do
 
+```d3
+{"type":"treemap","data":{"name":"Culture Code","children":[{"name":"Build Safety","children":[{"name":"Belonging Cues","value":25},{"name":"Psychological Safety","value":22},{"name":"Bad Apple Defence","value":15},{"name":"Collision-Rich Spaces","value":12}]},{"name":"Share Vulnerability","children":[{"name":"Vulnerability Loop","value":24},{"name":"BrainTrust Model","value":18},{"name":"After Action Review","value":16},{"name":"Flash Mentoring","value":10}]},{"name":"Establish Purpose","children":[{"name":"High-Purpose Environments","value":20},{"name":"Catchphrases & Heuristics","value":16},{"name":"Origin Stories","value":14},{"name":"Artefacts & Rituals","value":12}]}]},"options":{"title":"The Culture Code Framework — All Components by Relative Weight"}}
+```
+
+The treemap shows that belonging cues and the vulnerability loop are the two heaviest components in Coyle's framework — they are the foundational behaviours from which everything else grows. Purpose components are lighter because they only become effective once the first two skills are in place.
+
 ---
 
 ## Key Concepts at a Glance
@@ -65,6 +71,12 @@ The three skills form a progression — each one enables the next, and none work
 | **Embrace the Messenger** | When someone delivers bad news, the group's response determines whether honest communication continues |
 | **Heuristics and Catchphrases** | Short, repeatable phrases that encode a group's priorities into daily decisions |
 | **Flash Mentoring** | Short, intense mentor-mentee interactions that accelerate learning through vulnerability |
+
+```chartjs
+{"type":"radar","data":{"labels":["Leader Effort Required","Time to Build","Fragility If Neglected","Impact on Performance","Difficulty to Fake","Observable from Outside"],"datasets":[{"label":"Build Safety","data":[75,60,85,90,30,70],"borderColor":"#2980b9","backgroundColor":"rgba(41,128,185,0.15)"},{"label":"Share Vulnerability","data":[90,80,70,85,15,40],"borderColor":"#e74c3c","backgroundColor":"rgba(231,76,60,0.15)"},{"label":"Establish Purpose","data":[65,50,55,75,50,80],"borderColor":"#27ae60","backgroundColor":"rgba(39,174,96,0.15)"}]},"options":{"plugins":{"title":{"display":true,"text":"The Three Skills — Comparative Profile"}},"scales":{"r":{"beginAtZero":true,"max":100}}}}
+```
+
+Vulnerability requires the most leader effort and is the hardest to fake, while Safety is the most fragile if neglected — stop sending belonging cues and connection evaporates within days. Purpose is the most visible from outside but takes the least time to build once Safety and Vulnerability are in place.
 
 ---
 
@@ -145,6 +157,12 @@ The three skills form a progression — each one enables the next, and none work
   - But it requires effort — Jonathan was not just being himself, he was actively counteracting a threat
   - <b style="color: #27ae60">Safety is a muscle, not a mood — it must be exercised continuously</b>
 
+```chartjs
+{"type":"bar","data":{"labels":["The Jerk","The Slacker","The Downer","Control (No Bad Apple)","With Jonathan (Connector)"],"datasets":[{"label":"Group Performance (% of Baseline)","data":[62,65,68,100,97],"backgroundColor":["#e74c3c","#e74c3c","#e74c3c","#95a5a6","#27ae60"]}]},"options":{"plugins":{"title":{"display":true,"text":"The Bad Apple Experiment — Impact on Group Performance"}},"scales":{"y":{"beginAtZero":true,"max":110,"title":{"display":true,"text":"Performance (% of baseline)"}}}}}
+```
+
+A single toxic individual drops group performance by 30-40% regardless of toxic style, but one positive connector (Jonathan) can almost completely neutralise the effect — restoring performance to 97% of baseline through nothing more than active belonging-cue generation.
+
 ---
 
 ## Chapter 2: The Billion-Dollar Day When Nothing Happened
@@ -174,6 +192,12 @@ The three skills form a progression — each one enables the next, and none work
 - Research shows that group outcomes can be predicted from the pattern of belonging cues exchanged in the first five minutes of a meeting — before any substantive discussion has occurred
 - This is a radical claim: the words barely matter compared to the signals
 
+```chartjs
+{"type":"polarArea","data":{"labels":["Eye Contact","Turn-Taking","Physical Proximity","Active Listening","Energetic Exchanges","Laughter","Mirroring","Attentive Courtesies"],"datasets":[{"data":[90,85,80,88,75,70,65,72],"backgroundColor":["rgba(41,128,185,0.6)","rgba(231,76,60,0.6)","rgba(39,174,96,0.6)","rgba(243,156,18,0.6)","rgba(142,68,173,0.6)","rgba(52,152,219,0.6)","rgba(230,126,34,0.6)","rgba(22,160,133,0.6)"]}]},"options":{"plugins":{"title":{"display":true,"text":"Belonging Cues — Relative Impact on Group Safety (Pentland's Research)"}},"scales":{"r":{"beginAtZero":true}}}}
+```
+
+Eye contact and active listening emerge as the highest-impact belonging cues in Pentland's sociometric research, while mirroring and courtesies — though lower — serve as the unconscious substrate that signals "we are alike" without either party being aware of it.
+
 ### The Neuroscience of Belonging
 
 - Belonging cues work because the human brain is wired to constantly scan the environment for threat:
@@ -194,6 +218,12 @@ The three skills form a progression — each one enables the next, and none work
 
 > [!tip] Core Insight
 > Belonging cues are not about being nice — they are about telling the brain it can stop scanning for threats and start collaborating. Safety is the foundation of cognitive performance.
+
+```d3
+{"type":"force","data":{"nodes":[{"id":"proximity","label":"Proximity","group":1},{"id":"eyecontact","label":"Eye Contact","group":1},{"id":"turntaking","label":"Turn-Taking","group":1},{"id":"energy","label":"Energy","group":1},{"id":"mirroring","label":"Mirroring","group":1},{"id":"listening","label":"Active Listening","group":1},{"id":"safety","label":"SAFETY","group":2},{"id":"trust","label":"TRUST","group":3},{"id":"purpose","label":"PURPOSE","group":4},{"id":"cooperation","label":"Extraordinary Cooperation","group":5}],"links":[{"source":"proximity","target":"safety"},{"source":"eyecontact","target":"safety"},{"source":"turntaking","target":"safety"},{"source":"energy","target":"safety"},{"source":"mirroring","target":"safety"},{"source":"listening","target":"safety"},{"source":"safety","target":"trust"},{"source":"trust","target":"purpose"},{"source":"purpose","target":"cooperation"},{"source":"proximity","target":"energy"},{"source":"eyecontact","target":"listening"},{"source":"turntaking","target":"mirroring"}]},"options":{"title":"Belonging Cues → Safety → Trust → Purpose → Cooperation"}}
+```
+
+The force diagram maps the causal chain Coyle discovered: six types of belonging cues feed into psychological safety, which enables trust, which enables shared purpose, which produces extraordinary cooperation. The cues also reinforce each other — proximity generates energy, eye contact deepens listening, and turn-taking encourages mirroring.
 
 ---
 

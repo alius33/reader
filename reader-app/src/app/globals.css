@@ -201,6 +201,21 @@
   max-width: 100%;
 }
 
+/* Chart.js — no constraints */
+.reader-content [data-chart-diagram] { max-width: none; }
+.reader-content [data-chart-diagram] canvas {
+  max-width: 100%;
+  height: auto;
+}
+
+/* D3.js — no constraints */
+.reader-content [data-d3-diagram] { max-width: none; }
+.reader-content [data-d3-diagram] svg {
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+}
+
 /*
  * ============================================================
  * .prose overrides (for non-editor contexts like explore page).

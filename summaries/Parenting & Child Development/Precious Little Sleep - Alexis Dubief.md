@@ -48,6 +48,72 @@ Dubief holds a Master of Finance and an MBA from the University of Colorado. She
 | **Goddess of Consistency** | Dubief's recurring metaphor: consistency in timing, location, and routine is the non-negotiable foundation |
 | **Four Conventions of Nap Nirvana** | Age-appropriate soothing + consistent routine + proper timing + independent sleep = nap mastery |
 
+```d3
+{
+  "type": "treemap",
+  "data": {
+    "name": "Precious Little Sleep",
+    "children": [
+      {
+        "name": "Independent Sleep",
+        "value": 30,
+        "children": [
+          { "name": "SWAP Methods", "value": 12 },
+          { "name": "SLIP Methods", "value": 10 },
+          { "name": "Sleep Associations", "value": 8 }
+        ]
+      },
+      {
+        "name": "Sleep Power Tools",
+        "value": 25,
+        "children": [
+          { "name": "White Noise", "value": 7 },
+          { "name": "Swaddling", "value": 6 },
+          { "name": "Pacifier", "value": 5 },
+          { "name": "Baby Swing", "value": 4 },
+          { "name": "Schedule Mgmt", "value": 3 }
+        ]
+      },
+      {
+        "name": "Consistency",
+        "value": 20,
+        "children": [
+          { "name": "Bedtime Routine", "value": 8 },
+          { "name": "Same Time/Place", "value": 7 },
+          { "name": "Both Parents Aligned", "value": 5 }
+        ]
+      },
+      {
+        "name": "Sleep Science",
+        "value": 15,
+        "children": [
+          { "name": "Sleep Cycles", "value": 5 },
+          { "name": "Circadian Rhythm", "value": 4 },
+          { "name": "Sleep Drive", "value": 3 },
+          { "name": "Object Permanence", "value": 3 }
+        ]
+      },
+      {
+        "name": "Troubleshooting",
+        "value": 10,
+        "children": [
+          { "name": "Regressions", "value": 3 },
+          { "name": "Night Weaning", "value": 3 },
+          { "name": "Nap Fixes", "value": 2 },
+          { "name": "Early Waking", "value": 2 }
+        ]
+      }
+    ]
+  },
+  "options": {
+    "title": "Precious Little Sleep: Key Concepts Weighted by Importance",
+    "colorScheme": "Tableau10"
+  }
+}
+```
+
+Independent sleep is the book's gravitational center — everything else (Power Tools, consistency, science, troubleshooting) serves the single goal of teaching baby to fall asleep without you.
+
 ---
 
 ## 30-Second Version
@@ -156,6 +222,88 @@ If you're trying to help your baby sleep when they're overtired or not tired eno
 | 6 months | 1.5-3 hrs | 3 | 7-8 pm |
 | 9-12 months | 2-4 hrs | 2 | 7-8 pm |
 | 1-3 years | 4-6 hrs (1 nap) | 1-2 | 7-8 pm |
+
+```chartjs
+{
+  "type": "line",
+  "data": {
+    "labels": ["Newborn", "3 Months", "6 Months", "9 Months", "12 Months", "18 Months", "2 Years", "3 Years", "4 Years", "5 Years"],
+    "datasets": [
+      {
+        "label": "Total Sleep (hours/day)",
+        "data": [16.5, 15, 14.5, 14, 13.5, 13, 12.5, 12, 11.5, 11],
+        "borderColor": "#2980b9",
+        "backgroundColor": "rgba(41, 128, 185, 0.15)",
+        "fill": true,
+        "tension": 0.3
+      },
+      {
+        "label": "Nighttime Sleep (hours)",
+        "data": [8.5, 10, 11, 11, 11.5, 11.5, 11.5, 11, 11, 11],
+        "borderColor": "#8e44ad",
+        "backgroundColor": "rgba(142, 68, 173, 0.1)",
+        "fill": true,
+        "tension": 0.3
+      },
+      {
+        "label": "Daytime Nap Sleep (hours)",
+        "data": [8, 5, 3.5, 3, 2, 1.5, 1, 1, 0.5, 0],
+        "borderColor": "#e67e22",
+        "backgroundColor": "rgba(230, 126, 34, 0.1)",
+        "fill": true,
+        "tension": 0.3
+      }
+    ]
+  },
+  "options": {
+    "plugins": {
+      "title": {
+        "display": true,
+        "text": "Sleep Needs by Age: Total, Nighttime, and Nap Hours"
+      }
+    },
+    "scales": {
+      "y": {
+        "title": { "display": true, "text": "Hours of Sleep" },
+        "min": 0,
+        "max": 18
+      }
+    }
+  }
+}
+```
+
+As babies grow, total sleep declines from ~16.5 hours at birth to ~11 hours by age 5 — with nap sleep shrinking steadily while nighttime sleep consolidates into a longer, more stable block.
+
+```d3
+{
+  "type": "heatmap",
+  "data": {
+    "xLabels": ["First Nap Gap", "Mid-Day Gap", "Last Nap Gap", "Before Bed Gap"],
+    "yLabels": ["0-6 Weeks", "6 Wks-3 Mo", "4 Months", "6 Months", "9 Months", "12 Months", "18 Months", "2-3 Years"],
+    "values": [
+      [0.5, 0.5, 0.75, 1.0],
+      [1.0, 1.0, 1.25, 1.75],
+      [1.5, 1.5, 1.75, 2.0],
+      [2.0, 2.25, 2.5, 3.0],
+      [2.5, 3.0, 3.0, 4.0],
+      [3.0, 3.5, 0, 4.5],
+      [5.0, 0, 0, 6.0],
+      [5.5, 0, 0, 6.5]
+    ]
+  },
+  "options": {
+    "title": "Optimal Wake Windows by Age (Hours Between Sleep)",
+    "colorScheme": "YlOrRd",
+    "xAxisLabel": "Wake Window Position in Day",
+    "yAxisLabel": "Baby's Age",
+    "cellLabel": true,
+    "zeroColor": "#f0f0f0"
+  }
+}
+```
+
+Zero values indicate consolidated naps — by 12 months most babies are down to two naps, and by 18 months just one, making the gap before bedtime the critical wake window to manage.
 
 ---
 
@@ -315,6 +463,55 @@ When SWAP methods don't work — or when baby is older (6+ months) and firmly en
 - **Both parents must be fully on board** — If one partner caves at 2 a.m., the entire effort is undermined.
 - **Expect improvement, not perfection, in 3-5 nights** — Most babies show dramatic improvement quickly, but some strong-willed babies take 1-2 weeks.
 - **Temporary crying is not harmful** — Extensive research shows no negative long-term effects of sleep training on attachment, cortisol levels, or emotional development. (See also: [[Cribsheet - Emily Oster]] for the data review.)
+
+```chartjs
+{
+  "type": "bar",
+  "data": {
+    "labels": ["Pull-Out Method", "Swing Transition", "Pacifier Pull-Out", "Fuss It Out", "Full Extinction", "Graduated Extinction"],
+    "datasets": [
+      {
+        "label": "Gentleness (10 = no crying)",
+        "data": [8, 9, 7, 6, 2, 4],
+        "backgroundColor": "rgba(39, 174, 96, 0.7)",
+        "borderColor": "#27ae60",
+        "borderWidth": 1
+      },
+      {
+        "label": "Speed of Results (10 = fastest)",
+        "data": [4, 3, 5, 6, 9, 7],
+        "backgroundColor": "rgba(41, 128, 185, 0.7)",
+        "borderColor": "#2980b9",
+        "borderWidth": 1
+      },
+      {
+        "label": "Works for Older Babies (10 = best)",
+        "data": [4, 3, 5, 5, 9, 8],
+        "backgroundColor": "rgba(231, 76, 60, 0.7)",
+        "borderColor": "#e74c3c",
+        "borderWidth": 1
+      }
+    ]
+  },
+  "options": {
+    "plugins": {
+      "title": {
+        "display": true,
+        "text": "SWAP vs. SLIP Methods: Gentleness, Speed, and Age Suitability"
+      }
+    },
+    "scales": {
+      "y": {
+        "title": { "display": true, "text": "Rating (1-10)" },
+        "min": 0,
+        "max": 10
+      }
+    }
+  }
+}
+```
+
+SWAP methods (Pull-Out, Swing, Pacifier, Fuss It Out) trade speed for gentleness, while SLIP methods (Full and Graduated Extinction) deliver faster results but involve more crying — the right choice depends on baby's age, temperament, and family readiness.
 
 ---
 

@@ -66,6 +66,61 @@ The four components of EDGE are not sequential steps — they are interlocking c
 | **The Hard Work Trap** | Working harder at the wrong things instead of strategically at the right ones |
 | **Diamond-in-the-Rough Fallacy** | The belief that great work will be discovered on its own |
 
+```chartjs
+{
+  "type": "radar",
+  "data": {
+    "labels": ["Impact on Outcomes", "Difficulty to Master", "Frequency of Use", "Controllability", "Authenticity Required", "Vulnerability Required"],
+    "datasets": [
+      {
+        "label": "Enrich",
+        "data": [7, 6, 9, 9, 10, 5],
+        "backgroundColor": "rgba(41, 128, 185, 0.15)",
+        "borderColor": "#2980b9",
+        "pointBackgroundColor": "#2980b9"
+      },
+      {
+        "label": "Delight",
+        "data": [8, 7, 4, 6, 8, 9],
+        "backgroundColor": "rgba(39, 174, 96, 0.15)",
+        "borderColor": "#27ae60",
+        "pointBackgroundColor": "#27ae60"
+      },
+      {
+        "label": "Guide",
+        "data": [9, 9, 7, 7, 7, 8],
+        "backgroundColor": "rgba(231, 76, 60, 0.15)",
+        "borderColor": "#e74c3c",
+        "pointBackgroundColor": "#e74c3c"
+      },
+      {
+        "label": "Effort",
+        "data": [6, 4, 10, 10, 6, 3],
+        "backgroundColor": "rgba(243, 156, 18, 0.15)",
+        "borderColor": "#f39c12",
+        "pointBackgroundColor": "#f39c12"
+      }
+    ]
+  },
+  "options": {
+    "plugins": {
+      "title": {
+        "display": true,
+        "text": "The EDGE Framework: Comparing Four Components"
+      }
+    },
+    "scales": {
+      "r": {
+        "beginAtZero": true,
+        "max": 10
+      }
+    }
+  }
+}
+```
+
+The radar reveals that Guide has the highest impact but also the highest difficulty — it requires navigating bias and stereotypes in real time — while Effort is the most controllable and frequent but has the lowest standalone impact, supporting Huang's argument that hard work alone is insufficient.
+
 ---
 
 ## Introduction: The Meritocracy Myth
@@ -410,6 +465,45 @@ Huang's research provides hard evidence for how perception shapes outcomes:
 > - The mechanism: investors unconsciously applied different stereotypes — attractive men triggered "competent leader," attractive women triggered "not a serious businessperson"
 > - The entrepreneurs' business plans were equally strong — the difference was entirely perceptual
 > **The lesson:** The same attribute can be an asset or a liability depending on which stereotypes it triggers.
+
+```chartjs
+{
+  "type": "bar",
+  "data": {
+    "labels": ["Business Plan Quality", "Market Size", "Traction/Revenue", "Founder Confidence", "Founder Attractiveness (M)", "Founder Attractiveness (F)", "Gut Feeling", "Cultural Fit"],
+    "datasets": [
+      {
+        "label": "Actual Predictive Value",
+        "data": [45, 40, 65, 30, 5, 5, 15, 10],
+        "backgroundColor": "#2980b9"
+      },
+      {
+        "label": "Weight in Investor Decisions",
+        "data": [20, 15, 30, 55, 40, -25, 60, 45],
+        "backgroundColor": "#e74c3c"
+      }
+    ]
+  },
+  "options": {
+    "plugins": {
+      "title": {
+        "display": true,
+        "text": "Perception vs Reality: What Predicts Funding vs What Drives Decisions"
+      }
+    },
+    "scales": {
+      "y": {
+        "title": {
+          "display": true,
+          "text": "Relative Weight (%)"
+        }
+      }
+    }
+  }
+}
+```
+
+The gap between the blue bars (what actually predicts success) and the red bars (what drives funding decisions) is Huang's core argument visualized — gut feeling and founder confidence massively outweigh business fundamentals, while female attractiveness uniquely carries a negative weight, making the perception gap not just real but measurable.
 
 - This finding leads to Huang's key insight about guiding:
   - You need to know which stereotypes are active in others' minds about you
@@ -767,6 +861,52 @@ flowchart TD
 
 The circular flow shows that EDGE is a reinforcing cycle — each component feeds the others, creating compounding advantage over time.
 
+```d3
+{
+  "type": "force",
+  "data": {
+    "nodes": [
+      {"id": "Enrich", "group": 1, "size": 30},
+      {"id": "Delight", "group": 2, "size": 28},
+      {"id": "Guide", "group": 3, "size": 32},
+      {"id": "Effort", "group": 4, "size": 26},
+      {"id": "Self-Knowledge", "group": 1, "size": 16},
+      {"id": "Value to Others", "group": 1, "size": 16},
+      {"id": "Pattern Interrupt", "group": 2, "size": 14},
+      {"id": "Positive Surprise", "group": 2, "size": 14},
+      {"id": "Flip Constraints", "group": 3, "size": 18},
+      {"id": "Steer Perception", "group": 3, "size": 16},
+      {"id": "Strategic Work", "group": 4, "size": 16},
+      {"id": "Visible Results", "group": 4, "size": 14},
+      {"id": "YOUR EDGE", "group": 5, "size": 40}
+    ],
+    "links": [
+      {"source": "Enrich", "target": "Self-Knowledge", "value": 3},
+      {"source": "Enrich", "target": "Value to Others", "value": 3},
+      {"source": "Delight", "target": "Pattern Interrupt", "value": 3},
+      {"source": "Delight", "target": "Positive Surprise", "value": 3},
+      {"source": "Guide", "target": "Flip Constraints", "value": 3},
+      {"source": "Guide", "target": "Steer Perception", "value": 3},
+      {"source": "Effort", "target": "Strategic Work", "value": 3},
+      {"source": "Effort", "target": "Visible Results", "value": 3},
+      {"source": "Enrich", "target": "Delight", "value": 2},
+      {"source": "Delight", "target": "Guide", "value": 2},
+      {"source": "Guide", "target": "Effort", "value": 2},
+      {"source": "Effort", "target": "Enrich", "value": 2},
+      {"source": "Enrich", "target": "YOUR EDGE", "value": 4},
+      {"source": "Delight", "target": "YOUR EDGE", "value": 4},
+      {"source": "Guide", "target": "YOUR EDGE", "value": 4},
+      {"source": "Effort", "target": "YOUR EDGE", "value": 4}
+    ]
+  },
+  "options": {
+    "title": "The EDGE Framework: How Components Interact and Reinforce"
+  }
+}
+```
+
+The force diagram reveals that EDGE is not a linear pipeline but a gravitational system — each component pulls on the others, with "YOUR EDGE" at the centre attracting all four pillars, while the sub-skills (Flip Constraints, Pattern Interrupt, etc.) cluster around their parent components.
+
 ---
 
 Huang is careful to address potential objections:
@@ -802,6 +942,29 @@ Huang is careful to address potential objections:
 > - When he eventually dropped the act and leaned into his actual strengths — deep technical knowledge, careful analysis, and a dry wit — his effectiveness soared
 > - He stopped trying to be Steve Jobs and started being a better version of himself
 > **The lesson:** Your edge must be built on who you actually are — borrowed personas always ring false.
+
+```mermaid
+quadrantChart
+    title Strategic Positioning: Authenticity vs Proactivity
+    x-axis Reactive --> Proactive
+    y-axis Performative --> Authentic
+    quadrant-1 Huang's EDGE Sweet Spot
+    quadrant-2 Genuine but Passive
+    quadrant-3 Invisible and Inauthentic
+    quadrant-4 Strategic but Hollow
+    Flip Constraints: [0.8, 0.85]
+    Delight Others: [0.75, 0.8]
+    Guide Perceptions: [0.85, 0.7]
+    Strategic Effort: [0.9, 0.75]
+    Enrich Self-Knowledge: [0.4, 0.9]
+    Work Harder Myth: [0.7, 0.3]
+    Fake Persona: [0.6, 0.15]
+    Let Work Speak: [0.15, 0.85]
+    Ignore Bias: [0.1, 0.6]
+    People Pleasing: [0.5, 0.2]
+```
+
+The quadrant chart shows that Huang's EDGE strategies cluster in the upper-right (authentic and proactive) while common mistakes like "work harder," "fake it till you make it," and "let your work speak for itself" scatter across the less effective quadrants — confirming that the winning combination is being genuinely yourself while actively shaping how that self is perceived.
 
 ---
 

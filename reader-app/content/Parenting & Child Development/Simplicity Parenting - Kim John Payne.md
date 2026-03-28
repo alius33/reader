@@ -107,6 +107,55 @@ Adult concerns — politics, global warming, financial stress, relationship prob
 **4. Too Much Speed**
 Free time for children has decreased by twelve or more hours per week in a single generation. Structured activities have doubled. Homework has doubled. The childhood that used to be characterized by leisurely afternoons has become a sprint between appointments.
 
+```chartjs
+{
+  "type": "bar",
+  "data": {
+    "labels": ["Environment", "Rhythm", "Schedules", "Filtering Adult World"],
+    "datasets": [
+      {
+        "label": "Ease of Implementation (10 = easiest)",
+        "data": [8, 6, 5, 4],
+        "backgroundColor": "rgba(39, 174, 96, 0.7)",
+        "borderColor": "#27ae60",
+        "borderWidth": 1
+      },
+      {
+        "label": "Impact on Child Behavior (10 = highest)",
+        "data": [7, 9, 7, 8],
+        "backgroundColor": "rgba(41, 128, 185, 0.7)",
+        "borderColor": "#2980b9",
+        "borderWidth": 1
+      },
+      {
+        "label": "Impact on Family Culture (10 = highest)",
+        "data": [6, 9, 8, 9],
+        "backgroundColor": "rgba(142, 68, 173, 0.7)",
+        "borderColor": "#8e44ad",
+        "borderWidth": 1
+      }
+    ]
+  },
+  "options": {
+    "plugins": {
+      "title": {
+        "display": true,
+        "text": "Four Levels of Simplification: Ease vs. Impact"
+      }
+    },
+    "scales": {
+      "y": {
+        "title": { "display": true, "text": "Rating (1-10)" },
+        "min": 0,
+        "max": 10
+      }
+    }
+  }
+}
+```
+
+Environment is the easiest starting point (decluttering is tangible and immediate), while rhythm and filtering the adult world deliver the deepest transformation in both child behavior and family culture — though they require more sustained effort.
+
 > [!warning] The Boiling Frog
 > Payne uses the frog-in-hot-water metaphor: if the temperature rises slowly enough, we never notice we need to jump out. "The weirdness of 'too much' begins to seem normal."
 
@@ -120,6 +169,64 @@ Within two weeks, James's anxiety dropped. He started playing outside, building 
 
 > [!success] The Power of Compound Simplification
 > No single change was the "magic bullet." But collectively, simplifying the environment and the emotional climate produced results greater than the sum of their parts. James's parents found a new measure for decisions: "Does this make sense for our family?"
+
+```d3
+{
+  "type": "treemap",
+  "data": {
+    "name": "Areas of Excess",
+    "children": [
+      {
+        "name": "Too Much Stuff",
+        "value": 30,
+        "children": [
+          { "name": "Toys (70/yr avg)", "value": 10 },
+          { "name": "Books (uncurated)", "value": 5 },
+          { "name": "Clothes (wrong season/size)", "value": 5 },
+          { "name": "Sensory Clutter", "value": 5 },
+          { "name": "Broken/Incomplete Items", "value": 5 }
+        ]
+      },
+      {
+        "name": "Too Much Speed",
+        "value": 25,
+        "children": [
+          { "name": "Structured Activities", "value": 8 },
+          { "name": "Homework Doubling", "value": 6 },
+          { "name": "Lost Free Time (12+ hrs/wk)", "value": 6 },
+          { "name": "Rushed Transitions", "value": 5 }
+        ]
+      },
+      {
+        "name": "Too Much Information",
+        "value": 25,
+        "children": [
+          { "name": "Background News/TV", "value": 8 },
+          { "name": "Overheard Adult Worries", "value": 7 },
+          { "name": "Emotional Temperature-Taking", "value": 5 },
+          { "name": "Premature Adult Topics", "value": 5 }
+        ]
+      },
+      {
+        "name": "Too Many Choices",
+        "value": 20,
+        "children": [
+          { "name": "Food Options (30 cereals)", "value": 6 },
+          { "name": "Activity Decisions", "value": 5 },
+          { "name": "Consumer Culture", "value": 5 },
+          { "name": "Decision Fatigue", "value": 4 }
+        ]
+      }
+    ]
+  },
+  "options": {
+    "title": "The Architecture of Childhood Excess — Sources of Cumulative Stress",
+    "colorScheme": "Paired"
+  }
+}
+```
+
+Stuff and speed together account for over half the excess burden on modern children — but information overload and choice paralysis are equally corrosive because they flood children's awareness with adult-level complexity their brains aren't yet equipped to process.
 
 ---
 
@@ -267,6 +374,40 @@ Payne's response was gentle but unsparing: children are like crops. You can push
 > - Homework has more than doubled (52 min/week in 1981 → 80+ min/night by 2006)
 > - Free time has decreased by 12+ hours per week
 > - In 1981, school-age children had 40% of the day free; by 1997, it was 25%
+
+```chartjs
+{
+  "type": "doughnut",
+  "data": {
+    "labels": ["Free Play", "Structured Activities", "School", "Homework", "Screens", "Sleep", "Meals & Care"],
+    "datasets": [
+      {
+        "label": "Before Simplification (%)",
+        "data": [8, 18, 27, 7, 12, 38, 10],
+        "backgroundColor": [
+          "rgba(39, 174, 96, 0.7)",
+          "rgba(231, 76, 60, 0.7)",
+          "rgba(41, 128, 185, 0.7)",
+          "rgba(230, 126, 34, 0.7)",
+          "rgba(142, 68, 173, 0.7)",
+          "rgba(52, 73, 94, 0.7)",
+          "rgba(243, 156, 18, 0.7)"
+        ]
+      }
+    ]
+  },
+  "options": {
+    "plugins": {
+      "title": {
+        "display": true,
+        "text": "Typical Overscheduled Child: Daily Time Allocation (% of Waking Hours)"
+      }
+    }
+  }
+}
+```
+
+In the overscheduled child's day, free play has been squeezed to just 8% of waking hours — crowded out by structured activities and screens, leaving almost no room for the boredom, imagination, and self-directed exploration that Payne identifies as essential for developing identity and resilience.
 
 **The problem isn't motivation — it's balance.** Payne doesn't question whether busy kids enjoy what they're doing. He questions whether a child's love of an activity protects them from the stress of doing too much of it, too young. A genuine interest is sustainable over time. But a healthy interest *requires* leisure and rest to deepen and endure.
 
@@ -446,6 +587,65 @@ graph TD
 ```
 
 **On discipline:** As Michelle and Clark lost their tentativeness with Carla, as expectations became more consistent, Carla lost her controlling behaviors. She didn't really want to co-parent herself — she wanted parents. More effective discipline is invariably an outgrowth of the simplification process.
+
+```d3
+{
+  "type": "sankey",
+  "data": {
+    "nodes": [
+      "Too Much Stuff",
+      "Too Much Speed",
+      "Too Much Info",
+      "Too Many Choices",
+      "Anxiety & Hypervigilance",
+      "Controlling Behaviors",
+      "Sleep & Food Issues",
+      "Loss of Resilience",
+      "Simplify Environment",
+      "Establish Rhythm",
+      "Balance Schedules",
+      "Filter Adult World",
+      "Calmer Sleep",
+      "Broader Appetite",
+      "Deeper Play",
+      "Stronger Family Bonds"
+    ],
+    "links": [
+      { "source": 0, "target": 4, "value": 5 },
+      { "source": 0, "target": 5, "value": 4 },
+      { "source": 1, "target": 6, "value": 5 },
+      { "source": 1, "target": 7, "value": 4 },
+      { "source": 2, "target": 4, "value": 5 },
+      { "source": 2, "target": 5, "value": 3 },
+      { "source": 3, "target": 7, "value": 4 },
+      { "source": 3, "target": 6, "value": 3 },
+      { "source": 4, "target": 8, "value": 4 },
+      { "source": 4, "target": 11, "value": 3 },
+      { "source": 5, "target": 9, "value": 4 },
+      { "source": 5, "target": 8, "value": 3 },
+      { "source": 6, "target": 9, "value": 4 },
+      { "source": 6, "target": 10, "value": 3 },
+      { "source": 7, "target": 10, "value": 4 },
+      { "source": 7, "target": 11, "value": 3 },
+      { "source": 8, "target": 14, "value": 4 },
+      { "source": 8, "target": 13, "value": 3 },
+      { "source": 9, "target": 12, "value": 4 },
+      { "source": 9, "target": 15, "value": 3 },
+      { "source": 10, "target": 14, "value": 3 },
+      { "source": 10, "target": 15, "value": 4 },
+      { "source": 11, "target": 12, "value": 3 },
+      { "source": 11, "target": 13, "value": 3 }
+    ]
+  },
+  "options": {
+    "title": "The Simplification Flow: From Excess → Stress Symptoms → Intervention → Outcomes",
+    "width": 800,
+    "height": 450
+  }
+}
+```
+
+The four sources of excess flow through distinct stress symptoms into targeted simplification strategies, ultimately producing the compound benefits Payne observes — calmer sleep, broader appetites, deeper play, and stronger family bonds emerge not from any single change but from the cascading effect of less across multiple domains.
 
 **On marriage:** Payne reports that dads who began the process reluctantly often tell him it has profoundly affected their marriage. When a family slows down and limits distractions, "Dad may very well catch Mom's eye across the table." Having children is supposed to be the ultimate shared journey — simplification restores the sense of traveling together.
 

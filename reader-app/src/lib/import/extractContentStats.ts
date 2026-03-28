@@ -28,7 +28,7 @@ function walkForStats(nodes: TiptapNode[] | undefined, stats: ContentStats) {
         stats.stories++;
       }
     }
-    if (node.type === "mermaidDiagram") {
+    if (node.type === "mermaidDiagram" || node.type === "chartDiagram" || node.type === "d3Diagram") {
       stats.diagrams++;
     }
     // Count wikilink marks

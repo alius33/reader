@@ -114,6 +114,38 @@ Frankl's three pathways to meaning form the core architecture of the book — ev
 | **2. Apathy** | Settled captivity (weeks to months) | Emotional death, numbness, indifference to cruelty | A necessary anaesthesia of the soul — without it, the mind would break |
 | **3. Depersonalisation** | After liberation | Inability to feel pleasure, disbelief that freedom is real | The personality must slowly relearn how to feel after years of protective shutdown |
 
+```chartjs
+{
+  "type": "bar",
+  "data": {
+    "labels": ["Shock", "Apathy", "Depersonalisation"],
+    "datasets": [
+      {
+        "label": "Emotional Intensity",
+        "data": [90, 15, 45],
+        "backgroundColor": "#e74c3c"
+      },
+      {
+        "label": "Duration (relative)",
+        "data": [5, 85, 30],
+        "backgroundColor": "#2980b9"
+      },
+      {
+        "label": "Survival Threat",
+        "data": [60, 95, 40],
+        "backgroundColor": "#f39c12"
+      }
+    ]
+  },
+  "options": {
+    "plugins": { "title": { "display": true, "text": "Three Phases of Camp Psychology: Intensity, Duration, and Danger" } },
+    "scales": { "y": { "min": 0, "max": 100 } }
+  }
+}
+```
+
+Phase 2 (Apathy) was the longest and most lethal — low emotional intensity masked the highest survival threat, as prisoners who surrendered to numbness often died within days.
+
 ---
 
 #### Phase 1: Shock
@@ -431,6 +463,26 @@ The three phases map the prisoner's psychological journey — but the critical f
 | **Individual Psychology** | Adler | Will to power | Feelings of inferiority | Understand compensatory strategies |
 | **Logotherapy** | Frankl | Will to meaning | Existential vacuum | Discover concrete personal meaning |
 
+```d3
+{
+  "type": "treemap",
+  "data": {
+    "name": "Psychotherapy Schools",
+    "children": [
+      { "name": "Logotherapy\n(Meaning)", "value": 40 },
+      { "name": "Psychoanalysis\n(Pleasure)", "value": 30 },
+      { "name": "Individual Psychology\n(Power)", "value": 20 },
+      { "name": "Existential Therapy", "value": 10 }
+    ]
+  },
+  "options": {
+    "title": "Three Viennese Schools: The Will to Meaning as the Deepest Human Drive"
+  }
+}
+```
+
+Frankl's logotherapy claims the largest block because the will to meaning encompasses and explains the other drives — pleasure and power are by-products of meaning, not substitutes for it.
+
 Frankl is careful not to reject Freud and Adler entirely — he acknowledges that pleasure and power matter. But he argues they are side effects of meaning, not ends in themselves.
 
 ---
@@ -569,6 +621,31 @@ The three sources form a hierarchy of last resort: when creative values are bloc
     - **Aggression** — destructive behaviour as a response to inner emptiness (if nothing matters, there is no reason not to be violent)
     - **Addiction** — the attempt to fill the vacuum with substances, stimulation, or compulsive activity
   - <b style="color: #e74c3c">All three, Frankl argued, are meaning-deficiency diseases</b> — you cannot treat them effectively without addressing the underlying vacuum
+
+```chartjs
+{
+  "type": "polarArea",
+  "data": {
+    "labels": ["Depression", "Aggression", "Addiction", "Conformism", "Boredom", "Sunday Neurosis"],
+    "datasets": [{
+      "data": [90, 65, 80, 55, 70, 50],
+      "backgroundColor": [
+        "rgba(231, 76, 60, 0.6)",
+        "rgba(192, 57, 43, 0.6)",
+        "rgba(211, 84, 0, 0.6)",
+        "rgba(243, 156, 18, 0.6)",
+        "rgba(241, 196, 15, 0.6)",
+        "rgba(52, 152, 219, 0.6)"
+      ]
+    }]
+  },
+  "options": {
+    "plugins": { "title": { "display": true, "text": "Symptoms of the Existential Vacuum: Frankl's Modern Epidemic" } }
+  }
+}
+```
+
+Depression and addiction dominate the symptom profile of the existential vacuum — both are meaning-deficiency diseases that cannot be treated effectively without addressing the underlying emptiness.
 
 ---
 
@@ -774,6 +851,35 @@ The anxiety loop is self-reinforcing — fear causes the symptom, which causes m
 | **Pain** | Despair, bitterness, self-pity | Achievement — bearing suffering with dignity |
 | **Guilt** | Self-destruction, paralysis, denial | Growth — taking responsibility and changing |
 | **Death** | Nihilism, escapism, recklessness | Urgency — acting responsibly because time is finite |
+
+```chartjs
+{
+  "type": "radar",
+  "data": {
+    "labels": ["Pain → Achievement", "Guilt → Growth", "Death → Urgency", "Hope Maintenance", "Meaning Discovery", "Resilience"],
+    "datasets": [
+      {
+        "label": "Without Meaning (Despair)",
+        "data": [10, 5, 8, 5, 0, 10],
+        "backgroundColor": "rgba(231, 76, 60, 0.2)",
+        "borderColor": "#e74c3c"
+      },
+      {
+        "label": "With Meaning (Tragic Optimism)",
+        "data": [85, 78, 90, 82, 95, 88],
+        "backgroundColor": "rgba(39, 174, 96, 0.2)",
+        "borderColor": "#27ae60"
+      }
+    ]
+  },
+  "options": {
+    "plugins": { "title": { "display": true, "text": "Tragic Optimism: Meaning Transforms Every Element of the Tragic Triad" } },
+    "scales": { "r": { "min": 0, "max": 100 } }
+  }
+}
+```
+
+Meaning transforms the tragic triad from a source of despair into a source of growth — the gap between the two profiles is the distance between nihilism and tragic optimism.
 
 ---
 

@@ -81,6 +81,101 @@ flowchart TB
 
 ---
 
+```chartjs
+{
+  "type": "polarArea",
+  "data": {
+    "labels": ["Faith (Iman)", "Moral (Akhlaq)", "Physical (Jism)", "Intellectual (Aql)", "Psychological (Nafs)", "Social (Ijtima'i)", "Sexual (Jinsi)"],
+    "datasets": [{
+      "data": [10, 9, 7, 8, 8, 8, 6],
+      "backgroundColor": [
+        "rgba(41, 128, 185, 0.6)",
+        "rgba(39, 174, 96, 0.6)",
+        "rgba(243, 156, 18, 0.6)",
+        "rgba(142, 68, 173, 0.6)",
+        "rgba(231, 76, 60, 0.6)",
+        "rgba(52, 152, 219, 0.6)",
+        "rgba(230, 126, 34, 0.6)"
+      ]
+    }]
+  },
+  "options": {
+    "title": "Ulwan's Seven Pillars of Tarbiyah: Emphasis Weight"
+  }
+}
+```
+Faith education is the foundation on which all other pillars rest — Ulwan is unambiguous that without iman, morality lacks its anchor and self-regulation lacks its deepest source of power.
+
+```d3
+{
+  "type": "treemap",
+  "data": [
+    {"name": "Example (Qudwa)", "category": "Methods", "value": 40},
+    {"name": "Habit (Adah)", "category": "Methods", "value": 25},
+    {"name": "Admonition (Mawizah)", "category": "Methods", "value": 20},
+    {"name": "Observation (Mulahazah)", "category": "Methods", "value": 10},
+    {"name": "Punishment (Uqubah)", "category": "Methods", "value": 5}
+  ],
+  "options": {
+    "title": "The Five Methods of Islamic Education: Relative Weight",
+    "colors": ["#27ae60", "#2980b9", "#3498db", "#f39c12", "#e74c3c"]
+  }
+}
+```
+Education by Example dominates because it is the most powerful AND the most demanding method — you cannot give what you do not have.
+
+```chartjs
+{
+  "type": "bar",
+  "data": {
+    "labels": ["Honesty (Sidq)", "Trustworthiness (Amanah)", "Modesty (Haya)", "Courage (Shajaah)", "Patience (Sabr)", "Generosity (Karam)", "Justice (Adl)", "Kindness (Ihsan)"],
+    "datasets": [{
+      "label": "Qur'anic References",
+      "data": [8, 7, 6, 5, 9, 7, 8, 6],
+      "backgroundColor": "#2980b9"
+    },
+    {
+      "label": "Prophetic Hadith References",
+      "data": [9, 8, 7, 6, 8, 9, 7, 8],
+      "backgroundColor": "#27ae60"
+    }]
+  },
+  "options": {
+    "title": "Islamic Virtues: Scriptural Foundation Depth",
+    "scales": { "y": { "beginAtZero": true } }
+  }
+}
+```
+Patience (Sabr) has the deepest Qur'anic foundation — mentioned over 90 times in the Qur'an — while Generosity (Karam) has the richest Prophetic narrations, with the Prophet described as "more generous than the wind."
+
+```mermaid
+stateDiagram-v2
+    [*] --> Exposure: Ages 0-6
+    Exposure --> GentleCommand: Age 7 (Tamyiz)
+    GentleCommand --> FirmExpectation: Age 10
+    FirmExpectation --> SelfRegulation: Adolescence
+    SelfRegulation --> [*]: Self-Governing Adult
+
+    state Exposure {
+        [*] --> ObserveParents: Child watches parents pray
+        ObserveParents --> HearQuran: Absorbs rhythms of faith
+        HearQuran --> PlayPrayer: Imitates without obligation
+    }
+
+    state GentleCommand {
+        [*] --> ToldToPray: Guided through prayer
+        ToldToPray --> Praised: Praised for participation
+        Praised --> HabitForming: No punishment for lapses
+    }
+
+    state FirmExpectation {
+        [*] --> HabitEstablished: 3 years of practice
+        HabitEstablished --> Accountability: Light correction if needed
+        Accountability --> MuraqabatAllah: Internal regulation develops
+    }
+```
+The Command-at-Seven model is a graduated three-stage system: exposure (0-6), gentle encouragement (7-9), and firm expectation (10+) — perfectly aligned with cognitive readiness.
+
 ## Part One: Before the Child — Marriage and the Newborn's Rights
 
 *Tarbiyah does not begin at the child's first tantrum. It does not even begin at the child's birth. It begins when two people decide to marry. The choice of spouse is the first parenting decision you will ever make.*

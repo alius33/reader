@@ -82,6 +82,107 @@ This is the core engine of the entire book — every chapter elaborates on one s
 | **Unity (7th Principle)** | Shared identity ("We" relationships) drives compliance beyond liking |
 | **Post-Suasion** | Making temporary pre-suasive shifts durable through commitments |
 
+```chartjs
+{
+  "type": "polarArea",
+  "data": {
+    "labels": ["Reciprocity", "Liking", "Social Proof", "Authority", "Scarcity", "Consistency", "Unity"],
+    "datasets": [{
+      "data": [85, 75, 90, 80, 70, 78, 95],
+      "backgroundColor": [
+        "rgba(231, 76, 60, 0.6)",
+        "rgba(243, 156, 18, 0.6)",
+        "rgba(41, 128, 185, 0.6)",
+        "rgba(142, 68, 173, 0.6)",
+        "rgba(39, 174, 96, 0.6)",
+        "rgba(52, 152, 219, 0.6)",
+        "rgba(22, 160, 133, 0.6)"
+      ]
+    }]
+  },
+  "options": {
+    "plugins": { "title": { "display": true, "text": "Cialdini's Seven Principles — Pre-Suasive Potency" } }
+  }
+}
+```
+
+Unity — the seventh principle introduced in Pre-Suasion — scores highest as a pre-suasive opener because shared identity bypasses rational evaluation entirely, creating immediate receptivity before any argument is made.
+
+```d3
+{
+  "type": "sankey",
+  "data": {
+    "nodes": ["Pre-Suasive Opener", "Channeled Attention", "Activated Associations", "Privileged Moment", "Message Delivered", "Higher Compliance", "Post-Suasion Commitment"],
+    "links": [
+      { "source": "Pre-Suasive Opener", "target": "Channeled Attention", "value": 30 },
+      { "source": "Channeled Attention", "target": "Activated Associations", "value": 25 },
+      { "source": "Activated Associations", "target": "Privileged Moment", "value": 22 },
+      { "source": "Privileged Moment", "target": "Message Delivered", "value": 20 },
+      { "source": "Message Delivered", "target": "Higher Compliance", "value": 18 },
+      { "source": "Higher Compliance", "target": "Post-Suasion Commitment", "value": 15 }
+    ]
+  },
+  "options": {
+    "title": "The Pre-Suasion Pipeline — From Opener to Durable Change"
+  }
+}
+```
+
+Each stage of Cialdini's pre-suasion pipeline narrows — attention must be channeled before associations activate, and compliance is fleeting unless locked in by post-suasive commitments.
+
+```chartjs
+{
+  "type": "bar",
+  "data": {
+    "labels": ["The Sexual", "The Threatening", "The Different", "Self-Relevant", "The Unfinished", "The Mysterious"],
+    "datasets": [{
+      "label": "Attention Capture Speed (ms)",
+      "data": [120, 80, 200, 150, 350, 300],
+      "backgroundColor": "#e74c3c"
+    }, {
+      "label": "Attention Holding Duration (sec)",
+      "data": [3, 5, 4, 15, 25, 20],
+      "backgroundColor": "#2980b9"
+    }]
+  },
+  "options": {
+    "plugins": { "title": { "display": true, "text": "Commanders vs Magnetizers of Attention" } },
+    "scales": { "y": { "beginAtZero": true } }
+  }
+}
+```
+
+Commanders of attention (the sexual, the threatening, the different) capture focus instantly but lose it quickly — magnetizers (self-relevance, the unfinished, mystery) are slower to grab attention but hold it far longer, making them more powerful for sustained persuasion.
+
+```mermaid
+mindmap
+  root((Pre-Suasion))
+    Attention
+      Commanders
+        Sexual
+        Threatening
+        Different
+      Magnetizers
+        Self-Relevant
+        Unfinished
+        Mysterious
+    Association
+      Metaphors
+      Environments
+      Words & Images
+    Principles as Openers
+      Reciprocity
+      Social Proof
+      Authority
+      Unity
+    Post-Suasion
+      If/When-Then Plans
+      Commitments
+      Identity Anchors
+```
+
+Cialdini's pre-suasion framework operates on four layers — attention capture, associative priming, principle-based opening, and commitment anchoring — each building on the previous to create durable influence.
+
 ---
 
 ## Part 1: The Frontloading of Attention

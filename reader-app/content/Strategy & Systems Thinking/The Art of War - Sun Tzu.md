@@ -129,6 +129,31 @@ graph LR
 | Training | On which side are officers and men more highly trained? |
 | Reward & Punishment | In which army is there greater consistency in both? |
 
+```chartjs
+{
+  "type": "radar",
+  "data": {
+    "labels": ["Moral Law", "Heaven (Timing)", "Earth (Terrain)", "Commander", "Method & Discipline"],
+    "datasets": [{
+      "label": "Importance for Victory",
+      "data": [95, 70, 75, 90, 80],
+      "backgroundColor": "rgba(41, 128, 185, 0.2)",
+      "borderColor": "#2980b9"
+    }, {
+      "label": "Ease of Assessment",
+      "data": [40, 60, 80, 50, 70],
+      "backgroundColor": "rgba(231, 76, 60, 0.2)",
+      "borderColor": "#e74c3c"
+    }]
+  },
+  "options": {
+    "plugins": { "title": { "display": true, "text": "The Five Constant Factors: Importance vs Assessability" } }
+  }
+}
+```
+
+Moral Law and Commander quality are the most important factors yet hardest to assess — explaining why Sun Tzu insists generals must be both wise and honest in self-evaluation.
+
 ---
 
 ## The Supreme Art: Winning Without Fighting
@@ -144,6 +169,43 @@ graph LR
 | 2nd | **Prevent junction of enemy's forces** | Isolate before they consolidate; divide and conquer |
 | 3rd | **Attack the enemy in the field** | Expensive and risky, but sometimes necessary |
 | 4th | **Besiege walled cities** | Worst option: months of preparation, massive casualties, uncertain outcome |
+
+```d3
+{
+  "type": "sankey",
+  "data": {
+    "nodes": [
+      {"id": "Strategic Goal"},
+      {"id": "Balk Plans"},
+      {"id": "Isolate Forces"},
+      {"id": "Attack in Field"},
+      {"id": "Besiege Cities"},
+      {"id": "Victory (Intact)"},
+      {"id": "Victory (Costly)"},
+      {"id": "Pyrrhic Victory"},
+      {"id": "Strategic Failure"}
+    ],
+    "links": [
+      {"source": "Strategic Goal", "target": "Balk Plans", "value": 40},
+      {"source": "Strategic Goal", "target": "Isolate Forces", "value": 30},
+      {"source": "Strategic Goal", "target": "Attack in Field", "value": 20},
+      {"source": "Strategic Goal", "target": "Besiege Cities", "value": 10},
+      {"source": "Balk Plans", "target": "Victory (Intact)", "value": 40},
+      {"source": "Isolate Forces", "target": "Victory (Intact)", "value": 20},
+      {"source": "Isolate Forces", "target": "Victory (Costly)", "value": 10},
+      {"source": "Attack in Field", "target": "Victory (Costly)", "value": 12},
+      {"source": "Attack in Field", "target": "Pyrrhic Victory", "value": 8},
+      {"source": "Besiege Cities", "target": "Pyrrhic Victory", "value": 5},
+      {"source": "Besiege Cities", "target": "Strategic Failure", "value": 5}
+    ]
+  },
+  "options": {
+    "title": "Sun Tzu's Hierarchy of Strategic Options: From Least to Most Costly"
+  }
+}
+```
+
+The sankey flow reveals Sun Tzu's core calculus: the higher you intervene in the hierarchy, the more likely you achieve victory with the enemy's resources intact — the supreme strategic outcome.
 
 - The siege is the supreme failure of strategy — Sun Tzu notes it takes three months just to build siege equipment, three more months to build earthworks, and then the impatient general "will launch his men to the assault like swarming ants, with the result that one-third of his men are slain, while the town still remains untaken"
 
@@ -359,6 +421,30 @@ graph TD
 | **Delicacy of honor** | Manipulation through shame | Use slander and disgrace to unbalance |
 | **Over-solicitude for men** | Worry and paralysis | Force decisions that sacrifice part for whole |
 
+```chartjs
+{
+  "type": "bar",
+  "data": {
+    "labels": ["Recklessness", "Cowardice", "Hasty Temper", "Delicacy of Honor", "Over-Solicitude"],
+    "datasets": [{
+      "label": "Exploitability by Enemy (1-10)",
+      "data": [9, 7, 9, 6, 5],
+      "backgroundColor": "#e74c3c"
+    }, {
+      "label": "Self-Damage Potential (1-10)",
+      "data": [8, 6, 7, 5, 8],
+      "backgroundColor": "#2980b9"
+    }]
+  },
+  "options": {
+    "plugins": { "title": { "display": true, "text": "The Five Dangerous Faults: Exploitability vs Self-Damage" } },
+    "scales": { "y": { "title": { "display": true, "text": "Score (1-10)" } } }
+  }
+}
+```
+
+Recklessness and hasty temper are the most exploitable faults because they produce predictable, manipulable behavior — confirming why Sun Tzu ranks wisdom above courage in a commander.
+
 - Each fault is not a character flaw in isolation — it's a **handle the enemy can grip**
   - The reckless general can be lured; the cowardly one can be cornered; the angry one can be baited
   - "When the enemy is of choleric temper, seek to irritate him. Pretend to be weak, that he may grow arrogant"
@@ -393,6 +479,33 @@ graph TD
 | **Difficult** | Mountains, forests, marshes | Keep pushing steadily |
 | **Hemmed-in** | Narrow gorges; small force can block large | Resort to stratagem |
 | **Desperate** | Survival only through fighting | Fight with everything you have |
+
+```d3
+{
+  "type": "heatmap",
+  "data": {
+    "xLabels": ["Desertion Risk", "Unit Cohesion", "Fighting Intensity", "Need for Stratagem", "Supply Difficulty"],
+    "yLabels": ["Dispersive", "Facile", "Contentious", "Open", "Intersecting", "Serious", "Difficult", "Hemmed-in", "Desperate"],
+    "values": [
+      [9, 3, 2, 3, 1],
+      [6, 5, 4, 4, 3],
+      [4, 6, 6, 5, 3],
+      [5, 5, 5, 4, 3],
+      [3, 7, 5, 5, 4],
+      [2, 8, 7, 6, 7],
+      [3, 6, 5, 7, 8],
+      [2, 7, 7, 9, 6],
+      [1, 9, 10, 5, 9]
+    ]
+  },
+  "options": {
+    "title": "Nine Grounds: Psychological and Tactical Pressures by Terrain Type",
+    "colorScale": "warm"
+  }
+}
+```
+
+The heatmap reveals Sun Tzu's key insight: as ground becomes more desperate, cohesion and fighting intensity rise while desertion risk falls — the psychology of no retreat transforms fear into ferocity.
 
 - The psychological principle behind this taxonomy: <b style="color: #2980b9">troops behave differently depending on how trapped they feel</b>
   - On dispersive ground (near home), soldiers are tempted to desert — so don't fight, unify their purpose

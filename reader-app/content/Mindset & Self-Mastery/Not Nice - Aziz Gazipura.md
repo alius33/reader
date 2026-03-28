@@ -81,6 +81,35 @@ reading-time: 45-55 min
 | **Powerlessness** | Learned helplessness, victim stance, waiting for life to reward niceness instead of taking action |
 | **Isolation** | The paradox: you do everything to be liked but feel chronically lonely because no one knows the real you |
 
+```chartjs
+{
+  "type": "radar",
+  "data": {
+    "labels": ["Anxiety", "Resentment", "Physical Pain", "Powerlessness", "Isolation"],
+    "datasets": [
+      {
+        "label": "Nice Person (Before Liberation)",
+        "data": [90, 85, 70, 80, 75],
+        "backgroundColor": "rgba(231, 76, 60, 0.2)",
+        "borderColor": "#e74c3c"
+      },
+      {
+        "label": "Assertive Person (After Liberation)",
+        "data": [20, 15, 15, 10, 12],
+        "backgroundColor": "rgba(39, 174, 96, 0.2)",
+        "borderColor": "#27ae60"
+      }
+    ]
+  },
+  "options": {
+    "plugins": { "title": { "display": true, "text": "The Five Costs of Nice: Before vs After Liberation" } },
+    "scales": { "r": { "min": 0, "max": 100 } }
+  }
+}
+```
+
+Liberation collapses all five costs by 60-80 points — the biggest drops are in powerlessness and resentment, the two costs that compound most destructively over time.
+
 ### The Five Pillars of Liberation
 
 ```mermaid
@@ -215,6 +244,33 @@ graph TD
 | "Asking for what I want is selfish" | Asking is how adults meet needs — expecting others to mind-read is the real imposition |
 | "Being upset/angry makes me a bad person" | All emotions are natural signals — suppressing them makes you sick, not virtuous |
 | "If I'm nice enough, I'll eventually get what I want" | The passive path rarely delivers — bold action creates results |
+
+```chartjs
+{
+  "type": "bar",
+  "data": {
+    "labels": ["Responsible for Others' Feelings", "My Needs Don't Matter", "Conflict Is Dangerous", "Real Me = Rejection", "Asking Is Selfish", "Anger = Bad Person", "Niceness Gets Rewards"],
+    "datasets": [
+      {
+        "label": "Belief Strength (Nice Person)",
+        "data": [92, 88, 95, 85, 80, 90, 75],
+        "backgroundColor": "#e74c3c"
+      },
+      {
+        "label": "Belief Strength (Liberated Person)",
+        "data": [15, 12, 10, 8, 10, 12, 5],
+        "backgroundColor": "#27ae60"
+      }
+    ]
+  },
+  "options": {
+    "plugins": { "title": { "display": true, "text": "The Seven False Beliefs: Strength Before and After Liberation" } },
+    "scales": { "y": { "min": 0, "max": 100, "title": { "display": true, "text": "Belief Strength (%)" } } }
+  }
+}
+```
+
+Every false belief drops by 70-90 points after liberation — the most dramatic collapse is "niceness gets rewards," the foundational lie that keeps the entire system running.
 
 ---
 
@@ -787,6 +843,35 @@ graph LR
 | **Week 3: Fire** | Direct confrontation with discomfort | Voice a real disagreement; go an entire day without apologizing; maintain direct eye contact in conversations; say no to something; set one boundary; have an uncomfortable conversation; do something "selfish" |
 | **Week 4: Integration** | Full expression and celebration | Practice full self-expression for a day; combine gratitude with personal power; take a leadership moment; have a difficult conversation you've been avoiding; do a form of public speaking; celebrate your growth; write your future vision |
 
+```chartjs
+{
+  "type": "line",
+  "data": {
+    "labels": ["Day 1", "Day 7", "Day 14", "Day 21", "Day 30", "Day 60", "Day 90"],
+    "datasets": [
+      {
+        "label": "Discomfort Level",
+        "data": [95, 80, 65, 50, 35, 20, 12],
+        "borderColor": "#e74c3c",
+        "fill": false
+      },
+      {
+        "label": "Boldness Capacity",
+        "data": [10, 25, 45, 60, 75, 88, 93],
+        "borderColor": "#27ae60",
+        "fill": false
+      }
+    ]
+  },
+  "options": {
+    "plugins": { "title": { "display": true, "text": "Boldness Training Boot Camp: The Discomfort-Boldness Crossover" } },
+    "scales": { "y": { "min": 0, "max": 100 } }
+  }
+}
+```
+
+The crossover happens around day 21 — after three weeks of consistent practice, boldness exceeds discomfort for the first time, and the acceleration becomes self-reinforcing.
+
 - The metaphor: this is gym training for your assertiveness muscle — going once a week and lifting a five-pound weight won't change anything
 - Expect the **"Change Back" phenomenon**: people around you will resist your new boldness because they're comfortable with the old you
 - Some relationships will deepen; some will fall away — and that creates space for people who love the authentic you
@@ -875,6 +960,30 @@ graph TD
 
 - <b style="color: #27ae60">Healthy self-interest = levels 4-5</b> — not the "fair" midpoint of 3-4 that most nice people aim for
 - Level 5 is where you identify your needs first, then work out how to meet them in a way that considers others — this is what Gazipura modeled in Project ULTRA
+
+```d3
+{
+  "type": "heatmap",
+  "data": {
+    "rows": ["Level 1: Always You", "Level 2: You First", "Level 3: Sometimes Me", "Level 4: Balanced", "Level 5: Usually Me First", "Level 6: Me First", "Level 7: Always Me"],
+    "columns": ["Self-Care", "Relationship Health", "Career Success", "Resentment Level", "Authenticity"],
+    "values": [
+      [5, 20, 15, 95, 5],
+      [15, 35, 25, 80, 15],
+      [30, 50, 40, 55, 30],
+      [70, 85, 75, 15, 75],
+      [85, 75, 85, 10, 90],
+      [90, 40, 70, 20, 60],
+      [95, 10, 50, 30, 40]
+    ]
+  },
+  "options": {
+    "title": "The Selfish Spectrum: How Each Level Affects Five Life Dimensions"
+  }
+}
+```
+
+Levels 4-5 produce the optimal profile — high self-care and authenticity with low resentment, confirming that healthy self-interest is the sweet spot between self-denial and callousness.
 
 ---
 

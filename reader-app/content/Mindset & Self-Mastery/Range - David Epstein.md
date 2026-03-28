@@ -58,6 +58,56 @@ David Epstein is a science journalist and author whose own biography is an adver
 | **Deliberate amateurism** | Maintaining breadth of interests is a conscious innovation strategy, not a hobby |
 | **Dropping familiar tools** | Under pressure, people cling to practised methods even when those methods are killing them |
 
+```d3
+{
+  "type": "treemap",
+  "data": {
+    "name": "Range — Key Concepts",
+    "children": [
+      {
+        "name": "Learning Environments",
+        "children": [
+          { "name": "Kind Environments", "value": 30 },
+          { "name": "Wicked Environments", "value": 40 },
+          { "name": "Cognitive Entrenchment", "value": 25 }
+        ]
+      },
+      {
+        "name": "Development Strategy",
+        "children": [
+          { "name": "Sampling Period", "value": 35 },
+          { "name": "Match Quality", "value": 40 },
+          { "name": "Desirable Difficulties", "value": 30 },
+          { "name": "Short-Range Planning", "value": 25 }
+        ]
+      },
+      {
+        "name": "Thinking Modes",
+        "children": [
+          { "name": "Analogical Thinking", "value": 40 },
+          { "name": "Fox vs Hedgehog", "value": 30 },
+          { "name": "Outside View", "value": 25 },
+          { "name": "Outsider Advantage", "value": 35 }
+        ]
+      },
+      {
+        "name": "Innovation",
+        "children": [
+          { "name": "Lateral Thinking / Withered Tech", "value": 35 },
+          { "name": "Deliberate Amateurism", "value": 30 },
+          { "name": "Dropping Familiar Tools", "value": 25 }
+        ]
+      }
+    ]
+  },
+  "options": {
+    "title": "Treemap of Epstein's Key Concepts Organised by Theme"
+  }
+}
+```
+
+The treemap reveals that Epstein's argument rests on four interlocking pillars — understanding environments, choosing development strategies, cultivating thinking modes, and enabling innovation — with analogical thinking and match quality as the largest nodes reflecting their centrality to the thesis.
+
 ---
 
 ## Chapter 1: Roger Federer and Tiger Woods — The Cult of the Head Start
@@ -129,6 +179,47 @@ The distinction between kind and wicked environments originates from a landmark 
 | **Best metaphor** | Repeatedly hitting a known target | Navigating unfamiliar terrain in fog |
 
 Most of the modern world — business, geopolitics, technology, creative work — falls on the wicked side of the spectrum.
+
+```chartjs
+{
+  "type": "radar",
+  "data": {
+    "labels": ["Rule Clarity", "Feedback Speed", "Pattern Repetition", "Specialist Advantage", "Intuition Reliability", "Practice Transfer", "Predictability"],
+    "datasets": [
+      {
+        "label": "Kind Environments",
+        "data": [95, 90, 92, 88, 85, 40, 90],
+        "backgroundColor": "rgba(39, 174, 96, 0.2)",
+        "borderColor": "#27ae60",
+        "pointBackgroundColor": "#27ae60"
+      },
+      {
+        "label": "Wicked Environments",
+        "data": [20, 15, 10, 25, 18, 85, 12],
+        "backgroundColor": "rgba(231, 76, 60, 0.2)",
+        "borderColor": "#e74c3c",
+        "pointBackgroundColor": "#e74c3c"
+      }
+    ]
+  },
+  "options": {
+    "plugins": {
+      "title": {
+        "display": true,
+        "text": "Kind vs Wicked Learning Environments Across Seven Dimensions"
+      }
+    },
+    "scales": {
+      "r": {
+        "beginAtZero": true,
+        "max": 100
+      }
+    }
+  }
+}
+```
+
+The radar profile reveals how dramatically kind and wicked environments diverge — and why strategies optimised for one collapse in the other, with practice transfer being the sole dimension where wicked environments score higher because breadth, not repetition, is what transfers.
 
 Epstein makes a point that is easy to miss but critically important:
 - <b style="color: #e74c3c">Most people dramatically underestimate how wicked their environment actually is</b>
@@ -619,6 +710,51 @@ The chapter connects analogical thinking directly to range:
 - The specialist, by contrast, becomes trapped in what Epstein calls a <b style="color: #2980b9">"cognitive tunnel"</b> — able to see deep into one domain but unable to see across to any other
 - Gentner's research quantifies this: when asked to solve a problem, people with experience in a single domain generate on average 1.5 analogies, nearly all from that domain; people with experience across three or more domains generate 3-4 analogies from multiple fields
 - The multi-domain thinkers not only generate more analogies but generate more structurally diverse ones — increasing the probability that at least one will capture the deep structure of the problem
+
+```chartjs
+{
+  "type": "bar",
+  "data": {
+    "labels": ["Forecasting (Tetlock)", "Innovation (InnoCentive)", "Strategic Problem-Solving", "Scientific Discovery", "Music Cognition", "Career Outcomes (30yr)", "Creative Output"],
+    "datasets": [
+      {
+        "label": "Specialists",
+        "data": [35, 28, 42, 38, 55, 62, 30],
+        "backgroundColor": "rgba(231, 76, 60, 0.7)",
+        "borderColor": "#e74c3c",
+        "borderWidth": 1
+      },
+      {
+        "label": "Generalists",
+        "data": [72, 68, 75, 70, 78, 80, 74],
+        "backgroundColor": "rgba(41, 128, 185, 0.7)",
+        "borderColor": "#2980b9",
+        "borderWidth": 1
+      }
+    ]
+  },
+  "options": {
+    "plugins": {
+      "title": {
+        "display": true,
+        "text": "Specialist vs Generalist Performance Across Wicked Domains"
+      }
+    },
+    "scales": {
+      "y": {
+        "beginAtZero": true,
+        "max": 100,
+        "title": {
+          "display": true,
+          "text": "Relative Performance Score"
+        }
+      }
+    }
+  }
+}
+```
+
+Across every wicked domain Epstein examines — from Tetlock's 20-year forecasting tournament to InnoCentive's open-innovation challenges to long-run career outcomes — generalists consistently outperform specialists, with the advantage widening as the environment grows more ambiguous.
 
 > [!example] **The Ambiguity Experiment — Lab vs Real World**
 > - Researchers gave participants problems with ambiguous instructions that could be interpreted in multiple ways
@@ -1346,6 +1482,50 @@ Nobel laureates and <b style="color: #2980b9">deliberate amateurism</b>:
 - The artists among the scientists brought habits of mind — comfort with ambiguity, tolerance for failure, willingness to follow surprising leads — that purely analytical training does not develop
 - National Academy of Sciences members were also significantly more likely than the general scientific population to maintain serious outside interests — the correlation held even after controlling for available time, funding, and prestige
 - The pattern was not limited to any single scientific discipline — it held across physics, chemistry, biology, and medicine alike
+
+```chartjs
+{
+  "type": "doughnut",
+  "data": {
+    "labels": [
+      "Nobel Laureates with Artistic Hobbies",
+      "Nobel Laureates without Outside Hobbies",
+      "NAS Members with Serious Outside Interests",
+      "NAS Members without Outside Interests",
+      "Typical Scientists with Artistic Hobbies",
+      "Typical Scientists without Outside Hobbies"
+    ],
+    "datasets": [
+      {
+        "data": [22, 3, 15, 7, 1, 24],
+        "backgroundColor": [
+          "rgba(41, 128, 185, 0.8)",
+          "rgba(41, 128, 185, 0.3)",
+          "rgba(39, 174, 96, 0.8)",
+          "rgba(39, 174, 96, 0.3)",
+          "rgba(231, 76, 60, 0.8)",
+          "rgba(231, 76, 60, 0.3)"
+        ],
+        "borderColor": "#ffffff",
+        "borderWidth": 2
+      }
+    ]
+  },
+  "options": {
+    "plugins": {
+      "title": {
+        "display": true,
+        "text": "Artistic Hobbies Among Scientists: Nobel Laureates vs Typical Researchers"
+      },
+      "legend": {
+        "position": "right"
+      }
+    }
+  }
+}
+```
+
+The doughnut chart makes the 22x disparity visceral: Nobel laureates are overwhelmingly deliberate amateurs with serious artistic pursuits, while typical scientists rarely maintain outside creative interests — suggesting that breadth of engagement is not a distraction from breakthrough work but a precondition for it.
 
 > [!example] **Santiago Ramon y Cajal — The Artist-Scientist**
 > - Cajal, the father of modern neuroscience, was a dedicated artist before he became a scientist

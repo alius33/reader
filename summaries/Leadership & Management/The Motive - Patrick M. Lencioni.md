@@ -73,6 +73,49 @@ The entire book pivots on this single diagnostic question — and Lencioni argue
 | **The servant-leader paradox** | True servant leadership is not weakness — it requires more courage than reward-centred leadership |
 | **Organisational health** | The ultimate competitive advantage: low politics, high clarity, high morale, low turnover |
 
+```chartjs
+{
+  "type": "radar",
+  "data": {
+    "labels": ["Team Development", "Managing Subordinates", "Difficult Conversations", "Running Meetings", "Communicating Repetitively"],
+    "datasets": [
+      {
+        "label": "Responsibility-Centred Leader",
+        "data": [9, 8, 9, 8, 9],
+        "borderColor": "#27ae60",
+        "backgroundColor": "rgba(39, 174, 96, 0.15)",
+        "pointBackgroundColor": "#27ae60"
+      },
+      {
+        "label": "Reward-Centred Leader",
+        "data": [2, 3, 2, 3, 2],
+        "borderColor": "#e74c3c",
+        "backgroundColor": "rgba(231, 76, 60, 0.15)",
+        "pointBackgroundColor": "#e74c3c"
+      }
+    ]
+  },
+  "options": {
+    "plugins": {
+      "title": {
+        "display": true,
+        "text": "The Five Omissions: Responsibility vs Reward-Centred Leaders"
+      }
+    },
+    "scales": {
+      "r": {
+        "beginAtZero": true,
+        "max": 10,
+        "ticks": { "stepSize": 2 },
+        "pointLabels": { "font": { "size": 10 } }
+      }
+    }
+  }
+}
+```
+
+The stark gap between the two profiles reveals Lencioni's central thesis: reward-centred leaders consistently score low on every omission because each one requires embracing discomfort they are motivated to avoid.
+
 ---
 
 # PART ONE: THE FABLE
@@ -871,6 +914,29 @@ The five omissions create a self-reinforcing cycle of organisational decay — e
   - As trust grows, the other omissions become easier to address
   - But you must start somewhere, and you must start with genuine discomfort — if the first step feels easy, you are probably not doing it right
 
+```d3
+{
+  "type": "heatmap",
+  "data": {
+    "x_labels": ["Team Dev", "Managing Subs", "Difficult Convos", "Running Meetings", "Repetitive Comms"],
+    "y_labels": ["Neglect Team Dev", "Neglect Managing", "Neglect Convos", "Neglect Meetings", "Neglect Comms"],
+    "values": [
+      [0, 8, 9, 6, 5],
+      [7, 0, 8, 7, 6],
+      [8, 9, 0, 5, 4],
+      [5, 6, 4, 0, 7],
+      [4, 5, 3, 6, 0]
+    ]
+  },
+  "options": {
+    "title": "Impact Matrix: How Neglecting One Omission Affects the Others",
+    "colorScale": "warm"
+  }
+}
+```
+
+The hottest cells cluster around team development and difficult conversations — neglecting either one cripples multiple other responsibilities, confirming Lencioni's advice to start with trust-building as the foundation for everything else.
+
 ---
 
 ## The Diagnostic: Are You Reward-Centred?
@@ -910,6 +976,54 @@ The five omissions create a self-reinforcing cycle of organisational decay — e
 
 - The higher the level, the more damaging the reward motive becomes — because the scope of neglect grows with the scope of responsibility
 - <b style="color: #e74c3c">At the CEO level, the reward motive affects the entire organisation because the CEO's behaviour sets the tone for every leader below them</b>
+
+```chartjs
+{
+  "type": "polarArea",
+  "data": {
+    "labels": [
+      "First-line Manager",
+      "Director",
+      "VP",
+      "CEO"
+    ],
+    "datasets": [{
+      "data": [4, 6, 8, 10],
+      "backgroundColor": [
+        "rgba(41, 128, 185, 0.6)",
+        "rgba(142, 68, 173, 0.6)",
+        "rgba(230, 126, 34, 0.6)",
+        "rgba(231, 76, 60, 0.6)"
+      ],
+      "borderColor": [
+        "#2980b9",
+        "#8e44ad",
+        "#e67e22",
+        "#e74c3c"
+      ],
+      "borderWidth": 2
+    }]
+  },
+  "options": {
+    "plugins": {
+      "title": {
+        "display": true,
+        "text": "Organisational Damage From Reward-Centred Leadership by Level"
+      },
+      "legend": { "position": "right" }
+    },
+    "scales": {
+      "r": {
+        "beginAtZero": true,
+        "max": 10,
+        "ticks": { "stepSize": 2 }
+      }
+    }
+  }
+}
+```
+
+The blast radius of reward-centred leadership scales with seniority — a first-line manager's avoidance damages one team, while a CEO's avoidance cascades through the entire organisation.
 
 ---
 
@@ -959,6 +1073,54 @@ The five omissions create a self-reinforcing cycle of organisational decay — e
   - There will be days when the reward motive wins
   - The question is not whether you will relapse but how quickly you recognise the relapse and correct course
   - Over time, the responsibility motive becomes more natural — not because the uncomfortable work becomes enjoyable, but because the results make the discomfort worth it
+
+```chartjs
+{
+  "type": "bar",
+  "data": {
+    "labels": [
+      "Diagnosis (Week 1)",
+      "Commitment (Week 1-2)",
+      "First Action (Week 2-4)",
+      "Repetition (Month 2-6)",
+      "Reinforcement (Month 6-12)"
+    ],
+    "datasets": [
+      {
+        "label": "Effort Required",
+        "data": [7, 5, 9, 8, 6],
+        "backgroundColor": "#e74c3c",
+        "borderRadius": 4
+      },
+      {
+        "label": "Organisational Impact",
+        "data": [1, 2, 4, 7, 9],
+        "backgroundColor": "#27ae60",
+        "borderRadius": 4
+      }
+    ]
+  },
+  "options": {
+    "indexAxis": "y",
+    "plugins": {
+      "title": {
+        "display": true,
+        "text": "Transformation Timeline: Effort vs Impact Over Time"
+      },
+      "legend": { "position": "bottom" }
+    },
+    "scales": {
+      "x": {
+        "beginAtZero": true,
+        "max": 10,
+        "title": { "display": true, "text": "Intensity (1-10)" }
+      }
+    }
+  }
+}
+```
+
+The effort-impact crossover occurs around months 2-6 — initial diagnosis is high-effort but low-impact, while the compounding effect of sustained repetition eventually produces organisational transformation that far exceeds the ongoing effort.
 
 ---
 

@@ -84,6 +84,74 @@ flowchart TB
 
 ---
 
+```chartjs
+{
+  "type": "radar",
+  "data": {
+    "labels": ["Stop Behavior (Counting)", "Start Behavior (7 Tactics)", "Relationship Building", "No-Talking Rule", "No-Emotion Rule", "Consistency"],
+    "datasets": [
+      {
+        "label": "Before 1-2-3 Magic",
+        "data": [20, 30, 25, 10, 15, 20],
+        "backgroundColor": "rgba(231, 76, 60, 0.2)",
+        "borderColor": "#e74c3c"
+      },
+      {
+        "label": "After 1-2-3 Magic",
+        "data": [90, 75, 70, 85, 80, 90],
+        "backgroundColor": "rgba(39, 174, 96, 0.2)",
+        "borderColor": "#27ae60"
+      }
+    ]
+  },
+  "options": {
+    "title": "Parenting Skill Transformation with 1-2-3 Magic"
+  }
+}
+```
+The radar chart shows how the system dramatically improves all six core parenting dimensions, with the biggest gains in stopping obnoxious behavior and enforcing the No-Talking Rule.
+
+```d3
+{
+  "type": "treemap",
+  "data": [
+    {"name": "Badgering", "category": "Testing Tactics", "value": 30},
+    {"name": "Temper/Intimidation", "category": "Testing Tactics", "value": 25},
+    {"name": "Threat", "category": "Testing Tactics", "value": 15},
+    {"name": "Martyrdom", "category": "Testing Tactics", "value": 20},
+    {"name": "Butter Up", "category": "Testing Tactics", "value": 5},
+    {"name": "Physical", "category": "Testing Tactics", "value": 10},
+    {"name": "Whining (4-1 Combo)", "category": "Testing Tactics", "value": 35}
+  ],
+  "options": {
+    "title": "Children's Testing Tactics by Frequency",
+    "colors": ["#e74c3c", "#c0392b", "#f39c12", "#e67e22", "#27ae60", "#d35400", "#8e44ad"]
+  }
+}
+```
+Whining — the devastating 4-1 combo of Martyrdom plus Badgering — is children's all-time favorite testing tactic, followed by straight Badgering and Temper.
+
+```mermaid
+timeline
+    title 1-2-3 Magic Implementation Timeline
+    Day 1-3 : Kickoff conversation with kids
+            : Start counting Stop behaviors
+            : Expect immediate cooperators (~50%)
+    Week 1 : Immediate testers escalate tactics
+           : Tactic switching begins
+           : Stay consistent — no talking, no emotion
+    Week 2-3 : Testing frequency decreases
+             : Good control at 1 or 2 emerges
+             : Introduce Start behavior tactics
+    Week 4-6 : System becomes routine
+             : Begin relationship-building (Job 3)
+             : One-on-one fun time scheduled
+    Week 6-8 : Full household transformation
+             : If still struggling, check yourself first
+             : Consider professional evaluation if needed
+```
+Most families see dramatic improvement within two weeks, with the full system taking six to eight weeks to become second nature.
+
 ## Part I: The Philosophy — Why Your Current Approach Isn't Working
 
 ### The Warm and Demanding Parent
@@ -330,6 +398,56 @@ A mother whose preschooler wouldn't get dressed in the morning sent him to schoo
 A mother perfectly endured her four-year-old's 20-minute grocery store tantrum, calmly reading the rice box while he howled. She shopped. She checked out. She walked past the bubble-gum machine on the way out — and stopped to buy him a piece of gum. Twenty minutes of excellent discipline, undone in one second.
 
 ---
+
+```chartjs
+{
+  "type": "bar",
+  "data": {
+    "labels": ["Praise", "Simple Requests", "Kitchen Timers", "Docking System", "Natural Consequences", "Charting", "Counting Variation"],
+    "datasets": [
+      {
+        "label": "Effectiveness for Start Behaviors (1-10)",
+        "data": [9, 7, 8, 7, 9, 6, 5],
+        "backgroundColor": ["#2980b9", "#3498db", "#27ae60", "#e67e22", "#e74c3c", "#9b59b6", "#f39c12"]
+      }
+    ]
+  },
+  "options": {
+    "title": "Seven Start Tactics: Effectiveness Rating",
+    "scales": {
+      "y": { "beginAtZero": true, "max": 10 }
+    }
+  }
+}
+```
+Praise and Natural Consequences rank highest because they work through intrinsic motivation — the child cooperates because they feel good about it or because reality teaches the lesson.
+
+```d3
+{
+  "type": "sankey",
+  "data": {
+    "nodes": ["Child Misbehaves", "Stop Behavior", "Start Behavior", "Count 1", "Count 2", "Count 3", "Cooperation", "Time-Out", "7 Start Tactics", "Praise", "Timer", "Natural Consequence"],
+    "links": [
+      {"source": "Child Misbehaves", "target": "Stop Behavior", "value": 60},
+      {"source": "Child Misbehaves", "target": "Start Behavior", "value": 40},
+      {"source": "Stop Behavior", "target": "Count 1", "value": 60},
+      {"source": "Count 1", "target": "Cooperation", "value": 35},
+      {"source": "Count 1", "target": "Count 2", "value": 25},
+      {"source": "Count 2", "target": "Cooperation", "value": 15},
+      {"source": "Count 2", "target": "Count 3", "value": 10},
+      {"source": "Count 3", "target": "Time-Out", "value": 10},
+      {"source": "Start Behavior", "target": "7 Start Tactics", "value": 40},
+      {"source": "7 Start Tactics", "target": "Praise", "value": 15},
+      {"source": "7 Start Tactics", "target": "Timer", "value": 12},
+      {"source": "7 Start Tactics", "target": "Natural Consequence", "value": 13}
+    ]
+  },
+  "options": {
+    "title": "1-2-3 Magic: The Decision Flow of Discipline"
+  }
+}
+```
+This flow shows how the majority of stop behaviors resolve at Count 1 or 2 — the system's power lies in what happens before Count 3, not after it.
 
 ## Deep Dive: Managing Testing and the Adjustment Period
 

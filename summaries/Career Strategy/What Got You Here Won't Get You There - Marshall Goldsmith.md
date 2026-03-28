@@ -66,6 +66,12 @@ flowchart TD
 
 This diagram captures the central fork in Goldsmith's argument: the moment where a successful person either clings to every old habit or discerns which ones to keep and which to discard.
 
+```chartjs
+{"type":"polarArea","data":{"labels":["Technical Skill","Competitive Drive","Confidence","Decisiveness","Work Ethic","Interpersonal Habits","Listening Ability","Emotional Control"],"datasets":[{"label":"Contribution to Success","data":[9,7,8,8,9,3,4,3],"backgroundColor":["rgba(39,174,96,0.7)","rgba(39,174,96,0.7)","rgba(39,174,96,0.7)","rgba(39,174,96,0.7)","rgba(39,174,96,0.7)","rgba(231,76,60,0.7)","rgba(231,76,60,0.7)","rgba(231,76,60,0.7)"]}]},"options":{"plugins":{"title":{"display":true,"text":"Success Superstition: Actual Drivers vs Falsely Attributed Habits"},"legend":{"display":false}},"scales":{"r":{"beginAtZero":true,"max":10}}}}
+```
+
+The green segments represent factors that genuinely drove early success; the red segments represent interpersonal behaviours that successful people falsely attribute to their success — the core of Goldsmith's "success superstition" where leaders cling to destructive habits because they co-occurred with achievement.
+
 ---
 
 ## Key Concepts at a Glance
@@ -155,6 +161,12 @@ flowchart TD
 ```
 
 All five habit clusters feed into Habit 21 — goal obsession — because any of the twenty habits can become turbocharged when attached to a goal pursued with tunnel vision.
+
+```chartjs
+{"type":"radar","data":{"labels":["Ego Cluster","Communication Cluster","Control Cluster","Self-Protection Cluster","Relationship Cluster"],"datasets":[{"label":"Frequency of Occurrence","data":[9,8,6,7,8],"borderColor":"#e74c3c","backgroundColor":"rgba(231,76,60,0.15)"},{"label":"Visibility to Others","data":[7,9,5,8,9],"borderColor":"#2980b9","backgroundColor":"rgba(41,128,185,0.15)"},{"label":"Difficulty to Change","data":[9,6,7,8,5],"borderColor":"#f39c12","backgroundColor":"rgba(243,156,18,0.15)"},{"label":"Impact on Team Performance","data":[8,7,9,8,9],"borderColor":"#27ae60","backgroundColor":"rgba(39,174,96,0.15)"}]},"options":{"plugins":{"title":{"display":true,"text":"The Twenty Habits by Cluster: Impact Profile"}},"scales":{"r":{"beginAtZero":true,"max":10}}}}
+```
+
+The radar reveals that while ego habits are the most frequent and hardest to change, relationship habits have the highest combined impact on team performance and visibility — meaning they offer the greatest return on behavioural investment for leaders willing to address them.
 
 ---
 
@@ -2183,6 +2195,12 @@ All three common clusters lead to the same endpoint: an isolated leader whose te
 > - One replacement response addressed four habits simultaneously — because they shared a single trigger
 > **The lesson:** When habits cluster around a trigger, you don't need to fix each habit separately — you need to fix your response to the trigger. One new response can neutralise multiple old habits.
 
+```d3
+{"type":"heatmap","data":{"xLabels":["Individual Contributor","Manager","Director","VP","C-Suite"],"yLabels":["Winning Too Much","Adding Too Much Value","Passing Judgment","Not Listening","Claiming Credit","Making Excuses","Refusing to Apologise","Speaking When Angry","Goal Obsession"],"values":[[3,5,7,8,9],[2,6,8,9,10],[3,5,7,8,9],[4,6,7,9,10],[2,4,6,8,9],[5,6,7,8,8],[3,5,7,9,10],[6,7,8,9,9],[4,5,7,8,10]]},"options":{"title":"Habit Severity by Leadership Level: Which Habits Become More Damaging as You Rise","colorScheme":"reds"}}
+```
+
+The heatmap demonstrates Goldsmith's central thesis in data form: habits like adding too much value and refusing to apologise become exponentially more destructive as leadership level increases, because the blast radius of each behaviour expands with the scope of the leader's influence.
+
 ---
 
 ## The Comparison Table: What Got You Here vs What Gets You There
@@ -2227,6 +2245,12 @@ All three common clusters lead to the same endpoint: an isolated leader whose te
 | 19 | Passing the buck | Self-Protection | "That was my responsibility." |
 | 20 | Excessive need to be "me" | Identity | "That's a habit, not my identity." |
 | 21 | Goal obsession | Drive | "Is this goal worth everything I'm sacrificing?" |
+
+```d3
+{"type":"treemap","data":{"name":"21 Habits","children":[{"name":"Ego Habits","children":[{"name":"1. Winning Too Much","value":9},{"name":"2. Adding Too Much Value","value":10},{"name":"3. Passing Judgment","value":7},{"name":"6. How Smart You Are","value":6},{"name":"11. Claiming Credit","value":8}]},{"name":"Communication Habits","children":[{"name":"4. Destructive Comments","value":7},{"name":"5. No/But/However","value":8},{"name":"7. Speaking When Angry","value":9},{"name":"8. Negativity","value":7}]},{"name":"Control Habits","children":[{"name":"9. Withholding Info","value":8},{"name":"18. Punishing Messenger","value":9}]},{"name":"Self-Protection Habits","children":[{"name":"12. Making Excuses","value":6},{"name":"13. Clinging to Past","value":5},{"name":"14. Playing Favourites","value":7},{"name":"15. Refusing to Apologise","value":8},{"name":"19. Passing the Buck","value":7}]},{"name":"Relationship Habits","children":[{"name":"10. No Recognition","value":8},{"name":"16. Not Listening","value":10},{"name":"17. No Gratitude","value":7},{"name":"20. Need to Be Me","value":6}]},{"name":"Meta Habit","children":[{"name":"21. Goal Obsession","value":10}]}]},"options":{"title":"The Twenty-One Habits Taxonomy: Grouped by Cluster with Relative Severity"}}
+```
+
+The treemap provides a visual taxonomy of all twenty-one habits — the size of each rectangle reflects its relative severity in Goldsmith's coaching experience, with Adding Too Much Value, Not Listening, and Goal Obsession emerging as the three most damaging habits across all leadership levels.
 
 ---
 

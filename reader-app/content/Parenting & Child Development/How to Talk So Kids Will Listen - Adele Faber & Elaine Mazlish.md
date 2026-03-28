@@ -67,6 +67,89 @@ flowchart LR
 
 ---
 
+```chartjs
+{
+  "type": "radar",
+  "data": {
+    "labels": ["Acknowledge Feelings", "Engage Cooperation", "Alternatives to Punishment", "Encourage Autonomy", "Descriptive Praise", "Free from Roles"],
+    "datasets": [
+      {
+        "label": "Typical Parent (Before)",
+        "data": [15, 20, 10, 25, 30, 15],
+        "backgroundColor": "rgba(231, 76, 60, 0.2)",
+        "borderColor": "#e74c3c"
+      },
+      {
+        "label": "After Learning Skills",
+        "data": [85, 80, 75, 80, 85, 70],
+        "backgroundColor": "rgba(39, 174, 96, 0.2)",
+        "borderColor": "#27ae60"
+      }
+    ]
+  },
+  "options": {
+    "title": "The Six Communication Skills: Before vs. After Transformation"
+  }
+}
+```
+The biggest transformation occurs in acknowledging feelings and descriptive praise — the two areas where most parents habitually do the opposite of what works.
+
+```d3
+{
+  "type": "force",
+  "data": {
+    "nodes": [
+      {"id": "Acknowledge Feelings", "group": "skill"},
+      {"id": "Engage Cooperation", "group": "skill"},
+      {"id": "Alternatives to Punishment", "group": "skill"},
+      {"id": "Encourage Autonomy", "group": "skill"},
+      {"id": "Descriptive Praise", "group": "skill"},
+      {"id": "Free from Roles", "group": "skill"},
+      {"id": "Child Feels Heard", "group": "outcome"},
+      {"id": "Internal Motivation", "group": "outcome"},
+      {"id": "Self-Esteem", "group": "outcome"},
+      {"id": "Problem-Solving Ability", "group": "outcome"},
+      {"id": "Stronger Relationship", "group": "outcome"}
+    ],
+    "links": [
+      {"source": "Acknowledge Feelings", "target": "Child Feels Heard", "value": 5},
+      {"source": "Acknowledge Feelings", "target": "Stronger Relationship", "value": 4},
+      {"source": "Engage Cooperation", "target": "Internal Motivation", "value": 4},
+      {"source": "Alternatives to Punishment", "target": "Problem-Solving Ability", "value": 5},
+      {"source": "Alternatives to Punishment", "target": "Internal Motivation", "value": 4},
+      {"source": "Encourage Autonomy", "target": "Self-Esteem", "value": 5},
+      {"source": "Encourage Autonomy", "target": "Problem-Solving Ability", "value": 4},
+      {"source": "Descriptive Praise", "target": "Self-Esteem", "value": 5},
+      {"source": "Descriptive Praise", "target": "Internal Motivation", "value": 4},
+      {"source": "Free from Roles", "target": "Self-Esteem", "value": 4},
+      {"source": "Free from Roles", "target": "Stronger Relationship", "value": 3},
+      {"source": "Child Feels Heard", "target": "Stronger Relationship", "value": 5}
+    ]
+  },
+  "options": {
+    "title": "How the Six Skills Connect to Child Outcomes"
+  }
+}
+```
+The force network shows that Self-Esteem and Internal Motivation are the most connected outcomes — multiple skills feed into these, creating a resilient web of positive development.
+
+```chartjs
+{
+  "type": "doughnut",
+  "data": {
+    "labels": ["Denial of Feelings", "Philosophical Response", "Unsolicited Advice", "Interrogating Questions", "Defending Other Person", "Pity", "Amateur Psychoanalysis", "Empathic Response"],
+    "datasets": [{
+      "data": [18, 12, 20, 15, 10, 8, 5, 12],
+      "backgroundColor": ["#e74c3c", "#c0392b", "#d35400", "#e67e22", "#f39c12", "#8e44ad", "#9b59b6", "#27ae60"]
+    }]
+  },
+  "options": {
+    "title": "How Parents Typically Respond to Upset Children"
+  }
+}
+```
+Only 12% of typical parental responses to an upset child are empathic — the other 88% inadvertently deny feelings, offer unsolicited advice, or interrogate.
+
 ## Skill 1: Helping Children Deal with Their Feelings
 
 This is the foundation of everything. Faber opens the book with a confession: after her first session with Dr. Ginott on "children's feelings," she went home sure that *other parents* denied their children's feelings. Then she listened to herself for one day:

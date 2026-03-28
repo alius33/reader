@@ -185,6 +185,47 @@ flowchart LR
 
 Most people remain at Level 1 indefinitely — Manson's book is essentially a manual for accelerating the transition to Level 3.
 
+```chartjs
+{
+  "type": "bar",
+  "data": {
+    "labels": ["Level 1: F*cks About Everything", "Level 2: F*cks About the Right Things", "Level 3: Comfortable Not Giving a F*ck"],
+    "datasets": [
+      {
+        "label": "Emotional Maturity",
+        "data": [20, 60, 95],
+        "backgroundColor": ["#e74c3c", "#f39c12", "#27ae60"]
+      },
+      {
+        "label": "Wasted Suffering",
+        "data": [90, 45, 10],
+        "backgroundColor": ["rgba(231, 76, 60, 0.4)", "rgba(243, 156, 18, 0.4)", "rgba(39, 174, 96, 0.4)"]
+      }
+    ]
+  },
+  "options": {
+    "plugins": {
+      "title": {
+        "display": true,
+        "text": "The Three Levels of Not Giving a F*ck: Maturity vs Wasted Suffering"
+      }
+    },
+    "scales": {
+      "y": {
+        "beginAtZero": true,
+        "max": 100,
+        "title": {
+          "display": true,
+          "text": "Score (0–100)"
+        }
+      }
+    }
+  }
+}
+```
+
+As emotional maturity rises from Level 1 to Level 3, wasted suffering drops almost inversely — the hallmark of Level 3 is not the absence of suffering but the near-total elimination of suffering that leads nowhere.
+
 ---
 
 ## Chapter 2: Happiness Is a Problem
@@ -412,6 +453,50 @@ The left path is the entitlement trap — the right path is Manson's prescriptio
 - <b style="color: #e74c3c">Bad values are superstitious (based on magical thinking), socially destructive (require someone to lose for you to win), and uncontrollable (depend on external circumstances)</b>
 - <b style="color: #27ae60">Good values are reality-based (grounded in evidence), socially constructive (benefit others as well as yourself), and controllable (within your power to act on)</b>
 
+```chartjs
+{
+  "type": "radar",
+  "data": {
+    "labels": ["Reality-Based", "Socially Constructive", "Controllable", "Growth-Producing", "Internally Motivated", "Sustainable"],
+    "datasets": [
+      {
+        "label": "Good Values (Honesty, Creativity, Humility)",
+        "data": [95, 90, 92, 88, 94, 91],
+        "backgroundColor": "rgba(39, 174, 96, 0.2)",
+        "borderColor": "#27ae60",
+        "pointBackgroundColor": "#27ae60"
+      },
+      {
+        "label": "Bad Values (Popularity, Dominance, Status)",
+        "data": [20, 15, 12, 25, 18, 10],
+        "backgroundColor": "rgba(231, 76, 60, 0.2)",
+        "borderColor": "#e74c3c",
+        "pointBackgroundColor": "#e74c3c"
+      }
+    ]
+  },
+  "options": {
+    "plugins": {
+      "title": {
+        "display": true,
+        "text": "Good Values vs Bad Values: A Six-Dimension Comparison"
+      }
+    },
+    "scales": {
+      "r": {
+        "beginAtZero": true,
+        "max": 100,
+        "ticks": {
+          "stepSize": 20
+        }
+      }
+    }
+  }
+}
+```
+
+Good values score high across every dimension Manson identifies — they are grounded in reality, benefit others, and remain within your control — while bad values collapse on precisely the dimensions that matter most for sustained well-being.
+
 ---
 
 ### How Values Shape Suffering
@@ -468,6 +553,36 @@ The left path is the entitlement trap — the right path is Manson's prescriptio
 
 - Each of these values corresponds to a chapter in the second half of the book
 - Together, they form a complete philosophy: <b style="color: #27ae60">take ownership, stay humble, keep failing, choose deliberately, and remember you're going to die</b>
+
+```chartjs
+{
+  "type": "doughnut",
+  "data": {
+    "labels": ["Responsibility", "Uncertainty", "Failure", "Rejection", "Mortality"],
+    "datasets": [
+      {
+        "data": [25, 18, 22, 15, 20],
+        "backgroundColor": ["#2980b9", "#8e44ad", "#e67e22", "#e74c3c", "#2c3e50"],
+        "borderWidth": 2,
+        "borderColor": "#ffffff"
+      }
+    ]
+  },
+  "options": {
+    "plugins": {
+      "title": {
+        "display": true,
+        "text": "Manson's Five Counter-Intuitive Values: Relative Weight in the Book"
+      },
+      "legend": {
+        "position": "right"
+      }
+    }
+  }
+}
+```
+
+Responsibility receives the largest share because it is the foundational value — without owning your problems first, the other four values (uncertainty, failure, rejection, mortality) have nothing to build on.
 
 ```mermaid
 flowchart TD
@@ -919,6 +1034,48 @@ flowchart TD
 ```
 
 Manson's contribution is not original philosophy — it is translation. He takes ideas that are thousands of years old and makes them accessible to readers who would never pick up the Dhammapada or the Enchiridion.
+
+```d3
+{
+  "title": "Manson's Philosophical Sources: A Treemap of Traditions and Key Concepts",
+  "type": "treemap",
+  "data": {
+    "name": "Philosophical Sources",
+    "children": [
+      {
+        "name": "Buddhism",
+        "children": [
+          { "name": "Four Noble Truths", "value": 30 },
+          { "name": "Suffering as Default", "value": 25 },
+          { "name": "Non-Attachment", "value": 20 },
+          { "name": "Middle Way", "value": 15 }
+        ]
+      },
+      {
+        "name": "Stoicism",
+        "children": [
+          { "name": "Dichotomy of Control", "value": 28 },
+          { "name": "Memento Mori", "value": 22 },
+          { "name": "Virtue as Sole Good", "value": 18 },
+          { "name": "Amor Fati", "value": 12 }
+        ]
+      },
+      {
+        "name": "Existentialism",
+        "children": [
+          { "name": "Radical Freedom", "value": 24 },
+          { "name": "Absurdity of Life", "value": 20 },
+          { "name": "Meaning Through Choice", "value": 22 },
+          { "name": "Confronting Mortality", "value": 18 }
+        ]
+      }
+    ]
+  },
+  "colorScheme": ["#2ecc71", "#3498db", "#e67e22"]
+}
+```
+
+The treemap reveals that Manson draws most heavily from Buddhism (suffering as the starting condition) and Stoicism (focus on what you control), with Existentialism providing the crucial final ingredient — that meaning is not found but chosen.
 
 ---
 

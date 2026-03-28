@@ -59,6 +59,12 @@ flowchart TD
     style C fill:#27ae60,color:#fff
 ```
 
+```d3
+{"type":"treemap","data":{"name":"Grove's Management System","children":[{"name":"Production Principles","children":[{"name":"Limiting Step","value":30},{"name":"Inspect Early","value":25},{"name":"Build to Forecast","value":20},{"name":"Indicators & Black Box","value":25}]},{"name":"Managerial Leverage","children":[{"name":"High-Leverage Activities","value":35},{"name":"Delegation","value":30},{"name":"Calendar as Tool","value":20},{"name":"Information-Gathering","value":25}]},{"name":"Peak Performance","children":[{"name":"Maslow at Work","value":25},{"name":"Task-Relevant Maturity","value":35},{"name":"Performance Reviews","value":30},{"name":"Training","value":30}]}]},"options":{"title":"Grove's Complete Management System","colorScale":["#2980b9","#27ae60","#e74c3c","#8e44ad","#e67e22","#16a085"]}}
+```
+
+The treemap reveals the three-pillar architecture of Grove's system: Production Principles provide the conceptual foundation, Managerial Leverage dictates how to allocate time, and Peak Performance addresses the human side — with TRM and Training carrying the heaviest weight.
+
 ---
 
 ## Key Concepts at a Glance
@@ -81,6 +87,12 @@ flowchart TD
 | **Task-Relevant Maturity** | The single variable that determines the right management style |
 | **Performance Appraisal** | The highest-leverage feedback: Level, Listen, Leave yourself out |
 | **Training Is the Boss's Job** | Only two ways to improve output: motivation and training |
+
+```chartjs
+{"type":"radar","data":{"labels":["Production Thinking","Managerial Leverage","Meetings","Decision-Making","Motivation & Culture","Training"],"datasets":[{"label":"Time Investment","data":[25,30,35,20,15,10],"backgroundColor":"rgba(41,128,185,0.2)","borderColor":"#2980b9","pointBackgroundColor":"#2980b9"},{"label":"Output Impact","data":[40,50,30,45,35,45],"backgroundColor":"rgba(39,174,96,0.2)","borderColor":"#27ae60","pointBackgroundColor":"#27ae60"}]},"options":{"plugins":{"title":{"display":true,"text":"Grove's Management Activities: Time Investment vs Output Impact"}},"scales":{"r":{"beginAtZero":true,"max":55}}}}
+```
+
+The radar shows that while meetings consume the most managerial time, leverage and decision-making deliver disproportionately higher output — and training, despite receiving the least time investment, ranks among the highest-impact activities.
 
 ---
 
@@ -233,6 +245,12 @@ flowchart LR
   - **Depression spreading** — a manager who becomes demoralized infects his entire team; the impact is both pervasive and elusive
   - **Meddling** — using superior knowledge to take over instead of letting the subordinate work through problems himself; trains subordinates to show less initiative
 
+```chartjs
+{"type":"bar","data":{"labels":["Training 10 people","Orientation lecture","One-on-One (weekly)","Performance review","Plant visit nudge","Arriving unprepared","Waffling on decisions","Spreading depression","Meddling"],"datasets":[{"label":"Leverage Impact","data":[200,80,60,90,40,-30,-50,-70,-40],"backgroundColor":["#27ae60","#27ae60","#27ae60","#27ae60","#27ae60","#e74c3c","#e74c3c","#e74c3c","#e74c3c"]}]},"options":{"indexAxis":"y","plugins":{"title":{"display":true,"text":"High vs Negative Leverage Activities"}},"scales":{"x":{"title":{"display":true,"text":"Relative Output Impact"}}}}}
+```
+
+The horizontal bar chart starkly illustrates Grove's central insight: training ten people yields the highest positive leverage (a 1% improvement across 20,000 work-hours), while waffling and depression-spreading create the deepest negative leverage because they paralyze entire organizations.
+
 #### Delegation as Leverage
 
 - Delegation is essential but <b style="color: #e74c3c">delegation without follow-through is abdication</b>
@@ -306,6 +324,12 @@ flowchart LR
   - Send minutes quickly with specific actions, owners, and deadlines — high-leverage follow-up
 - If all goes well, process meetings handle 80% of issues; the remaining 20% require mission meetings
 - <b style="color: #e74c3c">The real sign of malorganization: more than 25% of time in ad hoc mission-oriented meetings</b>
+
+```chartjs
+{"type":"doughnut","data":{"labels":["One-on-Ones","Staff Meetings","Operation Reviews","Mission/Decision Meetings"],"datasets":[{"data":[35,25,20,20],"backgroundColor":["#27ae60","#2980b9","#8e44ad","#e74c3c"]}]},"options":{"plugins":{"title":{"display":true,"text":"Grove's Meeting Architecture: Time Allocation by Type"},"legend":{"position":"right"}}}}
+```
+
+Grove's ideal meeting mix allocates roughly 80% of meeting time to process-oriented formats (one-on-ones, staff, and operation reviews) and only 20% to ad hoc mission meetings — when mission meetings exceed 25%, it signals organizational dysfunction.
 
 ### Decisions, Decisions (Chapter 5)
 
@@ -1582,6 +1606,12 @@ flowchart TB
 - "If you do at least 100 points worth of what you find here, you'll be a distinctly better manager for it"
 - This is Grove's ultimate message: management is not about reading — it is about **doing**
 - <b style="color: #27ae60">The output of this book, like the output of any plan, is not the document. It is the decisions made and actions taken as a result.</b>
+
+```d3
+{"type":"force","data":{"nodes":[{"id":"production","label":"Production Thinking","group":1},{"id":"leverage","label":"Managerial Leverage","group":2},{"id":"meetings","label":"Meeting Architecture","group":2},{"id":"decisions","label":"Decision-Making","group":2},{"id":"planning","label":"Planning & MBO","group":2},{"id":"organization","label":"Hybrid Organization","group":3},{"id":"motivation","label":"Motivation (Maslow)","group":4},{"id":"trm","label":"Task-Relevant Maturity","group":4},{"id":"reviews","label":"Performance Reviews","group":4},{"id":"training","label":"Training","group":4}],"links":[{"source":"production","target":"leverage","label":"enables"},{"source":"leverage","target":"meetings","label":"shapes"},{"source":"leverage","target":"decisions","label":"prioritizes"},{"source":"meetings","target":"decisions","label":"produces"},{"source":"decisions","target":"planning","label":"feeds"},{"source":"planning","target":"organization","label":"structures"},{"source":"organization","target":"motivation","label":"context for"},{"source":"motivation","target":"trm","label":"determines"},{"source":"trm","target":"reviews","label":"assessed via"},{"source":"reviews","target":"training","label":"identifies need"},{"source":"training","target":"leverage","label":"highest form of"},{"source":"production","target":"planning","label":"forecasting"}]},"options":{"title":"The Grove System: How Every Concept Connects","chargeStrength":-300}}
+```
+
+The force diagram reveals that Grove's system is not a linear sequence but an interconnected web — training feeds back into leverage, production thinking enables planning, and the whole system orbits around one principle: everything a manager does should maximize the output of the people around him.
 
 ---
 

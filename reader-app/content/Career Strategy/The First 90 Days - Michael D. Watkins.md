@@ -43,6 +43,12 @@ Michael D. Watkins is a professor at IMD Business School in Lausanne, Switzerlan
   - The leader who sprints to show immediate impact often creates the wrong kind of attention
   - The leader who builds the right foundation earns compound returns
 
+```chartjs
+{"type":"bar","data":{"labels":["Month 1","Month 2","Month 3","Month 4","Month 5","Month 6","Month 7"],"datasets":[{"label":"Structured 90-Day Plan","data":[-40,-15,10,45,70,90,100],"backgroundColor":"#27ae60"},{"label":"Unstructured Transition","data":[-50,-35,-20,-5,10,30,50],"backgroundColor":"#e74c3c"}]},"options":{"plugins":{"title":{"display":true,"text":"Break-Even Point: Structured vs Unstructured Transitions"}},"scales":{"y":{"title":{"display":true,"text":"Net Value Contribution (%)"}}}}}
+```
+
+The structured approach reaches the break-even point (where you shift from consuming value to creating it) around month 3 — roughly 40% faster than an unstructured transition, which may not reach break-even until month 5 or later. This gap compounds: every month spent below zero is a month of organisational drag.
+
 ---
 
 ## Key Concepts at a Glance
@@ -332,6 +338,12 @@ All five traps stem from the same root — the stress and anxiety of transition 
 | **Realignment** | Redirect a drifting organisation | Denial and resistance | Build shared awareness of the problem |
 | **Sustaining Success** | Maintain momentum | Gratitude mixed with pressure | Incremental improvements that respect existing culture |
 
+```chartjs
+{"type":"radar","data":{"labels":["Decisiveness","Patience","Consensus-Building","Speed of Action","Innovation","Political Skill"],"datasets":[{"label":"Start-up","data":[7,3,4,8,10,4],"borderColor":"#2980b9","backgroundColor":"rgba(41,128,185,0.1)"},{"label":"Turnaround","data":[10,2,3,9,5,6],"borderColor":"#e74c3c","backgroundColor":"rgba(231,76,60,0.1)"},{"label":"Accelerated Growth","data":[6,5,7,7,7,6],"borderColor":"#f39c12","backgroundColor":"rgba(243,156,18,0.1)"},{"label":"Realignment","data":[4,9,9,3,5,10],"borderColor":"#8e44ad","backgroundColor":"rgba(142,68,173,0.1)"},{"label":"Sustaining Success","data":[5,8,7,4,6,7],"borderColor":"#27ae60","backgroundColor":"rgba(39,174,96,0.1)"}]},"options":{"plugins":{"title":{"display":true,"text":"STARS Situation Skills Profile — What Each Situation Demands"}},"scales":{"r":{"beginAtZero":true,"max":10}}}}
+```
+
+Each STARS situation demands a radically different skill profile. Turnarounds reward decisive speed; realignments demand patience and political skill. A leader who thrives in one may fail in another — not from lack of talent, but from applying the wrong strengths.
+
 ---
 
 **Start-up:**
@@ -388,6 +400,12 @@ All five traps stem from the same root — the stress and anxiety of transition 
   - A leader who thrives in turnarounds — decisive, top-down, action-oriented — may destroy a realignment by moving too fast and triggering resistance
   - A leader who excels at sustaining success — patient, incremental, relationship-focused — may be too slow for a turnaround
 - Before choosing any strategy, the first question must be: "What kind of situation am I actually in?"
+
+```d3
+{"type":"heatmap","data":{"xLabels":["Start-up","Turnaround","Accelerated Growth","Realignment","Sustaining Success"],"yLabels":["Team Building","Cultural Adaptation","Securing Early Wins","Boss Alignment","Alliance Building","Self-Management","Learning Speed","Achieving Alignment","Managing Expectations","Personnel Decisions"],"values":[[9,6,8,5,3],[4,5,6,9,7],[7,8,6,5,4],[6,7,5,8,6],[5,4,8,9,7],[8,9,6,5,4],[8,7,7,8,5],[7,8,8,9,6],[6,7,7,8,5],[8,9,7,6,4]]},"options":{"title":"Transition Challenge Intensity by STARS Situation"}}
+```
+
+The heatmap reveals that no single STARS situation is uniformly easy or hard — each has its own pressure points. Start-ups demand intense team building and learning speed; realignments require cultural adaptation and alliance building; turnarounds compress personnel decisions into days. Leaders who diagnose their situation accurately can focus energy where it matters most.
 
 > [!example] The Mismatched Turnaround Leader
 > - Watkins describes a leader who had built a brilliant track record turning around struggling operations
@@ -500,6 +518,12 @@ flowchart TD
 ```
 
 The five conversations are not sequential checkboxes — they are threads of a continuous dialogue, revisited and refined as the relationship develops.
+
+```d3
+{"type":"force","data":{"nodes":[{"id":"situation","label":"Situation Diagnosis","group":1},{"id":"expectations","label":"Expectations","group":1},{"id":"style","label":"Style","group":2},{"id":"resources","label":"Resources","group":2},{"id":"development","label":"Personal Development","group":3},{"id":"trust","label":"Boss Trust","group":4},{"id":"alignment","label":"Shared Alignment","group":4}],"links":[{"source":"situation","target":"expectations","value":5},{"source":"expectations","target":"resources","value":4},{"source":"style","target":"expectations","value":3},{"source":"style","target":"resources","value":3},{"source":"situation","target":"style","value":2},{"source":"situation","target":"resources","value":3},{"source":"expectations","target":"development","value":2},{"source":"resources","target":"development","value":2},{"source":"situation","target":"trust","value":4},{"source":"expectations","target":"trust","value":5},{"source":"style","target":"trust","value":4},{"source":"resources","target":"alignment","value":3},{"source":"trust","target":"alignment","value":5},{"source":"development","target":"alignment","value":3}]},"options":{"title":"The Five Conversations Network — How Boss Conversations Interconnect"}}
+```
+
+The five conversations are not isolated meetings — they form an interconnected web where each reinforces the others. Situation diagnosis shapes expectations; expectations inform resource requests; style calibration determines how all other conversations land. Together, they converge on the two outcomes that matter most: boss trust and shared alignment.
 
 ---
 

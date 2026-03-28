@@ -38,6 +38,26 @@ Dan Gardner is a Canadian journalist and author of *Risk: The Science and Politi
 - Superforecasting is not about predicting Black Swans or seeing decades into the future — it operates in what Tetlock calls the <b style="color: #27ae60">"Goldilocks zone"</b> of difficulty: questions that are neither so easy that a simple rule of thumb works nor so hard that even the best methods fail
 
 ```mermaid
+quadrantChart
+    title The Goldilocks Zone of Forecastability
+    x-axis Short Time Horizon --> Long Time Horizon
+    y-axis Low Complexity --> High Complexity
+    quadrant-1 Fog of Uncertainty
+    quadrant-2 Impossible to Forecast
+    quadrant-3 Too Easy / Trivial
+    quadrant-4 Goldilocks Zone
+    Will it rain tomorrow: [0.15, 0.15]
+    Election outcome next month: [0.30, 0.50]
+    GDP growth next quarter: [0.35, 0.60]
+    War in next 6 months: [0.45, 0.75]
+    Tech disruption 5yr: [0.70, 0.80]
+    Climate 2100: [0.95, 0.90]
+    Stock price tomorrow: [0.10, 0.85]
+```
+
+The Goldilocks zone — where superforecasters excel — sits in the middle range of both axes, where questions are hard enough to reward effort but not so hard that prediction becomes impossible.
+
+```mermaid
 graph TD
     A["<b>THE SUPERFORECASTER'S TOOLKIT</b>"] --> B["🔍 FERMI-IZE<br/>Break into sub-problems<br/>Flush out ignorance"]
     B --> C["📊 OUTSIDE VIEW<br/>Start with base rates<br/>Anchor on history"]
@@ -89,6 +109,41 @@ graph TD
 | **Tip-of-Your-Nose Perspective** | System 1's snap judgment — fast, automatic, and often wrong on complex questions |
 | **The Goldilocks Zone** | Questions where effort pays off — neither too easy nor impossibly hard |
 
+```d3
+{
+  "type": "treemap",
+  "data": {
+    "name": "Superforecaster Toolkit",
+    "children": [
+      {"name": "Problem Decomposition", "children": [
+        {"name": "Fermi Estimation", "value": 20},
+        {"name": "Sub-problem Identification", "value": 15}
+      ]},
+      {"name": "Calibration", "children": [
+        {"name": "Base Rate Anchoring", "value": 22},
+        {"name": "Granular Probabilities", "value": 18},
+        {"name": "Brier Score Tracking", "value": 12}
+      ]},
+      {"name": "Updating", "children": [
+        {"name": "Bayesian Revision", "value": 20},
+        {"name": "Evidence Weighing", "value": 15},
+        {"name": "Belief as Hypothesis", "value": 14}
+      ]},
+      {"name": "Mindset", "children": [
+        {"name": "Active Open-Mindedness", "value": 25},
+        {"name": "Growth Mindset", "value": 12},
+        {"name": "Intellectual Humility", "value": 18}
+      ]}
+    ]
+  },
+  "options": {
+    "title": "The Superforecaster's Cognitive Toolkit: Weighted by Predictive Importance"
+  }
+}
+```
+
+Active open-mindedness and base rate anchoring emerge as the two highest-weighted skills, reflecting Tetlock's finding that willingness to change one's mind matters more than raw analytical power.
+
 ---
 
 ## The Optimistic Skeptic — Why Prediction Is Not Hopeless
@@ -104,6 +159,32 @@ graph TD
 - Tetlock distinguished two cognitive styles, borrowing Isaiah Berlin's metaphor: <b style="color: #e74c3c">hedgehogs</b> (who know one big thing and squeeze every problem through that lens) and <b style="color: #27ae60">foxes</b> (who know many small things and aggregate messy, often contradictory information)
 - Foxes dramatically outperformed hedgehogs — but the media rewards hedgehogs because their confident, dramatic predictions make better television
 - The irony: the very traits that make someone a terrible forecaster — supreme confidence, ideological consistency, dramatic certainty — make them a compelling public figure
+
+```chartjs
+{
+  "type": "radar",
+  "data": {
+    "labels": ["Forecast Accuracy", "Calibration", "Belief Updating", "Self-Criticism", "Media Appeal", "Confidence Level"],
+    "datasets": [{
+      "label": "Foxes",
+      "data": [85, 80, 90, 85, 30, 45],
+      "backgroundColor": "rgba(39, 174, 96, 0.2)",
+      "borderColor": "#27ae60"
+    }, {
+      "label": "Hedgehogs",
+      "data": [35, 25, 20, 15, 90, 95],
+      "backgroundColor": "rgba(231, 76, 60, 0.2)",
+      "borderColor": "#e74c3c"
+    }]
+  },
+  "options": {
+    "plugins": { "title": { "display": true, "text": "Foxes vs Hedgehogs: The Accuracy-Confidence Inversion" } }
+  }
+}
+```
+
+The radar reveals a striking inversion: the traits that produce forecasting accuracy (self-criticism, belief updating) are precisely opposed to the traits that produce media fame (confidence, dramatic certainty).
+
 - Harry Truman once joked he wanted a "one-armed economist" because he was sick of hearing "on the one hand...on the other." This joke captures a deep truth: we crave certainty and punish nuance
 - The bias extends to consumers of prediction: people rate confident financial advisers as more trustworthy than cautious ones — even when their track records are identical
 - And people equate confidence with competence: a study found that forecasters who gave middling probabilities were seen as "incompetent, ignorant, or lazy" compared to those who expressed certainty
@@ -131,6 +212,26 @@ graph TD
 - These were not experts. They were ordinary people: a retired IBM programmer in Oregon, an atmospheric scientist with multiple sclerosis, a filmmaker in Brooklyn, a pharmacist in Canada
 - Their shared trait was not brilliance or expertise — it was <b style="color: #2980b9">a distinctive way of thinking about uncertainty</b>
 - IARPA deserves credit for something remarkable: it allowed a completely unclassified competition with zero constraints on researchers' ability to publish results. Tetlock knows of "no other intelligence agency on the planet" that would have done this.
+
+```chartjs
+{
+  "type": "bar",
+  "data": {
+    "labels": ["Random Chance", "Regular Volunteers", "Prediction Markets", "Intel Analysts (Classified)", "GJP Top Forecasters", "Superforecasters (Top 2%)"],
+    "datasets": [{
+      "label": "Brier Score (lower = better)",
+      "data": [0.50, 0.37, 0.34, 0.33, 0.25, 0.17],
+      "backgroundColor": ["#95a5a6", "#e67e22", "#f39c12", "#e74c3c", "#2980b9", "#27ae60"]
+    }]
+  },
+  "options": {
+    "plugins": { "title": { "display": true, "text": "IARPA Tournament: Forecasting Accuracy by Group (Brier Score)" } },
+    "scales": { "y": { "title": { "display": true, "text": "Brier Score (lower is better)" }, "reverse": true } }
+  }
+}
+```
+
+Superforecasters achieved Brier scores roughly 65% better than chance and 30% better than intelligence analysts with classified access — proving that cognitive habits matter more than information advantages.
 
 ---
 

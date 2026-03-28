@@ -157,6 +157,39 @@ The five-part structure mirrors a natural progression that Greene argues is not 
 
 Greene's verdict is clear: default to Athena, deploy Ares only as a last resort.
 
+```chartjs
+{
+  "type": "radar",
+  "data": {
+    "labels": ["Patience Required", "Resource Efficiency", "Relationship Preservation", "Psychological Impact", "Speed of Resolution", "Visibility of Intent"],
+    "datasets": [
+      {
+        "label": "Athena (Indirect)",
+        "data": [90, 95, 85, 95, 35, 15],
+        "borderColor": "#2980b9",
+        "backgroundColor": "rgba(41, 128, 185, 0.15)"
+      },
+      {
+        "label": "Ares (Direct)",
+        "data": [15, 25, 20, 40, 90, 95],
+        "borderColor": "#e74c3c",
+        "backgroundColor": "rgba(231, 76, 60, 0.15)"
+      }
+    ]
+  },
+  "options": {
+    "plugins": {
+      "title": { "display": true, "text": "Athena vs Ares — Strategic Profile Comparison" }
+    },
+    "scales": {
+      "r": { "beginAtZero": true, "max": 100 }
+    }
+  }
+}
+```
+
+Athena dominates on every dimension except speed — which is precisely why most people default to Ares: the emotional payoff of immediate action masks the strategic superiority of patient manoeuvre.
+
 ---
 
 **2. The Strategic vs Tactical Distinction**
@@ -292,6 +325,35 @@ The Controlled-Chaos model achieves strategic coherence through a single directi
 - Greene begins the book here because he believes most people are defeated before they ever engage an opponent — not by external enemies but by their own psychology:
   - Vague anxiety diffuses energy
   - Mental rigidity locks them into outdated strategies
+
+```d3
+{
+  "type": "sankey",
+  "data": {
+    "nodes": [
+      "Self-Mastery", "Organisational", "Defensive", "Offensive", "Unconventional",
+      "Emotional Control", "Mental Flexibility", "Team Cohesion", "Patience", "Initiative", "Psychological Warfare"
+    ],
+    "links": [
+      { "source": "Self-Mastery", "target": "Emotional Control", "value": 4 },
+      { "source": "Self-Mastery", "target": "Mental Flexibility", "value": 3 },
+      { "source": "Organisational", "target": "Team Cohesion", "value": 3 },
+      { "source": "Defensive", "target": "Patience", "value": 4 },
+      { "source": "Offensive", "target": "Initiative", "value": 8 },
+      { "source": "Offensive", "target": "Mental Flexibility", "value": 3 },
+      { "source": "Unconventional", "target": "Psychological Warfare", "value": 8 },
+      { "source": "Unconventional", "target": "Initiative", "value": 3 },
+      { "source": "Emotional Control", "target": "Initiative", "value": 4 },
+      { "source": "Patience", "target": "Initiative", "value": 3 }
+    ]
+  },
+  "options": {
+    "title": "Strategic Capability Flow — How the Five Parts Build on Each Other"
+  }
+}
+```
+
+The Sankey diagram reveals that offensive initiative — the book's ultimate goal — draws from every preceding domain: self-mastery feeds emotional control, defensive patience feeds strategic timing, and all converge into the ability to take decisive action.
   - Emotional reactivity causes them to make decisions they later regret
   - Complacency prevents them from acting when the moment demands it
 
@@ -1019,6 +1081,32 @@ The historical figures who dominate this section — Scipio, Napoleon, Frederick
 - Napoleon spent his youth reading every military text he could find
 - Grant's memoirs reveal a mind that was constantly analysing, constantly connecting tactical events to strategic implications
 - <b style="color: #e74c3c">The offensive strategies are not tools for amateurs</b> — they are instruments that require a lifetime of preparation to wield effectively
+
+```chartjs
+{
+  "type": "bar",
+  "data": {
+    "labels": ["Part I: Self-Directed", "Part II: Organisational", "Part III: Defensive", "Part IV: Offensive", "Part V: Unconventional"],
+    "datasets": [
+      {
+        "label": "Number of Strategies",
+        "data": [4, 3, 4, 11, 11],
+        "backgroundColor": ["#2980b9", "#27ae60", "#f39c12", "#e74c3c", "#8e44ad"]
+      }
+    ]
+  },
+  "options": {
+    "plugins": {
+      "title": { "display": true, "text": "Strategy Distribution Across the Five Parts of War" }
+    },
+    "scales": {
+      "y": { "beginAtZero": true, "title": { "display": true, "text": "Number of Strategies" } }
+    }
+  }
+}
+```
+
+The book's weight is overwhelmingly offensive and unconventional — 22 of 33 strategies deal with taking initiative — but Greene insists that the 11 foundational strategies (self-directed, organisational, defensive) are prerequisites without which the offensive tools become reckless aggression.
 
 ---
 
@@ -2238,6 +2326,29 @@ The mechanism exploits the paradox of complex systems:
   - When you are facing a complex competitive situation, you can scan Greene's taxonomy and identify which dynamics are in play
 - The book is less valuable as a recipe book — the reader who mechanically applies "Strategy 18: Attack the Soft Flank" to every interpersonal challenge will quickly find themselves exhausted and friendless
 - The ideal reader treats these strategies as a diagnostic toolkit for reading situations, not a prescriptive manual for creating them
+
+```d3
+{
+  "type": "heatmap",
+  "data": {
+    "xLabels": ["Patience", "Intelligence", "Aggression", "Deception", "Adaptability", "Political Skill"],
+    "yLabels": ["Self-Directed (1-4)", "Organisational (5-7)", "Defensive (8-11)", "Offensive (12-22)", "Unconventional (23-33)"],
+    "values": [
+      [60, 40, 30, 20, 90, 30],
+      [50, 70, 20, 30, 60, 80],
+      [95, 75, 15, 40, 70, 50],
+      [40, 90, 75, 60, 85, 65],
+      [55, 80, 30, 95, 70, 90]
+    ]
+  },
+  "options": {
+    "title": "Skill Demands by Strategic Domain — What Each Part Requires Most",
+    "colorRange": ["#f7fbff", "#e74c3c"]
+  }
+}
+```
+
+The heatmap reveals that each strategic domain demands a different skill profile — defensive warfare requires extreme patience while unconventional warfare demands mastery of deception, confirming that the five parts are not interchangeable but form a progressive curriculum.
 
 ---
 

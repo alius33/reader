@@ -66,6 +66,49 @@ flowchart TD
 
 Freedman's central insight: strategy is not choosing between force and guile once, but constantly recalibrating between them as the situation unfolds.
 
+```chartjs
+{
+  "type": "radar",
+  "data": {
+    "labels": ["Decisiveness", "Adaptability", "Resource Cost", "Predictability Risk", "Coalition Building", "Psychological Impact"],
+    "datasets": [{
+      "label": "Strategy of Force",
+      "data": [90, 30, 85, 70, 40, 60],
+      "backgroundColor": "rgba(231, 76, 60, 0.2)",
+      "borderColor": "#e74c3c"
+    }, {
+      "label": "Strategy of Guile",
+      "data": [40, 90, 30, 25, 80, 85],
+      "backgroundColor": "rgba(41, 128, 185, 0.2)",
+      "borderColor": "#2980b9"
+    }]
+  },
+  "options": {
+    "plugins": { "title": { "display": true, "text": "Force vs Guile: Strategic Profile Comparison Across Six Dimensions" } }
+  }
+}
+```
+
+Force excels in decisiveness but bleeds resources; guile excels in adaptability and psychological impact — Freedman's history shows the best strategists toggle between both.
+
+```chartjs
+{
+  "type": "polarArea",
+  "data": {
+    "labels": ["Origins & Foundations", "Strategies of Force", "Strategy from Below", "Strategy from Above"],
+    "datasets": [{
+      "data": [15, 35, 25, 25],
+      "backgroundColor": ["#95a5a6", "#e74c3c", "#2980b9", "#27ae60"]
+    }]
+  },
+  "options": {
+    "plugins": { "title": { "display": true, "text": "Freedman's Four Domains: Relative Coverage in Strategy: A History" } }
+  }
+}
+```
+
+Military strategy dominates the book's coverage, reflecting Freedman's argument that strategies of force are the historical root from which all other strategic traditions grew.
+
 ---
 
 ## Key Concepts at a Glance
@@ -98,9 +141,76 @@ Freedman's central insight: strategy is not choosing between force and guile onc
 | **Fortuna** | Machiavelli's term for the half of life that is beyond strategic control |
 | **Emergent strategy** | Mintzberg's insight that realised strategy is part plan, part adaptation |
 
+```d3
+{
+  "type": "force",
+  "data": {
+    "nodes": [
+      {"id": "Sun Tzu", "group": 1},
+      {"id": "Clausewitz", "group": 1},
+      {"id": "Machiavelli", "group": 1},
+      {"id": "Napoleon", "group": 1},
+      {"id": "Liddell Hart", "group": 2},
+      {"id": "Schelling", "group": 2},
+      {"id": "Boyd (OODA)", "group": 2},
+      {"id": "Porter", "group": 3},
+      {"id": "Mintzberg", "group": 3},
+      {"id": "Christensen", "group": 3},
+      {"id": "Gandhi", "group": 4},
+      {"id": "Lenin", "group": 4}
+    ],
+    "links": [
+      {"source": "Sun Tzu", "target": "Clausewitz", "value": 3},
+      {"source": "Sun Tzu", "target": "Liddell Hart", "value": 4},
+      {"source": "Clausewitz", "target": "Napoleon", "value": 5},
+      {"source": "Clausewitz", "target": "Liddell Hart", "value": 3},
+      {"source": "Clausewitz", "target": "Schelling", "value": 3},
+      {"source": "Machiavelli", "target": "Clausewitz", "value": 2},
+      {"source": "Schelling", "target": "Boyd (OODA)", "value": 3},
+      {"source": "Liddell Hart", "target": "Boyd (OODA)", "value": 4},
+      {"source": "Porter", "target": "Mintzberg", "value": 3},
+      {"source": "Christensen", "target": "Porter", "value": 3},
+      {"source": "Gandhi", "target": "Lenin", "value": 2},
+      {"source": "Sun Tzu", "target": "Boyd (OODA)", "value": 2}
+    ]
+  },
+  "options": {
+    "title": "Intellectual Genealogy of Strategic Thinkers Across Freedman's Four Domains"
+  }
+}
+```
+
+The force diagram reveals how military thinkers (blue) formed the intellectual foundation that later branched into business strategy (green) and revolutionary strategy (orange), with Clausewitz as the central node connecting the most traditions.
+
 ---
 
 ## Part One: Origins
+
+```mermaid
+timeline
+    title Evolution of Strategic Thought Across Freedman's Four Domains
+    section Ancient Origins
+        500 BC : Sun Tzu — Art of War
+        400 BC : Thucydides — Peloponnesian War
+        1513 : Machiavelli — The Prince
+    section Military Revolution
+        1832 : Clausewitz — On War
+        1929 : Liddell Hart — Indirect Approach
+        1961 : Schelling — Strategy of Conflict
+        1976 : Boyd — OODA Loop
+    section Strategy from Below
+        1902 : Lenin — What Is To Be Done
+        1937 : Mao — Guerrilla Warfare
+        1930 : Gandhi — Nonviolent Resistance
+        1963 : MLK — Birmingham Campaign
+    section Strategy from Above
+        1962 : Chandler — Strategy and Structure
+        1980 : Porter — Competitive Strategy
+        1994 : Mintzberg — Rise and Fall of Planning
+        1997 : Christensen — Innovator's Dilemma
+```
+
+This timeline reveals how strategic thought migrated from military origins through revolutionary politics to corporate management — each era borrowing from and misunderstanding the previous one.
 
 ### Chapter 1: Origins — Evolution and the Chimpanzees
 

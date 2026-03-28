@@ -85,6 +85,12 @@ function nodeToMd(node: TiptapNode, indent = ""): string {
     case "mermaidDiagram":
       return `\`\`\`mermaid\n${node.attrs?.source || ""}\n\`\`\``;
 
+    case "chartDiagram":
+      return `\`\`\`chartjs\n${node.attrs?.source || ""}\n\`\`\``;
+
+    case "d3Diagram":
+      return `\`\`\`d3\n${node.attrs?.source || ""}\n\`\`\``;
+
     default:
       if (node.content) {
         return node.content.map((child) => nodeToMd(child, indent)).join("\n");

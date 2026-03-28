@@ -75,6 +75,12 @@ flowchart LR
 
 The four disciplines form a self-reinforcing loop — each one enables the next, and the system strengthens with every complete cycle.
 
+```d3
+{"type":"treemap","data":{"name":"Organisational Health Framework","children":[{"name":"Smart (Over-invested)","children":[{"name":"Strategy","value":25},{"name":"Marketing","value":20},{"name":"Finance","value":20},{"name":"Technology","value":20},{"name":"Talent Acquisition","value":15}]},{"name":"Healthy (Under-invested)","children":[{"name":"Cohesive Team","children":[{"name":"Vulnerability Trust","value":15},{"name":"Productive Conflict","value":12},{"name":"Commitment","value":10},{"name":"Accountability","value":10}]},{"name":"Clarity","children":[{"name":"Why We Exist","value":8},{"name":"Core Values","value":10},{"name":"What Business","value":7},{"name":"How Different","value":7},{"name":"Goals","value":8},{"name":"Who Does What","value":7}]},{"name":"Over-Communicate","children":[{"name":"Cascading","value":10},{"name":"Repetition","value":8},{"name":"Multiple Channels","value":7}]},{"name":"Human Systems","children":[{"name":"Hiring","value":12},{"name":"Onboarding","value":8},{"name":"Performance","value":8},{"name":"Rewards","value":7},{"name":"Dismissal","value":7}]}]}]},"options":{"title":"Smart vs Healthy — The Full Organisational Health Architecture"}}
+```
+
+The treemap reveals the imbalance Lencioni describes: the "Smart" side has just five components, all of which receive heavy investment, while the "Healthy" side contains a far richer architecture of four disciplines with 20+ sub-components — most of which receive minimal executive attention.
+
 ---
 
 ## Key Concepts at a Glance
@@ -91,6 +97,12 @@ The four disciplines form a self-reinforcing loop — each one enables the next,
 | **Cascading communication** | Executives agree on key messages at the end of every meeting and relay them to their teams within 24 hours |
 | **Human systems reinforcement** | Hiring, performance reviews, rewards, and dismissals must all align to organisational clarity |
 | **Meeting quality** | The leading indicator of organisational health — boring meetings signal dysfunction |
+
+```chartjs
+{"type":"radar","data":{"labels":["CEO Time Required","Difficulty to Sustain","Visibility to Employees","Impact on Results","Speed of Decay if Neglected"],"datasets":[{"label":"Build Cohesive Team","data":[85,90,40,95,95],"borderColor":"#2980b9","backgroundColor":"rgba(41,128,185,0.15)"},{"label":"Create Clarity","data":[70,75,50,85,60],"borderColor":"#27ae60","backgroundColor":"rgba(39,174,96,0.15)"},{"label":"Over-Communicate","data":[60,50,90,70,80],"borderColor":"#f39c12","backgroundColor":"rgba(243,156,18,0.15)"},{"label":"Reinforce via Systems","data":[45,65,85,80,70],"borderColor":"#8e44ad","backgroundColor":"rgba(142,68,173,0.15)"}]},"options":{"plugins":{"title":{"display":true,"text":"The Four Disciplines — Multi-Dimensional Comparison"}},"scales":{"r":{"beginAtZero":true,"max":100}}}}
+```
+
+The radar reveals that building a cohesive team demands the most CEO time and is the hardest to sustain — yet it is also the discipline that decays fastest when neglected, explaining why Lencioni calls it the foundation upon which everything else depends.
 
 ---
 
@@ -291,6 +303,12 @@ The four disciplines form a self-reinforcing loop — each one enables the next,
 | **Talent retention** | High — people stay for culture | Moderate — people stay for resume |
 
 The contrast between these two firms illustrates Lencioni's core claim — identical talent and strategy can produce radically different outcomes depending on organisational health.
+
+```chartjs
+{"type":"bar","data":{"labels":["Strategy","Technology","Marketing","Finance","Team Cohesion","Clarity","Communication","Human Systems"],"datasets":[{"label":"Typical Organisation Investment (%)","data":[90,85,80,85,25,20,15,20],"backgroundColor":"#e74c3c"},{"label":"Lencioni's Recommended Investment (%)","data":[60,60,55,60,90,85,80,85],"backgroundColor":"#27ae60"}]},"options":{"plugins":{"title":{"display":true,"text":"Smart vs Healthy — The Investment Imbalance"}},"scales":{"y":{"beginAtZero":true,"max":100,"title":{"display":true,"text":"Executive Attention (%)"}}},"indexAxis":"y"}}
+```
+
+The horizontal bar chart makes the imbalance visceral: most organisations invest 80-90% of executive attention in "Smart" areas while starving the "Healthy" areas that Lencioni argues determine whether those smart investments actually produce results.
 
 ---
 
@@ -493,6 +511,12 @@ The psychological mechanism:
 - The test Lencioni proposes is simple but devastating: pull each executive aside separately and ask them to answer the six questions
   - If their answers diverge — and in most organisations, they diverge dramatically — the organisation does not have clarity
   - What is written on the strategy deck is irrelevant if the leaders cannot independently articulate the same answers
+
+```d3
+{"type":"force","data":{"nodes":[{"id":"why","label":"1. Why Do We Exist?","group":1},{"id":"values","label":"2. Core Values","group":1},{"id":"business","label":"3. What Business?","group":2},{"id":"different","label":"4. How Different?","group":2},{"id":"goals","label":"5. What Are Our Goals?","group":3},{"id":"who","label":"6. Who Does What?","group":3},{"id":"purpose","label":"Purpose & Identity","group":4},{"id":"strategy","label":"Strategic Positioning","group":4},{"id":"execution","label":"Execution & Accountability","group":4}],"links":[{"source":"why","target":"values"},{"source":"why","target":"purpose"},{"source":"values","target":"purpose"},{"source":"business","target":"different"},{"source":"business","target":"strategy"},{"source":"different","target":"strategy"},{"source":"goals","target":"who"},{"source":"goals","target":"execution"},{"source":"who","target":"execution"},{"source":"purpose","target":"strategy"},{"source":"strategy","target":"execution"},{"source":"values","target":"goals"},{"source":"different","target":"goals"}]},"options":{"title":"The Six Clarity Questions — Interconnections & Clusters","charge":-350,"linkDistance":120}}
+```
+
+The force graph reveals that the six questions cluster into three natural pairs — Purpose (Why/Values), Strategy (Business/Differentiation), and Execution (Goals/Roles) — with the links between clusters showing how answers to earlier questions constrain and inform later ones.
 
 ---
 
@@ -755,6 +779,12 @@ flowchart TD
 ```
 
 Every human system either reinforces or undermines the clarity — there is no neutral position.
+
+```chartjs
+{"type":"polarArea","data":{"labels":["Hiring & Selection","New-Employee Orientation","Performance Reviews","Rewards & Compensation","Dismissal of Misfits","Meeting Discipline"],"datasets":[{"label":"Reinforcement Impact","data":[95,80,70,75,85,65],"backgroundColor":["rgba(41,128,185,0.6)","rgba(39,174,96,0.6)","rgba(243,156,18,0.6)","rgba(142,68,173,0.6)","rgba(231,76,60,0.6)","rgba(52,73,94,0.6)"],"borderColor":["#2980b9","#27ae60","#f39c12","#8e44ad","#e74c3c","#34495e"],"borderWidth":2}]},"options":{"plugins":{"title":{"display":true,"text":"Human Systems — Reinforcement Impact on Organisational Clarity"}},"scales":{"r":{"beginAtZero":true}}}}
+```
+
+The polar area chart shows that hiring has the highest impact on reinforcing clarity — consistent with Lencioni's emphasis that every new hire either strengthens or dilutes the culture — followed closely by dismissal of misfits, which Rich's delay in addressing Jamie proved to be the most costly system failure.
 
 ---
 

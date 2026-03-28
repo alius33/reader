@@ -166,6 +166,52 @@ The virtuous cycle Cote describes: honest accounting and fixed-cost discipline c
 | **Top Ten / Bottom Ten** | Any change initiative stalling | Publicly rank performers; nobody wants to be in the bottom ten |
 | **"Take Your Three Minutes"** | Major decisions being rushed | Pause before deciding — inspired by Panama Canal engineer's math teacher |
 
+```chartjs
+{
+  "type": "radar",
+  "data": {
+    "labels": ["Intellectual Rigor", "Process Innovation", "Dual-Goal Thinking", "Long-Term Focus", "Cost Discipline", "Growth Orientation"],
+    "datasets": [
+      {
+        "label": "Cote's 'Any Ninny' Approach",
+        "data": [95, 90, 95, 92, 88, 90],
+        "borderColor": "#2980b9",
+        "backgroundColor": "rgba(41, 128, 185, 0.2)",
+        "pointBackgroundColor": "#2980b9"
+      },
+      {
+        "label": "Traditional 'Make the Quarter' Approach",
+        "data": [30, 25, 20, 15, 70, 35],
+        "borderColor": "#e74c3c",
+        "backgroundColor": "rgba(231, 76, 60, 0.2)",
+        "pointBackgroundColor": "#e74c3c"
+      }
+    ]
+  },
+  "options": {
+    "responsive": true,
+    "plugins": {
+      "title": {
+        "display": true,
+        "text": "Leadership Approach: 'Any Ninny' vs Traditional Short-Termism"
+      },
+      "legend": {
+        "position": "bottom"
+      }
+    },
+    "scales": {
+      "r": {
+        "min": 0,
+        "max": 100,
+        "ticks": { "stepSize": 20 }
+      }
+    }
+  }
+}
+```
+
+The traditional approach scores high only on cost discipline (through blunt cuts) but collapses on every dimension that matters for sustained performance — Cote's method demands leaders achieve seemingly conflicting goals simultaneously.
+
 > [!example] Tim Mahoney Takes His Three Minutes
 > - Leaders were evaluating a potential acquisition and most said yes immediately
 > - Tim Mahoney, head of Aerospace, said: "I'd like to take my three minutes. Can I get back to you Monday?"
@@ -455,6 +501,64 @@ Perpetual restructuring only works if you hold fixed costs constant — otherwis
   - Leaders make decisions — consensus is not the goal
   - Leaders explain their rationale
   - Team members support the decision even when they disagree
+
+```d3
+{
+  "type": "treemap",
+  "data": {
+    "name": "One Honeywell",
+    "children": [
+      {
+        "name": "Growth",
+        "children": [
+          { "name": "Customer Service", "value": 30 },
+          { "name": "Globalisation", "value": 28 },
+          { "name": "Technology / R&D", "value": 25 }
+        ]
+      },
+      {
+        "name": "Productivity",
+        "children": [
+          { "name": "HOS (Lean Mfg)", "value": 28 },
+          { "name": "Functional Transformation", "value": 22 },
+          { "name": "Perpetual Restructuring", "value": 20 }
+        ]
+      },
+      {
+        "name": "Cash",
+        "children": [
+          { "name": "Working Capital", "value": 22 },
+          { "name": "High-Quality Earnings", "value": 20 },
+          { "name": "Eliminate Make-the-Quarter", "value": 18 }
+        ]
+      },
+      {
+        "name": "People",
+        "children": [
+          { "name": "Talent Management (MRR)", "value": 24 },
+          { "name": "Fewer, Better Leaders", "value": 18 },
+          { "name": "Twelve Behaviours", "value": 20 }
+        ]
+      },
+      {
+        "name": "Enablers",
+        "children": [
+          { "name": "Six Sigma", "value": 18 },
+          { "name": "HOS Rollout", "value": 22 },
+          { "name": "Velocity Product Dev", "value": 16 }
+        ]
+      }
+    ]
+  },
+  "options": {
+    "title": "Honeywell's Five Strategic Initiatives and Sub-Components",
+    "width": 700,
+    "height": 420
+  }
+}
+```
+
+The Five Initiatives formed the unchanging strategic pillars of Cote's sixteen-year tenure — Growth, Productivity, Cash, People, and Enablers each broke down into specific, actionable sub-components that reinforced one another.
 
 ---
 
@@ -774,6 +878,71 @@ Honeywell's four-step M&A process: constantly build the pipeline, rigorously kil
 | Biggest single deal | $5 billion (Elster, 2015) |
 | Significant deal failures | Only very small acquisitions |
 
+```chartjs
+{
+  "type": "line",
+  "data": {
+    "labels": ["2002", "2004", "2006", "2008", "2010", "2012", "2014", "2016", "2018"],
+    "datasets": [
+      {
+        "label": "Market Cap ($B)",
+        "data": [20, 28, 38, 32, 42, 58, 78, 95, 120],
+        "borderColor": "#2980b9",
+        "backgroundColor": "rgba(41, 128, 185, 0.1)",
+        "fill": true,
+        "tension": 0.3
+      },
+      {
+        "label": "Operating Margin (%)",
+        "data": [8, 9.2, 10.5, 11, 12, 13, 14.2, 15.1, 16],
+        "borderColor": "#27ae60",
+        "backgroundColor": "rgba(39, 174, 96, 0.1)",
+        "fill": true,
+        "tension": 0.3,
+        "yAxisID": "y1"
+      },
+      {
+        "label": "EPS ($)",
+        "data": [1.76, 1.95, 2.40, 2.82, 3.05, 3.69, 5.34, 6.60, 8.40],
+        "borderColor": "#e74c3c",
+        "backgroundColor": "rgba(231, 76, 60, 0.1)",
+        "fill": false,
+        "tension": 0.3,
+        "yAxisID": "y2"
+      }
+    ]
+  },
+  "options": {
+    "responsive": true,
+    "plugins": {
+      "title": {
+        "display": true,
+        "text": "Honeywell's Transformation Under Cote (2002–2018)"
+      },
+      "legend": {
+        "position": "bottom"
+      }
+    },
+    "scales": {
+      "y": {
+        "title": { "display": true, "text": "Market Cap ($B)" },
+        "position": "left"
+      },
+      "y1": {
+        "title": { "display": true, "text": "Operating Margin (%)" },
+        "position": "right",
+        "grid": { "drawOnChartArea": false }
+      },
+      "y2": {
+        "display": false
+      }
+    }
+  }
+}
+```
+
+Honeywell's market cap grew sixfold from $20B to $120B while operating margins doubled and EPS rose nearly fivefold — proof that short-term discipline and long-term investment are not mutually exclusive.
+
 ---
 
 # Part IV: Protect Your Investments
@@ -812,6 +981,52 @@ Honeywell's four-step M&A process: constantly build the pipeline, rigorously kil
   - Employees initially appreciated it; got harder with repeated rounds
   - Received anonymous notes urging 10% layoffs instead; held firm
 - Also cut bonus pool by two-thirds, reduced benefits, and Cote and his entire leadership team took zero bonuses
+
+```chartjs
+{
+  "type": "bar",
+  "data": {
+    "labels": ["Knowledge Retained", "Recovery Speed", "Innovation Continuity", "Employee Morale", "Cost Savings (Short-Term)"],
+    "datasets": [
+      {
+        "label": "Conventional Recession Response (Mass Layoffs)",
+        "data": [25, 30, 20, 20, 85],
+        "backgroundColor": "rgba(231, 76, 60, 0.7)",
+        "borderColor": "#e74c3c",
+        "borderWidth": 1
+      },
+      {
+        "label": "Cote's Approach (Furloughs + Continued Investment)",
+        "data": [95, 90, 88, 70, 65],
+        "backgroundColor": "rgba(39, 174, 96, 0.7)",
+        "borderColor": "#27ae60",
+        "borderWidth": 1
+      }
+    ]
+  },
+  "options": {
+    "responsive": true,
+    "plugins": {
+      "title": {
+        "display": true,
+        "text": "Recession Response: Conventional Layoffs vs Cote's Furlough Strategy"
+      },
+      "legend": {
+        "position": "bottom"
+      }
+    },
+    "scales": {
+      "y": {
+        "min": 0,
+        "max": 100,
+        "title": { "display": true, "text": "Score (0–100)" }
+      }
+    }
+  }
+}
+```
+
+Conventional layoffs win on short-term cost savings alone, but Cote's furlough strategy dominates on every dimension that determines long-term recovery — which is why Honeywell outgrew competitor industrials by 78% in EPS from 2006 to 2012.
 
 ---
 

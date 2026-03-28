@@ -37,6 +37,48 @@ The book is beautifully illustrated by Hiyoko Imai, whose warm drawings make it 
 
 ## Key Concepts at a Glance
 
+```chartjs
+{
+  "type": "radar",
+  "data": {
+    "labels": ["Prepared Environment", "Observation", "Freedom within Limits", "Practical Life", "Respect for the Child", "Sensorial Engagement", "Independence Building", "Following the Child"],
+    "datasets": [
+      {
+        "label": "Montessori Approach",
+        "data": [95, 90, 88, 92, 95, 85, 93, 90],
+        "backgroundColor": "rgba(39, 174, 96, 0.15)",
+        "borderColor": "#27ae60",
+        "pointBackgroundColor": "#27ae60"
+      },
+      {
+        "label": "Conventional Approach",
+        "data": [30, 25, 40, 20, 45, 35, 25, 20],
+        "backgroundColor": "rgba(231, 76, 60, 0.15)",
+        "borderColor": "#e74c3c",
+        "pointBackgroundColor": "#e74c3c"
+      }
+    ]
+  },
+  "options": {
+    "plugins": {
+      "title": {
+        "display": true,
+        "text": "Montessori Principles in Action vs Conventional Parenting"
+      }
+    },
+    "scales": {
+      "r": {
+        "beginAtZero": true,
+        "max": 100,
+        "ticks": { "stepSize": 20 }
+      }
+    }
+  }
+}
+```
+
+The radar chart shows how the Montessori approach scores dramatically higher across every dimension — not because conventional parenting is bad, but because Montessori systematically and intentionally addresses each area rather than leaving them to chance.
+
 | Concept | One-line summary |
 |---------|-----------------|
 | **Prepared environment** | Spaces set up for the child's independence — accessible, beautiful, uncluttered |
@@ -279,6 +321,76 @@ Davies tells of a repairman who came to fix something in her home. Her daughter,
 ---
 
 ## Deep Dive: Sensitive Periods
+
+```chartjs
+{
+  "type": "bar",
+  "data": {
+    "labels": ["Order", "Movement", "Language", "Small Objects", "Toileting", "Refinement of Senses"],
+    "datasets": [
+      {
+        "label": "Peak Intensity (0-100)",
+        "data": [90, 85, 95, 70, 65, 80],
+        "backgroundColor": [
+          "rgba(231, 76, 60, 0.7)",
+          "rgba(41, 128, 185, 0.7)",
+          "rgba(39, 174, 96, 0.7)",
+          "rgba(243, 156, 18, 0.7)",
+          "rgba(142, 68, 173, 0.7)",
+          "rgba(230, 126, 34, 0.7)"
+        ],
+        "borderColor": [
+          "#e74c3c",
+          "#2980b9",
+          "#27ae60",
+          "#f39c12",
+          "#8e44ad",
+          "#e67e22"
+        ],
+        "borderWidth": 1
+      },
+      {
+        "label": "Duration (months, scaled to 100)",
+        "data": [67, 83, 100, 67, 50, 83],
+        "backgroundColor": [
+          "rgba(231, 76, 60, 0.3)",
+          "rgba(41, 128, 185, 0.3)",
+          "rgba(39, 174, 96, 0.3)",
+          "rgba(243, 156, 18, 0.3)",
+          "rgba(142, 68, 173, 0.3)",
+          "rgba(230, 126, 34, 0.3)"
+        ],
+        "borderColor": [
+          "#e74c3c",
+          "#2980b9",
+          "#27ae60",
+          "#f39c12",
+          "#8e44ad",
+          "#e67e22"
+        ],
+        "borderWidth": 1
+      }
+    ]
+  },
+  "options": {
+    "plugins": {
+      "title": {
+        "display": true,
+        "text": "Montessori Sensitive Periods: Intensity and Duration"
+      }
+    },
+    "scales": {
+      "y": {
+        "beginAtZero": true,
+        "max": 100,
+        "title": { "display": true, "text": "Score (0-100)" }
+      }
+    }
+  }
+}
+```
+
+Language emerges as the most intense and longest-lasting sensitive period, spanning birth to age 6, while the sensitive period for order — though shorter — produces some of the most visible toddler behaviour (meltdowns over changed routines) that parents commonly misread as stubbornness.
 
 Sensitive periods are one of Dr. Montessori's most important observations. They are windows of time when a child is intensely interested in a particular skill or concept, and learning happens with remarkable ease.
 
@@ -688,6 +800,30 @@ This is the Montessori motto, and it is the single idea that transforms how you 
 
 ## Deep Dive: Setting Up Each Room — Detailed Guidance
 
+```d3
+{
+  "type": "heatmap",
+  "data": {
+    "xLabels": ["12-15 months", "15-18 months", "18-21 months", "21-24 months", "24-30 months", "30-36 months"],
+    "yLabels": ["Practical Life", "Sensorial", "Language", "Movement", "Art & Music", "Care of Self"],
+    "values": [
+      [3, 5, 7, 8, 9, 10],
+      [4, 5, 6, 7, 8, 9],
+      [5, 6, 7, 8, 9, 10],
+      [8, 9, 9, 8, 7, 7],
+      [3, 4, 5, 6, 7, 8],
+      [2, 3, 5, 7, 8, 9]
+    ]
+  },
+  "options": {
+    "title": "Montessori Activity Intensity by Age and Area",
+    "colorRange": ["#eaf2e3", "#27ae60"]
+  }
+}
+```
+
+The heatmap shows how activity complexity builds across Montessori areas: movement peaks early and plateaus, while practical life, language, and self-care activities ramp up steadily as the child's fine motor skills and concentration develop through the toddler years.
+
 ### The Entrance
 
 The entrance sets the tone for independence. When a child can manage their own arrival and departure, the daily transition becomes smoother for everyone.
@@ -856,6 +992,31 @@ Montessori spent her later years in India (in exile during World War II) and the
 ---
 
 ## Montessori at a Glance: The Complete Framework
+
+```d3
+{
+  "type": "treemap",
+  "data": {
+    "name": "Montessori Home Environment",
+    "children": [
+      {"name": "Kitchen (Practical Life)", "value": 95, "category": "Core Spaces"},
+      {"name": "Bedroom (Independence)", "value": 80, "category": "Core Spaces"},
+      {"name": "Bathroom (Self-Care)", "value": 70, "category": "Core Spaces"},
+      {"name": "Entrance (Autonomy)", "value": 55, "category": "Core Spaces"},
+      {"name": "Living Room (Activities)", "value": 65, "category": "Learning Spaces"},
+      {"name": "Outdoor Space (Nature)", "value": 85, "category": "Learning Spaces"},
+      {"name": "Art Corner (Creativity)", "value": 50, "category": "Learning Spaces"},
+      {"name": "Reading Nook (Language)", "value": 60, "category": "Learning Spaces"},
+      {"name": "Yes Space (Safe Exploration)", "value": 75, "category": "Safety"}
+    ]
+  },
+  "options": {
+    "title": "Montessori Home Environment Areas Weighted by Developmental Importance"
+  }
+}
+```
+
+The kitchen emerges as the most important space in the Montessori home — not for its size, but because practical life activities (cooking, cleaning, pouring, preparing) simultaneously build fine motor skills, sequencing, concentration, independence, and a sense of belonging that no dedicated "playroom" can match.
 
 | Pillar | What It Means | How to Start |
 |--------|-------------|-------------|

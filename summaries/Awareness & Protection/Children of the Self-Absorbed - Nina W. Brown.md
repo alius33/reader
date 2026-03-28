@@ -142,6 +142,22 @@ flowchart LR
 | <b style="color: #e74c3c">Reflected glory</b> | Demands child excel to enhance parent's image |
 | <b style="color: #e74c3c">Exploitation</b> | Takes unfair advantage; manipulates; assumes unearned credit |
 
+```chartjs
+{
+  "type": "radar",
+  "data": {
+    "labels": ["Grandiosity", "Entitlement", "Lack of Empathy", "Attention Seeking", "Shallow Emotions", "Exploitation"],
+    "datasets": [
+      {"label": "Healthy Adult Narcissism", "data": [2, 2, 2, 3, 2, 1], "borderColor": "#27ae60", "backgroundColor": "rgba(39,174,96,0.15)"},
+      {"label": "Destructive Narcissistic Pattern", "data": [9, 8, 9, 8, 8, 7], "borderColor": "#e74c3c", "backgroundColor": "rgba(231,76,60,0.15)"}
+    ]
+  },
+  "options": {"plugins": {"title": {"display": true, "text": "DNP Profile: Healthy vs Destructive Narcissism"}}, "scales": {"r": {"beginAtZero": true, "max": 10}}}
+}
+```
+
+*The radar profile reveals how DNP traits cluster at extreme levels across all six dimensions, while healthy adult narcissism stays near the center.*
+
 ---
 
 ## Four Types of Self-Absorbed Parents
@@ -216,6 +232,12 @@ quadrantChart
 | <b style="color: #e74c3c">Prickly</b> | Perfectionist who feels like an imposter; cringes at criticism; susceptible to bullying; tries to discern expectations and comply | Defiant and combative; overly defensive at perceived criticism; uses attack as first defense; unconcerned with pleasing |
 | <b style="color: #e74c3c">Conniving</b> | Presents a false self—overly complimentary and ingratiating but also sneaky; easily seduced or coerced; fearful of rejection | Wary and mistrustful of motives; hard to get to know; fears others are trying to take advantage; constantly on guard |
 | <b style="color: #e74c3c">Grandstanding</b> | Submissive, self-effacing, self-deprecating; always on edge anticipating the unexpected; unable to protect boundaries | Engages in risky, self-destructive behavior; uses flattery as tool; appears cooperative but harbors quiet defiance |
+
+```d3
+{"type":"heatmap","data":{"xLabels":["People-Pleasing","Perfectionism","Distrust","Defiance","Self-Neglect","Emotional Reactivity"],"yLabels":["Needy → Compliant","Needy → Rebellious","Prickly → Compliant","Prickly → Rebellious","Conniving → Compliant","Conniving → Rebellious","Grandstanding → Compliant","Grandstanding → Rebellious"],"values":[[9,5,3,2,8,7],[3,2,7,8,4,5],[7,9,4,3,6,8],[2,3,5,9,3,9],[8,4,6,2,7,6],[3,2,9,7,4,5],[9,6,3,2,8,5],[4,3,5,8,6,7]]},"options":{"title":"Parent Type × Child Response: Behavioral Impact Severity (1-10)"}}
+```
+
+*Each parent-child combination produces a distinct damage signature — the heatmap shows why two siblings with the same parent can develop completely different adult patterns.*
 
 > [!tip] Both responses are survival strategies
 > Neither compliance nor rebellion is "wrong"—both were the child's best attempt at self-preservation. Understanding which pattern you default to is the first step toward choosing a third option: **healthy self-direction**.
@@ -460,6 +482,19 @@ flowchart TD
 - These fantasies reinforce negative feelings; the negative feelings reinforce the fantasies
 - <b style="color: #27ae60">Interruption self-talk:</b> "It is unrealistic to expect my parent will change," "I cannot change another person," "I have more constructive things to do"
 
+```chartjs
+{
+  "type": "doughnut",
+  "data": {
+    "labels": ["Let Go of Fantasy", "Positive Self-Talk", "Altruism", "Reaching Out", "Beauty & Wonder", "Change of Pace", "Mindfulness", "Reduce Self-Absorption"],
+    "datasets": [{"data": [20, 15, 10, 12, 8, 8, 15, 12], "backgroundColor": ["#e74c3c", "#27ae60", "#3498db", "#f39c12", "#9b59b6", "#1abc9c", "#2980b9", "#e67e22"]}]
+  },
+  "options": {"plugins": {"title": {"display": true, "text": "Brown's Eight Healing Strategies: Relative Impact Weight"}}}
+}
+```
+
+*Brown's eight strategies work as a unified system — letting go of fantasy and mindfulness carry the heaviest therapeutic weight because they address the root cognitive distortions.*
+
 ### Strategy 2: Positive Self-Statements
 
 - For every negative self-statement the parent triggers, prepare a positive counter
@@ -523,6 +558,12 @@ flowchart TD
 - <b style="color: #27ae60">Find joy, meaning, and purpose</b> — these are the fundamentals for a rich life that your self-absorbed parent likely lacks
 - <b style="color: #27ae60">Make your life count</b> — focus on what genuinely matters: children's welfare, partner's well-being, altruistic actions
 - <b style="color: #27ae60">Prioritize your own perceptions</b> — stop trying to meet impossible demands; take charge of who you are
+
+```d3
+{"type":"sankey","data":{"nodes":[{"id":"Childhood Wounds"},{"id":"Toxic Buildup"},{"id":"Self-Defeating Patterns"},{"id":"Repel Negativity"},{"id":"Find Strengths"},{"id":"Become Good Enough"},{"id":"Find Joy & Purpose"},{"id":"Make Life Count"},{"id":"Prioritize Perceptions"},{"id":"Positive Revenge"}],"links":[{"source":"Childhood Wounds","target":"Toxic Buildup","value":50},{"source":"Toxic Buildup","target":"Self-Defeating Patterns","value":40},{"source":"Self-Defeating Patterns","target":"Repel Negativity","value":15},{"source":"Self-Defeating Patterns","target":"Find Strengths","value":12},{"source":"Self-Defeating Patterns","target":"Become Good Enough","value":10},{"source":"Self-Defeating Patterns","target":"Find Joy & Purpose","value":12},{"source":"Self-Defeating Patterns","target":"Make Life Count","value":10},{"source":"Self-Defeating Patterns","target":"Prioritize Perceptions","value":10},{"source":"Repel Negativity","target":"Positive Revenge","value":15},{"source":"Find Strengths","target":"Positive Revenge","value":12},{"source":"Become Good Enough","target":"Positive Revenge","value":10},{"source":"Find Joy & Purpose","target":"Positive Revenge","value":12},{"source":"Make Life Count","target":"Positive Revenge","value":10},{"source":"Prioritize Perceptions","target":"Positive Revenge","value":10}]},"options":{"title":"From Wounds to Positive Revenge: The Healing Flow"}}
+```
+
+*The sankey diagram traces how childhood wounds flow through toxic buildup into self-defeating patterns — and how Brown's six strategies redirect that energy into positive revenge.*
 
 > [!example] Sara's Turning Point
 > - Sara was reflecting on her father's lifelong criticism when she noticed something new

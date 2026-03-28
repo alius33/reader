@@ -27,6 +27,19 @@ year: 2017
 - Named to *Time* magazine's list of the 100 most influential people in the world
 - Married to Barbara for over forty years; four sons, including Matt Dalio who founded China Care after living with a Chinese family at age 11
 
+```mermaid
+timeline
+    title Ray Dalio — Key Life Events
+    1949 : Born in Jackson Heights, Queens, New York
+    1961 : First investment at age 12 — bought Northeast Airlines stock
+    1975 : Founded Bridgewater Associates from a two-bedroom apartment
+    1982 : Lost everything after wrongly predicting a depression — borrowed $4,000 from his father
+    1991 : Began systematically writing down principles at Bridgewater
+    2017 : Published "Principles" — distilling 40 years of lessons
+```
+
+This timeline traces the arc from Dalio's humble beginnings through the devastating 1982 failure that became the foundation of his entire philosophy — without that loss, the principles would never have been written.
+
 ---
 
 ## The Big Idea
@@ -98,6 +111,48 @@ graph TD
 | **Baseball Cards** | Data-driven profiles showing each person's strengths, weaknesses, and track record |
 | **Tough Love** | Honest feedback is a gift — the hardest and most important type of love |
 | **Hyperrealist** | Accepting truth as it is, not as you wish it were — the starting point of everything |
+
+```chartjs
+{
+  "type": "radar",
+  "data": {
+    "labels": ["Setting Goals", "Identifying Problems", "Diagnosing Root Causes", "Designing Solutions", "Executing Plans"],
+    "datasets": [
+      {
+        "label": "Typical Person",
+        "data": [7, 4, 3, 4, 6],
+        "backgroundColor": "rgba(231, 76, 60, 0.2)",
+        "borderColor": "#e74c3c",
+        "pointBackgroundColor": "#e74c3c"
+      },
+      {
+        "label": "Effective Principled Person",
+        "data": [9, 8, 9, 8, 8],
+        "backgroundColor": "rgba(39, 174, 96, 0.2)",
+        "borderColor": "#27ae60",
+        "pointBackgroundColor": "#27ae60"
+      }
+    ]
+  },
+  "options": {
+    "plugins": {
+      "title": {
+        "display": true,
+        "text": "Dalio's 5-Step Process Competency"
+      }
+    },
+    "scales": {
+      "r": {
+        "min": 0,
+        "max": 10,
+        "ticks": { "stepSize": 2 }
+      }
+    }
+  }
+}
+```
+
+Most people are decent at setting goals and executing plans but weak at diagnosing root causes — the principled person closes the gap by systematically reflecting on failures and building reusable principles for each step.
 
 ---
 
@@ -342,6 +397,43 @@ The ego barrier is rooted in the amygdala — the lower, emotional brain that in
 
 The blind spot barrier is structural — it comes from the fact that each brain processes reality differently. Some people see big pictures; others see details. Some think linearly; others think laterally. You can't see what you can't see.
 
+```d3
+{
+  "type": "sankey",
+  "data": {
+    "nodes": [
+      {"id": "Raw Information"},
+      {"id": "Ego Barrier"},
+      {"id": "Blind Spot Barrier"},
+      {"id": "Filtered Out by Ego"},
+      {"id": "Filtered Out by Blind Spots"},
+      {"id": "Survives Ego Check"},
+      {"id": "Survives Both Barriers"},
+      {"id": "Good Decisions"},
+      {"id": "Bad Decisions (Incomplete Data)"}
+    ],
+    "links": [
+      {"source": "Raw Information", "target": "Ego Barrier", "value": 100},
+      {"source": "Ego Barrier", "target": "Filtered Out by Ego", "value": 35},
+      {"source": "Ego Barrier", "target": "Survives Ego Check", "value": 65},
+      {"source": "Survives Ego Check", "target": "Blind Spot Barrier", "value": 65},
+      {"source": "Blind Spot Barrier", "target": "Filtered Out by Blind Spots", "value": 25},
+      {"source": "Blind Spot Barrier", "target": "Survives Both Barriers", "value": 40},
+      {"source": "Survives Both Barriers", "target": "Good Decisions", "value": 40},
+      {"source": "Filtered Out by Ego", "target": "Bad Decisions (Incomplete Data)", "value": 35},
+      {"source": "Filtered Out by Blind Spots", "target": "Bad Decisions (Incomplete Data)", "value": 25}
+    ]
+  },
+  "options": {
+    "title": "How the Two Barriers Filter Information",
+    "width": 700,
+    "height": 400
+  }
+}
+```
+
+This Sankey diagram reveals Dalio's core warning: of all the information available to you, only about 40% survives both barriers to reach your conscious decision-making — the ego barrier alone filters out over a third by triggering defensive reactions before the rational brain can evaluate.
+
 **3.2 — Practice radical open-mindedness.** The antidote to both barriers. Radical open-mindedness means:
 - Replacing your attachment to being right with the joy of learning what's true
 - Sincerely believing you might be wrong
@@ -498,6 +590,36 @@ In an idea meritocracy:
 > - One where the best ideas win regardless of source, or one where the boss's ideas win by default?
 >
 > "I believe the evidence shows that operating this way leads to better decisions, faster learning, stronger relationships, and higher morale — even though it feels uncomfortable at first."
+
+```chartjs
+{
+  "type": "doughnut",
+  "data": {
+    "labels": ["Radical Truth", "Radical Transparency", "Believability-Weighting"],
+    "datasets": [
+      {
+        "data": [33, 33, 34],
+        "backgroundColor": ["#2980b9", "#27ae60", "#e74c3c"],
+        "borderColor": ["#fff", "#fff", "#fff"],
+        "borderWidth": 2
+      }
+    ]
+  },
+  "options": {
+    "plugins": {
+      "title": {
+        "display": true,
+        "text": "The Three Pillars of an Idea Meritocracy"
+      },
+      "legend": {
+        "position": "bottom"
+      }
+    }
+  }
+}
+```
+
+Dalio insists all three components must be present in roughly equal measure — radical truth without transparency breeds distrust, transparency without believability-weighting produces chaos, and weighting without truth is just hierarchy by another name.
 
 ---
 

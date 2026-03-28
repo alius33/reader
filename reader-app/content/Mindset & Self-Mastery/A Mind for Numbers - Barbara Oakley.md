@@ -61,6 +61,67 @@ Barbara Oakley is Ramsey Professor of Engineering at Oakland University and a Fe
 
 ---
 
+```d3
+{
+  "type": "treemap",
+  "title": "Hierarchy of Learning Concepts in A Mind for Numbers",
+  "data": {
+    "name": "Learning Science",
+    "children": [
+      {
+        "name": "Thinking Modes",
+        "children": [
+          { "name": "Focused Mode", "value": 30 },
+          { "name": "Diffuse Mode", "value": 30 }
+        ]
+      },
+      {
+        "name": "Memory Systems",
+        "children": [
+          { "name": "Working Memory (~4 slots)", "value": 20 },
+          { "name": "Long-Term Memory", "value": 25 },
+          { "name": "Chunking", "value": 25 }
+        ]
+      },
+      {
+        "name": "Active Techniques",
+        "children": [
+          { "name": "Retrieval Practice", "value": 30 },
+          { "name": "Spaced Repetition", "value": 25 },
+          { "name": "Interleaving", "value": 20 },
+          { "name": "Elaboration", "value": 15 }
+        ]
+      },
+      {
+        "name": "Passive Techniques (Ineffective)",
+        "children": [
+          { "name": "Rereading", "value": 15 },
+          { "name": "Highlighting", "value": 10 },
+          { "name": "Copying Notes", "value": 10 }
+        ]
+      },
+      {
+        "name": "Support Systems",
+        "children": [
+          { "name": "Sleep", "value": 25 },
+          { "name": "Exercise", "value": 20 },
+          { "name": "Pomodoro Technique", "value": 20 }
+        ]
+      }
+    ]
+  },
+  "options": {
+    "width": 700,
+    "height": 450,
+    "colorScheme": "tableau10"
+  }
+}
+```
+
+The treemap reveals that Oakley's framework divides roughly equally between understanding *how* the brain works (modes, memory) and *what to do about it* (techniques, support systems) — with active techniques occupying the largest share of her practical advice.
+
+---
+
 ## Chapter 1 — Open the Door
 
 *Oakley opens with her own story — the most unlikely origin for a book about learning math and science.*
@@ -590,6 +651,26 @@ Your brain has two memory systems:
 > 5. Review again after 1 month
 > Each review must be RETRIEVAL (trying to recall), not rereading. If you can recall it after a month, it has likely consolidated into long-term memory.
 
+```mermaid
+timeline
+    title Optimal Spaced Repetition Schedule for One Concept
+    section Day 1
+        Initial Learning : Study new material with focused attention
+        First Retrieval : Test yourself within 24 hours — retention drops to ~40% without this
+    section Day 4
+        Second Retrieval : Recall from memory after 3-day gap — strengthens weakening trace
+    section Day 11
+        Third Retrieval : One-week spacing — forgetting forces deeper re-encoding
+    section Day 25
+        Fourth Retrieval : Two-week gap — memory now consolidating into long-term storage
+    section Day 55
+        Fifth Retrieval : One-month spacing — if successful, the memory is likely permanent
+    section Ongoing
+        Maintenance : Occasional retrieval every few months to keep pathways active
+```
+
+Each spacing interval roughly doubles the previous one — the forgetting that occurs between sessions is not a failure but the mechanism that forces deeper re-encoding, making each subsequent retrieval stronger and more durable.
+
 ---
 
 ### Synaptic Strengthening
@@ -919,6 +1000,63 @@ flowchart LR
 
 The paradox of effective studying: the techniques that feel worst produce the best results.
 
+```chartjs
+{
+  "type": "radar",
+  "data": {
+    "labels": ["Long-Term Retention", "Transfer to New Contexts", "Depth of Understanding", "Effort Required", "Student Preference", "Speed of Initial Learning"],
+    "datasets": [
+      {
+        "label": "Retrieval Practice",
+        "data": [95, 85, 90, 80, 25, 30],
+        "backgroundColor": "rgba(39, 174, 96, 0.2)",
+        "borderColor": "rgba(39, 174, 96, 1)"
+      },
+      {
+        "label": "Spaced Repetition",
+        "data": [92, 80, 75, 70, 30, 25],
+        "backgroundColor": "rgba(41, 128, 185, 0.2)",
+        "borderColor": "rgba(41, 128, 185, 1)"
+      },
+      {
+        "label": "Interleaving",
+        "data": [85, 90, 85, 75, 20, 20],
+        "backgroundColor": "rgba(142, 68, 173, 0.2)",
+        "borderColor": "rgba(142, 68, 173, 1)"
+      },
+      {
+        "label": "Rereading",
+        "data": [20, 15, 25, 15, 85, 80],
+        "backgroundColor": "rgba(231, 76, 60, 0.2)",
+        "borderColor": "rgba(231, 76, 60, 1)"
+      },
+      {
+        "label": "Highlighting",
+        "data": [15, 10, 15, 10, 90, 85],
+        "backgroundColor": "rgba(243, 156, 18, 0.2)",
+        "borderColor": "rgba(243, 156, 18, 1)"
+      }
+    ]
+  },
+  "options": {
+    "plugins": {
+      "title": {
+        "display": true,
+        "text": "Study Technique Effectiveness: What Works vs What Feels Good"
+      }
+    },
+    "scales": {
+      "r": {
+        "beginAtZero": true,
+        "max": 100
+      }
+    }
+  }
+}
+```
+
+The radar chart starkly illustrates Oakley's central paradox: the techniques students prefer most (rereading, highlighting) score highest on ease and preference but lowest on every measure of actual learning — while the techniques that feel hardest produce dramatically superior retention and transfer.
+
 ---
 
 ## The Complete Learning Cycle
@@ -1099,6 +1237,48 @@ This cycle is not linear — it loops back on itself, with each iteration deepen
 
 > [!tip] Core Insight
 > The most important moment in any study session is the LAST 10 minutes — when you close everything and write down what you learned from memory. This retrieval practice converts the entire session's exposure into durable long-term memory. Those 10 minutes are worth more than the other 110 combined.
+
+```chartjs
+{
+  "type": "polarArea",
+  "data": {
+    "labels": [
+      "Pomodoro Focus Blocks (3x25 min)",
+      "Breaks / Diffuse Mode (3x5 min)",
+      "Prior-Day Retrieval Review",
+      "Final Memory Dump",
+      "Session Planning & Wrap-Up"
+    ],
+    "datasets": [
+      {
+        "data": [75, 15, 10, 10, 5],
+        "backgroundColor": [
+          "rgba(41, 128, 185, 0.7)",
+          "rgba(39, 174, 96, 0.7)",
+          "rgba(142, 68, 173, 0.7)",
+          "rgba(231, 76, 60, 0.7)",
+          "rgba(243, 156, 18, 0.7)"
+        ]
+      }
+    ]
+  },
+  "options": {
+    "plugins": {
+      "title": {
+        "display": true,
+        "text": "Ideal 2-Hour Study Session: Time Allocation (minutes)"
+      }
+    },
+    "scales": {
+      "r": {
+        "beginAtZero": true
+      }
+    }
+  }
+}
+```
+
+The polar area chart shows that focused Pomodoro blocks dominate an ideal session, but the smaller segments — especially breaks for diffuse-mode processing and the final retrieval dump — deliver disproportionate learning value relative to their time investment.
 
 ---
 

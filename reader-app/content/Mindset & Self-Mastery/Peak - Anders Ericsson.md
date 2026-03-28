@@ -297,6 +297,59 @@ Ericsson uses the concept of <b style="color: #2980b9">chunking</b> to explain o
 > [!tip] Core Insight
 > Because experts' mental representations operate largely below conscious awareness, experts often cannot explain how they do what they do. A chess grandmaster "just sees" the right move. A master chef "just knows" the dish needs more acid. This creates the illusion of innate talent — it looks like magic because the underlying representations are invisible. But they were built, rep by rep, over years of deliberate practice.
 
+```d3
+{
+  "type": "treemap",
+  "title": "Expertise Development Framework — Building Blocks of Expert Performance",
+  "data": {
+    "name": "Expertise",
+    "children": [
+      {
+        "name": "Mental Representations",
+        "children": [
+          { "name": "Pattern Recognition", "value": 30 },
+          { "name": "Chunking", "value": 25 },
+          { "name": "Hierarchical Models", "value": 20 },
+          { "name": "Anticipation", "value": 18 },
+          { "name": "Error Detection", "value": 15 }
+        ]
+      },
+      {
+        "name": "Practice Types",
+        "children": [
+          { "name": "Deliberate Practice", "value": 35 },
+          { "name": "Purposeful Practice", "value": 20 },
+          { "name": "Naive Practice", "value": 8 }
+        ]
+      },
+      {
+        "name": "Feedback Systems",
+        "children": [
+          { "name": "Expert Coaching", "value": 28 },
+          { "name": "Self-Monitoring", "value": 15 },
+          { "name": "Objective Metrics", "value": 12 },
+          { "name": "Peer Review", "value": 10 }
+        ]
+      },
+      {
+        "name": "Neuroplasticity",
+        "children": [
+          { "name": "Homeostasis Disruption", "value": 22 },
+          { "name": "Neural Pathway Formation", "value": 18 },
+          { "name": "Cortical Expansion", "value": 15 },
+          { "name": "Sleep Consolidation", "value": 12 }
+        ]
+      }
+    ]
+  },
+  "options": {
+    "colorScheme": ["#2980b9", "#27ae60", "#e67e22", "#8e44ad"]
+  }
+}
+```
+
+Mental representations and deliberate practice occupy the largest areas because they are the twin engines of expertise — representations provide the cognitive architecture while deliberate practice is the construction method that builds it.
+
 ---
 
 ## Chapter 4: The Gold Standard
@@ -361,6 +414,55 @@ The three levels of practice produce dramatically different outcomes. Most peopl
 | Flow / performance | Effortless, joyful | Execution of existing skill (no new learning) |
 
 The distinction between flow and deliberate practice is critical. Many people believe they are practising when they are actually performing. Playing your favourite songs on guitar is performance. Isolating the chord transition you keep botching and drilling it at half speed with a metronome is practice. Both involve the guitar. Only one produces improvement.
+
+```chartjs
+{
+  "type": "radar",
+  "data": {
+    "labels": ["Specific Goals", "Full Concentration", "Expert Feedback", "Targets Weaknesses", "Progressive Difficulty", "Mental Representation Building", "Discomfort Level"],
+    "datasets": [
+      {
+        "label": "Naive Practice",
+        "data": [1, 2, 1, 1, 1, 1, 1],
+        "backgroundColor": "rgba(231, 76, 60, 0.15)",
+        "borderColor": "#e74c3c",
+        "pointBackgroundColor": "#e74c3c"
+      },
+      {
+        "label": "Purposeful Practice",
+        "data": [7, 7, 4, 5, 6, 5, 6],
+        "backgroundColor": "rgba(230, 126, 34, 0.15)",
+        "borderColor": "#e67e22",
+        "pointBackgroundColor": "#e67e22"
+      },
+      {
+        "label": "Deliberate Practice",
+        "data": [9, 9, 9, 9, 9, 9, 9],
+        "backgroundColor": "rgba(39, 174, 96, 0.15)",
+        "borderColor": "#27ae60",
+        "pointBackgroundColor": "#27ae60"
+      }
+    ]
+  },
+  "options": {
+    "plugins": {
+      "title": {
+        "display": true,
+        "text": "Three Types of Practice — Attribute Comparison"
+      }
+    },
+    "scales": {
+      "r": {
+        "min": 0,
+        "max": 10,
+        "ticks": { "stepSize": 2 }
+      }
+    }
+  }
+}
+```
+
+Deliberate practice demands the highest levels across every dimension — especially expert feedback and targeting weaknesses — which is why it alone produces expert performance while naive practice flatlines on all fronts.
 
 > [!example] The Violinists Who Practised Differently (1993)
 > - Ericsson studied violin students at Berlin's Universitat der Kunste, dividing them into three groups based on professor nominations
@@ -586,6 +688,65 @@ Ericsson identifies three strategies for breaking through the OK Plateau:
 
 > [!tip] Core Insight
 > The OK Plateau is not your limit. It is the limit of your current practice method. Change the method and the plateau breaks.
+
+```chartjs
+{
+  "type": "line",
+  "data": {
+    "labels": ["Month 1", "Month 6", "Year 1", "Year 2", "Year 3", "Year 5", "Year 7", "Year 10"],
+    "datasets": [
+      {
+        "label": "Naive Practice (OK Plateau)",
+        "data": [20, 45, 55, 57, 58, 58, 58, 58],
+        "borderColor": "#e74c3c",
+        "backgroundColor": "rgba(231, 76, 60, 0.1)",
+        "fill": true,
+        "tension": 0.4,
+        "borderDash": [8, 4],
+        "pointRadius": 4
+      },
+      {
+        "label": "Purposeful Practice",
+        "data": [20, 48, 62, 70, 74, 77, 78, 79],
+        "borderColor": "#e67e22",
+        "backgroundColor": "rgba(230, 126, 34, 0.1)",
+        "fill": true,
+        "tension": 0.4,
+        "pointRadius": 4
+      },
+      {
+        "label": "Deliberate Practice",
+        "data": [20, 50, 68, 78, 85, 91, 95, 98],
+        "borderColor": "#27ae60",
+        "backgroundColor": "rgba(39, 174, 96, 0.1)",
+        "fill": true,
+        "tension": 0.4,
+        "pointRadius": 4
+      }
+    ]
+  },
+  "options": {
+    "plugins": {
+      "title": {
+        "display": true,
+        "text": "The OK Plateau — Performance Trajectories Over Time"
+      }
+    },
+    "scales": {
+      "y": {
+        "title": { "display": true, "text": "Skill Level (0–100)" },
+        "min": 0,
+        "max": 100
+      },
+      "x": {
+        "title": { "display": true, "text": "Time Invested" }
+      }
+    }
+  }
+}
+```
+
+Naive practice flatlines around year 1 as skills become automatic, while deliberate practice continues climbing because it systematically disrupts homeostasis — the widening gap between the curves explains why ten years of experience without structure produces no more expertise than one.
 
 ---
 
@@ -875,6 +1036,41 @@ Ericsson returns to this theme throughout the book because it is the biological 
 | **Braille readers** | Expanded somatosensory cortex for reading finger | Years of daily reading |
 | **Mathematicians** | Increased grey matter in parietal lobes | Years of advanced study |
 | **Meditators** | Thicker prefrontal cortex and insula | Years of meditation practice |
+
+```chartjs
+{
+  "type": "bar",
+  "data": {
+    "labels": ["Taxi Drivers\n(Hippocampus)", "Musicians\n(Motor Cortex)", "Jugglers\n(Visual-Motor)", "Braille Readers\n(Somatosensory)", "Mathematicians\n(Parietal Lobes)", "Meditators\n(Prefrontal Cortex)"],
+    "datasets": [
+      {
+        "label": "Measured Brain Growth (relative magnitude)",
+        "data": [35, 42, 18, 28, 22, 15],
+        "backgroundColor": ["#2980b9", "#27ae60", "#e67e22", "#8e44ad", "#e74c3c", "#f39c12"],
+        "borderColor": ["#1a5276", "#1e8449", "#af601a", "#6c3483", "#a93226", "#b7950b"],
+        "borderWidth": 1
+      }
+    ]
+  },
+  "options": {
+    "plugins": {
+      "title": {
+        "display": true,
+        "text": "Brain Adaptation Studies — Measured Structural Changes by Domain"
+      },
+      "legend": { "display": false }
+    },
+    "scales": {
+      "y": {
+        "title": { "display": true, "text": "Relative Magnitude of Structural Change (%)" },
+        "beginAtZero": true
+      }
+    }
+  }
+}
+```
+
+London taxi drivers and professional musicians show the most dramatic brain changes because their training spans years of sustained, intensive demand — confirming that the duration and intensity of practice directly predicts the magnitude of neural restructuring.
 
 - <b style="color: #27ae60">The brain is not a fixed organ — it is a dynamic, adaptive system that physically rewires itself in response to sustained demand</b>
 - "I am not naturally talented at X" is a statement about your current brain — not about your brain's permanent potential

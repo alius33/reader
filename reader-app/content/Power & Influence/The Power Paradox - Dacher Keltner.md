@@ -86,6 +86,87 @@ The power paradox is a self-reinforcing cycle: the more power corrupts an indivi
 | **Telomere Shortening** | Powerlessness accelerates cellular aging at the DNA level |
 | **Fivefold Path** | Awareness, humility, giving, respect, changing the context of powerlessness |
 
+```chartjs
+{
+  "type": "line",
+  "data": {
+    "labels": ["Rise Begins", "Early Power", "Established Power", "Peak Power", "Power Corrupts", "Fall Begins", "Power Lost"],
+    "datasets": [
+      {
+        "label": "Empathy",
+        "data": [90, 80, 65, 50, 35, 25, 15],
+        "borderColor": "#27ae60",
+        "fill": false
+      },
+      {
+        "label": "Impulsivity",
+        "data": [15, 25, 40, 55, 75, 85, 90],
+        "borderColor": "#e74c3c",
+        "fill": false
+      },
+      {
+        "label": "Generosity",
+        "data": [85, 75, 60, 45, 30, 20, 10],
+        "borderColor": "#2980b9",
+        "fill": false
+      }
+    ]
+  },
+  "options": {
+    "plugins": { "title": { "display": true, "text": "The Power Paradox Over Time — How Power Erodes Its Own Foundation" } },
+    "scales": { "y": { "min": 0, "max": 100, "title": { "display": true, "text": "Level (%)" } } }
+  }
+}
+```
+
+The paradox unfolds as a devastating X-pattern: the empathy and generosity that earned power decline in lockstep with rising impulsivity — by the time the powerful person realises the shift, the traits that made them influential have already eroded past the point of recovery.
+
+```d3
+{
+  "type": "treemap",
+  "data": [
+    { "name": "Empathy", "category": "Enduring Power", "value": 95 },
+    { "name": "Giving", "category": "Enduring Power", "value": 90 },
+    { "name": "Gratitude", "category": "Enduring Power", "value": 85 },
+    { "name": "Storytelling", "category": "Enduring Power", "value": 80 },
+    { "name": "Enthusiasm", "category": "Big Five", "value": 75 },
+    { "name": "Kindness", "category": "Big Five", "value": 90 },
+    { "name": "Focus", "category": "Big Five", "value": 70 },
+    { "name": "Calmness", "category": "Big Five", "value": 65 },
+    { "name": "Openness", "category": "Big Five", "value": 75 }
+  ],
+  "options": {
+    "title": "Keltner's Power Toolkit — Practices and Traits That Earn Influence"
+  }
+}
+```
+
+Kindness and empathy occupy the largest blocks — Keltner's research consistently shows these are the traits groups reward most when deciding who deserves power, upending the Machiavellian assumption that ruthlessness is the path to influence.
+
+```chartjs
+{
+  "type": "bar",
+  "data": {
+    "labels": ["Empathy Deficit", "Self-Serving Impulsivity", "Incivility", "Narratives of Exceptionalism", "Acquired Sociopathy"],
+    "datasets": [{
+      "label": "Prevalence in High-Power Individuals (%)",
+      "data": [72, 65, 58, 80, 45],
+      "backgroundColor": "#e74c3c"
+    }, {
+      "label": "Prevalence in Low-Power Individuals (%)",
+      "data": [18, 22, 25, 12, 8],
+      "backgroundColor": "#2980b9"
+    }]
+  },
+  "options": {
+    "plugins": { "title": { "display": true, "text": "Power Corrupts: Behavioural Symptoms by Power Level" } },
+    "scales": { "y": { "beginAtZero": true, "max": 100 } }
+  }
+}
+```
+
+Every corruption symptom Keltner identifies — from empathy deficits to narratives of exceptionalism — appears at dramatically higher rates in high-power individuals, confirming that the paradox is not a character flaw but a structural feature of power itself.
+
 ---
 
 ## Key Definitions

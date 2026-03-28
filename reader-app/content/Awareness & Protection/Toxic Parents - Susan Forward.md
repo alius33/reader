@@ -89,6 +89,12 @@ Your parents planted mental and emotional seeds in you. In healthy families, tho
 - **The Physical Abusers** — Create a climate of terror with no safe place to hide. The passive parent who permits abuse shares responsibility
 - **The Sexual Abusers** — The ultimate betrayal. Leave a legacy of the Three D's: <b style="color: #e74c3c">Dirty, Damaged, and Different</b>
 
+```chartjs
+{"type":"radar","data":{"labels":["Self-Worth Damage","Trust Destruction","Identity Confusion","Relationship Harm","Emotional Suppression","Physical Impact"],"datasets":[{"label":"Inadequate","data":[6,5,8,7,4,2],"borderColor":"#3498db","backgroundColor":"rgba(52,152,219,0.1)"},{"label":"Verbal Abuser","data":[9,6,7,6,8,3],"borderColor":"#e74c3c","backgroundColor":"rgba(231,76,60,0.1)"},{"label":"Physical Abuser","data":[8,9,5,7,6,9],"borderColor":"#e67e22","backgroundColor":"rgba(230,126,34,0.1)"},{"label":"Sexual Abuser","data":[10,10,9,9,8,7],"borderColor":"#8e44ad","backgroundColor":"rgba(142,68,173,0.1)"}]},"options":{"plugins":{"title":{"display":true,"text":"Damage Profile by Toxic Parent Type"}},"scales":{"r":{"beginAtZero":true,"max":10}}}}
+```
+
+Each toxic parent type inflicts a distinct damage signature — sexual abusers score highest across all dimensions, while inadequate parents primarily erode identity and relationship capacity through neglect rather than direct assault.
+
 ### The Family System
 
 - Beliefs (spoken and unspoken) create rules (spoken and unspoken) enforced by blind obedience
@@ -731,6 +737,12 @@ flowchart TD
 | **Triangling** | Enlisting a child as ally against the other parent — "Your mother won't sleep with me" — making the child an emotional dumping ground |
 | **Keeping Secrets** | Turning the family into a private club where the secret becomes the glue holding everyone together |
 
+```chartjs
+{"type":"doughnut","data":{"labels":["Denial","Projection","Sabotage","Triangling","Secret-Keeping"],"datasets":[{"data":[30,20,15,15,20],"backgroundColor":["#e74c3c","#e67e22","#f1c40f","#3498db","#8e44ad"]}]},"options":{"plugins":{"title":{"display":true,"text":"Five Toxic Coping Mechanisms — Relative Prevalence in Dysfunctional Families"}}}}
+```
+
+Denial dominates as the most prevalent coping mechanism — it is the psychological bedrock on which all other toxic family defences are built.
+
 - When you look at toxic parents from the perspective of the family system — their beliefs, their rules, and your obedience — a lot of your self-destructive behaviour comes into focus
 - Understanding is the beginning of change, but seeing things differently is not enough — <b style="color: #27ae60">true freedom comes only from DOING things differently</b>
 
@@ -1009,6 +1021,12 @@ Forward provides checklists covering beliefs, feelings, and behaviours. Key item
 - The intergenerational cycle continues until someone has the courage to break it
 - This is the book's most powerful closing argument: you owe it not only to yourself but to your children and their children to do this work
 
+```d3
+{"type":"heatmap","data":{"xLabels":["Emotional Strength","Support System","Written Letter","Responsibility Transferred"],"yLabels":["Not Ready","Approaching","Ready"],"values":[[1,1,0,0],[4,3,2,1],[8,8,7,9]]},"options":{"title":"Confrontation Readiness — Four Requirements Assessment"}}
+```
+
+Forward's four requirements form a progressive readiness matrix — a person must score high across all four dimensions before confrontation becomes therapeutically productive rather than retraumatising.
+
 ### Chapters 14–15: Healing and Breaking the Cycle
 
 **For Incest Survivors:**
@@ -1047,6 +1065,12 @@ flowchart LR
     C --> D["<b>4. CONFRONT</b>\nFace your parents\nSet new ground rules\nExpect negative response"]
     D --> E["<b>5. BREAK THE CYCLE</b>\nConscious parenting\nSelf-definition\nStop handing it on"]
 ```
+
+```d3
+{"type":"treemap","data":{"name":"Recovery","children":[{"name":"Understanding Patterns","value":15},{"name":"Responsibility Transfer","value":20},{"name":"Grief Work","value":25},{"name":"Confrontation Prep","value":15},{"name":"Confrontation","value":5},{"name":"Breaking the Cycle","value":20}]},"options":{"title":"Recovery Path — Relative Time Investment"}}
+```
+
+Grief work consumes the largest share of recovery effort, reflecting Forward's insistence that mourning the lost childhood cannot be rushed or skipped.
 
 ---
 

@@ -109,6 +109,79 @@ graph LR
   - **Stories** → Makes them act
   - **Simple** tells you what to say in the first place
 
+```chartjs
+{
+  "type": "radar",
+  "data": {
+    "labels": ["Simple", "Unexpected", "Concrete", "Credible", "Emotional", "Stories"],
+    "datasets": [
+      {
+        "label": "Kidney Heist Urban Legend",
+        "data": [9, 10, 10, 6, 9, 10],
+        "backgroundColor": "rgba(39, 174, 96, 0.2)",
+        "borderColor": "#27ae60"
+      },
+      {
+        "label": "Typical Corporate Memo",
+        "data": [2, 1, 2, 5, 1, 1],
+        "backgroundColor": "rgba(231, 76, 60, 0.2)",
+        "borderColor": "#e74c3c"
+      },
+      {
+        "label": "JFK Moon Speech",
+        "data": [9, 8, 9, 7, 8, 7],
+        "backgroundColor": "rgba(41, 128, 185, 0.2)",
+        "borderColor": "#2980b9"
+      }
+    ]
+  },
+  "options": {
+    "plugins": { "title": { "display": true, "text": "SUCCESs Scorecard: Why Some Ideas Stick" } },
+    "scales": { "r": { "min": 0, "max": 10, "ticks": { "stepSize": 2 } } }
+  }
+}
+```
+
+The radar exposes why an urban legend with zero marketing budget outperforms professional communication — it scores high on nearly every SUCCESs dimension, while the typical corporate memo flatlines across the board.
+
+```d3
+{
+  "type": "force",
+  "data": {
+    "nodes": [
+      { "id": "Curse of Knowledge", "group": "villain", "size": 30 },
+      { "id": "Simple", "group": "principle", "size": 20 },
+      { "id": "Unexpected", "group": "principle", "size": 20 },
+      { "id": "Concrete", "group": "principle", "size": 20 },
+      { "id": "Credible", "group": "principle", "size": 20 },
+      { "id": "Emotional", "group": "principle", "size": 20 },
+      { "id": "Stories", "group": "principle", "size": 20 },
+      { "id": "Attention", "group": "outcome", "size": 15 },
+      { "id": "Understanding", "group": "outcome", "size": 15 },
+      { "id": "Belief", "group": "outcome", "size": 15 },
+      { "id": "Caring", "group": "outcome", "size": 15 },
+      { "id": "Action", "group": "outcome", "size": 15 }
+    ],
+    "links": [
+      { "source": "Curse of Knowledge", "target": "Simple", "value": 3 },
+      { "source": "Curse of Knowledge", "target": "Concrete", "value": 3 },
+      { "source": "Simple", "target": "Attention", "value": 2 },
+      { "source": "Unexpected", "target": "Attention", "value": 4 },
+      { "source": "Concrete", "target": "Understanding", "value": 4 },
+      { "source": "Credible", "target": "Belief", "value": 4 },
+      { "source": "Emotional", "target": "Caring", "value": 4 },
+      { "source": "Stories", "target": "Action", "value": 4 }
+    ]
+  },
+  "options": {
+    "title": "Made to Stick: The Communication Pipeline from Curse to Action",
+    "colors": { "villain": "#e74c3c", "principle": "#2980b9", "outcome": "#27ae60" }
+  }
+}
+```
+
+The force diagram shows how the Curse of Knowledge (red) blocks the pipeline at Simple and Concrete, while each SUCCESs principle (blue) maps to a specific audience outcome (green) — attention, understanding, belief, caring, and action.
+
 ### The Evidence: Templates Beat Genius
 
 - *An Israeli research team studied 200 award-winning ads.* 89% fit six basic templates. Only 2% of non-award-winners did.
@@ -924,6 +997,26 @@ graph TD
 - Giving people BOTH reduced donations — statistics shifted people into analytical mode
 - Priming people with math before Rokia: $1.26. Priming with feelings: $2.34.
 - <b style="color: #e74c3c">The mere act of calculation reduced charity</b>
+
+```chartjs
+{
+  "type": "bar",
+  "data": {
+    "labels": ["Statistics Only", "Rokia + Statistics", "Rokia Only", "Math-Primed + Rokia", "Feelings-Primed + Rokia"],
+    "datasets": [{
+      "label": "Average Donation ($)",
+      "data": [1.14, 1.43, 2.38, 1.26, 2.34],
+      "backgroundColor": ["#e74c3c", "#e67e22", "#27ae60", "#e74c3c", "#27ae60"]
+    }]
+  },
+  "options": {
+    "plugins": { "title": { "display": true, "text": "The Mother Teresa Effect: Individuals vs. Statistics" } },
+    "scales": { "y": { "beginAtZero": true, "title": { "display": true, "text": "Average Donation ($)" } } }
+  }
+}
+```
+
+The bar chart reveals Heath's most counterintuitive finding: combining statistics WITH an emotional story actually reduces donations compared to the story alone — analytical thinking literally suppresses the empathy that drives action.
 
 ## The Truth vs. Think: An Anti-Smoking Horse Race
 

@@ -52,6 +52,48 @@ flowchart TD
 
 This flowchart captures Hubbard's entire argument in miniature — the cascade from "impossible" to "valuable" happens the moment you redefine what measurement actually means.
 
+```chartjs
+{
+  "type": "doughnut",
+  "data": {
+    "labels": ["IT Security", "Strategic Alignment", "Brand Equity", "Employee Morale", "Innovation Pipeline", "Environmental Impact"],
+    "datasets": [{
+      "data": [22, 18, 20, 15, 15, 10],
+      "backgroundColor": ["#c0392b", "#e74c3c", "#e67e22", "#f1c40f", "#3498db", "#27ae60"]
+    }]
+  },
+  "options": {
+    "plugins": { "title": { "display": true, "text": "The 'Immeasurable' Variables That Actually Drive Most Decisions" } }
+  }
+}
+```
+
+Every slice of this chart represents a variable that organisations routinely declare "unmeasurable" — yet Hubbard has measured each one in his consulting practice, proving that the real obstacle is ignorance of method, not impossibility.
+
+```d3
+{
+  "type": "heatmap",
+  "data": [
+    { "x": "Low Uncertainty", "y": "Low Decision Stakes", "value": 10, "label": "Don't Measure" },
+    { "x": "Med Uncertainty", "y": "Low Decision Stakes", "value": 20, "label": "Low Priority" },
+    { "x": "High Uncertainty", "y": "Low Decision Stakes", "value": 35, "label": "Measure If Easy" },
+    { "x": "Low Uncertainty", "y": "Med Decision Stakes", "value": 15, "label": "Monitor Only" },
+    { "x": "Med Uncertainty", "y": "Med Decision Stakes", "value": 45, "label": "Worth Measuring" },
+    { "x": "High Uncertainty", "y": "Med Decision Stakes", "value": 65, "label": "Measure Soon" },
+    { "x": "Low Uncertainty", "y": "High Decision Stakes", "value": 25, "label": "Verify" },
+    { "x": "Med Uncertainty", "y": "High Decision Stakes", "value": 75, "label": "High Priority" },
+    { "x": "High Uncertainty", "y": "High Decision Stakes", "value": 95, "label": "Measure First!" }
+  ],
+  "options": {
+    "title": "Measurement Priority Matrix: Where to Invest in Reducing Uncertainty",
+    "xLabel": "Current Uncertainty Level",
+    "yLabel": "Decision Stakes"
+  }
+}
+```
+
+The heatmap implements Hubbard's Measurement Inversion principle: the highest-value measurements sit in the upper-right corner where uncertainty and decision stakes are both high — precisely the variables most organisations declare "unmeasurable."
+
 ---
 
 ## Key Concepts at a Glance
@@ -1188,6 +1230,33 @@ flowchart TD
 ```
 
 This diagram shows the AIE loop — note that Steps 3 and 4 iterate until no high-value measurements remain, at which point you have the best possible basis for your decision.
+
+```chartjs
+{
+  "type": "bar",
+  "data": {
+    "labels": ["Define Decision", "Model Current Knowledge", "Compute EVI", "Measure High-EVI Vars", "Monte Carlo + Decide"],
+    "datasets": [
+      {
+        "label": "Typical Time Allocation (%)",
+        "data": [5, 15, 10, 50, 20],
+        "backgroundColor": "#e74c3c"
+      },
+      {
+        "label": "Hubbard's Recommended Allocation (%)",
+        "data": [15, 25, 25, 20, 15],
+        "backgroundColor": "#27ae60"
+      }
+    ]
+  },
+  "options": {
+    "plugins": { "title": { "display": true, "text": "AIE: Where Organisations Spend vs. Should Spend Effort" } },
+    "scales": { "y": { "beginAtZero": true, "max": 60, "title": { "display": true, "text": "% of total effort" } } }
+  }
+}
+```
+
+The inversion is striking: organisations typically pour 50% of effort into measuring (Step 4) before determining what is worth measuring — Hubbard's framework front-loads the thinking steps (defining the decision and computing EVI) to avoid measuring the wrong things.
 
 Each step deserves more detail:
 

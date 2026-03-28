@@ -76,6 +76,23 @@ flowchart TB
 
 ---
 
+```chartjs
+{
+  "type": "doughnut",
+  "data": {
+    "labels": ["Genetics (Seed)", "Parental Talk & Interaction", "Emotional Environment", "Play & Exploration", "Nutrition & Health", "Screen Time Impact"],
+    "datasets": [{
+      "data": [50, 15, 12, 10, 8, 5],
+      "backgroundColor": ["#2c3e50", "#2980b9", "#e74c3c", "#27ae60", "#f39c12", "#95a5a6"]
+    }]
+  },
+  "options": {
+    "title": "Factors Influencing Child Brain Development"
+  }
+}
+```
+Genetics account for roughly 50% of a child's potential — but the other 50% is environment that parents control, with language exposure being the single most powerful lever.
+
 ## Part 1: Pregnancy — The Baby Wants to Be Left Alone
 
 ### Brain Development in the Womb
@@ -128,6 +145,127 @@ The baby's sensory systems develop in a staggered sequence — and the critical 
 - **Drugs and environmental toxins** — mercury, lead, certain medications
 
 ---
+
+```chartjs
+{
+  "type": "radar",
+  "data": {
+    "labels": ["Academic Performance", "Emotional Regulation", "Self-Esteem", "Social Competence", "Low Substance Abuse", "Low Depression"],
+    "datasets": [
+      {
+        "label": "Authoritative (High Demand + High Warmth)",
+        "data": [95, 92, 95, 90, 90, 92],
+        "backgroundColor": "rgba(39, 174, 96, 0.2)",
+        "borderColor": "#27ae60"
+      },
+      {
+        "label": "Authoritarian (High Demand + Low Warmth)",
+        "data": [60, 35, 30, 35, 55, 55],
+        "backgroundColor": "rgba(231, 76, 60, 0.2)",
+        "borderColor": "#e74c3c"
+      },
+      {
+        "label": "Permissive (Low Demand + High Warmth)",
+        "data": [40, 35, 50, 50, 30, 50],
+        "backgroundColor": "rgba(243, 156, 18, 0.2)",
+        "borderColor": "#f39c12"
+      },
+      {
+        "label": "Neglectful (Low Demand + Low Warmth)",
+        "data": [15, 10, 10, 15, 10, 10],
+        "backgroundColor": "rgba(149, 165, 166, 0.2)",
+        "borderColor": "#95a5a6"
+      }
+    ]
+  },
+  "options": {
+    "title": "Child Outcomes by Parenting Style (Baumrind Research)"
+  }
+}
+```
+Authoritative parenting dominates every outcome dimension — it matches how the brain develops, providing safety for learning (warmth) and structure for the prefrontal cortex (demands).
+
+```d3
+{
+  "type": "heatmap",
+  "data": {
+    "xLabels": ["0-6 months", "6-12 months", "1-2 years", "2-3 years", "3-5 years"],
+    "yLabels": ["Talk/Narrate", "Read Aloud", "Free Play", "Guided Play", "Emotion Coaching", "Praise Effort"],
+    "values": [
+      [7, 8, 9, 10, 10],
+      [6, 7, 8, 9, 10],
+      [5, 7, 8, 9, 10],
+      [3, 5, 7, 9, 10],
+      [5, 6, 8, 9, 10],
+      [2, 3, 6, 8, 9]
+    ]
+  },
+  "options": {
+    "title": "Brain-Building Activities: Importance by Age (1-10 Scale)",
+    "colorScale": ["#eaf2f8", "#2980b9"]
+  }
+}
+```
+All six brain-building activities increase in importance as the child ages — but talking and narrating matter from the very first day.
+
+```d3
+{
+  "type": "force",
+  "data": {
+    "nodes": [
+      {"id": "Brain Rules", "group": "core"},
+      {"id": "Safety First", "group": "rule"},
+      {"id": "Talk Constantly", "group": "rule"},
+      {"id": "Praise Effort", "group": "rule"},
+      {"id": "Emotion Coach", "group": "rule"},
+      {"id": "Guided Play", "group": "rule"},
+      {"id": "No Screens <2", "group": "rule"},
+      {"id": "Read Daily", "group": "rule"},
+      {"id": "Authoritative Style", "group": "rule"},
+      {"id": "Smart Child", "group": "outcome"},
+      {"id": "Happy Child", "group": "outcome"}
+    ],
+    "links": [
+      {"source": "Brain Rules", "target": "Safety First", "value": 5},
+      {"source": "Brain Rules", "target": "Talk Constantly", "value": 5},
+      {"source": "Brain Rules", "target": "Praise Effort", "value": 4},
+      {"source": "Brain Rules", "target": "Emotion Coach", "value": 5},
+      {"source": "Brain Rules", "target": "Guided Play", "value": 4},
+      {"source": "Brain Rules", "target": "No Screens <2", "value": 3},
+      {"source": "Brain Rules", "target": "Read Daily", "value": 4},
+      {"source": "Brain Rules", "target": "Authoritative Style", "value": 5},
+      {"source": "Talk Constantly", "target": "Smart Child", "value": 5},
+      {"source": "Praise Effort", "target": "Smart Child", "value": 4},
+      {"source": "Guided Play", "target": "Smart Child", "value": 4},
+      {"source": "Read Daily", "target": "Smart Child", "value": 4},
+      {"source": "Emotion Coach", "target": "Happy Child", "value": 5},
+      {"source": "Safety First", "target": "Happy Child", "value": 5},
+      {"source": "Authoritative Style", "target": "Happy Child", "value": 5},
+      {"source": "Authoritative Style", "target": "Smart Child", "value": 4}
+    ]
+  },
+  "options": {
+    "title": "Brain Rules Network: How Rules Connect to Outcomes"
+  }
+}
+```
+The force diagram reveals that Authoritative Parenting is the only rule that connects equally to both smart and happy child outcomes — demanding AND warm produces the best results across all domains.
+
+```mermaid
+quadrantChart
+    title Praise Types: Impact on Mindset
+    x-axis Low Effort Focus --> High Effort Focus
+    y-axis Low Resilience --> High Resilience
+    "You're so smart!": [0.2, 0.25]
+    "You're a natural!": [0.15, 0.3]
+    "Good job!": [0.35, 0.4]
+    "You worked hard!": [0.75, 0.8]
+    "You tried 3 strategies!": [0.85, 0.9]
+    "That took persistence!": [0.8, 0.85]
+    "You figured it out!": [0.7, 0.75]
+    "You're gifted!": [0.1, 0.2]
+```
+Effort-focused praise occupies the upper-right quadrant — building both mastery orientation and resilience — while trait praise clusters in the fragile lower-left.
 
 ## Part 2: Smart Baby — What Intelligence Actually Is
 

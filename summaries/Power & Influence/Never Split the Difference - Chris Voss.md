@@ -117,6 +117,97 @@ The BCSM is sequential and non-negotiable — skip a stage and the entire stairw
 | **Black Swans** | Unknown unknowns that transform the entire negotiation |
 | **Three types of leverage** | Positive (you can give), negative (you can cause pain), normative (their own standards) |
 
+```chartjs
+{
+  "type": "radar",
+  "data": {
+    "labels": ["Tactical Empathy", "Mirroring", "Labelling", "Calibrated Questions", "Accusation Audit", "Anchoring", "Black Swan Detection"],
+    "datasets": [
+      {
+        "label": "Frequency of Use in FBI Negotiations",
+        "data": [95, 85, 90, 88, 75, 70, 60],
+        "backgroundColor": "rgba(91, 155, 213, 0.2)",
+        "borderColor": "#5b9bd5"
+      },
+      {
+        "label": "Typical Business Negotiation Use",
+        "data": [30, 15, 20, 50, 10, 65, 5],
+        "backgroundColor": "rgba(231, 76, 60, 0.2)",
+        "borderColor": "#e74c3c"
+      }
+    ]
+  },
+  "options": {
+    "plugins": { "title": { "display": true, "text": "Voss's Toolkit: FBI Usage vs Typical Business Negotiations" } },
+    "scales": { "r": { "min": 0, "max": 100 } }
+  }
+}
+```
+
+Business negotiators over-rely on anchoring while severely underutilising the emotional tools — tactical empathy, labelling, and mirroring — that Voss considers the foundation of every successful negotiation.
+
+```d3
+{
+  "type": "sankey",
+  "data": {
+    "nodes": ["Active Listening", "Empathy", "Rapport", "Influence", "Behavioural Change", "Mirroring", "Labelling", "Calibrated Questions", "Accusation Audit"],
+    "links": [
+      { "source": "Active Listening", "target": "Empathy", "value": 30 },
+      { "source": "Empathy", "target": "Rapport", "value": 25 },
+      { "source": "Rapport", "target": "Influence", "value": 20 },
+      { "source": "Influence", "target": "Behavioural Change", "value": 18 },
+      { "source": "Mirroring", "target": "Active Listening", "value": 15 },
+      { "source": "Labelling", "target": "Empathy", "value": 18 },
+      { "source": "Calibrated Questions", "target": "Influence", "value": 16 },
+      { "source": "Accusation Audit", "target": "Rapport", "value": 14 }
+    ]
+  },
+  "options": {
+    "title": "Behavioural Change Stairway: How Voss's Tools Feed Each Stage"
+  }
+}
+```
+
+Each of Voss's techniques feeds a specific stage of the Behavioural Change Stairway — mirroring enables active listening, labelling deepens empathy, accusation audits accelerate rapport, and calibrated questions deliver influence.
+
+```chartjs
+{
+  "type": "doughnut",
+  "data": {
+    "labels": ["Analyst", "Accommodator", "Assertive"],
+    "datasets": [{
+      "data": [35, 30, 35],
+      "backgroundColor": ["#5b9bd5", "#70ad47", "#e74c3c"]
+    }]
+  },
+  "options": {
+    "plugins": { "title": { "display": true, "text": "Three Negotiator Types — Distribution in Business" } }
+  }
+}
+```
+
+Voss identifies three roughly equal negotiator types — each processes information differently, and using the wrong approach for the wrong type is the single most common cause of stalled negotiations.
+
+```mermaid
+quadrantChart
+    title Voss's Negotiation Tools — Effort vs Impact
+    x-axis Low Effort --> High Effort
+    y-axis Low Impact --> High Impact
+    quadrant-1 High-Value Investments
+    quadrant-2 Quick Wins
+    quadrant-3 Low Priority
+    quadrant-4 Grind Work
+    Mirroring: [0.2, 0.75]
+    Labelling: [0.3, 0.85]
+    Calibrated Questions: [0.55, 0.9]
+    Accusation Audit: [0.6, 0.8]
+    Ackerman System: [0.8, 0.7]
+    Late-Night DJ Voice: [0.15, 0.65]
+    Black Swan Hunt: [0.85, 0.95]
+```
+
+Mirroring, labelling, and the late-night DJ voice sit in the "quick wins" quadrant — high impact for minimal effort — making them the first tools any negotiator should master.
+
 ---
 
 ## Chapter 1: The New Rules — Why Everything You Know About Negotiation Is Wrong

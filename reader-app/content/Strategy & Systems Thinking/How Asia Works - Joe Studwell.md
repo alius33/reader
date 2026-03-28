@@ -256,6 +256,76 @@ The political economy of land reform:
 
 The pattern is stark: every success story starts with land reform; every failure story either skipped it or faked it.
 
+```chartjs
+{
+  "type": "bar",
+  "data": {
+    "labels": ["Japan", "South Korea", "Taiwan", "China", "Malaysia", "Thailand", "Indonesia", "Philippines"],
+    "datasets": [
+      {
+        "label": "Land Reform Score (0-10)",
+        "data": [10, 9, 10, 9, 4, 4, 2, 1],
+        "backgroundColor": "#27ae60"
+      },
+      {
+        "label": "Export Discipline Score (0-10)",
+        "data": [9, 10, 8, 8, 5, 3, 2, 1],
+        "backgroundColor": "#2980b9"
+      },
+      {
+        "label": "Directed Finance Score (0-10)",
+        "data": [9, 9, 8, 9, 5, 3, 3, 2],
+        "backgroundColor": "#e67e22"
+      }
+    ]
+  },
+  "options": {
+    "plugins": { "title": { "display": true, "text": "Studwell's Development Recipe: Country Scorecard" } },
+    "scales": { "y": { "beginAtZero": true, "max": 10, "title": { "display": true, "text": "Implementation Score" } } }
+  }
+}
+```
+
+The bar chart makes Studwell's central argument visual: countries that scored high across all three interventions became rich; those that skipped steps remained poor — with the Philippines as the starkest failure case.
+
+```d3
+{
+  "type": "sankey",
+  "data": {
+    "nodes": [
+      { "id": "Land Reform" },
+      { "id": "Agricultural Surplus" },
+      { "id": "Rural Savings" },
+      { "id": "Urban Workforce" },
+      { "id": "Domestic Demand" },
+      { "id": "Industrial Policy" },
+      { "id": "Export Discipline" },
+      { "id": "Competitive Manufacturing" },
+      { "id": "Directed Finance" },
+      { "id": "Sustained Growth" }
+    ],
+    "links": [
+      { "source": "Land Reform", "target": "Agricultural Surplus", "value": 30 },
+      { "source": "Agricultural Surplus", "target": "Rural Savings", "value": 10 },
+      { "source": "Agricultural Surplus", "target": "Urban Workforce", "value": 12 },
+      { "source": "Agricultural Surplus", "target": "Domestic Demand", "value": 8 },
+      { "source": "Rural Savings", "target": "Industrial Policy", "value": 10 },
+      { "source": "Urban Workforce", "target": "Industrial Policy", "value": 12 },
+      { "source": "Domestic Demand", "target": "Industrial Policy", "value": 8 },
+      { "source": "Industrial Policy", "target": "Export Discipline", "value": 25 },
+      { "source": "Export Discipline", "target": "Competitive Manufacturing", "value": 20 },
+      { "source": "Directed Finance", "target": "Industrial Policy", "value": 15 },
+      { "source": "Competitive Manufacturing", "target": "Sustained Growth", "value": 20 }
+    ]
+  },
+  "options": {
+    "title": "The Development Recipe: How Agricultural Surplus Flows Into Industrial Power"
+  }
+}
+```
+
+The Sankey diagram traces Studwell's causal chain: land reform generates three streams of surplus (savings, labour, demand) that converge into industrial policy, which — when filtered through export discipline — produces the competitive manufacturing base that drives sustained growth.
+
 ---
 
 ### Chapter 3 — China's Agricultural Revolution
@@ -980,6 +1050,28 @@ The gap between prescription and practice reveals one of the most consequential 
 | **Philippines** | No (blocked by elites) | No (protection without discipline) | Premature liberalisation | Lower-middle income, persistent poverty |
 
 The table reads like a checklist: the more steps a country completed, the richer it became.
+
+```mermaid
+timeline
+    title Asian Development Trajectories (1945-2010)
+    section Japan
+        1946-1950 : Land Reform (MacArthur)
+        1950s-1960s : MITI Industrial Policy
+        1960s-1980s : Export-Led Growth
+        1990s : Liberalisation
+    section South Korea
+        1948-1953 : Land Reform + War
+        1961-1979 : Park's Export-or-Die
+        1980s-1990s : Heavy Industry
+        2000s : High Income
+    section Philippines
+        1950s : Failed Land Reform
+        1970s : Crony Protection
+        1990s : Premature Liberalisation
+        2010s : Still Lower-Middle Income
+```
+
+The timeline starkly contrasts Japan and South Korea's sequential execution of all three steps with the Philippines' failure to complete even the first — explaining the divergence from similar starting points to radically different outcomes.
 
 ---
 

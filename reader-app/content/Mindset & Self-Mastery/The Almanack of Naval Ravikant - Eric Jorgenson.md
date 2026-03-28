@@ -104,6 +104,33 @@ Naval's entire worldview flows through freedom as the central node — wealth en
 - This is Naval's most original contribution: a clear, simple framework that explains why some people generate enormous wealth while equally smart, equally hardworking people do not
 - The answer is rarely effort or even intelligence — it is the combination of these three elements
 
+```d3
+{
+  "type": "sankey",
+  "title": "Naval's Wealth-to-Happiness Pipeline",
+  "data": {
+    "nodes": [
+      {"id": "Specific Knowledge", "color": "#2980b9"},
+      {"id": "Accountability", "color": "#8e44ad"},
+      {"id": "Leverage", "color": "#e67e22"},
+      {"id": "Wealth", "color": "#27ae60"},
+      {"id": "Freedom", "color": "#2c3e50"},
+      {"id": "Happiness", "color": "#f1c40f"}
+    ],
+    "links": [
+      {"source": "Specific Knowledge", "target": "Wealth", "value": 35},
+      {"source": "Accountability", "target": "Wealth", "value": 30},
+      {"source": "Leverage", "target": "Wealth", "value": 35},
+      {"source": "Wealth", "target": "Freedom", "value": 80},
+      {"source": "Wealth", "target": "Happiness", "value": 20},
+      {"source": "Freedom", "target": "Happiness", "value": 80}
+    ]
+  }
+}
+```
+
+The dominant flow through Freedom (80%) versus the thin direct path from Wealth to Happiness (20%) visualises Naval's core warning: wealth only produces happiness when it first buys freedom — skipping that step is the mistake most high earners make.
+
 ---
 
 ### Specific Knowledge: What You Can't Be Trained For
@@ -224,6 +251,53 @@ Naval's entire worldview flows through freedom as the central node — wealth en
 | **Media** | Content working for you | No — permissionless | A creator who builds an audience of millions |
 
 The distinction between permission-required and permissionless leverage is Naval's most practically useful insight for the modern era.
+
+```chartjs
+{
+  "type": "radar",
+  "title": "Four Types of Leverage — Multi-Dimensional Comparison",
+  "data": {
+    "labels": ["Scalability", "Permission Required", "Marginal Cost", "Barrier to Entry", "Potential Return"],
+    "datasets": [
+      {
+        "label": "Labour",
+        "data": [3, 8, 9, 4, 4],
+        "borderColor": "#e74c3c",
+        "backgroundColor": "rgba(231,76,60,0.15)"
+      },
+      {
+        "label": "Capital",
+        "data": [6, 7, 5, 8, 7],
+        "borderColor": "#f39c12",
+        "backgroundColor": "rgba(243,156,18,0.15)"
+      },
+      {
+        "label": "Code",
+        "data": [10, 1, 1, 6, 10],
+        "borderColor": "#2980b9",
+        "backgroundColor": "rgba(41,128,185,0.15)"
+      },
+      {
+        "label": "Media",
+        "data": [9, 1, 1, 3, 9],
+        "borderColor": "#27ae60",
+        "backgroundColor": "rgba(39,174,96,0.15)"
+      }
+    ]
+  },
+  "options": {
+    "scales": {
+      "r": {
+        "min": 0,
+        "max": 10,
+        "ticks": {"stepSize": 2}
+      }
+    }
+  }
+}
+```
+
+Code and Media dominate on scalability and potential return while scoring near-zero on permission and marginal cost — confirming why Naval calls them "the leverage behind the newly rich."
 
 ---
 
@@ -581,6 +655,44 @@ The desire treadmill is a closed loop — no amount of acquisition can break the
 
 Each practice targets a different mechanism of unhappiness — together they form a comprehensive system for training the mind.
 
+```chartjs
+{
+  "type": "bar",
+  "title": "Naval's Happiness Practices — Estimated Impact on Baseline Happiness",
+  "data": {
+    "labels": ["Meditation", "Gratitude", "Presence", "Acceptance", "Low Info Diet", "Physical Health"],
+    "datasets": [
+      {
+        "label": "Immediate Calm (0-7 days)",
+        "data": [5, 7, 6, 4, 8, 3],
+        "backgroundColor": "#3498db"
+      },
+      {
+        "label": "Sustained Shift (30+ days)",
+        "data": [9, 7, 9, 8, 6, 8],
+        "backgroundColor": "#27ae60"
+      },
+      {
+        "label": "Life Transformation (1+ years)",
+        "data": [10, 8, 10, 9, 5, 9],
+        "backgroundColor": "#f1c40f"
+      }
+    ]
+  },
+  "options": {
+    "scales": {
+      "y": {
+        "beginAtZero": true,
+        "max": 10,
+        "title": {"display": true, "text": "Impact Score (1-10)"}
+      }
+    }
+  }
+}
+```
+
+Meditation and Presence show the steepest growth curve over time — low immediate payoff but transformative at the one-year mark — which mirrors Naval's insistence that happiness, like wealth, compounds.
+
 ---
 
 - The happiness habits are not one-off interventions — they are daily practices that accumulate:
@@ -683,6 +795,41 @@ The arrow from Wealth directly to Happiness (the common mistake) represents the 
 | Computer science | The language of the new leverage (code) | Industry reports | "By the time it's in a report, the opportunity is gone" |
 
 Naval's reading strategy optimises for ideas that compound — foundational concepts that remain true across decades, not trending topics that expire in months.
+
+```chartjs
+{
+  "type": "doughnut",
+  "title": "Naval's Reading Allocation — Foundations vs Frontiers",
+  "data": {
+    "labels": ["Mathematics", "Science (Physics/Biology)", "Philosophy (Stoicism/Buddhism)", "Economics & Game Theory", "Psychology & Decision Science", "Computer Science", "Business Books", "Self-Help", "News & Social Media"],
+    "datasets": [
+      {
+        "data": [15, 20, 18, 14, 12, 11, 3, 2, 5],
+        "backgroundColor": [
+          "#2980b9",
+          "#27ae60",
+          "#8e44ad",
+          "#e67e22",
+          "#1abc9c",
+          "#2c3e50",
+          "#e74c3c",
+          "#c0392b",
+          "#95a5a6"
+        ],
+        "borderWidth": 2,
+        "borderColor": "#ffffff"
+      }
+    ]
+  },
+  "options": {
+    "plugins": {
+      "legend": {"position": "right"}
+    }
+  }
+}
+```
+
+Foundation subjects (blue-green-purple slices) consume roughly 90% of Naval's reading diet, while the frontier categories he explicitly warns against — business books, self-help, and news — occupy a sliver, illustrating his "read the originals, not the popularisers" philosophy.
 
 ---
 

@@ -69,6 +69,12 @@ Lois P. Frankel holds a PhD in counselling psychology and has spent over twenty-
 | **The Modesty Penalty** | Minimising your achievements teaches others to see your work as easy or unimpressive |
 | **Organisational Housework** | Invisible maintenance tasks that earn gratitude but never promotions |
 
+```chartjs
+{"type":"bar","data":{"labels":["Play the Game","How You Act","How You Think","Brand & Market","How You Sound","How You Look","How You Respond"],"datasets":[{"label":"Number of Mistakes per Category","data":[19,20,14,16,16,13,15],"backgroundColor":["#e74c3c","#e67e22","#f1c40f","#27ae60","#3498db","#8e44ad","#1abc9c"]}]},"options":{"plugins":{"title":{"display":true,"text":"133 Self-Sabotaging Mistakes — Distribution Across Seven Categories"}},"scales":{"y":{"beginAtZero":true,"title":{"display":true,"text":"Number of Mistakes"}}}}}
+```
+
+The heaviest concentration of mistakes falls in "How You Act" and "How You Play the Game" — the categories that govern visibility, political fluency, and strategic positioning rather than technical competence.
+
 ---
 
 ## Quick Lookup Table — All 133 Mistakes by Category
@@ -258,6 +264,12 @@ flowchart TD
 ```
 
 The seven categories form a complete diagnostic covering every dimension of professional behaviour — from internal mindset to external presentation to interpersonal response patterns.
+
+```d3
+{"type":"heatmap","data":{"xLabels":["Play the Game","How You Act","How You Think","Brand & Market","How You Sound","How You Look","How You Respond"],"yLabels":["Early Career","Mid Career","Senior Level"],"values":[[5,7,4,3,6,8,5],[8,6,7,6,5,5,7],[9,5,9,8,4,3,8]]},"options":{"title":"Mistake Category Impact by Career Stage (1-10 Scale)"}}
+```
+
+"How You Play the Game" becomes increasingly critical at senior levels — early career tolerates political naivety, but at director level and above, failing to understand the game is the single most career-limiting category.
 
 ---
 
@@ -799,6 +811,12 @@ Sponsorship is earned through a chain of visible competence and trust-building �
 - The partner mindset requires comfort with ambiguity and a willingness to be wrong
 - Not every proposal will be accepted, and not every initiative will succeed
 - But the act of proposing registers as leadership in a way that silent execution does not
+
+```chartjs
+{"type":"radar","data":{"labels":["Takes Initiative","Expands Boundaries","Political Fluency","Self-Promotion","Negotiation","Strategic Vision"],"datasets":[{"label":"Employee Mindset","data":[3,2,2,1,2,3],"borderColor":"#e74c3c","backgroundColor":"rgba(231,76,60,0.1)"},{"label":"Partner Mindset","data":[9,8,7,8,8,9],"borderColor":"#27ae60","backgroundColor":"rgba(39,174,96,0.1)"}]},"options":{"plugins":{"title":{"display":true,"text":"Employee vs Partner Mindset — Behavioural Profile Comparison"}},"scales":{"r":{"beginAtZero":true,"max":10}}}}
+```
+
+The employee mindset scores lowest on self-promotion and negotiation — the two behaviours most directly linked to compensation and advancement — while the partner mindset treats both as non-negotiable professional skills.
 
 ---
 
@@ -1560,6 +1578,12 @@ flowchart LR
 ```
 
 Mehrabian's research suggests that over 90% of perceived credibility comes from delivery rather than content — making how you say something far more important than what you say.
+
+```d3
+{"type":"treemap","data":{"name":"Credibility","children":[{"name":"Appearance & Body Language (55%)","value":55},{"name":"Tone of Voice (38%)","value":38},{"name":"Content / Words (7%)","value":7}]},"options":{"title":"The 7-38-55 Credibility Rule — What People Actually Evaluate"}}
+```
+
+A staggering 93% of perceived credibility comes from how you look and sound rather than what you say — which explains why technically brilliant professionals who neglect presentation consistently lose to less competent competitors who present well.
 
 The practical implications are immediate:
 

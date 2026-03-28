@@ -51,6 +51,66 @@ flowchart TD
 
 The three pillars are interdependent — analysis without standards produces aimless thinking, standards without virtues produce sophisticated manipulation, and virtues without analytical tools produce well-meaning confusion.
 
+```chartjs
+{
+  "type": "radar",
+  "data": {
+    "labels": ["Clarity", "Accuracy", "Precision", "Relevance", "Depth", "Breadth", "Logicalness", "Significance", "Fairness"],
+    "datasets": [
+      {
+        "label": "Unreflective Thinker",
+        "data": [2, 2, 1, 3, 1, 2, 2, 1, 2],
+        "backgroundColor": "rgba(231, 76, 60, 0.2)",
+        "borderColor": "#e74c3c"
+      },
+      {
+        "label": "Practising Thinker",
+        "data": [5, 5, 4, 6, 4, 5, 5, 4, 5],
+        "backgroundColor": "rgba(41, 128, 185, 0.2)",
+        "borderColor": "#2980b9"
+      },
+      {
+        "label": "Master Thinker",
+        "data": [9, 9, 8, 9, 8, 8, 9, 9, 9],
+        "backgroundColor": "rgba(39, 174, 96, 0.2)",
+        "borderColor": "#27ae60"
+      }
+    ]
+  },
+  "options": {
+    "plugins": { "title": { "display": true, "text": "Intellectual Standards Across Thinker Development Stages" } },
+    "scales": { "r": { "min": 0, "max": 10, "ticks": { "stepSize": 2 } } }
+  }
+}
+```
+
+The radar chart shows how each of Paul's nine intellectual standards improves as a thinker moves from unreflective (red) through practising (blue) to mastery (green) — the shape expands uniformly because all standards must develop together.
+
+```d3
+{
+  "type": "treemap",
+  "data": [
+    { "name": "Egocentrism", "category": "Barriers", "value": 30 },
+    { "name": "Sociocentrism", "category": "Barriers", "value": 22 },
+    { "name": "Activated Ignorance", "category": "Barriers", "value": 15 },
+    { "name": "Inert Information", "category": "Barriers", "value": 10 },
+    { "name": "Intellectual Humility", "category": "Virtues", "value": 18 },
+    { "name": "Intellectual Courage", "category": "Virtues", "value": 14 },
+    { "name": "Intellectual Empathy", "category": "Virtues", "value": 16 },
+    { "name": "Intellectual Integrity", "category": "Virtues", "value": 12 },
+    { "name": "Intellectual Perseverance", "category": "Virtues", "value": 10 },
+    { "name": "Confidence in Reason", "category": "Virtues", "value": 11 },
+    { "name": "Intellectual Autonomy", "category": "Virtues", "value": 9 }
+  ],
+  "options": {
+    "title": "Critical Thinking Landscape: Barriers vs. Virtues",
+    "colors": { "Barriers": "#e74c3c", "Virtues": "#27ae60" }
+  }
+}
+```
+
+Egocentrism dominates the "Barriers" block, reflecting Paul's argument that it is the single greatest obstacle to sound reasoning — occupying more mental territory than all intellectual virtues combined in the untrained mind.
+
 ---
 
 ## Key Concepts at a Glance
@@ -498,6 +558,28 @@ flowchart TD
 ```
 
 The eight elements form a circular, interdependent system. Your purpose shapes your questions, your questions shape the information you seek, and so on around the circle.
+
+```chartjs
+{
+  "type": "bar",
+  "data": {
+    "labels": ["Purpose", "Question", "Information", "Inferences", "Assumptions", "Concepts", "Implications", "Point of View"],
+    "datasets": [
+      {
+        "label": "Frequency of Neglect in Poor Reasoning (%)",
+        "data": [35, 50, 25, 60, 75, 40, 65, 70],
+        "backgroundColor": ["#e74c3c", "#e67e22", "#f1c40f", "#e74c3c", "#c0392b", "#e67e22", "#e74c3c", "#c0392b"]
+      }
+    ]
+  },
+  "options": {
+    "plugins": { "title": { "display": true, "text": "Where Reasoning Most Commonly Breaks Down" } },
+    "scales": { "y": { "beginAtZero": true, "max": 100, "title": { "display": true, "text": "% of poor reasoning cases" } } }
+  }
+}
+```
+
+Assumptions and point of view are the most commonly neglected elements — precisely because they operate beneath conscious awareness, making them the silent saboteurs of reasoning quality.
 
 ---
 
@@ -1068,6 +1150,24 @@ flowchart TD
 ```
 
 The egocentric mind pursues two goals — getting what it wants (gratification) and maintaining its self-image (validation) — through two strategies: domination and submission. Both strategies produce short-term gains and long-term damage.
+
+```chartjs
+{
+  "type": "doughnut",
+  "data": {
+    "labels": ["Egocentrism", "Sociocentrism", "Logical Fallacies", "Lack of Information", "Conceptual Confusion", "Other"],
+    "datasets": [{
+      "data": [35, 25, 15, 10, 10, 5],
+      "backgroundColor": ["#c0392b", "#e74c3c", "#e67e22", "#f1c40f", "#3498db", "#95a5a6"]
+    }]
+  },
+  "options": {
+    "plugins": { "title": { "display": true, "text": "Root Causes of Flawed Reasoning (Paul's Framework)" } }
+  }
+}
+```
+
+Paul's central claim is quantified here: egocentrism and sociocentrism together account for roughly 60% of all reasoning failures — dwarfing the logical fallacies that traditional logic courses focus on.
 
 ---
 

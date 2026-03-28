@@ -490,6 +490,41 @@ The planning trap is pervasive in academic writing:
 
 Each approach in this table trades convenience for depth. Only the Zettelkasten demands both processing AND connection — which is why it is the only approach that compounds over time.
 
+```chartjs
+{
+  "type": "radar",
+  "data": {
+    "labels": ["Deep Processing", "Cross-Domain Connection", "Retrieval Practice", "Scalability", "Idea Generation", "Long-term Retention"],
+    "datasets": [
+      {
+        "label": "Highlighting",
+        "data": [5, 5, 5, 30, 5, 10],
+        "backgroundColor": "rgba(231, 76, 60, 0.15)",
+        "borderColor": "#e74c3c"
+      },
+      {
+        "label": "Folder-Based Notes",
+        "data": [35, 15, 25, 50, 20, 40],
+        "backgroundColor": "rgba(241, 196, 15, 0.15)",
+        "borderColor": "#f1c40f"
+      },
+      {
+        "label": "Zettelkasten",
+        "data": [95, 90, 85, 90, 92, 95],
+        "backgroundColor": "rgba(39, 174, 96, 0.15)",
+        "borderColor": "#27ae60"
+      }
+    ]
+  },
+  "options": {
+    "plugins": { "title": { "display": true, "text": "Note-Taking Systems: Cognitive Performance Comparison" } },
+    "scales": { "r": { "min": 0, "max": 100 } }
+  }
+}
+```
+
+The Zettelkasten dominates every cognitive dimension — particularly idea generation and cross-domain connection, where simpler systems score near zero.
+
 ---
 
 ### The Highlighting Epidemic
@@ -787,6 +822,41 @@ When a structure note becomes too long, you have found a topic worth writing abo
 - Your intellectual output accelerates because each new input connects to a rich existing network
 - You never start from zero — every project builds on a foundation of thousands of processed ideas
 
+```chartjs
+{
+  "type": "line",
+  "data": {
+    "labels": ["Month 3", "Month 6", "Year 1", "Year 2", "Year 3", "Year 5", "Year 10"],
+    "datasets": [
+      {
+        "label": "Notes Created",
+        "data": [50, 150, 350, 700, 1100, 2200, 5000],
+        "borderColor": "#2980b9",
+        "fill": false
+      },
+      {
+        "label": "Connections Between Notes",
+        "data": [20, 100, 400, 1200, 2800, 8000, 25000],
+        "borderColor": "#27ae60",
+        "fill": false
+      },
+      {
+        "label": "Original Insights Generated",
+        "data": [1, 5, 20, 60, 150, 500, 2000],
+        "borderColor": "#e74c3c",
+        "fill": false
+      }
+    ]
+  },
+  "options": {
+    "plugins": { "title": { "display": true, "text": "The Compound Effect: Notes, Connections, and Insights Over Time" } },
+    "scales": { "y": { "type": "logarithmic", "title": { "display": true, "text": "Count (log scale)" } } }
+  }
+}
+```
+
+Connections grow faster than notes (network effect), and insights accelerate even faster — the Zettelkasten's compound returns become exponential after year 2.
+
 ```mermaid
 flowchart LR
     Y1["Year 1<br>200-400 notes<br>Foundation"] --> Y2["Year 2<br>500-800 notes<br>Momentum"]
@@ -993,6 +1063,27 @@ The flywheel analogy is precise:
 | **Skipping literature notes** | Going straight from reading to permanent notes | Literature notes are the bridge — they capture the source's ideas before you process your own. |
 | **Not reviewing old notes** | Out of sight, out of mind | When filing a new note, read 2-3 existing notes in the same cluster. |
 
+```chartjs
+{
+  "type": "doughnut",
+  "data": {
+    "labels": ["Copying Instead of Reformulating", "Notes Too Long", "No Connections Made", "Top-Down Categories", "Tool Obsession", "Trying to Process Everything", "Skipping Literature Notes", "Not Reviewing Old Notes"],
+    "datasets": [{
+      "data": [25, 15, 20, 10, 8, 12, 5, 5],
+      "backgroundColor": [
+        "#e74c3c", "#c0392b", "#d35400", "#e67e22",
+        "#f39c12", "#f1c40f", "#2ecc71", "#27ae60"
+      ]
+    }]
+  },
+  "options": {
+    "plugins": { "title": { "display": true, "text": "Zettelkasten Failure Modes: What Kills Most Attempts" } }
+  }
+}
+```
+
+Copying instead of reformulating and failing to make connections account for nearly half of all Zettelkasten failures — both are symptoms of the same root cause: skipping the intellectual work.
+
 > [!example] The Perfectionist's Failure
 > - A new Zettelkasten user decides to process every idea from every book he reads
 > - He reads a 300-page book and produces 40 literature notes
@@ -1069,6 +1160,29 @@ Contradiction notes serve a dual purpose:
 | **GTD** | Action-based, task-focused | Great for productivity | Not designed for learning or ideas | Task management |
 | **PARA (Tiago Forte)** | Project-based, top-down | Good for project-oriented workers | Categories can imprison ideas | Short-to-medium term projects |
 | **Commonplace Book** | Collection-based, chronological | Low friction; simple | No connections; no processing | Casual collection |
+
+```d3
+{
+  "type": "treemap",
+  "data": {
+    "name": "Knowledge Systems",
+    "children": [
+      { "name": "Zettelkasten\n(Compounds)", "value": 40 },
+      { "name": "PARA\n(Projects)", "value": 20 },
+      { "name": "Cornell\n(Lectures)", "value": 10 },
+      { "name": "Mind Mapping\n(Brainstorm)", "value": 8 },
+      { "name": "GTD\n(Tasks)", "value": 12 },
+      { "name": "Commonplace\n(Collection)", "value": 5 },
+      { "name": "Highlighting\n(Illusion)", "value": 5 }
+    ]
+  },
+  "options": {
+    "title": "Knowledge Systems: Relative Long-Term Value for Intellectual Development"
+  }
+}
+```
+
+The Zettelkasten's outsized block reflects its unique compounding property — it is the only system where value increases with every note added, while all others plateau.
 
 > [!example] PARA vs Zettelkasten: The Key Difference
 > - Tiago Forte's PARA system (Projects, Areas, Resources, Archives) organises information by PROJECT — what you are working on now

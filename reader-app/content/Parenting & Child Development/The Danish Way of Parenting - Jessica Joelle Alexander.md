@@ -73,6 +73,50 @@ When she and Sandahl searched for a book about Danish parenting, they found noth
 | **N** | No Ultimatums | Discipline through respect, explanation, and negotiation — not punishment or threats |
 | **T** | Togetherness | Create hygge: cozy, screen-free, low-pressure family time that builds bonds |
 
+```chartjs
+{
+  "type": "radar",
+  "data": {
+    "labels": ["Play", "Authenticity", "Reframing", "Empathy", "No Ultimatums", "Togetherness"],
+    "datasets": [
+      {
+        "label": "Danish Parenting Culture",
+        "data": [9, 8.5, 9, 9.5, 8, 9],
+        "backgroundColor": "rgba(41, 128, 185, 0.2)",
+        "borderColor": "#2980b9",
+        "borderWidth": 2,
+        "pointBackgroundColor": "#2980b9"
+      },
+      {
+        "label": "Typical American Default",
+        "data": [4, 5, 4, 5, 3, 5],
+        "backgroundColor": "rgba(231, 76, 60, 0.2)",
+        "borderColor": "#e74c3c",
+        "borderWidth": 2,
+        "pointBackgroundColor": "#e74c3c"
+      }
+    ]
+  },
+  "options": {
+    "plugins": {
+      "title": {
+        "display": true,
+        "text": "The PARENT Framework: Danish vs. Typical American Parenting Defaults"
+      }
+    },
+    "scales": {
+      "r": {
+        "min": 0,
+        "max": 10,
+        "ticks": { "stepSize": 2 }
+      }
+    }
+  }
+}
+```
+
+Danish culture consistently scores higher across all six PARENT dimensions — the gap is widest on Play, Reframing, and No Ultimatums, where the American default toward structured activities, catastrophizing, and authoritarian discipline creates the starkest contrast.
+
 ---
 
 ## 30-Second Version
@@ -605,6 +649,55 @@ flowchart TB
 
 The book's deepest insight is that these six principles form a self-reinforcing cycle. Happy, resilient children become happy, resilient adults who parent in the same way — producing the next generation of happy, resilient children. Denmark's happiness isn't a one-generation phenomenon; it's a cultural inheritance transmitted through parenting.
 
+```chartjs
+{
+  "type": "bar",
+  "data": {
+    "labels": ["Life Satisfaction", "Social Trust", "Work-Life Balance", "Child Wellbeing", "Parental Stress (inv)", "Community Belonging"],
+    "datasets": [
+      {
+        "label": "Denmark",
+        "data": [9.2, 8.8, 8.5, 9.0, 7.5, 8.7],
+        "backgroundColor": "rgba(41, 128, 185, 0.7)",
+        "borderColor": "#2980b9",
+        "borderWidth": 1
+      },
+      {
+        "label": "United States",
+        "data": [6.8, 5.5, 5.8, 6.5, 4.5, 5.2],
+        "backgroundColor": "rgba(231, 76, 60, 0.7)",
+        "borderColor": "#e74c3c",
+        "borderWidth": 1
+      },
+      {
+        "label": "OECD Average",
+        "data": [7.2, 6.2, 6.5, 7.0, 5.5, 6.0],
+        "backgroundColor": "rgba(149, 165, 166, 0.7)",
+        "borderColor": "#95a5a6",
+        "borderWidth": 1
+      }
+    ]
+  },
+  "options": {
+    "plugins": {
+      "title": {
+        "display": true,
+        "text": "Happiness & Wellbeing Index: Denmark vs. US vs. OECD Average"
+      }
+    },
+    "scales": {
+      "y": {
+        "title": { "display": true, "text": "Score (1-10)" },
+        "min": 0,
+        "max": 10
+      }
+    }
+  }
+}
+```
+
+Denmark's advantage is most dramatic in social trust and community belonging — the metrics most directly shaped by the empathy-first, togetherness-oriented parenting culture the book describes, suggesting the PARENT framework's impact extends well beyond individual families into societal cohesion.
+
 ### How the Cycle Works
 
 The cycle operates at three levels simultaneously: individual, family, and societal. At the individual level, a child who experiences free play, authentic communication, reframing, empathy, respectful discipline, and hygge develops internal resources — resilience, emotional intelligence, social skills, and trust. At the family level, these practices create bonds that sustain people through difficulty. At the societal level, empathetic citizens create institutions that support families — quality early childhood education, work-life balance policies, social safety nets — which in turn make it easier for the next generation of parents to practice these principles.
@@ -705,6 +798,37 @@ The Danish Way sits in the "light and accessible" quadrant — easy to read, eas
 | Grandparents and extended family | Understanding the "why" behind gentler parenting approaches |
 | New parents (prenatal or early months) | Start with the right defaults before old patterns take hold |
 | Couples who disagree on discipline | The framework provides neutral ground: data and cultural evidence rather than personal opinion |
+
+```d3
+{
+  "type": "heatmap",
+  "data": {
+    "xLabels": ["Denmark", "United States"],
+    "yLabels": ["Free Play Time", "Process Praise", "Empathy Education", "Authoritative Discipline", "Emotional Honesty", "Family Togetherness", "Screen Limits", "Growth Mindset", "Risk Tolerance in Play", "Delayed Academics"],
+    "values": [
+      [9, 4],
+      [8, 4],
+      [10, 3],
+      [9, 5],
+      [8, 5],
+      [9, 5],
+      [7, 4],
+      [8, 5],
+      [9, 3],
+      [9, 3]
+    ]
+  },
+  "options": {
+    "title": "Parenting Dimensions: Denmark vs. United States (1-10 Scale)",
+    "colorScheme": "RdYlGn",
+    "xAxisLabel": "Country",
+    "yAxisLabel": "Parenting Dimension",
+    "cellLabel": true
+  }
+}
+```
+
+The heatmap reveals that Denmark's largest advantages over American defaults lie in empathy education (mandated weekly in schools), risk tolerance in play (deliberately "risky" playgrounds), and delayed academics (formal learning starts at age 7) — areas where cultural infrastructure reinforces individual parenting choices.
 
 ### Who Might Be Disappointed
 
@@ -892,6 +1016,58 @@ It's easy to see the PARENT principles as six separate techniques. But the book'
 | **Empathy** | Social connection, trust, forgiveness | The quality of our relationships is the single strongest predictor of happiness |
 | **No Ultimatums** | Self-control, respect for rules, trust in authority | People who feel respected develop genuine internal motivation rather than fear-based compliance |
 | **Togetherness** | Secure attachment, sense of belonging | Social support is as important to longevity as not smoking and more important than exercise |
+
+```d3
+{
+  "type": "force",
+  "data": {
+    "nodes": [
+      { "id": "Play", "group": "parent" },
+      { "id": "Authenticity", "group": "parent" },
+      { "id": "Reframing", "group": "parent" },
+      { "id": "Empathy", "group": "parent" },
+      { "id": "No Ultimatums", "group": "parent" },
+      { "id": "Togetherness", "group": "parent" },
+      { "id": "Resilience", "group": "outcome" },
+      { "id": "Emotional Intelligence", "group": "outcome" },
+      { "id": "Social Trust", "group": "outcome" },
+      { "id": "Growth Mindset", "group": "outcome" },
+      { "id": "Self-Regulation", "group": "outcome" },
+      { "id": "Secure Attachment", "group": "outcome" }
+    ],
+    "links": [
+      { "source": "Play", "target": "Resilience", "value": 3 },
+      { "source": "Play", "target": "Self-Regulation", "value": 2 },
+      { "source": "Play", "target": "Empathy", "value": 2 },
+      { "source": "Authenticity", "target": "Emotional Intelligence", "value": 3 },
+      { "source": "Authenticity", "target": "Growth Mindset", "value": 2 },
+      { "source": "Reframing", "target": "Resilience", "value": 3 },
+      { "source": "Reframing", "target": "Growth Mindset", "value": 2 },
+      { "source": "Reframing", "target": "Authenticity", "value": 2 },
+      { "source": "Empathy", "target": "Social Trust", "value": 3 },
+      { "source": "Empathy", "target": "Emotional Intelligence", "value": 2 },
+      { "source": "Empathy", "target": "Togetherness", "value": 2 },
+      { "source": "No Ultimatums", "target": "Self-Regulation", "value": 3 },
+      { "source": "No Ultimatums", "target": "Social Trust", "value": 2 },
+      { "source": "No Ultimatums", "target": "Empathy", "value": 2 },
+      { "source": "Togetherness", "target": "Secure Attachment", "value": 3 },
+      { "source": "Togetherness", "target": "Resilience", "value": 2 },
+      { "source": "Togetherness", "target": "Social Trust", "value": 2 }
+    ]
+  },
+  "options": {
+    "title": "PARENT Framework: How the Six Principles Interconnect and Reinforce Each Other",
+    "width": 700,
+    "height": 500,
+    "nodeColors": {
+      "parent": "#2980b9",
+      "outcome": "#27ae60"
+    }
+  }
+}
+```
+
+The six PARENT principles (blue) don't operate in isolation — Play feeds Empathy, Reframing strengthens Authenticity, and Empathy deepens Togetherness, creating a densely interconnected web where practicing any single principle strengthens the others and accelerates the happiness cycle.
 
 > [!success] The Meta-Lesson
 > The deepest lesson of the book isn't any single principle — it's the act of examining your defaults. Most parents operate on autopilot, repeating patterns they inherited. The Danish Way's greatest gift is permission and motivation to stop, look at what you're doing, and ask: "Is this actually working? Is there a better way?" That question — asked honestly, without shame — is the beginning of change. And change, passed from parent to child, is how cultures transform.

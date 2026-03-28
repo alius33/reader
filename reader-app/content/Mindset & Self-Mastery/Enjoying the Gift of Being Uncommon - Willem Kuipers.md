@@ -115,6 +115,25 @@ graph LR
 - <b style="color: #2980b9">Organizations lose enormous value</b> when they fail to recognize and properly manage their XIPs — instead treating their intensity as a problem to be corrected
 - <b style="color: #27ae60">The reframe is simple but powerful</b>: the traits that draw the most criticism ("too intense," "too many ideas," "can't focus on one thing") are distorted expressions of uncommon assets
 
+```mermaid
+timeline
+    title The Three Practices — From Recognition to Effectiveness
+    section Practice 1 — Acknowledge
+        Self-recognition : Identify with 3+ of 5 traits
+        Reframe criticisms : Blame shows the lead for fame
+        Find Ximension : Experience XIP-to-XIP connection
+    section Practice 2 — Explore
+        Map Xidentity : Nine facets of how you are Xi
+        Thinking style : Imaginal vs verbal processing
+        Temperament : Artisan, Guardian, Idealist, Rationalist
+    section Practice 3 — Apply
+        Autonomy vs rapport : Find your personal balance
+        Mastery over performance : Intrinsic motivation
+        Gift reciprocity : Navigate gift vs market tension
+```
+
+The three Practices form a sequential but iterative journey — most XIPs cycle back through earlier stages as new life circumstances reveal unexplored facets of their Xidentity.
+
 ---
 
 ## Practice One: Acknowledging Xi
@@ -132,6 +151,50 @@ The heart of the book is a five-trait identification system. You don't need all 
 | 3 | **Needs autonomy** | Prefers to work independently, reacts aversely to tight control and absolute power, will fight or flee when autonomy is threatened |
 | 4 | **Excessive zeal** | Inexhaustible and keyed-up while a problem is interesting, drops it when curiosity is satisfied, invests too much energy in wrong projects |
 | 5 | **Emotional-intellectual contrast** | Either emotional or intellectual self-confidence is high while the other is poorly established — can lead to perfectionism, fear of failure, or escalating know-it-all tendencies |
+
+```chartjs
+{
+  "type": "radar",
+  "data": {
+    "labels": ["Intellectually Able", "Incurably Inquisitive", "Needs Autonomy", "Excessive Zeal", "Confidence Gap"],
+    "datasets": [
+      {
+        "label": "Acknowledged XIP",
+        "data": [9, 8, 9, 7, 6],
+        "backgroundColor": "rgba(41, 128, 185, 0.2)",
+        "borderColor": "#2980b9",
+        "pointBackgroundColor": "#2980b9"
+      },
+      {
+        "label": "Unacknowledged XIP",
+        "data": [7, 8, 5, 9, 9],
+        "backgroundColor": "rgba(231, 76, 60, 0.2)",
+        "borderColor": "#e74c3c",
+        "pointBackgroundColor": "#e74c3c"
+      }
+    ]
+  },
+  "options": {
+    "plugins": {
+      "title": {
+        "display": true,
+        "text": "The Five XIP Character Traits: Acknowledged vs Unacknowledged"
+      }
+    },
+    "scales": {
+      "r": {
+        "min": 0,
+        "max": 10,
+        "ticks": {
+          "stepSize": 2
+        }
+      }
+    }
+  }
+}
+```
+
+An acknowledged XIP channels their traits productively — high intellectual ability and autonomy become strengths — while an unacknowledged XIP often experiences excessive zeal and a widening confidence gap as the dominant, destabilising traits.
 
 Kuipers deliberately makes this <b style="color: #27ae60">self-verifiable</b>. Unlike the traditional giftedness label — which requires a psychologist, an IQ test, and standardized conditions — Xi can be identified by the persons themselves or by someone in their environment. This is the first essential difference between Xi and giftedness. The second: Xi extends to all of Gardner's multiple intelligences — musical, bodily-kinaesthetic, interpersonal — not just the academic types measured by IQ tests. The third: giftedness implies an obligation to perform; Xi implies an "extra dose" without implicit expectations.
 
@@ -260,6 +323,49 @@ graph TD
     style CENTER fill:#2980b9,color:#fff
 ```
 
+```d3
+{
+  "type": "treemap",
+  "data": {
+    "name": "Xidentity",
+    "children": [
+      {
+        "name": "Multiple Facets",
+        "children": [
+          {"name": "Multiple Intelligences", "value": 30},
+          {"name": "Temperament", "value": 25},
+          {"name": "Extra Receptivity", "value": 25},
+          {"name": "Male/Female Archetypes", "value": 20}
+        ]
+      },
+      {
+        "name": "Polarity Facets",
+        "children": [
+          {"name": "Imaginal ↔ Verbal Thinking", "value": 30},
+          {"name": "Extravert ↔ Introvert", "value": 25},
+          {"name": "Extra Empathy ↔ Task-Orientation", "value": 30}
+        ]
+      },
+      {
+        "name": "Central Amplifier",
+        "children": [
+          {"name": "Degree of Xi", "value": 40},
+          {"name": "Xinasty (Family Dynasty)", "value": 25}
+        ]
+      }
+    ]
+  },
+  "options": {
+    "title": "The Nine Facets of Xidentity — Treemap Model",
+    "width": 700,
+    "height": 400,
+    "colorScheme": "tableau10"
+  }
+}
+```
+
+The Xidentity model groups nine facets into three categories: four "multiple" facets where you compose your own blend, three polarity facets where you sit along a continuum, and two central facets — Degree of Xi and Xinasty — that amplify and contextualise all others.
+
 The central facet — **Degree of Xi** — acts as an amplifier: the stronger your Xi, the more extreme all other facets become. Four facets are "multiple" (you draw your own composition from each), and three are polarities (you sit somewhere along a continuum).
 
 ### Imaginal vs. Verbal Thinking
@@ -351,6 +457,44 @@ Drawing on Marylou Streznewski's *Gifted Grownups*, Kuipers describes three fund
 | **Independents** | Creative and brilliant when interested, completely uncooperative when not. Square pegs in round holes. Career paths unpredictable. Expression often has great personal value but little societal relevance. | Have the most to gain from Xi awareness — most talented of the three groups but least understood |
 
 Independents are the group most vulnerable to stagnation. If their gifts are rejected or unvalued, they may abandon their creativity entirely. Their social breakthrough can take a very long time to manifest — and in the worst cases, it never does. Kuipers notes bluntly that this "can result in them abandoning all social links or lead to criminal behaviour and even death."
+
+```chartjs
+{
+  "type": "polarArea",
+  "data": {
+    "labels": ["Superstars — Societal Visibility", "Superstars — Self-Awareness of Xi", "Strivers — Work Ethic", "Strivers — Risk of Burnout", "Independents — Creative Potential", "Independents — Stagnation Risk"],
+    "datasets": [
+      {
+        "data": [9, 3, 9, 8, 10, 9],
+        "backgroundColor": [
+          "rgba(41, 128, 185, 0.6)",
+          "rgba(41, 128, 185, 0.3)",
+          "rgba(39, 174, 96, 0.6)",
+          "rgba(39, 174, 96, 0.3)",
+          "rgba(231, 76, 60, 0.6)",
+          "rgba(231, 76, 60, 0.3)"
+        ]
+      }
+    ]
+  },
+  "options": {
+    "plugins": {
+      "title": {
+        "display": true,
+        "text": "Three XIP Application Styles: Strengths and Vulnerabilities"
+      }
+    },
+    "scales": {
+      "r": {
+        "min": 0,
+        "max": 10
+      }
+    }
+  }
+}
+```
+
+Independents carry the highest creative potential but also the greatest stagnation risk — their gifts are the most vulnerable to rejection because they operate outside conventional reward systems that sustain Superstars and Strivers.
 
 But some independents become <b style="color: #27ae60">**super pioneers**</b> — rare individuals who maintain both autonomy and rapport, keep producing uncommon ideas, refuse to wear conventional clothes, and eventually change society's expectations to fit their own expression. They manage to have it both ways: the independence to be truly original and the rapport that gives their originality a home in the world.
 

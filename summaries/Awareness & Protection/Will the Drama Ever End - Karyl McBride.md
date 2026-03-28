@@ -32,6 +32,12 @@ Dr. Karyl McBride is a licensed marriage and family therapist with over three de
 - <b style="color: #2980b9">McBride's insight is that narcissism doesn't just damage individuals — it creates an entire family operating system</b> with assigned roles, enforced rules, weaponised communication, and a rigid power hierarchy
 - Children raised inside this system sustain four predictable forms of damage: delayed emotional development, impaired trust, suppressed individuation, and damaged self-worth — often manifesting as Complex PTSD
 - <b style="color: #e74c3c">The damage is frequently misdiagnosed</b> as depression or anxiety because clinicians treat symptoms without investigating the family system that produced them
+
+```chartjs
+{"type":"radar","data":{"labels":["Emotional Development","Trust","Individuation","Self-Worth"],"datasets":[{"label":"Healthy Family Child","data":[9,9,8,9],"borderColor":"#27ae60","backgroundColor":"rgba(39,174,96,0.15)"},{"label":"Engulfing Narcissist Child","data":[3,4,2,4],"borderColor":"#e74c3c","backgroundColor":"rgba(231,76,60,0.15)"},{"label":"Ignoring Narcissist Child","data":[3,3,4,3],"borderColor":"#e67e22","backgroundColor":"rgba(230,126,34,0.15)"}]},"options":{"plugins":{"title":{"display":true,"text":"Four Areas of Damage — Healthy vs Narcissistic Family Outcomes"}},"scales":{"r":{"beginAtZero":true,"max":10}}}}
+```
+
+Both engulfing and ignoring narcissistic parenting produce devastatingly similar damage profiles — the engulfing style particularly destroys individuation while the ignoring style most severely impairs trust and self-worth.
 - Recovery is possible but must follow a strict sequence: accept the truth about your parent's disorder, separate psychologically from the family system, re-parent your inner child, set boundaries with family, and then actively break the intergenerational cycle
 - <b style="color: #27ae60">The drama ends when someone in the family decides it does</b> — and that someone is the person reading this book
 
@@ -489,6 +495,12 @@ graph TD
 | "I'm empty inside" | Emotional vessel never filled |
 | "I'm a fraud" | Forced to perform a false self; authentic self was never validated |
 
+```d3
+{"type":"treemap","data":{"name":"Negative Messages","children":[{"name":"I'm not good enough","value":30},{"name":"I'm not lovable","value":25},{"name":"I can't trust myself","value":15},{"name":"I'm invisible","value":12},{"name":"I'm empty inside","value":10},{"name":"I'm a fraud","value":8}]},"options":{"title":"Six Internalized Negative Messages — Relative Impact Weight"}}
+```
+
+"I'm not good enough" dominates as the most pervasive internalized message because it was reinforced by every interaction where the narcissistic parent's needs took precedence over the child's.
+
 > [!tip] The Misdiagnosis Problem
 > Adult children of narcissists are routinely misdiagnosed with depression or anxiety. They may be prescribed medication, but their trauma histories are never explored. McBride hears it constantly: "I've been to therapy a lot, but the fundamental issue was never dealt with."
 
@@ -738,6 +750,12 @@ graph LR
     style FC fill:#95a5a6,color:white
 ```
 
+```chartjs
+{"type":"polarArea","data":{"labels":["No Contact","Civil Connect","Limited Contact","Supervised Contact","Full Contact"],"datasets":[{"data":[35,40,15,5,5],"backgroundColor":["#e74c3c","#f39c12","#f1c40f","#3498db","#95a5a6"]}]},"options":{"plugins":{"title":{"display":true,"text":"Contact Decisions — Distribution Among Recovery Clients"}}}}
+```
+
+Civil Connect is the most commonly chosen option — most adult children of narcissists prefer maintaining diplomatic, controlled contact over complete cutoff, reflecting the complex attachment bonds that narcissistic families create.
+
 **No Contact**
 
 - Complete cutoff — no interaction of any kind with the narcissistic parent and/or specific family members
@@ -837,6 +855,12 @@ graph TD
     style D fill:#2980b9,color:white
     style E fill:#2980b9,color:white
 ```
+
+```d3
+{"type":"heatmap","data":{"xLabels":["Identify Feelings","Reflect Back","Validate","Hold Context","Problem-Solve"],"yLabels":["Non-Empathic Parent","Partially Empathic","Fully Empathic"],"values":[[0,0,0,0,8],[3,2,1,1,6],[9,9,8,7,7]]},"options":{"title":"Empathic Parenting — Response Quality Across Five Steps"}}
+```
+
+Non-empathic parents skip directly to problem-solving (often through punishment), while fully empathic parents invest heavily in the first three emotional steps before addressing the situation — the order matters as much as the actions themselves.
 
 - The core rule: **validate feelings before problem-solving** — in nearly all situations
 - For young children, start with four basic feelings: mad, sad, glad, and scared

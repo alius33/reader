@@ -94,6 +94,39 @@ The book's most original contribution is mapping Positive Discipline principles 
 | **Long-term focus** | "Begin with the end in mind" — the Islamic concept that this life determines the afterlife |
 | **Focus on solutions** | The Bedouin in the mosque: no punishment, just purification and teaching |
 
+```chartjs
+{
+  "type": "radar",
+  "data": {
+    "labels": ["Social Interest", "Belonging & Contribution", "Belief Behind Behavior", "Encouragement", "Mutual Respect", "Kindness + Firmness", "Long-term Focus", "Focus on Solutions"],
+    "datasets": [
+      {
+        "label": "Islam-PD Alignment Strength",
+        "data": [9, 10, 9, 10, 8, 9, 10, 10],
+        "backgroundColor": "rgba(39, 174, 96, 0.2)",
+        "borderColor": "#27ae60"
+      }
+    ]
+  },
+  "options": {
+    "plugins": {
+      "title": {
+        "display": true,
+        "text": "Eight Areas of Islam–Positive Discipline Congruence"
+      }
+    },
+    "scales": {
+      "r": {
+        "min": 0,
+        "max": 10
+      }
+    }
+  }
+}
+```
+
+All eight areas score 8 or above, demonstrating the authors' central thesis: Positive Discipline is not a Western import but a rediscovery of principles already embedded in the Prophetic tradition.
+
 ### Three Parenting Styles in the Muslim Home
 
 The authors apply Baumrind's framework with a Muslim-specific lens:
@@ -389,6 +422,31 @@ This models for children exactly what you want them to learn: mistakes happen, r
 | **13-18** | Listen, Connection Before Correction, Letting Go, Curiosity Questions, Agreed Upon Deadlines |
 | **Adult** | Letting Go, Message of Love, Be There, Mutual Respect |
 
+```chartjs
+{
+  "type": "doughnut",
+  "data": {
+    "labels": ["Communication Tools", "Connection Tools", "Problem-Solving Tools", "Boundary Tools", "Growth Tools"],
+    "datasets": [
+      {
+        "data": [6, 6, 5, 6, 7],
+        "backgroundColor": ["#2980b9", "#27ae60", "#f39c12", "#e74c3c", "#8e44ad"]
+      }
+    ]
+  },
+  "options": {
+    "plugins": {
+      "title": {
+        "display": true,
+        "text": "Distribution of 49 PD Tools Across Five Categories"
+      }
+    }
+  }
+}
+```
+
+Growth tools form the largest category, reflecting the book's emphasis on building long-term capability and intrinsic motivation over short-term behavioral compliance.
+
 ---
 
 ## Connections
@@ -434,6 +492,51 @@ One of the most powerful frameworks in the book comes from Rudolf Dreikurs's ins
 
 > [!info] Key Insight
 > The parent's emotional reaction to the misbehavior is the diagnostic clue. If you feel annoyed, the child is seeking attention. If you feel challenged, it's about power. If you feel hurt, the child is seeking justice. If you feel helpless, the child feels inadequate. Matching the tool to the underlying need — not the surface behavior — is the art of Positive Discipline.
+
+```d3
+{
+  "type": "sankey",
+  "data": {
+    "nodes": [
+      {"id": "Attention"},
+      {"id": "Power"},
+      {"id": "Justice/Revenge"},
+      {"id": "Inadequacy"},
+      {"id": "Whining/Nagging"},
+      {"id": "Defiance"},
+      {"id": "Hurting Others"},
+      {"id": "Giving Up"},
+      {"id": "Annoyed"},
+      {"id": "Challenged"},
+      {"id": "Hurt"},
+      {"id": "Helpless"},
+      {"id": "Special Time"},
+      {"id": "Offer Choices"},
+      {"id": "Mirror Feelings"},
+      {"id": "Celebrate Steps"}
+    ],
+    "links": [
+      {"source": "Attention", "target": "Whining/Nagging", "value": 6},
+      {"source": "Power", "target": "Defiance", "value": 7},
+      {"source": "Justice/Revenge", "target": "Hurting Others", "value": 5},
+      {"source": "Inadequacy", "target": "Giving Up", "value": 4},
+      {"source": "Whining/Nagging", "target": "Annoyed", "value": 6},
+      {"source": "Defiance", "target": "Challenged", "value": 7},
+      {"source": "Hurting Others", "target": "Hurt", "value": 5},
+      {"source": "Giving Up", "target": "Helpless", "value": 4},
+      {"source": "Annoyed", "target": "Special Time", "value": 6},
+      {"source": "Challenged", "target": "Offer Choices", "value": 7},
+      {"source": "Hurt", "target": "Mirror Feelings", "value": 5},
+      {"source": "Helpless", "target": "Celebrate Steps", "value": 4}
+    ]
+  },
+  "options": {
+    "title": "Four Mistaken Goals: Belief → Behavior → Parent Feeling → Effective Tool"
+  }
+}
+```
+
+The parent's emotional reaction is the diagnostic key — what you feel reveals what the child needs, and matching the tool to the underlying belief rather than the surface behavior is the art of Positive Discipline.
 
 ---
 
@@ -648,6 +751,30 @@ The typical configuration:
 The result: <b style="color: #e74c3c">children who can recite Quran but cannot make their own breakfast</b>. Children who pray five times a day but have never held a broom. Children who get perfect grades but crumble at the first real-world setback because they've never experienced natural consequences.
 
 The Paradoxical Dance creates a specific psychological profile in children: they learn that love is conditional on performance (religious and academic) but unconditional on material acquisition. They develop what Noha calls <b style="color: #2980b9">"Fragile Adult Syndrome"</b> — technically accomplished but practically helpless, emotionally underdeveloped, and unable to navigate the inevitable failures and ambiguities of adult life.
+
+```d3
+{
+  "type": "heatmap",
+  "data": {
+    "xLabels": ["Authoritarian", "Permissive", "Authoritative"],
+    "yLabels": ["Religion", "Academics", "Material", "Chores", "Emotions", "Screen Time"],
+    "values": [
+      [9, 1, 5],
+      [8, 2, 5],
+      [1, 9, 5],
+      [1, 9, 5],
+      [8, 2, 5],
+      [1, 9, 5]
+    ]
+  },
+  "options": {
+    "title": "The Paradoxical Dance — Parenting Style by Domain in Muslim Homes",
+    "colorRange": ["#eaf2f8", "#e74c3c"]
+  }
+}
+```
+
+The heatmap reveals the core asymmetry: authoritarian in religion, academics, and emotions; permissive in material, chores, and screens — while the authoritative column (the goal) remains consistently moderate across all domains.
 
 ### Breaking the Dance
 

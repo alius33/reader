@@ -70,6 +70,12 @@ The gap between aspiration and reality is where most people's power failures liv
 | **Leadership Industry Critique** | The $50B leadership development industry teaches aspiration, not reality |
 | **Performance-Power Disconnect** | Hard work is necessary but nowhere near sufficient for advancement |
 
+```chartjs
+{"type":"radar","data":{"labels":["Difficulty to Master","Career Impact","Social Risk","Immediate Payoff","Long-Term Compounding","Requires Others","Psychological Discomfort"],"datasets":[{"label":"Rule 1: Get Out of Your Own Way","data":[7,9,2,6,9,2,9],"borderColor":"#e74c3c","backgroundColor":"rgba(231,76,60,0.1)"},{"label":"Rule 3: Appear Powerful","data":[6,8,4,8,7,5,7],"borderColor":"#2980b9","backgroundColor":"rgba(41,128,185,0.1)"},{"label":"Rule 5: Network Relentlessly","data":[5,9,3,3,10,10,5],"borderColor":"#27ae60","backgroundColor":"rgba(39,174,96,0.1)"},{"label":"Rule 6: Use Your Power","data":[8,10,7,9,8,6,8],"borderColor":"#f39c12","backgroundColor":"rgba(243,156,18,0.1)"},{"label":"Rule 7: Success Excuses Everything","data":[4,10,9,10,6,3,6],"borderColor":"#8e44ad","backgroundColor":"rgba(142,68,173,0.1)"}]},"options":{"plugins":{"title":{"display":true,"text":"The Seven Rules: Multi-Dimensional Comparison"}},"scales":{"r":{"beginAtZero":true,"max":10}}}}
+```
+
+The radar reveals that networking (Rule 5) compounds most powerfully over time but offers the lowest immediate payoff, while Rule 7 carries the highest social risk — explaining why most people default to the safer, lower-impact rules.
+
 ---
 
 ## Introduction: Why the Leadership Industry Has Failed
@@ -211,6 +217,12 @@ The self-sabotage cycle is self-reinforcing — each time you avoid self-promoti
   - **Organisational rules** — formal policies that may or may not serve their stated purpose; some are outdated, some protect incumbents, some exist because no one has bothered to change them
   - **Social conventions** — unwritten norms about how to behave ("wait your turn," "don't go over your boss's head," "be modest about your achievements") that constrain your options without any formal authority behind them
 - <b style="color: #27ae60">The most powerful rule-breaking targets the third category: social conventions that limit your options without serving any legitimate purpose</b>
+
+```d3
+{"type":"treemap","data":{"name":"Pfeffer's Taxonomy of Rules","children":[{"name":"Legal & Ethical","children":[{"name":"Criminal law","value":25},{"name":"Safety regulations","value":20},{"name":"Fiduciary duties","value":18},{"name":"Anti-discrimination law","value":17}]},{"name":"Organisational","children":[{"name":"Budget approval chains","value":15},{"name":"Hiring freezes","value":12},{"name":"Code review mandates","value":10},{"name":"Meeting protocols","value":8}]},{"name":"Social Conventions","children":[{"name":"Wait your turn","value":20},{"name":"Don't go over your boss","value":18},{"name":"Stay in your lane","value":16},{"name":"Be modest","value":15},{"name":"Pay your dues","value":14}]}]},"options":{"title":"Pfeffer's Taxonomy of Rules: Where Strategic Rule-Breaking Lives","colorScale":["#e74c3c","#f39c12","#27ae60"]}}
+```
+
+The treemap reveals that social conventions (green) — the rules most people follow unquestioningly — are precisely the category Pfeffer targets for strategic breaking, while legal/ethical rules (red) remain inviolable boundaries.
 
 > [!example] The Rules That Hold You Back
 > - Pfeffer catalogues common "rules" that successful people routinely break:
@@ -769,6 +781,12 @@ This diagram illustrates the core asymmetry: identical behaviour, evaluated enti
 | **Confuses correlation with causation** | "This CEO was humble AND successful" does not mean humility causes success |
 | **Financially incentivised to feel good** | The industry's customers (corporate L&D departments) buy programmes that make leaders FEEL good, not programmes that produce measurable behaviour change |
 
+```chartjs
+{"type":"bar","data":{"labels":["Annual L&D Spending ($B)","Books Published (thousands)","TED Talks on Leadership","MBA Programmes","Employee Engagement Change (%)","Trust in Leaders Change (%)","Workplace Toxicity Change (%)","Measurable Behaviour Change (%)"],"datasets":[{"label":"Industry Investment & Activity","data":[50,12,4.5,8,0,0,0,0],"backgroundColor":"rgba(231,76,60,0.7)","borderColor":"#e74c3c","borderWidth":1},{"label":"Measurable Positive Impact","data":[0,0,0,0,2,-5,-3,4],"backgroundColor":"rgba(39,174,96,0.7)","borderColor":"#27ae60","borderWidth":1}]},"options":{"plugins":{"title":{"display":true,"text":"The Leadership Industry: Massive Investment, Negligible Impact"}},"scales":{"y":{"title":{"display":true,"text":"Scale (billions $ / thousands / %)"}}}}}
+```
+
+The bar chart starkly illustrates Pfeffer's core critique: the leadership industry invests enormously in activity (red bars) while producing near-zero measurable improvement in the outcomes that matter — engagement, trust, and actual behaviour change (green bars barely register).
+
 ---
 
 ### The Authenticity Problem
@@ -929,6 +947,12 @@ This shows the internal logic of the system: Rule 1 (removing internal barriers)
 - **Rule 6 is the activation phase** — this is where potential power becomes actual power through decisive action
 - **Rule 7 is the reinforcement phase** — success creates a halo that makes all previous rule-following easier and more effective
 - The system is self-reinforcing: success builds confidence (feeding Rule 1), which enables more assertive behaviour (Rules 2-6), which produces more success (Rule 7)
+
+```d3
+{"type":"force","data":{"nodes":[{"id":"r1","label":"Get Out of Your Own Way","group":1},{"id":"r2","label":"Break the Rules","group":1},{"id":"r3","label":"Appear Powerful","group":2},{"id":"r4","label":"Build a Brand","group":2},{"id":"r5","label":"Network Relentlessly","group":3},{"id":"r6","label":"Use Your Power","group":3},{"id":"r7","label":"Success Excuses Everything","group":4},{"id":"confidence","label":"Confidence","group":5},{"id":"visibility","label":"Visibility","group":5},{"id":"socialcapital","label":"Social Capital","group":5},{"id":"authority","label":"Authority","group":5}],"links":[{"source":"r1","target":"confidence","label":"enables"},{"source":"confidence","target":"r3","label":"fuels"},{"source":"r3","target":"visibility","label":"creates"},{"source":"r4","target":"visibility","label":"amplifies"},{"source":"visibility","target":"r5","label":"attracts"},{"source":"r5","target":"socialcapital","label":"builds"},{"source":"socialcapital","target":"r2","label":"permits"},{"source":"r2","target":"authority","label":"claims"},{"source":"r6","target":"authority","label":"exercises"},{"source":"authority","target":"r7","label":"produces outcomes"},{"source":"r7","target":"r1","label":"reinforces"},{"source":"socialcapital","target":"r6","label":"enables"}]},"options":{"title":"The Power Ecosystem: How the 7 Rules Interconnect Through Mediating Forces","chargeStrength":-300,"linkDistance":80}}
+```
+
+The force diagram reveals that the seven rules do not operate in isolation — they are connected through mediating forces (confidence, visibility, social capital, authority) that form a self-reinforcing ecosystem where progress on any rule strengthens the others.
 
 ### The Sequencing Problem
 

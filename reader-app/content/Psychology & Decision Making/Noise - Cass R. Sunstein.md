@@ -155,6 +155,33 @@ The shooting-target analogy captures this visually: bias is when all shots clust
   - They never verify this assumption
   - The assumption feels so obvious that testing it seems pointless
 
+```chartjs
+{
+  "type": "bar",
+  "data": {
+    "labels": ["Insurance Premiums", "Criminal Sentencing", "Asylum Decisions", "Patent Examination", "Bail Amounts", "Medical Diagnosis", "Performance Reviews"],
+    "datasets": [
+      {
+        "label": "Expected Variation (%)",
+        "data": [10, 12, 15, 10, 15, 10, 12],
+        "backgroundColor": "#3498db"
+      },
+      {
+        "label": "Actual Variation (%)",
+        "data": [55, 300, 1660, 200, 500, 45, 60],
+        "backgroundColor": "#e74c3c"
+      }
+    ]
+  },
+  "options": {
+    "plugins": { "title": { "display": true, "text": "The Noise Shock: Expected vs Actual Judgment Variation by Domain" } },
+    "scales": { "y": { "type": "logarithmic", "title": { "display": true, "text": "Variation % (log scale)" } } }
+  }
+}
+```
+
+The bar chart reveals the "noise shock" — in every domain studied, actual variation between professionals exceeded expectations by a factor of 4 to 100, with asylum decisions showing the most extreme gap between assumption and reality.
+
 > [!example] The Insurance Underwriters (The Book's Signature Study)
 > - A large insurance company asked 48 experienced underwriters to set premiums for five case files
 > - Before running the test, executives were asked to predict how much variation there would be
@@ -255,6 +282,29 @@ The shooting-target analogy captures this visually: bias is when all shots clust
   - The professional mistakes the absence of visible disagreement for the presence of consensus
   - <b style="color: #e74c3c">Confidence in singular decisions is systematically miscalibrated — professionals are more certain than the evidence warrants, precisely because they never see the evidence of their own variability</b>
 
+```mermaid
+mindmap
+  root((Why Noise Hides))
+    Singular Decisions
+      Each case judged once
+      No comparison possible
+      Feels definitive
+    Averaging Effect
+      Noise cancels in aggregates
+      Organization sees smooth averages
+      Scatter invisible from above
+    Confidence Illusion
+      No visible disagreement
+      Mistaken for consensus
+      Professionals self-certain
+    Feedback Gaps
+      Outcomes too sparse
+      Too delayed to calibrate
+      No error signal reaches judge
+```
+
+The mindmap captures the four reinforcing reasons noise remains invisible: decisions are singular, averaging masks scatter, professionals are overconfident, and feedback loops are broken — all of which make noise audits the only reliable detection method.
+
 ---
 
 ## Part II: Your Mind Is a Measuring Instrument
@@ -346,6 +396,24 @@ The decomposition matters because each component has different causes and differ
 - This is counterintuitive — people assume that the main problem is "some judges are too harsh"
 - The deeper problem is "different judges care about different things"
 - <b style="color: #27ae60">This means that calibrating judges to the same average harshness would only partially solve the noise problem — the pattern differences would remain</b>
+
+```chartjs
+{
+  "type": "doughnut",
+  "data": {
+    "labels": ["Level Noise (avg harshness)", "Stable Pattern Noise (personal values)", "Occasion Noise (day-to-day mood)"],
+    "datasets": [{
+      "data": [25, 45, 30],
+      "backgroundColor": ["#e74c3c", "#9b59b6", "#f39c12"]
+    }]
+  },
+  "options": {
+    "plugins": { "title": { "display": true, "text": "Decomposition of System Noise: Typical Professional Judgment" } }
+  }
+}
+```
+
+The doughnut chart reveals the counterintuitive finding: level noise (different average strictness) is only about a quarter of the total — pattern noise, where judges weight case features differently based on personal values, is nearly half, making it both the biggest contributor and the hardest to fix.
 - The decomposition has important policy implications:
   - If level noise dominates → calibration and training can help (align everyone to the same average)
   - If pattern noise dominates → structural change is needed (specify which factors should be weighted and how)
@@ -676,6 +744,29 @@ The expert has more knowledge than the model but applies it less consistently �
   - How much rigidity would rules introduce? (How often do edge cases arise?)
   - What is the cost of that rigidity? (What happens when the rule produces an absurd result?)
   - <b style="color: #27ae60">The answers to these questions determine where each domain should sit on the rules-judgment spectrum</b>
+
+```d3
+{
+  "type": "heatmap",
+  "data": {
+    "xLabels": ["Noise Level", "Bias Risk", "Flexibility", "Fairness", "Implementation Cost"],
+    "yLabels": ["Pure Rules", "Guided Judgment", "Algorithm + Override", "Pure Expert Judgment", "Crowd Aggregation"],
+    "values": [
+      [0, 8, 0, 7, 2],
+      [4, 4, 6, 7, 5],
+      [2, 3, 5, 8, 7],
+      [9, 3, 9, 3, 3],
+      [3, 5, 2, 6, 4]
+    ]
+  },
+  "options": {
+    "title": "Decision Architecture Tradeoffs: Five Approaches Across Five Dimensions",
+    "colorScheme": "redblue"
+  }
+}
+```
+
+The heatmap exposes the central tradeoff the authors illuminate: pure rules eliminate noise but sacrifice flexibility, pure judgment maximizes flexibility but introduces massive noise, and the structured middle approaches (guided judgment and algorithm + override) offer the best balance.
 - The authors also observe that real-world rule systems rarely stay "pure" for long:
   - When rules produce absurd outcomes, pressure builds to add exceptions — and each exception reintroduces a judgment call
   - Over time, rule systems tend to drift toward guided judgment as practitioners carve out exceptions for cases the original rules never anticipated

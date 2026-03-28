@@ -57,6 +57,49 @@ They met as guest speakers at the same event and realised their knowledge fit to
 
 ---
 
+```chartjs
+{
+  "type": "radar",
+  "data": {
+    "labels": ["Autonomy", "Competence", "Self-Regulation", "Motivation", "Resilience", "Decision-Making"],
+    "datasets": [
+      {
+        "label": "High Sense of Control",
+        "data": [9, 8, 8, 9, 8, 9],
+        "backgroundColor": "rgba(39, 174, 96, 0.2)",
+        "borderColor": "#27ae60",
+        "pointBackgroundColor": "#27ae60"
+      },
+      {
+        "label": "Low Sense of Control",
+        "data": [2, 3, 3, 2, 2, 3],
+        "backgroundColor": "rgba(231, 76, 60, 0.2)",
+        "borderColor": "#e74c3c",
+        "pointBackgroundColor": "#e74c3c"
+      }
+    ]
+  },
+  "options": {
+    "plugins": {
+      "title": {
+        "display": true,
+        "text": "Sense of Control Components"
+      }
+    },
+    "scales": {
+      "r": {
+        "beginAtZero": true,
+        "max": 10
+      }
+    }
+  }
+}
+```
+
+Children with a high sense of control score strongly across every dimension — autonomy, competence, self-regulation, motivation, resilience, and decision-making — while those with a low sense of control are depleted across the board, showing how this single variable acts as a master switch for child development.
+
+---
+
 ## 30-Second Version
 
 From 1960 to 2002, young people's internal locus of control has plummeted while anxiety and depression have skyrocketed — teens today are five to eight times more likely to show anxiety symptoms than during the Great Depression. The culprit isn't danger but *loss of agency*. When kids feel controlled — by parents, schools, schedules, or screens — their stress response goes haywire, flooding developing brains with cortisol that damages memory, judgment, and motivation. The fix is elegant: become a consultant rather than a manager, say "It's your call" as often as possible, build a home that is a safe base rather than a pressure cooker, and protect sleep, exercise, and downtime as non-negotiable. Children whose brains practise making decisions develop the prefrontal cortex strength to make good ones. Children whose brains practise being managed develop the habit of waiting to be told what to do.
@@ -132,6 +175,58 @@ Depression in adolescence leaves "scars" in the brain, requiring less and less s
 
 ### "I Love You Too Much to Fight with You About Your Homework"
 
+```chartjs
+{
+  "type": "bar",
+  "data": {
+    "labels": ["Child's Autonomy", "Intrinsic Motivation", "Relationship Quality", "Stress Levels", "Long-term Resilience", "Decision-Making Skills"],
+    "datasets": [
+      {
+        "label": "Authoritarian (Boss)",
+        "data": [2, 2, 3, 8, 3, 2],
+        "backgroundColor": "rgba(231, 76, 60, 0.7)",
+        "borderColor": "#e74c3c",
+        "borderWidth": 1
+      },
+      {
+        "label": "Laissez-faire (Bystander)",
+        "data": [7, 4, 4, 5, 4, 5],
+        "backgroundColor": "rgba(243, 156, 18, 0.7)",
+        "borderColor": "#f39c12",
+        "borderWidth": 1
+      },
+      {
+        "label": "Consultant",
+        "data": [9, 9, 9, 3, 9, 8],
+        "backgroundColor": "rgba(39, 174, 96, 0.7)",
+        "borderColor": "#27ae60",
+        "borderWidth": 1
+      }
+    ]
+  },
+  "options": {
+    "plugins": {
+      "title": {
+        "display": true,
+        "text": "Consultant vs Manager vs Authoritarian Parent: Impact on Child Outcomes"
+      }
+    },
+    "scales": {
+      "y": {
+        "beginAtZero": true,
+        "max": 10,
+        "title": {
+          "display": true,
+          "text": "Score (1-10)"
+        }
+      }
+    }
+  }
+}
+```
+
+The consultant model outperforms both alternatives across every positive dimension while producing the lowest stress — note that stress is the only measure where a high score is negative, and the authoritarian style generates nearly three times the stress of the consultant approach.
+
 Fifteen-year-old Jonah hated homework. What he hated even more was his parents' constant hectoring. When asked to walk Bill through a typical evening, Jonah said: "We usually eat dinner between six and six thirty. And then I can watch TV from six thirty to seven. Then from seven to eight thirty, I pretend to do my homework."
 
 An hour and a half *pretending* to do homework. Why didn't he just do it? Because his parents' refrains — "You only get one shot at getting into a good college," "You'll thank us when you're older," "You're gonna have to learn to do things you don't want to do" — all communicated one message: *We know what's right for you, and you don't.* The only way Jonah felt he could assert his identity was by *not* doing homework.
@@ -162,6 +257,49 @@ graph LR
         C2 -->|"Owns decisions<br/>and consequences"| O2["Outcome:<br/>Agency, competence,<br/>internal motivation"]
     end
 ```
+
+```d3
+{
+  "type": "sankey",
+  "data": {
+    "nodes": [
+      "Helicopter Parent",
+      "Authoritarian Parent",
+      "Consultant Parent",
+      "Low Sense of Control",
+      "Moderate Sense of Control",
+      "High Sense of Control",
+      "Anxiety & Depression",
+      "Learned Helplessness",
+      "Intrinsic Motivation",
+      "Academic Resilience",
+      "Strong Mental Health",
+      "Healthy Relationships"
+    ],
+    "links": [
+      {"source": 0, "target": 3, "value": 8},
+      {"source": 1, "target": 3, "value": 7},
+      {"source": 1, "target": 4, "value": 3},
+      {"source": 0, "target": 4, "value": 2},
+      {"source": 2, "target": 5, "value": 9},
+      {"source": 2, "target": 4, "value": 1},
+      {"source": 3, "target": 6, "value": 8},
+      {"source": 3, "target": 7, "value": 7},
+      {"source": 4, "target": 8, "value": 3},
+      {"source": 4, "target": 9, "value": 2},
+      {"source": 5, "target": 8, "value": 4},
+      {"source": 5, "target": 9, "value": 3},
+      {"source": 5, "target": 10, "value": 5},
+      {"source": 5, "target": 11, "value": 4}
+    ]
+  },
+  "options": {
+    "title": "Parenting Style → Sense of Control → Life Outcomes"
+  }
+}
+```
+
+The flow reveals a clear pattern: helicopter and authoritarian parenting funnel children toward a low sense of control — which feeds anxiety, depression, and helplessness — while the consultant model channels children toward a high sense of control that branches into motivation, resilience, mental health, and healthy relationships.
 
 ### The Homework Wars
 
@@ -235,6 +373,31 @@ graph TD
 ```
 
 Even young children show surprising capability. Bill started advising parents to bring kids into the decision about repeating a grade. Kids as young as six made choices at least as good as adults would have, and often came up with solutions neither parent had considered: "I'm not ready for second grade, and if kids tease me about repeating I'll just ignore them."
+
+```d3
+{
+  "type": "heatmap",
+  "data": {
+    "xLabels": ["Toddler (2-3)", "Early Child (4-7)", "Middle Child (8-12)", "Adolescent (13-17)", "Young Adult (18+)"],
+    "yLabels": ["Homework", "Sleep Schedule", "Social Activities", "Extracurriculars", "Screen Time", "Clothing Choices", "Diet & Meals"],
+    "values": [
+      [0, 1, 4, 8, 10],
+      [0, 2, 5, 8, 10],
+      [0, 1, 5, 9, 10],
+      [0, 2, 6, 9, 10],
+      [1, 2, 5, 7, 10],
+      [3, 5, 8, 10, 10],
+      [2, 4, 6, 8, 10]
+    ]
+  },
+  "options": {
+    "title": "Age-Appropriate Autonomy Levels Across Domains",
+    "colorScale": ["#e74c3c", "#f39c12", "#f1c40f", "#2ecc71", "#27ae60"]
+  }
+}
+```
+
+The heatmap shows a developmental gradient — from red (parent-directed) to green (child-directed) — with autonomy increasing gradually across all domains as children mature, while low-stakes decisions like clothing shift to child-control much earlier than higher-stakes ones like homework and sleep.
 
 ---
 

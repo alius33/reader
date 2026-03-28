@@ -75,6 +75,39 @@ This diagram captures Newport's core thesis: the collision of increasing value a
 
 ---
 
+```d3
+{
+  "type": "treemap",
+  "data": {
+    "name": "Deep Work",
+    "children": [
+      {
+        "name": "Part 1: The Idea",
+        "children": [
+          { "name": "Valuable", "value": 30 },
+          { "name": "Rare", "value": 25 },
+          { "name": "Meaningful", "value": 25 }
+        ]
+      },
+      {
+        "name": "Part 2: The Rules",
+        "children": [
+          { "name": "Work Deeply", "value": 35 },
+          { "name": "Embrace Boredom", "value": 20 },
+          { "name": "Quit Social Media", "value": 20 },
+          { "name": "Drain the Shallows", "value": 25 }
+        ]
+      }
+    ]
+  },
+  "options": {
+    "title": "Deep Work — Book Structure by Content Weight"
+  }
+}
+```
+
+Newport's book splits into two halves of roughly equal weight: Part 1 builds the case for why deep work matters (valuable, rare, meaningful), while Part 2's four rules provide the practical system for achieving it — with "Work Deeply" receiving the most detailed treatment.
+
 ## Part 1: The Idea — Why Deep Work Matters
 
 *Newport spends the first half of the book building an airtight case that deep work is simultaneously the most valuable and most neglected skill in the modern economy. Part 1 contains three chapters: deep work is valuable, deep work is rare, and deep work is meaningful. Together they form an argument that is economic, sociological, and philosophical.*
@@ -351,6 +384,64 @@ Newport identifies four distinct approaches to scheduling deep work. Each suits 
 | **Journalistic** | Fit deep work wherever you can into a busy, unpredictable schedule | Experienced practitioners who can switch into deep work mode quickly | Requires significant practice; not suitable for beginners |
 
 <b style="color: #2980b9">The four philosophies form a spectrum from most to least isolation</b> — the monastic philosophy requires near-total withdrawal from the world, while the journalistic philosophy requires none. Most people will find the rhythmic or bimodal philosophy most practical.
+
+```chartjs
+{
+  "type": "radar",
+  "data": {
+    "labels": ["Isolation", "Flexibility", "Consistency", "Intensity", "Accessibility"],
+    "datasets": [
+      {
+        "label": "Monastic",
+        "data": [10, 2, 9, 10, 1],
+        "backgroundColor": "rgba(41, 128, 185, 0.15)",
+        "borderColor": "#2980b9",
+        "pointBackgroundColor": "#2980b9"
+      },
+      {
+        "label": "Bimodal",
+        "data": [7, 6, 5, 8, 5],
+        "backgroundColor": "rgba(39, 174, 96, 0.15)",
+        "borderColor": "#27ae60",
+        "pointBackgroundColor": "#27ae60"
+      },
+      {
+        "label": "Rhythmic",
+        "data": [4, 4, 10, 5, 7],
+        "backgroundColor": "rgba(243, 156, 18, 0.15)",
+        "borderColor": "#f39c12",
+        "pointBackgroundColor": "#f39c12"
+      },
+      {
+        "label": "Journalistic",
+        "data": [2, 10, 3, 6, 9],
+        "backgroundColor": "rgba(231, 76, 60, 0.15)",
+        "borderColor": "#e74c3c",
+        "pointBackgroundColor": "#e74c3c"
+      }
+    ]
+  },
+  "options": {
+    "plugins": {
+      "title": {
+        "display": true,
+        "text": "The Four Deep Work Philosophies Compared"
+      }
+    },
+    "scales": {
+      "r": {
+        "beginAtZero": true,
+        "max": 10,
+        "ticks": {
+          "stepSize": 2
+        }
+      }
+    }
+  }
+}
+```
+
+The monastic philosophy maximises isolation and intensity at the cost of all accessibility, while the journalistic approach inverts this trade-off entirely — the rhythmic philosophy offers the most balanced profile for most knowledge workers.
 
 ---
 
@@ -766,6 +857,25 @@ This decision tree forces an honest cost-benefit analysis on every tool rather t
 
 The training-time heuristic reveals that most of the tasks consuming your day could be done by someone with minimal training — which means they are not the tasks that make you valuable.
 
+```mermaid
+quadrantChart
+    title Activities by Cognitive Depth vs Organisational Visibility
+    x-axis Low Visibility --> High Visibility
+    y-axis Shallow --> Deep
+    Writing a research paper: [0.25, 0.95]
+    Developing business strategy: [0.55, 0.90]
+    Learning new programming language: [0.15, 0.85]
+    Creating original design: [0.40, 0.80]
+    Preparing a presentation: [0.70, 0.55]
+    Leading a team meeting: [0.85, 0.35]
+    Answering routine email: [0.65, 0.10]
+    Attending status meetings: [0.80, 0.15]
+    Filling out expense reports: [0.30, 0.05]
+    Scheduling appointments: [0.50, 0.08]
+```
+
+The quadrant reveals Newport's central paradox: the deepest, most valuable work tends to be the least visible to the organisation, while the shallowest work dominates organisational attention — creating a systematic bias against depth.
+
 > [!tip] Core Insight
 > The depth test is uncomfortable because it forces you to confront how much of your day is spent on tasks that anyone could do. For many knowledge workers, the answer is 60-80% — which means they are spending the vast majority of their time on work that does not require their unique skills, training, or expertise.
 
@@ -909,6 +1019,50 @@ Newport's responses share a common structure: most objections assume the current
   - He batches all email, administrative tasks, and student meetings into the afternoon
   - He stops working at 5:30pm and does not check email until the next morning
   - This schedule produces a research output that is two to three times higher than the departmental average
+
+```chartjs
+{
+  "type": "bar",
+  "data": {
+    "labels": ["Deep Work", "Shallow Work", "Meetings", "Email & Slack", "Breaks & Lunch", "Commute"],
+    "datasets": [
+      {
+        "label": "Typical Knowledge Worker (hours)",
+        "data": [1.5, 2.5, 2.0, 2.5, 1.0, 1.0],
+        "backgroundColor": "rgba(231, 76, 60, 0.7)",
+        "borderColor": "#e74c3c",
+        "borderWidth": 1
+      },
+      {
+        "label": "Deep Worker — Rhythmic (hours)",
+        "data": [6.0, 1.0, 0.5, 1.0, 1.0, 1.0],
+        "backgroundColor": "rgba(39, 174, 96, 0.7)",
+        "borderColor": "#27ae60",
+        "borderWidth": 1
+      }
+    ]
+  },
+  "options": {
+    "plugins": {
+      "title": {
+        "display": true,
+        "text": "Daily Time Allocation: Typical vs Deep Worker"
+      }
+    },
+    "scales": {
+      "y": {
+        "beginAtZero": true,
+        "title": {
+          "display": true,
+          "text": "Hours"
+        }
+      }
+    }
+  }
+}
+```
+
+The deep worker achieves four times more concentrated work (6 hours vs 1.5) by compressing shallow obligations into tight batches — the total workday length is similar, but the composition is radically different.
 
 > [!tip] Core Insight
 > The difference between a productive day and an unproductive day is rarely the number of hours worked — it is the number of hours spent in uninterrupted deep concentration. Restructuring your day to protect even three or four hours of deep work can double or triple your most valuable output.

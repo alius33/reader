@@ -101,6 +101,50 @@ The four **bonus traits** appear in roughly half of spirited children:
 8. **First Reaction** — Any new idea, thing, place, or person is met with an immediate, vehement "NO!" They need time to warm up before participating
 9. **Mood** — The world is serious. They find flaws and suggest improvements. If they scored three goals, they'll fixate on the one they missed
 
+```chartjs
+{
+  "type": "radar",
+  "data": {
+    "labels": ["Intensity", "Persistence", "Sensitivity", "Perceptiveness", "Adaptability", "Regularity", "Energy", "First Reaction", "Mood"],
+    "datasets": [
+      {
+        "label": "Spirited Child",
+        "data": [9, 8.5, 9, 8, 8.5, 7, 8, 7.5, 7],
+        "backgroundColor": "rgba(231, 76, 60, 0.2)",
+        "borderColor": "#e74c3c",
+        "borderWidth": 2,
+        "pointBackgroundColor": "#e74c3c"
+      },
+      {
+        "label": "Typical Child",
+        "data": [5, 4, 4.5, 5, 4, 5.5, 5, 4.5, 5],
+        "backgroundColor": "rgba(41, 128, 185, 0.2)",
+        "borderColor": "#2980b9",
+        "borderWidth": 2,
+        "pointBackgroundColor": "#2980b9"
+      }
+    ]
+  },
+  "options": {
+    "plugins": {
+      "title": {
+        "display": true,
+        "text": "Spirited vs. Typical Child: Temperament Profile Comparison"
+      }
+    },
+    "scales": {
+      "r": {
+        "min": 0,
+        "max": 10,
+        "ticks": { "stepSize": 2 }
+      }
+    }
+  }
+}
+```
+
+The spirited child's temperament profile consistently exceeds the typical range across all nine dimensions — they aren't different in kind, just dramatically "more" in degree, especially on the five core traits of intensity, persistence, sensitivity, perceptiveness, and adaptability.
+
 > [!info] The Credo for Parents of Spirited Children
 > 1. **You're not alone** — 15–20% of children fit this description
 > 2. **You did not make your child spirited** — there is a genetic factor
@@ -265,6 +309,71 @@ The **"Pits of Fire" story** illustrates balanced control beautifully. When scho
 
 The deeper lesson: no consequences, threats, or declarations of forbidden behaviour had been uttered. Instead there was a conversation — one in which both adults' and children's perspectives were addressed. The children had a voice and an opportunity to practice limit setting, problem solving, decision making, and negotiation with an adult guide. Did it take time? Yes. But by having that conversation the children now appreciate the importance of respect, understand why limits exist, know how to determine where a limit should be, and — most important — have enough information to make that value their own.
 
+```d3
+{
+  "type": "treemap",
+  "data": {
+    "name": "Spirited Child Strategies",
+    "children": [
+      {
+        "name": "POWER Framework",
+        "value": 30,
+        "children": [
+          { "name": "Predict Reactions", "value": 8 },
+          { "name": "Organise Settings", "value": 8 },
+          { "name": "Work Together", "value": 7 },
+          { "name": "Enjoy Rewards", "value": 7 }
+        ]
+      },
+      {
+        "name": "Emotion Coaching",
+        "value": 25,
+        "children": [
+          { "name": "Notice Emotion", "value": 6 },
+          { "name": "Validate & Label", "value": 7 },
+          { "name": "Red/Yellow/Green Zones", "value": 7 },
+          { "name": "Set Limits + Solve", "value": 5 }
+        ]
+      },
+      {
+        "name": "Reframing Labels",
+        "value": 18,
+        "children": [
+          { "name": "Stubborn → Persistent", "value": 5 },
+          { "name": "Wild → Energetic", "value": 4 },
+          { "name": "Picky → Selective", "value": 4 },
+          { "name": "Explosive → Passionate", "value": 5 }
+        ]
+      },
+      {
+        "name": "Transparent Limits",
+        "value": 15,
+        "children": [
+          { "name": "State Expectation", "value": 5 },
+          { "name": "State Consequence", "value": 5 },
+          { "name": "Follow Through", "value": 5 }
+        ]
+      },
+      {
+        "name": "Energy Management",
+        "value": 12,
+        "children": [
+          { "name": "Calming Basket", "value": 4 },
+          { "name": "Heavy Work", "value": 4 },
+          { "name": "Quiet Spaces", "value": 4 }
+        ]
+      }
+    ]
+  },
+  "options": {
+    "title": "Key Strategies for Spirited Children — Weighted by Impact",
+    "colorScheme": "Set2"
+  }
+}
+```
+
+The POWER framework and emotion coaching together form the bulk of Kurcinka's practical toolkit — with reframing labels as the essential mindset shift that makes all other strategies possible.
+
 Balanced control allows persistent children to work with us without breaking their spirit. And during the teen years, it will be what keeps your spirited adolescent working with you rather than against you.
 
 ### Persistence + You: The Confidence Question
@@ -356,6 +465,48 @@ Each fuel source requires a different response:
 - **Sensitivity** → Reduce stimulation. Check the emotional climate. Believe their sensory reports
 - **Perceptiveness** → Get close, make eye contact, keep messages short. Vary your delivery method
 - **Slow adaptability** → Forewarn, establish routine, allow time, provide closure
+
+```chartjs
+{
+  "type": "polarArea",
+  "data": {
+    "labels": ["Intensity", "Persistence", "Sensitivity", "Perceptiveness", "Adaptability", "Regularity", "Energy", "First Reaction", "Mood"],
+    "datasets": [
+      {
+        "label": "Challenge Frequency in Spirited Children",
+        "data": [9.5, 8.5, 9, 7.5, 8, 5.5, 6.5, 6, 5],
+        "backgroundColor": [
+          "rgba(231, 76, 60, 0.6)",
+          "rgba(41, 128, 185, 0.6)",
+          "rgba(142, 68, 173, 0.6)",
+          "rgba(230, 126, 34, 0.6)",
+          "rgba(39, 174, 96, 0.6)",
+          "rgba(243, 156, 18, 0.6)",
+          "rgba(52, 152, 219, 0.6)",
+          "rgba(155, 89, 182, 0.6)",
+          "rgba(149, 165, 166, 0.6)"
+        ]
+      }
+    ]
+  },
+  "options": {
+    "plugins": {
+      "title": {
+        "display": true,
+        "text": "Temperament Dimensions: How Often Each Trait Drives Daily Challenges"
+      }
+    },
+    "scales": {
+      "r": {
+        "min": 0,
+        "max": 10
+      }
+    }
+  }
+}
+```
+
+Intensity, sensitivity, and adaptability are the three traits that most frequently fuel daily conflict — they appear in nearly all spirited children and have the broadest impact on family life, sleep, meals, and transitions.
 
 When you match your strategy to the fuel source, you stop fighting your child and start guiding them. The difference is transformational.
 
@@ -575,6 +726,58 @@ Every five minutes invested in prevention saves fifteen minutes of turmoil. This
 - Five minutes of your own self-care before you hit your limit
 
 The maths is simple: spend thirty minutes preventing meltdowns or spend ninety minutes recovering from them. Prevention always wins.
+
+```d3
+{
+  "type": "force",
+  "data": {
+    "nodes": [
+      { "id": "Intensity", "group": "trait" },
+      { "id": "Persistence", "group": "trait" },
+      { "id": "Sensitivity", "group": "trait" },
+      { "id": "Perceptiveness", "group": "trait" },
+      { "id": "Adaptability", "group": "trait" },
+      { "id": "Deep Breathing", "group": "strategy" },
+      { "id": "Humor", "group": "strategy" },
+      { "id": "Offer Choices", "group": "strategy" },
+      { "id": "Forewarn", "group": "strategy" },
+      { "id": "Reduce Stimulation", "group": "strategy" },
+      { "id": "Eye Contact", "group": "strategy" },
+      { "id": "Heavy Work", "group": "strategy" },
+      { "id": "Visual Plans", "group": "strategy" },
+      { "id": "Calming Basket", "group": "strategy" },
+      { "id": "Allow Closure", "group": "strategy" }
+    ],
+    "links": [
+      { "source": "Intensity", "target": "Deep Breathing", "value": 3 },
+      { "source": "Intensity", "target": "Humor", "value": 2 },
+      { "source": "Intensity", "target": "Heavy Work", "value": 2 },
+      { "source": "Intensity", "target": "Calming Basket", "value": 2 },
+      { "source": "Persistence", "target": "Offer Choices", "value": 3 },
+      { "source": "Persistence", "target": "Allow Closure", "value": 2 },
+      { "source": "Sensitivity", "target": "Reduce Stimulation", "value": 3 },
+      { "source": "Sensitivity", "target": "Calming Basket", "value": 2 },
+      { "source": "Sensitivity", "target": "Heavy Work", "value": 2 },
+      { "source": "Perceptiveness", "target": "Eye Contact", "value": 3 },
+      { "source": "Perceptiveness", "target": "Visual Plans", "value": 2 },
+      { "source": "Adaptability", "target": "Forewarn", "value": 3 },
+      { "source": "Adaptability", "target": "Visual Plans", "value": 2 },
+      { "source": "Adaptability", "target": "Allow Closure", "value": 2 }
+    ]
+  },
+  "options": {
+    "title": "Temperament Traits → Coping Strategies: Which Tools Match Which Fuel Source",
+    "width": 700,
+    "height": 500,
+    "nodeColors": {
+      "trait": "#e74c3c",
+      "strategy": "#27ae60"
+    }
+  }
+}
+```
+
+Each temperament trait (red) connects to the coping strategies (green) that most effectively address it — calming baskets and heavy work serve multiple traits, while some strategies like forewarning are highly specific to slow adaptability.
 
 ---
 

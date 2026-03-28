@@ -79,6 +79,48 @@ The left cycle shows how most entrepreneurs operate — react, fail, firefight, 
 | **Guardrails and Tollbooths** | Risk management structures that prevent catastrophic mistakes |
 | **The Knowing-Doing Gap** | Knowing what to do and actually doing it are separated by a canyon |
 
+```chartjs
+{
+  "type": "radar",
+  "data": {
+    "labels": ["Revenue Focus", "Margin Optimization", "Capital Velocity", "Operational Leverage"],
+    "datasets": [
+      {
+        "label": "Typical Business",
+        "data": [9, 3, 2, 2],
+        "backgroundColor": "rgba(231, 76, 60, 0.2)",
+        "borderColor": "#e74c3c",
+        "pointBackgroundColor": "#e74c3c"
+      },
+      {
+        "label": "Optimized Business",
+        "data": [7, 8, 7, 8],
+        "backgroundColor": "rgba(39, 174, 96, 0.2)",
+        "borderColor": "#27ae60",
+        "pointBackgroundColor": "#27ae60"
+      }
+    ]
+  },
+  "options": {
+    "plugins": {
+      "title": {
+        "display": true,
+        "text": "The Four Drivers of Business Value — Typical vs. Optimized"
+      }
+    },
+    "scales": {
+      "r": {
+        "beginAtZero": true,
+        "max": 10,
+        "ticks": { "stepSize": 2 }
+      }
+    }
+  }
+}
+```
+
+Most businesses over-index on revenue while neglecting the three drivers that actually determine value — margin, velocity, and leverage — which is precisely what Cunningham means by "revenue is vanity."
+
 ---
 
 ## Part 1: The Case for Thinking
@@ -156,6 +198,28 @@ The left cycle shows how most entrepreneurs operate — react, fail, firefight, 
   - A single session can surface an insight worth thousands or millions of dollars
   - The cost is 30-60 minutes of time you were going to waste on email anyway
   - Cunningham treats this like compound interest: small investments in thinking produce outsized returns over time
+
+```mermaid
+timeline
+    title Anatomy of a Thinking Time Session
+    0-5 min : Question Selection
+            : Write one specific question
+            : No vague topics allowed
+    5-15 min : Surface Thinking
+             : Obvious answers emerge
+             : Resist the urge to stop here
+    15-30 min : Deep Wrestling
+              : Discomfort peaks
+              : Second-order effects surface
+    30-45 min : Breakthrough Zone
+              : Non-obvious insights appear
+              : Connections between ideas form
+    45-60 min : Actionable Conclusions
+              : Distill 2-3 next steps
+              : Review and commit to action
+```
+
+The breakthroughs consistently arrive in the 30-45 minute window — which is precisely when most people would have quit, confirming Cunningham's point that the discipline to stay in the chair past discomfort is what separates productive thinking from casual daydreaming.
 
 > [!example] The $50,000 Thinking Session
 > - During one Thinking Time session, Cunningham was wrestling with the question: "Where am I leaving money on the table?"
@@ -352,6 +416,34 @@ flowchart TD
 ```
 
 This diagram shows how revenue transforms into cash through a series of deductions and adjustments — each layer tells a different truth about business health, and most owners never look past the top line.
+
+```chartjs
+{
+  "type": "doughnut",
+  "data": {
+    "labels": ["Revenue Chasing", "Operations", "Firefighting", "Strategic Thinking", "Margin Analysis"],
+    "datasets": [{
+      "data": [40, 30, 20, 5, 5],
+      "backgroundColor": ["#e74c3c", "#f39c12", "#e67e22", "#27ae60", "#2980b9"],
+      "borderColor": "#ffffff",
+      "borderWidth": 2
+    }]
+  },
+  "options": {
+    "plugins": {
+      "title": {
+        "display": true,
+        "text": "Typical Business Owner Time Allocation"
+      },
+      "legend": {
+        "position": "right"
+      }
+    }
+  }
+}
+```
+
+The combined 10% devoted to strategic thinking and margin analysis explains why most businesses grow revenue while profits stagnate — owners spend 90% of their time on activity and only 10% on the thinking that determines whether that activity creates value.
 
 ---
 
@@ -845,6 +937,29 @@ This decision tree captures Cunningham's approach to growth — always check the
 | **Opportunity cost** | What am I giving up? | Resource allocation, new initiatives |
 | **Base rates** | What usually happens? | Market entry, hiring expectations |
 | **Asymmetric risk** | What is the downside vs. upside? | Investment decisions, partnerships |
+
+```d3
+{
+  "type": "treemap",
+  "data": {
+    "name": "Cunningham's Mental Models",
+    "children": [
+      { "name": "Second-Order Thinking", "value": 10, "category": "Consequence Analysis" },
+      { "name": "Inversion", "value": 9, "category": "Risk Prevention" },
+      { "name": "Opportunity Cost", "value": 8, "category": "Resource Allocation" },
+      { "name": "Base Rates", "value": 7, "category": "Reality Check" },
+      { "name": "Asymmetric Risk", "value": 9, "category": "Decision Architecture" }
+    ]
+  },
+  "options": {
+    "title": "Mental Models for Business Owners — Sized by Business Impact",
+    "width": 650,
+    "height": 350
+  }
+}
+```
+
+Second-order thinking and asymmetric risk analysis produce the largest impact because they prevent the two costliest categories of dumb tax — unintended consequences and catastrophic downside exposure.
 
 > [!example] The Price Cut That Backfired
 > - A retail business was losing market share and decided to cut prices by 20%

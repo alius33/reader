@@ -79,6 +79,12 @@ The three pillars are mutually reinforcing — better execution feeds visibility
 | **The Extra Team** | People who do not report to you but contribute to your outcomes |
 | **Fearlessness Over Confidence** | The cycle breaks only through willingness to act before you feel ready |
 
+```chartjs
+{"type":"radar","data":{"labels":["Ruthless Priorities","Right Level Work","Energy Management","Delegation","Credibility","Visibility","Personal Brand","Stakeholder Mgmt","Mentors","Extra Team","Getting on the List"],"datasets":[{"label":"Workhorse Profile","data":[4,3,2,3,2,2,2,2,3,2,1],"borderColor":"#e74c3c","backgroundColor":"rgba(231,76,60,0.1)"},{"label":"Balanced Leader","data":[8,8,7,8,8,8,7,8,8,7,8],"borderColor":"#27ae60","backgroundColor":"rgba(39,174,96,0.1)"}]},"options":{"plugins":{"title":{"display":true,"text":"DO-LOOK-CONNECT Diagnostic — Workhorse vs Balanced Leader"}},"scales":{"r":{"beginAtZero":true,"max":10}}}}
+```
+
+The workhorse profile reveals catastrophic underinvestment in LOOK and CONNECT pillars — particularly visibility, stakeholder management, and getting on the list — which explains why the hardest-working professionals are often the least promoted.
+
 ---
 
 ## Part I: DO Better — Ruthless Priorities and the Right Level of Work
@@ -360,6 +366,12 @@ Azzarello maps three levels:
 | **Manager** | Team outcomes and delegation | Getting work done through others |
 | **Executive** | Strategy, network leverage, capability-building | Building the machines that get work done through others |
 
+```d3
+{"type":"treemap","data":{"name":"Value Source","children":[{"name":"IC: Personal Expertise","value":20},{"name":"IC: Personal Output","value":15},{"name":"Manager: Team Outcomes","value":20},{"name":"Manager: Delegation","value":15},{"name":"Exec: Strategy","value":15},{"name":"Exec: Network Leverage","value":15}]},"options":{"title":"Level Dilemma — Where Value Comes From at Each Career Stage"}}
+```
+
+The shift from personal output (IC level) to network leverage (executive level) is the most difficult transition in any career — it requires abandoning the very behaviours that earned the promotion.
+
 The transition from each level to the next requires *abandoning* the behaviours that made you successful at the previous level:
 
 - The brilliant engineer who becomes a manager and still writes all the code is not demonstrating dedication — they are failing to do the new job
@@ -421,6 +433,12 @@ The mathematics of delegation:
 > 6. **Let the delegate define their own measures and milestones** — people are more committed to plans they create
 > 7. **Inspect and measure regularly** — delegation is not abandonment; check in, review, course-correct
 > 8. **Always be teaching** — explain why the work matters, share context, debrief afterward
+
+```d3
+{"type":"heatmap","data":{"xLabels":["Fear of Quality Loss","Identity Attachment","Guilt About Loading","Time to Train","Trust Deficit"],"yLabels":["New Manager","Experienced Manager","Executive"],"values":[[9,8,7,8,6],[5,6,4,4,5],[3,4,2,2,7]]},"options":{"title":"Delegation Barriers — Intensity by Management Level"}}
+```
+
+New managers face the highest barriers to delegation — particularly fear of quality loss and identity attachment to the work they used to do personally — which is exactly why the transition from IC to manager is where most workhorse traps are set.
 
 The critical distinction she draws:
 
@@ -503,6 +521,12 @@ The nuance she introduces:
 |-------------------|-------------|-----------------|
 | **High** | Fewer questions, faster approvals, better resources, benefit of the doubt | Results come easier, which builds more credibility |
 | **Low** | Endless defence, blocked budgets, invisible contributions | Results come harder, which further erodes credibility |
+
+```chartjs
+{"type":"bar","data":{"labels":["Getting Budget","Faster Approvals","Benefit of Doubt","Team Attraction","Stretch Assignments"],"datasets":[{"label":"High Credibility","data":[9,9,8,8,9],"backgroundColor":"#27ae60"},{"label":"Low Credibility","data":[2,2,2,3,2],"backgroundColor":"#e74c3c"}]},"options":{"plugins":{"title":{"display":true,"text":"Credibility as Infrastructure — Impact on Five Key Career Outcomes"}},"scales":{"y":{"beginAtZero":true,"max":10}}}}
+```
+
+High credibility creates a self-reinforcing flywheel — faster approvals lead to faster results, which build more credibility, while low credibility traps professionals in a vicious cycle where every initiative requires exhausting justification.
 
 The mechanism is self-reinforcing:
 

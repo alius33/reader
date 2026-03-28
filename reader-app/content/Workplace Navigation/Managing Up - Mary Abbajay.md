@@ -237,6 +237,72 @@ Abbajay's workstyle model uses two axes — task versus people focus, and fast v
 
 Each type has a communication channel it responds to and a channel that repels it. Understanding which channel your boss listens on is the core skill of managing up.
 
+```chartjs
+{
+  "type": "radar",
+  "data": {
+    "labels": ["Task Focus", "People Focus", "Pace (Fast)", "Detail Orientation", "Risk Tolerance", "Need for Control"],
+    "datasets": [
+      {
+        "label": "Advancer",
+        "data": [95, 20, 90, 40, 85, 80],
+        "borderColor": "#e74c3c",
+        "backgroundColor": "rgba(231, 76, 60, 0.15)"
+      },
+      {
+        "label": "Energizer",
+        "data": [30, 90, 95, 15, 80, 25],
+        "borderColor": "#f39c12",
+        "backgroundColor": "rgba(243, 156, 18, 0.15)"
+      },
+      {
+        "label": "Harmonizer",
+        "data": [25, 95, 20, 50, 15, 30],
+        "borderColor": "#27ae60",
+        "backgroundColor": "rgba(39, 174, 96, 0.15)"
+      },
+      {
+        "label": "Evaluator",
+        "data": [90, 25, 15, 95, 10, 70],
+        "borderColor": "#2980b9",
+        "backgroundColor": "rgba(41, 128, 185, 0.15)"
+      }
+    ]
+  },
+  "options": {
+    "plugins": { "title": { "display": true, "text": "Four Workstyle Personalities — Behavioural Radar" } },
+    "scales": { "r": { "min": 0, "max": 100, "ticks": { "stepSize": 25 } } }
+  }
+}
+```
+
+The radar reveals why Advancers and Evaluators clash with Energizers and Harmonizers — their profiles are near-mirror images across nearly every dimension.
+
+```d3
+{
+  "type": "treemap",
+  "data": [
+    { "name": "Advancer", "category": "Task-Focused", "value": 25, "color": "#e74c3c" },
+    { "name": "Evaluator", "category": "Task-Focused", "value": 25, "color": "#2980b9" },
+    { "name": "Energizer", "category": "People-Focused", "value": 25, "color": "#f39c12" },
+    { "name": "Harmonizer", "category": "People-Focused", "value": 25, "color": "#27ae60" },
+    { "name": "Micromanager", "category": "Difficult", "value": 18, "color": "#8e44ad" },
+    { "name": "Ghost Boss", "category": "Difficult", "value": 12, "color": "#95a5a6" },
+    { "name": "Narcissist", "category": "Difficult", "value": 15, "color": "#c0392b" },
+    { "name": "Impulsive", "category": "Difficult", "value": 10, "color": "#d35400" },
+    { "name": "Pushover", "category": "Difficult", "value": 10, "color": "#1abc9c" },
+    { "name": "Workaholic", "category": "Difficult", "value": 10, "color": "#34495e" }
+  ],
+  "options": {
+    "title": "Boss Taxonomy — Workstyles & Difficult Archetypes",
+    "width": 700,
+    "height": 400
+  }
+}
+```
+
+The treemap maps Abbajay's full boss taxonomy: four foundational workstyle types plus the most common difficult archetypes that emerge when those styles go to extremes.
+
 ---
 
 ### Chapter 3: The Advancer
@@ -455,6 +521,40 @@ The Evaluator's blind spot is **speed**:
 
 Most bosses are a combination of one dominant and one secondary style:
 
+```d3
+{
+  "type": "heatmap",
+  "data": [
+    { "source": "Advancer", "target": "Results & Brevity", "value": 95 },
+    { "source": "Advancer", "target": "Warmth & Loyalty", "value": 15 },
+    { "source": "Advancer", "target": "Data & Precision", "value": 55 },
+    { "source": "Advancer", "target": "Energy & Vision", "value": 30 },
+    { "source": "Energizer", "target": "Results & Brevity", "value": 25 },
+    { "source": "Energizer", "target": "Warmth & Loyalty", "value": 60 },
+    { "source": "Energizer", "target": "Data & Precision", "value": 10 },
+    { "source": "Energizer", "target": "Energy & Vision", "value": 95 },
+    { "source": "Harmonizer", "target": "Results & Brevity", "value": 15 },
+    { "source": "Harmonizer", "target": "Warmth & Loyalty", "value": 95 },
+    { "source": "Harmonizer", "target": "Data & Precision", "value": 25 },
+    { "source": "Harmonizer", "target": "Energy & Vision", "value": 40 },
+    { "source": "Evaluator", "target": "Results & Brevity", "value": 50 },
+    { "source": "Evaluator", "target": "Warmth & Loyalty", "value": 15 },
+    { "source": "Evaluator", "target": "Data & Precision", "value": 95 },
+    { "source": "Evaluator", "target": "Energy & Vision", "value": 10 }
+  ],
+  "options": {
+    "title": "Platinum Rule Matrix — Communication Currency Receptivity",
+    "xLabel": "Communication Currency",
+    "yLabel": "Boss Workstyle",
+    "width": 650,
+    "height": 350,
+    "colorScheme": "greens"
+  }
+}
+```
+
+The heatmap reveals the critical mismatch zones: an Energizer communicating with data (10%) or an Evaluator receiving enthusiasm (10%) — these near-zero receptivity pairings explain why technically correct messages delivered in the wrong style produce zero influence.
+
 - The framework is a heuristic, not a horoscope — Abbajay is clear about this
 - Use it to guide your adaptation, not to slot people into rigid boxes
 - Pay attention to which style emerges under stress (usually the dominant one, amplified) and which emerges in relaxed settings (usually the secondary one)
@@ -497,6 +597,31 @@ flowchart LR
 ```
 
 The <b style="color: #2980b9">Continuum of Difficulty</b> shows that boss relationships range from Dream Boss to Nightmare Boss, with most sitting in the middle where adaptation is both possible and worthwhile. The book is designed for the middle — not the extremes.
+
+```chartjs
+{
+  "type": "bar",
+  "data": {
+    "labels": ["Micromanager", "Ghost Boss", "Impulsive Boss", "Pushover", "BFF Boss", "Workaholic", "Incompetent Boss", "Narcissist", "Truly Terrible"],
+    "datasets": [{
+      "label": "Difficulty to Manage (higher = harder)",
+      "data": [45, 40, 55, 50, 35, 50, 60, 85, 100],
+      "backgroundColor": ["#27ae60", "#2ecc71", "#f1c40f", "#f39c12", "#3498db", "#e67e22", "#e74c3c", "#c0392b", "#8e44ad"]
+    }, {
+      "label": "Adaptation Possible (%)",
+      "data": [85, 75, 70, 65, 80, 60, 55, 20, 5],
+      "backgroundColor": "rgba(41, 128, 185, 0.4)"
+    }]
+  },
+  "options": {
+    "indexAxis": "y",
+    "plugins": { "title": { "display": true, "text": "Difficult Boss Archetypes — Difficulty vs. Adaptation Potential" } },
+    "scales": { "x": { "max": 100 } }
+  }
+}
+```
+
+The inverse relationship is stark: as difficulty increases, the probability that adaptation will work drops sharply — the Narcissist and Truly Terrible boss sit in a zone where exit, not adaptation, becomes the rational strategy.
 
 ---
 
@@ -981,6 +1106,24 @@ The cycle is self-reinforcing:
 - This gives you more autonomy, which allows you to deliver better work, which builds more trust
 - Over months and years, the compounding effect is enormous
 - The people who build the strongest boss relationships are not the most talented — they are the most consistent
+
+```chartjs
+{
+  "type": "doughnut",
+  "data": {
+    "labels": ["Diagnose Boss", "Anticipate Needs", "Communicate Proactively", "Deliver Consistently", "Adapt Continuously"],
+    "datasets": [{
+      "data": [20, 20, 25, 20, 15],
+      "backgroundColor": ["#2980b9", "#3498db", "#27ae60", "#2ecc71", "#1abc9c"]
+    }]
+  },
+  "options": {
+    "plugins": { "title": { "display": true, "text": "Trust-Building Cycle — Time Investment Distribution" } }
+  }
+}
+```
+
+Communication gets the largest share because it is the mechanism through which all other trust-building activities become visible to the boss — without proactive communication, even excellent diagnosis and consistent delivery remain invisible.
 
 The cycle also works in reverse:
 

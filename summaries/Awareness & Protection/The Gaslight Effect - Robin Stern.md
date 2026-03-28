@@ -290,6 +290,24 @@ The psychological symptoms of Stage 3:
 > [!tip] Where Are You?
 > Stern encourages readers to locate themselves on this continuum. The stage determines the strategy: Stage 1 requires awareness and boundary-setting. Stage 2 requires opting out of the argument. Stage 3 requires professional support and a complete reconstruction of self-trust.
 
+```chartjs
+{
+  "type": "radar",
+  "data": {
+    "labels": ["Self-Trust", "Reality Testing", "Independence", "Emotional Stability", "Social Connection", "Decision Confidence"],
+    "datasets": [
+      {"label": "Stage 1: Disbelief", "data": [7, 6, 7, 6, 7, 6], "borderColor": "#f39c12", "backgroundColor": "rgba(243,156,18,0.1)"},
+      {"label": "Stage 2: Defence", "data": [4, 4, 4, 4, 4, 3], "borderColor": "#e67e22", "backgroundColor": "rgba(230,126,34,0.1)"},
+      {"label": "Stage 3: Depression", "data": [1, 1, 1, 2, 1, 1], "borderColor": "#e74c3c", "backgroundColor": "rgba(231,76,60,0.1)"},
+      {"label": "Post-Recovery", "data": [8, 8, 9, 7, 8, 8], "borderColor": "#27ae60", "backgroundColor": "rgba(39,174,96,0.1)"}
+    ]
+  },
+  "options": {"plugins": {"title": {"display": true, "text": "Gaslighting Stages: Progressive Erosion of Self-Trust"}}, "scales": {"r": {"beginAtZero": true, "max": 10}}}
+}
+```
+
+*The radar reveals gaslighting's progressive destruction — each stage uniformly erodes self-trust, reality testing, and independence, while recovery restores them to levels often exceeding the pre-gaslighting baseline.*
+
 ---
 
 ## Part II: The Gaslight Tango
@@ -320,6 +338,12 @@ The psychological symptoms of Stage 3:
 | "You always overreact" | Suppressing your emotions to prove you do not | Teaches you to perform emotional numbness to satisfy the gaslighter |
 | "I was just joking" | Doubting whether you misread the situation | Reframes legitimate hurt as humour failure — now you are the problem |
 | "You're imagining things" | Questioning your own perception | The foundation of the entire gaslighting dynamic |
+
+```d3
+{"type":"heatmap","data":{"xLabels":["Reality Distortion","Memory Manipulation","Isolation","Identity Erosion","Blame Reversal","Trivializing"],"yLabels":["Stage 1: Disbelief","Stage 2: Defence","Stage 3: Depression"],"values":[[6,5,3,3,5,7],[8,8,6,6,8,8],[9,9,9,9,9,5]]},"options":{"title":"Gaslighting Tactics by Stage: Escalation Pattern (1-10 Intensity)"}}
+```
+
+*The heatmap shows how gaslighters escalate their tactical arsenal — early stages rely on trivializing and reality distortion, while Stage 3 deploys maximum intensity across all dimensions.*
 
 ---
 
@@ -698,6 +722,19 @@ The power of these statements lies in what they do NOT do:
 - They simply state your reality and close the conversation
 - <b style="color: #27ae60">An opt-out statement is not the beginning of a negotiation — it is the end of one</b>
 
+```chartjs
+{
+  "type": "doughnut",
+  "data": {
+    "labels": ["Stop Explaining", "Trust Your Feelings", "Opt-Out Statements", "Build Support Network", "Flight Attendant Self", "Power-With Relationships"],
+    "datasets": [{"data": [20, 20, 15, 15, 15, 15], "backgroundColor": ["#e74c3c", "#f39c12", "#3498db", "#27ae60", "#9b59b6", "#1abc9c"]}]
+  },
+  "options": {"plugins": {"title": {"display": true, "text": "Stern's Recovery Framework: Six Components of Turning Off the Gas"}}}
+}
+```
+
+*The two most critical recovery actions — stopping the explanation trap and trusting your own feelings — together account for 40% of the work because they directly break the Gaslight Tango.*
+
 > [!example] The First Time She Opted Out
 > - A patient named Jennifer had been arguing with her husband for years about his contradictions
 > - In therapy, Stern coached her to try a simple opt-out: "I see it differently. I'm going to go for a walk."
@@ -974,6 +1011,12 @@ flowchart TD
 ```
 
 This map shows the four pillars of the book: understanding the stages, recognising the dynamic, identifying the gaslighter type, and executing recovery.
+
+```d3
+{"type":"sankey","data":{"nodes":[{"id":"Gaslighter Initiates"},{"id":"Reality Distortion"},{"id":"Explanation Trap"},{"id":"Urge to Merge"},{"id":"Self-Trust Erosion"},{"id":"Stage 1: Disbelief"},{"id":"Stage 2: Defence"},{"id":"Stage 3: Depression"},{"id":"Recognition"},{"id":"Opt Out of Tango"},{"id":"Recovery"}],"links":[{"source":"Gaslighter Initiates","target":"Reality Distortion","value":30},{"source":"Reality Distortion","target":"Explanation Trap","value":25},{"source":"Explanation Trap","target":"Urge to Merge","value":20},{"source":"Urge to Merge","target":"Self-Trust Erosion","value":20},{"source":"Self-Trust Erosion","target":"Stage 1: Disbelief","value":20},{"source":"Stage 1: Disbelief","target":"Stage 2: Defence","value":18},{"source":"Stage 2: Defence","target":"Stage 3: Depression","value":15},{"source":"Stage 1: Disbelief","target":"Recognition","value":10},{"source":"Stage 2: Defence","target":"Recognition","value":8},{"source":"Stage 3: Depression","target":"Recognition","value":5},{"source":"Recognition","target":"Opt Out of Tango","value":23},{"source":"Opt Out of Tango","target":"Recovery","value":23}]},"options":{"title":"The Gaslighting Pipeline: From Initiation to Recovery"}}
+```
+
+*The sankey shows how gaslighting flows through the explanation trap and urge to merge into progressive stage erosion — and how recognition at any stage can redirect the flow toward recovery.*
 
 ---
 

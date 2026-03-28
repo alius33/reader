@@ -283,6 +283,27 @@ This vicious cycle shows how age expectations become self-fulfilling: the belief
 
 These three pathways reinforce each other — psychological withdrawal leads to behavioural changes, which produce physiological effects, which confirm the psychological belief.
 
+```chartjs
+{
+  "type": "bar",
+  "data": {
+    "labels": ["Positive Age Beliefs", "Regular Exercise", "Healthy Weight", "Not Smoking", "Low Cholesterol", "Low Blood Pressure"],
+    "datasets": [{
+      "label": "Additional Years of Life",
+      "data": [7.5, 3, 3, 5, 2.5, 2],
+      "backgroundColor": ["#2980b9", "#27ae60", "#27ae60", "#27ae60", "#27ae60", "#27ae60"]
+    }]
+  },
+  "options": {
+    "plugins": { "title": { "display": true, "text": "Becca Levy's Longevity Gap: Age Beliefs vs Traditional Health Factors" } },
+    "scales": { "y": { "title": { "display": true, "text": "Years of Additional Life" } } },
+    "indexAxis": "y"
+  }
+}
+```
+
+The 7.5-year longevity gap from positive age beliefs exceeds the gains from exercise, healthy weight, and even not smoking — making belief about ageing the single largest modifiable factor in how long you live.
+
 ---
 
 ## Chapter 3: Tormented by Thin Air
@@ -1071,6 +1092,62 @@ The expectation effect is not a single phenomenon — it is the result of three 
 | Food | "This is diet food" | "This is satisfying" | Ghrelin and satiety signalling |
 
 The prediction machine is domain-general — the same mechanism that creates placebo effects in medicine creates performance effects in education and longevity effects in ageing.
+
+```chartjs
+{
+  "type": "radar",
+  "data": {
+    "labels": ["Health/Placebo", "Pain Modulation", "Ageing/Longevity", "Stress Response", "Willpower", "Intelligence", "Exercise", "Food/Metabolism"],
+    "datasets": [
+      {
+        "label": "Negative Expectation Impact",
+        "data": [75, 80, 85, 90, 70, 65, 60, 55],
+        "backgroundColor": "rgba(231, 76, 60, 0.15)",
+        "borderColor": "#e74c3c",
+        "pointBackgroundColor": "#e74c3c"
+      },
+      {
+        "label": "Positive Expectation Impact",
+        "data": [70, 75, 80, 85, 65, 60, 55, 50],
+        "backgroundColor": "rgba(39, 174, 96, 0.15)",
+        "borderColor": "#27ae60",
+        "pointBackgroundColor": "#27ae60"
+      }
+    ]
+  },
+  "options": {
+    "plugins": { "title": { "display": true, "text": "The Prediction Machine Across All Domains" } },
+    "scales": { "r": { "min": 0, "max": 100, "ticks": { "stepSize": 20 } } }
+  }
+}
+```
+
+The expectation effect operates with roughly equal power across all eight domains Robson covers — with stress and ageing showing the largest measurable effects on biological outcomes.
+
+```d3
+{
+  "type": "sankey",
+  "data": [
+    { "source": "Cultural Narratives", "target": "Age Beliefs", "value": 8 },
+    { "source": "Cultural Narratives", "target": "Stress Beliefs", "value": 7 },
+    { "source": "Cultural Narratives", "target": "Willpower Beliefs", "value": 6 },
+    { "source": "Medical Framing", "target": "Placebo Response", "value": 9 },
+    { "source": "Medical Framing", "target": "Nocebo Response", "value": 8 },
+    { "source": "Social Transmission", "target": "Stereotype Threat", "value": 7 },
+    { "source": "Social Transmission", "target": "Pygmalion Effect", "value": 8 },
+    { "source": "Age Beliefs", "target": "Longevity (+/- 7.5 years)", "value": 8 },
+    { "source": "Stress Beliefs", "target": "Cardiovascular Profile", "value": 7 },
+    { "source": "Willpower Beliefs", "target": "Ego Depletion", "value": 6 },
+    { "source": "Placebo Response", "target": "Real Biochemical Change", "value": 9 },
+    { "source": "Nocebo Response", "target": "Real Physical Symptoms", "value": 8 },
+    { "source": "Stereotype Threat", "target": "Measurable Performance Drop", "value": 7 },
+    { "source": "Pygmalion Effect", "target": "IQ Gains (15-27 pts)", "value": 8 }
+  ],
+  "options": { "title": "How Expectations Flow from Source to Biological Outcome" }
+}
+```
+
+The three sources of expectation — cultural narratives, medical framing, and social transmission — flow through specific belief channels into measurable biological outcomes, from 7.5 years of longevity to 15-27 IQ points.
 
 > [!tip] Core Insight
 > You don't need to become a relentless optimist. You need to become aware of the predictions your brain is running — and ask whether those predictions are serving you or sabotaging you.

@@ -81,6 +81,12 @@ The core contrast of the book: systems-oriented managers build compounding advan
 | **Work the Policy, Not the Exceptions** | Granting exceptions undermines fairness; collect them as test cases and batch-update the policy |
 | **Killing Hero Culture** | Hero programmers are symptoms of broken systems, not signs of healthy talent |
 
+```d3
+{"type":"treemap","data":{"name":"Larson's Management Toolkit","children":[{"name":"Organisations","children":[{"name":"Four Team States","value":30},{"name":"Team Sizing","value":20},{"name":"Consolidate Investment","value":18},{"name":"Reorgs","value":12},{"name":"Succession Planning","value":10}]},{"name":"Tools","children":[{"name":"Stocks & Flows","value":28},{"name":"Strategy","value":25},{"name":"Vision","value":22},{"name":"Metrics-Driven Change","value":20},{"name":"Migrations","value":18}]},{"name":"Approaches","children":[{"name":"Work the Policy","value":15},{"name":"Close/Solve/Delegate","value":14},{"name":"Model-Document-Share","value":13},{"name":"Saying No","value":12}]},{"name":"Culture","children":[{"name":"Kill Hero Culture","value":16},{"name":"First-Team Mindset","value":14},{"name":"Inclusion","value":12},{"name":"Company Freedoms","value":10}]},{"name":"Careers","children":[{"name":"Career Narratives","value":15},{"name":"Scope over Headcount","value":14},{"name":"Hiring Funnels","value":12},{"name":"Performance Mgmt","value":10}]}]},"options":{"title":"Larson's Management Toolkit: Five Domains of Engineering Leadership","colorScale":["#27ae60","#2980b9","#f39c12","#e74c3c","#8e44ad"]}}
+```
+
+The treemap reveals that Larson's toolkit is weighted toward structural and systems-level interventions (Organisations + Tools) rather than interpersonal approaches — reflecting his conviction that feelings are downstream of systems.
+
 ---
 
 ## Organisations
@@ -101,6 +107,12 @@ The core contrast of the book: systems-oriented managers build compounding advan
 | **Treading Water** | Handles urgent work, no bandwidth for improvement | Consolidate effort, limit WIP |
 | **Repaying Debt** | Capacity to address accumulated debt | Add time, shield from stakeholders |
 | **Innovating** | Slack exists, creative high-value output | Maintain slack, ensure visibility |
+
+```chartjs
+{"type":"radar","data":{"labels":["Morale","Capacity","Innovation Output","Debt Level","Predictability","Retention Risk"],"datasets":[{"label":"Falling Behind","data":[2,1,1,9,2,9],"borderColor":"#e74c3c","backgroundColor":"rgba(231,76,60,0.1)"},{"label":"Treading Water","data":[4,4,2,7,5,6],"borderColor":"#f39c12","backgroundColor":"rgba(243,156,18,0.1)"},{"label":"Repaying Debt","data":[6,6,4,4,7,4],"borderColor":"#3498db","backgroundColor":"rgba(52,152,219,0.1)"},{"label":"Innovating","data":[9,8,9,2,8,2],"borderColor":"#27ae60","backgroundColor":"rgba(39,174,96,0.1)"}]},"options":{"plugins":{"title":{"display":true,"text":"The Four Team States: Diagnostic Profile Comparison"}},"scales":{"r":{"beginAtZero":true,"max":10}}}}
+```
+
+The radar shows that "Falling Behind" and "Innovating" are mirror images — high debt and retention risk versus high morale and innovation — confirming that each state demands its own specific structural intervention rather than a one-size-fits-all management approach.
 
 The four states form a progression that teams move through when the correct intervention is applied at each stage.
 
@@ -248,6 +260,12 @@ Larson also addresses the question of **managers of managers**:
 - More than six makes it impossible to maintain meaningful relationships with the team leads
 - The ideal is enough teams to see patterns across them, but few enough to invest in each one individually
 
+```chartjs
+{"type":"doughnut","data":{"labels":["1-2 (Fragile — single departure destabilises)","3-4 (Undersized — limited redundancy)","5 (Minimum viable — functional but tight)","6-8 (Sweet spot — optimal for hands-on mgmt)","9-12 (Manageable — needs strong tech leads)","13+ (Overloaded — manager becomes bottleneck)"],"datasets":[{"data":[5,10,12,45,20,8],"backgroundColor":["#e74c3c","#e67e22","#f1c40f","#27ae60","#3498db","#9b59b6"],"borderWidth":2}]},"options":{"plugins":{"title":{"display":true,"text":"Team Sizing Distribution: Where Teams Actually Land vs Larson's Sweet Spot"},"legend":{"position":"right"}}}}
+```
+
+The doughnut shows that Larson's sweet spot of 6-8 engineers (green) represents the ideal that only about 45% of teams achieve — while a combined 15% sit in the fragile zone below 4, where a single departure can cascade into structural failure.
+
 ---
 
 ### Protecting Gelled Teams
@@ -355,6 +373,12 @@ Larson's reorg checklist:
 ## Tools
 
 *The Tools chapter is the book's longest and densest section, covering the mental models and practical instruments that Larson considers essential for engineering management.*
+
+```d3
+{"type":"force","data":{"nodes":[{"id":"stocks","label":"Stocks & Flows","group":1},{"id":"strategy","label":"Strategy","group":1},{"id":"vision","label":"Vision","group":1},{"id":"metrics","label":"Metrics-Driven Change","group":2},{"id":"migrations","label":"Migrations","group":2},{"id":"controls","label":"Controls & Alignment","group":2},{"id":"fourstates","label":"Four Team States","group":3},{"id":"sizing","label":"Team Sizing","group":3},{"id":"consolidate","label":"Consolidate Investment","group":3},{"id":"model","label":"Model-Document-Share","group":4},{"id":"careers","label":"Career Narratives","group":4}],"links":[{"source":"stocks","target":"fourstates","label":"diagnoses"},{"source":"stocks","target":"metrics","label":"drives"},{"source":"fourstates","target":"consolidate","label":"informs"},{"source":"consolidate","target":"sizing","label":"constrains"},{"source":"strategy","target":"vision","label":"feeds into"},{"source":"vision","target":"controls","label":"calibrates"},{"source":"metrics","target":"migrations","label":"identifies need"},{"source":"migrations","target":"model","label":"adoption via"},{"source":"controls","target":"metrics","label":"monitors"},{"source":"sizing","target":"careers","label":"shapes scope"},{"source":"strategy","target":"fourstates","label":"diagnoses"},{"source":"model","target":"controls","label":"negotiates"}]},"options":{"title":"The Elegant Puzzle: How Larson's Key Concepts Interconnect","chargeStrength":-250,"linkDistance":90}}
+```
+
+The force diagram reveals that Stocks & Flows sits at the centre of Larson's intellectual system — it connects to team diagnosis, metrics, and strategy, making it the foundational mental model from which all other tools derive their analytical power.
 
 ### Systems Thinking: Stocks and Flows
 

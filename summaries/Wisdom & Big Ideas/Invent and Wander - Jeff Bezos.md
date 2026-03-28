@@ -53,6 +53,38 @@ Jeff Bezos founded Amazon in 1994 after leaving a hedge fund job at D.E. Shaw, d
 | **Six-page memos** | Narrative documents replace PowerPoint to force clarity of thinking |
 | **Work-life harmony** | A flywheel, not a balance — energy in one domain fuels the other |
 
+```chartjs
+{
+  "type": "bar",
+  "data": {
+    "labels": ["1997", "1999", "2004", "2009", "2014", "2018", "2019"],
+    "datasets": [{
+      "label": "Amazon Annual Revenue ($B)",
+      "data": [0.148, 1.6, 7.0, 24.0, 89.0, 233.0, 280.0],
+      "backgroundColor": ["#2980b9", "#2980b9", "#2980b9", "#27ae60", "#27ae60", "#27ae60", "#e67e22"],
+      "borderColor": "#1a5276",
+      "borderWidth": 1
+    }]
+  },
+  "options": {
+    "plugins": {
+      "title": {
+        "display": true,
+        "text": "Amazon Revenue Growth: From Garage to Global Giant"
+      }
+    },
+    "scales": {
+      "y": {
+        "title": { "display": true, "text": "Revenue ($ Billions)" },
+        "beginAtZero": true
+      }
+    }
+  }
+}
+```
+
+The exponential curve illustrates why Bezos attached the 1997 letter to every subsequent year — the same principles that guided a $148M company compounded into a $280B empire, vindicating his relentless focus on long-term thinking over quarterly earnings.
+
 ---
 
 ## Walter Isaacson's Introduction
@@ -390,6 +422,50 @@ flowchart TD
 
 Each of Amazon's three pillars started as a small, controversial experiment. By 2018, third-party Marketplace sales were growing at 52% compound annually vs Amazon's own 25%.
 
+```d3
+{
+  "type": "treemap",
+  "data": {
+    "name": "Amazon's Three Pillars",
+    "children": [
+      {
+        "name": "Marketplace",
+        "children": [
+          { "name": "Third-Party\nSellers (58%)", "value": 40 },
+          { "name": "Fulfillment\nby Amazon", "value": 25 },
+          { "name": "Seller\nAnalytics", "value": 10 },
+          { "name": "First-Party\nRetail", "value": 30 }
+        ]
+      },
+      {
+        "name": "Prime",
+        "children": [
+          { "name": "Two-Day\nShipping", "value": 35 },
+          { "name": "Prime\nVideo", "value": 20 },
+          { "name": "Prime\nMusic", "value": 10 },
+          { "name": "Prime\nReading", "value": 8 }
+        ]
+      },
+      {
+        "name": "AWS",
+        "children": [
+          { "name": "Compute\n(EC2)", "value": 30 },
+          { "name": "Storage\n(S3)", "value": 20 },
+          { "name": "Machine\nLearning", "value": 15 },
+          { "name": "1,400+\nServices", "value": 25 }
+        ]
+      }
+    ]
+  },
+  "options": {
+    "title": "Amazon's Three Pillars and Their Components",
+    "colorScheme": "blues"
+  }
+}
+```
+
+The treemap reveals how each pillar is itself a platform of sub-businesses — Marketplace alone contains both first-party retail and the third-party ecosystem that overtook it, while AWS's 1,400+ services dwarf what most people imagine "cloud computing" to mean.
+
 ---
 
 > [!example] Marketplace's Rocky Origin (1999-2001)
@@ -434,6 +510,44 @@ Four defenses against Day 2:
 - Make most decisions with 70% of the information you wish you had
 - "Disagree and commit" saves enormous time
 - Escalate true misalignment immediately — "'You've worn me down' is an awful decision-making process"
+
+```d3
+{
+  "type": "force",
+  "data": {
+    "nodes": [
+      { "id": "Day 1 Survival", "group": 1 },
+      { "id": "Customer Obsession", "group": 2 },
+      { "id": "Resist Proxies", "group": 2 },
+      { "id": "Embrace Trends", "group": 2 },
+      { "id": "High-Velocity Decisions", "group": 2 },
+      { "id": "Type 1/Type 2 Sorting", "group": 3 },
+      { "id": "Disagree & Commit", "group": 3 },
+      { "id": "70% Information Rule", "group": 3 },
+      { "id": "Wandering", "group": 3 },
+      { "id": "Long-Term Thinking", "group": 3 }
+    ],
+    "links": [
+      { "source": "Day 1 Survival", "target": "Customer Obsession", "value": 5 },
+      { "source": "Day 1 Survival", "target": "Resist Proxies", "value": 4 },
+      { "source": "Day 1 Survival", "target": "Embrace Trends", "value": 4 },
+      { "source": "Day 1 Survival", "target": "High-Velocity Decisions", "value": 5 },
+      { "source": "Customer Obsession", "target": "Wandering", "value": 3 },
+      { "source": "Customer Obsession", "target": "Long-Term Thinking", "value": 4 },
+      { "source": "High-Velocity Decisions", "target": "Type 1/Type 2 Sorting", "value": 4 },
+      { "source": "High-Velocity Decisions", "target": "Disagree & Commit", "value": 4 },
+      { "source": "High-Velocity Decisions", "target": "70% Information Rule", "value": 3 },
+      { "source": "Resist Proxies", "target": "Customer Obsession", "value": 3 },
+      { "source": "Embrace Trends", "target": "Wandering", "value": 3 }
+    ]
+  },
+  "options": {
+    "title": "Day 1 Defense Network: How Bezos's Principles Interconnect"
+  }
+}
+```
+
+The force-directed layout shows that Bezos's four Day 2 defenses are not independent strategies but a densely connected network — Customer Obsession feeds into Wandering and Long-Term Thinking, while High-Velocity Decisions depend on proper Type 1/Type 2 sorting and the courage to disagree and commit.
 
 ---
 
@@ -481,6 +595,48 @@ Four defenses against Day 2:
 - Bezos draws a parallel between memos and the handstand: in both cases, people underestimate the required effort
 - The skill of writing a great memo can be distributed across a team — "The football coach doesn't need to be able to throw, and a film director doesn't need to be able to act"
 - What matters is that someone on the team can recognise the standard and coach realistic scope for everyone else
+
+```chartjs
+{
+  "type": "radar",
+  "data": {
+    "labels": ["Teachability", "Domain-Specificity", "Recognition (know good)", "Scope Understanding", "Fun Factor", "Recruiting Power"],
+    "datasets": [
+      {
+        "label": "Bezos's High Standards Framework",
+        "data": [9, 8, 7, 10, 7, 9],
+        "backgroundColor": "rgba(41, 128, 185, 0.2)",
+        "borderColor": "#2980b9",
+        "pointBackgroundColor": "#2980b9"
+      },
+      {
+        "label": "Common Misconceptions",
+        "data": [3, 3, 8, 2, 2, 4],
+        "backgroundColor": "rgba(231, 76, 60, 0.15)",
+        "borderColor": "#e74c3c",
+        "pointBackgroundColor": "#e74c3c"
+      }
+    ]
+  },
+  "options": {
+    "plugins": {
+      "title": {
+        "display": true,
+        "text": "Bezos's High Standards: Framework vs Common Misconceptions"
+      }
+    },
+    "scales": {
+      "r": {
+        "min": 0,
+        "max": 10,
+        "ticks": { "stepSize": 2 }
+      }
+    }
+  }
+}
+```
+
+The biggest gap between Bezos's framework (blue) and common misconceptions (red) is on Scope Understanding — most people believe high standards are about innate talent or recognition, but Bezos insists the bottleneck is almost always an unrealistic expectation of how hard excellence actually is.
 
 ---
 

@@ -329,6 +329,25 @@ The four variables of the leverage equation feed into your overall leverage posi
 | **Foolish reactions to change** | Open resistance to new leadership or direction | Fighting the leverage equation |
 
 - These four causes share a common mechanism:
+
+```chartjs
+{
+  "type": "polarArea",
+  "data": {
+    "labels": ["Uncontrolled Emotion", "Victim Mentality", "Self-Centred Goals", "Foolish Reactions to Change"],
+    "datasets": [{
+      "data": [35, 25, 20, 20],
+      "backgroundColor": ["rgba(231, 76, 60, 0.7)", "rgba(142, 68, 173, 0.7)", "rgba(243, 156, 18, 0.7)", "rgba(41, 128, 185, 0.7)"]
+    }]
+  },
+  "options": {
+    "plugins": { "title": { "display": true, "text": "Four Causes of Political Suicide — Relative Frequency" } }
+  }
+}
+```
+
+Uncontrolled emotion dominates because it is the most visible and most immediate — a single outburst creates damage that the other three causes take weeks or months to accumulate.
+
   - In every case, the person substitutes emotional satisfaction for strategic effectiveness
   - The angry outburst feels righteous in the moment
   - The victim narrative feels validating
@@ -553,6 +572,46 @@ The triad is sequential: you must first see your behaviour clearly, then restrai
 | **Level 3** | The decision | Engineering an exit — paper trail, restricted opportunities, waiting for restructuring | By the time you see it, recovery is almost impossible |
 
 - <b style="color: #e74c3c">Recovery from Level 3 is almost impossible</b> — the only realistic option is structural change: a new manager, a new team, or a new organisation
+
+```chartjs
+{
+  "type": "line",
+  "data": {
+    "labels": ["Month 1", "Month 3", "Month 6", "Month 9", "Tipping Point", "Month 15", "Month 18"],
+    "datasets": [
+      {
+        "label": "Manager's Patience",
+        "data": [90, 70, 50, 30, 15, 8, 5],
+        "borderColor": "#e74c3c",
+        "fill": false,
+        "tension": 0.3
+      },
+      {
+        "label": "Recovery Probability (%)",
+        "data": [95, 85, 65, 40, 20, 5, 2],
+        "borderColor": "#2980b9",
+        "fill": false,
+        "tension": 0.3
+      },
+      {
+        "label": "Employee Awareness",
+        "data": [10, 15, 20, 25, 40, 80, 95],
+        "borderColor": "#27ae60",
+        "borderDash": [5, 5],
+        "fill": false,
+        "tension": 0.3
+      }
+    ]
+  },
+  "options": {
+    "plugins": { "title": { "display": true, "text": "The Tipping Point — Three Trajectories Over Time" } },
+    "scales": { "y": { "min": 0, "max": 100, "title": { "display": true, "text": "%" } } }
+  }
+}
+```
+
+The tragic timing gap is visible: employee awareness only spikes after the tipping point has already been crossed — by the time you notice the increased scrutiny, the manager's patience has already collapsed to near-zero and recovery probability has dropped below 20%.
+
 - The critical window is Level 2 — this is when behavioural change can still reverse the trajectory
 - Warning signs of Level 2:
   - Increased frequency of written feedback (building a file)
@@ -612,6 +671,32 @@ The triad is sequential: you must first see your behaviour clearly, then restrai
 | **Sponsor** | Committed backer | Puts their own reputation on the line for your advancement |
 
 - <b style="color: #27ae60">The progression from ally to advocate to sponsor is the most important relationship-building investment a person can make</b>
+
+```d3
+{
+  "type": "sankey",
+  "data": [
+    { "source": "Your Contribution", "target": "Ally", "value": 40 },
+    { "source": "Your Contribution", "target": "Advocate", "value": 30 },
+    { "source": "Org Needs Alignment", "target": "Advocate", "value": 25 },
+    { "source": "Org Needs Alignment", "target": "Sponsor", "value": 20 },
+    { "source": "Low Replaceability", "target": "Sponsor", "value": 25 },
+    { "source": "Ally", "target": "Passive Support", "value": 40 },
+    { "source": "Advocate", "target": "Active Championing", "value": 55 },
+    { "source": "Sponsor", "target": "Career Advancement", "value": 45 },
+    { "source": "Active Championing", "target": "Career Advancement", "value": 30 },
+    { "source": "Passive Support", "target": "Baseline Protection", "value": 40 }
+  ],
+  "options": {
+    "title": "Leverage Flow — From Contribution to Career Outcomes",
+    "width": 700,
+    "height": 400
+  }
+}
+```
+
+The sankey reveals why sponsors matter disproportionately: they convert all four leverage variables directly into career advancement, while allies provide only passive baseline protection.
+
 - Allies are common but their value is limited — they only speak when prompted
 - Advocates are rare and valuable — they mention your name in rooms you are not in
 - Sponsors are the gold standard — they tie their credibility to your success, which means they have a personal incentive to ensure you succeed
@@ -664,6 +749,41 @@ flowchart TB
 ```
 
 The Power Grid reveals that position alone is a poor proxy for power — Persuaders with low titles often have more influence than Empty Suits with impressive ones.
+
+```d3
+{
+  "type": "force",
+  "data": {
+    "nodes": [
+      { "id": "CEO", "group": "Power Player", "size": 30 },
+      { "id": "CFO", "group": "Power Player", "size": 25 },
+      { "id": "VP Marketing", "group": "Empty Suit", "size": 20 },
+      { "id": "VP Sales", "group": "Power Player", "size": 22 },
+      { "id": "CEO's Advisor", "group": "Persuader", "size": 18 },
+      { "id": "Sr Director Ops", "group": "Persuader", "size": 15 },
+      { "id": "Manager Finance", "group": "Weakling", "size": 10 },
+      { "id": "Manager IT", "group": "Weakling", "size": 10 }
+    ],
+    "links": [
+      { "source": "CEO", "target": "CFO", "value": 8 },
+      { "source": "CEO", "target": "CEO's Advisor", "value": 9 },
+      { "source": "CEO", "target": "VP Sales", "value": 7 },
+      { "source": "CEO", "target": "VP Marketing", "value": 3 },
+      { "source": "CEO's Advisor", "target": "Sr Director Ops", "value": 6 },
+      { "source": "CFO", "target": "Manager Finance", "value": 4 },
+      { "source": "VP Sales", "target": "Sr Director Ops", "value": 5 },
+      { "source": "Sr Director Ops", "target": "Manager IT", "value": 3 }
+    ]
+  },
+  "options": {
+    "title": "Power Grid — Formal Position vs. Actual Influence",
+    "width": 700,
+    "height": 450
+  }
+}
+```
+
+The force diagram reveals the invisible influence lines: the CEO's Advisor (a Persuader with a modest title) has a stronger connection to the CEO than the VP Marketing (an Empty Suit with an impressive one) — navigating by the org chart would lead you to invest in exactly the wrong relationship.
 
 ---
 
@@ -751,6 +871,47 @@ flowchart LR
 ```
 
 The Four P's form a virtuous cycle — each component feeds the next. McIntyre recommends periodic self-audit across all four, with focused effort directed at whichever P is currently weakest.
+
+```chartjs
+{
+  "type": "radar",
+  "data": {
+    "labels": ["Performance", "Perception", "Partnerships", "Power Assessment"],
+    "datasets": [
+      {
+        "label": "Winner Profile",
+        "data": [85, 90, 80, 85],
+        "borderColor": "#27ae60",
+        "backgroundColor": "rgba(39, 174, 96, 0.15)"
+      },
+      {
+        "label": "Martyr Profile",
+        "data": [95, 20, 30, 15],
+        "borderColor": "#e74c3c",
+        "backgroundColor": "rgba(231, 76, 60, 0.15)"
+      },
+      {
+        "label": "Sociopath Profile",
+        "data": [40, 85, 50, 90],
+        "borderColor": "#8e44ad",
+        "backgroundColor": "rgba(142, 68, 173, 0.15)"
+      },
+      {
+        "label": "Dimwit Profile",
+        "data": [50, 25, 20, 10],
+        "borderColor": "#f39c12",
+        "backgroundColor": "rgba(243, 156, 18, 0.15)"
+      }
+    ]
+  },
+  "options": {
+    "plugins": { "title": { "display": true, "text": "Four P's Diagnostic — Political Type Profiles" } },
+    "scales": { "r": { "min": 0, "max": 100, "ticks": { "stepSize": 25 } } }
+  }
+}
+```
+
+The Martyr's profile reveals the tragic imbalance: the highest Performance score but the lowest everything else — they do the best work and receive the least recognition because they neglect every other dimension of political effectiveness.
 
 ---
 

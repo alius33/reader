@@ -57,6 +57,59 @@ graph TD
 
 *The kernel is not a template — it is a test. Any purported strategy that lacks one of the three elements is incomplete. Any strategy that contains all three is at least coherent.*
 
+```chartjs
+{
+  "type": "radar",
+  "data": {
+    "labels": ["Diagnosis Quality", "Guiding Policy Clarity", "Action Coherence", "Focus", "Leverage", "Proximate Objectives"],
+    "datasets": [
+      {
+        "label": "Good Strategy (Apple 1997)",
+        "data": [9, 9, 10, 10, 8, 9],
+        "backgroundColor": "rgba(39, 174, 96, 0.2)",
+        "borderColor": "#27ae60"
+      },
+      {
+        "label": "Bad Strategy (Typical Corp.)",
+        "data": [2, 3, 2, 1, 2, 3],
+        "backgroundColor": "rgba(231, 76, 60, 0.2)",
+        "borderColor": "#e74c3c"
+      }
+    ]
+  },
+  "options": {
+    "plugins": { "title": { "display": true, "text": "Good vs. Bad Strategy: The Kernel Scorecard" } },
+    "scales": { "r": { "min": 0, "max": 10, "ticks": { "stepSize": 2 } } }
+  }
+}
+```
+
+The collapsed radar of "bad strategy" reveals Rumelt's core argument — most organisations score near zero on every dimension because they substitute goals and buzzwords for actual strategic content.
+
+```d3
+{
+  "type": "treemap",
+  "data": [
+    { "name": "Fluff / Buzzwords", "category": "Bad Strategy", "value": 30 },
+    { "name": "Failure to Diagnose", "category": "Bad Strategy", "value": 25 },
+    { "name": "Goals as Strategy", "category": "Bad Strategy", "value": 25 },
+    { "name": "Bad Objectives", "category": "Bad Strategy", "value": 20 },
+    { "name": "Leverage", "category": "Good Strategy", "value": 20 },
+    { "name": "Proximate Objectives", "category": "Good Strategy", "value": 18 },
+    { "name": "Chain-Link Systems", "category": "Good Strategy", "value": 15 },
+    { "name": "Design-Type Strategy", "category": "Good Strategy", "value": 14 },
+    { "name": "Focus", "category": "Good Strategy", "value": 16 },
+    { "name": "Dynamics / Waves", "category": "Good Strategy", "value": 12 }
+  ],
+  "options": {
+    "title": "Rumelt's Strategy Landscape: Hallmarks of Bad vs. Sources of Good",
+    "colors": { "Bad Strategy": "#e74c3c", "Good Strategy": "#27ae60" }
+  }
+}
+```
+
+The treemap reveals an asymmetry: bad strategy clusters around four easily identifiable pathologies, while good strategy draws from a richer palette of six distinct power sources — diagnosing bad is simpler than designing good.
+
 - The book operates on **three levels simultaneously**: as a diagnostic tool (learn to spot bad strategy instantly), as a design framework (build good strategy from the kernel), and as a thinking discipline (overcome the cognitive traps that produce bad strategy)
 - Rumelt draws case studies from an extraordinary range: Nelson at Trafalgar, Hannibal at Cannae, the Cold War, Apple, Walmart, Nvidia, Crown Cork & Seal, Continental Airlines, NASA's moon landing, and his own consulting experiences
 - The unifying thread: in every domain, <b style="color: #2980b9">the people and organizations that win are those who diagnose the real problem, choose where to focus, and coordinate their actions</b> — and the ones that lose are those who substitute ambition for analysis
@@ -416,6 +469,24 @@ graph LR
 
 > [!tip] Three Roots of Bad Strategy
 > Whenever you encounter bad strategy, it traces to one of three causes: (1) the leader couldn't make the hard choices that focus requires, (2) the organization substituted a planning template for genuine analysis, or (3) a culture of positive thinking made critical diagnosis feel like disloyalty.
+
+```chartjs
+{
+  "type": "polarArea",
+  "data": {
+    "labels": ["Inability to Choose", "Template-Style Planning", "Positive-Thinking Doctrine", "Political Compromise", "Consensus Culture"],
+    "datasets": [{
+      "data": [30, 25, 20, 15, 10],
+      "backgroundColor": ["rgba(192, 57, 43, 0.7)", "rgba(231, 76, 60, 0.7)", "rgba(230, 126, 34, 0.7)", "rgba(241, 196, 15, 0.7)", "rgba(149, 165, 166, 0.7)"]
+    }]
+  },
+  "options": {
+    "plugins": { "title": { "display": true, "text": "Pathways to Bad Strategy: Relative Prevalence" } }
+  }
+}
+```
+
+The inability to choose dominates because it is the most psychologically comfortable failure mode — keeping all options open feels like prudence but is actually strategic paralysis.
 
 ---
 

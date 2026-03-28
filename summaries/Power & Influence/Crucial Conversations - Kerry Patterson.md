@@ -80,6 +80,50 @@ The Pool of Shared Meaning is the engine of every group decision — the larger 
 | **ABC** | Agree, Build, Compare — how to respond when you disagree |
 | **Move to Action** | Convert dialogue into decisions: who does what by when, with follow-up |
 
+```chartjs
+{
+  "type": "radar",
+  "data": {
+    "labels": ["Start with Heart", "Learn to Look", "Make It Safe", "Master My Stories", "STATE My Path", "Explore Others' Paths", "Move to Action"],
+    "datasets": [
+      {
+        "label": "Difficulty to Master",
+        "data": [7, 6, 9, 10, 7, 8, 4],
+        "backgroundColor": "rgba(231, 76, 60, 0.15)",
+        "borderColor": "#e74c3c",
+        "borderWidth": 2,
+        "pointBackgroundColor": "#e74c3c"
+      },
+      {
+        "label": "Impact When Applied",
+        "data": [8, 7, 10, 9, 9, 8, 7],
+        "backgroundColor": "rgba(39, 174, 96, 0.15)",
+        "borderColor": "#27ae60",
+        "borderWidth": 2,
+        "pointBackgroundColor": "#27ae60"
+      }
+    ]
+  },
+  "options": {
+    "plugins": {
+      "title": {
+        "display": true,
+        "text": "The Seven Skills — Difficulty vs Impact"
+      }
+    },
+    "scales": {
+      "r": {
+        "min": 0,
+        "max": 10,
+        "ticks": { "stepSize": 2 }
+      }
+    }
+  }
+}
+```
+
+Make It Safe and Master My Stories sit in the high-difficulty, high-impact zone — they are the hardest to learn but produce the greatest transformation in conversation outcomes.
+
 ---
 
 ## Chapter 1: What's a Crucial Conversation? And Who Cares?
@@ -635,6 +679,48 @@ The story — not the facts — is what creates the emotion. Change the story an
 | **Vote** | Majority rules | Many options, efficiency matters, group can live with majority | Moderate | Moderate |
 | **Consensus** | Everyone must agree | High stakes, full commitment needed, implementation requires everyone | Slowest | Highest |
 
+```chartjs
+{
+  "type": "polarArea",
+  "data": {
+    "labels": ["Command", "Consult", "Vote", "Consensus"],
+    "datasets": [
+      {
+        "label": "Buy-in Strength",
+        "data": [2, 5, 6, 10],
+        "backgroundColor": [
+          "rgba(231, 76, 60, 0.6)",
+          "rgba(243, 156, 18, 0.6)",
+          "rgba(41, 128, 185, 0.6)",
+          "rgba(39, 174, 96, 0.6)"
+        ],
+        "borderColor": ["#e74c3c", "#f39c12", "#2980b9", "#27ae60"],
+        "borderWidth": 2
+      }
+    ]
+  },
+  "options": {
+    "plugins": {
+      "title": {
+        "display": true,
+        "text": "Decision-Making Methods — Buy-in vs Speed Trade-off"
+      },
+      "legend": {
+        "position": "right"
+      }
+    },
+    "scales": {
+      "r": {
+        "min": 0,
+        "max": 10
+      }
+    }
+  }
+}
+```
+
+Each segment's size represents buy-in strength — Consensus produces the deepest commitment but takes the longest, while Command is fastest but generates the least ownership.
+
 - <b style="color: #27ae60">Choose the method based on who must be committed to the outcome</b>
   - If one person can execute alone → Command or Consult
   - If the group must execute together → Vote or Consensus
@@ -766,6 +852,38 @@ This diagram captures the complete flow of a crucial conversation — the iterat
 | **What it does to the Pool** | Drains it — meaning is withheld | Poisons it — meaning is forced and distorted |
 | **What it signals about safety** | "It's not safe to share my real view" | "I don't feel safe, so I'm going on offence" |
 | **The hidden cost** | Resentment accumulates until it explodes | Trust erodes until the other person shuts down permanently |
+
+```d3
+{
+  "type": "heatmap",
+  "data": {
+    "xLabels": ["Low Visibility", "Medium Visibility", "High Visibility"],
+    "yLabels": ["Attacking", "Labelling", "Controlling", "Withdrawing", "Avoiding", "Masking"],
+    "values": [
+      [4, 8, 10],
+      [3, 7, 9],
+      [5, 8, 8],
+      [7, 5, 2],
+      [6, 4, 2],
+      [8, 6, 3]
+    ]
+  },
+  "options": {
+    "title": "Silence vs Violence — Destructiveness by Visibility",
+    "xAxisLabel": "Visibility to Others",
+    "yAxisLabel": "Behaviour Type",
+    "colorScheme": "RedYellowGreen_Reverse",
+    "width": 600,
+    "height": 380,
+    "annotations": {
+      "topRight": "VIOLENCE: High visibility, high damage",
+      "bottomLeft": "SILENCE: Low visibility, hidden damage"
+    }
+  }
+}
+```
+
+Violence is most destructive at high visibility (public attacks destroy trust instantly), while silence is most destructive at low visibility (hidden resentment compounds undetected until it explodes).
 
 > [!example] The Silent Executive
 > - The authors describe a CEO who held a company meeting to announce a major strategic shift
@@ -941,6 +1059,29 @@ This diagram captures the complete flow of a crucial conversation — the iterat
 - Unaddressed issues accumulate emotional charge — what could have been a calm five-minute chat becomes a loaded confrontation
 - <b style="color: #27ae60">The best time to have a crucial conversation is the first time you notice the issue</b> — not after weeks of Clever Stories have hardened your position
 - Each day of delay adds another layer of Victim, Villain, and Helpless Stories that make dialogue harder
+
+```mermaid
+quadrantChart
+    title Conversation Approaches — Honesty vs Respect
+    x-axis Low Honesty --> High Honesty
+    y-axis Low Respect --> High Respect
+    quadrant-1 Dialogue (Goal)
+    quadrant-2 People-Pleasing
+    quadrant-3 Passive Aggression
+    quadrant-4 Verbal Violence
+    STATE Framework: [0.82, 0.85]
+    Contrasting: [0.70, 0.78]
+    Sugarcoating: [0.25, 0.72]
+    Avoiding entirely: [0.12, 0.55]
+    Sarcasm: [0.45, 0.30]
+    Silent treatment: [0.15, 0.20]
+    Labelling: [0.65, 0.18]
+    Personal attacks: [0.80, 0.10]
+    Blunt feedback: [0.85, 0.40]
+    AMPP listening: [0.55, 0.90]
+```
+
+Only the upper-right quadrant — high honesty AND high respect — produces genuine dialogue; every other combination sacrifices either truth or safety.
 
 ---
 

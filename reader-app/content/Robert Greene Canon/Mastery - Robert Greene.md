@@ -1144,6 +1144,37 @@ The mentor dynamic follows a natural arc: absorption, tension, and eventual sepa
 | **Flightiness** | People who shift loyalties, interests, and alliances constantly | Don't invest too deeply in their commitments |
 | **Passive Aggression** | Indirect attacks disguised as helpfulness or compliance; the smile that hides the knife | Recognise the pattern early and create distance |
 
+```chartjs
+{
+  "type": "polarArea",
+  "data": {
+    "labels": ["Envy", "Conformism", "Rigidity", "Self-Obsessiveness", "Laziness", "Flightiness", "Passive Aggression"],
+    "datasets": [{
+      "data": [85, 75, 70, 60, 55, 50, 90],
+      "backgroundColor": [
+        "rgba(231, 76, 60, 0.6)",
+        "rgba(41, 128, 185, 0.6)",
+        "rgba(243, 156, 18, 0.6)",
+        "rgba(142, 68, 173, 0.6)",
+        "rgba(149, 165, 166, 0.6)",
+        "rgba(26, 188, 156, 0.6)",
+        "rgba(192, 57, 43, 0.6)"
+      ]
+    }]
+  },
+  "options": {
+    "plugins": {
+      "title": { "display": true, "text": "The Seven Deadly Realities — Destructive Potential in Professional Settings" }
+    },
+    "scales": {
+      "r": { "beginAtZero": true, "max": 100 }
+    }
+  }
+}
+```
+
+Passive aggression and envy score highest for destructive potential because both operate covertly — you are often destroyed before you recognise the attack.
+
 - These traits exist in everyone to some degree — the danger comes from people who possess them in extreme form
 - <b style="color: #e74c3c">The greatest mistake is to be blindsided — reacting emotionally to behaviour you should have anticipated</b>
 - The Master's approach: understand these realities dispassionately, as a scientist studies natural phenomena, and navigate around them
@@ -1356,6 +1387,33 @@ The mentor dynamic follows a natural arc: absorption, tension, and eventual sepa
   - The Child — creating freely, with the openness of a beginner but the depth of a master
   - These correspond roughly to Greene's three minds: Conventional, transitional rebellion, and Dimensional
 - The Dimensional Mind has several distinguishing characteristics:
+
+```d3
+{
+  "type": "treemap",
+  "data": {
+    "name": "Three Minds",
+    "children": [
+      { "name": "Curiosity", "value": 20, "category": "Original Mind" },
+      { "name": "Openness", "value": 18, "category": "Original Mind" },
+      { "name": "Rule-Following", "value": 22, "category": "Conventional Mind" },
+      { "name": "Knowledge Absorption", "value": 25, "category": "Conventional Mind" },
+      { "name": "Conformity", "value": 15, "category": "Conventional Mind" },
+      { "name": "Fluidity", "value": 20, "category": "Dimensional Mind" },
+      { "name": "Negative Capability", "value": 22, "category": "Dimensional Mind" },
+      { "name": "Integration", "value": 25, "category": "Dimensional Mind" },
+      { "name": "Playfulness", "value": 18, "category": "Dimensional Mind" },
+      { "name": "Independence", "value": 20, "category": "Dimensional Mind" }
+    ]
+  },
+  "options": {
+    "title": "The Three Minds — Qualities That Define Each Stage of Development",
+    "colorField": "category"
+  }
+}
+```
+
+The Dimensional Mind recovers the Original Mind's curiosity and playfulness but adds the Conventional Mind's depth — it is not a rejection of convention but a transcendence of it, carrying the best of both earlier stages forward.
   - **Fluidity** — it moves easily between different domains and perspectives, making connections that more rigid minds cannot perceive
   - **Comfort with contradiction** — it can hold opposing ideas simultaneously without needing to resolve them immediately (this is Keats's Negative Capability)
   - **Integration** — it synthesises rational analysis with intuitive insight, rather than treating them as separate faculties
@@ -2348,6 +2406,42 @@ The complete journey from childhood inclination to mastery — a path that takes
 | **Teresita Fernandez** | IV, V | Crafted persona; alchemical creativity |
 | **Zora Neale Hurston** | II | Expansive apprenticeship; cross-domain enrichment |
 
+```d3
+{
+  "type": "force",
+  "data": {
+    "nodes": [
+      { "id": "Leonardo", "group": "Chapter I" },
+      { "id": "Darwin", "group": "Intro/II/V" },
+      { "id": "Einstein", "group": "Chapter I/V/VI" },
+      { "id": "Mozart", "group": "Chapter I/V" },
+      { "id": "Franklin", "group": "Chapter II/IV" },
+      { "id": "Faraday", "group": "Chapter III" },
+      { "id": "Proust", "group": "Chapter VI" },
+      { "id": "Coltrane", "group": "Chapter I/V" },
+      { "id": "Grandin", "group": "Chapter I/IV/VI" },
+      { "id": "Roach", "group": "Chapter I-III/VI" }
+    ],
+    "links": [
+      { "source": "Leonardo", "target": "Darwin", "label": "Intense observation" },
+      { "source": "Darwin", "target": "Einstein", "label": "Negative Capability" },
+      { "source": "Einstein", "target": "Mozart", "label": "Primal inclination" },
+      { "source": "Franklin", "target": "Faraday", "label": "Self-education" },
+      { "source": "Faraday", "target": "Coltrane", "label": "Absorption then departure" },
+      { "source": "Proust", "target": "Leonardo", "label": "Deep incubation" },
+      { "source": "Grandin", "target": "Roach", "label": "Working with deficiency" },
+      { "source": "Mozart", "target": "Coltrane", "label": "Authentic voice" },
+      { "source": "Darwin", "target": "Franklin", "label": "Learning over money" }
+    ]
+  },
+  "options": {
+    "title": "Biographical Connections — How Greene's Masters Illuminate Shared Principles"
+  }
+}
+```
+
+The force network reveals that Greene's biographical figures are not isolated examples but a connected web — Darwin's patience connects to Einstein's negative capability, Faraday's self-education mirrors Franklin's, and the principle of absorption-then-departure links Coltrane to Faraday to Roach.
+
 ---
 
 ## The Mastery Timeline
@@ -2360,6 +2454,52 @@ The complete journey from childhood inclination to mastery — a path that takes
 | **Creative-Active** | 10,000–15,000 | Original expression; Dimensional Mind | Conservatism; grandiosity |
 | **Approaching Mastery** | 15,000–20,000 | Intuitive grasp deepens | Inflexibility; losing hunger |
 | **Mastery** | 20,000+ | Fingertip feel; Return to Reality | Isolation; belief in own myth |
+
+```chartjs
+{
+  "type": "line",
+  "data": {
+    "labels": ["0", "5,000", "10,000", "15,000", "20,000", "25,000+"],
+    "datasets": [
+      {
+        "label": "Conscious Effort Required",
+        "data": [95, 80, 55, 35, 15, 8],
+        "borderColor": "#e74c3c",
+        "backgroundColor": "rgba(231, 76, 60, 0.1)",
+        "fill": true,
+        "tension": 0.4
+      },
+      {
+        "label": "Intuitive Grasp",
+        "data": [2, 10, 30, 55, 80, 95],
+        "borderColor": "#27ae60",
+        "backgroundColor": "rgba(39, 174, 96, 0.1)",
+        "fill": true,
+        "tension": 0.4
+      },
+      {
+        "label": "Creative Output Quality",
+        "data": [5, 15, 40, 65, 85, 92],
+        "borderColor": "#2980b9",
+        "backgroundColor": "rgba(41, 128, 185, 0.1)",
+        "fill": true,
+        "tension": 0.4
+      }
+    ]
+  },
+  "options": {
+    "plugins": {
+      "title": { "display": true, "text": "The Mastery Curve — Effort, Intuition, and Output Over 20,000+ Hours" }
+    },
+    "scales": {
+      "x": { "title": { "display": true, "text": "Hours of Deliberate Practice" } },
+      "y": { "title": { "display": true, "text": "Level (%)" }, "beginAtZero": true, "max": 100 }
+    }
+  }
+}
+```
+
+As deliberate practice hours accumulate, conscious effort steadily declines while intuitive grasp rises — the crossover point around 10,000 hours marks the transition from competence to the Creative-Active phase where original output accelerates.
 
 - Greene emphasises that this timeline is approximate, not absolute:
   - The hours vary by field — some domains (surgery, flying) may require more; others (writing, teaching) may require fewer

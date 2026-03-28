@@ -293,6 +293,44 @@ flowchart LR
 
 Each avoided conversation raises the threshold for the next one, creating a compounding cycle that turns minor course corrections into full-blown crises.
 
+```chartjs
+{
+  "type": "bar",
+  "data": {
+    "labels": ["Month 1", "Month 2", "Month 3", "Month 6", "Month 9", "Month 12"],
+    "datasets": [
+      {
+        "label": "Conversation Difficulty",
+        "data": [2, 3, 5, 7, 9, 10],
+        "backgroundColor": ["#27ae60", "#2ecc71", "#f1c40f", "#e67e22", "#e74c3c", "#c0392b"]
+      },
+      {
+        "label": "Collateral Damage Risk",
+        "data": [1, 2, 3, 6, 8, 10],
+        "backgroundColor": ["rgba(39,174,96,0.4)", "rgba(46,204,113,0.4)", "rgba(241,196,15,0.4)", "rgba(230,126,34,0.4)", "rgba(231,76,60,0.4)", "rgba(192,57,43,0.4)"]
+      }
+    ]
+  },
+  "options": {
+    "plugins": {
+      "title": {
+        "display": true,
+        "text": "Compounding Avoidance Cost Over Time"
+      }
+    },
+    "scales": {
+      "y": {
+        "min": 0,
+        "max": 10,
+        "title": { "display": true, "text": "Severity (1–10)" }
+      }
+    }
+  }
+}
+```
+
+What starts as a simple two-out-of-ten course correction in month one escalates to a ten-out-of-ten crisis by month twelve — the cost of avoidance compounds exponentially, not linearly.
+
 ---
 
 ## Principle 3: Be Here, Prepared to Be Nowhere Else
@@ -337,6 +375,38 @@ Each avoided conversation raises the threshold for the next one, creating a comp
 | **Level 3 — Global** | The whole environment | "What is happening in this room?" | Transformational insight |
 
 Most people live at Level 1 — the shift to Level 2 is where conversations stop being transactional and start being transformational.
+
+```chartjs
+{
+  "type": "doughnut",
+  "data": {
+    "labels": [
+      "Level 1 — Internal Listening",
+      "Level 2 — Focused Listening",
+      "Level 3 — Global Listening"
+    ],
+    "datasets": [
+      {
+        "data": [70, 25, 5],
+        "backgroundColor": ["#e74c3c", "#3498db", "#27ae60"]
+      }
+    ]
+  },
+  "options": {
+    "plugins": {
+      "title": {
+        "display": true,
+        "text": "Typical Listening Level Distribution"
+      },
+      "legend": {
+        "position": "bottom"
+      }
+    }
+  }
+}
+```
+
+Most people spend roughly 70% of conversation time at Level 1 (listening to themselves), 25% at Level 2 (focused on the other person), and only 5% at Level 3 (sensing the whole environment) — fierce conversations demand inverting this ratio.
 
 ---
 
@@ -886,6 +956,55 @@ The Mineral Rights model uses strategically placed emotion probes to move the co
 
 The Decision Tree progresses from full autonomy (leaf) to shared ownership (root) — the goal of leadership is to progressively move decisions outward over time.
 
+```d3
+{
+  "type": "treemap",
+  "data": {
+    "name": "Decision Tree Levels",
+    "children": [
+      {
+        "name": "Root — Joint Decision",
+        "children": [
+          { "name": "Enter new markets", "value": 40 },
+          { "name": "Reorganise company", "value": 35 },
+          { "name": "Shut down product line", "value": 30 }
+        ]
+      },
+      {
+        "name": "Trunk — Report Before Acting",
+        "children": [
+          { "name": "Change project scope", "value": 25 },
+          { "name": "Reallocate budget", "value": 22 },
+          { "name": "Senior hires", "value": 20 }
+        ]
+      },
+      {
+        "name": "Branch — Act, Then Report",
+        "children": [
+          { "name": "Junior hiring", "value": 15 },
+          { "name": "Manage timelines", "value": 12 },
+          { "name": "Handle complaints", "value": 10 }
+        ]
+      },
+      {
+        "name": "Leaf — Full Autonomy",
+        "children": [
+          { "name": "Schedule meetings", "value": 5 },
+          { "name": "Choose vendors", "value": 4 },
+          { "name": "Format reports", "value": 3 }
+        ]
+      }
+    ]
+  },
+  "options": {
+    "title": "Decision Tree Levels — Autonomy vs Oversight",
+    "color": ["#e74c3c", "#e67e22", "#3498db", "#27ae60"]
+  }
+}
+```
+
+Root decisions carry the highest organisational weight and require full collaborative input, while leaf decisions should flow freely without approval — the size of each block reflects how much leadership attention each level deserves.
+
 ---
 
 ### The Mole-Whacking Problem
@@ -1010,6 +1129,53 @@ Scott's three conversational models each address the ground truth / official tru
 ---
 
 ## How the Models Connect
+
+```chartjs
+{
+  "type": "radar",
+  "data": {
+    "labels": [
+      "P1: Interrogate Reality",
+      "P2: Make It Real",
+      "P3: Be Present",
+      "P4: Tackle Toughest Challenge",
+      "P5: Obey Instincts",
+      "P6: Emotional Wake",
+      "P7: Let Silence Work"
+    ],
+    "datasets": [
+      {
+        "label": "Difficulty to Practice",
+        "data": [7, 9, 6, 10, 8, 7, 9],
+        "backgroundColor": "rgba(231, 76, 60, 0.2)",
+        "borderColor": "#e74c3c"
+      },
+      {
+        "label": "Impact When Mastered",
+        "data": [9, 10, 8, 10, 7, 9, 8],
+        "backgroundColor": "rgba(39, 174, 96, 0.2)",
+        "borderColor": "#27ae60"
+      }
+    ]
+  },
+  "options": {
+    "plugins": {
+      "title": {
+        "display": true,
+        "text": "Seven Principles — Difficulty vs Impact"
+      }
+    },
+    "scales": {
+      "r": {
+        "min": 0,
+        "max": 10
+      }
+    }
+  }
+}
+```
+
+Principles 2 (Make It Real) and 4 (Tackle Toughest Challenge) are both the hardest to practise and the highest-impact when mastered — they sit at the intersection of maximum discomfort and maximum return.
 
 *Scott's seven principles and four models are not isolated tools — they form an integrated system where each model serves a specific purpose and the principles provide the philosophical backbone.*
 

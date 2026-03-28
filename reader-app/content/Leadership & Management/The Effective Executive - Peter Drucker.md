@@ -46,6 +46,12 @@ flowchart TD
 
 The five habits build on each other in sequence — you cannot focus on contribution until you control your time, you cannot deploy strengths until you know what contribution you are aiming for, and you cannot make effective decisions until you have cleared the space to think.
 
+```d3
+{"type":"treemap","data":{"name":"Drucker's Effectiveness Framework","children":[{"name":"Know Thy Time","children":[{"name":"Record","value":30},{"name":"Analyse","value":25},{"name":"Consolidate","value":25},{"name":"Eliminate Waste","value":20}]},{"name":"Focus on Contribution","children":[{"name":"Direct Results","value":35},{"name":"Building Values","value":25},{"name":"Developing People","value":30}]},{"name":"Make Strength Productive","children":[{"name":"Staff for Strength","value":30},{"name":"Design Big Jobs","value":20},{"name":"Tolerate Weakness","value":15},{"name":"Manage the Boss","value":15}]},{"name":"First Things First","children":[{"name":"Set Priorities","value":25},{"name":"Set Posteriorities","value":30},{"name":"Abandon the Obsolete","value":20},{"name":"Concentrate","value":25}]},{"name":"Effective Decisions","children":[{"name":"Classify","value":20},{"name":"Boundary Conditions","value":20},{"name":"What Is Right","value":25},{"name":"Build In Action","value":20},{"name":"Test via Feedback","value":15}]}]},"options":{"title":"Drucker's Five Habits — Complete Sub-Component Map"}}
+```
+
+This treemap reveals the internal architecture of Drucker's framework: each of the five habits contains distinct sub-practices, with "Focus on Contribution" having the fewest but highest-leverage components, while "Effective Decisions" has the most granular five-step process.
+
 ---
 
 ## Key Concepts at a Glance
@@ -62,6 +68,12 @@ The five habits build on each other in sequence — you cannot focus on contribu
 | **Effective Decisions** | Few decisions, well-made: classify, define boundaries, decide what's RIGHT, build in action |
 | **The Dissent Principle** | Effective decisions require disagreement — if everyone agrees instantly, the problem is not understood |
 | **The Time Log** | The single most powerful diagnostic tool: track every minute for 3-4 weeks |
+
+```chartjs
+{"type":"radar","data":{"labels":["Difficulty to Master","Impact on Results","Time Required","Rarity Among Executives","Interdependence with Others"],"datasets":[{"label":"Know Thy Time","data":[40,90,70,30,60],"borderColor":"#2980b9","backgroundColor":"rgba(41,128,185,0.15)"},{"label":"Focus on Contribution","data":[70,95,50,80,75],"borderColor":"#27ae60","backgroundColor":"rgba(39,174,96,0.15)"},{"label":"Make Strength Productive","data":[65,85,60,70,55],"borderColor":"#e74c3c","backgroundColor":"rgba(231,76,60,0.15)"},{"label":"First Things First","data":[90,88,40,85,65],"borderColor":"#f39c12","backgroundColor":"rgba(243,156,18,0.15)"},{"label":"Effective Decisions","data":[80,92,80,75,70],"borderColor":"#8e44ad","backgroundColor":"rgba(142,68,173,0.15)"}]},"options":{"plugins":{"title":{"display":true,"text":"The Five Habits of Effectiveness — Multi-Dimensional Comparison"}},"scales":{"r":{"beginAtZero":true,"max":100}}}}
+```
+
+The radar reveals that "First Things First" is the most difficult habit to master — requiring the courage to abandon good work — while "Focus on Contribution" is the rarest among executives, despite being the highest-impact practice Drucker observed.
 
 ---
 
@@ -90,6 +102,12 @@ Drucker identifies four conditions that make effectiveness unnatural — forces 
 | **The current carries you** | Day-to-day operations demand attention; the urgent drowns the important | Executives react instead of act |
 | **You work inside an organisation** | Results happen outside — with customers, patients, citizens — not inside | The organisation insulates the executive from reality |
 | **You see through one lens** | Each executive sees the world through the filter of their own function | Finance sees costs, marketing sees messaging, engineering sees architecture |
+
+```chartjs
+{"type":"bar","data":{"labels":["Time Belongs to Others","The Current Carries You","Inside the Organisation","One-Lens Filter"],"datasets":[{"label":"Typical Exec Time Consumed (%)","data":[35,30,20,15],"backgroundColor":"#e74c3c"},{"label":"Effective Exec Allocation (%)","data":[10,10,15,5],"backgroundColor":"#27ae60"},{"label":"Freed for Strategic Work (%)","data":[25,20,5,10],"backgroundColor":"#2980b9"}]},"options":{"plugins":{"title":{"display":true,"text":"The Four Realities — Time Consumed vs Effective Allocation"}},"scales":{"y":{"beginAtZero":true,"max":40,"title":{"display":true,"text":"% of Working Time"}}}}}
+```
+
+The bar chart shows how the four realities consume nearly all of a typical executive's time, while effective executives reclaim roughly 60% of that time for strategic work by systematically managing each reality rather than surrendering to it.
 
 - <b style="color: #e74c3c">These four realities are permanent — they cannot be eliminated, only managed</b>
 - The executive who ignores them becomes a prisoner of the organisation — responding to other people's priorities, drowning in operational noise, insulated from outside reality, and blind to perspectives beyond their own function
@@ -314,6 +332,12 @@ Every organisation needs contribution in three areas — and the effective execu
 | **Direct results** | "What outcomes does the institution need from me right now?" | Revenue, products shipped, patients treated, cases won | Immediate |
 | **Building and reaffirming values** | "What standards and commitments should I uphold and exemplify?" | Quality standards, ethical conduct, innovation culture | Medium-term |
 | **Developing people for the future** | "Whose capabilities am I building so the institution thrives after me?" | Mentoring, training, delegating with developmental intent | Long-term |
+
+```chartjs
+{"type":"doughnut","data":{"labels":["Direct Results","Building & Reaffirming Values","Developing People for the Future"],"datasets":[{"label":"Typical Executive Focus","data":[70,15,15],"backgroundColor":["#e74c3c","#f39c12","#95a5a6"],"borderWidth":2},{"label":"Effective Executive Focus","data":[40,30,30],"backgroundColor":["#27ae60","#2980b9","#8e44ad"],"borderWidth":2}]},"options":{"plugins":{"title":{"display":true,"text":"Three Dimensions of Contribution — Typical vs Effective Executive"}}}}
+```
+
+The doughnut reveals Drucker's key insight: typical executives over-invest in direct results (70%) while starving the two dimensions — values and people development — that compound over time and determine whether the organisation thrives after the executive leaves.
 
 - <b style="color: #e74c3c">Most executives focus only on the first dimension — direct results — and neglect the second and third</b>
 - But Drucker argues that building values and developing people are HIGHER-LEVERAGE contributions because they compound over time
@@ -663,6 +687,12 @@ flowchart TD
 ```
 
 Each step in Drucker's process addresses a specific failure mode in decision-making.
+
+```d3
+{"type":"force","data":{"nodes":[{"id":"classify","label":"1. Classify the Problem","group":1},{"id":"boundary","label":"2. Boundary Conditions","group":1},{"id":"right","label":"3. What Is Right","group":1},{"id":"action","label":"4. Build In Action","group":1},{"id":"feedback","label":"5. Test via Feedback","group":1},{"id":"generic","label":"Generic Problem","group":2},{"id":"unique","label":"Unique Problem","group":2},{"id":"compromise","label":"Acceptable Compromise","group":3},{"id":"halfbaby","label":"Fatal Compromise","group":4},{"id":"dissent","label":"Organised Dissent","group":3},{"id":"opinions","label":"Opinions as Hypotheses","group":3}],"links":[{"source":"classify","target":"generic"},{"source":"classify","target":"unique"},{"source":"classify","target":"boundary"},{"source":"boundary","target":"right"},{"source":"right","target":"compromise"},{"source":"right","target":"halfbaby"},{"source":"right","target":"action"},{"source":"action","target":"feedback"},{"source":"feedback","target":"classify"},{"source":"dissent","target":"right"},{"source":"opinions","target":"dissent"}]},"options":{"title":"Decision-Making Process — Element Relationships","charge":-300,"linkDistance":100}}
+```
+
+The force graph reveals that Drucker's decision process is not a simple linear sequence but a network — feedback loops back to classification, dissent feeds into determining what is right, and the distinction between acceptable and fatal compromise radiates from the "what is right" step.
 
 #### Step 2: Define Boundary Conditions
 

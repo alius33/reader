@@ -54,6 +54,50 @@ McKeown organises the book into three disciplined phases:
 
 This table captures the fundamental contrast that runs through every chapter of the book.
 
+```chartjs
+{
+  "type": "radar",
+  "data": {
+    "labels": ["Focus", "Energy Level", "Satisfaction", "Output Quality", "Stress (inverted)", "Sense of Control"],
+    "datasets": [
+      {
+        "label": "Essentialist",
+        "data": [9, 8, 9, 9, 8, 9],
+        "backgroundColor": "rgba(39, 174, 96, 0.2)",
+        "borderColor": "#27ae60",
+        "pointBackgroundColor": "#27ae60"
+      },
+      {
+        "label": "Nonessentialist",
+        "data": [3, 4, 3, 4, 2, 2],
+        "backgroundColor": "rgba(231, 76, 60, 0.2)",
+        "borderColor": "#e74c3c",
+        "pointBackgroundColor": "#e74c3c"
+      }
+    ]
+  },
+  "options": {
+    "plugins": {
+      "title": {
+        "display": true,
+        "text": "Essentialist vs Nonessentialist: Life Quality Dimensions"
+      }
+    },
+    "scales": {
+      "r": {
+        "min": 0,
+        "max": 10,
+        "ticks": {
+          "stepSize": 2
+        }
+      }
+    }
+  }
+}
+```
+
+The Essentialist outperforms across every dimension — not by working harder, but by directing the same energy toward fewer, more meaningful commitments, resulting in dramatically higher focus, satisfaction, and sense of control.
+
 ```mermaid
 flowchart LR
     A["EXPLORE<br>(Discern the vital few<br>from the trivial many)"] --> B["ELIMINATE<br>(Cut out the nonessential)"]
@@ -87,6 +131,55 @@ The three phases are not sequential steps you complete once — they are a conti
 | **Edit** | A good editor removes — an Essentialist subtracts before adding |
 | **Subtract** | Ask "What's in the way?" not "What more can I do?" |
 | **Flow** | Design routines that make the essential the path of least resistance |
+
+```d3
+{
+  "type": "treemap",
+  "data": {
+    "name": "Essentialism",
+    "children": [
+      {
+        "name": "Phase 1: Explore",
+        "children": [
+          {"name": "Escape", "value": 20},
+          {"name": "Look", "value": 18},
+          {"name": "Play", "value": 15},
+          {"name": "Sleep (Protect the Asset)", "value": 22},
+          {"name": "Select (90% Rule)", "value": 25}
+        ]
+      },
+      {
+        "name": "Phase 2: Eliminate",
+        "children": [
+          {"name": "Clarify (Essential Intent)", "value": 25},
+          {"name": "Dare (Graceful No)", "value": 22},
+          {"name": "Uncommit (Sunk Cost)", "value": 18},
+          {"name": "Edit", "value": 15},
+          {"name": "Limit (Boundaries)", "value": 20}
+        ]
+      },
+      {
+        "name": "Phase 3: Execute",
+        "children": [
+          {"name": "Buffer", "value": 18},
+          {"name": "Subtract (Remove Obstacles)", "value": 20},
+          {"name": "Progress (Small Wins)", "value": 22},
+          {"name": "Flow (Routine)", "value": 25},
+          {"name": "Focus (What's Important Now)", "value": 20}
+        ]
+      }
+    ]
+  },
+  "options": {
+    "title": "The Essentialism Framework — Concepts by Phase",
+    "width": 700,
+    "height": 400,
+    "colorScheme": "tableau10"
+  }
+}
+```
+
+Each phase builds on the previous: Explore creates clarity about what matters, Eliminate removes everything that doesn't, and Execute makes the essential things happen with minimum friction — the largest blocks within each phase represent the highest-leverage tools McKeown offers.
 
 ---
 
@@ -181,6 +274,27 @@ flowchart TD
 ```
 
 This diagram captures the core discernment process: every activity must pass through the filter of your highest contribution.
+
+```mermaid
+quadrantChart
+    title Activity Prioritisation Matrix
+    x-axis Nonessential --> Essential
+    y-axis Not Urgent --> Urgent
+    quadrant-1 Essential & Urgent (Do Now)
+    quadrant-2 Nonessential & Urgent (Delegate/Decline)
+    quadrant-3 Nonessential & Not Urgent (Eliminate)
+    quadrant-4 Essential & Not Urgent (Schedule & Protect)
+    Deep thinking time: [0.85, 0.3]
+    Strategic planning: [0.8, 0.4]
+    Health and sleep: [0.9, 0.25]
+    Key client crisis: [0.75, 0.9]
+    Most email: [0.2, 0.6]
+    Pointless meetings: [0.15, 0.55]
+    Social media: [0.1, 0.15]
+    Busy-work reports: [0.25, 0.35]
+```
+
+The Essentialist's insight is that the most important quadrant is the bottom-right — essential but not urgent activities like deep thinking, strategic planning, and health — yet this is precisely the quadrant that gets sacrificed first when nonessential urgencies crowd in.
 
 ---
 
@@ -956,6 +1070,53 @@ flowchart TD
 ```
 
 The Clarity Paradox is a vicious cycle — each turn through the loop makes it harder to escape.
+
+```chartjs
+{
+  "type": "line",
+  "data": {
+    "labels": ["Year 1: Clarity", "Year 2: Early Success", "Year 3: More Options", "Year 4: Saying Yes", "Year 5: Overcommitted", "Year 6: Diffusion", "Year 7: Quality Drops", "Year 8: Burnout"],
+    "datasets": [
+      {
+        "label": "Focus & Effectiveness",
+        "data": [90, 85, 72, 58, 42, 30, 22, 15],
+        "borderColor": "#27ae60",
+        "backgroundColor": "rgba(39, 174, 96, 0.1)",
+        "fill": true,
+        "tension": 0.4
+      },
+      {
+        "label": "Number of Commitments",
+        "data": [10, 18, 30, 48, 62, 75, 82, 88],
+        "borderColor": "#e74c3c",
+        "backgroundColor": "rgba(231, 76, 60, 0.1)",
+        "fill": true,
+        "tension": 0.4
+      }
+    ]
+  },
+  "options": {
+    "plugins": {
+      "title": {
+        "display": true,
+        "text": "The Clarity Paradox: How Success Destroys Focus Over Time"
+      }
+    },
+    "scales": {
+      "y": {
+        "min": 0,
+        "max": 100,
+        "title": {
+          "display": true,
+          "text": "Score (0-100)"
+        }
+      }
+    }
+  }
+}
+```
+
+The lines cross around Year 4 — the tipping point where rising commitments overtake declining focus, and the very success that generated options begins to undermine the clarity that created it.
 
 - <b style="color: #e74c3c">The most dangerous phase is Phase 2 to Phase 3</b> — the moment when success generates new opportunities
   - This is when people start saying "Why not? I can handle one more thing"

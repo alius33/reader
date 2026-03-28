@@ -67,6 +67,69 @@ The Build-Measure-Learn loop is the engine of the entire methodology — every c
 | **Actionable Metrics** | Per-cohort data that reveals whether your product is actually improving |
 | **The Runway** | Not how much money you have left, but how many pivots you can still afford |
 
+```chartjs
+{
+  "type": "radar",
+  "data": {
+    "labels": ["Speed to Launch", "Cost to Build", "Learning Depth", "Customer Exposure", "Scalability"],
+    "datasets": [
+      {
+        "label": "Video MVP",
+        "data": [9, 9, 3, 7, 2],
+        "borderColor": "#2980b9",
+        "backgroundColor": "rgba(41, 128, 185, 0.15)",
+        "pointBackgroundColor": "#2980b9"
+      },
+      {
+        "label": "Concierge MVP",
+        "data": [5, 7, 9, 4, 1],
+        "borderColor": "#27ae60",
+        "backgroundColor": "rgba(39, 174, 96, 0.15)",
+        "pointBackgroundColor": "#27ae60"
+      },
+      {
+        "label": "Wizard of Oz MVP",
+        "data": [4, 5, 8, 6, 2],
+        "borderColor": "#e67e22",
+        "backgroundColor": "rgba(230, 126, 34, 0.15)",
+        "pointBackgroundColor": "#e67e22"
+      },
+      {
+        "label": "Landing Page MVP",
+        "data": [10, 10, 2, 8, 3],
+        "borderColor": "#e74c3c",
+        "backgroundColor": "rgba(231, 76, 60, 0.15)",
+        "pointBackgroundColor": "#e74c3c"
+      },
+      {
+        "label": "Single-Feature MVP",
+        "data": [3, 4, 7, 7, 8],
+        "borderColor": "#8e44ad",
+        "backgroundColor": "rgba(142, 68, 173, 0.15)",
+        "pointBackgroundColor": "#8e44ad"
+      }
+    ]
+  },
+  "options": {
+    "plugins": {
+      "title": {
+        "display": true,
+        "text": "MVP Types Compared Across Five Dimensions"
+      }
+    },
+    "scales": {
+      "r": {
+        "beginAtZero": true,
+        "max": 10,
+        "ticks": { "stepSize": 2 }
+      }
+    }
+  }
+}
+```
+
+Landing page and video MVPs are the fastest and cheapest — ideal for gauging market demand — while concierge and wizard-of-oz MVPs sacrifice speed for dramatically deeper learning about what customers actually value.
+
 ---
 
 ## Part One: Vision
@@ -737,6 +800,49 @@ Ries issues a critical warning:
 > [!tip] Core Insight
 > Sustainable growth comes from one of three engines. Know which engine powers your business, measure its core metric obsessively, and ignore everything that does not improve that metric.
 
+```d3
+{
+  "type": "treemap",
+  "data": {
+    "name": "Engines of Growth",
+    "children": [
+      {
+        "name": "Sticky Engine",
+        "children": [
+          { "name": "Churn Rate Reduction", "value": 30 },
+          { "name": "Onboarding Optimisation", "value": 20 },
+          { "name": "Feature Stickiness", "value": 25 },
+          { "name": "Switching Cost Design", "value": 15 }
+        ]
+      },
+      {
+        "name": "Viral Engine",
+        "children": [
+          { "name": "Viral Coefficient (>1.0)", "value": 35 },
+          { "name": "Built-in Sharing Mechanics", "value": 25 },
+          { "name": "Network Effects", "value": 20 },
+          { "name": "Referral Incentives", "value": 10 }
+        ]
+      },
+      {
+        "name": "Paid Engine",
+        "children": [
+          { "name": "LTV > CAC Ratio", "value": 30 },
+          { "name": "Funnel Optimisation", "value": 20 },
+          { "name": "Channel Diversification", "value": 15 },
+          { "name": "Revenue Per Customer", "value": 25 }
+        ]
+      }
+    ]
+  },
+  "options": {
+    "title": "Three Engines of Growth: Key Metrics & Tactics"
+  }
+}
+```
+
+The treemap reveals that each engine has its own internal hierarchy of priorities — the sticky engine lives or dies by churn rate, the viral engine by its coefficient, and the paid engine by the LTV-to-CAC ratio.
+
 ---
 
 ### Chapter 11 — Adapt
@@ -925,6 +1031,38 @@ Ries argues that this waste is not just an economic problem — it is a human on
 - Lean management works when the problem is uncertain and the solution is unknown — new products, new markets, new technologies
 - <b style="color: #e74c3c">The failure is not traditional management itself but applying it where it does not belong</b>
 
+```chartjs
+{
+  "type": "doughnut",
+  "data": {
+    "labels": [
+      "Building Unvalidated Features",
+      "Running Experiments",
+      "Measuring & Analysing",
+      "Pivoting & Deciding",
+      "Firefighting & Overhead"
+    ],
+    "datasets": [{
+      "data": [42, 15, 12, 8, 23],
+      "backgroundColor": ["#e74c3c", "#27ae60", "#2980b9", "#8e44ad", "#95a5a6"],
+      "borderWidth": 2,
+      "borderColor": "#fff"
+    }]
+  },
+  "options": {
+    "plugins": {
+      "title": {
+        "display": true,
+        "text": "Typical Startup Time Allocation (Pre-Lean vs Lean Ideal)"
+      },
+      "legend": { "position": "right" }
+    }
+  }
+}
+```
+
+Most startups burn 42% of their time building features nobody asked for — the Lean Startup's core argument is that time should shift dramatically toward running experiments and measuring results.
+
 ---
 
 ### When Lean Fails — The Limits of Iteration
@@ -961,6 +1099,48 @@ The key intellectual ancestors:
 - Ries was Blank's student at Stanford and took the idea further: not just talk to customers, but run structured experiments with real products
 - The Toyota Production System provides the operational model: small batches, pull systems, root-cause analysis, continuous improvement
 - <b style="color: #27ae60">Ries' unique contribution was combining Blank's customer-facing methodology with Toyota's operational discipline and wrapping both in a management framework that any startup could adopt</b>
+
+```chartjs
+{
+  "type": "bar",
+  "data": {
+    "labels": [
+      "Scientific Method (1600s)",
+      "Deming's PDCA (1950)",
+      "Toyota Production System (1958)",
+      "Lean Manufacturing (1988)",
+      "Agile Manifesto (2001)",
+      "Customer Development (2005)",
+      "The Lean Startup (2011)"
+    ],
+    "datasets": [{
+      "label": "Year of Emergence",
+      "data": [1600, 1950, 1958, 1988, 2001, 2005, 2011],
+      "backgroundColor": ["#95a5a6", "#8e44ad", "#e74c3c", "#e67e22", "#2980b9", "#27ae60", "#2c3e50"],
+      "borderRadius": 4
+    }]
+  },
+  "options": {
+    "indexAxis": "y",
+    "plugins": {
+      "title": {
+        "display": true,
+        "text": "Intellectual Heritage: When Each Key Influence Emerged"
+      },
+      "legend": { "display": false }
+    },
+    "scales": {
+      "x": {
+        "min": 1550,
+        "max": 2020,
+        "title": { "display": true, "text": "Year" }
+      }
+    }
+  }
+}
+```
+
+The Lean Startup stands on centuries of accumulated insight — from the scientific method's hypothesis-testing logic through Toyota's waste elimination to Blank's customer-facing methodology — synthesising them into a single framework for entrepreneurship under uncertainty.
 
 ---
 

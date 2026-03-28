@@ -76,6 +76,37 @@ flowchart TD
 
 This diagram captures the book's foundational insight: System 1 generates rapid intuitions from incomplete information, and System 2 — the only system capable of doubt and deliberate analysis — usually endorses them without checking.
 
+```chartjs
+{
+  "type": "radar",
+  "data": {
+    "labels": ["Speed", "Effort Required", "Accuracy (Simple)", "Accuracy (Complex)", "Awareness of Limits", "Statistical Reasoning", "Story Coherence"],
+    "datasets": [
+      {
+        "label": "System 1 (Fast)",
+        "data": [95, 5, 85, 20, 10, 5, 95],
+        "backgroundColor": "rgba(231, 76, 60, 0.15)",
+        "borderColor": "#e74c3c",
+        "pointBackgroundColor": "#e74c3c"
+      },
+      {
+        "label": "System 2 (Slow)",
+        "data": [15, 95, 90, 85, 75, 80, 40],
+        "backgroundColor": "rgba(41, 128, 185, 0.15)",
+        "borderColor": "#2980b9",
+        "pointBackgroundColor": "#2980b9"
+      }
+    ]
+  },
+  "options": {
+    "plugins": { "title": { "display": true, "text": "System 1 vs System 2: Cognitive Architecture Profiles" } },
+    "scales": { "r": { "min": 0, "max": 100, "ticks": { "stepSize": 20 } } }
+  }
+}
+```
+
+System 1 excels at speed and story coherence but fails catastrophically at complex accuracy and statistical reasoning — precisely the domains where System 2 should intervene but often doesn't because it's lazy.
+
 ---
 
 ## Key Concepts at a Glance
@@ -829,6 +860,26 @@ This quadrant shows when expert intuition is reliable: only in environments that
 - When you expect to be fired and are instead demoted, you code it as a gain — even though a demotion is objectively bad
 - <b style="color: #e74c3c">Reference points determine the entire emotional landscape of a decision</b> — and they can be manipulated by framing, anchoring, and expectation management
 
+```chartjs
+{
+  "type": "bar",
+  "data": {
+    "labels": ["$100 Gain", "$200 Gain", "$500 Gain", "$100 Loss", "$200 Loss", "$500 Loss"],
+    "datasets": [{
+      "label": "Psychological Value (Prospect Theory)",
+      "data": [40, 60, 80, -80, -120, -160],
+      "backgroundColor": ["#27ae60", "#27ae60", "#27ae60", "#e74c3c", "#e74c3c", "#e74c3c"]
+    }]
+  },
+  "options": {
+    "plugins": { "title": { "display": true, "text": "Prospect Theory's S-Curve: Losses Hurt ~2x More Than Gains Feel Good" } },
+    "scales": { "y": { "title": { "display": true, "text": "Psychological Value (Utils)" } } }
+  }
+}
+```
+
+The asymmetry is visceral: a $100 loss produces roughly twice the psychological pain that a $100 gain produces in pleasure — explaining why people reject fair bets and why reforms are harder to implement than the status quo.
+
 ---
 
 ### Decision Weights vs Probabilities
@@ -1525,6 +1576,53 @@ This circular diagram reveals the book's hidden structure: the five parts form a
 - Richard Thaler won the Nobel Prize in Economics in 2017 for developing behavioural economics — work that would have been impossible without Kahneman and Tversky's foundation
 - Robert Shiller won the Nobel Prize in Economics in 2013 for showing that financial markets are driven by psychology, not just information — again building on Kahneman-Tversky insights
 - <b style="color: #27ae60">This book is the accessible gateway to an intellectual revolution that has reshaped economics, law, medicine, public policy, and our understanding of what it means to be human</b>
+
+```d3
+{
+  "type": "heatmap",
+  "data": [
+    { "x": "Anchoring", "y": "Finance", "value": 9 },
+    { "x": "Anchoring", "y": "Medicine", "value": 7 },
+    { "x": "Anchoring", "y": "Law", "value": 8 },
+    { "x": "Availability", "y": "Finance", "value": 8 },
+    { "x": "Availability", "y": "Medicine", "value": 9 },
+    { "x": "Availability", "y": "Law", "value": 7 },
+    { "x": "Loss Aversion", "y": "Finance", "value": 10 },
+    { "x": "Loss Aversion", "y": "Medicine", "value": 6 },
+    { "x": "Loss Aversion", "y": "Law", "value": 7 },
+    { "x": "Overconfidence", "y": "Finance", "value": 9 },
+    { "x": "Overconfidence", "y": "Medicine", "value": 8 },
+    { "x": "Overconfidence", "y": "Law", "value": 6 },
+    { "x": "WYSIATI", "y": "Finance", "value": 8 },
+    { "x": "WYSIATI", "y": "Medicine", "value": 8 },
+    { "x": "WYSIATI", "y": "Law", "value": 9 },
+    { "x": "Framing", "y": "Finance", "value": 7 },
+    { "x": "Framing", "y": "Medicine", "value": 9 },
+    { "x": "Framing", "y": "Law", "value": 10 }
+  ],
+  "options": { "title": "Bias Impact Across Professional Domains (Kahneman's Legacy)" }
+}
+```
+
+Kahneman's biases strike hardest where the stakes are highest — loss aversion dominates finance, framing effects reshape legal judgments, and availability bias distorts medical diagnoses.
+
+```chartjs
+{
+  "type": "polarArea",
+  "data": {
+    "labels": ["Anchoring", "Availability", "Loss Aversion", "Overconfidence", "WYSIATI", "Framing Effects", "Planning Fallacy", "Sunk Cost"],
+    "datasets": [{
+      "data": [85, 80, 95, 90, 88, 82, 78, 75],
+      "backgroundColor": ["#2980b966", "#27ae6066", "#e74c3c66", "#f39c1266", "#8e44ad66", "#3498db66", "#1abc9c66", "#e67e2266"]
+    }]
+  },
+  "options": {
+    "plugins": { "title": { "display": true, "text": "Kahneman's Cognitive Bias Universe: Relative Prevalence in Daily Decisions" } }
+  }
+}
+```
+
+Loss aversion and overconfidence dominate Kahneman's bias universe, operating in nearly every decision we make — followed closely by WYSIATI, the master bias that makes all others possible.
 
 ---
 

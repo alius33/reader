@@ -99,6 +99,39 @@ The four rules form a strict sequence — each depends on the one before it, and
   - For the 96% whose passions are not career-relevant, the advice is not merely unhelpful — it creates a permanent sense of inadequacy
   - It implies that everyone else has found their calling and that you are broken for not finding yours
 
+```chartjs
+{
+  "type": "doughnut",
+  "data": {
+    "labels": ["Sports & Hobbies (84%)", "Career-Relevant (4%)", "Other Interests (12%)"],
+    "datasets": [{
+      "data": [84, 4, 12],
+      "backgroundColor": ["#3498db", "#e74c3c", "#95a5a6"],
+      "borderColor": "#ffffff",
+      "borderWidth": 3
+    }]
+  },
+  "options": {
+    "responsive": true,
+    "plugins": {
+      "title": {
+        "display": true,
+        "text": "Where Do Students' Passions Actually Lie? (Vallerand Study)",
+        "font": { "size": 16 }
+      },
+      "legend": {
+        "position": "bottom"
+      },
+      "tooltip": {
+        "callbacks": {}
+      }
+    }
+  }
+}
+```
+
+Vallerand's research reveals the fatal flaw in "follow your passion" advice: 96% of identified passions have no connection to viable career paths, leaving most people chasing something that cannot exist in a professional context.
+
 > [!example] Thomas and the Search for a Calling
 > - Thomas, a young Zen practitioner, spent years searching for his vocational calling
 > - He drifted through a series of jobs and monastic retreats, convinced that the right career would feel like a calling the moment he found it
@@ -138,6 +171,58 @@ This finding inverts the entire passion framework:
 | Expert (10+ years) | Calling — "This is part of who I am" | Deep mastery generates intrinsic meaning |
 
 Wrzesniewski's research suggests this progression is natural and predictable — not a sign that you picked the wrong career.
+
+```chartjs
+{
+  "type": "bar",
+  "data": {
+    "labels": ["0-2 Years", "3-5 Years", "6-10 Years", "11-15 Years", "16-20 Years", "20+ Years"],
+    "datasets": [
+      {
+        "label": "Job Orientation",
+        "data": [85, 60, 35, 20, 10, 5],
+        "backgroundColor": "#e74c3c"
+      },
+      {
+        "label": "Career Orientation",
+        "data": [12, 30, 40, 35, 25, 15],
+        "backgroundColor": "#f39c12"
+      },
+      {
+        "label": "Calling Orientation",
+        "data": [3, 10, 25, 45, 65, 80],
+        "backgroundColor": "#27ae60"
+      }
+    ]
+  },
+  "options": {
+    "responsive": true,
+    "plugins": {
+      "title": {
+        "display": true,
+        "text": "Work Orientation Shifts with Experience (Based on Wrzesniewski's Research)",
+        "font": { "size": 15 }
+      },
+      "legend": {
+        "position": "bottom"
+      }
+    },
+    "scales": {
+      "x": {
+        "title": { "display": true, "text": "Years of Experience" },
+        "stacked": true
+      },
+      "y": {
+        "title": { "display": true, "text": "% of Workers" },
+        "stacked": true,
+        "max": 100
+      }
+    }
+  }
+}
+```
+
+The stacked progression shows that "calling" orientation rises steadily with tenure — the strongest predictor of experiencing work as a calling is not what you do but how long you have been doing it.
 
 ---
 
@@ -306,6 +391,55 @@ The theory also explains a common observation:
   - The meaning, the satisfaction, the passion — all of it follows from that commitment to excellence
   - Casstevens has recorded on hundreds of albums and played with dozens of artists
   - His career capital is immense — not because he chased passion but because he relentlessly pursued quality
+
+```chartjs
+{
+  "type": "radar",
+  "data": {
+    "labels": ["Focus on Output", "Growth Rate", "Satisfaction Stability", "Resilience to Setbacks", "Output Quality", "Career Capital Accumulation"],
+    "datasets": [
+      {
+        "label": "Craftsman Mindset",
+        "data": [95, 90, 85, 88, 92, 95],
+        "backgroundColor": "rgba(39, 174, 96, 0.2)",
+        "borderColor": "#27ae60",
+        "pointBackgroundColor": "#27ae60",
+        "borderWidth": 2
+      },
+      {
+        "label": "Passion Mindset",
+        "data": [30, 35, 25, 20, 40, 15],
+        "backgroundColor": "rgba(231, 76, 60, 0.2)",
+        "borderColor": "#e74c3c",
+        "pointBackgroundColor": "#e74c3c",
+        "borderWidth": 2
+      }
+    ]
+  },
+  "options": {
+    "responsive": true,
+    "plugins": {
+      "title": {
+        "display": true,
+        "text": "Passion Mindset vs Craftsman Mindset: Performance Across Six Dimensions",
+        "font": { "size": 15 }
+      },
+      "legend": {
+        "position": "bottom"
+      }
+    },
+    "scales": {
+      "r": {
+        "beginAtZero": true,
+        "max": 100,
+        "ticks": { "stepSize": 20 }
+      }
+    }
+  }
+}
+```
+
+The radar profile reveals why the craftsman mindset dominates across every career dimension — its outward focus on output quality and skill-building creates a virtuous cycle, while the passion mindset's inward focus on feelings produces chronic dissatisfaction and stagnation.
 
 ---
 
@@ -957,6 +1091,59 @@ flowchart TD
 ```
 
 The complete framework forms a single argument from first principles to full career strategy.
+
+```d3
+{
+  "type": "treemap",
+  "data": {
+    "name": "Career Capital Framework",
+    "children": [
+      {
+        "name": "Rule 1: Reject Passion",
+        "children": [
+          { "name": "Passion Hypothesis Is False", "value": 30 },
+          { "name": "84% Passions Non-Vocational", "value": 25 },
+          { "name": "Mastery Precedes Passion", "value": 35 },
+          { "name": "Self-Determination Theory", "value": 28 }
+        ]
+      },
+      {
+        "name": "Rule 2: Build Capital",
+        "children": [
+          { "name": "Craftsman Mindset", "value": 40 },
+          { "name": "Deliberate Practice", "value": 45 },
+          { "name": "Winner-Take-All Markets", "value": 25 },
+          { "name": "Auction Markets", "value": 25 },
+          { "name": "Three Disqualifiers", "value": 18 }
+        ]
+      },
+      {
+        "name": "Rule 3: Invest in Control",
+        "children": [
+          { "name": "Autonomy as Currency", "value": 30 },
+          { "name": "First Trap: No Capital", "value": 28 },
+          { "name": "Second Trap: Employer Resistance", "value": 28 },
+          { "name": "Law of Financial Viability", "value": 35 }
+        ]
+      },
+      {
+        "name": "Rule 4: Discover Mission",
+        "children": [
+          { "name": "Adjacent Possible", "value": 35 },
+          { "name": "Little Bets Strategy", "value": 30 },
+          { "name": "Law of Remarkability", "value": 32 },
+          { "name": "Research Bible Method", "value": 20 }
+        ]
+      }
+    ]
+  },
+  "width": 700,
+  "height": 420,
+  "colors": ["#e74c3c", "#2980b9", "#f39c12", "#27ae60"]
+}
+```
+
+The treemap reveals the architecture of Newport's argument: each of the four rules contains distinct sub-components that build upon one another, with Rule 2 (Build Capital) carrying the most conceptual weight as the engine that powers everything else.
 
 - **Rule 1 clears the mental ground** — by showing that the passion hypothesis is false, it frees you from the paralysing search for the "right" career
 - **Rule 2 provides the alternative** — the craftsman mindset and career capital theory give you a positive programme to replace the passion hypothesis

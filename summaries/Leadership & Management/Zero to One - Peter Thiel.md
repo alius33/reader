@@ -337,6 +337,74 @@ Thiel identifies four structural features that allow monopolies to persist:
 | **Economies of Scale** | Marginal cost of one more customer approaches zero | Software companies — one more user costs almost nothing to serve |
 | **Branding** | Genuine brand earned by product quality, not manufactured by marketing | Apple's brand reflects real product superiority, not just advertising |
 
+```chartjs
+{
+  "type": "radar",
+  "data": {
+    "labels": ["Proprietary Technology", "Network Effects", "Economies of Scale", "Branding"],
+    "datasets": [
+      {
+        "label": "Google",
+        "data": [95, 70, 90, 85],
+        "backgroundColor": "rgba(41, 128, 185, 0.15)",
+        "borderColor": "#2980b9",
+        "pointBackgroundColor": "#2980b9",
+        "borderWidth": 2
+      },
+      {
+        "label": "Facebook",
+        "data": [70, 95, 85, 75],
+        "backgroundColor": "rgba(142, 68, 173, 0.15)",
+        "borderColor": "#8e44ad",
+        "pointBackgroundColor": "#8e44ad",
+        "borderWidth": 2
+      },
+      {
+        "label": "Amazon",
+        "data": [80, 75, 95, 80],
+        "backgroundColor": "rgba(39, 174, 96, 0.15)",
+        "borderColor": "#27ae60",
+        "pointBackgroundColor": "#27ae60",
+        "borderWidth": 2
+      },
+      {
+        "label": "Apple",
+        "data": [85, 60, 75, 98],
+        "backgroundColor": "rgba(231, 76, 60, 0.15)",
+        "borderColor": "#e74c3c",
+        "pointBackgroundColor": "#e74c3c",
+        "borderWidth": 2
+      },
+      {
+        "label": "Tesla",
+        "data": [90, 50, 65, 92],
+        "backgroundColor": "rgba(243, 156, 18, 0.15)",
+        "borderColor": "#f39c12",
+        "pointBackgroundColor": "#f39c12",
+        "borderWidth": 2
+      }
+    ]
+  },
+  "options": {
+    "plugins": {
+      "title": {
+        "display": true,
+        "text": "Monopoly Durability: Five Tech Giants Across Thiel's Four Characteristics"
+      }
+    },
+    "scales": {
+      "r": {
+        "beginAtZero": true,
+        "max": 100,
+        "ticks": { "stepSize": 20 }
+      }
+    }
+  }
+}
+```
+
+Each monopoly has a distinct shape: Google's moat is proprietary technology and scale, Facebook's is network effects, Amazon's is economies of scale, Apple's is branding, and Tesla's is proprietary technology plus brand — confirming Thiel's point that durable monopolies need strength across multiple characteristics simultaneously.
+
 Each characteristic reinforces the others:
 
 - **Proprietary technology** creates the initial advantage that attracts early users
@@ -538,6 +606,63 @@ The power law is not just about venture capital. Thiel argues it applies to ever
 | **Relationships** | A few relationships produce the vast majority of meaning |
 | **Skills** | One exceptional skill is worth more than ten mediocre ones |
 | **Time** | A few hours of focused work produce more value than 40 hours of scattered work |
+
+```d3
+{
+  "type": "treemap",
+  "data": {
+    "name": "Power Law Distribution",
+    "children": [
+      {
+        "name": "Companies",
+        "children": [
+          {"name": "Top Company", "value": 60},
+          {"name": "2nd Company", "value": 20},
+          {"name": "3rd Company", "value": 10},
+          {"name": "Rest Combined", "value": 10}
+        ]
+      },
+      {
+        "name": "Products",
+        "children": [
+          {"name": "Core Product", "value": 55},
+          {"name": "2nd Product", "value": 25},
+          {"name": "Other Products", "value": 20}
+        ]
+      },
+      {
+        "name": "Decisions",
+        "children": [
+          {"name": "Key Decision", "value": 70},
+          {"name": "Secondary", "value": 20},
+          {"name": "All Others", "value": 10}
+        ]
+      },
+      {
+        "name": "Skills",
+        "children": [
+          {"name": "Best Skill", "value": 65},
+          {"name": "2nd Skill", "value": 20},
+          {"name": "Other Skills", "value": 15}
+        ]
+      },
+      {
+        "name": "Time",
+        "children": [
+          {"name": "Deep Focus Hours", "value": 70},
+          {"name": "Normal Work", "value": 20},
+          {"name": "Busywork", "value": 10}
+        ]
+      }
+    ]
+  },
+  "options": {
+    "title": "Power Law Distribution Across Life Domains"
+  }
+}
+```
+
+The treemap makes the power law viscerally visible: in every domain — companies, products, decisions, skills, and time — a tiny fraction of inputs generates the vast majority of value, which is why Thiel argues concentration beats diversification.
 
 ### The Anti-Diversification Argument
 
@@ -775,6 +900,46 @@ Thiel maps the entire landscape of distribution methods by customer lifetime val
 | $100-$1K | **Marketing and advertising** | Consumer products, subscription services | Cost per acquisition must be lower than lifetime value |
 | <$100 | **Viral distribution** | Social networks, messaging apps, tools | Product must have a built-in sharing mechanism |
 
+```chartjs
+{
+  "type": "polarArea",
+  "data": {
+    "labels": ["Complex Sales ($1M+)", "Inside Sales ($10K-$100K)", "Marketing Hybrid ($1K-$10K)", "Marketing/Ads ($100-$1K)", "Viral (<$100)"],
+    "datasets": [
+      {
+        "data": [1000, 100, 10, 1, 0.1],
+        "backgroundColor": [
+          "rgba(142, 68, 173, 0.7)",
+          "rgba(41, 128, 185, 0.7)",
+          "rgba(39, 174, 96, 0.7)",
+          "rgba(243, 156, 18, 0.7)",
+          "rgba(231, 76, 60, 0.7)"
+        ],
+        "borderColor": "#fff",
+        "borderWidth": 2
+      }
+    ]
+  },
+  "options": {
+    "plugins": {
+      "title": {
+        "display": true,
+        "text": "Distribution Methods by Customer Lifetime Value Tier ($K)"
+      },
+      "legend": { "position": "right" }
+    },
+    "scales": {
+      "r": {
+        "type": "logarithmic",
+        "beginAtZero": false
+      }
+    }
+  }
+}
+```
+
+The polar area chart reveals why distribution strategy must match customer lifetime value: each tier demands a fundamentally different approach, and the dead zone between $100 and $1K destroys products that lack a clear channel on either side.
+
 ### The Dead Zone
 
 <b style="color: #2980b9">The distribution dead zone</b> sits between roughly $100 and $1,000 in customer value:
@@ -910,6 +1075,49 @@ This chapter introduces <b style="color: #2980b9">Thiel's seven questions</b> �
 > 6. **Durability** — Do network effects, proprietary tech, and switching costs protect you for 20 years?
 > 7. **Secret** — Do you know something specific, testable, and defensible that others do not?
 
+```chartjs
+{
+  "type": "bar",
+  "data": {
+    "labels": ["Engineering", "Timing", "Monopoly", "People", "Distribution", "Durability", "Secret"],
+    "datasets": [
+      {
+        "label": "Tesla",
+        "data": [9, 8, 8, 9, 8, 8, 9],
+        "backgroundColor": "rgba(39, 174, 96, 0.8)",
+        "borderColor": "#27ae60",
+        "borderWidth": 1
+      },
+      {
+        "label": "Average Clean Tech Company",
+        "data": [3, 4, 2, 3, 3, 2, 2],
+        "backgroundColor": "rgba(231, 76, 60, 0.8)",
+        "borderColor": "#e74c3c",
+        "borderWidth": 1
+      }
+    ]
+  },
+  "options": {
+    "indexAxis": "y",
+    "plugins": {
+      "title": {
+        "display": true,
+        "text": "Tesla vs Average Clean Tech: Thiel's Seven Questions (1-10)"
+      }
+    },
+    "scales": {
+      "x": {
+        "beginAtZero": true,
+        "max": 10,
+        "title": { "display": true, "text": "Score (1-10)" }
+      }
+    }
+  }
+}
+```
+
+Tesla's consistent strength across all seven questions — versus the typical clean tech company's weakness on nearly every dimension — explains why Tesla succeeded while over $50 billion in clean tech investment was lost, and why Thiel calls it the definitive counterexample.
+
 ### The Clean Tech Disaster
 
 Thiel uses the clean tech bubble as his central case study because virtually every clean tech company failed every question:
@@ -969,6 +1177,33 @@ Thiel holds up Tesla as the one clean tech company that answered all seven quest
 | **Eccentricity** | Unique perspective that drives innovation | Alienates people; creates culture problems |
 | **Conviction** | Persists when everyone says quit | Persists when everyone is right to say quit |
 | **Risk tolerance** | Willing to bet everything | Sometimes loses everything |
+
+```d3
+{
+  "type": "heatmap",
+  "data": {
+    "xLabels": ["0-to-1 Advantage", "Management Risk", "Public Perception", "Long-term Impact"],
+    "yLabels": ["Contrarianism", "Obsession", "Eccentricity", "Conviction", "Risk Tolerance"],
+    "values": [
+      [9, 6, 5, 8],
+      [8, 7, 4, 9],
+      [7, 8, 3, 6],
+      [9, 5, 6, 9],
+      [10, 9, 4, 8]
+    ]
+  },
+  "options": {
+    "title": "Founder Qualities: Creative Power vs Destructive Risk",
+    "colorScale": {
+      "min": 3,
+      "max": 10,
+      "scheme": "RdYlGn"
+    }
+  }
+}
+```
+
+The heatmap reveals the founder's paradox in data: every quality that drives 0-to-1 advantage (green) also carries high management risk (amber/red) — confirming Thiel's argument that the traits enabling creation and the traits threatening destruction are inseparable.
 
 ### Founders as Mythical Figures
 

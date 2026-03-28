@@ -85,6 +85,55 @@ The book is structured around thirteen characteristics that define the Cleaner �
 
 The taxonomy's real power is as a diagnostic: it forces you to ask not "Am I talented?" but "How do I respond when the stakes are highest and no one is watching?"
 
+```chartjs
+{
+  "type": "radar",
+  "data": {
+    "labels": ["Pressure", "Decisions", "Emotion Control", "Competition", "Accountability", "Preparation", "Internal Drive"],
+    "datasets": [
+      {
+        "label": "Cooler",
+        "data": [2, 2, 2, 2, 1, 3, 2],
+        "backgroundColor": "rgba(189, 189, 189, 0.2)",
+        "borderColor": "#bdbdbd",
+        "pointBackgroundColor": "#bdbdbd"
+      },
+      {
+        "label": "Closer",
+        "data": [6, 6, 5, 6, 5, 7, 6],
+        "backgroundColor": "rgba(41, 128, 179, 0.2)",
+        "borderColor": "#2980b9",
+        "pointBackgroundColor": "#2980b9"
+      },
+      {
+        "label": "Cleaner",
+        "data": [10, 9, 10, 10, 10, 9, 10],
+        "backgroundColor": "rgba(231, 76, 60, 0.15)",
+        "borderColor": "#e74c3c",
+        "pointBackgroundColor": "#e74c3c"
+      }
+    ]
+  },
+  "options": {
+    "plugins": {
+      "title": {
+        "display": true,
+        "text": "Cooler vs Closer vs Cleaner: Trait Comparison Across Seven Dimensions"
+      }
+    },
+    "scales": {
+      "r": {
+        "beginAtZero": true,
+        "max": 10,
+        "ticks": { "stepSize": 2 }
+      }
+    }
+  }
+}
+```
+
+The radar shape reveals that the Cleaner-to-Closer gap is far wider than the Closer-to-Cooler gap — the jump to unstoppable requires near-maximum capacity across every psychological dimension simultaneously.
+
 ---
 
 **Coolers:**
@@ -392,6 +441,46 @@ flowchart TD
 ```
 
 The dark side is the same force whether it produces championships or catastrophe — the difference is whether the performer maintains directional control.
+
+```chartjs
+{
+  "type": "polarArea",
+  "data": {
+    "labels": ["Dark Side (Fuel)", "The Zone (Focus)", "Internal Drive", "Pressure Seeking", "Trust Circle", "Privacy & Control"],
+    "datasets": [
+      {
+        "label": "Cleaner Operating System Components",
+        "data": [9, 10, 9, 8, 5, 8],
+        "backgroundColor": [
+          "rgba(26, 26, 46, 0.7)",
+          "rgba(39, 174, 96, 0.7)",
+          "rgba(41, 128, 179, 0.7)",
+          "rgba(231, 76, 60, 0.7)",
+          "rgba(142, 68, 173, 0.7)",
+          "rgba(44, 62, 80, 0.7)"
+        ],
+        "borderColor": "#333"
+      }
+    ]
+  },
+  "options": {
+    "plugins": {
+      "title": {
+        "display": true,
+        "text": "The Cleaner's Psychological Operating System: Component Intensity"
+      }
+    },
+    "scales": {
+      "r": {
+        "beginAtZero": true,
+        "max": 10
+      }
+    }
+  }
+}
+```
+
+The asymmetry is revealing: the Zone and internal drive dominate the Cleaner's psychology, while the trust circle is deliberately kept small — maximum output, minimum vulnerability.
 
 ---
 
@@ -913,6 +1002,56 @@ flowchart TD
 
 The Cleaner's emotional system during performance is a filter — only cold anger passes through; everything else is blocked.
 
+```chartjs
+{
+  "type": "bar",
+  "data": {
+    "labels": ["Explosive Anger", "Cold Anger", "Fear", "Excitement", "Frustration", "Jealousy"],
+    "datasets": [
+      {
+        "label": "Emotional Intensity When Triggered",
+        "data": [9, 7, 6, 5, 7, 4],
+        "backgroundColor": "rgba(142, 68, 173, 0.6)",
+        "borderColor": "#8e44ad",
+        "borderWidth": 1
+      },
+      {
+        "label": "Effect on Zone Performance (+ = helps, − = hurts)",
+        "data": [-8, 8, -7, -4, -6, -5],
+        "backgroundColor": [
+          "rgba(231, 76, 60, 0.6)",
+          "rgba(39, 174, 96, 0.6)",
+          "rgba(231, 76, 60, 0.6)",
+          "rgba(231, 76, 60, 0.6)",
+          "rgba(231, 76, 60, 0.6)",
+          "rgba(231, 76, 60, 0.6)"
+        ],
+        "borderColor": "#333",
+        "borderWidth": 1
+      }
+    ]
+  },
+  "options": {
+    "plugins": {
+      "title": {
+        "display": true,
+        "text": "Emotions Under Pressure: Intensity vs Zone Performance Impact"
+      }
+    },
+    "scales": {
+      "y": {
+        "beginAtZero": false,
+        "min": -10,
+        "max": 10,
+        "title": { "display": true, "text": "Score (−10 to +10)" }
+      }
+    }
+  }
+}
+```
+
+Cold anger is the only emotion where high intensity produces a positive Zone effect — every other emotion, no matter how intensely felt, degrades performance.
+
 > "Controlled anger is a deadly weapon." — Tim S. Grover
 
 Grover's model of emotional processing in the heat of competition:
@@ -1133,6 +1272,53 @@ flowchart TD
 ```
 
 The system is self-reinforcing: identity feeds drive, drive enters the Zone, the Zone produces results, results confirm identity — and the cycle begins again.
+
+```d3
+{
+  "type": "heatmap",
+  "title": "The 13 Cleaner Traits: How Jordan, Kobe & Wade Expressed Each One",
+  "data": {
+    "xLabels": ["Jordan", "Kobe", "Wade"],
+    "yLabels": [
+      "1. Relentless Push",
+      "2. The Zone",
+      "3. Self-Knowledge",
+      "4. Dark Side Control",
+      "5. Pressure Thriving",
+      "6. Crisis Competence",
+      "7. Dictating Terms",
+      "8. Instant Decisions",
+      "9. Internal Drive",
+      "10. Fear Over Likability",
+      "11. Selective Trust",
+      "12. Never Satisfied",
+      "13. Privacy & Dark Work"
+    ],
+    "values": [
+      [10, 9, 8],
+      [10, 9, 8],
+      [10, 10, 7],
+      [10, 9, 7],
+      [10, 9, 9],
+      [10, 8, 8],
+      [10, 9, 7],
+      [10, 9, 7],
+      [10, 10, 8],
+      [9, 10, 6],
+      [8, 9, 7],
+      [10, 10, 8],
+      [10, 10, 8]
+    ]
+  },
+  "options": {
+    "colorRange": ["#f7fbff", "#2980b9", "#1a1a2e"],
+    "cellWidth": 90,
+    "cellHeight": 28
+  }
+}
+```
+
+The heatmap confirms that all three athletes operated at Cleaner level across the board, but Jordan and Kobe reached ceiling intensity on nearly every trait while Wade's slightly lower scores on self-knowledge and dictating terms reflect his more relational leadership style.
 
 ---
 

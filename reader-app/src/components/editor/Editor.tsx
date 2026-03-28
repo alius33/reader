@@ -21,6 +21,8 @@ import { FontSize } from "./extensions/FontSize";
 import { Indent } from "./extensions/Indent";
 import { CalloutNode } from "./extensions/CalloutNode";
 import { MermaidNode } from "./extensions/MermaidNode";
+import { ChartNode } from "./extensions/ChartNode";
+import { D3Node } from "./extensions/D3Node";
 import { WikilinkMark } from "./extensions/WikilinkMark";
 import { CommentMark } from "./extensions/CommentMark";
 import { SearchAndReplace } from "./extensions/SearchAndReplace";
@@ -63,6 +65,8 @@ export function Editor({ content, onUpdate, mode = "read", onComment }: EditorPr
       Link.configure({ openOnClick: false, HTMLAttributes: { target: "_blank" } }),
       CalloutNode,
       MermaidNode,
+      ChartNode,
+      D3Node,
       WikilinkMark,
       CommentMark,
       Superscript,

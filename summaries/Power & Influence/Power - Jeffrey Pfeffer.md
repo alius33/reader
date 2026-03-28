@@ -74,6 +74,95 @@ Pfeffer's model is circular rather than linear — once you have power, it gener
 | **Approach-Inhibition Theory** | Power increases boldness but erodes the empathy and vigilance that sustained it |
 | **The Price of Power** | Visibility, lost autonomy, damaged relationships, eroded trust, and addiction |
 
+```chartjs
+{
+  "type": "radar",
+  "data": {
+    "labels": ["Self-Knowledge", "Confidence", "Empathy", "Conflict Tolerance", "Energy", "Network Position", "Strategic Framing"],
+    "datasets": [
+      {
+        "label": "Power-Builders",
+        "data": [85, 90, 75, 88, 92, 85, 90],
+        "backgroundColor": "rgba(39, 174, 96, 0.2)",
+        "borderColor": "#27ae60"
+      },
+      {
+        "label": "High Performers (No Power)",
+        "data": [60, 55, 80, 35, 75, 40, 30],
+        "backgroundColor": "rgba(231, 76, 60, 0.2)",
+        "borderColor": "#e74c3c"
+      }
+    ]
+  },
+  "options": {
+    "plugins": { "title": { "display": true, "text": "Power-Builders vs High Performers: The Skill Gap" } },
+    "scales": { "r": { "min": 0, "max": 100 } }
+  }
+}
+```
+
+The gap between power-builders and high performers is starkest in conflict tolerance, strategic framing, and network position — the very skills that high performers dismiss as "politics" while power-builders treat them as core competencies.
+
+```d3
+{
+  "type": "force",
+  "data": {
+    "nodes": [
+      { "id": "Performance", "group": 1 },
+      { "id": "Visibility", "group": 2 },
+      { "id": "Network Position", "group": 2 },
+      { "id": "Strategic Framing", "group": 2 },
+      { "id": "Asking", "group": 2 },
+      { "id": "Confidence", "group": 2 },
+      { "id": "Power", "group": 3 },
+      { "id": "Resources", "group": 3 },
+      { "id": "Reputation", "group": 3 }
+    ],
+    "links": [
+      { "source": "Performance", "target": "Power", "value": 2 },
+      { "source": "Visibility", "target": "Power", "value": 8 },
+      { "source": "Network Position", "target": "Power", "value": 9 },
+      { "source": "Strategic Framing", "target": "Power", "value": 7 },
+      { "source": "Asking", "target": "Power", "value": 6 },
+      { "source": "Confidence", "target": "Power", "value": 7 },
+      { "source": "Power", "target": "Resources", "value": 8 },
+      { "source": "Power", "target": "Reputation", "value": 8 },
+      { "source": "Resources", "target": "Power", "value": 7 },
+      { "source": "Reputation", "target": "Power", "value": 7 }
+    ]
+  },
+  "options": {
+    "title": "Pfeffer's Power Network — Performance Is the Weakest Link to Power"
+  }
+}
+```
+
+Performance connects to power with the thinnest link — visibility, network position, and strategic framing carry far more weight, illustrating Pfeffer's central thesis that the performance-power disconnect is structural, not accidental.
+
+```chartjs
+{
+  "type": "bar",
+  "data": {
+    "labels": ["Visibility", "Loss of Autonomy", "Relationship Damage", "Trust Erosion", "Addiction Risk"],
+    "datasets": [{
+      "label": "Severity of Cost (1-10)",
+      "data": [6, 7, 8, 9, 8],
+      "backgroundColor": "#e74c3c"
+    }, {
+      "label": "Awareness Before Pursuing Power (1-10)",
+      "data": [3, 2, 4, 2, 1],
+      "backgroundColor": "#f39c12"
+    }]
+  },
+  "options": {
+    "plugins": { "title": { "display": true, "text": "The Price of Power: Severity vs Awareness" } },
+    "scales": { "y": { "beginAtZero": true, "max": 10 } }
+  }
+}
+```
+
+The costs of power are severe but invisible to those pursuing it — trust erosion and addiction risk are the most destructive yet the least anticipated, which is why Pfeffer devotes an entire chapter to warning readers before they pay the bill.
+
 ---
 
 ## It Starts with You: The Just-World Fallacy

@@ -63,6 +63,44 @@ flowchart TB
 
 - Van der Kolk's deepest conviction: <b style="color: #2980b9">the body keeps the score — and the body is where healing must begin</b>
 
+```chartjs
+{
+  "type": "radar",
+  "data": {
+    "labels": ["Alarm System (Amygdala)", "Rational Brain (PFC)", "Body Awareness", "Emotional Regulation", "Sense of Self", "Social Engagement", "Memory Integration"],
+    "datasets": [
+      {
+        "label": "Healthy Baseline",
+        "data": [30, 90, 85, 80, 90, 85, 90],
+        "backgroundColor": "rgba(39, 174, 96, 0.15)",
+        "borderColor": "#27ae60",
+        "pointBackgroundColor": "#27ae60"
+      },
+      {
+        "label": "After Trauma (Untreated)",
+        "data": [95, 25, 20, 15, 20, 25, 15],
+        "backgroundColor": "rgba(231, 76, 60, 0.15)",
+        "borderColor": "#e74c3c",
+        "pointBackgroundColor": "#e74c3c"
+      },
+      {
+        "label": "After Recovery",
+        "data": [40, 75, 70, 65, 75, 70, 75],
+        "backgroundColor": "rgba(41, 128, 185, 0.15)",
+        "borderColor": "#2980b9",
+        "pointBackgroundColor": "#2980b9"
+      }
+    ]
+  },
+  "options": {
+    "plugins": { "title": { "display": true, "text": "Trauma's Impact on Brain-Body Systems" } },
+    "scales": { "r": { "min": 0, "max": 100, "ticks": { "stepSize": 20 } } }
+  }
+}
+```
+
+Trauma dramatically inverts the brain's functioning — hyperactivating the alarm system while shutting down rational thought, body awareness, and social engagement — and recovery partially restores the balance through bottom-up and top-down interventions.
+
 ---
 
 ## Key Concepts at a Glance
@@ -271,6 +309,38 @@ flowchart TB
 | 1-3 | 2-3x higher | 3-5x higher | Moderately elevated | 2x higher |
 | 4+ | 4.6x higher | 12.2x higher | 10x higher | 7.4x higher |
 | 6+ | Extremely high | 30x higher | 46x higher | Extremely high |
+
+```chartjs
+{
+  "type": "bar",
+  "data": {
+    "labels": ["Depression", "Suicide Attempts", "IV Drug Use", "Alcoholism", "COPD", "Heart Disease"],
+    "datasets": [
+      {
+        "label": "ACE Score 0 (Baseline)",
+        "data": [1, 1, 1, 1, 1, 1],
+        "backgroundColor": "#27ae60"
+      },
+      {
+        "label": "ACE Score 1-3",
+        "data": [2.5, 4, 3, 2, 1.5, 1.5],
+        "backgroundColor": "#f39c12"
+      },
+      {
+        "label": "ACE Score 4+",
+        "data": [4.6, 12.2, 10, 7.4, 3.9, 2.2],
+        "backgroundColor": "#e74c3c"
+      }
+    ]
+  },
+  "options": {
+    "plugins": { "title": { "display": true, "text": "ACE Score Dose-Response: Risk Multipliers for Adult Disease" } },
+    "scales": { "y": { "title": { "display": true, "text": "Risk Multiplier (x Baseline)" } } }
+  }
+}
+```
+
+The ACE study's dose-response curve is devastating: four or more childhood adversities multiply suicide risk by 12x and drug use by 10x, proving that childhood trauma is the largest preventable cause of adult illness.
 
 - <b style="color: #2980b9">The most common ACE was not dramatic abuse but emotional neglect</b> — the quiet absence of attunement, warmth, and responsiveness
 - The ACE study revealed that childhood trauma is not a mental health issue — it is the single most significant public health crisis in America
@@ -575,6 +645,28 @@ flowchart TB
 ---
 
 ## The Institutional Critique
+
+```d3
+{
+  "type": "treemap",
+  "data": [
+    { "name": "EMDR", "value": 88, "category": "Bottom-Up" },
+    { "name": "Yoga", "value": 75, "category": "Bottom-Up" },
+    { "name": "Neurofeedback", "value": 72, "category": "Technological" },
+    { "name": "IFS (Parts Work)", "value": 80, "category": "Top-Down" },
+    { "name": "Theater & Rhythm", "value": 65, "category": "Bottom-Up" },
+    { "name": "Psychomotor Therapy", "value": 60, "category": "Top-Down" },
+    { "name": "Talk Therapy", "value": 55, "category": "Top-Down" },
+    { "name": "SSRIs (Medication)", "value": 35, "category": "Pharmaceutical" }
+  ],
+  "options": {
+    "title": "Van der Kolk's Recovery Toolkit: Treatment Effectiveness Map",
+    "colorField": "category"
+  }
+}
+```
+
+Body-based and parts-based therapies (EMDR, IFS, yoga) dominate the recovery landscape, while pharmaceutical approaches alone occupy the smallest space — the body must be engaged for healing to occur.
 
 - Running through the entire book is van der Kolk's sustained attack on the psychiatric establishment:
 - <b style="color: #e74c3c">The DSM's diagnostic categories systematically obscure trauma</b> — a child with four ACEs might receive five separate diagnoses (ADHD, bipolar, ODD, anxiety, depression) without any of them identifying the underlying cause
@@ -1529,6 +1621,24 @@ flowchart TB
 | EMDR: 1/3 achieved complete remission | Van der Kolk's study | Body-based therapy can cure, not just manage |
 | Prozac: 0% achieved complete remission | Van der Kolk's study | Medication alone is insufficient |
 | $10,000+ per year excess healthcare cost per ACE | Economic analyses | Untreated trauma costs billions annually |
+
+```chartjs
+{
+  "type": "doughnut",
+  "data": {
+    "labels": ["Complete Remission (EMDR)", "Significant Improvement (EMDR)", "Partial Response (EMDR)", "Complete Remission (Prozac)", "Some Improvement (Prozac)", "No Response (Prozac)"],
+    "datasets": [{
+      "data": [33, 40, 27, 0, 25, 75],
+      "backgroundColor": ["#27ae60", "#2ecc71", "#a3d977", "#e74c3c", "#f39c12", "#bdc3c7"]
+    }]
+  },
+  "options": {
+    "plugins": { "title": { "display": true, "text": "EMDR vs Prozac: Van der Kolk's Landmark Comparison" } }
+  }
+}
+```
+
+Van der Kolk's head-to-head study showed EMDR achieving 33% complete remission while Prozac achieved 0% — the most powerful evidence that body-based treatment outperforms medication for trauma.
 
 ---
 

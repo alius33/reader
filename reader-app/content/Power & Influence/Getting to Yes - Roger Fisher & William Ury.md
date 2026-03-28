@@ -76,6 +76,32 @@ flowchart TD
 
 The four pillars apply across all three stages of negotiation — analysis (diagnosing the situation), planning (generating ideas), and discussion (communicating back and forth toward agreement).
 
+```d3
+{
+  "type": "heatmap",
+  "data": {
+    "xLabels": ["Soft Positional", "Hard Positional", "Principled"],
+    "yLabels": ["Trust Building", "Offer Quality", "Concession Pattern", "Solution Search", "Use of Pressure", "Relationship Outcome", "Efficiency"],
+    "values": [
+      [8, 2, 9],
+      [3, 4, 9],
+      [9, 1, 5],
+      [2, 2, 9],
+      [1, 9, 3],
+      [6, 2, 9],
+      [3, 3, 9]
+    ]
+  },
+  "options": {
+    "title": "Negotiation Approaches Comparison",
+    "colorScale": ["#e74c3c", "#f39c12", "#27ae60"],
+    "cellSize": 50
+  }
+}
+```
+
+Principled negotiation scores highest on nearly every dimension — the only area where it deliberately avoids dominance is pressure, which it replaces with objective criteria and reasoning.
+
 ---
 
 ## How the Four Pillars Work Together
@@ -90,6 +116,62 @@ The four pillars apply across all three stages of negotiation — analysis (diag
 | **Analysis** | Identify perception gaps, emotions, communication failures | List interests on both sides; rank by importance | Note options already proposed | Identify criteria already suggested |
 | **Planning** | Plan how to address people problems without concessions | Determine which interests to raise and when | Generate creative options using brainstorming and Circle Chart | Research precedents, standards, and fair procedures |
 | **Discussion** | Acknowledge emotions, correct misperceptions, listen actively | Share your interests; ask about theirs; find shared ground | Present options as joint exploration; ask for criticism | Frame each issue as a search for fair standards; yield to principle only |
+
+```chartjs
+{
+  "type": "radar",
+  "data": {
+    "labels": ["Analysis", "Planning", "Discussion"],
+    "datasets": [
+      {
+        "label": "People",
+        "data": [9, 7, 10],
+        "backgroundColor": "rgba(231, 76, 60, 0.15)",
+        "borderColor": "#e74c3c",
+        "pointBackgroundColor": "#e74c3c"
+      },
+      {
+        "label": "Interests",
+        "data": [8, 10, 9],
+        "backgroundColor": "rgba(41, 128, 185, 0.15)",
+        "borderColor": "#2980b9",
+        "pointBackgroundColor": "#2980b9"
+      },
+      {
+        "label": "Options",
+        "data": [5, 9, 8],
+        "backgroundColor": "rgba(39, 174, 96, 0.15)",
+        "borderColor": "#27ae60",
+        "pointBackgroundColor": "#27ae60"
+      },
+      {
+        "label": "Criteria",
+        "data": [6, 8, 10],
+        "backgroundColor": "rgba(142, 68, 173, 0.15)",
+        "borderColor": "#8e44ad",
+        "pointBackgroundColor": "#8e44ad"
+      }
+    ]
+  },
+  "options": {
+    "plugins": {
+      "title": {
+        "display": true,
+        "text": "Four Pillars Across Negotiation Stages"
+      }
+    },
+    "scales": {
+      "r": {
+        "min": 0,
+        "max": 10,
+        "ticks": { "stepSize": 2 }
+      }
+    }
+  }
+}
+```
+
+People and Criteria dominate the Discussion stage where human dynamics and fair standards converge, while Interests peak during Planning when you determine which needs to prioritize.
 
 > [!tip] The Method's Superpower
 > Principled negotiation is an all-purpose strategy. Unlike positional bargaining, it does not require matching the other side's approach. You can use it unilaterally. And if the other side also uses it, the negotiation becomes even more efficient and creative.
@@ -754,6 +836,27 @@ flowchart TD
   2. **Negotiation jujitsu** — counter positional moves by redirecting them to the merits
   3. **Third-party intervention** — the one-text procedure
 
+```mermaid
+quadrantChart
+    title Negotiation Style Matrix
+    x-axis Low Assertiveness --> High Assertiveness
+    y-axis Low Cooperativeness --> High Cooperativeness
+    quadrant-1 Principled Negotiation
+    quadrant-2 Soft Positional
+    quadrant-3 Avoidance
+    quadrant-4 Hard Positional
+    Principled Method: [0.82, 0.85]
+    Negotiation Jujitsu: [0.70, 0.75]
+    One-Text Procedure: [0.55, 0.90]
+    Dovetailing Differences: [0.65, 0.80]
+    Hard Bargaining: [0.90, 0.15]
+    Soft Yielding: [0.15, 0.70]
+    Avoidance: [0.10, 0.20]
+    Dirty Tricks: [0.85, 0.05]
+```
+
+The principled method uniquely occupies the top-right quadrant — high on both assertiveness and cooperativeness — while hard and soft positional approaches sacrifice one dimension for the other.
+
 #### Negotiation Jujitsu
 
 - When they push hard, you will be tempted to push back — <b style="color: #e74c3c">don't</b>
@@ -1191,6 +1294,40 @@ flowchart TD
 | **External standards of legitimacy** | Precedents, principles, and fair criteria serve as both sword (to persuade) and shield (to resist pressure) |
 | **Strong BATNA** | The walk-away alternative that gives you confidence and leverage; also develop your "micro-BATNA" for each meeting |
 | **Carefully crafted commitments** | Three types: (1) commit to what you will do (firm offer), (2) commit to what you will not do (with care, after understanding their interests), (3) clarify what you want them to do |
+
+```chartjs
+{
+  "type": "bar",
+  "data": {
+    "labels": ["Relationship", "Understanding Interests", "Elegant Options", "Legitimacy", "Strong BATNA", "Commitments"],
+    "datasets": [
+      {
+        "label": "Persuasion Impact",
+        "data": [8, 9, 7, 8, 10, 6],
+        "backgroundColor": ["#3498db", "#2ecc71", "#9b59b6", "#e67e22", "#e74c3c", "#1abc9c"]
+      },
+      {
+        "label": "Long-Term Value",
+        "data": [10, 8, 9, 7, 6, 5],
+        "backgroundColor": ["rgba(52,152,219,0.4)", "rgba(46,204,113,0.4)", "rgba(155,89,182,0.4)", "rgba(230,126,34,0.4)", "rgba(231,76,60,0.4)", "rgba(26,188,156,0.4)"]
+      }
+    ]
+  },
+  "options": {
+    "plugins": {
+      "title": {
+        "display": true,
+        "text": "Six Sources of Negotiation Power"
+      }
+    },
+    "scales": {
+      "y": { "beginAtZero": true, "max": 10, "title": { "display": true, "text": "Strength (1-10)" } }
+    }
+  }
+}
+```
+
+BATNA delivers the strongest immediate persuasion impact, but Relationship generates the highest long-term value — Fisher argues the best negotiators invest in both simultaneously.
 
 - <b style="color: #2980b9">Good communication is an especially significant source of power</b>
   - Crafting a forceful message: JFK — "Let us never negotiate out of fear. But let us never fear to negotiate"

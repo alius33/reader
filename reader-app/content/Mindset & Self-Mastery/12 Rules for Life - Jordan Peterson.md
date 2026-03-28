@@ -89,6 +89,66 @@ Peterson argues that this framework explains why modern life produces so much an
 | **Minimum Necessary Force** | The least intervention that effectively teaches the lesson |
 | **The Rescue Fantasy** | Helping someone who does not want help is vanity, not compassion |
 
+```chartjs
+{
+  "type": "radar",
+  "data": {
+    "labels": ["Personal", "Social", "Philosophical", "Practical", "Psychological"],
+    "datasets": [
+      {
+        "label": "Rule 1: Stand Up Straight",
+        "data": [9, 6, 5, 9, 9],
+        "borderColor": "#2980b9",
+        "backgroundColor": "rgba(41,128,185,0.15)"
+      },
+      {
+        "label": "Rule 7: Pursue Meaning",
+        "data": [8, 5, 10, 4, 8],
+        "borderColor": "#27ae60",
+        "backgroundColor": "rgba(39,174,96,0.15)"
+      },
+      {
+        "label": "Rule 8: Tell the Truth",
+        "data": [7, 9, 9, 7, 7],
+        "borderColor": "#e74c3c",
+        "backgroundColor": "rgba(231,76,60,0.15)"
+      },
+      {
+        "label": "Rule 5: Discipline Children",
+        "data": [4, 10, 6, 9, 7],
+        "borderColor": "#f39c12",
+        "backgroundColor": "rgba(243,156,18,0.15)"
+      },
+      {
+        "label": "Rule 12: Notice the Beauty",
+        "data": [10, 3, 9, 3, 8],
+        "borderColor": "#8e44ad",
+        "backgroundColor": "rgba(142,68,173,0.15)"
+      }
+    ]
+  },
+  "options": {
+    "plugins": {
+      "title": {
+        "display": true,
+        "text": "Peterson's 12 Rules: Dimensional Profile (Select Rules)"
+      }
+    },
+    "scales": {
+      "r": {
+        "min": 0,
+        "max": 10,
+        "ticks": {
+          "stepSize": 2
+        }
+      }
+    }
+  }
+}
+```
+
+Rules like "Stand Up Straight" and "Discipline Children" score highest on practical and personal dimensions, while "Pursue Meaning" and "Tell the Truth" are weighted toward the philosophical — illustrating how Peterson's rules span the full spectrum from embodied action to abstract principle.
+
 ---
 
 ## The Twelve Rules — Deep Dive
@@ -1347,6 +1407,76 @@ The progression moves from the most concrete and personal (your posture) to the 
 | 11 | Let people take risks | Overprotection produces fragility |
 | 12 | Notice the beauty | In the midst of suffering, pay attention to what is good |
 
+```chartjs
+{
+  "type": "bar",
+  "data": {
+    "labels": ["Career", "Relationships", "Health", "Parenting", "Finances", "Identity", "Spirituality"],
+    "datasets": [
+      {
+        "label": "Too Much Order (Rigidity)",
+        "data": [-8, -6, -5, -9, -7, -8, -7],
+        "backgroundColor": "rgba(41,128,185,0.7)"
+      },
+      {
+        "label": "Too Much Chaos (Dissolution)",
+        "data": [-7, -9, -8, -6, -9, -7, -5],
+        "backgroundColor": "rgba(231,76,60,0.7)"
+      },
+      {
+        "label": "Meaning (Balance)",
+        "data": [9, 8, 7, 8, 7, 9, 8],
+        "backgroundColor": "rgba(39,174,96,0.7)"
+      }
+    ]
+  },
+  "options": {
+    "plugins": {
+      "title": {
+        "display": true,
+        "text": "Order-Chaos Spectrum Across Life Domains"
+      }
+    },
+    "scales": {
+      "y": {
+        "title": {
+          "display": true,
+          "text": "Impact (negative = destructive, positive = meaningful)"
+        }
+      }
+    },
+    "indexAxis": "x"
+  }
+}
+```
+
+Both extremes — tyrannical order and dissolving chaos — produce negative outcomes across every life domain, but the specific damage differs: relationships suffer most from chaos (unpredictability destroys trust), while parenting suffers most from excessive order (overcontrol stifles development), confirming Peterson's case that meaning requires a domain-specific calibration between the two.
+
+```mermaid
+quadrantChart
+    title The 12 Rules: Internal vs External, Order vs Chaos
+    x-axis Internal Focus --> External Focus
+    y-axis Chaos --> Order
+    quadrant-1 External Order
+    quadrant-2 Internal Order
+    quadrant-3 Internal Chaos
+    quadrant-4 External Chaos
+    Rule 1 Stand Up Straight: [0.35, 0.75]
+    Rule 2 Treat Yourself Well: [0.20, 0.40]
+    Rule 3 Choose Good Friends: [0.75, 0.55]
+    Rule 4 Compare to Yourself: [0.15, 0.60]
+    Rule 5 Discipline Children: [0.80, 0.85]
+    Rule 6 Fix Yourself First: [0.30, 0.70]
+    Rule 7 Pursue Meaning: [0.25, 0.35]
+    Rule 8 Tell the Truth: [0.65, 0.65]
+    Rule 9 Listen Genuinely: [0.80, 0.45]
+    Rule 10 Be Precise: [0.60, 0.75]
+    Rule 11 Let Them Skateboard: [0.70, 0.25]
+    Rule 12 Notice the Beauty: [0.30, 0.20]
+```
+
+The quadrant reveals Peterson's deliberate architecture: the early rules (1, 2, 4, 6) cluster in the internal-order zone — get yourself together first — while the later rules (9, 11, 12) spread into external and chaos territory, reflecting the book's progression from self-mastery outward toward engaging the unpredictable world.
+
 ---
 
 ## Peterson's Key Intellectual Sources
@@ -1416,6 +1546,54 @@ flowchart LR
 ```
 
 Every rule in the book is an instruction for navigating this cycle: stand up straight (cross the threshold with courage), tell the truth (navigate the unknown honestly), pursue meaning (confront the dragon voluntarily).
+
+```d3
+{
+  "type": "treemap",
+  "data": {
+    "name": "Peterson's Conceptual Universe",
+    "children": [
+      {
+        "name": "Order",
+        "children": [
+          {"name": "Tradition", "value": 8},
+          {"name": "Hierarchy", "value": 9},
+          {"name": "Discipline", "value": 7},
+          {"name": "Truthful Speech", "value": 8},
+          {"name": "Responsibility", "value": 9}
+        ]
+      },
+      {
+        "name": "Chaos",
+        "children": [
+          {"name": "The Unknown", "value": 8},
+          {"name": "Suffering", "value": 9},
+          {"name": "Nihilism", "value": 7},
+          {"name": "Transformation", "value": 8},
+          {"name": "Shadow", "value": 7}
+        ]
+      },
+      {
+        "name": "The Boundary (Meaning)",
+        "children": [
+          {"name": "Voluntary Sacrifice", "value": 9},
+          {"name": "Hero's Journey", "value": 8},
+          {"name": "Incremental Growth", "value": 7},
+          {"name": "Logos", "value": 6}
+        ]
+      }
+    ]
+  },
+  "options": {
+    "title": "Order vs Chaos: Peterson's Conceptual Hierarchy",
+    "width": 700,
+    "height": 400,
+    "colorScheme": "category10"
+  }
+}
+```
+
+The treemap reveals that Peterson's intellectual framework is roughly balanced between Order and Chaos, with Meaning occupying a distinct but smaller region at the boundary — reflecting his argument that most of life is spent in one camp or the other, and that the narrow boundary between them is where growth actually happens.
 
 ---
 

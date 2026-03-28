@@ -52,6 +52,47 @@ Together they bring a rare combination: Siegel provides the neuroscience framewo
 
 ---
 
+```chartjs
+{
+  "type": "radar",
+  "data": {
+    "labels": ["Left-Right Integration", "Upstairs-Downstairs Integration", "Memory Integration", "Self Integration", "Interpersonal Integration"],
+    "datasets": [
+      {
+        "label": "Number of Strategies Targeting Area",
+        "data": [2, 3, 2, 3, 2],
+        "backgroundColor": "rgba(41, 128, 185, 0.2)",
+        "borderColor": "#2980b9",
+        "pointBackgroundColor": "#2980b9"
+      },
+      {
+        "label": "Daily Application Frequency (typical family)",
+        "data": [9, 8, 5, 6, 7],
+        "backgroundColor": "rgba(39, 174, 96, 0.2)",
+        "borderColor": "#27ae60",
+        "pointBackgroundColor": "#27ae60"
+      }
+    ]
+  },
+  "options": {
+    "plugins": {
+      "title": {
+        "display": true,
+        "text": "12 Strategies: Brain Integration Areas & Daily Application"
+      }
+    },
+    "scales": {
+      "r": {
+        "beginAtZero": true,
+        "max": 10
+      }
+    }
+  }
+}
+```
+
+Left-right and upstairs-downstairs integration dominate daily parenting moments (tantrums, meltdowns, defiance), while memory and self-integration strategies apply in quieter but equally important reflective moments — explaining why "connect and redirect" feels like the book's most-used tool.
+
 ## 30-Second Version
 
 Your child's brain is not yet integrated — the different regions do not work together smoothly, which is why kids have meltdowns, defy logic, and seem irrational. Twelve strategies help you wire these regions together through everyday interactions. When emotions flood: connect with the right brain before redirecting with the left. When instincts hijack: engage the upstairs brain rather than triggering the downstairs. When painful memories linger: retell the story to make the implicit explicit. When emotions feel permanent: teach kids that feelings are like clouds — they pass. When self-awareness is missing: use SIFT (Sensations, Images, Feelings, Thoughts) to build mindsight. When relationships rupture: use conflict as practice for empathy and repair. Every difficult moment is a chance to build a more integrated brain.
@@ -74,6 +115,59 @@ flowchart TB
     INTER --> RiverOfWellBeing
     RiverOfWellBeing --> MentalHealth["Flexible, Adaptive,<br/>Stable, Integrated"]
 ```
+
+```d3
+{
+  "type": "treemap",
+  "data": {
+    "name": "Brain Integration",
+    "children": [
+      {
+        "name": "Left-Right",
+        "children": [
+          {"name": "Connect & Redirect", "value": 18},
+          {"name": "Name It to Tame It", "value": 15}
+        ]
+      },
+      {
+        "name": "Upstairs-Downstairs",
+        "children": [
+          {"name": "Engage Don't Enrage", "value": 14},
+          {"name": "Use It or Lose It", "value": 12},
+          {"name": "Move It or Lose It", "value": 10}
+        ]
+      },
+      {
+        "name": "Memory",
+        "children": [
+          {"name": "Remote of the Mind", "value": 11},
+          {"name": "Remember to Remember", "value": 8}
+        ]
+      },
+      {
+        "name": "Self",
+        "children": [
+          {"name": "Clouds of Emotion", "value": 9},
+          {"name": "SIFT", "value": 10},
+          {"name": "Exercise Mindsight", "value": 9}
+        ]
+      },
+      {
+        "name": "Interpersonal",
+        "children": [
+          {"name": "Family Fun Factor", "value": 7},
+          {"name": "Connect Through Conflict", "value": 12}
+        ]
+      }
+    ]
+  },
+  "options": {
+    "title": "Brain Integration Types Weighted by Chapter Coverage"
+  }
+}
+```
+
+The treemap reveals that left-right integration (particularly "Connect and Redirect") and upstairs-downstairs integration (the tantrum-management strategies) occupy the largest share of the book's attention, reflecting the reality that these are the integration challenges parents face most frequently in daily life.
 
 ## Chapter 1: Parenting with the Brain in Mind
 
@@ -458,6 +552,57 @@ flowchart LR
 | **6-9 years** | Growing capacity for narrative. Can understand brain concepts well. Working memory expanding. Peer relationships growing. | Name It to Tame It (child tells the story). SIFT. Remote of the Mind. Remember to Remember. | "Let's use the remote. You can pause the story whenever you need to. What happened first?" |
 | **9-12 years** | Prefrontal cortex strengthening. Capable of empathy and moral reasoning with practice. Peer relationships intensifying. Pre-adolescent emotional complexity. | Connect Through Conflict. Exercise Mindsight (Wheel of Awareness). Complex decision-making practice. Negotiate, don't dictate. | "I can see you and your sister are both really upset. Before we solve this, can each of you tell me what happened from the other person's perspective?" |
 
+```chartjs
+{
+  "type": "bar",
+  "data": {
+    "labels": ["Connect & Redirect", "Name It to Tame It", "Engage Don't Enrage", "Use It or Lose It", "Move It or Lose It", "Remote of the Mind", "SIFT", "Exercise Mindsight", "Connect Through Conflict"],
+    "datasets": [
+      {
+        "label": "Ages 0-3",
+        "data": [9, 5, 3, 2, 7, 1, 1, 1, 2],
+        "backgroundColor": "rgba(231, 76, 60, 0.7)"
+      },
+      {
+        "label": "Ages 3-6",
+        "data": [8, 6, 7, 5, 8, 3, 2, 2, 4],
+        "backgroundColor": "rgba(243, 156, 18, 0.7)"
+      },
+      {
+        "label": "Ages 6-9",
+        "data": [6, 9, 6, 7, 6, 8, 7, 5, 7],
+        "backgroundColor": "rgba(41, 128, 185, 0.7)"
+      },
+      {
+        "label": "Ages 9-12",
+        "data": [5, 7, 8, 9, 5, 7, 9, 9, 9],
+        "backgroundColor": "rgba(39, 174, 96, 0.7)"
+      }
+    ]
+  },
+  "options": {
+    "plugins": {
+      "title": {
+        "display": true,
+        "text": "Age-Appropriate Strategy Effectiveness by Developmental Stage"
+      }
+    },
+    "scales": {
+      "y": {
+        "beginAtZero": true,
+        "max": 10,
+        "title": {
+          "display": true,
+          "text": "Effectiveness (1-10)"
+        }
+      }
+    }
+  }
+}
+```
+
+The chart shows a clear developmental progression: physical strategies like "Connect and Redirect" and "Move It or Lose It" peak in the earliest years when language is limited, while cognitive strategies like SIFT, Exercise Mindsight, and Connect Through Conflict become increasingly powerful as the prefrontal cortex develops through ages 9-12.
+
 ---
 
 ## Key Phrases to Remember
@@ -679,6 +824,56 @@ A mother quoted in the book captures this:
 | 10 | **Exercise Mindsight** | Child is stuck on one emotion or thought | Self |
 | 11 | **Increase the Family Fun Factor** | Always — builds relational infrastructure | Interpersonal |
 | 12 | **Connect Through Conflict** | Sibling fights, disagreements, ruptures | Interpersonal |
+
+```d3
+{
+  "type": "force",
+  "data": {
+    "nodes": [
+      {"id": "Left-Right", "group": "integration"},
+      {"id": "Upstairs-Downstairs", "group": "integration"},
+      {"id": "Memory", "group": "integration"},
+      {"id": "Self", "group": "integration"},
+      {"id": "Interpersonal", "group": "integration"},
+      {"id": "Connect & Redirect", "group": "strategy"},
+      {"id": "Name It to Tame It", "group": "strategy"},
+      {"id": "Engage Don't Enrage", "group": "strategy"},
+      {"id": "Use It or Lose It", "group": "strategy"},
+      {"id": "Move It or Lose It", "group": "strategy"},
+      {"id": "Remote of the Mind", "group": "strategy"},
+      {"id": "Remember to Remember", "group": "strategy"},
+      {"id": "Clouds of Emotion", "group": "strategy"},
+      {"id": "SIFT", "group": "strategy"},
+      {"id": "Exercise Mindsight", "group": "strategy"},
+      {"id": "Family Fun Factor", "group": "strategy"},
+      {"id": "Connect Through Conflict", "group": "strategy"}
+    ],
+    "links": [
+      {"source": "Connect & Redirect", "target": "Left-Right", "value": 5},
+      {"source": "Name It to Tame It", "target": "Left-Right", "value": 5},
+      {"source": "Engage Don't Enrage", "target": "Upstairs-Downstairs", "value": 5},
+      {"source": "Use It or Lose It", "target": "Upstairs-Downstairs", "value": 4},
+      {"source": "Move It or Lose It", "target": "Upstairs-Downstairs", "value": 4},
+      {"source": "Remote of the Mind", "target": "Memory", "value": 5},
+      {"source": "Remember to Remember", "target": "Memory", "value": 4},
+      {"source": "Clouds of Emotion", "target": "Self", "value": 4},
+      {"source": "SIFT", "target": "Self", "value": 5},
+      {"source": "Exercise Mindsight", "target": "Self", "value": 5},
+      {"source": "Family Fun Factor", "target": "Interpersonal", "value": 4},
+      {"source": "Connect Through Conflict", "target": "Interpersonal", "value": 5},
+      {"source": "Name It to Tame It", "target": "Memory", "value": 3},
+      {"source": "Connect & Redirect", "target": "Interpersonal", "value": 2},
+      {"source": "SIFT", "target": "Upstairs-Downstairs", "value": 3},
+      {"source": "Connect Through Conflict", "target": "Left-Right", "value": 2}
+    ]
+  },
+  "options": {
+    "title": "Strategy-to-Brain-Area Network: The 12 Whole-Brain Strategies"
+  }
+}
+```
+
+The force graph reveals that while each strategy has a primary integration domain, many also strengthen secondary areas — "Name It to Tame It" builds left-right integration but also strengthens memory, and "SIFT" targets self-integration while exercising the upstairs brain — showing how the twelve strategies form an interconnected web rather than isolated tools.
 
 ---
 

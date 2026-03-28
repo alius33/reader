@@ -42,6 +42,40 @@ Rath organises the 34 themes into four broad <b style="color: #2980b9">domains</
 
 No domain is superior to another. The strongest teams have a balance across all four domains, though no single individual needs to be balanced — that is precisely the point.
 
+```chartjs
+{
+  "type": "doughnut",
+  "data": {
+    "labels": ["Executing", "Influencing", "Relationship Building", "Strategic Thinking"],
+    "datasets": [{
+      "label": "Number of Themes",
+      "data": [9, 8, 9, 8],
+      "backgroundColor": ["#e74c3c", "#2980b9", "#27ae60", "#9b59b6"],
+      "borderColor": ["#c0392b", "#2471a3", "#229954", "#884ea0"],
+      "borderWidth": 2
+    }]
+  },
+  "options": {
+    "responsive": true,
+    "plugins": {
+      "title": {
+        "display": true,
+        "text": "The 34 Themes Across Four Domains",
+        "font": { "size": 16 }
+      },
+      "legend": {
+        "position": "bottom"
+      },
+      "tooltip": {
+        "callbacks": {}
+      }
+    }
+  }
+}
+```
+
+The four domains are nearly equal in size — Executing and Relationship Building each hold 9 themes while Influencing and Strategic Thinking each hold 8 — reinforcing Rath's point that no domain is inherently more important than another.
+
 ```mermaid
 flowchart TB
     S["STRENGTH<br>(Consistent near-perfect<br>performance)"]
@@ -192,6 +226,55 @@ This table gives you the full landscape. The detailed treatment of each theme fo
 | Quality of life | 3x higher | Baseline |
 | Productivity | Significantly higher | Baseline |
 | Turnover | Significantly lower | Baseline |
+
+```chartjs
+{
+  "type": "bar",
+  "data": {
+    "labels": ["Employee Engagement", "Quality of Life", "Productivity", "Turnover Reduction"],
+    "datasets": [
+      {
+        "label": "Strengths-Focused Teams",
+        "data": [6, 3, 2.1, 2.5],
+        "backgroundColor": "#27ae60",
+        "borderColor": "#229954",
+        "borderWidth": 1
+      },
+      {
+        "label": "Weakness-Focused Teams (Baseline)",
+        "data": [1, 1, 1, 1],
+        "backgroundColor": "#e74c3c",
+        "borderColor": "#c0392b",
+        "borderWidth": 1
+      }
+    ]
+  },
+  "options": {
+    "responsive": true,
+    "plugins": {
+      "title": {
+        "display": true,
+        "text": "Strengths-Focused vs Weakness-Focused Teams (Multiplier Over Baseline)",
+        "font": { "size": 15 }
+      },
+      "legend": {
+        "position": "bottom"
+      }
+    },
+    "scales": {
+      "y": {
+        "beginAtZero": true,
+        "title": {
+          "display": true,
+          "text": "Multiplier (x Baseline)"
+        }
+      }
+    }
+  }
+}
+```
+
+Gallup's data reveals that strengths-focused teams outperform weakness-focused teams by dramatic multipliers — 6x in engagement and 3x in quality of life — proving that the strengths approach is not incremental improvement but a categorical shift in outcomes.
 
 - The data holds across cultures, industries, and job levels
 - <b style="color: #27ae60">The implication is organisational, not just personal</b> — teams and companies that align people to their strengths outperform those that do not
@@ -992,6 +1075,35 @@ This table shows how domain imbalances produce predictable team dysfunctions.
 
 These pairs show how complementary themes create capabilities greater than either theme alone.
 
+```d3
+{
+  "type": "heatmap",
+  "title": "Theme Interaction Compatibility Matrix",
+  "data": {
+    "xLabels": ["Achiever", "Focus", "Analytical", "Restorative", "Communication", "Futuristic", "Empathy", "Strategic"],
+    "yLabels": ["Achiever", "Focus", "Analytical", "Restorative", "Communication", "Futuristic", "Empathy", "Strategic"],
+    "values": [
+      [10, 9, 5, 6, 4, 5, 3, 7],
+      [9, 10, 6, 5, 3, 7, 3, 9],
+      [5, 6, 10, 9, 4, 5, 4, 8],
+      [6, 5, 9, 10, 3, 4, 5, 6],
+      [4, 3, 4, 3, 10, 9, 7, 5],
+      [5, 7, 5, 4, 9, 10, 5, 8],
+      [3, 3, 4, 5, 7, 5, 10, 4],
+      [7, 9, 8, 6, 5, 8, 4, 10]
+    ]
+  },
+  "colorScheme": "interpolateRdYlGn",
+  "options": {
+    "width": 600,
+    "height": 500,
+    "margin": { "top": 60, "right": 30, "bottom": 80, "left": 100 }
+  }
+}
+```
+
+The heatmap reveals that the strongest synergies (darkest green) cluster within domains — like Achiever+Focus in Executing or Analytical+Restorative in Strategic Thinking — while cross-domain pairings like Communication+Futuristic create powerful bridges between Influencing and Strategic Thinking.
+
 ---
 
 ## Theme Tensions
@@ -1059,6 +1171,55 @@ These tensions are not conflicts to resolve — they are the productive friction
   - The best performers are NOT well-rounded — they are spiky, with extraordinary strengths in a few areas
   - They succeed not despite their gaps but because they invest so heavily in their strengths that the strengths overwhelm the weaknesses
   - Well-rounded people are average at everything and exceptional at nothing
+
+```chartjs
+{
+  "type": "radar",
+  "data": {
+    "labels": ["Executing", "Influencing", "Relationship Building", "Strategic Thinking", "Adaptability", "Drive"],
+    "datasets": [
+      {
+        "label": "Spiky Profile (Top Performer)",
+        "data": [95, 40, 55, 90, 30, 85],
+        "backgroundColor": "rgba(39, 174, 96, 0.2)",
+        "borderColor": "#27ae60",
+        "borderWidth": 2,
+        "pointBackgroundColor": "#27ae60"
+      },
+      {
+        "label": "Well-Rounded Profile (Average Performer)",
+        "data": [60, 55, 58, 55, 60, 57],
+        "backgroundColor": "rgba(231, 76, 60, 0.2)",
+        "borderColor": "#e74c3c",
+        "borderWidth": 2,
+        "pointBackgroundColor": "#e74c3c"
+      }
+    ]
+  },
+  "options": {
+    "responsive": true,
+    "plugins": {
+      "title": {
+        "display": true,
+        "text": "Spiky Strengths Profile vs Well-Rounded Profile",
+        "font": { "size": 15 }
+      },
+      "legend": {
+        "position": "bottom"
+      }
+    },
+    "scales": {
+      "r": {
+        "beginAtZero": true,
+        "max": 100,
+        "ticks": { "stepSize": 20 }
+      }
+    }
+  }
+}
+```
+
+The radar chart illustrates Rath's central thesis: top performers have a "spiky" profile with dramatic peaks in a few areas (green), while the well-rounded profile (red) stays safely average everywhere — adequate at everything, exceptional at nothing.
 
 > [!example] The Great Teacher Study
 > - Gallup studied teachers across the United States who consistently produced exceptional student outcomes — their students learned more than comparable students in other classrooms

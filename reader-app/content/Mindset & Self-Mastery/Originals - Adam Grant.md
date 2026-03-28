@@ -242,6 +242,28 @@ flowchart TD
 
 This diagram illustrates Grant's core argument: managing risk through hedging produces better outcomes than the romantic notion of "burning the boats."
 
+```d3
+{
+  "type": "treemap",
+  "data": {
+    "name": "Risk Management",
+    "children": [
+      { "name": "Keep Day Job\n(Financial Safety)", "value": 25 },
+      { "name": "Test at Small Scale\n(Cheap Experiments)", "value": 20 },
+      { "name": "Diversify Portfolio\n(Multiple Projects)", "value": 18 },
+      { "name": "Build Coalition\n(Reduce Social Risk)", "value": 15 },
+      { "name": "Time Strategically\n(Wait for Readiness)", "value": 12 },
+      { "name": "Frame for Audience\n(Reduce Rejection Risk)", "value": 10 }
+    ]
+  },
+  "options": {
+    "title": "How Originals Actually Manage Risk: The Anti-Daredevil Playbook"
+  }
+}
+```
+
+Keeping a day job is the single largest risk-management strategy used by successful originals — contradicting the myth that innovation requires burning the boats.
+
 ---
 
 ## Chapter 2: Blind Inventors and One-Eyed Investors — Generating and Recognising Ideas
@@ -305,6 +327,33 @@ This diagram illustrates Grant's core argument: managing risk through hedging pr
 
 > [!tip] Core Insight
 > Creative genius is not about having better ideas — it is about having MORE ideas. Volume is the single best predictor of creative breakthrough.
+
+```chartjs
+{
+  "type": "bar",
+  "data": {
+    "labels": ["Shakespeare", "Picasso", "Edison", "Mozart", "Einstein", "Darwin", "Bach"],
+    "datasets": [
+      {
+        "label": "Total Works",
+        "data": [37, 2800, 1093, 600, 248, 119, 1000],
+        "backgroundColor": "#2980b9"
+      },
+      {
+        "label": "Masterworks",
+        "data": [6, 25, 10, 8, 4, 3, 15],
+        "backgroundColor": "#27ae60"
+      }
+    ]
+  },
+  "options": {
+    "plugins": { "title": { "display": true, "text": "The Volume Principle: Total Output vs Masterworks of History's Greatest Originals" } },
+    "scales": { "y": { "type": "logarithmic", "title": { "display": true, "text": "Works (log scale)" } } }
+  }
+}
+```
+
+The ratio of total works to masterworks reveals Grant's core insight — even geniuses produce overwhelmingly mediocre output, and the path to brilliance runs through massive volume.
 
 ---
 
@@ -740,6 +789,28 @@ This diagram maps Grant's strategy for voicing original ideas — the pathway fr
 
 > [!tip] Core Insight
 > The optimal strategy is to start early but finish late. Load the problem into your mind, then let it cook. The Zeigarnik Effect keeps incomplete tasks active in memory, allowing your unconscious to make connections your conscious mind would miss.
+
+```chartjs
+{
+  "type": "line",
+  "data": {
+    "labels": ["Immediate Start", "Slight Delay", "Moderate Procrastination", "Strategic Incubation", "Extended Delay", "Chronic Procrastination"],
+    "datasets": [{
+      "label": "Creative Quality of Output",
+      "data": [55, 65, 82, 90, 70, 30],
+      "borderColor": "#2980b9",
+      "fill": false,
+      "tension": 0.4
+    }]
+  },
+  "options": {
+    "plugins": { "title": { "display": true, "text": "The Procrastination-Creativity Curve: Why Moderate Delay Beats Both Extremes" } },
+    "scales": { "y": { "min": 0, "max": 100, "title": { "display": true, "text": "Creative Quality" } } }
+  }
+}
+```
+
+Creative quality peaks at moderate procrastination and strategic incubation — neither jumping immediately nor waiting forever produces the best work.
 
 ```mermaid
 flowchart LR
@@ -1214,6 +1285,35 @@ This diagram captures Grant's central argument about group dynamics: strong cult
 > 4. Generate ideas individually before group discussion — prevents anchoring to the first idea voiced
 > 5. Leaders speak last — when the boss speaks first, everyone else's "opinion" is just agreement
 > 6. Create safe channels for anonymous dissent when face-to-face disagreement feels too risky
+
+```chartjs
+{
+  "type": "radar",
+  "data": {
+    "labels": ["Idea Diversity", "Error Detection", "Innovation Rate", "Decision Quality", "Member Satisfaction", "Adaptability"],
+    "datasets": [
+      {
+        "label": "Cohesion-Focused Culture",
+        "data": [20, 15, 25, 30, 70, 20],
+        "backgroundColor": "rgba(231, 76, 60, 0.2)",
+        "borderColor": "#e74c3c"
+      },
+      {
+        "label": "Dissent-Welcoming Culture",
+        "data": [90, 88, 85, 92, 65, 90],
+        "backgroundColor": "rgba(39, 174, 96, 0.2)",
+        "borderColor": "#27ae60"
+      }
+    ]
+  },
+  "options": {
+    "plugins": { "title": { "display": true, "text": "Groupthink vs Dissent: Organizational Performance Profiles" } },
+    "scales": { "r": { "min": 0, "max": 100 } }
+  }
+}
+```
+
+Dissent cultures dominate on every dimension except member satisfaction — they are less comfortable but dramatically more effective, which is why the best organisations prioritise candor over harmony.
 
 ---
 

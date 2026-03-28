@@ -134,6 +134,54 @@ The four communication channels show why member-to-member connection — not top
   - Purpose without communication creates frustration — people care but cannot coordinate
   - Only when purpose and communication are both strong does growth actually amplify the tribe's power
 
+```d3
+{
+  "type": "force",
+  "data": {
+    "nodes": [
+      { "id": "Leader", "group": 1, "size": 20 },
+      { "id": "Member A", "group": 2, "size": 12 },
+      { "id": "Member B", "group": 2, "size": 12 },
+      { "id": "Member C", "group": 2, "size": 12 },
+      { "id": "Member D", "group": 2, "size": 12 },
+      { "id": "Member E", "group": 2, "size": 12 },
+      { "id": "Outsider X", "group": 3, "size": 8 },
+      { "id": "Outsider Y", "group": 3, "size": 8 }
+    ],
+    "links": [
+      { "source": "Leader", "target": "Member A", "value": 5, "label": "broadcast" },
+      { "source": "Leader", "target": "Member B", "value": 5, "label": "broadcast" },
+      { "source": "Leader", "target": "Member C", "value": 5, "label": "broadcast" },
+      { "source": "Leader", "target": "Member D", "value": 5, "label": "broadcast" },
+      { "source": "Leader", "target": "Member E", "value": 5, "label": "broadcast" },
+      { "source": "Member A", "target": "Leader", "value": 3, "label": "feedback" },
+      { "source": "Member B", "target": "Leader", "value": 3, "label": "feedback" },
+      { "source": "Member A", "target": "Member B", "value": 8, "label": "member-to-member" },
+      { "source": "Member B", "target": "Member C", "value": 8, "label": "member-to-member" },
+      { "source": "Member C", "target": "Member D", "value": 8, "label": "member-to-member" },
+      { "source": "Member D", "target": "Member E", "value": 8, "label": "member-to-member" },
+      { "source": "Member E", "target": "Member A", "value": 8, "label": "member-to-member" },
+      { "source": "Member A", "target": "Member D", "value": 6, "label": "member-to-member" },
+      { "source": "Member C", "target": "Member E", "value": 6, "label": "member-to-member" },
+      { "source": "Member A", "target": "Outsider X", "value": 2, "label": "evangelism" },
+      { "source": "Member D", "target": "Outsider Y", "value": 2, "label": "evangelism" }
+    ]
+  },
+  "options": {
+    "title": "Tribe Communication Network: Four Channels of Connection",
+    "width": 700,
+    "height": 500,
+    "colorScale": {
+      "1": "#2980b9",
+      "2": "#27ae60",
+      "3": "#95a5a6"
+    }
+  }
+}
+```
+
+The force graph shows why member-to-member connections (the thickest lines) are the tribe's true engine: they create a dense, resilient network that persists even if the leader steps back, while evangelism links (thin lines to outsiders) drive organic growth.
+
 > [!tip] Core Insight
 > Tribal strength comes from purpose intensity and communication density — not from headcount. Tighten before you grow.
 
@@ -148,6 +196,36 @@ The four communication channels show why member-to-member connection — not top
 | **NRA** | Proportionally modest | Very high — members reinforce each other | Deep ideological commitment | Vastly disproportionate |
 
 The pattern across all three is consistent: influence scales with commitment density, not with raw numbers.
+
+```chartjs
+{
+  "type": "doughnut",
+  "data": {
+    "labels": ["Purpose Intensity", "Communication Density", "Member Commitment", "Growth", "Leader Energy"],
+    "datasets": [{
+      "data": [30, 25, 25, 10, 10],
+      "backgroundColor": ["#2980b9", "#27ae60", "#8e44ad", "#e67e22", "#e74c3c"],
+      "borderWidth": 2,
+      "borderColor": "#fff"
+    }]
+  },
+  "options": {
+    "responsive": true,
+    "plugins": {
+      "title": {
+        "display": true,
+        "text": "Composition of Tribal Influence: Why Tight Beats Big",
+        "font": { "size": 14 }
+      },
+      "legend": {
+        "position": "right"
+      }
+    }
+  }
+}
+```
+
+The doughnut reveals Godin's hierarchy: purpose and communication together account for over half of tribal influence, while raw growth — the lever most leaders reach for first — contributes the least.
 
 > [!example] AAA vs TED — The Tight-Tribe Principle
 > - The AAA has millions of members and minimal cultural influence — it is a services organisation, not a movement
@@ -392,6 +470,50 @@ The faith-religion cycle shows how healthy organisations continuously reform the
 | **Feels** | Safe — sanctioned by the organisation | Dangerous — unsanctioned, chosen |
 | **Accountability** | To the hierarchy above | To the tribe around |
 | **Default reward** | Predictability | Impact |
+
+```chartjs
+{
+  "type": "radar",
+  "data": {
+    "labels": ["Authority Source", "Innovation", "Risk Tolerance", "Status Quo Challenge", "Impact Potential", "Scalability"],
+    "datasets": [
+      {
+        "label": "Management",
+        "data": [8, 3, 2, 1, 4, 7],
+        "borderColor": "#95a5a6",
+        "backgroundColor": "rgba(149, 165, 166, 0.15)",
+        "pointBackgroundColor": "#95a5a6"
+      },
+      {
+        "label": "Leadership",
+        "data": [3, 9, 8, 9, 9, 4],
+        "borderColor": "#2980b9",
+        "backgroundColor": "rgba(41, 128, 185, 0.15)",
+        "pointBackgroundColor": "#2980b9"
+      }
+    ]
+  },
+  "options": {
+    "responsive": true,
+    "plugins": {
+      "title": {
+        "display": true,
+        "text": "Leadership vs Management: Opposite Strengths, Complementary Roles",
+        "font": { "size": 14 }
+      }
+    },
+    "scales": {
+      "r": {
+        "beginAtZero": true,
+        "max": 10,
+        "ticks": { "stepSize": 2 }
+      }
+    }
+  }
+}
+```
+
+The radar reveals why Godin frames leadership and management as complementary opposites: management excels at scalability and formal authority, while leadership dominates in innovation, risk tolerance, and challenging the status quo.
 
 > "Managers manage by using the authority the factory gives them. Leaders lead by creating change."
 
@@ -645,6 +767,49 @@ The fear cycle shows how imagined criticism creates a self-reinforcing trap — 
 | **Define against the status quo** | Direct tribal energy at the shared enemy, not at competing tribes |
 | **Exclude outsiders** | A tribe that includes everyone stands for nothing; boundaries create identity |
 | **Build up** | Sustainable movements are defined by what they are building, not what they oppose |
+
+```chartjs
+{
+  "type": "bar",
+  "data": {
+    "labels": ["Manifesto Clarity", "Leader-to-Member Connection", "Member-to-Member Connection", "Public Progress Tracking", "Mission Beyond Founder"],
+    "datasets": [
+      {
+        "label": "Successful Movements",
+        "data": [9, 8, 9, 8, 9],
+        "backgroundColor": "#27ae60"
+      },
+      {
+        "label": "Failed Movements",
+        "data": [4, 6, 2, 2, 3],
+        "backgroundColor": "#e74c3c"
+      }
+    ]
+  },
+  "options": {
+    "responsive": true,
+    "plugins": {
+      "title": {
+        "display": true,
+        "text": "Micromovement Elements: Successful vs Failed Movements",
+        "font": { "size": 14 }
+      }
+    },
+    "scales": {
+      "x": {
+        "title": { "display": true, "text": "Element" }
+      },
+      "y": {
+        "title": { "display": true, "text": "Strength (1-10)" },
+        "beginAtZero": true,
+        "max": 10
+      }
+    }
+  }
+}
+```
+
+The gap between successful and failed movements is widest in member-to-member connection and mission durability — confirming Godin's claim that the most commonly skipped step (connecting members to each other) is the most critical.
 
 - <b style="color: #27ae60">Defining who is *not* in the tribe is as important as defining who is</b> — boundaries create identity, and identity creates commitment
 - This is counterintuitive for leaders who want to be inclusive:

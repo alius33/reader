@@ -111,6 +111,43 @@ This diagram maps Brooks' core architecture: two selves, two sets of virtues, an
 > - Meanwhile, research on narcissism showed a steady upward trend — scores on the Narcissistic Personality Inventory climbed consistently across the same decades
 > **The lesson:** The cultural infrastructure for humility did not collapse overnight — it eroded gradually, and we barely noticed.
 
+```chartjs
+{
+  "type": "bar",
+  "data": {
+    "labels": ["'Important Person' 1950", "'Important Person' 2000s", "Narcissism Index 1982", "Narcissism Index 2006", "Self-Esteem Curricula 1970", "Self-Esteem Curricula 2000"],
+    "datasets": [
+      {
+        "label": "Percentage / Index Score",
+        "data": [12, 80, 15, 30, 5, 72],
+        "backgroundColor": ["#27ae60", "#e74c3c", "#2980b9", "#e74c3c", "#27ae60", "#e74c3c"],
+        "borderColor": ["#1e8449", "#c0392b", "#1f6da3", "#c0392b", "#1e8449", "#c0392b"],
+        "borderWidth": 1
+      }
+    ]
+  },
+  "options": {
+    "plugins": {
+      "title": {
+        "display": true,
+        "text": "The Humility Shift: Self-Importance and Narcissism (1950–2000s)",
+        "font": { "size": 14 }
+      },
+      "legend": { "display": false }
+    },
+    "scales": {
+      "y": {
+        "beginAtZero": true,
+        "max": 100,
+        "title": { "display": true, "text": "Score / %" }
+      }
+    }
+  }
+}
+```
+
+The near-vertical leap from 12% to 80% of students calling themselves "important" mirrors the simultaneous doubling of narcissism scores — evidence that the culture did not merely shift attitudes but rewired an entire generation's self-concept.
+
 ---
 
 ### Resume Virtues vs. Eulogy Virtues
@@ -1031,6 +1068,55 @@ flowchart LR
 
 This U-shaped arc maps every life in the book: Perkins begins in comfortable reform work and descends through the fire; Eisenhower begins in uncontrolled rage and descends through years of ego suppression; Day descends through dissolution and rises through conversion; Marshall descends through the sacrifice of the D-Day command and rises through the Marshall Plan; Augustine descends through disordered loves and rises through grace.
 
+```chartjs
+{
+  "type": "line",
+  "data": {
+    "labels": ["Surface Comfort", "Crisis / Encounter", "Descent", "Confrontation", "Surrender", "Ascent"],
+    "datasets": [
+      {
+        "label": "Moral Depth",
+        "data": [3, 4, 1, 2, 5, 9],
+        "borderColor": "#2980b9",
+        "backgroundColor": "rgba(41, 128, 185, 0.15)",
+        "fill": true,
+        "tension": 0.4,
+        "pointRadius": 6,
+        "pointBackgroundColor": ["#2980b9", "#e67e22", "#e74c3c", "#e74c3c", "#8e44ad", "#27ae60"]
+      },
+      {
+        "label": "External Success",
+        "data": [7, 5, 3, 2, 3, 6],
+        "borderColor": "#e74c3c",
+        "borderDash": [5, 5],
+        "fill": false,
+        "tension": 0.4,
+        "pointRadius": 5,
+        "pointBackgroundColor": "#e74c3c"
+      }
+    ]
+  },
+  "options": {
+    "plugins": {
+      "title": {
+        "display": true,
+        "text": "The U-Shaped Journey: Moral Depth vs External Success Through Crisis",
+        "font": { "size": 14 }
+      }
+    },
+    "scales": {
+      "y": {
+        "beginAtZero": true,
+        "max": 10,
+        "title": { "display": true, "text": "Level (1–10)" }
+      }
+    }
+  }
+}
+```
+
+The two lines cross at the point of surrender — the exact moment when external success is sacrificed for inner commitment — illustrating Brooks' thesis that the road to character requires descending through failure before moral depth can rise above where surface comfort ever reached.
+
 ---
 
 ## Summary of Character Portraits
@@ -1047,7 +1133,81 @@ This U-shaped arc maps every life in the book: Perkins begins in comfortable ref
 | **Augustine** | 8 | Ordered love | Disordered desires to grace | The garden in Milan (386 AD) |
 | **Samuel Johnson** | 9 | Self-examination | Lifelong moral struggle | New Year's prayers (decades) |
 
+```d3
+{
+  "title": "Biographical Figures: Core Virtue vs Struggle Intensity",
+  "type": "heatmap",
+  "data": {
+    "yLabels": ["Perkins", "Eisenhower", "Day", "Marshall", "Randolph", "Rustin", "Eliot", "Augustine", "Johnson"],
+    "xLabels": ["Vocation", "Self-Conquest", "Surrender", "Institutional Loyalty", "Dignity", "Love", "Ordered Love", "Self-Examination"],
+    "values": [
+      [9, 3, 4, 5, 4, 3, 2, 3],
+      [2, 9, 3, 7, 4, 2, 3, 4],
+      [4, 3, 9, 2, 3, 5, 6, 5],
+      [3, 6, 5, 9, 5, 2, 4, 3],
+      [5, 4, 3, 5, 9, 3, 3, 4],
+      [6, 4, 5, 5, 8, 3, 3, 3],
+      [3, 2, 4, 2, 3, 9, 5, 4],
+      [2, 4, 8, 2, 3, 4, 9, 5],
+      [3, 5, 3, 2, 4, 3, 4, 9]
+    ]
+  },
+  "colorRange": ["#f7fbff", "#2980b9"],
+  "options": {
+    "cellSize": 40,
+    "margin": { "top": 60, "right": 20, "bottom": 20, "left": 90 }
+  }
+}
+```
+
+The heatmap reveals that while each figure's primary virtue burns brightest along the diagonal, secondary strengths like institutional loyalty (Eisenhower, Randolph) and surrender (Augustine, Day) connect figures who otherwise walked very different roads.
+
 Each portrait demonstrates a different facet of the same truth: character is not given but earned — through confrontation with the parts of yourself you would rather not see.
+
+```chartjs
+{
+  "type": "radar",
+  "data": {
+    "labels": ["Cultural Support", "Measurability", "Long-term Impact", "Daily Practice", "Inner Satisfaction", "Legacy Value"],
+    "datasets": [
+      {
+        "label": "Resume Virtues",
+        "data": [9, 9, 4, 8, 3, 2],
+        "backgroundColor": "rgba(231, 76, 60, 0.2)",
+        "borderColor": "#e74c3c",
+        "pointBackgroundColor": "#e74c3c",
+        "borderWidth": 2
+      },
+      {
+        "label": "Eulogy Virtues",
+        "data": [2, 2, 9, 6, 9, 10],
+        "backgroundColor": "rgba(39, 174, 96, 0.2)",
+        "borderColor": "#27ae60",
+        "pointBackgroundColor": "#27ae60",
+        "borderWidth": 2
+      }
+    ]
+  },
+  "options": {
+    "plugins": {
+      "title": {
+        "display": true,
+        "text": "Resume Virtues vs Eulogy Virtues Across Six Dimensions",
+        "font": { "size": 14 }
+      }
+    },
+    "scales": {
+      "r": {
+        "beginAtZero": true,
+        "max": 10,
+        "ticks": { "stepSize": 2 }
+      }
+    }
+  }
+}
+```
+
+Resume virtues dominate in cultural support and measurability, while eulogy virtues score overwhelmingly higher in legacy value and inner satisfaction — illustrating why modern culture drifts toward the former despite the latter mattering more at life's end.
 
 ---
 

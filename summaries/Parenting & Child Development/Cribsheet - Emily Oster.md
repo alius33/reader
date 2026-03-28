@@ -71,6 +71,92 @@ flowchart TB
     C --> Peace["Informed decision<br/>without guilt"]
 ```
 
+```chartjs
+{
+  "type": "bar",
+  "data": {
+    "labels": ["Breastfeeding Benefits", "Sleep Training Harm", "Vaccine-Autism Link", "Maternal Employment Harm", "Screen Time Causes ADHD", "Early Potty Training Benefit"],
+    "datasets": [
+      {
+        "label": "Public Perception (0-100)",
+        "data": [95, 60, 30, 55, 70, 50],
+        "backgroundColor": "#e74c3c"
+      },
+      {
+        "label": "Actual Evidence Strength (0-100)",
+        "data": [40, 5, 0, 5, 15, 10],
+        "backgroundColor": "#27ae60"
+      }
+    ]
+  },
+  "options": {
+    "title": "Perception vs. Evidence: The Parenting Anxiety Gap",
+    "scales": { "y": { "beginAtZero": true, "max": 100 } }
+  }
+}
+```
+The gap between public perception and actual evidence is the source of most parenting anxiety — the claims driving guilt are dramatically weaker than parents have been told.
+
+```d3
+{
+  "type": "sankey",
+  "data": {
+    "nodes": ["Parenting Question", "Check Data", "Randomized Trial", "Observational Study", "Control Confounders", "Assess Effect Size", "Family Values", "Family Constraints", "Informed Decision", "Confidence"],
+    "links": [
+      {"source": "Parenting Question", "target": "Check Data", "value": 50},
+      {"source": "Check Data", "target": "Randomized Trial", "value": 20},
+      {"source": "Check Data", "target": "Observational Study", "value": 30},
+      {"source": "Randomized Trial", "target": "Assess Effect Size", "value": 20},
+      {"source": "Observational Study", "target": "Control Confounders", "value": 30},
+      {"source": "Control Confounders", "target": "Assess Effect Size", "value": 30},
+      {"source": "Assess Effect Size", "target": "Informed Decision", "value": 50},
+      {"source": "Parenting Question", "target": "Family Values", "value": 25},
+      {"source": "Parenting Question", "target": "Family Constraints", "value": 25},
+      {"source": "Family Values", "target": "Informed Decision", "value": 25},
+      {"source": "Family Constraints", "target": "Informed Decision", "value": 25},
+      {"source": "Informed Decision", "target": "Confidence", "value": 100}
+    ]
+  },
+  "options": {
+    "title": "The Oster Decision Framework: From Question to Confidence"
+  }
+}
+```
+Every parenting decision flows through three channels — data quality, family values, and family constraints — converging into an informed decision that replaces guilt with confidence.
+
+```chartjs
+{
+  "type": "line",
+  "data": {
+    "labels": ["Birth", "2 weeks", "6 weeks", "3 months", "6 months", "12 months", "18 months", "24 months", "36 months"],
+    "datasets": [
+      {
+        "label": "Infant Crying (hrs/day)",
+        "data": [1.5, 2.0, 2.8, 1.8, 1.2, 0.8, 0.6, 0.5, 0.4],
+        "borderColor": "#e74c3c",
+        "fill": false
+      },
+      {
+        "label": "Sleep Duration (hrs/night)",
+        "data": [3, 3.5, 4, 5, 7, 9, 10, 11, 11],
+        "borderColor": "#2980b9",
+        "fill": false
+      },
+      {
+        "label": "Parental Confidence (0-12 scale)",
+        "data": [4, 3, 3, 5, 6, 7, 8, 9, 10],
+        "borderColor": "#27ae60",
+        "fill": false
+      }
+    ]
+  },
+  "options": {
+    "title": "The First Three Years: Crying, Sleep, and Confidence Trajectories"
+  }
+}
+```
+Crying peaks at 6 weeks then steadily declines, sleep consolidates after 6 months, and parental confidence grows as both normalize — the hardest period is temporary.
+
 ## The Big Debates: What the Data Actually Shows
 
 ### Breastfeeding: The Most Politically Charged Topic in Parenting

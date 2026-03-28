@@ -112,6 +112,39 @@ The book moves from internal (cleaning your own lens) through interpersonal (rea
 | **The Empathic Skill** | Cycling between visceral empathy (feeling) and analytic empathy (investigation) to achieve genuine understanding |
 | **Practical vs. Fantastical Grandiosity** | Ambitious vision tethered to reality feedback vs. ambition detached from evidence |
 
+```chartjs
+{
+  "type": "radar",
+  "data": {
+    "labels": ["Irrationality", "Narcissism", "Role-Playing", "Character Compulsion", "Envy", "Grandiosity", "Conformity", "Aggression", "Death Denial"],
+    "datasets": [
+      {
+        "label": "Visibility to Self",
+        "data": [25, 15, 30, 35, 10, 20, 15, 40, 20],
+        "borderColor": "#e74c3c",
+        "backgroundColor": "rgba(231, 76, 60, 0.1)"
+      },
+      {
+        "label": "Destructive Potential",
+        "data": [85, 90, 50, 75, 95, 80, 70, 90, 85],
+        "borderColor": "#2980b9",
+        "backgroundColor": "rgba(41, 128, 185, 0.1)"
+      }
+    ]
+  },
+  "options": {
+    "plugins": {
+      "title": { "display": true, "text": "The Paradox of Human Nature — Least Visible Forces Are Most Destructive" }
+    },
+    "scales": {
+      "r": { "beginAtZero": true, "max": 100 }
+    }
+  }
+}
+```
+
+The radar reveals Greene's core insight: the forces with the highest destructive potential (envy, narcissism, aggression) are precisely the ones least visible to the person experiencing them — self-awareness is not just useful but existentially necessary.
+
 ---
 
 ## Self-Mastery Foundations (Laws 1-3)
@@ -1178,6 +1211,38 @@ Against these constricted types stands the <b style="color: #27ae60">expansive a
 - <b style="color: #27ae60">Social emotions are the most common source of unexplained conflict</b> — when a relationship sours for no apparent reason, the cause is often one of these three forces
 
 Because these forces are invisible to the person experiencing them, they are experienced as external problems — "he changed," "she became difficult," "they are being unfair" — rather than as internal dynamics that could be understood and managed.
+
+```chartjs
+{
+  "type": "bar",
+  "data": {
+    "labels": ["Law 1: Irrationality", "Law 2: Narcissism", "Law 3: Role-Playing", "Law 4: Character", "Law 5: Desire", "Law 6: Shortsightedness", "Law 7: Defensiveness", "Law 8: Self-Sabotage", "Law 9: Shadow", "Law 10: Envy", "Law 11: Grandiosity", "Law 12: Gender", "Law 13: Aimlessness", "Law 14: Conformity", "Law 15: Authority", "Law 16: Aggression", "Law 17: Generation", "Law 18: Mortality"],
+    "datasets": [
+      {
+        "label": "Inward Focus (Self-Knowledge)",
+        "data": [90, 95, 80, 70, 40, 50, 60, 95, 90, 30, 65, 55, 70, 35, 40, 50, 30, 85],
+        "backgroundColor": "rgba(41, 128, 185, 0.7)"
+      },
+      {
+        "label": "Outward Focus (Reading Others)",
+        "data": [30, 40, 75, 90, 85, 80, 70, 30, 50, 95, 70, 60, 50, 90, 85, 80, 75, 40],
+        "backgroundColor": "rgba(231, 76, 60, 0.7)"
+      }
+    ]
+  },
+  "options": {
+    "plugins": {
+      "title": { "display": true, "text": "The 18 Laws — Inward vs Outward Orientation" }
+    },
+    "scales": {
+      "y": { "beginAtZero": true, "max": 100, "title": { "display": true, "text": "Focus Level" } }
+    },
+    "indexAxis": "y"
+  }
+}
+```
+
+The horizontal bar chart reveals Greene's structural design — the book oscillates between self-knowledge and other-knowledge, with early laws weighted inward (Laws 1-2) and middle laws weighted outward (Laws 4-5, 10, 14), reflecting his thesis that you must clean your own lens before reading others.
 
 ---
 
@@ -2323,6 +2388,62 @@ The 18 laws form a progressive architecture — each tier builds on the previous
 - Laws 18 confronts the ultimate fact — mortality — and transforms it from paralysis into clarity
 
 The interplay between the laws is as important as the laws themselves. Law 9 (Shadow) connects to Law 16 (Aggression) because aggression is one of the primary shadow contents. Law 2 (Narcissism) connects to Law 11 (Grandiosity) because grandiosity is narcissism inflated by success. Law 1 (Irrationality) connects to Law 14 (Conformity) because group dynamics amplify individual irrationality. The book is a web, not a list.
+
+```d3
+{
+  "type": "heatmap",
+  "data": {
+    "xLabels": ["Self-Awareness", "Social Perception", "Emotional Control", "Influence Skill", "Group Navigation", "Existential Clarity"],
+    "yLabels": ["Laws 1-3: Foundation", "Laws 4-6: Diagnosis", "Laws 7-9: Action", "Laws 10-12: Social", "Laws 13-15: Group", "Laws 16-18: Dark Forces"],
+    "values": [
+      [95, 40, 70, 20, 15, 30],
+      [50, 95, 45, 55, 35, 20],
+      [60, 50, 85, 80, 40, 35],
+      [45, 80, 55, 70, 65, 30],
+      [30, 55, 50, 60, 95, 45],
+      [70, 45, 65, 40, 50, 95]
+    ]
+  },
+  "options": {
+    "title": "Skill Development Across Six Tiers of Human Nature",
+    "colorRange": ["#f7fbff", "#e74c3c"]
+  }
+}
+```
+
+The heatmap confirms the progressive architecture — each tier develops a different primary skill, with self-awareness dominating the foundation and existential clarity only fully available after working through all preceding tiers.
+
+```d3
+{
+  "type": "force",
+  "data": {
+    "nodes": [
+      { "id": "Law 1: Irrationality", "group": "Foundation" },
+      { "id": "Law 2: Narcissism", "group": "Foundation" },
+      { "id": "Law 9: Shadow", "group": "Action" },
+      { "id": "Law 10: Envy", "group": "Social" },
+      { "id": "Law 11: Grandiosity", "group": "Social" },
+      { "id": "Law 14: Conformity", "group": "Group" },
+      { "id": "Law 16: Aggression", "group": "Dark Forces" },
+      { "id": "Law 18: Mortality", "group": "Dark Forces" }
+    ],
+    "links": [
+      { "source": "Law 1: Irrationality", "target": "Law 14: Conformity", "label": "Groups amplify individual irrationality" },
+      { "source": "Law 2: Narcissism", "target": "Law 11: Grandiosity", "label": "Narcissism inflated by success" },
+      { "source": "Law 9: Shadow", "target": "Law 16: Aggression", "label": "Aggression is primary shadow content" },
+      { "source": "Law 10: Envy", "target": "Law 16: Aggression", "label": "Envy fuels covert aggression" },
+      { "source": "Law 11: Grandiosity", "target": "Law 1: Irrationality", "label": "Grandiosity blinds rational assessment" },
+      { "source": "Law 18: Mortality", "target": "Law 2: Narcissism", "label": "Death awareness deflates narcissism" },
+      { "source": "Law 14: Conformity", "target": "Law 9: Shadow", "label": "Group pressure enlarges shadow" }
+    ]
+  },
+  "options": {
+    "title": "Cross-Law Connections — How Greene's 18 Laws Interact as a Web"
+  }
+}
+```
+
+The force diagram reveals that the 18 laws are not a list but a web — narcissism feeds grandiosity, which feeds irrationality, while death awareness (Law 18) acts as the great deflator that can break multiple destructive cycles simultaneously.
 
 **The master key — emotional self-awareness:**
 

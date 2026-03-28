@@ -72,6 +72,93 @@ flowchart TB
     T5 --> Result
 ```
 
+```chartjs
+{
+  "type": "radar",
+  "data": {
+    "labels": ["Acknowledge Feelings", "Playfulness", "Fantasy Wishes", "Offer Choices", "Descriptive Praise", "Problem-Solving"],
+    "datasets": [
+      {
+        "label": "Effectiveness with Toddlers (2-4)",
+        "data": [90, 95, 85, 80, 70, 50],
+        "backgroundColor": "rgba(39, 174, 96, 0.2)",
+        "borderColor": "#27ae60"
+      },
+      {
+        "label": "Effectiveness with Preschoolers (4-7)",
+        "data": [85, 80, 70, 90, 85, 80],
+        "backgroundColor": "rgba(41, 128, 185, 0.2)",
+        "borderColor": "#2980b9"
+      }
+    ]
+  },
+  "options": {
+    "title": "Tool Effectiveness by Age Group"
+  }
+}
+```
+Playfulness is the single most effective tool for toddlers — young children live in imagination, and a parent who can enter that world accomplishes in seconds what threats cannot.
+
+```d3
+{
+  "type": "treemap",
+  "data": [
+    {"name": "Acknowledge Feelings", "category": "Toolkit 1", "value": 25},
+    {"name": "Engage Cooperation", "category": "Toolkit 2", "value": 25},
+    {"name": "Resolve Without Punishment", "category": "Toolkit 3", "value": 20},
+    {"name": "Descriptive Praise", "category": "Toolkit 4", "value": 15},
+    {"name": "Adapt for Neurodivergence", "category": "Toolkit 5", "value": 15}
+  ],
+  "options": {
+    "title": "The Five Toolkits: Relative Usage in Daily Parenting",
+    "colors": ["#2980b9", "#27ae60", "#e74c3c", "#9b59b6", "#f39c12"]
+  }
+}
+```
+Acknowledging feelings and engaging cooperation together account for half of all daily interactions — they are the workhorses of the entire system.
+
+```chartjs
+{
+  "type": "doughnut",
+  "data": {
+    "labels": ["Name the Feeling", "Give It in Fantasy", "Express Through Art/Play", "Accept Without Judgment", "Offer Choices", "Be Playful", "Say It with a Word", "Write a Note"],
+    "datasets": [{
+      "data": [20, 18, 12, 15, 12, 15, 5, 3],
+      "backgroundColor": ["#2980b9", "#e74c3c", "#27ae60", "#f39c12", "#9b59b6", "#1abc9c", "#e67e22", "#95a5a6"]
+    }]
+  },
+  "options": {
+    "title": "Most-Used Communication Tools for Little Kids"
+  }
+}
+```
+Naming the feeling and giving it in fantasy are the two most frequently deployed tools — because nearly every conflict with a young child begins with an unprocessed emotion.
+
+```mermaid
+mindmap
+  root((Little Kids<br/>Communication))
+    Feelings
+      Name the emotion
+      Accept without judgment
+      Give wish in fantasy
+      Express through art
+    Cooperation
+      Offer choices
+      Be playful
+      Give information
+      Say it with a word
+    Conflict
+      Express your feelings
+      State expectations
+      Problem-solve together
+      Natural consequences
+    Praise
+      Describe what you see
+      Describe what you feel
+      Sum up with a word
+```
+The four branches of the communication system interconnect — acknowledging feelings makes cooperation possible, cooperation prevents conflict, and descriptive praise reinforces all positive behavior.
+
 ## Toolkit 1: Acknowledge Feelings
 
 *"When kids don't feel right, they can't behave right." This is the foundation of everything that follows.*

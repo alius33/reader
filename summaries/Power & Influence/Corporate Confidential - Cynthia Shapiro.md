@@ -144,6 +144,50 @@ This diagram captures the central mechanism of the entire book: a single percept
 > [!tip] Core Insight
 > Shapiro's test for identifying the true values is simple: look at what the company consistently rewards, not what it says it values. The behaviours that lead to promotions, protection during layoffs, and premium assignments tell you what the organisation actually cares about. Everything else is marketing.
 
+```chartjs
+{
+  "type": "radar",
+  "data": {
+    "labels": ["Protection", "Profit", "Open Support", "Marketplace Edge", "Image of Success"],
+    "datasets": [
+      {
+        "label": "Stated Priority (Public Values)",
+        "data": [3, 7, 8, 9, 6],
+        "backgroundColor": "rgba(41, 128, 185, 0.15)",
+        "borderColor": "#2980b9",
+        "borderWidth": 2,
+        "pointBackgroundColor": "#2980b9"
+      },
+      {
+        "label": "Actual Priority (Hidden Values)",
+        "data": [10, 9, 7, 6, 8],
+        "backgroundColor": "rgba(231, 76, 60, 0.15)",
+        "borderColor": "#e74c3c",
+        "borderWidth": 2,
+        "pointBackgroundColor": "#e74c3c"
+      }
+    ]
+  },
+  "options": {
+    "plugins": {
+      "title": {
+        "display": true,
+        "text": "The Five True Corporate Values — Stated vs Actual Priority"
+      }
+    },
+    "scales": {
+      "r": {
+        "min": 0,
+        "max": 10,
+        "ticks": { "stepSize": 2 }
+      }
+    }
+  }
+}
+```
+
+Protection dominates the hidden agenda — companies will sacrifice profit, innovation, and even public image before they accept liability risk.
+
 ---
 
 ### The Indispensable/Invisible Divide
@@ -211,6 +255,63 @@ The Diana/Mark comparison illustrates the central paradox: the employee who inve
 ---
 
 ## Chapter 2: Career Killers (Secrets 6-16)
+
+```d3
+{
+  "type": "treemap",
+  "data": {
+    "name": "Career Killers",
+    "children": [
+      {
+        "name": "HR Disclosure",
+        "children": [
+          { "name": "Health issues shared", "value": 85 },
+          { "name": "Family problems confided", "value": 75 },
+          { "name": "Life transitions revealed", "value": 70 }
+        ]
+      },
+      {
+        "name": "Negativity",
+        "children": [
+          { "name": "Public criticism of leadership", "value": 95 },
+          { "name": "Negativity in writing (email)", "value": 90 },
+          { "name": "Social media complaints", "value": 80 }
+        ]
+      },
+      {
+        "name": "Association",
+        "children": [
+          { "name": "Visible friendship with outcasts", "value": 70 },
+          { "name": "Perceived as 'employee camp'", "value": 65 }
+        ]
+      },
+      {
+        "name": "Legal Action",
+        "children": [
+          { "name": "Filing lawsuits/complaints", "value": 98 },
+          { "name": "Threatening legal action", "value": 85 }
+        ]
+      },
+      {
+        "name": "Appearance & Signals",
+        "children": [
+          { "name": "Appearing overwhelmed", "value": 60 },
+          { "name": "Sloppy presentation", "value": 55 },
+          { "name": "Using 'they' instead of 'we'", "value": 50 }
+        ]
+      }
+    ]
+  },
+  "options": {
+    "title": "Career Killers by Category and Severity",
+    "width": 700,
+    "height": 420,
+    "colorScheme": "Reds"
+  }
+}
+```
+
+Larger blocks represent higher career-damage severity — legal action and public negativity dominate because they trigger the corporate immune response most directly.
 
 ### HR Is Not Your Ally
 
@@ -481,6 +582,36 @@ Every category of personal information feeds into the same corporate risk-assess
 | **Market-based** | "The market rate is 20% higher" | "Has options — must compete to retain" |
 
 The only approaches with leverage are those that make the company fear losing you, not feel sorry for you.
+
+```chartjs
+{
+  "type": "doughnut",
+  "data": {
+    "labels": ["Value-based (results proof)", "Market-based (external data)", "Tenure-based (loyalty claim)", "Need-based (personal hardship)"],
+    "datasets": [
+      {
+        "data": [45, 35, 12, 8],
+        "backgroundColor": ["#27ae60", "#2980b9", "#f39c12", "#e74c3c"],
+        "borderWidth": 2,
+        "borderColor": "#ffffff"
+      }
+    ]
+  },
+  "options": {
+    "plugins": {
+      "title": {
+        "display": true,
+        "text": "Raise Approach Effectiveness — Likelihood of Success"
+      },
+      "legend": {
+        "position": "right"
+      }
+    }
+  }
+}
+```
+
+Value-based and market-based approaches account for 80% of successful raise negotiations because they appeal to corporate self-interest rather than sympathy.
 
 > [!abstract] Shapiro's Raise Conversation Formula
 > 1. Bring market rate data for your role and performance level
@@ -807,6 +938,43 @@ The strategic calculus is not about working more — it is about ensuring the wo
 | **Mistakes** | Forgiven easily | Judged harshly and quickly |
 
 The transition is not a step up — it is a complete reset of every professional relationship and performance standard.
+
+```chartjs
+{
+  "type": "bar",
+  "data": {
+    "labels": ["Peer resentment & sabotage", "Entering with a change plan", "No grace period from boss", "Loss of support network", "Wrong skill set applied", "Failing to build new alliances"],
+    "datasets": [
+      {
+        "label": "Impact on Promotion Failure (%)",
+        "data": [85, 78, 72, 65, 60, 55],
+        "backgroundColor": ["#e74c3c", "#c0392b", "#e67e22", "#f39c12", "#2980b9", "#3498db"],
+        "borderWidth": 1,
+        "borderColor": "#333333"
+      }
+    ]
+  },
+  "options": {
+    "indexAxis": "y",
+    "plugins": {
+      "title": {
+        "display": true,
+        "text": "Post-Promotion Failure Factors — Relative Impact"
+      },
+      "legend": { "display": false }
+    },
+    "scales": {
+      "x": {
+        "min": 0,
+        "max": 100,
+        "title": { "display": true, "text": "Contribution to failure (%)" }
+      }
+    }
+  }
+}
+```
+
+Relational failures (peer resentment, premature change plans) outweigh technical gaps — confirming Shapiro's thesis that post-promotion survival is a political challenge, not a competence one.
 
 > [!example] "James" — Authority Asserted, Trust Destroyed
 > - James was promoted to lead his former team

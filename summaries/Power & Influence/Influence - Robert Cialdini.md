@@ -85,6 +85,77 @@ mindmap
 
 The six principles are not independent — they combine and amplify each other in real compliance situations — but each is powerful enough on its own to produce compliance that the target would not otherwise give.
 
+```d3
+{
+  "type": "treemap",
+  "data": {
+    "name": "Six Weapons",
+    "children": [
+      {
+        "name": "Reciprocity",
+        "children": [
+          { "name": "Uninvited gifts", "value": 30 },
+          { "name": "Rejection-then-retreat", "value": 35 },
+          { "name": "Unfair exchanges", "value": 20 },
+          { "name": "Free samples", "value": 15 }
+        ]
+      },
+      {
+        "name": "Commitment",
+        "children": [
+          { "name": "Foot-in-the-door", "value": 25 },
+          { "name": "Lowball technique", "value": 30 },
+          { "name": "Written pledges", "value": 20 },
+          { "name": "Public declarations", "value": 25 }
+        ]
+      },
+      {
+        "name": "Social Proof",
+        "children": [
+          { "name": "Canned laughter", "value": 15 },
+          { "name": "Testimonials", "value": 25 },
+          { "name": "Bestseller lists", "value": 20 },
+          { "name": "Werther effect", "value": 20 }
+        ]
+      },
+      {
+        "name": "Liking",
+        "children": [
+          { "name": "Physical attractiveness", "value": 20 },
+          { "name": "Similarity mirroring", "value": 25 },
+          { "name": "Compliments", "value": 15 },
+          { "name": "Association/conditioning", "value": 20 }
+        ]
+      },
+      {
+        "name": "Authority",
+        "children": [
+          { "name": "Titles", "value": 25 },
+          { "name": "Uniforms/clothing", "value": 20 },
+          { "name": "Trappings (cars, offices)", "value": 15 },
+          { "name": "Credibility trick", "value": 20 }
+        ]
+      },
+      {
+        "name": "Scarcity",
+        "children": [
+          { "name": "Limited number", "value": 25 },
+          { "name": "Deadline pressure", "value": 25 },
+          { "name": "Psychological reactance", "value": 30 },
+          { "name": "Competition frenzy", "value": 20 }
+        ]
+      }
+    ]
+  },
+  "options": {
+    "title": "Six Weapons of Influence with Sub-Tactics",
+    "colors": ["#e74c3c", "#2980b9", "#27ae60", "#f39c12", "#8e44ad", "#1abc9c"]
+  }
+}
+```
+
+Each weapon branches into specific tactics that compliance professionals deploy — the treemap reveals that rejection-then-retreat, lowball, and psychological reactance carry disproportionate weight as the hardest-to-resist techniques within their respective categories.
+
 Cialdini's brilliance lies in recognising that these six principles are not merely persuasion tactics but fundamental features of how humans navigate social reality. They are cognitive heuristics — mental rules of thumb that have served us well for millennia. The compliance professional's art is not creating new psychology but hijacking existing psychology that evolved for entirely different purposes.
 
 ---
@@ -114,6 +185,70 @@ Cialdini's brilliance lies in recognising that these six principles are not mere
 ---
 
 ## The Foundation: Weapons of Influence
+
+```chartjs
+{
+  "type": "radar",
+  "data": {
+    "labels": ["Sales", "Negotiation", "Marketing", "Leadership", "Everyday"],
+    "datasets": [
+      {
+        "label": "Reciprocity",
+        "data": [9, 8, 7, 6, 8],
+        "borderColor": "#e74c3c",
+        "backgroundColor": "rgba(231, 76, 60, 0.1)"
+      },
+      {
+        "label": "Commitment",
+        "data": [8, 7, 6, 8, 7],
+        "borderColor": "#2980b9",
+        "backgroundColor": "rgba(41, 128, 185, 0.1)"
+      },
+      {
+        "label": "Social Proof",
+        "data": [7, 5, 9, 7, 9],
+        "borderColor": "#27ae60",
+        "backgroundColor": "rgba(39, 174, 96, 0.1)"
+      },
+      {
+        "label": "Liking",
+        "data": [9, 8, 6, 7, 8],
+        "borderColor": "#f39c12",
+        "backgroundColor": "rgba(243, 156, 18, 0.1)"
+      },
+      {
+        "label": "Authority",
+        "data": [6, 6, 8, 9, 6],
+        "borderColor": "#8e44ad",
+        "backgroundColor": "rgba(142, 68, 173, 0.1)"
+      },
+      {
+        "label": "Scarcity",
+        "data": [8, 7, 9, 4, 7],
+        "borderColor": "#1abc9c",
+        "backgroundColor": "rgba(26, 188, 156, 0.1)"
+      }
+    ]
+  },
+  "options": {
+    "plugins": {
+      "title": {
+        "display": true,
+        "text": "Six Weapons: Comparative Power Across Contexts"
+      }
+    },
+    "scales": {
+      "r": {
+        "min": 0,
+        "max": 10,
+        "ticks": { "stepSize": 2 }
+      }
+    }
+  }
+}
+```
+
+No single weapon dominates every context — reciprocity and liking lead in face-to-face settings, social proof and scarcity dominate marketing, while authority peaks in leadership hierarchies.
 
 *Before diving into the six principles, Cialdini establishes the operating system on which they all run: the human tendency toward automatic, shortcut-based responding.*
 
@@ -866,6 +1001,55 @@ The implications extend beyond physical emergencies:
 
 ---
 
+```chartjs
+{
+  "type": "polarArea",
+  "data": {
+    "labels": ["Reciprocity", "Commitment", "Social Proof", "Liking", "Authority", "Scarcity"],
+    "datasets": [
+      {
+        "label": "Typical Vulnerability (1-10)",
+        "data": [9, 7, 8, 8, 7, 9],
+        "backgroundColor": [
+          "rgba(231, 76, 60, 0.6)",
+          "rgba(41, 128, 185, 0.6)",
+          "rgba(39, 174, 96, 0.6)",
+          "rgba(243, 156, 18, 0.6)",
+          "rgba(142, 68, 173, 0.6)",
+          "rgba(26, 188, 156, 0.6)"
+        ],
+        "borderColor": [
+          "#e74c3c",
+          "#2980b9",
+          "#27ae60",
+          "#f39c12",
+          "#8e44ad",
+          "#1abc9c"
+        ],
+        "borderWidth": 2
+      }
+    ]
+  },
+  "options": {
+    "plugins": {
+      "title": {
+        "display": true,
+        "text": "Vulnerability to Each Weapon of Influence"
+      }
+    },
+    "scales": {
+      "r": {
+        "min": 0,
+        "max": 10,
+        "ticks": { "stepSize": 2 }
+      }
+    }
+  }
+}
+```
+
+Reciprocity and scarcity produce the highest automatic vulnerability because they operate on near-universal evolutionary wiring — the obligation to repay and the fear of loss are among the deepest human instincts.
+
 ## 4. Liking: The Friendly Thief
 
 *We prefer to say yes to people we know and like. Compliance professionals exploit this either by making themselves likeable or — more powerfully — by harnessing existing bonds of friendship.*
@@ -1473,6 +1657,77 @@ The combinations table reveals a pattern: the most effective compliance environm
 > 3. **Decide on merits** — Strip away the principle and evaluate the request, product, or situation purely on its own merits. If you would say no without the trigger, say no with it
 
 ---
+
+```chartjs
+{
+  "type": "bar",
+  "data": {
+    "labels": ["Reciprocity", "Commitment", "Social Proof", "Liking", "Authority", "Scarcity"],
+    "datasets": [
+      {
+        "label": "Defence Difficulty (1-10)",
+        "data": [6, 8, 7, 5, 4, 9],
+        "backgroundColor": [
+          "rgba(231, 76, 60, 0.7)",
+          "rgba(41, 128, 185, 0.7)",
+          "rgba(39, 174, 96, 0.7)",
+          "rgba(243, 156, 18, 0.7)",
+          "rgba(142, 68, 173, 0.7)",
+          "rgba(26, 188, 156, 0.7)"
+        ],
+        "borderColor": [
+          "#e74c3c",
+          "#2980b9",
+          "#27ae60",
+          "#f39c12",
+          "#8e44ad",
+          "#1abc9c"
+        ],
+        "borderWidth": 2
+      },
+      {
+        "label": "Speed of Trigger (1-10)",
+        "data": [7, 4, 8, 7, 6, 9],
+        "backgroundColor": [
+          "rgba(231, 76, 60, 0.3)",
+          "rgba(41, 128, 185, 0.3)",
+          "rgba(39, 174, 96, 0.3)",
+          "rgba(243, 156, 18, 0.3)",
+          "rgba(142, 68, 173, 0.3)",
+          "rgba(26, 188, 156, 0.3)"
+        ],
+        "borderColor": [
+          "#e74c3c",
+          "#2980b9",
+          "#27ae60",
+          "#f39c12",
+          "#8e44ad",
+          "#1abc9c"
+        ],
+        "borderWidth": 1,
+        "borderDash": [5, 5]
+      }
+    ]
+  },
+  "options": {
+    "plugins": {
+      "title": {
+        "display": true,
+        "text": "Defence Difficulty and Trigger Speed by Weapon"
+      }
+    },
+    "scales": {
+      "y": {
+        "min": 0,
+        "max": 10,
+        "title": { "display": true, "text": "Difficulty / Speed (1-10)" }
+      }
+    }
+  }
+}
+```
+
+Scarcity is the hardest to defend against because it triggers the fastest emotional response — the fear of loss overwhelms rational analysis before you can invoke Cialdini's diagnostic questions, while commitment works slowly but becomes nearly unshakeable once the identity shift takes hold.
 
 ## The Epilogue: Instant Influence in an Automatic Age
 

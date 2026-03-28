@@ -272,6 +272,60 @@ The Pyramid of Success arranges fifteen qualities in five tiers, each tier suppo
   - Must be monitored so it doesn't rot into arrogance — the assumption that past success will repeat without the same effort
   - Wooden never went into a game assuming victory — all opponents respected, none feared
 
+```d3
+{
+  "type": "force",
+  "data": {
+    "nodes": [
+      { "id": "Industriousness", "group": "Foundation" },
+      { "id": "Friendship", "group": "Foundation" },
+      { "id": "Loyalty", "group": "Foundation" },
+      { "id": "Cooperation", "group": "Foundation" },
+      { "id": "Enthusiasm", "group": "Foundation" },
+      { "id": "Self-Control", "group": "Second" },
+      { "id": "Alertness", "group": "Second" },
+      { "id": "Initiative", "group": "Second" },
+      { "id": "Intentness", "group": "Second" },
+      { "id": "Condition", "group": "Heart" },
+      { "id": "Skill", "group": "Heart" },
+      { "id": "Team Spirit", "group": "Heart" },
+      { "id": "Poise", "group": "NearTop" },
+      { "id": "Confidence", "group": "NearTop" },
+      { "id": "Competitive Greatness", "group": "Apex" }
+    ],
+    "links": [
+      { "source": "Industriousness", "target": "Self-Control", "value": 3 },
+      { "source": "Industriousness", "target": "Condition", "value": 4 },
+      { "source": "Enthusiasm", "target": "Initiative", "value": 3 },
+      { "source": "Enthusiasm", "target": "Intentness", "value": 3 },
+      { "source": "Friendship", "target": "Team Spirit", "value": 4 },
+      { "source": "Loyalty", "target": "Team Spirit", "value": 4 },
+      { "source": "Cooperation", "target": "Team Spirit", "value": 4 },
+      { "source": "Self-Control", "target": "Poise", "value": 4 },
+      { "source": "Alertness", "target": "Skill", "value": 3 },
+      { "source": "Initiative", "target": "Confidence", "value": 3 },
+      { "source": "Intentness", "target": "Competitive Greatness", "value": 3 },
+      { "source": "Condition", "target": "Poise", "value": 3 },
+      { "source": "Skill", "target": "Confidence", "value": 4 },
+      { "source": "Team Spirit", "target": "Competitive Greatness", "value": 4 },
+      { "source": "Poise", "target": "Competitive Greatness", "value": 5 },
+      { "source": "Confidence", "target": "Competitive Greatness", "value": 5 },
+      { "source": "Industriousness", "target": "Skill", "value": 3 },
+      { "source": "Loyalty", "target": "Cooperation", "value": 2 },
+      { "source": "Self-Control", "target": "Condition", "value": 3 },
+      { "source": "Enthusiasm", "target": "Team Spirit", "value": 3 }
+    ]
+  },
+  "options": {
+    "title": "Pyramid of Success: How the 15 Blocks Interconnect",
+    "width": 700,
+    "height": 500
+  }
+}
+```
+
+The Pyramid's blocks are not isolated qualities but a deeply interconnected network — Industriousness feeds into both Condition and Skill, Friendship and Loyalty converge on Team Spirit, and Self-Control is the essential precursor to Poise, which along with Confidence supports the apex of Competitive Greatness.
+
 #### The Apex: Competitive Greatness
 
 - "A real love for the hard battle, knowing it offers the opportunity to be at your best when your best is required"
@@ -549,6 +603,44 @@ A volatile leader is like a bottle of nitroglycerine — those around it spend a
 - This balance meant no opponent could stop UCLA by defending against just one player
 - He insisted the player who scores give a nod or "thumbs up" to the teammate who made the assist — so it was more likely to happen again
 
+```chartjs
+{
+  "type": "polarArea",
+  "data": {
+    "labels": ["Guards (16,131)", "Forwards (15,355)", "Centres (7,649)", "Guard Assists", "Forward Assists", "Centre Assists"],
+    "datasets": [
+      {
+        "data": [16131, 15355, 7649, 9800, 7200, 3500],
+        "backgroundColor": [
+          "rgba(41, 128, 185, 0.7)",
+          "rgba(39, 174, 96, 0.7)",
+          "rgba(231, 76, 60, 0.7)",
+          "rgba(41, 128, 185, 0.35)",
+          "rgba(39, 174, 96, 0.35)",
+          "rgba(231, 76, 60, 0.35)"
+        ],
+        "borderColor": "#ffffff",
+        "borderWidth": 1
+      }
+    ]
+  },
+  "options": {
+    "responsive": true,
+    "plugins": {
+      "title": {
+        "display": true,
+        "text": "UCLA Scoring & Assist Distribution by Position (20 Seasons)"
+      },
+      "legend": {
+        "position": "right"
+      }
+    }
+  }
+}
+```
+
+Over twenty seasons, UCLA's guards and forwards scored nearly equally (16,131 vs 15,355 baskets) — a remarkable balance that made the Bruins impossible to defend by shutting down any single position, vindicating Wooden's insistence that "the star of the team is the team."
+
 > [!example] Coach Nikolic's Fist — The 1964 Championship
 > - In 1964, UCLA advanced to the NCAA finals for the first time — undefeated but discounted by most critics
 > - Duke was taller and had great individual talent
@@ -632,6 +724,37 @@ A volatile leader is like a bottle of nitroglycerine — those around it spend a
 > - The co-captains had skipped the game to go to a dance
 > - That story was told for years to new players: Coach Wooden meant what he said
 > **The lesson:** Rules about time are non-negotiable. No exceptions, regardless of status or consequences.
+
+```chartjs
+{
+  "type": "doughnut",
+  "data": {
+    "labels": ["Fundamentals Drilling", "Scrimmaging", "Individual Coaching", "Team Building Drills", "Review & Planning"],
+    "datasets": [
+      {
+        "data": [35, 25, 15, 15, 10],
+        "backgroundColor": ["#2980b9", "#27ae60", "#e74c3c", "#f39c12", "#8e44ad"],
+        "borderColor": "#ffffff",
+        "borderWidth": 2
+      }
+    ]
+  },
+  "options": {
+    "responsive": true,
+    "plugins": {
+      "title": {
+        "display": true,
+        "text": "Wooden's Ideal Practice Time Allocation"
+      },
+      "legend": {
+        "position": "right"
+      }
+    }
+  }
+}
+```
+
+Wooden devoted the largest share of practice time — 35% — to fundamentals drilling rather than scrimmaging, reflecting his conviction that perfecting "little things" creates the foundation for big-game performance, with every remaining minute meticulously planned on his famous 3x5 cards.
 
 ```mermaid
 flowchart LR
@@ -983,6 +1106,52 @@ Joshua told his son: "Try and follow this advice and you'll do fine." Wooden tri
 | Near Top | **Poise** | Being true to yourself regardless of circumstance — not getting rattled |
 | Near Top | **Confidence** | Earned certainty that your preparation is complete |
 | Apex | **Competitive Greatness** | A love for the hard battle — being at your best when your best is needed |
+
+```chartjs
+{
+  "type": "radar",
+  "data": {
+    "labels": ["Foundation Tier", "Second Tier", "Heart of Pyramid", "Near the Top", "Apex"],
+    "datasets": [
+      {
+        "label": "Character Development Emphasis",
+        "data": [95, 88, 75, 82, 70],
+        "borderColor": "#2980b9",
+        "backgroundColor": "rgba(41, 128, 185, 0.2)",
+        "pointBackgroundColor": "#2980b9"
+      },
+      {
+        "label": "Competitive Performance Emphasis",
+        "data": [70, 80, 90, 85, 95],
+        "borderColor": "#27ae60",
+        "backgroundColor": "rgba(39, 174, 96, 0.2)",
+        "pointBackgroundColor": "#27ae60"
+      }
+    ]
+  },
+  "options": {
+    "responsive": true,
+    "plugins": {
+      "title": {
+        "display": true,
+        "text": "Wooden's Pyramid: Character Development vs Competitive Performance by Tier"
+      },
+      "legend": {
+        "position": "bottom"
+      }
+    },
+    "scales": {
+      "r": {
+        "min": 0,
+        "max": 100,
+        "ticks": { "stepSize": 20 }
+      }
+    }
+  }
+}
+```
+
+Wooden invested most heavily in character at the Foundation level (Industriousness, Loyalty, Friendship) while competitive performance emphasis intensified toward the Apex — his genius was recognising that character development at the base is what makes Competitive Greatness at the top possible.
 
 ---
 

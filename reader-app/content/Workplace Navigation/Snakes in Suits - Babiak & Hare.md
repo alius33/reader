@@ -36,6 +36,39 @@ Paul Babiak is an industrial and organisational psychologist who advises compani
 - The damage is not limited to individual victims — psychopaths corrode team cohesion, destroy institutional trust, and hollow out organisations from within
 - <b style="color: #27ae60">Understanding the pattern is the first and most important defence</b> — once you can see the playbook, the moves become predictable
 
+```d3
+{
+  "type": "heatmap",
+  "data": [
+    { "source": "Rapid Restructuring", "target": "Assessment Phase", "value": 95 },
+    { "source": "Rapid Restructuring", "target": "Manipulation Phase", "value": 85 },
+    { "source": "Rapid Restructuring", "target": "Ascension Phase", "value": 70 },
+    { "source": "Weak HR/Vague Criteria", "target": "Assessment Phase", "value": 60 },
+    { "source": "Weak HR/Vague Criteria", "target": "Manipulation Phase", "value": 90 },
+    { "source": "Weak HR/Vague Criteria", "target": "Ascension Phase", "value": 85 },
+    { "source": "Hero Culture", "target": "Assessment Phase", "value": 50 },
+    { "source": "Hero Culture", "target": "Manipulation Phase", "value": 75 },
+    { "source": "Hero Culture", "target": "Ascension Phase", "value": 95 },
+    { "source": "Poor Reference Checks", "target": "Assessment Phase", "value": 90 },
+    { "source": "Poor Reference Checks", "target": "Manipulation Phase", "value": 40 },
+    { "source": "Poor Reference Checks", "target": "Ascension Phase", "value": 30 },
+    { "source": "Results Over Process", "target": "Assessment Phase", "value": 30 },
+    { "source": "Results Over Process", "target": "Manipulation Phase", "value": 70 },
+    { "source": "Results Over Process", "target": "Ascension Phase", "value": 90 }
+  ],
+  "options": {
+    "title": "Organisational Vulnerability × Psychopath Phase — Exploitation Intensity",
+    "xLabel": "Psychopath's Phase",
+    "yLabel": "Organisational Vulnerability",
+    "width": 650,
+    "height": 350,
+    "colorScheme": "reds"
+  }
+}
+```
+
+The heatmap reveals which vulnerabilities matter most at each phase: poor reference checking enables entry, weak HR enables manipulation, and hero culture enables ascension — a defence strategy must address different vulnerabilities at different stages.
+
 > [!tip] Core Insight
 > The traits that make someone a successful psychopath and the traits that organisations say they want in leaders overlap so much that the hiring process itself becomes a selection mechanism for psychopathy.
 
@@ -140,6 +173,33 @@ This diagram maps the three dimensions of psychopathy — the interpersonal mask
   - **Factor 2** (Social Deviance): the "lifestyle" of psychopathy — impulsivity, irresponsibility, parasitic behaviour, criminal versatility
 - <b style="color: #e74c3c">Corporate psychopaths tend to score high on Factor 1 but lower on Factor 2</b> — they have the personality traits but enough impulse control to avoid the criminal justice system
 
+```chartjs
+{
+  "type": "bar",
+  "data": {
+    "labels": ["Glibness/Charm", "Grandiosity", "Pathological Lying", "Manipulation", "Lack of Remorse", "Shallow Affect", "Impulsivity", "Irresponsibility", "Need for Stimulation", "Poor Self-Control"],
+    "datasets": [
+      {
+        "label": "Corporate Psychopath (Factor 1 dominant)",
+        "data": [9, 8, 8, 9, 8, 7, 4, 3, 5, 3],
+        "backgroundColor": "rgba(231, 76, 60, 0.75)"
+      },
+      {
+        "label": "Criminal Psychopath (Both factors high)",
+        "data": [7, 7, 7, 7, 8, 7, 9, 9, 9, 8],
+        "backgroundColor": "rgba(142, 68, 173, 0.6)"
+      }
+    ]
+  },
+  "options": {
+    "plugins": { "title": { "display": true, "text": "PCL-R Factor Profiles — Corporate vs. Criminal Psychopaths" } },
+    "scales": { "y": { "max": 10, "title": { "display": true, "text": "Score (0-10)" } } }
+  }
+}
+```
+
+The split is clear: corporate psychopaths load heavily on the interpersonal/personality traits (left side) while maintaining enough impulse control on the lifestyle traits (right side) to channel their predation through organisational systems rather than criminal ones.
+
 | Factor 1 (Personality) | Factor 2 (Lifestyle) |
 |------------------------|---------------------|
 | Glibness / superficial charm | Need for stimulation |
@@ -164,6 +224,26 @@ Corporate psychopaths are disproportionately loaded on the left column — the t
 - Babiak and Hare's own research found rates of 3-4% among corporate professionals they studied
 - Some researchers estimate rates as high as 4-12% among senior executives and C-suite leaders
 - <b style="color: #e74c3c">Even the conservative estimate means you will work with at least one psychopath during your career</b>
+
+```chartjs
+{
+  "type": "doughnut",
+  "data": {
+    "labels": ["General Population (~1%)", "Corporate Professionals (~3.5%)", "Senior Executives (~4-12%)", "Non-Psychopathic Population"],
+    "datasets": [{
+      "data": [1, 3.5, 8, 87.5],
+      "backgroundColor": ["#f39c12", "#e74c3c", "#8e44ad", "rgba(149, 165, 166, 0.3)"],
+      "borderWidth": 2
+    }]
+  },
+  "options": {
+    "plugins": { "title": { "display": true, "text": "Psychopathy Prevalence — Concentration Increases With Seniority" } }
+  }
+}
+```
+
+The concentration effect is striking: psychopathy rates roughly triple from the general population to corporate professionals and may quadruple again at the senior executive level — exactly the positions where they can cause the most organisational damage.
+
 - The authors emphasise that sub-clinical levels — people who score in the moderate range — may be even more common and still cause significant harm:
   - They are harder to detect because they do not match the Hollywood stereotype
   - They are often described as "difficult" or "political" rather than pathological
@@ -910,6 +990,41 @@ The surface behaviours look identical — the mechanisms underneath are complete
 | Core deficit | Emotional poverty | Fragile self-worth | Moral flexibility |
 
 The three dark personality types often cluster together — what researchers call the <b style="color: #2980b9">Dark Triad</b> — but the psychopath is the most dangerous in an organisational setting because they are the least constrained by internal discomfort or fear of consequences.
+
+```chartjs
+{
+  "type": "radar",
+  "data": {
+    "labels": ["Empathy Deficit", "Guilt Absence", "Strategic Calculation", "Emotional Stability", "Changeability", "Organisational Danger"],
+    "datasets": [
+      {
+        "label": "Psychopath",
+        "data": [100, 100, 95, 90, 5, 100],
+        "borderColor": "#e74c3c",
+        "backgroundColor": "rgba(231, 76, 60, 0.15)"
+      },
+      {
+        "label": "Narcissist",
+        "data": [70, 45, 60, 20, 35, 65],
+        "borderColor": "#f39c12",
+        "backgroundColor": "rgba(243, 156, 18, 0.15)"
+      },
+      {
+        "label": "Machiavellian",
+        "data": [30, 40, 85, 70, 60, 50],
+        "borderColor": "#2980b9",
+        "backgroundColor": "rgba(41, 128, 185, 0.15)"
+      }
+    ]
+  },
+  "options": {
+    "plugins": { "title": { "display": true, "text": "Dark Triad Comparison — Trait Intensity Profiles" } },
+    "scales": { "r": { "min": 0, "max": 100, "ticks": { "stepSize": 25 } } }
+  }
+}
+```
+
+The psychopath's profile is the most extreme on every dimension except changeability — where their near-zero score reveals the fundamental problem: unlike narcissists and Machiavellians, psychopaths have no internal discomfort to motivate change.
 
 ---
 

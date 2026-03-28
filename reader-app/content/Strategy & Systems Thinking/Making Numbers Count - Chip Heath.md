@@ -50,6 +50,61 @@ flowchart LR
 
 Heath and Starr's core framework: every number must pass through a translation pipeline before it reaches the audience. The raw number is the starting point, never the endpoint.
 
+```chartjs
+{
+  "type": "radar",
+  "data": {
+    "labels": ["Comprehension", "Memorability", "Emotional Impact", "Repeatability", "Proportional Accuracy", "Speed of Grasp"],
+    "datasets": [
+      {
+        "label": "Raw Number (e.g., '5GB')",
+        "data": [1, 1, 1, 1, 9, 1],
+        "backgroundColor": "rgba(231, 76, 60, 0.2)",
+        "borderColor": "#e74c3c"
+      },
+      {
+        "label": "Translated ('1,000 songs in your pocket')",
+        "data": [9, 9, 8, 9, 7, 9],
+        "backgroundColor": "rgba(39, 174, 96, 0.2)",
+        "borderColor": "#27ae60"
+      }
+    ]
+  },
+  "options": {
+    "plugins": { "title": { "display": true, "text": "Raw Numbers vs. Translated Numbers: Communication Power" } },
+    "scales": { "r": { "min": 0, "max": 10, "ticks": { "stepSize": 2 } } }
+  }
+}
+```
+
+The radar shows the fundamental trade-off: raw numbers preserve precision but fail on every dimension that actually drives communication — comprehension, memorability, and the ability to repeat the number to someone else.
+
+```d3
+{
+  "type": "treemap",
+  "data": [
+    { "name": "Avoid the Number", "category": "Translation Strategy", "value": 20 },
+    { "name": "Round to Friendly", "category": "Translation Strategy", "value": 18 },
+    { "name": "1-in-X Ratio", "category": "Translation Strategy", "value": 16 },
+    { "name": "Concrete Comparison", "category": "Translation Strategy", "value": 22 },
+    { "name": "Convert to Process", "category": "Translation Strategy", "value": 14 },
+    { "name": "Shrink the Scale", "category": "Translation Strategy", "value": 12 },
+    { "name": "Pair with Story", "category": "Translation Strategy", "value": 15 },
+    { "name": "Flip the Frame", "category": "Translation Strategy", "value": 10 },
+    { "name": "Leading with Precision", "category": "Common Mistake", "value": 15 },
+    { "name": "Unfamiliar Anchors", "category": "Common Mistake", "value": 12 },
+    { "name": "Stacking Translations", "category": "Common Mistake", "value": 10 },
+    { "name": "Wrong Number Translated", "category": "Common Mistake", "value": 8 }
+  ],
+  "options": {
+    "title": "The Number Translation Toolkit: Strategies vs. Pitfalls",
+    "colors": { "Translation Strategy": "#27ae60", "Common Mistake": "#e74c3c" }
+  }
+}
+```
+
+Concrete comparisons take the largest share of the toolkit because they are the most versatile strategy — football fields, dollar bills, and time translations work across nearly every context — while "leading with precision" is the most common mistake that undermines all others.
+
 ---
 
 ## Key Concepts at a Glance
@@ -652,6 +707,25 @@ The hierarchy moves from strongest standalone strategies (top) to strategies tha
 | 1 billion+ | "Incomprehensible" | Multi-strategy translation required |
 
 The table maps the brain's natural processing limits to the translation strategies that compensate for each threshold.
+
+```mermaid
+quadrantChart
+    title Number Scale vs. Brain Response
+    x-axis Small Scale --> Large Scale
+    y-axis Low Comprehension --> High Comprehension
+    quadrant-1 Intuitive grasp
+    quadrant-2 Translated successfully
+    quadrant-3 Numbers numb
+    quadrant-4 Need anchors
+    1-7 items: [0.1, 0.95]
+    8-100 items: [0.25, 0.7]
+    100-10K items: [0.45, 0.4]
+    10K-1M items: [0.6, 0.2]
+    1M-1B items: [0.8, 0.1]
+    1B+ items: [0.95, 0.05]
+```
+
+The quadrant chart shows the exponential decay in comprehension as number scale increases — beyond about 10,000, the brain's natural number sense has effectively collapsed, requiring multi-strategy translation to restore any meaningful understanding.
 
 ---
 

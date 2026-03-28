@@ -146,6 +146,35 @@ related:
 | **Phase 3: The Precipice** | 16–20 | Deepen the effect through extreme emotional measures |
 | **Phase 4: Moving In** | 21–24 | Create surrender — the final conquest and its aftermath |
 
+```d3
+{
+  "type": "sankey",
+  "data": {
+    "nodes": [
+      "Phase 1: Separation", "Phase 2: Lead Astray", "Phase 3: Precipice", "Phase 4: Moving In",
+      "Interest", "Desire", "Confusion", "Dependency", "Crisis", "Surrender"
+    ],
+    "links": [
+      { "source": "Phase 1: Separation", "target": "Interest", "value": 8 },
+      { "source": "Phase 1: Separation", "target": "Desire", "value": 6 },
+      { "source": "Phase 2: Lead Astray", "target": "Confusion", "value": 7 },
+      { "source": "Phase 2: Lead Astray", "target": "Dependency", "value": 8 },
+      { "source": "Phase 3: Precipice", "target": "Crisis", "value": 9 },
+      { "source": "Interest", "target": "Confusion", "value": 5 },
+      { "source": "Desire", "target": "Dependency", "value": 6 },
+      { "source": "Dependency", "target": "Crisis", "value": 7 },
+      { "source": "Crisis", "target": "Surrender", "value": 9 },
+      { "source": "Phase 4: Moving In", "target": "Surrender", "value": 4 }
+    ]
+  },
+  "options": {
+    "title": "The 24-Step Seduction Process — Emotional Flow Through Four Phases"
+  }
+}
+```
+
+The Sankey diagram reveals that the seductive process is essentially a funnel — each phase narrows the target's emotional options until surrender becomes not a choice but an inevitability, with the Precipice phase creating the crisis that makes Phase 4 possible.
+
 ---
 
 ## Thematic Cluster Map
@@ -1286,12 +1315,123 @@ graph TD
 | **Charismatic** | Inner intensity projected | Belonging to something larger | Awe | Mass appeal | Joan of Arc / Elvis |
 | **Star** | Dreamlike image | Escape into fantasy | Wonder | Mass appeal | Dietrich / JFK |
 
+```chartjs
+{
+  "type": "radar",
+  "data": {
+    "labels": ["Sexual Allure", "Psychological Depth", "Emotional Volatility", "Mystery/Ambiguity", "Mass Appeal", "Individual Focus"],
+    "datasets": [
+      {
+        "label": "Siren",
+        "data": [95, 40, 60, 50, 70, 45],
+        "borderColor": "#e74c3c",
+        "backgroundColor": "rgba(231, 76, 60, 0.1)"
+      },
+      {
+        "label": "Ideal Lover",
+        "data": [50, 95, 40, 30, 40, 95],
+        "borderColor": "#2980b9",
+        "backgroundColor": "rgba(41, 128, 185, 0.1)"
+      },
+      {
+        "label": "Coquette",
+        "data": [65, 70, 95, 85, 50, 80],
+        "borderColor": "#f39c12",
+        "backgroundColor": "rgba(243, 156, 18, 0.1)"
+      },
+      {
+        "label": "Charismatic",
+        "data": [35, 60, 55, 70, 95, 25],
+        "borderColor": "#8e44ad",
+        "backgroundColor": "rgba(142, 68, 173, 0.1)"
+      },
+      {
+        "label": "Charmer",
+        "data": [20, 80, 15, 20, 60, 90],
+        "borderColor": "#27ae60",
+        "backgroundColor": "rgba(39, 174, 96, 0.1)"
+      }
+    ]
+  },
+  "options": {
+    "plugins": {
+      "title": { "display": true, "text": "Seductive Character Profiles — Five Key Types Compared" }
+    },
+    "scales": {
+      "r": { "beginAtZero": true, "max": 100 }
+    }
+  }
+}
+```
+
+Each seductive type occupies a distinct psychological niche — the Siren dominates through physical overwhelm while the Ideal Lover works through mirroring, and the Coquette's power lies precisely in its volatility.
+
 ### How the Types Combine
 
 - The most powerful seducers in history typically combined two or three types. <b style="color: #2980b9">Cleopatra</b> was primarily a Siren but also an Ideal Lover (she studied each man's specific fantasy) and a Star (she maintained an ethereal, larger-than-life image)
 - <b style="color: #2980b9">JFK</b> combined Star qualities (the mythic image) with Charismatic power (the oratory and vision) and Ideal Lover instincts (he embodied what America wanted to see in itself)
 - <b style="color: #2980b9">Casanova</b> was an Ideal Lover by primary type but incorporated Rake intensity (genuine desire) and Charmer technique (making each woman the center of attention)
 - The lesson: identify your dominant type, develop it fully, then selectively add elements of complementary types to create depth and unpredictability
+
+```d3
+{
+  "type": "heatmap",
+  "data": {
+    "xLabels": ["Siren", "Rake", "Ideal Lover", "Dandy", "Natural", "Coquette", "Charmer", "Charismatic", "Star"],
+    "yLabels": ["Sexual Power", "Psychological Depth", "Emotional Range", "Mass Appeal", "Sustainability", "Risk of Exposure"],
+    "values": [
+      [95, 85, 50, 60, 30, 65, 20, 40, 55],
+      [40, 55, 95, 80, 35, 75, 85, 65, 30],
+      [60, 80, 70, 65, 80, 95, 50, 60, 45],
+      [70, 40, 35, 55, 70, 45, 65, 95, 90],
+      [50, 35, 85, 70, 75, 90, 80, 55, 60],
+      [75, 80, 40, 50, 30, 70, 25, 65, 45]
+    ]
+  },
+  "options": {
+    "title": "Nine Seductive Characters — Multi-Dimensional Power Comparison",
+    "colorRange": ["#f7fbff", "#8e44ad"]
+  }
+}
+```
+
+The heatmap reveals that no single type dominates all dimensions — the Siren owns sexual power but lacks psychological depth, while the Ideal Lover excels at sustainability but has limited mass appeal, explaining why history's greatest seducers always combined multiple types.
+
+```chartjs
+{
+  "type": "bar",
+  "data": {
+    "labels": ["Phase 1: Separation (8 steps)", "Phase 2: Lead Astray (7 steps)", "Phase 3: Precipice (5 steps)", "Phase 4: Moving In (4 steps)"],
+    "datasets": [
+      {
+        "label": "Emotional Intensity",
+        "data": [40, 65, 95, 80],
+        "backgroundColor": "rgba(231, 76, 60, 0.7)"
+      },
+      {
+        "label": "Target's Free Will",
+        "data": [85, 55, 25, 10],
+        "backgroundColor": "rgba(41, 128, 185, 0.7)"
+      },
+      {
+        "label": "Seducer's Control",
+        "data": [30, 60, 85, 95],
+        "backgroundColor": "rgba(39, 174, 96, 0.7)"
+      }
+    ]
+  },
+  "options": {
+    "plugins": {
+      "title": { "display": true, "text": "The Seductive Arc — Intensity, Free Will, and Control Across Four Phases" }
+    },
+    "scales": {
+      "y": { "beginAtZero": true, "max": 100, "title": { "display": true, "text": "Level (%)" } }
+    }
+  }
+}
+```
+
+As the process unfolds, emotional intensity rises while the target's free will steadily erodes — the seducer's control is almost complete by Phase 3, making Phase 4 less a conquest than a formality.
 
 ### Type Interaction Dynamics
 

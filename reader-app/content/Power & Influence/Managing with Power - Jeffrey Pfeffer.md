@@ -119,6 +119,47 @@ The message is not that everyone should become a Machiavellian operator, but tha
 | **Shared culture and values** | Alignment through norms, socialisation, and identity | Slow to build, fragile under stress, hard to change once established |
 | **Power and influence** | Political skill, coalition-building, resource leverage | Requires skill, carries reputational risk, morally uncomfortable |
 
+```chartjs
+{
+  "type": "bar",
+  "data": {
+    "labels": ["Hierarchical Authority", "Shared Culture", "Power & Influence"],
+    "datasets": [
+      {
+        "label": "Effectiveness in Modern Orgs",
+        "data": [35, 60, 85],
+        "backgroundColor": "#2980b9"
+      },
+      {
+        "label": "Speed of Deployment",
+        "data": [70, 20, 65],
+        "backgroundColor": "#e74c3c"
+      },
+      {
+        "label": "Flexibility / Adaptability",
+        "data": [25, 30, 90],
+        "backgroundColor": "#27ae60"
+      },
+      {
+        "label": "Durability Once Established",
+        "data": [50, 95, 55],
+        "backgroundColor": "#f39c12"
+      }
+    ]
+  },
+  "options": {
+    "plugins": {
+      "title": { "display": true, "text": "Three Methods of Getting Things Done — Comparative Dimensions" }
+    },
+    "scales": {
+      "y": { "beginAtZero": true, "max": 100, "title": { "display": true, "text": "Score (0-100)" } }
+    }
+  }
+}
+```
+
+Power and influence scores highest on effectiveness and flexibility in modern flat organisations, while shared culture — though slow to build and hard to change — produces the most durable alignment once established, and hierarchy is fastest to deploy but least effective in knowledge-work environments.
+
 - Hierarchy is declining in effectiveness because modern organisations are flatter, more networked, and more knowledge-dependent
   - A software engineer does not respond to orders the way a factory worker does — they need to be persuaded, not commanded
   - Matrix organisations create dual reporting lines that dilute hierarchical authority
@@ -383,6 +424,41 @@ flowchart LR
 ```
 
 Pfeffer's central point is that structural factors dominate personal ones — though both matter, the allocation of attention should be heavily weighted toward positioning.
+
+```chartjs
+{
+  "type": "radar",
+  "data": {
+    "labels": ["Resource Control", "Network Position", "Formal Authority", "Reputation", "Subunit Membership", "Personal Attributes"],
+    "datasets": [
+      {
+        "label": "Structural Sources",
+        "data": [95, 90, 75, 70, 85, 35],
+        "backgroundColor": "rgba(41, 128, 185, 0.2)",
+        "borderColor": "#2980b9",
+        "pointBackgroundColor": "#2980b9"
+      },
+      {
+        "label": "Common Perception",
+        "data": [40, 30, 85, 50, 25, 90],
+        "backgroundColor": "rgba(231, 76, 60, 0.15)",
+        "borderColor": "#e74c3c",
+        "pointBackgroundColor": "#e74c3c"
+      }
+    ]
+  },
+  "options": {
+    "plugins": {
+      "title": { "display": true, "text": "Sources of Power — Actual Importance vs Common Perception" }
+    },
+    "scales": {
+      "r": { "min": 0, "max": 100, "ticks": { "stepSize": 20 } }
+    }
+  }
+}
+```
+
+The gap between actual and perceived sources of power reveals the fundamental attribution error in action: people dramatically overweight personal attributes and formal authority while underweighting the structural sources — resource control, network position, and subunit membership — that Pfeffer's evidence shows actually determine outcomes.
 
 ---
 
@@ -892,6 +968,70 @@ flowchart TD
 
 Framing is not a single tactic but a cascade — each psychological mechanism reinforces the others, pre-shaping the "decision" before it is formally taken.
 
+```d3
+{
+  "type": "treemap",
+  "data": {
+    "name": "Power Tactics Arsenal",
+    "children": [
+      {
+        "name": "Framing",
+        "children": [
+          { "name": "Contrast Effects", "value": 85 },
+          { "name": "Commitment Escalation", "value": 90 },
+          { "name": "Scarcity Framing", "value": 70 },
+          { "name": "Social Proof", "value": 80 }
+        ]
+      },
+      {
+        "name": "Timing",
+        "children": [
+          { "name": "Moving First", "value": 90 },
+          { "name": "Strategic Delay", "value": 75 },
+          { "name": "Deadline Exploitation", "value": 70 },
+          { "name": "Propitious Moments", "value": 85 }
+        ]
+      },
+      {
+        "name": "Information Control",
+        "children": [
+          { "name": "Selective Release", "value": 85 },
+          { "name": "Expert Deployment", "value": 80 },
+          { "name": "Analysis as Legitimation", "value": 75 },
+          { "name": "Information Withholding", "value": 70 }
+        ]
+      },
+      {
+        "name": "Interpersonal Influence",
+        "children": [
+          { "name": "Ingratiation", "value": 80 },
+          { "name": "Emotional Persuasion", "value": 75 },
+          { "name": "Settings & Ceremony", "value": 65 },
+          { "name": "Language Management", "value": 70 }
+        ]
+      },
+      {
+        "name": "Structural Redesign",
+        "children": [
+          { "name": "Reorganisation", "value": 95 },
+          { "name": "Committee Control", "value": 85 },
+          { "name": "Domain Expansion", "value": 80 },
+          { "name": "Appointment Power", "value": 90 }
+        ]
+      }
+    ]
+  },
+  "options": {
+    "title": "Power Tactics Arsenal — Five Categories with Sub-Tactics (sized by durability of impact)",
+    "width": 700,
+    "height": 450,
+    "colorScale": ["#2980b9", "#27ae60", "#e74c3c", "#f39c12", "#8e44ad"]
+  }
+}
+```
+
+Structural redesign tactics produce the most durable power shifts — reorganisations and appointments outlast any individual — while framing and timing tactics are potent but situational, and interpersonal influence, though effective, must be continuously renewed.
+
 > [!tip] Core Insight
 > The question asked determines the answer given. Skilled operators win not by arguing better answers but by choosing better questions.
 
@@ -1276,6 +1416,29 @@ flowchart TD
 
 All five mechanisms are self-reinforcing — success breeds the conditions for its own undoing, and by the time the powerful recognise what is happening, the erosion is often irreversible.
 
+```chartjs
+{
+  "type": "doughnut",
+  "data": {
+    "labels": ["Environmental Change", "Overreach & Hubris", "Insularity / Loss of Information", "Loss of Allies", "Visibility Attracting Scrutiny"],
+    "datasets": [{
+      "data": [30, 25, 20, 15, 10],
+      "backgroundColor": ["#2980b9", "#e74c3c", "#f39c12", "#8e44ad", "#1abc9c"],
+      "borderWidth": 2,
+      "borderColor": "#fff"
+    }]
+  },
+  "options": {
+    "plugins": {
+      "title": { "display": true, "text": "How Power Is Lost — Relative Frequency of the Five Mechanisms" },
+      "legend": { "position": "right" }
+    }
+  }
+}
+```
+
+Environmental change is the most common destroyer of power — the skills and coalitions that produced success become liabilities when conditions shift — while overreach and hubris are the most preventable, making them the mechanism most worth guarding against.
+
 ---
 
 **<b style="color: #2980b9">Environmental change outpacing personal adaptation</b>** — the most common and most insidious mechanism:
@@ -1561,6 +1724,28 @@ flowchart LR
 ```
 
 Pfeffer's complete framework is cyclical: understanding leads to diagnosis, diagnosis to tactics, tactics to action, action to consequences, and consequences back to diagnosis — because the political landscape shifts with every move.
+
+```mermaid
+quadrantChart
+    title Power Skill Matrix — Political Skill vs Analytical Skill
+    x-axis "Low Analytical Skill" --> "High Analytical Skill"
+    y-axis "Low Political Skill" --> "High Political Skill"
+    quadrant-1 "THE COMPLETE OPERATOR"
+    quadrant-2 "THE POLITICIAN"
+    quadrant-3 "THE BYSTANDER"
+    quadrant-4 "THE FRUSTRATED GENIUS"
+    "Lyndon Johnson": [0.55, 0.95]
+    "Robert Moses": [0.60, 0.92]
+    "Kissinger": [0.85, 0.90]
+    "PARC Engineers (Xerox)": [0.92, 0.15]
+    "Frank Stanton (CBS)": [0.75, 0.85]
+    "Peter Peterson": [0.80, 0.45]
+    "Roger Smith (GM)": [0.40, 0.65]
+    "Blood Bank Leaders (1980s)": [0.55, 0.20]
+    "Honda Ground Team": [0.50, 0.75]
+```
+
+The quadrant reveals Pfeffer's central thesis: analytical brilliance without political skill produces frustrated geniuses (like Xerox's PARC engineers), while the complete operators who combine both — Kissinger, Stanton, Moses — are the ones who actually shape outcomes.
 
 ---
 

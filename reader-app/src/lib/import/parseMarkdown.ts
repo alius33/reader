@@ -154,6 +154,18 @@ function convertNode(node: any): TiptapNode | TiptapNode[] | null {
           attrs: { source: node.value },
         };
       }
+      if (node.lang === "chartjs") {
+        return {
+          type: "chartDiagram",
+          attrs: { source: node.value },
+        };
+      }
+      if (node.lang === "d3") {
+        return {
+          type: "d3Diagram",
+          attrs: { source: node.value },
+        };
+      }
       return {
         type: "codeBlock",
         attrs: { language: node.lang || null },

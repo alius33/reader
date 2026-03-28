@@ -116,6 +116,61 @@ Jennifer Aaker is the General Atlantic Professor of Marketing at Stanford Gradua
   - Over years, the suppression becomes habitual — adults forget they ever had a sense of humour
 - The authors argue this cliff represents an enormous, unnecessary loss — of connection, creativity, resilience, and influence
 
+```chartjs
+{
+  "type": "line",
+  "data": {
+    "labels": ["Age 4", "Age 8", "Age 12", "Age 16", "Age 20", "Age 23", "Age 28", "Age 33", "Age 40"],
+    "datasets": [
+      {
+        "label": "Laughs per day",
+        "data": [300, 250, 180, 100, 60, 25, 15, 10, 6],
+        "borderColor": "#e74c3c",
+        "backgroundColor": "rgba(231, 76, 60, 0.1)",
+        "fill": true,
+        "tension": 0.4,
+        "pointRadius": 5,
+        "pointBackgroundColor": ["#27ae60", "#27ae60", "#f39c12", "#f39c12", "#e74c3c", "#e74c3c", "#e74c3c", "#e74c3c", "#e74c3c"]
+      }
+    ]
+  },
+  "options": {
+    "plugins": {
+      "title": {
+        "display": true,
+        "text": "The Humour Cliff: Laughter Frequency Across the Lifespan"
+      },
+      "annotation": {
+        "annotations": {
+          "cliff": {
+            "type": "line",
+            "xMin": "Age 23",
+            "xMax": "Age 23",
+            "borderColor": "#e74c3c",
+            "borderWidth": 2,
+            "borderDash": [6, 6],
+            "label": {
+              "display": true,
+              "content": "THE CLIFF",
+              "position": "start"
+            }
+          }
+        }
+      }
+    },
+    "scales": {
+      "y": {
+        "title": { "display": true, "text": "Laughs per day" },
+        "min": 0,
+        "max": 350
+      }
+    }
+  }
+}
+```
+
+The steepest drop occurs between ages 16 and 23 — precisely when people enter the workforce and internalise the myth that professionalism means suppressing joy.
+
 ```mermaid
 flowchart LR
     A["Age 4<br/>300 laughs/day"] --> B["Age 23<br/>The Cliff"]
@@ -159,6 +214,27 @@ The humour cliff is not a natural decline — it is a culturally imposed suppres
 - An appropriate joke that nobody laughs at still increases perceptions of confidence — only inappropriate humour truly "fails"
 - This redefines failure completely: the risk most people fear (silence after a joke) barely matters; the risk that actually damages you (inappropriate content) is entirely within your control
 - <b style="color: #27ae60">You control appropriateness. You cannot control whether people laugh.</b> Focus on what you can control
+
+```mermaid
+quadrantChart
+    title Appropriate vs Funny Matrix
+    x-axis "Not Funny" --> "Funny"
+    y-axis "Not Appropriate" --> "Appropriate"
+    quadrant-1 "Sweet Spot: Boosts status, confidence, competence"
+    quadrant-2 "Still Good: Boosts confidence, neutral on status"
+    quadrant-3 "Villain Zone: Decreases everything"
+    quadrant-4 "Asshole Zone: Decreases status and competence"
+    "Self-deprecating opener": [0.35, 0.85]
+    "Observational team joke": [0.75, 0.90]
+    "Edgy roast of peer": [0.80, 0.35]
+    "Flat pun in email": [0.20, 0.80]
+    "Offensive stereotype": [0.60, 0.15]
+    "Awkward silence joke": [0.15, 0.40]
+    "Cultural callback": [0.70, 0.80]
+    "Mean punch-down": [0.45, 0.20]
+```
+
+The quadrant chart shows that appropriateness is the dominant axis — an appropriate joke that falls flat (Still Good) carries almost no downside, while a funny but inappropriate joke (Asshole Zone) actively damages status and credibility.
 
 <b style="color: #2980b9">Myth 3: The Being Funny Myth</b>
 
@@ -212,6 +288,58 @@ Each style sits at the intersection of how edgy your content is and how loudly y
 | **Magnet** | Affiliative | Expressive | Warmth, impersonations, infectious laughter | Seen as unserious |
 | **Sniper** | Aggressive | Subtle | Dry one-liners, deadpan delivery, "acquired taste" | Going over people's heads |
 | **Sweetheart** | Affiliative | Subtle | Planned, understated lines woven into presentations | Too much self-deprecation |
+
+```chartjs
+{
+  "type": "radar",
+  "data": {
+    "labels": ["Boldness", "Warmth", "Edge", "Subtlety", "Risk"],
+    "datasets": [
+      {
+        "label": "Stand-up",
+        "data": [9, 4, 9, 2, 8],
+        "borderColor": "#e74c3c",
+        "backgroundColor": "rgba(231, 76, 60, 0.15)"
+      },
+      {
+        "label": "Magnet",
+        "data": [7, 9, 3, 3, 5],
+        "borderColor": "#2980b9",
+        "backgroundColor": "rgba(41, 128, 185, 0.15)"
+      },
+      {
+        "label": "Sniper",
+        "data": [6, 3, 8, 9, 7],
+        "borderColor": "#8e44ad",
+        "backgroundColor": "rgba(142, 68, 173, 0.15)"
+      },
+      {
+        "label": "Sweetheart",
+        "data": [3, 8, 2, 8, 4],
+        "borderColor": "#27ae60",
+        "backgroundColor": "rgba(39, 174, 96, 0.15)"
+      }
+    ]
+  },
+  "options": {
+    "plugins": {
+      "title": {
+        "display": true,
+        "text": "Four Humour Styles Profile"
+      }
+    },
+    "scales": {
+      "r": {
+        "min": 0,
+        "max": 10,
+        "ticks": { "stepSize": 2 }
+      }
+    }
+  }
+}
+```
+
+Stand-up and Sniper styles carry the most edge and risk, while Magnet and Sweetheart trade boldness for warmth — each profile maps directly to how the style lands in different workplace contexts.
 
 - <b style="color: #27ae60">Your style is not fixed — part of using humour effectively is adjusting your approach to the room</b>
 - Stand-ups and Snipers tease to show affection but can feel alienating; Magnets and Sweethearts self-deprecate but can undermine their own power
@@ -291,6 +419,56 @@ flowchart TD
 ```
 
 Laughter triggers a neurochemical cascade that fuels all four workplace benefits the authors identify.
+
+```d3
+{
+  "type": "treemap",
+  "data": {
+    "name": "Benefits",
+    "children": [
+      {
+        "name": "Power",
+        "children": [
+          { "name": "Status boost (+37%)", "value": 37 },
+          { "name": "Intelligence signal", "value": 25 },
+          { "name": "Negotiation leverage (+18%)", "value": 18 },
+          { "name": "Memory enhancement", "value": 20 }
+        ]
+      },
+      {
+        "name": "Bonds",
+        "children": [
+          { "name": "Oxytocin release", "value": 30 },
+          { "name": "Intimacy (+30%)", "value": 30 },
+          { "name": "Relationship satisfaction (+23%)", "value": 23 }
+        ]
+      },
+      {
+        "name": "Creativity",
+        "children": [
+          { "name": "Problem-solving (2x)", "value": 35 },
+          { "name": "Idea generation (+20%)", "value": 20 },
+          { "name": "Idea quality (+25%)", "value": 25 }
+        ]
+      },
+      {
+        "name": "Resilience",
+        "children": [
+          { "name": "Cortisol reduction (-39%)", "value": 39 },
+          { "name": "Distress reduction (-35%)", "value": 35 },
+          { "name": "Heart disease risk (-73%)", "value": 40 }
+        ]
+      }
+    ]
+  },
+  "options": {
+    "title": "The Four Benefits of Workplace Humour",
+    "colors": ["#e74c3c", "#2980b9", "#f39c12", "#27ae60"]
+  }
+}
+```
+
+The treemap weights each sub-benefit by research strength — resilience and power show the largest measurable effects, while bonds and creativity contribute through compounding psychological safety.
 
 ---
 

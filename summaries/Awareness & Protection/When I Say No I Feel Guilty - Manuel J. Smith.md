@@ -119,6 +119,12 @@ graph TD
 | **Ignorance** | "Why are you always playing in the living room?" — demands for reasons you can't provide | You feel compelled to justify everything you do |
 | **Guilt** | "Good children don't do that" — shifting responsibility to external standards of right/wrong | You apologise for having your own wants |
 
+```d3
+{"type":"sankey","data":{"nodes":[{"id":"Parent"},{"id":"Anxiety"},{"id":"Ignorance"},{"id":"Guilt"},{"id":"Freeze"},{"id":"Justify"},{"id":"Comply"},{"id":"Manipulator Wins"}],"links":[{"source":"Parent","target":"Anxiety","value":35},{"source":"Parent","target":"Ignorance","value":30},{"source":"Parent","target":"Guilt","value":35},{"source":"Anxiety","target":"Freeze","value":35},{"source":"Ignorance","target":"Justify","value":30},{"source":"Guilt","target":"Comply","value":35},{"source":"Freeze","target":"Manipulator Wins","value":35},{"source":"Justify","target":"Manipulator Wins","value":30},{"source":"Comply","target":"Manipulator Wins","value":35}]},"options":{"title":"How Childhood Puppet Strings Flow into Adult Manipulation"}}
+```
+
+The three puppet strings installed in childhood — anxiety, ignorance, and guilt — each trigger a distinct automatic response that converges on the same outcome: the manipulator's goal is achieved without the victim ever making a conscious choice.
+
 - The key mechanism: <b style="color: #e74c3c">"Good boy / bad boy" language shifts responsibility from the parent's wants to abstract external rules</b>
 - When Mom says "Only naughty children don't clean their room," she implies some cosmic authority decided room-cleaning is morally required — not that *she* simply wants the room clean
 - The assertive alternative: "I want you to clean your room" — honest, direct, no moral freight
@@ -159,6 +165,12 @@ graph TD
 | VIII | You have the right to **be illogical** in making decisions | "Logic makes better judgments than you can" |
 | IX | You have the right to **say 'I don't understand'** | "You must anticipate others' needs without being told" |
 | X | You have the right to **say 'I don't care'** about self-improvement | "You must always strive for perfection or you are worthless" |
+
+```chartjs
+{"type":"bar","data":{"labels":["Right I: Own Judge","Right II: No Excuses","Right IV: Change Mind","Right V: Make Mistakes","Right VII: Independent of Goodwill","Right IX: Say I Don't Understand"],"datasets":[{"label":"Violation Frequency (Clinical Observation)","data":[95,85,70,75,80,60],"backgroundColor":["#e74c3c","#e67e22","#f1c40f","#27ae60","#3498db","#8e44ad"]}]},"options":{"plugins":{"title":{"display":true,"text":"Assertive Rights Most Frequently Violated in Daily Life"}},"scales":{"y":{"beginAtZero":true,"max":100,"title":{"display":true,"text":"% of Non-Assertive Adults Affected"}}}}}
+```
+
+Right I — being your own judge — is violated most frequently because it is the foundation from which all other rights derive; when you surrender this right, every other right collapses automatically.
 
 - <b style="color: #2980b9">Manipulation is any behaviour that reduces your ability to be your own judge</b> — it works by importing external structure (rules, logic, guilt) you never agreed to
 - <b style="color: #e74c3c">The manipulator's tragedy</b>: they don't realise the only justification they need to negotiate a change is *the fact that they want a change* — they don't need rules as manipulative backup
@@ -299,6 +311,12 @@ graph TD
     style M fill:#e74c3c,color:#fff
     style WC fill:#27ae60,color:#fff
 ```
+
+```chartjs
+{"type":"radar","data":{"labels":["Commercial","Authority","Equal/Social","Intimate","Family","Workplace"],"datasets":[{"label":"Broken Record","data":[9,7,6,5,7,8],"borderColor":"#e74c3c","backgroundColor":"rgba(231,76,60,0.1)"},{"label":"Fogging","data":[6,8,8,7,9,7],"borderColor":"#3498db","backgroundColor":"rgba(52,152,219,0.1)"},{"label":"Negative Inquiry","data":[4,6,8,9,8,6],"borderColor":"#27ae60","backgroundColor":"rgba(39,174,96,0.1)"}]},"options":{"plugins":{"title":{"display":true,"text":"Top Three Assertive Skills — Effectiveness by Relationship Context"}},"scales":{"r":{"beginAtZero":true,"max":10}}}}
+```
+
+Broken Record dominates commercial encounters where persistence matters most, while Negative Inquiry peaks in intimate relationships where understanding the real grievance is more important than winning the argument.
 
 - In real situations, you use multiple skills in a single conversation — BROKEN RECORD to stay on point, FOGGING to absorb side-attacks, NEGATIVE INQUIRY to clarify vague criticism
 - <b style="color: #2980b9">WORKABLE COMPROMISE</b> is the exit strategy: whenever self-respect is not in question, offer a practical deal
@@ -716,6 +734,12 @@ sequenceDiagram
 | "You should know better" | "I expect you to read my mind" | Ignorance |
 | "A reasonable person would…" | "I'm using logic as a weapon to override your judgment" | Ignorance |
 | "I'm only trying to help" | "I want to control your decisions under the guise of concern" | Guilt |
+
+```d3
+{"type":"force","data":{"nodes":[{"id":"guilt","label":"Guilt","group":1},{"id":"anxiety","label":"Anxiety","group":2},{"id":"ignorance","label":"Ignorance","group":3},{"id":"after_everything","label":"After everything I've done...","group":1},{"id":"if_you_loved","label":"If you really loved me...","group":1},{"id":"dont_you_care","label":"Don't you care about...?","group":1},{"id":"what_people_think","label":"What would people think?","group":2},{"id":"ill_remember","label":"I'll remember that","group":2},{"id":"not_how_done","label":"That's not how it's done","group":3},{"id":"should_know","label":"You should know better","group":3},{"id":"reasonable","label":"A reasonable person would...","group":3}],"links":[{"source":"guilt","target":"after_everything"},{"source":"guilt","target":"if_you_loved"},{"source":"guilt","target":"dont_you_care"},{"source":"anxiety","target":"what_people_think"},{"source":"anxiety","target":"ill_remember"},{"source":"ignorance","target":"not_how_done"},{"source":"ignorance","target":"should_know"},{"source":"ignorance","target":"reasonable"},{"source":"guilt","target":"if_you_loved"},{"source":"anxiety","target":"if_you_loved"}]},"options":{"title":"Manipulation Phrases Mapped to Their Puppet Strings"}}
+```
+
+Each manipulation phrase connects to one or more puppet strings — "If you really loved me" is particularly insidious because it simultaneously activates both guilt and anxiety, creating a double bind that non-assertive people find almost impossible to resist.
 
 - <b style="color: #27ae60">The assertive response to any of these is the same pattern</b>: acknowledge whatever truth exists, refuse the moral judgment, and state what you want
 

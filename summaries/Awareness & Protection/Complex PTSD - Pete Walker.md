@@ -197,6 +197,12 @@ You grew up in a family where love was absent or conditional, and your developin
 - Most are treated as innate characterological defects rather than learned adaptations to stress
 - Because they are learned, they can be diminished and replaced with healthier responses
 
+```d3
+{"type":"heatmap","data":{"xLabels":["Bipolar","Borderline","NPD","ADHD","OCD","Panic Disorder","Social Anxiety","Depression"],"yLabels":["Fight Type","Flight Type","Freeze Type","Fawn Type"],"values":[[3,7,9,4,2,3,2,5],[5,4,2,8,9,6,4,3],[2,6,1,7,3,4,8,9],[4,8,2,3,3,5,7,7]]},"options":{"title":"CPTSD Misdiagnosis Risk by 4F Type (1-10 Likelihood)"}}
+```
+
+*The heatmap explains why Fight types get misdiagnosed as NPD, Flight types as ADHD/OCD, Freeze types as depression/ADD, and Fawn types as borderline or social anxiety.*
+
 ---
 
 ### Part II: The Four F Types — Your Trauma Defence
@@ -228,6 +234,24 @@ graph TD
     style F3 fill:#95a5a6,color:#fff
     style F4 fill:#27ae60,color:#fff
 ```
+
+```chartjs
+{
+  "type": "radar",
+  "data": {
+    "labels": ["Social Engagement", "Emotional Awareness", "Boundary Strength", "Self-Advocacy", "Intimacy Capacity", "Rest Capacity"],
+    "datasets": [
+      {"label": "Fight Type", "data": [4, 3, 8, 9, 2, 5], "borderColor": "#e74c3c", "backgroundColor": "rgba(231,76,60,0.1)"},
+      {"label": "Flight Type", "data": [5, 4, 6, 6, 3, 1], "borderColor": "#f39c12", "backgroundColor": "rgba(243,156,18,0.1)"},
+      {"label": "Freeze Type", "data": [1, 2, 3, 1, 1, 8], "borderColor": "#3498db", "backgroundColor": "rgba(52,152,219,0.1)"},
+      {"label": "Fawn Type", "data": [8, 5, 1, 1, 6, 4], "borderColor": "#27ae60", "backgroundColor": "rgba(39,174,96,0.1)"}
+    ]
+  },
+  "options": {"plugins": {"title": {"display": true, "text": "4F Trauma Response Profiles: Strengths and Deficits"}}, "scales": {"r": {"beginAtZero": true, "max": 10}}}
+}
+```
+
+*Each 4F type overdevelops certain capacities at the expense of others — the radar reveals why Fight types have strong boundaries but poor intimacy, while Fawn types have the reverse pattern.*
 
 #### The Fight Type — The Narcissistic Defence
 
@@ -596,6 +620,12 @@ graph TD
 - All the layered reactions are defences against the <b style="color: #e74c3c">abandonment depression</b> — the core pain that the survivor will do almost anything to avoid feeling
 - Recovery involves learning to stay present enough to the cycle to begin interrupting it at each layer
 
+```d3
+{"type":"force","data":{"nodes":[{"id":"trigger","label":"Trigger Event","group":1},{"id":"abandon","label":"Abandonment Depression","group":2},{"id":"shame","label":"Toxic Shame","group":2},{"id":"fear","label":"Fear/Hypervigilance","group":2},{"id":"critic","label":"Inner Critic Activation","group":3},{"id":"fight","label":"Fight Response","group":4},{"id":"flight","label":"Flight Response","group":4},{"id":"freeze","label":"Freeze Response","group":4},{"id":"fawn","label":"Fawn Response","group":4},{"id":"loop","label":"Cycle Repeats","group":1}],"links":[{"source":"trigger","target":"abandon"},{"source":"abandon","target":"shame"},{"source":"abandon","target":"fear"},{"source":"shame","target":"critic"},{"source":"fear","target":"critic"},{"source":"critic","target":"fight"},{"source":"critic","target":"flight"},{"source":"critic","target":"freeze"},{"source":"critic","target":"fawn"},{"source":"fight","target":"loop"},{"source":"flight","target":"loop"},{"source":"freeze","target":"loop"},{"source":"fawn","target":"loop"},{"source":"loop","target":"trigger"}]},"options":{"title":"The Abandonment Melange: CPTSD Reactivity Cycle"}}
+```
+
+*The force diagram maps the full reactivity cycle: a trigger activates the abandonment depression, which spawns shame and fear, which activate the inner critic, which drives a 4F survival response — completing the loop.*
+
 #### Self-Abandonment as Internalised Parental Abandonment
 
 - Because of parental rejection, the mildest hint of depression triggers frantic efforts to escape it
@@ -950,6 +980,23 @@ graph TD
 - No single dimension is sufficient on its own — Walker repeatedly emphasises that CPTSD requires a multimodal approach
 - Different survivors will need to emphasise different dimensions depending on their 4F type and specific trauma history
 - The five dimensions interact and reinforce each other — progress in one area often catalyses progress in others
+
+```chartjs
+{
+  "type": "bar",
+  "data": {
+    "labels": ["Cognitive", "Emotional", "Somatic", "Spiritual", "Relational"],
+    "datasets": [
+      {"label": "Early Recovery Focus", "data": [9, 5, 4, 3, 3], "backgroundColor": "#e74c3c"},
+      {"label": "Mid Recovery Focus", "data": [7, 8, 7, 5, 6], "backgroundColor": "#f39c12"},
+      {"label": "Advanced Recovery Focus", "data": [5, 7, 8, 8, 9], "backgroundColor": "#27ae60"}
+    ]
+  },
+  "options": {"plugins": {"title": {"display": true, "text": "Five Recovery Dimensions: Focus Shifts Over Time"}}, "scales": {"y": {"beginAtZero": true, "max": 10}}}
+}
+```
+
+*Recovery progresses from cognitive work (shrinking the critic) toward somatic, spiritual, and relational dimensions as the survivor builds capacity for deeper emotional processing.*
 
 #### Cognitive Healing: Shrinking the Critic
 

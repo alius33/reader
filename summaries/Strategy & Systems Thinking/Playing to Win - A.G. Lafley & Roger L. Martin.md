@@ -61,6 +61,83 @@ flowchart TD
 
 The cascade is iterative, not linear — choices at each level constrain and reinforce choices at every other level, and the whole system must be revisited regularly as competitive conditions shift.
 
+```chartjs
+{
+  "type": "radar",
+  "data": {
+    "labels": ["Winning Aspiration", "Where to Play", "How to Win", "Core Capabilities", "Management Systems"],
+    "datasets": [
+      {
+        "label": "Oil of Olay (Post-Transformation)",
+        "data": [9, 9, 10, 8, 8],
+        "backgroundColor": "rgba(39, 174, 96, 0.2)",
+        "borderColor": "#27ae60"
+      },
+      {
+        "label": "Typical P&G Brand (Pre-Lafley)",
+        "data": [4, 3, 3, 5, 4],
+        "backgroundColor": "rgba(231, 76, 60, 0.2)",
+        "borderColor": "#e74c3c"
+      }
+    ]
+  },
+  "options": {
+    "plugins": { "title": { "display": true, "text": "Strategic Choice Cascade: Olay's Transformation Scorecard" } },
+    "scales": { "r": { "min": 0, "max": 10, "ticks": { "stepSize": 2 } } }
+  }
+}
+```
+
+The expanded radar of the transformed Olay brand versus the pre-Lafley baseline shows that strategic transformation requires all five cascade choices to improve together — a strength in "how to win" without matching capabilities produces fantasy, not strategy.
+
+```d3
+{
+  "type": "sankey",
+  "data": {
+    "nodes": [
+      { "id": "Winning Aspiration" },
+      { "id": "Geography" },
+      { "id": "Product Category" },
+      { "id": "Customer Segment" },
+      { "id": "Channel" },
+      { "id": "Cost Leadership" },
+      { "id": "Differentiation" },
+      { "id": "Consumer Understanding" },
+      { "id": "Brand Building" },
+      { "id": "Innovation" },
+      { "id": "Go-to-Market" },
+      { "id": "Global Scale" },
+      { "id": "Competitive Advantage" }
+    ],
+    "links": [
+      { "source": "Winning Aspiration", "target": "Geography", "value": 10 },
+      { "source": "Winning Aspiration", "target": "Product Category", "value": 12 },
+      { "source": "Winning Aspiration", "target": "Customer Segment", "value": 10 },
+      { "source": "Winning Aspiration", "target": "Channel", "value": 8 },
+      { "source": "Geography", "target": "Cost Leadership", "value": 5 },
+      { "source": "Product Category", "target": "Differentiation", "value": 12 },
+      { "source": "Customer Segment", "target": "Differentiation", "value": 10 },
+      { "source": "Channel", "target": "Cost Leadership", "value": 5 },
+      { "source": "Differentiation", "target": "Consumer Understanding", "value": 8 },
+      { "source": "Differentiation", "target": "Brand Building", "value": 7 },
+      { "source": "Differentiation", "target": "Innovation", "value": 6 },
+      { "source": "Cost Leadership", "target": "Go-to-Market", "value": 5 },
+      { "source": "Cost Leadership", "target": "Global Scale", "value": 5 },
+      { "source": "Consumer Understanding", "target": "Competitive Advantage", "value": 8 },
+      { "source": "Brand Building", "target": "Competitive Advantage", "value": 7 },
+      { "source": "Innovation", "target": "Competitive Advantage", "value": 6 },
+      { "source": "Go-to-Market", "target": "Competitive Advantage", "value": 5 },
+      { "source": "Global Scale", "target": "Competitive Advantage", "value": 5 }
+    ]
+  },
+  "options": {
+    "title": "P&G's Strategic Choice Cascade: How Choices Flow Into Advantage"
+  }
+}
+```
+
+The Sankey diagram traces how a winning aspiration flows through where-to-play choices (geography, category, segment, channel) into how-to-win decisions (differentiation vs. cost leadership) and finally into the specific capabilities that deliver competitive advantage.
+
 ---
 
 - The cascade also nests: a company has a corporate-level cascade, each business unit has its own, each brand has its own, and even internal functions can have their own version
@@ -867,6 +944,37 @@ The connection to reverse engineering:
 ## The Six Strategy Traps
 
 *Every trap stems from the same root cause: the failure to make genuine choices — the comfortable refusal to exclude, prioritise, and commit.*
+
+```mermaid
+mindmap
+  root((Strategy Traps))
+    Do-It-All
+      Every market served
+      Resources spread thin
+      No competitive threshold
+    Don Quixote
+      Attacks strongest rival
+      No genuine advantage
+      Brave but doomed
+    Waterloo
+      Too many fronts
+      Capacity exhausted
+      Sequential focus needed
+    Something-for-Everyone
+      All segments served
+      None served deeply
+      No loyalty earned
+    Dreams-That-Never-Come-True
+      Grand aspiration
+      No concrete choices
+      Aspiration without action
+    Programme-of-the-Month
+      Follows trends
+      No strategic connection
+      Intellectual conformity
+```
+
+The mindmap organises Lafley and Martin's six traps as branches from a single root — every trap stems from the same psychological failure: the refusal to make genuine choices that exclude, prioritise, and commit.
 
 - Lafley and Martin identify six common patterns of strategic failure, all stemming from the same root cause: the failure to make genuine choices
 

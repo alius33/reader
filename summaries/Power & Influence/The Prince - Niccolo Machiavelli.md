@@ -88,6 +88,90 @@ graph LR
 | **The Fortuna River** | Fortune is a flooding river — build dams in calm weather | 25 |
 | **Armed Prophets** | Those who can enforce their vision succeed; those who can't, perish | 6 |
 
+```chartjs
+{
+  "type": "radar",
+  "data": {
+    "labels": ["Military Self-Reliance", "Foresight", "Fox (Cunning)", "Lion (Force)", "People's Support", "Appearance Management", "Adaptability"],
+    "datasets": [
+      {
+        "label": "Cesare Borgia",
+        "data": [85, 90, 95, 80, 70, 85, 75],
+        "backgroundColor": "rgba(41, 128, 185, 0.15)",
+        "borderColor": "#2980b9"
+      },
+      {
+        "label": "Louis XII",
+        "data": [30, 15, 25, 40, 20, 35, 20],
+        "backgroundColor": "rgba(231, 76, 60, 0.15)",
+        "borderColor": "#e74c3c"
+      }
+    ]
+  },
+  "options": {
+    "plugins": { "title": { "display": true, "text": "Machiavelli's Model Prince vs Anti-Model" } },
+    "scales": { "r": { "min": 0, "max": 100 } }
+  }
+}
+```
+
+Borgia scores high across all seven dimensions while Louis XII fails on nearly every one — Machiavelli uses the contrast to demonstrate that power requires simultaneous mastery of multiple skills, and weakness in any single area creates a fatal vulnerability.
+
+```d3
+{
+  "type": "heatmap",
+  "data": {
+    "rows": ["Marcus Aurelius", "Pertinax", "Severus", "Alexander Severus", "Commodus", "Caracalla", "Maximinus"],
+    "columns": ["Virtù", "Fear (Not Hatred)", "People's Support", "Military Control", "Appearance", "Survived"],
+    "values": [
+      [9, 4, 9, 7, 8, 10],
+      [5, 3, 6, 2, 5, 0],
+      [9, 8, 5, 9, 7, 10],
+      [4, 2, 5, 2, 3, 0],
+      [3, 1, 1, 5, 1, 0],
+      [6, 1, 2, 6, 3, 0],
+      [4, 1, 1, 4, 2, 0]
+    ]
+  },
+  "options": {
+    "title": "Roman Emperors Scorecard — Machiavelli's Case Studies"
+  }
+}
+```
+
+Only Marcus Aurelius and Septimius Severus survived — and they achieved it through opposite means (gentleness vs ruthlessness), proving Machiavelli's point that there is no single formula for power, only the requirement to match your approach to the circumstances of the times.
+
+```chartjs
+{
+  "type": "doughnut",
+  "data": {
+    "labels": ["Virtù (What You Control)", "Fortuna (What Happens to You)"],
+    "datasets": [{
+      "data": [50, 50],
+      "backgroundColor": ["#27ae60", "#e74c3c"]
+    }]
+  },
+  "options": {
+    "plugins": { "title": { "display": true, "text": "Machiavelli's Central Equation — Virtù vs Fortuna" } }
+  }
+}
+```
+
+Machiavelli's most famous claim — that fortune decides about half our actions — frames the entire book as a manual for maximising the half you control while building defences against the half you cannot.
+
+```mermaid
+timeline
+    title The Prince — Five Centuries of Influence
+    1513 : Written in exile by Machiavelli
+    1532 : Published posthumously
+    1559 : Banned by the Catholic Church
+    1700s : Adopted by Frederick the Great & Napoleon
+    1900s : Required reading in political science
+    2000s : Applied to business strategy & leadership
+```
+
+From banned manuscript to foundational political text — The Prince's journey through five centuries mirrors its own lesson: ideas backed by virtù survive any amount of fortuna.
+
 ### Machiavelli's Complete Taxonomy
 
 *The entire first half of the book is organised around a classification system. Here's the complete map of how states are acquired and the challenges each type presents.*

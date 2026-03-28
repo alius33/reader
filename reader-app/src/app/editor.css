@@ -296,3 +296,177 @@
   background-color: rgba(255, 152, 0, 0.6);
   border-radius: 2px;
 }
+
+/* ============================== */
+/* Chart.js blocks (NodeView)     */
+/* ============================== */
+.chart-block {
+  margin: 8px 0;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  overflow: hidden;
+  background: #fff;
+}
+.dark .chart-block {
+  background: var(--color-muted, #2b2b2b);
+  border-color: var(--color-border, #363636);
+}
+
+.chart-header-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 6px 12px;
+  background: #f3f4f6;
+  border-bottom: 1px solid #e5e7eb;
+  font-size: 0.8em;
+  color: #6b7280;
+  font-weight: 600;
+  user-select: none;
+}
+.dark .chart-header-bar {
+  background: var(--color-border, #363636);
+  border-bottom-color: rgba(255,255,255,0.06);
+  color: var(--color-muted-foreground, #999);
+}
+
+.chart-edit-btn {
+  font-size: 0.85em;
+  padding: 2px 8px;
+  border-radius: 4px;
+  border: 1px solid #d1d5db;
+  background: #fff;
+  cursor: pointer;
+  color: #374151;
+}
+.dark .chart-edit-btn {
+  background: var(--color-muted, #2b2b2b);
+  border-color: var(--color-border, #363636);
+  color: var(--color-foreground, #dcddde);
+}
+
+.chart-canvas-area {
+  padding: 16px;
+  display: flex;
+  justify-content: center;
+  overflow: visible;
+  min-height: 60px;
+}
+
+.chart-source-pre {
+  margin: 0;
+  padding: 12px;
+  font-size: 0.85em;
+  line-height: 1.5;
+  overflow-x: auto;
+  white-space: pre-wrap;
+  font-family: 'JetBrains Mono', 'Fira Code', monospace;
+  display: none;
+}
+
+.chart-textarea {
+  width: 100%;
+  min-height: 120px;
+  padding: 12px;
+  font-family: 'JetBrains Mono', 'Fira Code', monospace;
+  font-size: 0.85em;
+  line-height: 1.5;
+  border: none;
+  outline: none;
+  resize: vertical;
+  background: #fff;
+  color: inherit;
+  box-sizing: border-box;
+  display: block;
+}
+.dark .chart-textarea {
+  background: var(--color-background, #1e1e1e);
+  color: var(--color-foreground, #dcddde);
+}
+
+/* ============================== */
+/* D3.js blocks (NodeView)        */
+/* ============================== */
+.d3-block {
+  margin: 8px 0;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  overflow: hidden;
+  background: #fff;
+}
+.dark .d3-block {
+  background: var(--color-muted, #2b2b2b);
+  border-color: var(--color-border, #363636);
+}
+
+.d3-header-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 6px 12px;
+  background: #f3f4f6;
+  border-bottom: 1px solid #e5e7eb;
+  font-size: 0.8em;
+  color: #6b7280;
+  font-weight: 600;
+  user-select: none;
+}
+.dark .d3-header-bar {
+  background: var(--color-border, #363636);
+  border-bottom-color: rgba(255,255,255,0.06);
+  color: var(--color-muted-foreground, #999);
+}
+
+.d3-edit-btn {
+  font-size: 0.85em;
+  padding: 2px 8px;
+  border-radius: 4px;
+  border: 1px solid #d1d5db;
+  background: #fff;
+  cursor: pointer;
+  color: #374151;
+}
+.dark .d3-edit-btn {
+  background: var(--color-muted, #2b2b2b);
+  border-color: var(--color-border, #363636);
+  color: var(--color-foreground, #dcddde);
+}
+
+.d3-svg-area {
+  padding: 16px;
+  display: flex;
+  justify-content: center;
+  overflow: visible;
+  min-height: 60px;
+}
+
+.d3-source-pre {
+  margin: 0;
+  padding: 12px;
+  font-size: 0.85em;
+  line-height: 1.5;
+  overflow-x: auto;
+  white-space: pre-wrap;
+  font-family: 'JetBrains Mono', 'Fira Code', monospace;
+  display: none;
+}
+
+.d3-textarea {
+  width: 100%;
+  min-height: 120px;
+  padding: 12px;
+  font-family: 'JetBrains Mono', 'Fira Code', monospace;
+  font-size: 0.85em;
+  line-height: 1.5;
+  border: none;
+  outline: none;
+  resize: vertical;
+  background: #fff;
+  color: inherit;
+  box-sizing: border-box;
+  display: block;
+}
+.dark .d3-textarea {
+  background: var(--color-background, #1e1e1e);
+  color: var(--color-foreground, #dcddde);
+}

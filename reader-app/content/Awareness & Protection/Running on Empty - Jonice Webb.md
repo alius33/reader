@@ -144,6 +144,12 @@ mindmap
 | 11 | **Child as Parent** | Role reversal due to hardship | I don't get to be a child; my needs don't matter |
 | 12 | **WMBNT** | Loving but emotionally blind | Emotions are simply not part of life |
 
+```d3
+{"type":"heatmap","data":{"xLabels":["Emptiness","Counter-Dependence","Alexithymia","Guilt/Shame","Fatal Flaw","Self-Anger"],"yLabels":["WMBNT","Authoritarian","Permissive","Narcissistic","Depressed","Workaholic"],"values":[[8,7,8,5,6,4],[6,5,4,8,7,9],[7,3,6,4,5,3],[9,6,5,9,9,7],[8,8,7,6,8,6],[7,9,6,4,5,5]]},"options":{"title":"Parent Type × CEN Symptom Severity (1-10 Scale)"}}
+```
+
+*Different parent types produce distinct CEN signatures — narcissistic parents create the deepest emptiness and shame, while authoritarian parents generate the most self-directed anger.*
+
 #### The Control-Driven Parents (Types 1, 2, 9, 10)
 
 *These parents actively impose their own needs onto the child — the child's emotional world is overwritten, not merely ignored.*
@@ -239,6 +245,12 @@ mindmap
 > [!tip] Core Insight
 > One of the most unfortunate aspects of Emotional Neglect is that it is self-propagating. Emotionally neglected children grow up with a blind spot about emotions. When they become parents, they raise their children with the same blind spot. And so on and so on.
 
+```d3
+{"type":"treemap","data":{"name":"CEN Parent Types","children":[{"name":"WMBNT (Well-Meaning)","value":25},{"name":"Authoritarian","value":12},{"name":"Permissive","value":11},{"name":"Narcissistic","value":10},{"name":"Depressed","value":9},{"name":"Workaholic","value":8},{"name":"Addicted","value":7},{"name":"Sociopathic","value":5},{"name":"Achievement-Focused","value":5},{"name":"Bereaved","value":4},{"name":"Child as Parent","value":3},{"name":"Special Needs Sibling","value":2}]},"options":{"title":"Webb's Twelve CEN Parent Types: Estimated Prevalence"}}
+```
+
+*The WMBNT category dominates — most emotionally neglecting parents are not malicious but simply passing on what they never received themselves, making CEN's intergenerational nature its most insidious feature.*
+
 ---
 
 ## Part II: Out of Fuel — The Adult Symptoms
@@ -278,6 +290,22 @@ flowchart TD
 ```
 
 - **Interpretation:** These ten symptoms are not independent — they feed each other in reinforcing loops. Alexithymia makes it impossible to identify what's wrong, which feeds the Fatal Flaw belief, which produces shame, which drives self-directed anger, which deepens emptiness. At the extreme, this cascade can produce suicidal feelings — not from dramatic life events, but from the cumulative weight of invisible suffering.
+
+```chartjs
+{
+  "type": "radar",
+  "data": {
+    "labels": ["Emptiness", "Counter-Dependence", "Unrealistic Self-Appraisal", "Low Self-Compassion", "Guilt & Shame", "Self-Directed Anger", "Fatal Flaw Belief", "Difficulty Nurturing", "Poor Self-Discipline", "Alexithymia"],
+    "datasets": [
+      {"label": "CEN Adult Profile", "data": [9, 8, 7, 9, 8, 7, 8, 7, 6, 8], "borderColor": "#e74c3c", "backgroundColor": "rgba(231,76,60,0.15)"},
+      {"label": "Post-Recovery Profile", "data": [3, 4, 3, 3, 3, 3, 2, 3, 3, 3], "borderColor": "#27ae60", "backgroundColor": "rgba(39,174,96,0.15)"}
+    ]
+  },
+  "options": {"plugins": {"title": {"display": true, "text": "CEN Symptom Profile: Before vs After Recovery"}}, "scales": {"r": {"beginAtZero": true, "max": 10}}}
+}
+```
+
+*The radar shows how CEN creates a uniformly elevated symptom profile across all ten dimensions — recovery brings each one down, though emptiness and counter-dependence often prove most stubborn.*
 
 #### 1. Feelings of Emptiness
 
@@ -545,6 +573,22 @@ flowchart LR
 ```
 
 - **Interpretation:** IAAA is the master tool of the entire recovery. It converts raw emotional data into useful information and appropriate action. Each step deliberately counteracts a CEN pattern: Identify (vs alexithymia), Accept (vs shame), Attribute (vs "what's wrong with me?"), Act (vs numbness/paralysis).
+
+```chartjs
+{
+  "type": "bar",
+  "data": {
+    "labels": ["Identify Feelings", "Accept Feelings", "Attribute Correctly", "Act on Feelings", "Self-Compassion", "Ask for Help"],
+    "datasets": [
+      {"label": "CEN Starting Point", "data": [2, 1, 2, 1, 1, 1], "backgroundColor": "#e74c3c"},
+      {"label": "Recovery Target", "data": [8, 8, 7, 7, 8, 7], "backgroundColor": "#27ae60"}
+    ]
+  },
+  "options": {"plugins": {"title": {"display": true, "text": "IAAA Recovery Framework: Starting Point vs Target Capability"}}, "scales": {"y": {"beginAtZero": true, "max": 10}}}
+}
+```
+
+*The bar chart shows the enormous gap CEN adults must bridge — starting from near-zero emotional literacy and self-compassion, with the IAAA framework providing the structured path across.*
 
 ---
 

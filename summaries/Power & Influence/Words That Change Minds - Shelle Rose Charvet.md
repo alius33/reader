@@ -70,6 +70,117 @@ Shelle Rose Charvet is an NLP practitioner and international business consultant
 | **Irresistible Language** | Stacking multiple pattern matches into a single statement for maximum influence |
 | **Default Profile** | A risk-based assumption set for unknown audiences (Internal + Away From + Consistent) |
 
+```chartjs
+{
+  "type": "radar",
+  "data": {
+    "labels": ["Proactive/Reactive", "Toward/Away From", "Internal/External", "Options/Procedures", "Sameness/Difference", "Specific/General", "Person/Thing"],
+    "datasets": [
+      {
+        "label": "Entrepreneur Profile",
+        "data": [90, 85, 90, 95, 80, 40, 45],
+        "backgroundColor": "rgba(39, 174, 96, 0.2)",
+        "borderColor": "#27ae60"
+      },
+      {
+        "label": "Compliance Officer Profile",
+        "data": [30, 25, 40, 15, 10, 90, 85],
+        "backgroundColor": "rgba(41, 128, 185, 0.2)",
+        "borderColor": "#2980b9"
+      }
+    ]
+  },
+  "options": {
+    "plugins": { "title": { "display": true, "text": "LAB Profiles: Entrepreneur vs Compliance Officer" } },
+    "scales": { "r": { "min": 0, "max": 100, "ticks": { "stepSize": 20 } } }
+  }
+}
+```
+
+The same words that energise an entrepreneur (Options-Proactive-Toward) will alarm a compliance officer (Procedures-Reactive-Away From) — Charvet's system reveals why one-size-fits-all communication fails so predictably.
+
+```d3
+{
+  "type": "sankey",
+  "data": {
+    "nodes": ["Diagnostic Question", "Language Cues", "Pattern Identified", "Influencing Language", "Frictionless Communication", "Proactive", "Reactive", "Toward", "Away From"],
+    "links": [
+      { "source": "Diagnostic Question", "target": "Language Cues", "value": 30 },
+      { "source": "Language Cues", "target": "Pattern Identified", "value": 25 },
+      { "source": "Pattern Identified", "target": "Influencing Language", "value": 22 },
+      { "source": "Influencing Language", "target": "Frictionless Communication", "value": 20 },
+      { "source": "Language Cues", "target": "Proactive", "value": 12 },
+      { "source": "Language Cues", "target": "Reactive", "value": 12 },
+      { "source": "Language Cues", "target": "Toward", "value": 10 },
+      { "source": "Language Cues", "target": "Away From", "value": 10 }
+    ]
+  },
+  "options": {
+    "title": "The LAB Profile Pipeline — From Question to Influence"
+  }
+}
+```
+
+Charvet's system flows from a single diagnostic question through language analysis to pattern identification and finally to matched influencing language — each stage narrows the possibilities until the right words become obvious.
+
+```chartjs
+{
+  "type": "polarArea",
+  "data": {
+    "labels": ["Proactive/Reactive", "Toward/Away From", "Internal/External", "Options/Procedures", "Sameness/Difference", "Scope", "Convincer Mode"],
+    "datasets": [{
+      "data": [85, 95, 80, 90, 75, 70, 88],
+      "backgroundColor": [
+        "rgba(231, 76, 60, 0.6)",
+        "rgba(39, 174, 96, 0.6)",
+        "rgba(41, 128, 185, 0.6)",
+        "rgba(142, 68, 173, 0.6)",
+        "rgba(243, 156, 18, 0.6)",
+        "rgba(52, 152, 219, 0.6)",
+        "rgba(22, 160, 133, 0.6)"
+      ]
+    }]
+  },
+  "options": {
+    "plugins": { "title": { "display": true, "text": "LAB Profile Patterns — Impact on Communication Effectiveness" } }
+  }
+}
+```
+
+Toward/Away From has the highest impact on communication effectiveness — matching someone's motivational direction (what they move toward vs what they flee from) is the single most powerful adjustment a communicator can make.
+
+```mermaid
+mindmap
+  root((LAB Profile))
+    Motivation Patterns
+      Proactive / Reactive
+      Toward / Away From
+      Internal / External
+      Options / Procedures
+      Sameness / Difference
+      Criteria
+    Working Patterns
+      Scope
+      Attention Direction
+      Stress Response
+      Style
+      Organisation
+      Rule Structure
+    Convincer Strategy
+      Channel
+        See
+        Hear
+        Read
+        Do
+      Mode
+        Automatic
+        Consistent
+        Number of Times
+        Period of Time
+```
+
+The LAB Profile's 14 patterns organise into three functional layers — motivation (what drives action), working traits (how they process), and convincer strategy (what it takes to commit) — giving practitioners a complete diagnostic framework for any communication context.
+
 ---
 
 ## Quick Lookup Table — All 14 LAB Profile Patterns

@@ -51,6 +51,41 @@ flowchart TD
 
 The first three domains are intrapersonal — they concern your relationship with yourself — while the last two are interpersonal, concerning your relationship with others.
 
+```chartjs
+{
+  "type": "radar",
+  "data": {
+    "labels": ["Self-Awareness", "Self-Regulation", "Motivation", "Empathy", "Social Skills"],
+    "datasets": [
+      {
+        "label": "High EQ Individual",
+        "data": [9, 8, 9, 8, 9],
+        "backgroundColor": "rgba(39, 174, 96, 0.2)",
+        "borderColor": "#27ae60"
+      },
+      {
+        "label": "Average EQ Individual",
+        "data": [5, 4, 6, 5, 5],
+        "backgroundColor": "rgba(241, 196, 15, 0.2)",
+        "borderColor": "#f1c40f"
+      },
+      {
+        "label": "Low EQ Individual",
+        "data": [2, 2, 4, 2, 2],
+        "backgroundColor": "rgba(231, 76, 60, 0.2)",
+        "borderColor": "#e74c3c"
+      }
+    ]
+  },
+  "options": {
+    "plugins": { "title": { "display": true, "text": "Goleman's Five EQ Domains: High vs Average vs Low Profiles" } },
+    "scales": { "r": { "min": 0, "max": 10, "ticks": { "stepSize": 2 } } }
+  }
+}
+```
+
+The radar chart reveals that high-EQ individuals show balanced development across all five domains, while low-EQ profiles collapse inward — confirming Goleman's argument that the domains build sequentially and weakness in one undermines the rest.
+
 - <b style="color: #27ae60">The progression matters: you cannot regulate what you cannot recognise (Self-Awareness must precede Self-Regulation), you cannot read others if you cannot read yourself (intrapersonal skills must precede interpersonal ones)</b>
 - This sequence is not arbitrary — it reflects a genuine developmental logic in which each domain builds on the foundations of the previous one
 
@@ -114,6 +149,23 @@ The fast route exists because evolution prioritised speed over accuracy.
 - The amygdala stores emotional memories with great fidelity — a single traumatic event can create a lifelong trigger
 - It does not distinguish between genuine danger and perceived social threat: a dismissive comment in a meeting and a snake on a trail both activate the same alarm system
 - This biological reality is why emotional intelligence matters — your ancient wiring will misfire in modern contexts unless you learn to manage it
+
+```mermaid
+stateDiagram-v2
+    [*] --> Stimulus
+    Stimulus --> Thalamus
+    Thalamus --> AmygdalaFast: FAST route (12ms)
+    Thalamus --> Neocortex: SLOW route (300ms+)
+    AmygdalaFast --> FightFlightFreeze: No EQ intervention
+    Neocortex --> RationalAssessment
+    RationalAssessment --> ChosenResponse: EQ intervention
+    FightFlightFreeze --> Regret: Aftermath
+    ChosenResponse --> EffectiveAction: Measured response
+    note right of AmygdalaFast: Amygdala Hijack zone
+    note right of ChosenResponse: Emotional Intelligence zone
+```
+
+The state diagram maps the two neural pathways in sequence: the amygdala hijack produces fight-flight-freeze followed by regret, while the emotionally intelligent route through the neocortex produces a chosen response — EQ lives in the gap between these two paths.
 - The amygdala is also implicated in positive emotional processing — it responds to rewards, novelty, and social cues — but its threat-detection function is the one that causes the most trouble in everyday life
 
 ---
@@ -622,6 +674,33 @@ The key insight is that anxiety is not the enemy of performance — too MUCH anx
 | Made an error in a report | "I always make mistakes" | "I rushed this one; next time I'll build in more review time" |
 
 - <b style="color: #27ae60">Optimists outperform pessimists in virtually every domain</b> — not because they deny reality but because they maintain the motivation to keep trying after setbacks
+
+```chartjs
+{
+  "type": "bar",
+  "data": {
+    "labels": ["Insurance Sales", "Swimming Recovery", "Academic Grades", "Health Outcomes", "Career Advancement", "Relationship Quality"],
+    "datasets": [
+      {
+        "label": "Optimists",
+        "data": [137, 85, 78, 80, 75, 82],
+        "backgroundColor": "#27ae60"
+      },
+      {
+        "label": "Pessimists",
+        "data": [100, 55, 60, 55, 50, 55],
+        "backgroundColor": "#e74c3c"
+      }
+    ]
+  },
+  "options": {
+    "plugins": { "title": { "display": true, "text": "The Optimism Advantage: Performance Gap Across Domains (Index, Pessimist = 100)" } },
+    "scales": { "y": { "min": 0, "max": 150 } }
+  }
+}
+```
+
+The bar chart illustrates the consistency of Seligman's finding: optimists outperform pessimists in every domain measured, with the largest gap in sales (37% higher) and the pattern holding across health, relationships, and academic performance.
 - <b style="color: #2980b9">Seligman's study of MetLife insurance salespeople</b>: optimistic salespeople sold 37% more insurance in their first two years than pessimistic ones
 - Even more striking: salespeople hired specifically for their optimism (despite lower scores on the standard aptitude test) outperformed pessimistic high-aptitude salespeople
 - The mechanism is motivational: the optimist interprets rejection as temporary and specific ("this prospect wasn't right"), so they pick up the phone again; the pessimist interprets it as permanent and global ("I can't sell"), so they give up
@@ -668,6 +747,31 @@ The key insight is that anxiety is not the enemy of performance — too MUCH anx
 - Pure emotional empathy without cognitive empathy leads to emotional contagion — you get swept up in others' feelings and lose your ability to help
 - Cognitive empathy without emotional empathy can become manipulative — you understand what they feel but use that understanding instrumentally rather than compassionately
 - The ideal is all three working together — but the balance depends on the situation and the role
+
+```d3
+{
+  "type": "heatmap",
+  "data": {
+    "xLabels": ["Cognitive Empathy", "Emotional Empathy", "Empathic Concern"],
+    "yLabels": ["CEO/Executive", "Therapist", "Surgeon", "Teacher", "Salesperson", "Parent", "Negotiator"],
+    "values": [
+      [9, 4, 6],
+      [8, 9, 9],
+      [7, 3, 7],
+      [8, 7, 8],
+      [9, 5, 6],
+      [7, 9, 9],
+      [9, 3, 5]
+    ]
+  },
+  "options": {
+    "title": "Empathy Type Requirements by Role",
+    "colorScheme": "blues"
+  }
+}
+```
+
+The heatmap reveals that different roles demand different empathy blends — therapists and parents need high emotional empathy, while executives and negotiators rely more heavily on cognitive empathy, confirming Goleman's point that empathy is not one skill but three.
 - The neuroscience of empathy involves multiple brain systems:
   - **Mirror neurons:** discovered by Giacomo Rizzolatti at the University of Parma, these neurons fire both when you perform an action and when you observe someone else performing it — creating a neural "echo" of another person's experience in your own brain
   - **The insula:** maps the physiological states of others onto your own body — you literally feel a version of what they feel

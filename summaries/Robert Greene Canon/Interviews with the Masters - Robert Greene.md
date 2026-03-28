@@ -97,6 +97,26 @@ Greene's four-stage architecture appears in every interview, but the real paths 
 | **Interdisciplinary combination** | Every master who created a new field did so by combining existing fields, despite institutional punishment for doing so |
 | **Failure as teaching material** | Masters who become great teachers transmit the lessons from their own failures, which are more transparent and transferable than successes |
 
+```chartjs
+{
+  "type": "doughnut",
+  "data": {
+    "labels": ["Life's Task Discovery", "Apprenticeship & Submission", "Social Intelligence Navigation", "Creative-Active Phase", "Institutional Resistance", "Mentorship Dynamics"],
+    "datasets": [{
+      "data": [15, 30, 20, 18, 10, 7],
+      "backgroundColor": ["#2980b9", "#27ae60", "#e74c3c", "#8e44ad", "#f39c12", "#1abc9c"]
+    }]
+  },
+  "options": {
+    "plugins": {
+      "title": { "display": true, "text": "Interview Emphasis — Time Spent on Each Theme Across All Six Masters" }
+    }
+  }
+}
+```
+
+The apprenticeship phase dominates the interviews — all six masters spend more time describing the long slog of skill acquisition than any moment of creative breakthrough, reinforcing Greene's thesis that mastery is built in the trenches.
+
 ---
 
 ## The Masters
@@ -855,6 +875,63 @@ Greene pushes the "destiny" framing in several interviews, and his subjects push
 
 The common thread is not the form of the apprenticeship but its function: every master, through some mechanism, absorbed enough foundational knowledge that they could eventually operate from intuition rather than conscious reasoning. The path to that absorption is highly individual — Greene's framework captures the function but oversimplifies the form.
 
+```chartjs
+{
+  "type": "radar",
+  "data": {
+    "labels": ["Formal Mentorship", "Self-Direction", "Institutional Structure", "Cross-Disciplinary", "Social Navigation", "Trial & Error"],
+    "datasets": [
+      {
+        "label": "Roach",
+        "data": [95, 30, 70, 15, 75, 40],
+        "borderColor": "#e74c3c",
+        "backgroundColor": "rgba(231, 76, 60, 0.15)"
+      },
+      {
+        "label": "Fernandez",
+        "data": [15, 95, 20, 40, 50, 80],
+        "borderColor": "#2980b9",
+        "backgroundColor": "rgba(41, 128, 185, 0.15)"
+      },
+      {
+        "label": "Graham",
+        "data": [5, 90, 10, 85, 35, 95],
+        "borderColor": "#27ae60",
+        "backgroundColor": "rgba(39, 174, 96, 0.15)"
+      },
+      {
+        "label": "Matsuoka",
+        "data": [55, 60, 80, 95, 90, 50],
+        "borderColor": "#8e44ad",
+        "backgroundColor": "rgba(142, 68, 173, 0.15)"
+      },
+      {
+        "label": "Calatrava",
+        "data": [60, 45, 85, 75, 65, 35],
+        "borderColor": "#f39c12",
+        "backgroundColor": "rgba(243, 156, 18, 0.15)"
+      },
+      {
+        "label": "Everett",
+        "data": [20, 70, 50, 80, 60, 90],
+        "borderColor": "#1abc9c",
+        "backgroundColor": "rgba(26, 188, 156, 0.15)"
+      }
+    ]
+  },
+  "options": {
+    "plugins": {
+      "title": { "display": true, "text": "Apprenticeship Profiles Across Six Masters" }
+    },
+    "scales": {
+      "r": { "beginAtZero": true, "max": 100 }
+    }
+  }
+}
+```
+
+No two masters share the same apprenticeship shape — Roach's mentorship-heavy path and Graham's self-directed anti-apprenticeship sit at opposite poles, confirming that the form varies wildly while the function (deep absorption) remains constant.
+
 ---
 
 ### Phase 3: The Creative-Active Phase
@@ -897,6 +974,29 @@ Evidence across the interviews:
   - They describe themselves as seeing more clearly — perceiving patterns, connections, and implications that are invisible to people who have not done the work
 - <b style="color: #27ae60">This clarity is not a gift — it is a product of thousands of hours of absorbed experience, compressed into intuition</b>
 - The paradox: the more knowledge you have internalised, the simpler things appear — mastery looks like simplicity because the complexity has been absorbed
+
+```d3
+{
+  "type": "treemap",
+  "data": {
+    "name": "Mastery Descriptions",
+    "children": [
+      { "name": "The Fuzz (Matsuoka)", "value": 18, "category": "Pre-verbal" },
+      { "name": "Transparency (Fernandez)", "value": 16, "category": "Self-knowledge" },
+      { "name": "Seeing the Ring (Roach)", "value": 15, "category": "Pattern recognition" },
+      { "name": "Form + Structure (Calatrava)", "value": 17, "category": "Integration" },
+      { "name": "Instant Evaluation (Graham)", "value": 14, "category": "Pattern recognition" },
+      { "name": "Cultural Logic (Everett)", "value": 13, "category": "Deep immersion" }
+    ]
+  },
+  "options": {
+    "title": "How Each Master Describes the Experience of Mastery",
+    "colorField": "category"
+  }
+}
+```
+
+Each master names the same phenomenon differently — pre-verbal knowing, radical transparency, whole-field vision — but all describe a state where accumulated experience operates below conscious awareness, producing clarity rather than effort.
 
 ---
 
@@ -947,6 +1047,30 @@ flowchart TD
 ```
 
 The recurring lesson: craft mastery generates the raw material, social intelligence determines whether that material gets used or buried. The masters who thrived were not the most talented — they were the most talented among those who also understood the social environment they operated in.
+
+```d3
+{
+  "type": "heatmap",
+  "data": {
+    "xLabels": ["Craft Mastery", "Discipline", "Social Intelligence", "Negative Capability", "Reframing", "Interdisciplinary Combination"],
+    "yLabels": ["Fernandez", "Matsuoka", "Calatrava", "Roach", "Graham", "Everett"],
+    "values": [
+      [95, 85, 55, 90, 80, 40],
+      [85, 80, 95, 70, 90, 95],
+      [90, 90, 70, 65, 75, 80],
+      [75, 95, 80, 50, 40, 20],
+      [80, 65, 40, 60, 95, 90],
+      [85, 90, 45, 95, 85, 80]
+    ]
+  },
+  "options": {
+    "title": "Mastery Skill Matrix — Six Masters Compared",
+    "colorRange": ["#f7fbff", "#2980b9"]
+  }
+}
+```
+
+The heatmap reveals that no single skill is sufficient — every master brings a different combination, but social intelligence and discipline appear consistently high across those who survived institutional resistance.
 
 > [!abstract] The Full Formula
 > 1. Talent — minimum threshold required, but not the dominant variable
