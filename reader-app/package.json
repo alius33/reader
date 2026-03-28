@@ -12,7 +12,7 @@
     "lint": "next lint",
     "check": "next lint && tsc --noEmit",
     "setup": "bash scripts/setup.sh",
-    "build:railway": "prisma generate && next build",
+    "build:railway": "prisma generate && next build && cp -r .next/static .next/standalone/.next/static && (cp -r public .next/standalone/public 2>/dev/null || true)",
     "db:migrate": "prisma migrate dev",
     "db:push": "prisma db push",
     "db:seed": "dotenv -e .env -- tsx prisma/seed.ts",
