@@ -35,7 +35,7 @@ Richard Rumelt is the Harry and Elsa Kunin Professor of Business and Society at 
 - The sources of strategic power — leverage, proximate objectives, chain-link systems, design, focus, advantage, dynamics — are all variations on the same theme: <b style="color: #27ae60">concentrate force at the decisive point</b>
 
 ```mermaid
-graph TD
+flowchart TD
     A["<b>THE KERNEL OF GOOD STRATEGY</b>"] --> B["🔍 DIAGNOSIS<br/>What's going on here?<br/>Simplify complexity"]
     B --> C["🧭 GUIDING POLICY<br/>Overall approach<br/>Channel for effort"]
     C --> D["⚡ COHERENT ACTIONS<br/>Coordinated moves<br/>Reinforce each other"]
@@ -57,56 +57,9 @@ graph TD
 
 *The kernel is not a template — it is a test. Any purported strategy that lacks one of the three elements is incomplete. Any strategy that contains all three is at least coherent.*
 
-```chartjs
-{
-  "type": "radar",
-  "data": {
-    "labels": ["Diagnosis Quality", "Guiding Policy Clarity", "Action Coherence", "Focus", "Leverage", "Proximate Objectives"],
-    "datasets": [
-      {
-        "label": "Good Strategy (Apple 1997)",
-        "data": [9, 9, 10, 10, 8, 9],
-        "backgroundColor": "rgba(39, 174, 96, 0.2)",
-        "borderColor": "#27ae60"
-      },
-      {
-        "label": "Bad Strategy (Typical Corp.)",
-        "data": [2, 3, 2, 1, 2, 3],
-        "backgroundColor": "rgba(231, 76, 60, 0.2)",
-        "borderColor": "#e74c3c"
-      }
-    ]
-  },
-  "options": {
-    "plugins": { "title": { "display": true, "text": "Good vs. Bad Strategy: The Kernel Scorecard" } },
-    "scales": { "r": { "min": 0, "max": 10, "ticks": { "stepSize": 2 } } }
-  }
-}
-```
 
 The collapsed radar of "bad strategy" reveals Rumelt's core argument — most organisations score near zero on every dimension because they substitute goals and buzzwords for actual strategic content.
 
-```d3
-{
-  "type": "treemap",
-  "data": [
-    { "name": "Fluff / Buzzwords", "category": "Bad Strategy", "value": 30 },
-    { "name": "Failure to Diagnose", "category": "Bad Strategy", "value": 25 },
-    { "name": "Goals as Strategy", "category": "Bad Strategy", "value": 25 },
-    { "name": "Bad Objectives", "category": "Bad Strategy", "value": 20 },
-    { "name": "Leverage", "category": "Good Strategy", "value": 20 },
-    { "name": "Proximate Objectives", "category": "Good Strategy", "value": 18 },
-    { "name": "Chain-Link Systems", "category": "Good Strategy", "value": 15 },
-    { "name": "Design-Type Strategy", "category": "Good Strategy", "value": 14 },
-    { "name": "Focus", "category": "Good Strategy", "value": 16 },
-    { "name": "Dynamics / Waves", "category": "Good Strategy", "value": 12 }
-  ],
-  "options": {
-    "title": "Rumelt's Strategy Landscape: Hallmarks of Bad vs. Sources of Good",
-    "colors": { "Bad Strategy": "#e74c3c", "Good Strategy": "#27ae60" }
-  }
-}
-```
 
 The treemap reveals an asymmetry: bad strategy clusters around four easily identifiable pathologies, while good strategy draws from a richer palette of six distinct power sources — diagnosing bad is simpler than designing good.
 
@@ -416,7 +369,7 @@ The treemap reveals an asymmetry: bad strategy clusters around four easily ident
 - The template makes strategy feel complete without any actual analysis of the challenge — it is the organizational equivalent of filling out a form and calling it medicine
 
 ```mermaid
-graph LR
+flowchart LR
     subgraph "TEMPLATE STRATEGY (Bad)"
         A1["Vision"] --> B1["Mission"]
         B1 --> C1["Values"]
@@ -470,21 +423,6 @@ graph LR
 > [!tip] Three Roots of Bad Strategy
 > Whenever you encounter bad strategy, it traces to one of three causes: (1) the leader couldn't make the hard choices that focus requires, (2) the organization substituted a planning template for genuine analysis, or (3) a culture of positive thinking made critical diagnosis feel like disloyalty.
 
-```chartjs
-{
-  "type": "polarArea",
-  "data": {
-    "labels": ["Inability to Choose", "Template-Style Planning", "Positive-Thinking Doctrine", "Political Compromise", "Consensus Culture"],
-    "datasets": [{
-      "data": [30, 25, 20, 15, 10],
-      "backgroundColor": ["rgba(192, 57, 43, 0.7)", "rgba(231, 76, 60, 0.7)", "rgba(230, 126, 34, 0.7)", "rgba(241, 196, 15, 0.7)", "rgba(149, 165, 166, 0.7)"]
-    }]
-  },
-  "options": {
-    "plugins": { "title": { "display": true, "text": "Pathways to Bad Strategy: Relative Prevalence" } }
-  }
-}
-```
 
 The inability to choose dominates because it is the most psychologically comfortable failure mode — keeping all options open feels like prudence but is actually strategic paralysis.
 
@@ -748,7 +686,7 @@ The inability to choose dominates because it is the most psychologically comfort
 > **The lesson:** The most unassailable competitive advantages are chain-link systems where every element reinforces every other. Competitors can copy any single element but cannot replicate the system.
 
 ```mermaid
-graph LR
+flowchart LR
     subgraph "CHAIN-LINK TRAP"
         A["Link A<br/>Improved ✅"] --> B["Link B<br/>Weak ❌"]
         B --> C["Link C<br/>Weak ❌"]
@@ -818,7 +756,7 @@ graph LR
   5. The upstart displaces the incumbent, and the cycle begins again
 
 ```mermaid
-graph LR
+flowchart LR
     A["Strong Resource<br/>Position"] --> B["Profits Without<br/>Tight Strategy"]
     B --> C["Success Breeds<br/>Laxity"]
     C --> D["Political Compromise<br/>Unfocused Expansion"]
@@ -1058,7 +996,7 @@ graph LR
   - **Test for stability:** would any major player want to change the envisioned endpoint? If all major players would prefer to stay in the endpoint configuration, it's likely a true attractor state
 
 ```mermaid
-graph TD
+flowchart TD
     A["EXOGENOUS WAVE<br/>Technology / Cost / Regulation"] --> B["Second-Order Effects<br/>New economics, new positions"]
     B --> C["Incumbent Response<br/>Denial → Too-late imitation"]
     B --> D["Insurgent Opportunity<br/>Understand the wave first"]
@@ -1399,7 +1337,7 @@ graph TD
   - The independent thinker's advantage is not superior intelligence but <b style="color: #2980b9">the willingness to be wrong alone rather than wrong together</b>
 
 ```mermaid
-graph TD
+flowchart TD
     A["STRATEGIC THINKING<br/>TOOLKIT"] --> B["🔍 The Kernel<br/>Diagnosis → Policy → Action"]
     A --> C["🧩 Problem-Solution<br/>Frame as problem, not goal"]
     A --> D["💥 Create-Destroy<br/>Challenge your own ideas"]

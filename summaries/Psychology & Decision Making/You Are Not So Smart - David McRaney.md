@@ -68,58 +68,9 @@ mindmap
 
 The mind map above shows how McRaney's 48 biases cluster into broad families — each section below covers them in depth.
 
-```chartjs
-{
-  "type": "polarArea",
-  "data": {
-    "labels": ["Self-Deception (12 biases)", "Mental Shortcuts (10 biases)", "Social Errors (9 biases)", "Persistence Errors (8 biases)", "Memory Distortions (5 biases)", "Logical Fallacies (4 biases)"],
-    "datasets": [{
-      "data": [12, 10, 9, 8, 5, 4],
-      "backgroundColor": ["#e74c3c88", "#2980b988", "#27ae6088", "#f39c1288", "#8e44ad88", "#1abc9c88"]
-    }]
-  },
-  "options": {
-    "plugins": { "title": { "display": true, "text": "McRaney's 48 Biases: Distribution Across Families" } }
-  }
-}
-```
 
 Self-deception dominates the bias landscape with a quarter of all entries — the brain's most persistent failure mode is lying to itself about its own competence, motives, and rationality.
 
-```d3
-{
-  "type": "force",
-  "data": {
-    "nodes": [
-      { "id": "Confirmation Bias", "group": "Self-Deception" },
-      { "id": "Dunning-Kruger", "group": "Self-Deception" },
-      { "id": "Self-Serving Bias", "group": "Self-Deception" },
-      { "id": "Confabulation", "group": "Self-Deception" },
-      { "id": "Anchoring", "group": "Shortcuts" },
-      { "id": "Availability", "group": "Shortcuts" },
-      { "id": "Affect Heuristic", "group": "Shortcuts" },
-      { "id": "Sunk Cost", "group": "Persistence" },
-      { "id": "Normalcy Bias", "group": "Persistence" },
-      { "id": "Bystander Effect", "group": "Social" },
-      { "id": "Groupthink", "group": "Social" },
-      { "id": "Hindsight Bias", "group": "Memory" }
-    ],
-    "links": [
-      { "source": "Confirmation Bias", "target": "Self-Serving Bias", "value": 8 },
-      { "source": "Confirmation Bias", "target": "Confabulation", "value": 7 },
-      { "source": "Dunning-Kruger", "target": "Confirmation Bias", "value": 9 },
-      { "source": "Anchoring", "target": "Availability", "value": 6 },
-      { "source": "Affect Heuristic", "target": "Availability", "value": 7 },
-      { "source": "Sunk Cost", "target": "Confirmation Bias", "value": 6 },
-      { "source": "Groupthink", "target": "Confirmation Bias", "value": 8 },
-      { "source": "Hindsight Bias", "target": "Self-Serving Bias", "value": 7 },
-      { "source": "Normalcy Bias", "target": "Bystander Effect", "value": 5 },
-      { "source": "Bystander Effect", "target": "Groupthink", "value": 6 }
-    ]
-  },
-  "options": { "title": "The Cognitive Bias Network: How Biases Reinforce Each Other" }
-}
-```
 
 Confirmation bias sits at the centre of the network — connected to nearly every other bias — making it the master error from which most cognitive failures cascade.
 
@@ -2434,44 +2385,6 @@ Different life situations activate different bias clusters. Understanding WHEN y
 
 This matrix is the practical application layer — knowing WHICH biases are likely active in a given moment gives you a fighting chance of catching them.
 
-```chartjs
-{
-  "type": "radar",
-  "data": {
-    "labels": ["Prevalence", "Resistance to Correction", "Impact on Decisions", "Social Amplification", "Self-Awareness Difficulty"],
-    "datasets": [
-      {
-        "label": "Confirmation Bias",
-        "data": [95, 90, 90, 85, 95],
-        "backgroundColor": "rgba(231, 76, 60, 0.1)",
-        "borderColor": "#e74c3c"
-      },
-      {
-        "label": "Dunning-Kruger",
-        "data": [80, 85, 75, 60, 90],
-        "backgroundColor": "rgba(41, 128, 185, 0.1)",
-        "borderColor": "#2980b9"
-      },
-      {
-        "label": "Sunk Cost Fallacy",
-        "data": [85, 70, 85, 50, 60],
-        "backgroundColor": "rgba(39, 174, 96, 0.1)",
-        "borderColor": "#27ae60"
-      },
-      {
-        "label": "Bystander Effect",
-        "data": [75, 65, 80, 95, 70],
-        "backgroundColor": "rgba(243, 156, 18, 0.1)",
-        "borderColor": "#f39c12"
-      }
-    ]
-  },
-  "options": {
-    "plugins": { "title": { "display": true, "text": "McRaney's Most Dangerous Biases: Multi-Dimensional Comparison" } },
-    "scales": { "r": { "min": 0, "max": 100 } }
-  }
-}
-```
 
 Confirmation bias scores highest on nearly every dimension — especially self-awareness difficulty, meaning the bias most likely to corrupt your thinking is the one you're least likely to notice.
 

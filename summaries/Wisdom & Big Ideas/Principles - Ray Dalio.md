@@ -61,7 +61,7 @@ From this foundation, Dalio builds a comprehensive system:
 - The unifying metaphor: <b style="color: #27ae60">your life and your organization are both machines — and you are simultaneously the designer, the manager, and a worker within the machine</b>
 
 ```mermaid
-graph TD
+flowchart TD
     A["<b>META-PRINCIPLE</b><br/>What do you want?<br/>What is true?<br/>What to do about it?"] --> B["<b>LIFE PRINCIPLES</b>"]
     A --> C["<b>WORK PRINCIPLES</b>"]
     B --> B1["1. Embrace Reality"]
@@ -112,45 +112,6 @@ graph TD
 | **Tough Love** | Honest feedback is a gift — the hardest and most important type of love |
 | **Hyperrealist** | Accepting truth as it is, not as you wish it were — the starting point of everything |
 
-```chartjs
-{
-  "type": "radar",
-  "data": {
-    "labels": ["Setting Goals", "Identifying Problems", "Diagnosing Root Causes", "Designing Solutions", "Executing Plans"],
-    "datasets": [
-      {
-        "label": "Typical Person",
-        "data": [7, 4, 3, 4, 6],
-        "backgroundColor": "rgba(231, 76, 60, 0.2)",
-        "borderColor": "#e74c3c",
-        "pointBackgroundColor": "#e74c3c"
-      },
-      {
-        "label": "Effective Principled Person",
-        "data": [9, 8, 9, 8, 8],
-        "backgroundColor": "rgba(39, 174, 96, 0.2)",
-        "borderColor": "#27ae60",
-        "pointBackgroundColor": "#27ae60"
-      }
-    ]
-  },
-  "options": {
-    "plugins": {
-      "title": {
-        "display": true,
-        "text": "Dalio's 5-Step Process Competency"
-      }
-    },
-    "scales": {
-      "r": {
-        "min": 0,
-        "max": 10,
-        "ticks": { "stepSize": 2 }
-      }
-    }
-  }
-}
-```
 
 Most people are decent at setting goals and executing plans but weak at diagnosing root causes — the principled person closes the gap by systematically reflecting on failures and building reusable principles for each step.
 
@@ -323,7 +284,7 @@ Most people get stuck in the worker role — they're so busy doing tasks that th
 The 5-Step Process is Dalio's most practical framework — a repeating loop for achieving any goal:
 
 ```mermaid
-graph LR
+flowchart LR
     A["1. SET<br/>CLEAR GOALS"] --> B["2. IDENTIFY<br/>PROBLEMS"]
     B --> C["3. DIAGNOSE<br/>ROOT CAUSES"]
     C --> D["4. DESIGN<br/>A PLAN"]
@@ -397,40 +358,6 @@ The ego barrier is rooted in the amygdala — the lower, emotional brain that in
 
 The blind spot barrier is structural — it comes from the fact that each brain processes reality differently. Some people see big pictures; others see details. Some think linearly; others think laterally. You can't see what you can't see.
 
-```d3
-{
-  "type": "sankey",
-  "data": {
-    "nodes": [
-      {"id": "Raw Information"},
-      {"id": "Ego Barrier"},
-      {"id": "Blind Spot Barrier"},
-      {"id": "Filtered Out by Ego"},
-      {"id": "Filtered Out by Blind Spots"},
-      {"id": "Survives Ego Check"},
-      {"id": "Survives Both Barriers"},
-      {"id": "Good Decisions"},
-      {"id": "Bad Decisions (Incomplete Data)"}
-    ],
-    "links": [
-      {"source": "Raw Information", "target": "Ego Barrier", "value": 100},
-      {"source": "Ego Barrier", "target": "Filtered Out by Ego", "value": 35},
-      {"source": "Ego Barrier", "target": "Survives Ego Check", "value": 65},
-      {"source": "Survives Ego Check", "target": "Blind Spot Barrier", "value": 65},
-      {"source": "Blind Spot Barrier", "target": "Filtered Out by Blind Spots", "value": 25},
-      {"source": "Blind Spot Barrier", "target": "Survives Both Barriers", "value": 40},
-      {"source": "Survives Both Barriers", "target": "Good Decisions", "value": 40},
-      {"source": "Filtered Out by Ego", "target": "Bad Decisions (Incomplete Data)", "value": 35},
-      {"source": "Filtered Out by Blind Spots", "target": "Bad Decisions (Incomplete Data)", "value": 25}
-    ]
-  },
-  "options": {
-    "title": "How the Two Barriers Filter Information",
-    "width": 700,
-    "height": 400
-  }
-}
-```
 
 This Sankey diagram reveals Dalio's core warning: of all the information available to you, only about 40% survives both barriers to reach your conscious decision-making — the ego barrier alone filters out over a third by triggering defensive reactions before the rational brain can evaluate.
 
@@ -591,33 +518,6 @@ In an idea meritocracy:
 >
 > "I believe the evidence shows that operating this way leads to better decisions, faster learning, stronger relationships, and higher morale — even though it feels uncomfortable at first."
 
-```chartjs
-{
-  "type": "doughnut",
-  "data": {
-    "labels": ["Radical Truth", "Radical Transparency", "Believability-Weighting"],
-    "datasets": [
-      {
-        "data": [33, 33, 34],
-        "backgroundColor": ["#2980b9", "#27ae60", "#e74c3c"],
-        "borderColor": ["#fff", "#fff", "#fff"],
-        "borderWidth": 2
-      }
-    ]
-  },
-  "options": {
-    "plugins": {
-      "title": {
-        "display": true,
-        "text": "The Three Pillars of an Idea Meritocracy"
-      },
-      "legend": {
-        "position": "bottom"
-      }
-    }
-  }
-}
-```
 
 Dalio insists all three components must be present in roughly equal measure — radical truth without transparency breeds distrust, transparency without believability-weighting produces chaos, and weighting without truth is just hierarchy by another name.
 
@@ -1320,7 +1220,7 @@ The investment insights, while not the book's primary focus, are profound:
 ### The Master Formulas
 
 ```mermaid
-graph TD
+flowchart TD
     subgraph "THE LIFE EQUATION"
     A["Dreams"] --> D["Successful Life"]
     B["Reality"] --> D
@@ -1543,7 +1443,7 @@ The investment insights scattered throughout the autobiography — the Holy Grai
 *When facing any decision, Dalio's system can be compressed into a single decision tree:*
 
 ```mermaid
-graph TD
+flowchart TD
     A["SITUATION:<br/>You face a decision"] --> B{"Do you know what<br/>type of situation this is?"}
     B -->|Yes| C["Apply the relevant principle"]
     B -->|No| D{"Is there pain<br/>or conflict involved?"}
@@ -2220,7 +2120,7 @@ Individual principles are powerful. But the real strength of Dalio's system is h
 ### The Feedback Loop That Drives Everything
 
 ```mermaid
-graph TD
+flowchart TD
     A["SET A GOAL<br/>(Life Principle 2.1)"] --> B["ENCOUNTER A PROBLEM<br/>(Life Principle 2.2)"]
     B --> C["EXPERIENCE PAIN<br/>(Life Principle 1.7)"]
     C --> D["REFLECT<br/>(Life Principle 1.7)"]
@@ -2314,7 +2214,7 @@ By balancing risk equally across these four environments, you create a portfolio
 ## Extended Cross-Reference Map
 
 ```mermaid
-graph TD
+flowchart TD
     P["Principles<br/>Ray Dalio"] --> A["Poor Charlie's Almanack<br/>Mental models latticework"]
     P --> B["Antifragile<br/>Gain from disorder"]
     P --> C["Thinking Fast & Slow<br/>System 1 / System 2"]

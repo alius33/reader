@@ -56,32 +56,6 @@ year: 2008
 - <b style="color: #27ae60">Because these patterns are predictable, we can design environments — choice architectures — that account for our irrationality and help us make better decisions</b>
 - These are what Ariely calls "free lunches" — improvements that cost nothing but attention to how humans actually behave
 
-```chartjs
-{
-  "type": "radar",
-  "data": {
-    "labels": ["Relativity/Decoy", "Anchoring", "Zero Price Effect", "Social vs Market Norms", "Hot-Cold Gap", "Procrastination", "Endowment Effect", "Expectations/Placebo"],
-    "datasets": [
-      {
-        "label": "Impact on Decision Quality",
-        "data": [8, 9, 9, 8, 7, 7, 8, 7],
-        "backgroundColor": "rgba(231, 76, 60, 0.2)",
-        "borderColor": "#e74c3c"
-      },
-      {
-        "label": "Ease of Designing Around",
-        "data": [7, 5, 8, 4, 3, 6, 5, 6],
-        "backgroundColor": "rgba(39, 174, 96, 0.2)",
-        "borderColor": "#27ae60"
-      }
-    ]
-  },
-  "options": {
-    "plugins": { "title": { "display": true, "text": "Predictable Irrationalities: Impact vs Correctability" } },
-    "scales": { "r": { "min": 0, "max": 10, "ticks": { "stepSize": 2 } } }
-  }
-}
-```
 
 The radar chart reveals Ariely's key insight: the biases with the highest impact (anchoring, zero price effect) are not always the easiest to design around — the hot-cold empathy gap and social/market norm confusion are highly impactful but notoriously hard to correct through choice architecture alone.
 
@@ -266,37 +240,6 @@ flowchart TD
 - Twain also observed: "There are wealthy gentlemen in England who drive four-horse passenger-coaches twenty or thirty miles on a daily line in the summer because the privilege costs them considerable money; but if they were offered wages for the service, that would turn it into work, and then they would resign"
 - <b style="color: #2980b9">The implication is staggering: the subjective value of an experience — whether it is pleasurable or painful, whether it is worth paying for or must be compensated — may be determined not by the experience itself but by the initial framing</b>
 
-```d3
-{
-  "type": "sankey",
-  "data": {
-    "nodes": [
-      { "id": "Arbitrary Anchor" },
-      { "id": "SSN Digits" },
-      { "id": "First Price Seen" },
-      { "id": "Starbucks Ambience" },
-      { "id": "Self-Herding" },
-      { "id": "Coherent Preferences" },
-      { "id": "Lifetime Spending Pattern" },
-      { "id": "Career Choices" },
-      { "id": "Lifestyle Habits" }
-    ],
-    "links": [
-      { "source": "SSN Digits", "target": "Arbitrary Anchor", "value": 4 },
-      { "source": "First Price Seen", "target": "Arbitrary Anchor", "value": 5 },
-      { "source": "Starbucks Ambience", "target": "Arbitrary Anchor", "value": 4 },
-      { "source": "Arbitrary Anchor", "target": "Self-Herding", "value": 8 },
-      { "source": "Self-Herding", "target": "Coherent Preferences", "value": 8 },
-      { "source": "Coherent Preferences", "target": "Lifetime Spending Pattern", "value": 5 },
-      { "source": "Coherent Preferences", "target": "Career Choices", "value": 3 },
-      { "source": "Coherent Preferences", "target": "Lifestyle Habits", "value": 4 }
-    ]
-  },
-  "options": {
-    "title": "Arbitrary Coherence: How Random Anchors Shape Lifelong Patterns"
-  }
-}
-```
 
 The Sankey diagram traces the flow from arbitrary initial anchors (SSN digits, first prices, store ambiance) through self-herding into coherent preferences that shape lifetime spending, career choices, and lifestyle — making visible the alarming chain Ariely describes from random imprint to life trajectory.
 
@@ -313,30 +256,6 @@ The Sankey diagram traces the flow from arbitrary initial anchors (SSN digits, f
 - **Round 2**: Truffle at 14¢, Kiss at FREE! → 69% chose the Kiss
 - <b style="color: #e74c3c">Both chocolates dropped by exactly one penny. The relative price difference was unchanged. But FREE! flipped the entire market</b>
 
-```chartjs
-{
-  "type": "bar",
-  "data": {
-    "labels": ["Truffle 15¢ vs Kiss 1¢", "Truffle 14¢ vs Kiss FREE!"],
-    "datasets": [
-      {
-        "label": "Chose Truffle (%)",
-        "data": [73, 31],
-        "backgroundColor": "#8e44ad"
-      },
-      {
-        "label": "Chose Kiss (%)",
-        "data": [27, 69],
-        "backgroundColor": "#e74c3c"
-      }
-    ]
-  },
-  "options": {
-    "plugins": { "title": { "display": true, "text": "The Zero Price Effect: One Penny Changes Everything" } },
-    "scales": { "y": { "min": 0, "max": 100 } }
-  }
-}
-```
 
 The stacked bars make the zero price effect unmistakable: dropping both chocolates by one penny preserved the rational choice (left), but making the Kiss FREE! completely inverted the market (right) — the same one-cent reduction produced opposite outcomes depending on whether it crossed the zero boundary.
 - The experiment was replicated at MIT's cafeteria (eliminating the "no change in pocket" explanation) — same result

@@ -207,9 +207,6 @@ flowchart TD
 
 Competitive advantage lives at the intersection of all three puzzle pieces -- remove any one and the whole structure collapses.
 
-```d3
-{"type":"sankey","data":{"nodes":[{"id":"Assets"},{"id":"Aspirations"},{"id":"Market Realities"},{"id":"Competitive Advantage"},{"id":"ABZ Plans"},{"id":"Network Power"},{"id":"Breakout Opportunities"},{"id":"Career Momentum"}],"links":[{"source":"Assets","target":"Competitive Advantage","value":35},{"source":"Aspirations","target":"Competitive Advantage","value":30},{"source":"Market Realities","target":"Competitive Advantage","value":25},{"source":"Competitive Advantage","target":"ABZ Plans","value":30},{"source":"Competitive Advantage","target":"Network Power","value":35},{"source":"Competitive Advantage","target":"Breakout Opportunities","value":25},{"source":"ABZ Plans","target":"Career Momentum","value":30},{"source":"Network Power","target":"Career Momentum","value":35},{"source":"Breakout Opportunities","target":"Career Momentum","value":25}]},"options":{"title":"Career Capital Flow"}}
-```
 
 Assets, aspirations, and market realities converge into competitive advantage, which then distributes across your plans, network, and opportunity pipeline — all feeding career momentum.
 
@@ -351,9 +348,6 @@ flowchart TD
 
 ABZ Planning is not linear -- it is a continuous cycle of pursuing, pivoting, and recovering.
 
-```chartjs
-{"type":"radar","data":{"labels":["Plan A (Current Strategy)","Plan B (Pivot Options)","Plan Z (Lifeboat Strength)","Network Depth","Risk Tolerance","Skill Currency"],"datasets":[{"label":"Self-Assessment","data":[7,5,4,6,3,8],"backgroundColor":"rgba(39,174,96,0.2)","borderColor":"#27ae60"},{"label":"Target Readiness","data":[8,8,7,8,7,9],"backgroundColor":"rgba(41,128,185,0.2)","borderColor":"#2980b9"}]},"options":{"plugins":{"title":{"display":true,"text":"ABZ Planning Readiness"}},"scales":{"r":{"beginAtZero":true,"max":10}}}}
-```
 
 Most professionals score well on Plan A and Skill Currency but underinvest in Plan Z and Risk Tolerance — the exact areas that enable bold moves.
 
@@ -478,9 +472,6 @@ Hoffman identifies three mechanisms through which networks amplify individual ca
 - **Knowledge amplification** -- expertise, perspective, and pattern recognition borrowed from people who have seen what you have not
 - **Credibility transfer** -- the trust and reputation of your network transfers partially to you through association and endorsement
 
-```d3
-{"type":"force","data":{"nodes":[{"id":"you","label":"You (I^We)","group":1},{"id":"allies","label":"Professional Allies","group":2},{"id":"weak","label":"Weak Ties","group":3},{"id":"dormant","label":"Dormant Ties","group":3},{"id":"domain","label":"Domain Experts","group":4},{"id":"confidants","label":"Close Confidants","group":4},{"id":"outsiders","label":"Smart Outsiders","group":4},{"id":"opportunities","label":"Opportunities","group":5},{"id":"intelligence","label":"Network Intelligence","group":5}],"links":[{"source":"you","target":"allies","value":5},{"source":"you","target":"weak","value":2},{"source":"you","target":"dormant","value":1},{"source":"you","target":"domain","value":3},{"source":"you","target":"confidants","value":4},{"source":"you","target":"outsiders","value":2},{"source":"allies","target":"opportunities","value":4},{"source":"weak","target":"opportunities","value":3},{"source":"dormant","target":"opportunities","value":2},{"source":"domain","target":"intelligence","value":4},{"source":"confidants","target":"intelligence","value":3},{"source":"outsiders","target":"intelligence","value":3}]},"options":{"title":"The IWe Network Model"}}
-```
 
 Your professional allies form the strongest bonds, but weak and dormant ties disproportionately surface new opportunities — while domain experts, confidants, and outsiders feed the network intelligence that guides your decisions.
 
@@ -600,9 +591,6 @@ flowchart TD
 
 Within three degrees, you can reach roughly two million people through trusted intermediaries. Beyond that threshold, the chain loses its quality filter.
 
-```chartjs
-{"type":"bar","data":{"labels":["1st Degree (Direct)","2nd Degree (Friend-of-Friend)","3rd Degree (3 Steps)"],"datasets":[{"label":"Reachable People","data":[170,29000,2000000],"backgroundColor":["#2980b9","#27ae60","#f39c12"]}]},"options":{"plugins":{"title":{"display":true,"text":"Network Reach by Degree of Connection"}},"scales":{"y":{"type":"logarithmic","title":{"display":true,"text":"Number of People (log scale)"}}}}}
-```
 
 From just 170 direct connections, your trusted network expands exponentially — reaching roughly two million people within three degrees, each reachable through intermediaries with reputation at stake.
 

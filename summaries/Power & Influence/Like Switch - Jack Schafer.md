@@ -103,39 +103,6 @@ Each variable builds on the previous one. Skip a stage and the whole sequence co
 | **Duration** | Length of contact | Start with brief exchanges, gradually extend | Short chats first, then longer conversations |
 | **Intensity** | Depth of interaction | Move from small talk to personal topics | Use empathic statements, share appropriately |
 
-```chartjs
-{
-  "type": "bar",
-  "data": {
-    "labels": ["Proximity", "Frequency", "Duration", "Intensity"],
-    "datasets": [
-      {
-        "label": "Early Stage (Weeks 1-4)",
-        "data": [90, 75, 30, 10],
-        "backgroundColor": "#2980b9"
-      },
-      {
-        "label": "Building Stage (Months 2-3)",
-        "data": [60, 85, 70, 40],
-        "backgroundColor": "#27ae60"
-      },
-      {
-        "label": "Deepening Stage (Months 4+)",
-        "data": [40, 55, 80, 95],
-        "backgroundColor": "#8e44ad"
-      }
-    ]
-  },
-  "options": {
-    "plugins": {
-      "title": { "display": true, "text": "Friendship Formula — Variable Impact by Relationship Stage" }
-    },
-    "scales": {
-      "y": { "beginAtZero": true, "max": 100, "title": { "display": true, "text": "Relative Importance (%)" } }
-    }
-  }
-}
-```
 
 Proximity dominates the earliest stage of relationship building, then frequency and duration take over during the middle phase, while intensity becomes the primary driver only after the foundation of comfort and familiarity is firmly established.
 
@@ -301,32 +268,6 @@ Schafer provides guidance on how to calibrate each variable depending on context
 | **Jaw clench** | Visible tension in jaw muscles | Restraint, suppressed anger |
 | **Finger pointing** | Index finger directed at someone | Aggression signal — even in casual conversation |
 
-```d3
-{
-  "type": "heatmap",
-  "data": {
-    "yLabels": ["Eyebrow Flash", "Head Tilt", "Genuine Smile", "Open Torso", "Comfortable Eye Contact", "Lip Compression", "Jaw Clench", "Staring", "Finger Pointing"],
-    "xLabels": ["Friend Signal Strength", "Foe Signal Strength", "Ease of Conscious Control"],
-    "values": [
-      [95, 5, 80],
-      [90, 5, 70],
-      [85, 10, 50],
-      [80, 15, 75],
-      [70, 30, 60],
-      [5, 85, 40],
-      [5, 90, 30],
-      [10, 95, 45],
-      [5, 90, 65]
-    ]
-  },
-  "options": {
-    "title": "Friend vs Foe Signals — Strength and Controllability Matrix",
-    "colorScale": { "min": "#2ecc71", "mid": "#f1c40f", "max": "#e74c3c" },
-    "width": 600,
-    "height": 400
-  }
-}
-```
 
 The top five signals broadcast friendship with high reliability, while the bottom four reliably trigger foe responses — and notably, foe signals like jaw clenching are harder to consciously control, meaning they leak genuine hostility more honestly than friend signals can be faked.
 
@@ -556,52 +497,6 @@ flowchart TD
 
 The more laws you activate simultaneously, the stronger the attraction. But even one law, applied consistently, is enough to build rapport.
 
-```chartjs
-{
-  "type": "radar",
-  "data": {
-    "labels": ["Similarity", "Reciprocity", "Misattribution", "Curiosity", "Scarcity"],
-    "datasets": [
-      {
-        "label": "First Meeting",
-        "data": [90, 70, 85, 60, 30],
-        "backgroundColor": "rgba(41, 128, 185, 0.15)",
-        "borderColor": "#2980b9",
-        "pointBackgroundColor": "#2980b9"
-      },
-      {
-        "label": "Dating",
-        "data": [75, 80, 95, 85, 70],
-        "backgroundColor": "rgba(231, 76, 60, 0.15)",
-        "borderColor": "#e74c3c",
-        "pointBackgroundColor": "#e74c3c"
-      },
-      {
-        "label": "Business",
-        "data": [85, 90, 40, 55, 50],
-        "backgroundColor": "rgba(39, 174, 96, 0.15)",
-        "borderColor": "#27ae60",
-        "pointBackgroundColor": "#27ae60"
-      },
-      {
-        "label": "Long-term",
-        "data": [70, 95, 25, 40, 80],
-        "backgroundColor": "rgba(142, 68, 173, 0.15)",
-        "borderColor": "#8e44ad",
-        "pointBackgroundColor": "#8e44ad"
-      }
-    ]
-  },
-  "options": {
-    "plugins": {
-      "title": { "display": true, "text": "Five Laws of Attraction — Relative Power Across Contexts" }
-    },
-    "scales": {
-      "r": { "min": 0, "max": 100, "ticks": { "stepSize": 20 } }
-    }
-  }
-}
-```
 
 Similarity dominates first meetings and business contexts, while misattribution peaks in dating scenarios and reciprocity compounds most powerfully in long-term relationships.
 
@@ -745,26 +640,6 @@ flowchart TD
 
 Self-disclosure deepens in layers. Each layer requires reciprocal matching before you can move to the next one.
 
-```chartjs
-{
-  "type": "doughnut",
-  "data": {
-    "labels": ["Surface (Weather, Sports, News)", "Opinion (Views on Topics)", "Personal (Experiences, Feelings)", "Intimate (Fears, Dreams, Vulnerabilities)"],
-    "datasets": [{
-      "data": [45, 30, 18, 7],
-      "backgroundColor": ["#3498db", "#2ecc71", "#f39c12", "#e74c3c"],
-      "borderWidth": 2,
-      "borderColor": "#fff"
-    }]
-  },
-  "options": {
-    "plugins": {
-      "title": { "display": true, "text": "Self-Disclosure Levels — Typical Conversation Depth Distribution" },
-      "legend": { "position": "right" }
-    }
-  }
-}
-```
 
 Most conversations never progress beyond surface-level exchange — only 7% of interactions reach the intimate level where genuine bonds are forged, which is why deliberate, gradual deepening through matched disclosure is essential for building real closeness.
 

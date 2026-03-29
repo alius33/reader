@@ -76,29 +76,6 @@ flowchart TD
 
 The four pillars apply across all three stages of negotiation — analysis (diagnosing the situation), planning (generating ideas), and discussion (communicating back and forth toward agreement).
 
-```d3
-{
-  "type": "heatmap",
-  "data": {
-    "xLabels": ["Soft Positional", "Hard Positional", "Principled"],
-    "yLabels": ["Trust Building", "Offer Quality", "Concession Pattern", "Solution Search", "Use of Pressure", "Relationship Outcome", "Efficiency"],
-    "values": [
-      [8, 2, 9],
-      [3, 4, 9],
-      [9, 1, 5],
-      [2, 2, 9],
-      [1, 9, 3],
-      [6, 2, 9],
-      [3, 3, 9]
-    ]
-  },
-  "options": {
-    "title": "Negotiation Approaches Comparison",
-    "colorScale": ["#e74c3c", "#f39c12", "#27ae60"],
-    "cellSize": 50
-  }
-}
-```
 
 Principled negotiation scores highest on nearly every dimension — the only area where it deliberately avoids dominance is pressure, which it replaces with objective criteria and reasoning.
 
@@ -117,59 +94,6 @@ Principled negotiation scores highest on nearly every dimension — the only are
 | **Planning** | Plan how to address people problems without concessions | Determine which interests to raise and when | Generate creative options using brainstorming and Circle Chart | Research precedents, standards, and fair procedures |
 | **Discussion** | Acknowledge emotions, correct misperceptions, listen actively | Share your interests; ask about theirs; find shared ground | Present options as joint exploration; ask for criticism | Frame each issue as a search for fair standards; yield to principle only |
 
-```chartjs
-{
-  "type": "radar",
-  "data": {
-    "labels": ["Analysis", "Planning", "Discussion"],
-    "datasets": [
-      {
-        "label": "People",
-        "data": [9, 7, 10],
-        "backgroundColor": "rgba(231, 76, 60, 0.15)",
-        "borderColor": "#e74c3c",
-        "pointBackgroundColor": "#e74c3c"
-      },
-      {
-        "label": "Interests",
-        "data": [8, 10, 9],
-        "backgroundColor": "rgba(41, 128, 185, 0.15)",
-        "borderColor": "#2980b9",
-        "pointBackgroundColor": "#2980b9"
-      },
-      {
-        "label": "Options",
-        "data": [5, 9, 8],
-        "backgroundColor": "rgba(39, 174, 96, 0.15)",
-        "borderColor": "#27ae60",
-        "pointBackgroundColor": "#27ae60"
-      },
-      {
-        "label": "Criteria",
-        "data": [6, 8, 10],
-        "backgroundColor": "rgba(142, 68, 173, 0.15)",
-        "borderColor": "#8e44ad",
-        "pointBackgroundColor": "#8e44ad"
-      }
-    ]
-  },
-  "options": {
-    "plugins": {
-      "title": {
-        "display": true,
-        "text": "Four Pillars Across Negotiation Stages"
-      }
-    },
-    "scales": {
-      "r": {
-        "min": 0,
-        "max": 10,
-        "ticks": { "stepSize": 2 }
-      }
-    }
-  }
-}
-```
 
 People and Criteria dominate the Discussion stage where human dynamics and fair standards converge, while Interests peak during Planning when you determine which needs to prioritize.
 
@@ -1295,37 +1219,6 @@ flowchart TD
 | **Strong BATNA** | The walk-away alternative that gives you confidence and leverage; also develop your "micro-BATNA" for each meeting |
 | **Carefully crafted commitments** | Three types: (1) commit to what you will do (firm offer), (2) commit to what you will not do (with care, after understanding their interests), (3) clarify what you want them to do |
 
-```chartjs
-{
-  "type": "bar",
-  "data": {
-    "labels": ["Relationship", "Understanding Interests", "Elegant Options", "Legitimacy", "Strong BATNA", "Commitments"],
-    "datasets": [
-      {
-        "label": "Persuasion Impact",
-        "data": [8, 9, 7, 8, 10, 6],
-        "backgroundColor": ["#3498db", "#2ecc71", "#9b59b6", "#e67e22", "#e74c3c", "#1abc9c"]
-      },
-      {
-        "label": "Long-Term Value",
-        "data": [10, 8, 9, 7, 6, 5],
-        "backgroundColor": ["rgba(52,152,219,0.4)", "rgba(46,204,113,0.4)", "rgba(155,89,182,0.4)", "rgba(230,126,34,0.4)", "rgba(231,76,60,0.4)", "rgba(26,188,156,0.4)"]
-      }
-    ]
-  },
-  "options": {
-    "plugins": {
-      "title": {
-        "display": true,
-        "text": "Six Sources of Negotiation Power"
-      }
-    },
-    "scales": {
-      "y": { "beginAtZero": true, "max": 10, "title": { "display": true, "text": "Strength (1-10)" } }
-    }
-  }
-}
-```
 
 BATNA delivers the strongest immediate persuasion impact, but Relationship generates the highest long-term value — Fisher argues the best negotiators invest in both simultaneously.
 

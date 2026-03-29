@@ -69,82 +69,10 @@ flowchart LR
     Redirect --> DualGoal["Dual Goals Achieved:<br/>Cooperation NOW +<br/>Brain-building for LIFE"]
 ```
 
-```chartjs
-{
-  "type": "bar",
-  "data": {
-    "labels": ["Stop Behavior NOW", "Teach Self-Control", "Build Empathy", "Develop Insight", "Strengthen Relationship", "Build Moral Reasoning"],
-    "datasets": [
-      {
-        "label": "Traditional Punishment",
-        "data": [70, 15, 5, 10, 10, 10],
-        "backgroundColor": "#e74c3c"
-      },
-      {
-        "label": "Connect & Redirect",
-        "data": [75, 85, 80, 75, 90, 80],
-        "backgroundColor": "#27ae60"
-      }
-    ]
-  },
-  "options": {
-    "title": "Punishment vs. Connect & Redirect: Outcomes Comparison",
-    "scales": { "y": { "beginAtZero": true, "max": 100 } }
-  }
-}
-```
 Traditional punishment is nearly as effective at stopping immediate behavior — but Connect & Redirect crushes it on every long-term brain-building outcome.
 
-```d3
-{
-  "type": "sankey",
-  "data": {
-    "nodes": ["Child Misbehaves", "Ask WHY", "Ask WHAT to Teach", "Ask HOW", "CONNECT", "Validate Feelings", "Physical Comfort", "Listen", "REDIRECT", "Reduce Words", "Involve in Discipline", "Reframe the No", "Teach Mindsight", "Cooperation", "Brain Growth"],
-    "links": [
-      {"source": "Child Misbehaves", "target": "Ask WHY", "value": 30},
-      {"source": "Child Misbehaves", "target": "Ask WHAT to Teach", "value": 30},
-      {"source": "Child Misbehaves", "target": "Ask HOW", "value": 30},
-      {"source": "Ask WHY", "target": "CONNECT", "value": 30},
-      {"source": "Ask WHAT to Teach", "target": "CONNECT", "value": 30},
-      {"source": "Ask HOW", "target": "CONNECT", "value": 30},
-      {"source": "CONNECT", "target": "Validate Feelings", "value": 25},
-      {"source": "CONNECT", "target": "Physical Comfort", "value": 20},
-      {"source": "CONNECT", "target": "Listen", "value": 25},
-      {"source": "Validate Feelings", "target": "REDIRECT", "value": 25},
-      {"source": "Physical Comfort", "target": "REDIRECT", "value": 20},
-      {"source": "Listen", "target": "REDIRECT", "value": 25},
-      {"source": "REDIRECT", "target": "Reduce Words", "value": 15},
-      {"source": "REDIRECT", "target": "Involve in Discipline", "value": 20},
-      {"source": "REDIRECT", "target": "Reframe the No", "value": 15},
-      {"source": "REDIRECT", "target": "Teach Mindsight", "value": 20},
-      {"source": "Reduce Words", "target": "Cooperation", "value": 15},
-      {"source": "Involve in Discipline", "target": "Brain Growth", "value": 20},
-      {"source": "Reframe the No", "target": "Cooperation", "value": 15},
-      {"source": "Teach Mindsight", "target": "Brain Growth", "value": 20}
-    ]
-  },
-  "options": {
-    "title": "The Connect & Redirect Pipeline: From Misbehavior to Brain Growth"
-  }
-}
-```
 The discipline pipeline flows from three diagnostic questions through connection strategies to redirection techniques — every path leads to either immediate cooperation or long-term brain growth.
 
-```chartjs
-{
-  "type": "doughnut",
-  "data": {
-    "labels": ["Tired/Hungry/Overwhelmed", "Testing Boundaries", "Lacking Skills", "Seeking Connection", "Emotional Flooding", "Developmental Phase"],
-    "datasets": [{
-      "data": [25, 20, 15, 20, 10, 10],
-      "backgroundColor": ["#e74c3c", "#f39c12", "#2980b9", "#27ae60", "#9b59b6", "#1abc9c"]
-    }]
-  },
-  "options": {
-    "title": "Why Children REALLY Misbehave: Root Causes"
-  }
-}
-```
 A quarter of all misbehavior is simply a tired, hungry, or overwhelmed child — asking "Why?" before reacting would prevent most discipline escalations.
 
 ```mermaid
@@ -962,10 +890,10 @@ The No-Drama Discipline approach is grounded in:
 flowchart TB
     WBC["The Whole-Brain Child<br/>(2011)"] -->|"Introduces"| BrainModel["Brain Integration Model<br/>Left-Right, Upstairs-Downstairs,<br/>Memory, Self, Interpersonal"]
     BrainModel -->|"Applied to"| AllParenting["All Parenting Situations<br/>12 strategies across 5 domains"]
-    
+
     NDD["No-Drama Discipline<br/>(2014)"] -->|"Deepens"| DisciplineContext["Discipline Specifically<br/>Connect and Redirect<br/>R-E-D-I-R-E-C-T"]
     DisciplineContext -->|"Answers"| CoreQ["The Core Question:<br/>'What do I DO when<br/>my kid misbehaves?'"]
-    
+
     BrainModel --> NDD
     AllParenting -.->|"Foundation for"| DisciplineContext
 ```

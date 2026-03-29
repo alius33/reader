@@ -51,21 +51,6 @@ flowchart LR
 
 Gawande's three categories of failure form the spine of the book — the entire argument rests on convincing the reader that ineptitude, not ignorance, is the dominant threat in modern professional life.
 
-```chartjs
-{
-  "type": "doughnut",
-  "data": {
-    "labels": ["Ignorance (Knowledge Gap)", "Ineptitude (Application Gap)", "Memory Fallibility (Recall Gap)"],
-    "datasets": [{
-      "data": [15, 50, 35],
-      "backgroundColor": ["#95a5a6", "#e74c3c", "#e67e22"]
-    }]
-  },
-  "options": {
-    "plugins": { "title": { "display": true, "text": "Sources of Professional Failure in Modern Complex Work" } }
-  }
-}
-```
 
 Ineptitude — knowing what to do but failing to do it reliably — accounts for the majority of professional failures, making it the precise target that checklists are designed to eliminate.
 
@@ -561,27 +546,6 @@ This progression captures the key insight: different types of problems require f
 | Surgical site infections | 6.2% | 3.4% | **-45%** |
 | Unplanned return to OR | 2.4% | 1.8% | **-25%** |
 
-```chartjs
-{
-  "type": "bar",
-  "data": {
-    "labels": ["Major Complications", "Deaths", "Surgical Infections", "Unplanned Return to OR"],
-    "datasets": [{
-      "label": "Before Checklist (%)",
-      "data": [11.0, 1.5, 6.2, 2.4],
-      "backgroundColor": "#e74c3c"
-    }, {
-      "label": "After Checklist (%)",
-      "data": [7.0, 0.8, 3.4, 1.8],
-      "backgroundColor": "#27ae60"
-    }]
-  },
-  "options": {
-    "plugins": { "title": { "display": true, "text": "WHO Safe Surgery Checklist: Before vs After Across Eight Hospitals" } },
-    "scales": { "y": { "title": { "display": true, "text": "Rate (%)" } } }
-  }
-}
-```
 
 A two-minute, zero-cost checklist reduced surgical deaths by 47% — no drug, technology, or training programme has ever achieved comparable results at comparable cost.
 
@@ -792,34 +756,6 @@ This diagram shows the checklist's role in any expert decision context — it in
 | **Test and iterate** | Run the checklist in simulation, then revise based on real use | Publishing a checklist and never updating it |
 | **Empower the team** | Give every team member authority to enforce the checklist | Making the checklist the responsibility of the most senior person (who is least likely to be questioned) |
 
-```d3
-{
-  "type": "treemap",
-  "data": {
-    "name": "Checklist Design",
-    "children": [
-      {"name": "Content", "children": [
-        {"name": "Killer Items Only", "value": 25},
-        {"name": "Team Language", "value": 15},
-        {"name": "Not a Manual", "value": 18}
-      ]},
-      {"name": "Structure", "children": [
-        {"name": "Define Pause Point", "value": 22},
-        {"name": "DO-CONFIRM vs READ-DO", "value": 20},
-        {"name": "Fits One Page", "value": 14}
-      ]},
-      {"name": "Implementation", "children": [
-        {"name": "Empower the Team", "value": 20},
-        {"name": "Test and Iterate", "value": 16},
-        {"name": "Enforcement Mechanism", "value": 22}
-      ]}
-    ]
-  },
-  "options": {
-    "title": "Checklist Design Principles: Weighted by Impact on Effectiveness"
-  }
-}
-```
 
 Defining clear pause points and establishing enforcement mechanisms emerge as the highest-weighted design principles — without them, even well-crafted checklists become ignored suggestions.
 
@@ -1020,33 +956,6 @@ flowchart TD
 
 Gawande's map of checklist adoption across industries shows that the disciplines closest to life-and-death consequences adopted earliest — but the underlying logic applies everywhere.
 
-```chartjs
-{
-  "type": "radar",
-  "data": {
-    "labels": ["Adoption Rate", "Cultural Acceptance", "Enforcement Strength", "Evidence Base", "Complexity of Work", "Lives at Stake"],
-    "datasets": [{
-      "label": "Aviation",
-      "data": [95, 95, 90, 90, 85, 95],
-      "backgroundColor": "rgba(39, 174, 96, 0.2)",
-      "borderColor": "#27ae60"
-    }, {
-      "label": "Medicine",
-      "data": [50, 40, 35, 80, 90, 95],
-      "backgroundColor": "rgba(41, 128, 185, 0.2)",
-      "borderColor": "#2980b9"
-    }, {
-      "label": "Finance/Knowledge Work",
-      "data": [15, 10, 10, 40, 70, 30],
-      "backgroundColor": "rgba(231, 76, 60, 0.2)",
-      "borderColor": "#e74c3c"
-    }]
-  },
-  "options": {
-    "plugins": { "title": { "display": true, "text": "Checklist Adoption Maturity Across Three Industries" } }
-  }
-}
-```
 
 The gap between medicine's strong evidence base and its weak cultural acceptance captures Gawande's central frustration — knowing checklists work and getting professionals to use them are entirely different challenges.
 

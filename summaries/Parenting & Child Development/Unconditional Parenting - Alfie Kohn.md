@@ -50,44 +50,6 @@ Kohn's earlier works laid the groundwork. *Punished by Rewards* (1993) demolishe
 | **Compulsive compliance** | Children so afraid of parents they obey immediately and unthinkingly — a sign of damage, not success |
 | **The vicious circle** | Punishment creates anger → anger creates misbehavior → misbehavior creates more punishment |
 
-```chartjs
-{
-  "type": "radar",
-  "data": {
-    "labels": ["Child Self-Worth", "Intrinsic Motivation", "Short-term Compliance", "Relationship Quality", "Long-term Resilience", "Empathy & Generosity", "Creativity & Risk-Taking"],
-    "datasets": [
-      {
-        "label": "Conditional Parenting",
-        "data": [3, 2, 8, 3, 2, 3, 2],
-        "backgroundColor": "rgba(231, 76, 60, 0.2)",
-        "borderColor": "#e74c3c",
-        "pointBackgroundColor": "#e74c3c"
-      },
-      {
-        "label": "Unconditional Parenting",
-        "data": [9, 9, 5, 9, 9, 9, 8],
-        "backgroundColor": "rgba(39, 174, 96, 0.2)",
-        "borderColor": "#27ae60",
-        "pointBackgroundColor": "#27ae60"
-      }
-    ]
-  },
-  "options": {
-    "plugins": {
-      "title": {
-        "display": true,
-        "text": "Conditional vs Unconditional Parenting: Impact Across Dimensions"
-      }
-    },
-    "scales": {
-      "r": {
-        "beginAtZero": true,
-        "max": 10
-      }
-    }
-  }
-}
-```
 
 Conditional parenting's only advantage is short-term compliance — the one dimension where it outscores unconditional parenting — but this comes at the cost of self-worth, motivation, relationship quality, resilience, empathy, and creativity, revealing Kohn's core argument that obedience is purchased at the price of everything else we actually want for our children.
 
@@ -112,7 +74,7 @@ flowchart TB
     P3 --> Core
     P4 --> Core
     Core --> Effects["Anxiety, contingent self-esteem,<br/>reduced empathy, shallow compliance,<br/>eroded intrinsic motivation"]
-    
+
     subgraph working_with ["The Alternative: 'Working With'"]
         W1["Unconditional love"]
         W2["Collaborative problem-solving"]
@@ -216,47 +178,6 @@ Kohn places all conventional discipline on a single continuum:
 
 These are not opposites. They are points on the same spectrum. All communicate: *My response to you depends on your behavior.* Kohn argues we should reject the entire spectrum, not just pick a "nicer" point on it.
 
-```d3
-{
-  "type": "sankey",
-  "data": {
-    "nodes": [
-      "Punishment",
-      "Time-Outs",
-      "Rewards & Stickers",
-      "Verbal Praise",
-      "Temporary Compliance",
-      "Fear of Disapproval",
-      "Extrinsic Motivation",
-      "Praise Dependence",
-      "Contingent Self-Esteem",
-      "Anxiety & Resentment",
-      "Eroded Intrinsic Motivation",
-      "Shallow Relationships"
-    ],
-    "links": [
-      {"source": 0, "target": 4, "value": 6},
-      {"source": 0, "target": 5, "value": 5},
-      {"source": 1, "target": 4, "value": 5},
-      {"source": 1, "target": 5, "value": 7},
-      {"source": 2, "target": 6, "value": 7},
-      {"source": 2, "target": 7, "value": 4},
-      {"source": 3, "target": 6, "value": 5},
-      {"source": 3, "target": 7, "value": 6},
-      {"source": 4, "target": 8, "value": 5},
-      {"source": 5, "target": 9, "value": 7},
-      {"source": 5, "target": 8, "value": 5},
-      {"source": 6, "target": 10, "value": 8},
-      {"source": 7, "target": 8, "value": 6},
-      {"source": 7, "target": 11, "value": 4},
-      {"source": 4, "target": 9, "value": 6}
-    ]
-  },
-  "options": {
-    "title": "Conditional Practices → Short-term Effects → Long-term Consequences"
-  }
-}
-```
 
 The sankey flow shows how all four conditional practices — whether punitive or "positive" — funnel through the same short-term effects (compliance, fear, extrinsic motivation, praise dependence) into the same long-term damage (contingent self-esteem, anxiety, eroded intrinsic motivation), revealing Kohn's central insight that punishment and praise are two ends of the same destructive continuum.
 
@@ -325,51 +246,6 @@ Here is Kohn's devastating list of why punishment fails — supported by researc
 
 The vicious circle is the most insidious feature of punishment. When punishment fails — as it invariably does — parents assume the child needs *more* punishment, not that the approach is wrong. Ground the disobedient teenager. Cut off her allowance. Use power to *make* her act responsibly. As Haim Ginott observed: "Misbehavior and punishment are not opposites that cancel each other; on the contrary, they breed and reinforce each other."
 
-```d3
-{
-  "type": "treemap",
-  "data": {
-    "name": "Research Evidence Against Common Practices",
-    "children": [
-      {
-        "name": "Corporal Punishment",
-        "children": [
-          {"name": "Increases aggression", "value": 18},
-          {"name": "Models use of force", "value": 14},
-          {"name": "Erodes trust", "value": 12}
-        ]
-      },
-      {
-        "name": "Time-Outs & Love Withdrawal",
-        "children": [
-          {"name": "Creates abandonment anxiety", "value": 15},
-          {"name": "Lower self-esteem long-term", "value": 13},
-          {"name": "Rigid moral reasoning", "value": 10}
-        ]
-      },
-      {
-        "name": "Rewards & Stickers",
-        "children": [
-          {"name": "Erodes intrinsic motivation", "value": 16},
-          {"name": "Reduces generosity", "value": 11},
-          {"name": "Creates dependence", "value": 10}
-        ]
-      },
-      {
-        "name": "Praise ('Good Job!')",
-        "children": [
-          {"name": "Contingent self-esteem", "value": 14},
-          {"name": "Reduces creativity", "value": 12},
-          {"name": "Makes children tentative", "value": 9}
-        ]
-      }
-    ]
-  },
-  "options": {
-    "title": "Research Evidence Against Common Practices (Weighted by Strength of Evidence)"
-  }
-}
-```
 
 The treemap shows that corporal punishment's link to increased aggression carries the strongest research evidence (largest block), but the evidence against supposedly "gentler" methods — praise creating contingent self-esteem, rewards eroding intrinsic motivation, time-outs triggering abandonment anxiety — is almost equally robust, supporting Kohn's argument that these are all points on the same continuum.
 
@@ -540,44 +416,6 @@ Kohn argues that meeting these three needs isn't just good parenting — it's th
 | 12 | **Don't be rigid** | Be willing to change your mind, reconsider, negotiate |
 | 13 | **Don't be in a hurry** | Let children proceed at their own pace; slow down |
 
-```chartjs
-{
-  "type": "doughnut",
-  "data": {
-    "labels": [
-      "Self-Reflection (Be reflective, Reconsider requests)",
-      "Long-term Perspective (Keep goals, Ages in mind)",
-      "Relationship-First (Put relationship first, Respect)",
-      "Empowering (Best motive, Talk less ask more)",
-      "Letting Go (Don't stick no's in, Don't be rigid, Don't hurry)",
-      "Authenticity (Be authentic, Change how you see)"
-    ],
-    "datasets": [
-      {
-        "data": [2, 2, 2, 2, 3, 2],
-        "backgroundColor": [
-          "rgba(41, 128, 185, 0.8)",
-          "rgba(39, 174, 96, 0.8)",
-          "rgba(231, 76, 60, 0.8)",
-          "rgba(243, 156, 18, 0.8)",
-          "rgba(155, 89, 182, 0.8)",
-          "rgba(52, 73, 94, 0.8)"
-        ],
-        "borderColor": "#ffffff",
-        "borderWidth": 2
-      }
-    ]
-  },
-  "options": {
-    "plugins": {
-      "title": {
-        "display": true,
-        "text": "Kohn's 13 Principles Grouped by Category"
-      }
-    }
-  }
-}
-```
 
 The distribution shows that "Letting Go" — reducing unnecessary control — claims the largest share with three principles, reflecting Kohn's emphasis that most of what passes for discipline is the parent's need for control rather than the child's need for guidance.
 

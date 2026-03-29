@@ -86,66 +86,6 @@ This diagram shows Dalio's complete Big Cycle — the full arc from education-dr
 | **The Mandate of Heaven** | Chinese dynastic concept — rulers govern legitimately only while they govern well |
 | **Capital Flight Spiral** | Wealthy citizens move assets offshore during decline, accelerating the decline |
 
-```chartjs
-{
-  "type": "line",
-  "data": {
-    "labels": ["1600", "1650", "1700", "1750", "1800", "1850", "1900", "1950", "2000", "2025"],
-    "datasets": [
-      {
-        "label": "Dutch Empire",
-        "data": [5, 9, 10, 7, 4, 2, 1, 1, 1, 1],
-        "borderColor": "#e67e22",
-        "backgroundColor": "rgba(230, 126, 34, 0.1)",
-        "tension": 0.4,
-        "fill": true
-      },
-      {
-        "label": "British Empire",
-        "data": [2, 3, 5, 7, 9, 10, 9, 6, 4, 3],
-        "borderColor": "#2980b9",
-        "backgroundColor": "rgba(41, 128, 185, 0.1)",
-        "tension": 0.4,
-        "fill": true
-      },
-      {
-        "label": "American Empire",
-        "data": [1, 1, 1, 1, 2, 4, 7, 10, 9, 7],
-        "borderColor": "#27ae60",
-        "backgroundColor": "rgba(39, 174, 96, 0.1)",
-        "tension": 0.4,
-        "fill": true
-      },
-      {
-        "label": "Chinese Empire",
-        "data": [6, 5, 4, 3, 2, 1, 1, 2, 6, 8],
-        "borderColor": "#e74c3c",
-        "backgroundColor": "rgba(231, 76, 60, 0.1)",
-        "tension": 0.4,
-        "fill": true
-      }
-    ]
-  },
-  "options": {
-    "plugins": {
-      "title": {
-        "display": true,
-        "text": "Empire Power Over Time (Relative Index)"
-      }
-    },
-    "scales": {
-      "y": {
-        "min": 0,
-        "max": 10,
-        "title": { "display": true, "text": "Relative Power" }
-      },
-      "x": {
-        "title": { "display": true, "text": "Year" }
-      }
-    }
-  }
-}
-```
 
 Each empire follows the same S-curve: a slow rise, a peak lasting roughly a century, and then a decline that overlaps with the next empire's ascent — the Dutch peaked around 1700, the British around 1850, and the American peak may already be behind us as China's curve accelerates upward.
 
@@ -279,31 +219,6 @@ flowchart LR
 
 This flowchart shows the sequential order of determinants — education leads, reserve currency lags — explaining why decline is often invisible until it's far advanced.
 
-```d3
-{
-  "type": "heatmap",
-  "data": {
-    "xLabels": ["Dutch", "British", "American", "Chinese"],
-    "yLabels": ["Education", "Innovation", "Competitiveness", "Economic Output", "Trade", "Military", "Financial Center", "Reserve Currency"],
-    "values": [
-      [4, 5, 7, 8],
-      [3, 5, 8, 7],
-      [4, 4, 8, 9],
-      [3, 4, 9, 8],
-      [3, 3, 7, 9],
-      [2, 3, 10, 7],
-      [3, 4, 9, 5],
-      [2, 3, 10, 2]
-    ]
-  },
-  "options": {
-    "title": "Eight Determinants of Power Across Four Empires (Current Assessment)",
-    "colorScale": ["#fee5d9", "#fcae91", "#fb6a4a", "#de2d26", "#a50f15"],
-    "width": 600,
-    "height": 400
-  }
-}
-```
 
 The heatmap reveals America's dominance in military and reserve currency (lagging indicators) alongside China's strength in competitiveness and trade (leading indicators) — precisely the pattern Dalio warns about, where the most visible measures of power mask the underlying shift already underway.
 
@@ -386,41 +301,6 @@ flowchart LR
 
 This diagram maps the four phases of the long-term debt cycle — showing how each monetary system inevitably evolves from disciplined hard money to undisciplined fiat and eventual collapse.
 
-```chartjs
-{
-  "type": "bar",
-  "data": {
-    "labels": ["Sound Money", "Early Credit Expansion", "Bubble Phase", "Crisis", "Money Printing", "Restructuring"],
-    "datasets": [
-      {
-        "label": "Debt-to-GDP (%)",
-        "data": [30, 60, 100, 150, 200, 120],
-        "backgroundColor": ["#27ae60", "#2ecc71", "#f39c12", "#e67e22", "#e74c3c", "#2980b9"],
-        "borderColor": ["#1e8449", "#27ae60", "#d68910", "#ca6f1e", "#c0392b", "#2471a3"],
-        "borderWidth": 1
-      }
-    ]
-  },
-  "options": {
-    "plugins": {
-      "title": {
-        "display": true,
-        "text": "Stages of the Long-Term Debt Cycle"
-      },
-      "legend": {
-        "display": false
-      }
-    },
-    "scales": {
-      "y": {
-        "title": { "display": true, "text": "Debt-to-GDP Ratio (%)" },
-        "min": 0,
-        "max": 220
-      }
-    }
-  }
-}
-```
 
 The debt-to-GDP ratio climbs steadily through the first four stages, peaks during money printing at roughly 200%, and only falls after painful restructuring — the U.S. currently sits between the Crisis and Money Printing stages with federal debt-to-GDP approaching 130%.
 

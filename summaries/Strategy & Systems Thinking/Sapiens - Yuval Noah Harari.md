@@ -55,61 +55,9 @@ flowchart LR
 
 Each revolution gave Sapiens new powers but also created new forms of suffering — for humans and for every other species on the planet.
 
-```chartjs
-{
-  "type": "line",
-  "data": {
-    "labels": ["70,000 BC", "45,000 BC", "12,000 BC", "5,000 BC", "500 AD", "1500 AD", "1800 AD", "2000 AD"],
-    "datasets": [
-      {
-        "label": "Human Population (millions, log scale)",
-        "data": [0.01, 0.5, 5, 15, 200, 500, 1000, 7000],
-        "borderColor": "#2980b9",
-        "backgroundColor": "rgba(41, 128, 185, 0.1)",
-        "fill": true,
-        "tension": 0.3
-      },
-      {
-        "label": "Large Animal Species Extinct (cumulative)",
-        "data": [0, 50, 100, 120, 130, 150, 200, 500],
-        "borderColor": "#e74c3c",
-        "backgroundColor": "rgba(231, 76, 60, 0.1)",
-        "fill": true,
-        "tension": 0.3
-      }
-    ]
-  },
-  "options": {
-    "plugins": { "title": { "display": true, "text": "Sapiens' Rise and the Ecological Price: Population vs. Extinctions" } },
-    "scales": { "y": { "type": "logarithmic", "title": { "display": true, "text": "Count (log scale)" } } }
-  }
-}
-```
 
 The dual-line chart shows the uncomfortable correlation at the heart of Harari's narrative: every surge in human population corresponds to a wave of megafauna extinction — Sapiens' success has been other species' catastrophe.
 
-```d3
-{
-  "type": "treemap",
-  "data": [
-    { "name": "Money", "category": "Shared Fiction", "value": 25 },
-    { "name": "Nations", "category": "Shared Fiction", "value": 20 },
-    { "name": "Corporations", "category": "Shared Fiction", "value": 18 },
-    { "name": "Human Rights", "category": "Shared Fiction", "value": 15 },
-    { "name": "Religion", "category": "Shared Fiction", "value": 22 },
-    { "name": "Laws & Legal Systems", "category": "Shared Fiction", "value": 16 },
-    { "name": "Gravity", "category": "Objective Reality", "value": 20 },
-    { "name": "DNA", "category": "Objective Reality", "value": 15 },
-    { "name": "Atomic Structure", "category": "Objective Reality", "value": 12 },
-    { "name": "Personal Dreams", "category": "Subjective", "value": 8 },
-    { "name": "Individual Fears", "category": "Subjective", "value": 6 }
-  ],
-  "options": {
-    "title": "Harari's Three Layers of Reality: Objective, Subjective, and Inter-Subjective",
-    "colors": { "Shared Fiction": "#2980b9", "Objective Reality": "#27ae60", "Subjective": "#e67e22" }
-  }
-}
-```
 
 The treemap reveals Harari's most provocative insight: the institutions that organise modern civilisation (money, nations, corporations, human rights) are all inter-subjective fictions — real only because millions believe in them, yet more powerful than the objective realities (gravity, DNA) that exist regardless of belief.
 
@@ -1015,21 +963,6 @@ The vicious circle is self-reinforcing: discrimination creates the very conditio
   - Each transcended local boundaries and connected strangers
   - Each created shared myths that millions could believe in
 
-```chartjs
-{
-  "type": "doughnut",
-  "data": {
-    "labels": ["Money (Universal Trust)", "Empires (Political Unification)", "Universal Religions", "Trade Networks", "Scientific Method", "Shared Legal Systems"],
-    "datasets": [{
-      "data": [25, 22, 20, 15, 10, 8],
-      "backgroundColor": ["#f1c40f", "#e74c3c", "#9b59b6", "#e67e22", "#3498db", "#27ae60"]
-    }]
-  },
-  "options": {
-    "plugins": { "title": { "display": true, "text": "Forces of Global Unification: Harari's Three Unifiers + Supporting Forces" } }
-  }
-}
-```
 
 Money dominates as the most universal unifier because it requires no shared language, religion, or culture — only shared trust in worthless tokens, making it the most versatile inter-subjective fiction in human history.
 

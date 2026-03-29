@@ -131,26 +131,6 @@ Cast illustrates this with a simple mathematical example:
 - <b style="color: #27ae60">Self-improvement on your weaknesses may matter more than self-improvement on your strengths</b>
 - The mathematical logic is unforgiving: no amount of numerator growth can compensate for a large enough denominator
 
-```chartjs
-{
-  "type": "bar",
-  "data": {
-    "labels": ["Baseline", "Add 20 to Right Stuff", "Reduce Derailer by Half"],
-    "datasets": [{
-      "label": "Career Trajectory Score",
-      "data": [20, 25, 40],
-      "backgroundColor": ["#95a5a6", "#3498db", "#27ae60"]
-    }]
-  },
-  "options": {
-    "plugins": {
-      "title": { "display": true, "text": "The Right Stuff Formula — ROI of Fixing Weaknesses vs. Building Strengths" },
-      "subtitle": { "display": true, "text": "Baseline: Right Stuff 80, Wrong Stuff 4 → Trajectory = 20" }
-    },
-    "scales": { "y": { "title": { "display": true, "text": "Career Trajectory (Right/Wrong)" } } }
-  }
-}
-```
 
 The comparison is stark: a massive 25% increase in strengths produces only a 25% improvement in trajectory, while cutting the derailer in half doubles it — the denominator has exponentially more leverage than the numerator.
 
@@ -181,70 +161,9 @@ The formula reveals why reducing a derailer (shrinking the denominator) produces
 
 Cast's research shows that most people carry elements of two or three archetypes, though one typically dominates. Understanding your primary archetype is the first step toward containing it.
 
-```chartjs
-{
-  "type": "radar",
-  "data": {
-    "labels": ["Interpersonal Toxicity", "Delegation Failure", "Change Resistance", "Overspecialisation", "Overcommitment"],
-    "datasets": [
-      {
-        "label": "Captain Fantastic",
-        "data": [95, 30, 25, 20, 35],
-        "borderColor": "#e74c3c",
-        "backgroundColor": "rgba(231, 76, 60, 0.1)"
-      },
-      {
-        "label": "Solo Flier",
-        "data": [35, 95, 30, 40, 50],
-        "borderColor": "#2980b9",
-        "backgroundColor": "rgba(41, 128, 185, 0.1)"
-      },
-      {
-        "label": "Version 1.0",
-        "data": [20, 30, 95, 60, 15],
-        "borderColor": "#f39c12",
-        "backgroundColor": "rgba(243, 156, 18, 0.1)"
-      },
-      {
-        "label": "One-Trick Pony",
-        "data": [15, 25, 55, 95, 20],
-        "borderColor": "#27ae60",
-        "backgroundColor": "rgba(39, 174, 96, 0.1)"
-      },
-      {
-        "label": "Whirling Dervish",
-        "data": [25, 45, 20, 15, 95],
-        "borderColor": "#8e44ad",
-        "backgroundColor": "rgba(142, 68, 173, 0.1)"
-      }
-    ]
-  },
-  "options": {
-    "plugins": { "title": { "display": true, "text": "Five Derailment Archetypes — Derailer Intensity Map" } },
-    "scales": { "r": { "min": 0, "max": 100, "ticks": { "stepSize": 25 } } }
-  }
-}
-```
 
 Each archetype spikes on its primary axis while maintaining moderate levels on secondary axes — most professionals carry elements of two or three, which is why self-diagnosis requires examining the full profile rather than looking for a single match.
 
-```d3
-{
-  "type": "treemap",
-  "data": [
-    { "name": "Captain Fantastic", "category": "Interpersonal", "value": 35, "color": "#e74c3c" },
-    { "name": "Version 1.0", "category": "Adaptability", "value": 25, "color": "#f39c12" },
-    { "name": "Solo Flier", "category": "Delegation", "value": 18, "color": "#2980b9" },
-    { "name": "Whirling Dervish", "category": "Focus", "value": 12, "color": "#8e44ad" },
-    { "name": "One-Trick Pony", "category": "Breadth", "value": 10, "color": "#27ae60" }
-  ],
-  "options": {
-    "title": "Derailment Archetypes — Relative Frequency in Cast's Research",
-    "width": 650,
-    "height": 300
-  }
-}
-```
 
 Captain Fantastic dominates because interpersonal toxicity is the number one derailer across all demographics, industries, and levels — it is also the hardest to self-diagnose because the feedback death spiral ensures the person causing the damage is always the last to know.
 
@@ -763,30 +682,6 @@ flowchart LR
 
 Each transition demands fundamentally different skills — and the behaviours that earned the promotion often become the specific behaviours you need to stop.
 
-```d3
-{
-  "type": "sankey",
-  "data": [
-    { "source": "Managing Self", "target": "Solo Flier Risk", "value": 35 },
-    { "source": "Managing Self", "target": "Success → Managing Others", "value": 65 },
-    { "source": "Success → Managing Others", "target": "Captain Fantastic Risk", "value": 25 },
-    { "source": "Success → Managing Others", "target": "Success → Managing Functions", "value": 40 },
-    { "source": "Success → Managing Functions", "target": "One-Trick Pony Risk", "value": 20 },
-    { "source": "Success → Managing Functions", "target": "Success → Managing BU", "value": 20 },
-    { "source": "Success → Managing BU", "target": "Version 1.0 Risk", "value": 8 },
-    { "source": "Success → Managing BU", "target": "Success → Enterprise", "value": 12 },
-    { "source": "Solo Flier Risk", "target": "Derailment", "value": 20 },
-    { "source": "Captain Fantastic Risk", "target": "Derailment", "value": 15 },
-    { "source": "One-Trick Pony Risk", "target": "Derailment", "value": 12 },
-    { "source": "Version 1.0 Risk", "target": "Derailment", "value": 5 }
-  ],
-  "options": {
-    "title": "Career Transition Funnel — Where Derailment Strikes",
-    "width": 700,
-    "height": 400
-  }
-}
-```
 
 The sankey reveals the brutal attrition: of every 100 professionals who start at the managing-self level, the vast majority are filtered out by derailment at each successive transition, with the Solo Flier trap at the first transition accounting for the single largest cohort of career stalls.
 

@@ -79,9 +79,6 @@ The book's deeper argument is that OKRs are not just a productivity tool but a c
 | **Sufficiency & Necessity Tests** | Every KR must be needed for the Objective, and collectively the KRs must be enough |
 | **Continuous Performance Management** | Replacing annual reviews with ongoing conversations, feedback, and recognition |
 
-```d3
-{"type":"treemap","data":{"name":"OKR System","children":[{"name":"Four Superpowers","children":[{"name":"Focus","value":30},{"name":"Alignment","value":28},{"name":"Tracking","value":25},{"name":"Stretching","value":27}]},{"name":"OKR Types","children":[{"name":"Committed","value":22},{"name":"Aspirational","value":22}]},{"name":"OKR Lifecycle","children":[{"name":"Set","value":15},{"name":"Check In","value":18},{"name":"Score","value":12},{"name":"Reflect","value":14},{"name":"Reset","value":13}]},{"name":"CFR Components","children":[{"name":"Conversations","value":20},{"name":"Feedback","value":18},{"name":"Recognition","value":16}]}]},"options":{"title":"OKR System Architecture — Components and Relative Weight"}}
-```
 
 The treemap reveals that the Four Superpowers and the OKR Lifecycle carry the most structural weight in Doerr's system, while CFRs — though smaller — serve as the human glue that holds the mechanical system together.
 
@@ -215,9 +212,6 @@ flowchart TB
 
 The four superpowers form an interlocking system: focus without tracking decays, alignment without stretch produces mediocrity, and all four require each other to function.
 
-```chartjs
-{"type":"radar","data":{"labels":["Implementation Difficulty","Organizational Impact","Cultural Prerequisite","Leader Dependency","Time to Embed","Scalability"],"datasets":[{"label":"Focus","data":[60,95,50,70,40,90],"borderColor":"#e74c3c","backgroundColor":"rgba(231,76,60,0.15)"},{"label":"Alignment","data":[80,90,75,60,70,85],"borderColor":"#2980b9","backgroundColor":"rgba(41,128,185,0.15)"},{"label":"Tracking","data":[45,80,40,55,30,95],"borderColor":"#27ae60","backgroundColor":"rgba(39,174,96,0.15)"},{"label":"Stretching","data":[70,85,90,80,85,60],"borderColor":"#f39c12","backgroundColor":"rgba(243,156,18,0.15)"}]},"options":{"plugins":{"title":{"display":true,"text":"The Four Superpowers — Comparative Profile"}},"scales":{"r":{"beginAtZero":true,"max":100}}}}
-```
 
 Stretching demands the highest cultural prerequisite (psychological safety) and leader dependency, while Tracking is the easiest to implement but depends on consistent habits. Focus delivers the highest organisational impact but requires the courage to say no.
 
@@ -484,9 +478,6 @@ Alignment is not a one-way cascade — it emerges from the negotiation between t
 | Accountability | Missing triggers investigation | Missing triggers learning |
 | Examples | Product releases, revenue targets, compliance | Gmail's 1GB, Chrome's market dominance, YouTube's billion hours |
 
-```chartjs
-{"type":"bar","data":{"labels":["Expected Score","Acceptable Failure Rate (%)","Resource Certainty (%)","Post-Mortem Frequency","Persistence Across Quarters","Breakthrough Potential"],"datasets":[{"label":"Committed OKRs","data":[100,5,95,90,20,25],"backgroundColor":"#e74c3c"},{"label":"Aspirational OKRs","data":[70,40,50,30,80,90],"backgroundColor":"#2980b9"}]},"options":{"plugins":{"title":{"display":true,"text":"Committed vs Aspirational OKRs — Key Dimensions Compared"}},"scales":{"y":{"beginAtZero":true,"max":100}}}}
-```
 
 The contrast is stark: Committed OKRs demand near-perfect delivery with full resourcing, while Aspirational OKRs trade certainty for breakthrough potential — scoring 70% on a stretch goal delivers more real-world value than 100% on a sandbagged target.
 
@@ -849,9 +840,6 @@ OKRs and CFRs form two halves of a complete system — the numbers tell you wher
 - <b style="color: #e74c3c">OKRs amplify whatever culture already exists</b> — in a healthy culture, they accelerate execution; in a dysfunctional one, they expose the dysfunction
 - The implication is uncomfortable: before deploying OKRs, organisations may need to do the harder work of building psychological safety, establishing trust, and creating genuine executive commitment
 
-```d3
-{"type":"force","data":{"nodes":[{"id":"okrs","label":"OKRs","group":1},{"id":"focus","label":"Focus","group":2},{"id":"alignment","label":"Alignment","group":2},{"id":"tracking","label":"Tracking","group":2},{"id":"stretching","label":"Stretching","group":2},{"id":"cfrs","label":"CFRs","group":3},{"id":"conversations","label":"Conversations","group":3},{"id":"feedback","label":"Feedback","group":3},{"id":"recognition","label":"Recognition","group":3},{"id":"culture","label":"Culture","group":4},{"id":"safety","label":"Psych Safety","group":4},{"id":"trust","label":"Trust","group":4},{"id":"exec","label":"Exec Buy-In","group":4}],"links":[{"source":"okrs","target":"focus"},{"source":"okrs","target":"alignment"},{"source":"okrs","target":"tracking"},{"source":"okrs","target":"stretching"},{"source":"okrs","target":"cfrs"},{"source":"cfrs","target":"conversations"},{"source":"cfrs","target":"feedback"},{"source":"cfrs","target":"recognition"},{"source":"culture","target":"okrs"},{"source":"culture","target":"safety"},{"source":"culture","target":"trust"},{"source":"culture","target":"exec"},{"source":"safety","target":"stretching"},{"source":"trust","target":"alignment"},{"source":"exec","target":"focus"},{"source":"feedback","target":"tracking"}]},"options":{"title":"The OKR Ecosystem — How Superpowers, CFRs, and Culture Connect"}}
-```
 
 The force diagram reveals that Culture sits at the centre of gravity — without psychological safety, trust, and executive buy-in, the mechanical OKR system (superpowers and CFRs) has nothing to anchor itself to.
 
@@ -937,9 +925,6 @@ The force diagram reveals that Culture sits at the centre of gravity — without
 | 0.4–0.6 | Yellow | Made progress but fell short | Analyse what went wrong |
 | 0.0–0.3 | Red | Failed to make significant progress | Post-mortem required |
 
-```chartjs
-{"type":"doughnut","data":{"labels":["Green (0.7–1.0): Delivered","Yellow (0.4–0.6): Progress","Red (0.0–0.3): At Risk","Sweet Spot (0.7): Ideal Aspirational"],"datasets":[{"data":[35,25,15,25],"backgroundColor":["#27ae60","#f39c12","#e74c3c","#2980b9"]}]},"options":{"plugins":{"title":{"display":true,"text":"OKR Scoring Distribution — Healthy Portfolio Balance"}}}}
-```
 
 A healthy OKR portfolio should show roughly a third of goals in green, with aspirational OKRs clustering around the 0.7 sweet spot — if everything is green, the organisation is sandbagging; if everything is red, the goals are unrealistic or the system is broken.
 

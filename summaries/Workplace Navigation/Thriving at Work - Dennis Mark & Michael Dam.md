@@ -76,42 +76,6 @@ flowchart LR
 
 The formula's implication is stark: technical excellence without soft skills and political awareness leaves you invisible to the people who control advancement, while even moderate technical competence combined with strong interpersonal skills and political navigation produces disproportionate career returns.
 
-```chartjs
-{
-  "type": "bar",
-  "data": {
-    "labels": ["Technical Star (no soft skills)", "Political Operator (no expertise)", "Balanced Professional", "Full Trifecta"],
-    "datasets": [
-      {
-        "label": "Technical Competence",
-        "data": [95, 40, 70, 85],
-        "backgroundColor": "rgba(41, 128, 185, 0.75)"
-      },
-      {
-        "label": "Soft Skills",
-        "data": [15, 85, 70, 80],
-        "backgroundColor": "rgba(39, 174, 96, 0.75)"
-      },
-      {
-        "label": "Political Awareness",
-        "data": [10, 90, 65, 80],
-        "backgroundColor": "rgba(231, 76, 60, 0.75)"
-      },
-      {
-        "label": "Career Advancement Score",
-        "data": [25, 55, 70, 90],
-        "backgroundColor": "rgba(243, 156, 18, 0.85)",
-        "borderWidth": 2,
-        "borderColor": "#f39c12"
-      }
-    ]
-  },
-  "options": {
-    "plugins": { "title": { "display": true, "text": "Career Success Formula — Why Balance Beats Brilliance" } },
-    "scales": { "y": { "max": 100, "title": { "display": true, "text": "Score (0-100)" } } }
-  }
-}
-```
 
 The Technical Star's paradox is visible: the highest technical score produces the lowest career advancement because the other two pillars are near-zero — confirming the authors' thesis that schools teach the variable that matters least for promotion decisions.
 
@@ -555,38 +519,6 @@ The triangle's key insight:
 
 The strongest careers are built by deliberately developing all three elements simultaneously rather than hoping that expertise alone will be enough.
 
-```chartjs
-{
-  "type": "radar",
-  "data": {
-    "labels": ["Credibility", "Visibility", "Expertise", "Influence", "Advocacy Received"],
-    "datasets": [
-      {
-        "label": "Dam (Before Calibration Loss)",
-        "data": [85, 20, 90, 25, 15],
-        "borderColor": "#e74c3c",
-        "backgroundColor": "rgba(231, 76, 60, 0.1)"
-      },
-      {
-        "label": "HP Colleague (Best-Known Performer)",
-        "data": [60, 95, 55, 85, 80],
-        "borderColor": "#27ae60",
-        "backgroundColor": "rgba(39, 174, 96, 0.1)"
-      },
-      {
-        "label": "Dennis Mark (Dashboard Expert)",
-        "data": [85, 80, 95, 85, 90],
-        "borderColor": "#2980b9",
-        "backgroundColor": "rgba(41, 128, 185, 0.1)"
-      }
-    ]
-  },
-  "options": {
-    "plugins": { "title": { "display": true, "text": "Visibility-Credibility-Expertise — Three Real Profiles" } },
-    "scales": { "r": { "min": 0, "max": 100, "ticks": { "stepSize": 25 } } }
-  }
-}
-```
 
 Dam's pre-loss profile (red) reveals the Martyr pattern: exceptional credibility and expertise collapsed by near-zero visibility — invisible excellence is indistinguishable from mediocrity in a calibration meeting.
 
@@ -627,28 +559,6 @@ The common counter-strategy across all types:
 - Escalate through proper channels when necessary
 - <b style="color: #e74c3c">Engaging emotionally with any of these types is almost always counterproductive</b> — the person causing the problem is rarely the person who changes, so the goal is containment and self-protection, not reform
 
-```d3
-{
-  "type": "treemap",
-  "data": [
-    { "name": "Hidden Dragon", "category": "Covert", "value": 20, "color": "#c0392b" },
-    { "name": "Bully", "category": "Aggressive", "value": 18, "color": "#e74c3c" },
-    { "name": "Gossiper", "category": "Covert", "value": 15, "color": "#d35400" },
-    { "name": "Exploiter", "category": "Manipulative", "value": 12, "color": "#e67e22" },
-    { "name": "Party Pooper", "category": "Obstructive", "value": 10, "color": "#f39c12" },
-    { "name": "Bragger", "category": "Self-Serving", "value": 8, "color": "#2980b9" },
-    { "name": "One-Upper", "category": "Self-Serving", "value": 5, "color": "#3498db" },
-    { "name": "Downer", "category": "Draining", "value": 5, "color": "#8e44ad" },
-    { "name": "Avoider", "category": "Passive", "value": 4, "color": "#95a5a6" },
-    { "name": "Yes Boss Only", "category": "Passive", "value": 3, "color": "#bdc3c7" }
-  ],
-  "options": {
-    "title": "Difficult Coworker Archetypes — Relative Danger Level",
-    "width": 700,
-    "height": 350
-  }
-}
-```
 
 The Hidden Dragon dominates because covert sabotage is the hardest to detect and the most damaging — by the time you connect the pattern of public agreement to private obstruction, months of damage may already be done.
 
@@ -986,36 +896,6 @@ The qualifier:
 | **The Absent Manager** | Physically or mentally checked out | Take control of your own visibility; seek advocates elsewhere |
 | **The Wind-Blower** | Changes direction with every new trend | Document agreed priorities; create friction against impulsive changes |
 
-```d3
-{
-  "type": "heatmap",
-  "data": [
-    { "source": "Micromanager", "target": "Career Damage", "value": 40 },
-    { "source": "Micromanager", "target": "Adaptation Difficulty", "value": 50 },
-    { "source": "Micromanager", "target": "Exit Urgency", "value": 20 },
-    { "source": "Clueless Harmless", "target": "Career Damage", "value": 25 },
-    { "source": "Clueless Harmless", "target": "Adaptation Difficulty", "value": 30 },
-    { "source": "Clueless Harmless", "target": "Exit Urgency", "value": 10 },
-    { "source": "Clueless Dangerous", "target": "Career Damage", "value": 80 },
-    { "source": "Clueless Dangerous", "target": "Adaptation Difficulty", "value": 75 },
-    { "source": "Clueless Dangerous", "target": "Exit Urgency", "value": 65 },
-    { "source": "Absent Manager", "target": "Career Damage", "value": 55 },
-    { "source": "Absent Manager", "target": "Adaptation Difficulty", "value": 35 },
-    { "source": "Absent Manager", "target": "Exit Urgency", "value": 30 },
-    { "source": "Wind-Blower", "target": "Career Damage", "value": 50 },
-    { "source": "Wind-Blower", "target": "Adaptation Difficulty", "value": 60 },
-    { "source": "Wind-Blower", "target": "Exit Urgency", "value": 35 }
-  ],
-  "options": {
-    "title": "Manager Types — Risk Assessment Matrix",
-    "xLabel": "Risk Dimension",
-    "yLabel": "Manager Type",
-    "width": 600,
-    "height": 350,
-    "colorScheme": "reds"
-  }
-}
-```
 
 The Clueless and Dangerous type lights up across all three dimensions because they are the only manager type where bad decisions actively damage your reputation — the others are frustrating but manageable, while this one requires either indirect steering or structural exit.
 
@@ -1159,22 +1039,6 @@ Practical advice on using HR:
 
 The bottom-right quadrant is where most careers stall — urgent trivia crowds out the work that actually changes your trajectory.
 
-```chartjs
-{
-  "type": "doughnut",
-  "data": {
-    "labels": ["Urgent + Important (Crises)", "Important + Not Urgent (Strategic)", "Urgent + Not Important (Reactive)", "Not Urgent + Not Important (Waste)"],
-    "datasets": [{
-      "label": "Typical Professional",
-      "data": [20, 10, 55, 15],
-      "backgroundColor": ["#e74c3c", "#27ae60", "#f39c12", "#95a5a6"]
-    }]
-  },
-  "options": {
-    "plugins": { "title": { "display": true, "text": "Eisenhower Matrix — Where Most Professionals Actually Spend Time" } }
-  }
-}
-```
 
 The green wedge (Important + Not Urgent) is the smallest yet contains all the trajectory-changing work — networking, strategic thinking, skill development — while the yellow wedge (urgent trivia) dominates most professionals' days, crowding out the work that compounds over years.
 

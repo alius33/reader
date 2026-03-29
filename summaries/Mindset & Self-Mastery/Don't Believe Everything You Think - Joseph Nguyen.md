@@ -72,44 +72,6 @@ The critical difference: in the inside-out model, there is an intermediary step 
 | **The Truth About Control** | Trying to control thoughts is itself more thinking — the solution is letting go, not gripping tighter |
 | **Living Without Thinking** | Not mindlessness, but a state of present awareness where action flows from clarity rather than anxiety |
 
-```chartjs
-{
-  "type": "radar",
-  "data": {
-    "labels": ["Inner Peace", "Clarity", "Anxiety Level", "Need for Control", "Presence", "Reactivity", "Self-Acceptance", "Creative Flow"],
-    "datasets": [
-      {
-        "label": "Thinking Approach",
-        "data": [2, 3, 9, 8, 2, 9, 2, 3],
-        "backgroundColor": "rgba(231, 76, 60, 0.2)",
-        "borderColor": "#e74c3c",
-        "pointBackgroundColor": "#e74c3c"
-      },
-      {
-        "label": "Awareness Approach",
-        "data": [9, 9, 2, 2, 9, 2, 9, 8],
-        "backgroundColor": "rgba(39, 174, 96, 0.2)",
-        "borderColor": "#27ae60",
-        "pointBackgroundColor": "#27ae60"
-      }
-    ]
-  },
-  "options": {
-    "plugins": {
-      "title": {
-        "display": true,
-        "text": "Thinking vs Awareness: Two Modes of Experiencing Life"
-      }
-    },
-    "scales": {
-      "r": {
-        "beginAtZero": true,
-        "max": 10
-      }
-    }
-  }
-}
-```
 
 The radar chart reveals a near-perfect inversion: the thinking approach scores highest on anxiety, control, and reactivity — the very dimensions where awareness scores lowest — demonstrating Nguyen's claim that the two modes produce opposite experiential signatures.
 
@@ -266,55 +228,6 @@ flowchart TD
 
 This is the trap Nguyen describes — a closed loop with no exit as long as thinking is the only tool being used. The exit is not better thinking but stepping outside the loop entirely.
 
-```d3
-{
-  "type": "treemap",
-  "data": {
-    "name": "Nguyen's Framework",
-    "children": [
-      {
-        "name": "Root Cause",
-        "children": [
-          {"name": "Thinking Creates Suffering", "value": 30},
-          {"name": "Events Are Neutral", "value": 20},
-          {"name": "Stories Produce Pain", "value": 18},
-          {"name": "Believing Thoughts", "value": 22}
-        ]
-      },
-      {
-        "name": "Paradigm Shift",
-        "children": [
-          {"name": "Inside-Out Model", "value": 25},
-          {"name": "Outside-In Illusion", "value": 20},
-          {"name": "Feeling as Compass", "value": 22},
-          {"name": "Awareness vs Thought", "value": 28}
-        ]
-      },
-      {
-        "name": "Practice",
-        "children": [
-          {"name": "Non-Thinking", "value": 25},
-          {"name": "Noticing Thoughts", "value": 20},
-          {"name": "Releasing the Grip", "value": 18},
-          {"name": "Functional vs Compulsive", "value": 15}
-        ]
-      },
-      {
-        "name": "Natural State",
-        "children": [
-          {"name": "Peace & Clarity", "value": 28},
-          {"name": "Innate Wisdom", "value": 25},
-          {"name": "Love & Joy", "value": 22},
-          {"name": "Present Moment", "value": 20}
-        ]
-      }
-    ]
-  },
-  "options": {
-    "title": "Conceptual Architecture of Don't Believe Everything You Think"
-  }
-}
-```
 
 The treemap shows that Nguyen's book organizes around four pillars of roughly equal weight — diagnosing the root cause, shifting the paradigm, developing a practice, and uncovering the natural state — with "Awareness vs Thought" and "Peace & Clarity" as the two largest conceptual blocks.
 
@@ -397,45 +310,6 @@ The treemap shows that Nguyen's book organizes around four pillars of roughly eq
 | Peace, joy, love, flow | Thinking has quieted | You are in your natural state — nothing to do |
 | Curiosity, creativity, wonder | Awareness is engaged, not compulsive thinking | Follow the energy — this is wisdom, not noise |
 
-```chartjs
-{
-  "type": "doughnut",
-  "data": {
-    "labels": [
-      "Thinking About the Future",
-      "Thinking About the Past",
-      "Thinking About Self vs Others",
-      "Thinking About Self-Worth",
-      "Thinking About Control",
-      "Thinking About What Others Think"
-    ],
-    "datasets": [
-      {
-        "data": [28, 24, 18, 15, 9, 6],
-        "backgroundColor": [
-          "#e74c3c",
-          "#c0392b",
-          "#e67e22",
-          "#f39c12",
-          "#d35400",
-          "#e74c3c"
-        ]
-      }
-    ]
-  },
-  "options": {
-    "plugins": {
-      "title": {
-        "display": true,
-        "text": "Sources of Psychological Suffering (All Are Thinking)"
-      },
-      "legend": {
-        "position": "right"
-      }
-    }
-  }
-}
-```
 
 Every slice of the doughnut is a form of thinking — future-oriented anxiety and past-oriented regret together account for over half of all psychological suffering, reinforcing Nguyen's point that the present moment, experienced without thought, is almost always fine.
 

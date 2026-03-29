@@ -74,43 +74,6 @@ The diagram above captures the entire operating system of Epictetus's philosophy
 | **The Banquet Metaphor** | Take what is offered moderately; do not grab or clutch |
 | **Reserve Clause** | "I will do X, fate permitting" — pursue outcomes without demanding them |
 
-```d3
-{
-  "type": "force",
-  "data": {
-    "nodes": [
-      { "id": "Dichotomy of Control", "group": 1 },
-      { "id": "Prohairesis", "group": 1 },
-      { "id": "Prosoche", "group": 2 },
-      { "id": "Discipline of Desire", "group": 3 },
-      { "id": "Discipline of Action", "group": 3 },
-      { "id": "Discipline of Assent", "group": 3 },
-      { "id": "Role Ethics", "group": 4 },
-      { "id": "Reserve Clause", "group": 4 },
-      { "id": "Impressions", "group": 2 },
-      { "id": "Ataraxia", "group": 5 }
-    ],
-    "links": [
-      { "source": "Dichotomy of Control", "target": "Prohairesis", "value": 5 },
-      { "source": "Dichotomy of Control", "target": "Discipline of Desire", "value": 4 },
-      { "source": "Dichotomy of Control", "target": "Discipline of Action", "value": 4 },
-      { "source": "Dichotomy of Control", "target": "Discipline of Assent", "value": 4 },
-      { "source": "Prohairesis", "target": "Prosoche", "value": 3 },
-      { "source": "Prohairesis", "target": "Impressions", "value": 3 },
-      { "source": "Impressions", "target": "Discipline of Assent", "value": 4 },
-      { "source": "Discipline of Action", "target": "Role Ethics", "value": 3 },
-      { "source": "Discipline of Action", "target": "Reserve Clause", "value": 3 },
-      { "source": "Discipline of Desire", "target": "Ataraxia", "value": 4 },
-      { "source": "Discipline of Action", "target": "Ataraxia", "value": 3 },
-      { "source": "Discipline of Assent", "target": "Ataraxia", "value": 3 },
-      { "source": "Prosoche", "target": "Discipline of Assent", "value": 2 }
-    ]
-  },
-  "options": {
-    "title": "Epictetus's Philosophical System — Concept Network"
-  }
-}
-```
 
 The force diagram reveals how the Dichotomy of Control sits at the gravitational centre of Epictetus's system — every other concept either flows from it or feeds back into the ultimate goal of ataraxia (freedom from disturbance).
 
@@ -137,47 +100,6 @@ The logic is relentless:
 > [!tip] Core Insight
 > Freedom is not the absence of constraints on your body. Freedom is the absence of constraints on your will. A slave with a trained prohairesis is freer than an emperor with an untrained one.
 
-```chartjs
-{
-  "type": "doughnut",
-  "data": {
-    "labels": [
-      "Judgments (Up to Us)",
-      "Desires (Up to Us)",
-      "Aversions (Up to Us)",
-      "Impulses (Up to Us)",
-      "Body & Health (Not Up to Us)",
-      "Property & Wealth (Not Up to Us)",
-      "Reputation (Not Up to Us)",
-      "Other People (Not Up to Us)",
-      "Political Office (Not Up to Us)",
-      "Death (Not Up to Us)"
-    ],
-    "datasets": [
-      {
-        "data": [15, 15, 10, 10, 10, 8, 8, 8, 8, 8],
-        "backgroundColor": [
-          "#27ae60", "#2ecc71", "#1abc9c", "#16a085",
-          "#e74c3c", "#c0392b", "#d35400", "#e67e22", "#f39c12", "#95a5a6"
-        ],
-        "borderWidth": 2,
-        "borderColor": "#ffffff"
-      }
-    ]
-  },
-  "options": {
-    "plugins": {
-      "title": {
-        "display": true,
-        "text": "The Dichotomy of Control — What Is and Is Not Up to Us"
-      },
-      "legend": {
-        "position": "right"
-      }
-    }
-  }
-}
-```
 
 The doughnut reveals a striking asymmetry at the heart of Stoic practice: only four categories (shown in green) are truly within your power, yet these four — judgments, desires, aversions, and impulses — are the only things that determine your happiness, while the six external categories (shown in red/orange) that most people obsess over are entirely outside their control.
 
@@ -362,54 +284,6 @@ flowchart TD
 
 These three disciplines form the complete Stoic training programme — master them in sequence.
 
-```chartjs
-{
-  "type": "radar",
-  "data": {
-    "labels": ["Difficulty", "Impact on Daily Life", "Daily Practice Required", "Mastery Time (Years)", "Emotional Demand"],
-    "datasets": [
-      {
-        "label": "Discipline of Desire",
-        "data": [8, 10, 9, 7, 10],
-        "backgroundColor": "rgba(39, 174, 96, 0.15)",
-        "borderColor": "#27ae60",
-        "pointBackgroundColor": "#27ae60"
-      },
-      {
-        "label": "Discipline of Action",
-        "data": [6, 8, 7, 5, 6],
-        "backgroundColor": "rgba(231, 184, 0, 0.15)",
-        "borderColor": "#e7b800",
-        "pointBackgroundColor": "#e7b800"
-      },
-      {
-        "label": "Discipline of Assent",
-        "data": [10, 7, 10, 9, 5],
-        "backgroundColor": "rgba(231, 76, 60, 0.15)",
-        "borderColor": "#e74c3c",
-        "pointBackgroundColor": "#e74c3c"
-      }
-    ]
-  },
-  "options": {
-    "plugins": {
-      "title": {
-        "display": true,
-        "text": "The Three Disciplines — Training Profile Comparison"
-      }
-    },
-    "scales": {
-      "r": {
-        "beginAtZero": true,
-        "max": 10,
-        "ticks": {
-          "stepSize": 2
-        }
-      }
-    }
-  }
-}
-```
 
 The Discipline of Desire is the emotional foundation — hardest to feel but most transformative for daily life — while the Discipline of Assent demands the greatest intellectual rigour and longest mastery time, explaining why Epictetus insists students tackle them in sequence rather than jumping to the most intellectually appealing one.
 

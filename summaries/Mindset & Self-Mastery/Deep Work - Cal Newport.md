@@ -75,36 +75,6 @@ This diagram captures Newport's core thesis: the collision of increasing value a
 
 ---
 
-```d3
-{
-  "type": "treemap",
-  "data": {
-    "name": "Deep Work",
-    "children": [
-      {
-        "name": "Part 1: The Idea",
-        "children": [
-          { "name": "Valuable", "value": 30 },
-          { "name": "Rare", "value": 25 },
-          { "name": "Meaningful", "value": 25 }
-        ]
-      },
-      {
-        "name": "Part 2: The Rules",
-        "children": [
-          { "name": "Work Deeply", "value": 35 },
-          { "name": "Embrace Boredom", "value": 20 },
-          { "name": "Quit Social Media", "value": 20 },
-          { "name": "Drain the Shallows", "value": 25 }
-        ]
-      }
-    ]
-  },
-  "options": {
-    "title": "Deep Work — Book Structure by Content Weight"
-  }
-}
-```
 
 Newport's book splits into two halves of roughly equal weight: Part 1 builds the case for why deep work matters (valuable, rare, meaningful), while Part 2's four rules provide the practical system for achieving it — with "Work Deeply" receiving the most detailed treatment.
 
@@ -385,61 +355,6 @@ Newport identifies four distinct approaches to scheduling deep work. Each suits 
 
 <b style="color: #2980b9">The four philosophies form a spectrum from most to least isolation</b> — the monastic philosophy requires near-total withdrawal from the world, while the journalistic philosophy requires none. Most people will find the rhythmic or bimodal philosophy most practical.
 
-```chartjs
-{
-  "type": "radar",
-  "data": {
-    "labels": ["Isolation", "Flexibility", "Consistency", "Intensity", "Accessibility"],
-    "datasets": [
-      {
-        "label": "Monastic",
-        "data": [10, 2, 9, 10, 1],
-        "backgroundColor": "rgba(41, 128, 185, 0.15)",
-        "borderColor": "#2980b9",
-        "pointBackgroundColor": "#2980b9"
-      },
-      {
-        "label": "Bimodal",
-        "data": [7, 6, 5, 8, 5],
-        "backgroundColor": "rgba(39, 174, 96, 0.15)",
-        "borderColor": "#27ae60",
-        "pointBackgroundColor": "#27ae60"
-      },
-      {
-        "label": "Rhythmic",
-        "data": [4, 4, 10, 5, 7],
-        "backgroundColor": "rgba(243, 156, 18, 0.15)",
-        "borderColor": "#f39c12",
-        "pointBackgroundColor": "#f39c12"
-      },
-      {
-        "label": "Journalistic",
-        "data": [2, 10, 3, 6, 9],
-        "backgroundColor": "rgba(231, 76, 60, 0.15)",
-        "borderColor": "#e74c3c",
-        "pointBackgroundColor": "#e74c3c"
-      }
-    ]
-  },
-  "options": {
-    "plugins": {
-      "title": {
-        "display": true,
-        "text": "The Four Deep Work Philosophies Compared"
-      }
-    },
-    "scales": {
-      "r": {
-        "beginAtZero": true,
-        "max": 10,
-        "ticks": {
-          "stepSize": 2
-        }
-      }
-    }
-  }
-}
-```
 
 The monastic philosophy maximises isolation and intensity at the cost of all accessibility, while the journalistic approach inverts this trade-off entirely — the rhythmic philosophy offers the most balanced profile for most knowledge workers.
 
@@ -1020,47 +935,6 @@ Newport's responses share a common structure: most objections assume the current
   - He stops working at 5:30pm and does not check email until the next morning
   - This schedule produces a research output that is two to three times higher than the departmental average
 
-```chartjs
-{
-  "type": "bar",
-  "data": {
-    "labels": ["Deep Work", "Shallow Work", "Meetings", "Email & Slack", "Breaks & Lunch", "Commute"],
-    "datasets": [
-      {
-        "label": "Typical Knowledge Worker (hours)",
-        "data": [1.5, 2.5, 2.0, 2.5, 1.0, 1.0],
-        "backgroundColor": "rgba(231, 76, 60, 0.7)",
-        "borderColor": "#e74c3c",
-        "borderWidth": 1
-      },
-      {
-        "label": "Deep Worker — Rhythmic (hours)",
-        "data": [6.0, 1.0, 0.5, 1.0, 1.0, 1.0],
-        "backgroundColor": "rgba(39, 174, 96, 0.7)",
-        "borderColor": "#27ae60",
-        "borderWidth": 1
-      }
-    ]
-  },
-  "options": {
-    "plugins": {
-      "title": {
-        "display": true,
-        "text": "Daily Time Allocation: Typical vs Deep Worker"
-      }
-    },
-    "scales": {
-      "y": {
-        "beginAtZero": true,
-        "title": {
-          "display": true,
-          "text": "Hours"
-        }
-      }
-    }
-  }
-}
-```
 
 The deep worker achieves four times more concentrated work (6 hours vs 1.5) by compressing shallow obligations into tight batches — the total workday length is similar, but the composition is radically different.
 

@@ -125,49 +125,6 @@ flowchart LR
 
 The year flows as a single arc: first you learn to see clearly, then you learn to act rightly, then you learn to accept what remains beyond your control.
 
-```d3
-{
-  "type": "treemap",
-  "data": {
-    "name": "The Daily Stoic — Year Structure",
-    "children": [
-      {
-        "name": "Perception (Jan–Apr)",
-        "children": [
-          { "name": "January: Clarity", "value": 31 },
-          { "name": "February: Passions & Desires", "value": 28 },
-          { "name": "March: Awareness", "value": 31 },
-          { "name": "April: Unbiased Thought", "value": 30 }
-        ]
-      },
-      {
-        "name": "Action (May–Aug)",
-        "children": [
-          { "name": "May: Right Action", "value": 31 },
-          { "name": "June: Problem Solving", "value": 30 },
-          { "name": "July: Duty", "value": 31 },
-          { "name": "August: Pragmatism", "value": 31 }
-        ]
-      },
-      {
-        "name": "Will (Sep–Dec)",
-        "children": [
-          { "name": "September: Fortitude", "value": 30 },
-          { "name": "October: Virtue & Kindness", "value": 31 },
-          { "name": "November: Acceptance", "value": 30 },
-          { "name": "December: Mortality", "value": 31 }
-        ]
-      }
-    ]
-  },
-  "options": {
-    "title": "12 Monthly Themes Across the Three Stoic Disciplines",
-    "colorScheme": ["#3498db", "#27ae60", "#8e44ad"],
-    "width": 700,
-    "height": 400
-  }
-}
-```
 
 The treemap reveals the book's hidden curriculum: each discipline receives exactly four months and roughly equal days, ensuring the reader builds perception, action, and will in balanced proportion across the year.
 
@@ -269,56 +226,6 @@ flowchart TD
 
 Three radically different lives — emperor, senator, slave — converging on the same conclusions about how to live well.
 
-```chartjs
-{
-  "type": "radar",
-  "data": {
-    "labels": ["Political Power", "Material Wealth", "Hardship Endured", "Volume of Surviving Text", "Practical Advice", "Theoretical Depth"],
-    "datasets": [
-      {
-        "label": "Marcus Aurelius (Emperor)",
-        "data": [10, 10, 6, 4, 7, 8],
-        "backgroundColor": "rgba(142, 68, 173, 0.2)",
-        "borderColor": "#8e44ad",
-        "borderWidth": 2,
-        "pointBackgroundColor": "#8e44ad"
-      },
-      {
-        "label": "Seneca (Senator)",
-        "data": [7, 9, 7, 9, 9, 7],
-        "backgroundColor": "rgba(41, 128, 185, 0.2)",
-        "borderColor": "#2980b9",
-        "borderWidth": 2,
-        "pointBackgroundColor": "#2980b9"
-      },
-      {
-        "label": "Epictetus (Former Slave)",
-        "data": [1, 1, 10, 6, 10, 9],
-        "backgroundColor": "rgba(231, 76, 60, 0.2)",
-        "borderColor": "#e74c3c",
-        "borderWidth": 2,
-        "pointBackgroundColor": "#e74c3c"
-      }
-    ]
-  },
-  "options": {
-    "plugins": {
-      "title": {
-        "display": true,
-        "text": "The Three Stoic Masters — A Comparative Profile",
-        "font": { "size": 16 }
-      }
-    },
-    "scales": {
-      "r": {
-        "beginAtZero": true,
-        "max": 10,
-        "ticks": { "stepSize": 2 }
-      }
-    }
-  }
-}
-```
 
 Epictetus scored highest on hardship and practical advice precisely because his philosophy was forged in slavery — the less you possess externally, the more fiercely you develop what is internal.
 
@@ -418,46 +325,6 @@ The dichotomy of control also operates at a subtler level than most people reali
 - Epictetus's instruction was radical: treat everything outside your direct will as if it were someone else's business entirely
 - This sounds extreme until you observe how much suffering comes from trying to control other people's opinions, the economy, or the weather
 
-```chartjs
-{
-  "type": "bar",
-  "data": {
-    "labels": ["Your Judgments", "Your Effort", "Your Intentions", "Your Response", "Others' Opinions", "The Economy", "Health Outcomes", "The Past", "The Weather", "Others' Actions"],
-    "datasets": [
-      {
-        "label": "In Your Control",
-        "data": [10, 10, 10, 10, 0, 0, 0, 0, 0, 0],
-        "backgroundColor": "rgba(39, 174, 96, 0.7)",
-        "borderColor": "#27ae60",
-        "borderWidth": 1
-      },
-      {
-        "label": "Not In Your Control",
-        "data": [0, 0, 0, 0, 10, 10, 10, 10, 10, 10],
-        "backgroundColor": "rgba(231, 76, 60, 0.7)",
-        "borderColor": "#e74c3c",
-        "borderWidth": 1
-      }
-    ]
-  },
-  "options": {
-    "plugins": {
-      "title": {
-        "display": true,
-        "text": "The Dichotomy of Control — Epictetus's Master Distinction",
-        "font": { "size": 15 }
-      }
-    },
-    "indexAxis": "y",
-    "scales": {
-      "x": {
-        "display": false,
-        "max": 10
-      }
-    }
-  }
-}
-```
 
 The sharp binary split is the point: Epictetus insisted there is no middle ground — you either direct energy toward what you control (green) or waste it on what you cannot (red), and the ratio of green to red in your daily attention determines your peace of mind.
 
@@ -2102,54 +1969,6 @@ The daily Stoic cycle is a loop: morning preparation, daytime application, eveni
 | The Evening Review | All three | Daily calibration and growth |
 | Negative Visualisation | Perception + Will | Ingratitude, entitlement |
 
-```chartjs
-{
-  "type": "polarArea",
-  "data": {
-    "labels": ["Morning Reflection", "Evening Review", "Memento Mori", "Premeditatio Malorum", "Journaling", "Voluntary Discomfort"],
-    "datasets": [
-      {
-        "data": [9, 8, 10, 7, 6, 5],
-        "backgroundColor": [
-          "rgba(52, 152, 219, 0.6)",
-          "rgba(142, 68, 173, 0.6)",
-          "rgba(44, 62, 80, 0.7)",
-          "rgba(231, 76, 60, 0.6)",
-          "rgba(39, 174, 96, 0.6)",
-          "rgba(230, 126, 34, 0.6)"
-        ],
-        "borderColor": [
-          "#3498db",
-          "#8e44ad",
-          "#2c3e50",
-          "#e74c3c",
-          "#27ae60",
-          "#e67e22"
-        ],
-        "borderWidth": 2
-      }
-    ]
-  },
-  "options": {
-    "plugins": {
-      "title": {
-        "display": true,
-        "text": "Core Stoic Practices — Emphasis Level in The Daily Stoic (1–10)",
-        "font": { "size": 15 }
-      },
-      "legend": {
-        "position": "right"
-      }
-    },
-    "scales": {
-      "r": {
-        "beginAtZero": true,
-        "max": 10
-      }
-    }
-  }
-}
-```
 
 Memento mori and morning reflection dominate the practice because Holiday, like the ancient Stoics, treats death-awareness and daily preparation as the two anchors around which every other exercise orbits.
 

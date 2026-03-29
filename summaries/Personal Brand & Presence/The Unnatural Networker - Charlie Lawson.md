@@ -73,9 +73,6 @@ This is not a motivational argument:
 | **Strong Contact Networks** | Structured, recurring groups outperform casual events because VCP needs continuity |
 | **Congruence** | Dress and presentation must match your professional identity to avoid trust erosion |
 
-```chartjs
-{"type":"radar","data":{"labels":["Preparation","Body Language Reading","Conversation Skills","Follow-Up Discipline","One-to-One Depth","Storytelling","Specificity of Ask"],"datasets":[{"label":"Typical Networker","data":[4,3,6,3,4,3,2],"backgroundColor":"rgba(231,76,60,0.2)","borderColor":"#e74c3c"},{"label":"Effective Networker","data":[8,7,7,9,8,8,9],"backgroundColor":"rgba(39,174,96,0.2)","borderColor":"#27ae60"}]},"options":{"plugins":{"title":{"display":true,"text":"Networking Effectiveness Profile"}},"scales":{"r":{"beginAtZero":true,"max":10}}}}
-```
 
 The biggest gaps between typical and effective networkers are in follow-up discipline and specificity of ask — the two skills most people neglect because they seem mundane compared to charisma.
 
@@ -216,9 +213,6 @@ flowchart LR
 
 Every relationship must pass through all three phases sequentially — attempting to skip from Visibility to Profitability is the classic networking failure.
 
-```d3
-{"type":"heatmap","data":{"xLabels":["Visibility","Credibility","Profitability"],"yLabels":["Events","One-to-Ones","Online Posting","Follow-Up","Referral Giving","Storytelling"],"values":[[9,3,1],[4,9,7],[8,2,1],[3,8,5],[2,6,9],[5,7,6]]},"options":{"title":"VCP Progress by Activity Type"}}
-```
 
 Events drive visibility but barely move credibility; one-to-ones and follow-up are the engines of trust; and referral giving is the primary path to profitability — showing why most networkers plateau at visibility.
 
@@ -311,9 +305,6 @@ The Referral Confidence Curve is not linear — it maps the VCP progression over
 
 The timeline is not fixed — it depends on how many positive interactions you accumulate and how reliably you follow through on commitments.
 
-```chartjs
-{"type":"bar","data":{"labels":["Month 1","Month 2","Month 3","Month 4","Month 5","Month 6","Month 7","Month 8","Month 9","Month 10","Month 11","Month 12"],"datasets":[{"label":"Low Risk Referrals","data":[2,5,9,9,9,9,9,9,9,9,9,9],"backgroundColor":"#27ae60"},{"label":"Medium Risk Referrals","data":[0,1,2,4,7,9,9,9,9,9,9,9],"backgroundColor":"#f39c12"},{"label":"High Risk Referrals","data":[0,0,0,1,1,2,3,5,7,8,9,9],"backgroundColor":"#e74c3c"}]},"options":{"plugins":{"title":{"display":true,"text":"Referral Confidence Curve Timeline"}},"scales":{"y":{"beginAtZero":true,"max":10,"title":{"display":true,"text":"Trust Level"}}}}}
-```
 
 Low-risk referrals (florists, printers) reach full confidence in about three months, but high-risk referrals (financial advisors, solicitors) take six to twelve months — explaining why most people quit networking before the highest-value referrals ever materialise.
 
@@ -938,9 +929,6 @@ flowchart TD
 
 The Fishing Net provides a systematic triage for every contact — invest deeply in the few, maintain the many, and exit the draining.
 
-```d3
-{"type":"treemap","data":{"name":"Networking Toolkit","children":[{"name":"Preparation","children":[{"name":"Goal Setting","value":25},{"name":"Room Research","value":20},{"name":"Dress & Congruence","value":15},{"name":"Elevator Pitch","value":15}]},{"name":"Room Work","children":[{"name":"Body Language Reading","value":25},{"name":"Host Mindset","value":30},{"name":"Conversation Joining","value":20},{"name":"Graceful Exits","value":15}]},{"name":"Deepening","children":[{"name":"One-to-Ones","value":35},{"name":"Storytelling","value":25},{"name":"Money Funnel","value":30},{"name":"Tier Escalation","value":20}]},{"name":"Follow-Up","children":[{"name":"24hr Messages","value":30},{"name":"Promise Delivery","value":35},{"name":"LinkedIn Connect","value":15},{"name":"Schedule Next","value":25}]}]},"options":{"title":"The Networking Toolkit"}}
-```
 
 The toolkit is weighted toward follow-up and deepening activities — reflecting Lawson's core argument that the work after the event matters far more than what happens in the room.
 

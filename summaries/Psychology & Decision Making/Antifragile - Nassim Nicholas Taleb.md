@@ -48,38 +48,6 @@ Nassim Nicholas Taleb is a former options trader turned risk philosopher. Born i
 
 This table is the foundation of everything in the book — every chapter applies the Triad to a different domain. The Triad is not just a classification system — it is a diagnostic tool. For any system, institution, career, or habit, you can ask: which column does this belong in? The answer tells you how that thing will respond to the next shock.
 
-```chartjs
-{
-  "type": "radar",
-  "data": {
-    "labels": ["Biology", "Finance", "Career", "Health", "Diet", "Politics", "Education", "Knowledge"],
-    "datasets": [
-      {
-        "label": "Fragile",
-        "data": [2, 1, 2, 1, 2, 1, 2, 1],
-        "backgroundColor": "rgba(231, 76, 60, 0.2)",
-        "borderColor": "#e74c3c"
-      },
-      {
-        "label": "Robust",
-        "data": [5, 5, 6, 5, 5, 5, 5, 5],
-        "backgroundColor": "rgba(241, 196, 15, 0.2)",
-        "borderColor": "#f1c40f"
-      },
-      {
-        "label": "Antifragile",
-        "data": [9, 8, 9, 8, 8, 9, 9, 9],
-        "backgroundColor": "rgba(39, 174, 96, 0.2)",
-        "borderColor": "#27ae60"
-      }
-    ]
-  },
-  "options": {
-    "plugins": { "title": { "display": true, "text": "The Triad Across Domains: Antifragile Advantage" } },
-    "scales": { "r": { "min": 0, "max": 10, "ticks": { "stepSize": 2 } } }
-  }
-}
-```
 
 The radar chart shows how antifragile approaches consistently outperform fragile and robust strategies across every domain Taleb examines — the green envelope dominates the red core in every direction.
 
@@ -564,35 +532,6 @@ flowchart TD
 
 Knowing which world you are operating in — Mediocristan or Extremistan — determines which tools are safe to use and which are dangerously misleading.
 
-```d3
-{
-  "type": "treemap",
-  "data": {
-    "name": "Domains",
-    "children": [
-      { "name": "Mediocristan", "children": [
-        { "name": "Height", "value": 15 },
-        { "name": "Weight", "value": 14 },
-        { "name": "IQ Scores", "value": 13 },
-        { "name": "Calorie Intake", "value": 12 },
-        { "name": "Car Accidents", "value": 11 }
-      ]},
-      { "name": "Extremistan", "children": [
-        { "name": "Wealth", "value": 90 },
-        { "name": "Book Sales", "value": 70 },
-        { "name": "City Population", "value": 60 },
-        { "name": "War Casualties", "value": 85 },
-        { "name": "Stock Returns", "value": 80 },
-        { "name": "Web Traffic", "value": 75 }
-      ]}
-    ]
-  },
-  "options": {
-    "title": "Mediocristan vs Extremistan: The Size of Outlier Impact",
-    "colorScheme": ["#27ae60", "#2ecc71", "#82e0aa", "#e74c3c", "#c0392b", "#a93226", "#922b21", "#7b241c", "#641e16", "#4a1812", "#3d1410"]
-  }
-}
-```
 
 The treemap makes the asymmetry visceral: Extremistan domains dwarf Mediocristan ones in outlier impact — a single observation in wealth or war casualties can dominate the entire dataset, while height and weight barely budge.
 
@@ -1232,25 +1171,6 @@ The shape of your payoff curve — convex or concave — determines whether vola
   - Stopping a bad habit produces more reliable improvement than starting a good one
 - <b style="color: #27ae60">The most powerful intervention is usually to stop doing something harmful, not to start doing something helpful</b>
 
-```chartjs
-{
-  "type": "bar",
-  "data": {
-    "labels": ["Hand Washing", "Sanitation", "Quarantine", "Stop Smoking", "Remove Junk Food", "New Drug A", "Supplement B", "Superfood C", "New Procedure D", "Experimental Diet E"],
-    "datasets": [
-      {
-        "label": "Reliability of Health Impact (1-10)",
-        "data": [10, 10, 9, 10, 9, 5, 3, 2, 4, 2],
-        "backgroundColor": ["#27ae60", "#27ae60", "#27ae60", "#27ae60", "#27ae60", "#e74c3c", "#e74c3c", "#e74c3c", "#e74c3c", "#e74c3c"]
-      }
-    ]
-  },
-  "options": {
-    "plugins": { "title": { "display": true, "text": "Via Negativa: Subtractive Interventions vs Additive Ones" } },
-    "scales": { "y": { "min": 0, "max": 10 } }
-  }
-}
-```
 
 The bar chart makes via negativa concrete: subtractive interventions (green) consistently deliver high-reliability improvements, while additive ones (red) are uncertain — removing known harms beats chasing speculative benefits.
 - The epistemological argument:
@@ -1805,48 +1725,6 @@ flowchart TD
 
 The five pillars of the antifragile life — each reinforces the others, and together they create a philosophy that does not require prediction, control, or certainty.
 
-```d3
-{
-  "type": "force",
-  "data": {
-    "nodes": [
-      { "id": "Antifragile Life", "group": 1 },
-      { "id": "Optionality", "group": 2 },
-      { "id": "Via Negativa", "group": 2 },
-      { "id": "Skin in the Game", "group": 2 },
-      { "id": "Barbell Strategy", "group": 2 },
-      { "id": "Lindy Effect", "group": 2 },
-      { "id": "Small Downside", "group": 3 },
-      { "id": "Large Upside", "group": 3 },
-      { "id": "Remove Harmful", "group": 3 },
-      { "id": "Bear Consequences", "group": 3 },
-      { "id": "Extreme Safe + Risk", "group": 3 },
-      { "id": "Trust What Survived", "group": 3 }
-    ],
-    "links": [
-      { "source": "Antifragile Life", "target": "Optionality", "value": 5 },
-      { "source": "Antifragile Life", "target": "Via Negativa", "value": 5 },
-      { "source": "Antifragile Life", "target": "Skin in the Game", "value": 5 },
-      { "source": "Antifragile Life", "target": "Barbell Strategy", "value": 5 },
-      { "source": "Antifragile Life", "target": "Lindy Effect", "value": 5 },
-      { "source": "Optionality", "target": "Small Downside", "value": 3 },
-      { "source": "Optionality", "target": "Large Upside", "value": 3 },
-      { "source": "Via Negativa", "target": "Remove Harmful", "value": 3 },
-      { "source": "Skin in the Game", "target": "Bear Consequences", "value": 3 },
-      { "source": "Barbell Strategy", "target": "Extreme Safe + Risk", "value": 3 },
-      { "source": "Lindy Effect", "target": "Trust What Survived", "value": 3 },
-      { "source": "Optionality", "target": "Barbell Strategy", "value": 2 },
-      { "source": "Via Negativa", "target": "Lindy Effect", "value": 2 },
-      { "source": "Skin in the Game", "target": "Via Negativa", "value": 2 }
-    ]
-  },
-  "options": {
-    "title": "The Antifragile Framework: Interconnected Pillars",
-    "width": 700,
-    "height": 500
-  }
-}
-```
 
 The force-directed graph reveals how Taleb's five pillars are not independent strategies but a mutually reinforcing system — optionality feeds the barbell, via negativa reinforces the Lindy Effect, and skin in the game anchors them all to reality.
 

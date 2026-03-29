@@ -53,39 +53,6 @@ flowchart TD
 
 Bevelin's Two-Track Analysis forces you to interrogate both the world and your own mind before committing to any decision.
 
-```d3
-{
-  "type": "treemap",
-  "data": {
-    "name": "Mental Models",
-    "children": [
-      {"name": "Psychology", "children": [
-        {"name": "Cognitive Biases", "value": 25},
-        {"name": "Incentive Theory", "value": 18},
-        {"name": "Social Influence", "value": 15}
-      ]},
-      {"name": "Mathematics", "children": [
-        {"name": "Probability", "value": 20},
-        {"name": "Compounding", "value": 15},
-        {"name": "Regression to Mean", "value": 12}
-      ]},
-      {"name": "Biology", "children": [
-        {"name": "Evolution", "value": 18},
-        {"name": "Adaptation", "value": 12},
-        {"name": "Feedback Loops", "value": 10}
-      ]},
-      {"name": "Physics", "children": [
-        {"name": "Critical Mass", "value": 10},
-        {"name": "Equilibrium", "value": 8},
-        {"name": "Entropy", "value": 7}
-      ]}
-    ]
-  },
-  "options": {
-    "title": "Bevelin's Latticework: Mental Models by Discipline and Weight"
-  }
-}
-```
 
 Psychology dominates the latticework because Bevelin (following Munger) treats cognitive biases as the single largest source of error, but the supporting disciplines — mathematics, biology, and physics — provide the cross-checks that prevent any one lens from distorting reality.
 
@@ -172,21 +139,6 @@ Psychology dominates the latticework because Bevelin (following Munger) treats c
 | Pattern recognition | Predicted seasons, threats | Superstition, false patterns |
 | Energy conservation | Survived caloric scarcity | Mental laziness, heuristic reliance |
 
-```chartjs
-{
-  "type": "doughnut",
-  "data": {
-    "labels": ["Threat Detection", "Status-Seeking", "Tribal Loyalty", "Short-Term Focus", "Pattern Recognition", "Energy Conservation"],
-    "datasets": [{
-      "data": [25, 18, 15, 20, 12, 10],
-      "backgroundColor": ["#e74c3c", "#2980b9", "#8e44ad", "#e67e22", "#27ae60", "#95a5a6"]
-    }]
-  },
-  "options": {
-    "plugins": { "title": { "display": true, "text": "Evolutionary Roots of Modern Cognitive Biases: Relative Influence" } }
-  }
-}
-```
 
 Threat detection and short-term focus together account for nearly half of our evolutionary bias load, explaining why humans chronically overreact to immediate dangers while underweighting slow-moving, long-term risks.
 
@@ -323,28 +275,6 @@ The amygdala pathway is faster but cruder; the prefrontal pathway is slower but 
 
 This table maps every misjudgement to its core mechanism and primary driver. Use it as a diagnostic reference when auditing your own decisions.
 
-```chartjs
-{
-  "type": "radar",
-  "data": {
-    "labels": ["Incentive-Driven", "Social-Driven", "Emotion-Driven", "Perception-Driven", "Cognition-Driven", "Biology-Driven"],
-    "datasets": [{
-      "label": "Number of Misjudgements",
-      "data": [2, 6, 6, 4, 5, 2],
-      "backgroundColor": "rgba(41, 128, 185, 0.2)",
-      "borderColor": "#2980b9"
-    }, {
-      "label": "Severity of Impact (1-10)",
-      "data": [9, 7, 8, 6, 7, 4],
-      "backgroundColor": "rgba(231, 76, 60, 0.2)",
-      "borderColor": "#e74c3c"
-    }]
-  },
-  "options": {
-    "plugins": { "title": { "display": true, "text": "Munger's 25 Misjudgements: Distribution and Severity by Category" } }
-  }
-}
-```
 
 Incentive-driven biases are the fewest in number yet the most severe in impact — a pattern Munger summarises as "never underestimate the power of incentives" — while social and emotional categories dominate by sheer count, creating the broadest attack surface for everyday errors.
 

@@ -67,87 +67,10 @@ flowchart LR
 
 ---
 
-```chartjs
-{
-  "type": "radar",
-  "data": {
-    "labels": ["Acknowledge Feelings", "Engage Cooperation", "Alternatives to Punishment", "Encourage Autonomy", "Descriptive Praise", "Free from Roles"],
-    "datasets": [
-      {
-        "label": "Typical Parent (Before)",
-        "data": [15, 20, 10, 25, 30, 15],
-        "backgroundColor": "rgba(231, 76, 60, 0.2)",
-        "borderColor": "#e74c3c"
-      },
-      {
-        "label": "After Learning Skills",
-        "data": [85, 80, 75, 80, 85, 70],
-        "backgroundColor": "rgba(39, 174, 96, 0.2)",
-        "borderColor": "#27ae60"
-      }
-    ]
-  },
-  "options": {
-    "title": "The Six Communication Skills: Before vs. After Transformation"
-  }
-}
-```
 The biggest transformation occurs in acknowledging feelings and descriptive praise — the two areas where most parents habitually do the opposite of what works.
 
-```d3
-{
-  "type": "force",
-  "data": {
-    "nodes": [
-      {"id": "Acknowledge Feelings", "group": "skill"},
-      {"id": "Engage Cooperation", "group": "skill"},
-      {"id": "Alternatives to Punishment", "group": "skill"},
-      {"id": "Encourage Autonomy", "group": "skill"},
-      {"id": "Descriptive Praise", "group": "skill"},
-      {"id": "Free from Roles", "group": "skill"},
-      {"id": "Child Feels Heard", "group": "outcome"},
-      {"id": "Internal Motivation", "group": "outcome"},
-      {"id": "Self-Esteem", "group": "outcome"},
-      {"id": "Problem-Solving Ability", "group": "outcome"},
-      {"id": "Stronger Relationship", "group": "outcome"}
-    ],
-    "links": [
-      {"source": "Acknowledge Feelings", "target": "Child Feels Heard", "value": 5},
-      {"source": "Acknowledge Feelings", "target": "Stronger Relationship", "value": 4},
-      {"source": "Engage Cooperation", "target": "Internal Motivation", "value": 4},
-      {"source": "Alternatives to Punishment", "target": "Problem-Solving Ability", "value": 5},
-      {"source": "Alternatives to Punishment", "target": "Internal Motivation", "value": 4},
-      {"source": "Encourage Autonomy", "target": "Self-Esteem", "value": 5},
-      {"source": "Encourage Autonomy", "target": "Problem-Solving Ability", "value": 4},
-      {"source": "Descriptive Praise", "target": "Self-Esteem", "value": 5},
-      {"source": "Descriptive Praise", "target": "Internal Motivation", "value": 4},
-      {"source": "Free from Roles", "target": "Self-Esteem", "value": 4},
-      {"source": "Free from Roles", "target": "Stronger Relationship", "value": 3},
-      {"source": "Child Feels Heard", "target": "Stronger Relationship", "value": 5}
-    ]
-  },
-  "options": {
-    "title": "How the Six Skills Connect to Child Outcomes"
-  }
-}
-```
 The force network shows that Self-Esteem and Internal Motivation are the most connected outcomes — multiple skills feed into these, creating a resilient web of positive development.
 
-```chartjs
-{
-  "type": "doughnut",
-  "data": {
-    "labels": ["Denial of Feelings", "Philosophical Response", "Unsolicited Advice", "Interrogating Questions", "Defending Other Person", "Pity", "Amateur Psychoanalysis", "Empathic Response"],
-    "datasets": [{
-      "data": [18, 12, 20, 15, 10, 8, 5, 12],
-      "backgroundColor": ["#e74c3c", "#c0392b", "#d35400", "#e67e22", "#f39c12", "#8e44ad", "#9b59b6", "#27ae60"]
-    }]
-  },
-  "options": {
-    "title": "How Parents Typically Respond to Upset Children"
-  }
-}
-```
 Only 12% of typical parental responses to an upset child are empathic — the other 88% inadvertently deny feelings, offer unsolicited advice, or interrogate.
 
 ## Skill 1: Helping Children Deal with Their Feelings
@@ -317,7 +240,7 @@ flowchart TD
     C --> D["4. Offer a choice"]
     D --> E["5. Take action"]
     E --> F["6. Problem-solve<br/>together"]
-    
+
     style A fill:#e8f4fd,stroke:#2980b9
     style B fill:#fde8e8,stroke:#e74c3c
     style C fill:#e8fde8,stroke:#27ae60
@@ -541,7 +464,7 @@ flowchart TD
     Confirm --> Reinforce["More labelling<br/>'There she goes again'"]
     Reinforce --> Identity["Role becomes<br/>the child's identity"]
     Identity --> Behave
-    
+
     Break["BREAK THE CYCLE"] --> New["Show child a<br/>NEW picture"]
     New --> Evidence["Put child in<br/>situations where<br/>she can succeed differently"]
     Evidence --> Overhear["Let child overhear<br/>positive description"]
@@ -577,11 +500,11 @@ flowchart TD
     Auto --> Praise["5. PRAISE<br/>Describe, don't<br/>evaluate"]
     Praise --> Role["6. ROLES<br/>Show a new<br/>picture"]
     Role -->|"Feeds back into"| Feel
-    
+
     Feel -.->|"All feelings<br/>permitted"| Alt
     Coop -.->|"No blaming<br/>or accusing"| Praise
     Alt -.->|"Child takes<br/>responsibility"| Auto
-    
+
     style Feel fill:#e8f4fd,stroke:#2980b9
     style Coop fill:#fde8e8,stroke:#e74c3c
     style Alt fill:#e8fde8,stroke:#27ae60
@@ -979,10 +902,10 @@ flowchart TD
     FM --> Kohn["Alfie Kohn<br/>Unconditional Parenting"]
     FM --> Doucleff["Michaeleen Doucleff<br/>Hunt, Gather, Parent"]
     FM --> Davies["Simone Davies<br/>The Montessori Toddler"]
-    
+
     Ginott -.->|"Philosophical<br/>foundation"| Lansbury
     Ginott -.->|"Feeling-first<br/>approach"| Siegel
-    
+
     style Ginott fill:#f9e8e8,stroke:#e74c3c
     style FM fill:#e8f4fd,stroke:#2980b9,stroke-width:3px
     style JF fill:#e8fde8,stroke:#27ae60

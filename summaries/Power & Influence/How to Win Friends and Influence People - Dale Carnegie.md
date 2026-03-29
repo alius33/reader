@@ -62,60 +62,6 @@ flowchart TD
 
 Every principle in the book traces back to this fork — are you satisfying or threatening the other person's need to feel important?
 
-```chartjs
-{
-  "type": "line",
-  "data": {
-    "labels": ["Day 1", "Week 1", "Month 1", "Month 3", "Month 6", "Year 1", "Year 3", "Year 5"],
-    "datasets": [
-      {
-        "label": "Criticism → Trust Level",
-        "data": [5, 3.5, 2.5, 2, 1.5, 1, 0.5, 0.5],
-        "borderColor": "#e74c3c",
-        "backgroundColor": "rgba(231, 76, 60, 0.1)",
-        "fill": true,
-        "tension": 0.4
-      },
-      {
-        "label": "Appreciation → Trust Level",
-        "data": [5, 5.5, 6.5, 7.5, 8, 8.5, 9, 9.5],
-        "borderColor": "#27ae60",
-        "backgroundColor": "rgba(39, 174, 96, 0.1)",
-        "fill": true,
-        "tension": 0.4
-      },
-      {
-        "label": "Criticism → Cooperation",
-        "data": [5, 4, 3, 2, 1.5, 1, 0.5, 0],
-        "borderColor": "#c0392b",
-        "borderDash": [5, 5],
-        "fill": false,
-        "tension": 0.4
-      },
-      {
-        "label": "Appreciation → Cooperation",
-        "data": [5, 6, 7, 8, 8.5, 9, 9.5, 10],
-        "borderColor": "#2ecc71",
-        "borderDash": [5, 5],
-        "fill": false,
-        "tension": 0.4
-      }
-    ]
-  },
-  "options": {
-    "plugins": {
-      "title": {
-        "display": true,
-        "text": "Criticism vs Appreciation: Diverging Trajectories Over Time"
-      }
-    },
-    "scales": {
-      "y": { "min": 0, "max": 10, "title": { "display": true, "text": "Level (0-10)" } },
-      "x": { "title": { "display": true, "text": "Time Horizon" } }
-    }
-  }
-}
-```
 
 The two approaches start from the same baseline but diverge dramatically — criticism compounds into resentment while appreciation compounds into deep trust, illustrating Carnegie's core argument that short-term correction through criticism always loses to long-term investment in genuine appreciation.
 
@@ -193,70 +139,6 @@ The two approaches start from the same baseline but diverge dramatically — cri
 | 29 | Use encouragement | Part 4: Leadership | Confidence |
 | 30 | Make them happy about doing what you suggest | Part 4: Leadership | Ownership |
 
-```d3
-{
-  "type": "treemap",
-  "data": {
-    "name": "Carnegie's 30 Principles",
-    "children": [
-      {
-        "name": "Part 1: Fundamentals (3)",
-        "children": [
-          { "name": "Don't Criticise", "value": 10 },
-          { "name": "Sincere Appreciation", "value": 12 },
-          { "name": "Arouse Eager Want", "value": 9 }
-        ]
-      },
-      {
-        "name": "Part 2: Liking (6)",
-        "children": [
-          { "name": "Genuine Interest", "value": 8 },
-          { "name": "Smile", "value": 6 },
-          { "name": "Remember Names", "value": 7 },
-          { "name": "Be a Good Listener", "value": 9 },
-          { "name": "Their Interests", "value": 8 },
-          { "name": "Feel Important", "value": 10 }
-        ]
-      },
-      {
-        "name": "Part 3: Persuasion (12)",
-        "children": [
-          { "name": "Avoid Arguments", "value": 9 },
-          { "name": "Never Say Wrong", "value": 7 },
-          { "name": "Admit Mistakes", "value": 8 },
-          { "name": "Begin Friendly", "value": 7 },
-          { "name": "Get Yes Early", "value": 6 },
-          { "name": "Let Them Talk", "value": 8 },
-          { "name": "Their Idea", "value": 9 },
-          { "name": "Their Viewpoint", "value": 8 },
-          { "name": "Be Sympathetic", "value": 7 },
-          { "name": "Noble Motives", "value": 6 },
-          { "name": "Dramatise", "value": 5 },
-          { "name": "Challenge", "value": 6 }
-        ]
-      },
-      {
-        "name": "Part 4: Leadership (9)",
-        "children": [
-          { "name": "Begin with Praise", "value": 8 },
-          { "name": "Indirect Errors", "value": 7 },
-          { "name": "Own Mistakes First", "value": 8 },
-          { "name": "Ask Don't Order", "value": 7 },
-          { "name": "Save Face", "value": 9 },
-          { "name": "Praise Progress", "value": 8 },
-          { "name": "Fine Reputation", "value": 7 },
-          { "name": "Encouragement", "value": 7 },
-          { "name": "Happy to Comply", "value": 6 }
-        ]
-      }
-    ]
-  },
-  "options": {
-    "title": "30 Principles by Section",
-    "colorScale": ["#e74c3c", "#2980b9", "#27ae60", "#8e44ad"]
-  }
-}
-```
 
 Part 3 (Persuasion) contains 12 principles — the largest cluster — reflecting Carnegie's belief that winning people over requires far more nuanced technique than simply being likeable.
 
@@ -269,87 +151,9 @@ The thirty principles group naturally into four themes that run across the secti
 | **Perspective** | 3, 8, 17, 18 | See the world through their eyes, not yours |
 | **Dignity** | 9, 25, 26, 28, 30 | Protect and elevate the other person's self-image |
 
-```chartjs
-{
-  "type": "radar",
-  "data": {
-    "labels": ["Principle Count", "Relationship Impact", "Ease of Practice", "Universality", "Long-Term Effect"],
-    "datasets": [
-      {
-        "label": "Restraint",
-        "data": [3, 7, 4, 9, 8],
-        "backgroundColor": "rgba(231, 76, 60, 0.15)",
-        "borderColor": "#e74c3c",
-        "pointBackgroundColor": "#e74c3c"
-      },
-      {
-        "label": "Warmth",
-        "data": [4, 10, 8, 10, 10],
-        "backgroundColor": "rgba(46, 204, 113, 0.15)",
-        "borderColor": "#2ecc71",
-        "pointBackgroundColor": "#2ecc71"
-      },
-      {
-        "label": "Perspective",
-        "data": [4, 9, 5, 8, 9],
-        "backgroundColor": "rgba(41, 128, 185, 0.15)",
-        "borderColor": "#2980b9",
-        "pointBackgroundColor": "#2980b9"
-      },
-      {
-        "label": "Dignity",
-        "data": [5, 10, 6, 9, 10],
-        "backgroundColor": "rgba(142, 68, 173, 0.15)",
-        "borderColor": "#8e44ad",
-        "pointBackgroundColor": "#8e44ad"
-      }
-    ]
-  },
-  "options": {
-    "plugins": {
-      "title": {
-        "display": true,
-        "text": "Carnegie's Four Theme Clusters"
-      }
-    },
-    "scales": {
-      "r": {
-        "min": 0,
-        "max": 10,
-        "ticks": { "stepSize": 2 }
-      }
-    }
-  }
-}
-```
 
 Warmth and Dignity score highest across all dimensions — Carnegie's central argument is that making people feel valued and protecting their self-image produces the deepest, most lasting influence.
 
-```chartjs
-{
-  "type": "doughnut",
-  "data": {
-    "labels": ["Restraint", "Warmth", "Perspective", "Respect", "Presence", "Dignity", "Humility", "Empathy", "Momentum", "Ownership"],
-    "datasets": [{
-      "data": [3, 4, 3, 2, 2, 5, 2, 2, 1, 2],
-      "backgroundColor": [
-        "#e74c3c", "#2ecc71", "#2980b9", "#f39c12",
-        "#1abc9c", "#8e44ad", "#e67e22", "#3498db",
-        "#95a5a6", "#34495e"
-      ]
-    }]
-  },
-  "options": {
-    "plugins": {
-      "title": {
-        "display": true,
-        "text": "Principle Themes Distribution (30 Principles)"
-      },
-      "legend": { "position": "right" }
-    }
-  }
-}
-```
 
 Dignity (5 principles) and Warmth (4 principles) together account for nearly a third of all principles — Carnegie believed protecting people's self-image is the single most important interpersonal skill.
 

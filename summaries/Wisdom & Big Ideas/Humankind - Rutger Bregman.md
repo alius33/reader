@@ -75,45 +75,6 @@ Bregman's core argument visualised as two self-reinforcing cycles: cynical assum
 | **Restorative justice** | Repairing harm rather than punishing offenders |
 | **Sortition** | Selecting representatives by lottery rather than election |
 
-```chartjs
-{
-  "type": "radar",
-  "data": {
-    "labels": ["Cooperation", "Violence", "Trust", "Altruism", "Self-Interest", "Obedience to Authority", "Empathy", "Tribalism"],
-    "datasets": [
-      {
-        "label": "Veneer Theory Predictions",
-        "data": [2, 9, 2, 1, 9, 8, 2, 9],
-        "backgroundColor": "rgba(231, 76, 60, 0.15)",
-        "borderColor": "#e74c3c",
-        "pointBackgroundColor": "#e74c3c"
-      },
-      {
-        "label": "Reality (Bregman's Evidence)",
-        "data": [9, 3, 7, 8, 4, 5, 8, 4],
-        "backgroundColor": "rgba(39, 174, 96, 0.15)",
-        "borderColor": "#27ae60",
-        "pointBackgroundColor": "#27ae60"
-      }
-    ]
-  },
-  "options": {
-    "plugins": {
-      "title": {
-        "display": true,
-        "text": "Veneer Theory vs Reality: What Bregman's Evidence Shows"
-      }
-    },
-    "scales": {
-      "r": {
-        "min": 0,
-        "max": 10,
-        "ticks": { "stepSize": 2 }
-      }
-    }
-  }
-}
-```
 
 The gap between the red and green profiles reveals how dramatically veneer theory overestimates human selfishness and violence while underestimating cooperation, trust, and altruism — the central thesis of the book.
 
@@ -152,27 +113,6 @@ The gap between the red and green profiles reveals how dramatically veneer theor
 
 This table captures the lineage of Bregman's thinking — he draws on Rousseau but adds institutional design as the crucial variable.
 
-```d3
-{
-  "type": "treemap",
-  "data": {
-    "name": "Debunked Evidence for Human Wickedness",
-    "children": [
-      { "name": "Stanford Prison\nExperiment", "value": 95, "category": "psychology" },
-      { "name": "Milgram Shock\nStudy", "value": 90, "category": "psychology" },
-      { "name": "Bystander Effect\n(Kitty Genovese)", "value": 80, "category": "psychology" },
-      { "name": "Lord of the Flies\n(Golding fiction)", "value": 75, "category": "literature" },
-      { "name": "Easter Island\nCollapse Myth", "value": 60, "category": "archaeology" },
-      { "name": "Broken Windows\nTheory", "value": 55, "category": "criminology" },
-      { "name": "Robbers Cave\nExperiment", "value": 45, "category": "psychology" }
-    ]
-  },
-  "options": {
-    "title": "Debunked Evidence for Human Wickedness (sized by cultural influence)",
-    "colorScheme": "reds"
-  }
-}
-```
 
 The size of each block reflects how widely cited the study or story became in shaping the narrative that humans are fundamentally selfish — the Stanford Prison Experiment and Milgram dominate because they are required reading in virtually every introductory psychology course worldwide, despite both being deeply flawed.
 
@@ -412,36 +352,6 @@ flowchart LR
 
 This diagram shows how self-domestication worked: aggression was selected out, friendliness was selected in, and the downstream effects reshaped our bodies, our brains, and our capacity for civilisation.
 
-```chartjs
-{
-  "type": "doughnut",
-  "data": {
-    "labels": [
-      "Cooperative hunter-gatherer bands (~295,000 yrs)",
-      "Early agricultural settlements (~5,000 yrs)",
-      "Hierarchical civilisations & states (~5,000 yrs)",
-      "Industrial era (~250 yrs)"
-    ],
-    "datasets": [{
-      "data": [295000, 5000, 5000, 250],
-      "backgroundColor": ["#27ae60", "#2ecc71", "#e74c3c", "#c0392b"],
-      "borderWidth": 2
-    }]
-  },
-  "options": {
-    "plugins": {
-      "title": {
-        "display": true,
-        "text": "Human Evolutionary History by Social Organisation"
-      },
-      "subtitle": {
-        "display": true,
-        "text": "~300,000 years of Homo sapiens"
-      }
-    }
-  }
-}
-```
 
 The overwhelming green slice makes Bregman's point visually inescapable: for roughly 97% of our existence as a species, humans lived in small, egalitarian, cooperative bands — the hierarchical civilisations we treat as "normal" occupy a sliver of evolutionary time.
 

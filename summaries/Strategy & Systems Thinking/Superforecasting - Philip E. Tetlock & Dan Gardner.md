@@ -58,7 +58,7 @@ quadrantChart
 The Goldilocks zone — where superforecasters excel — sits in the middle range of both axes, where questions are hard enough to reward effort but not so hard that prediction becomes impossible.
 
 ```mermaid
-graph TD
+flowchart TD
     A["<b>THE SUPERFORECASTER'S TOOLKIT</b>"] --> B["🔍 FERMI-IZE<br/>Break into sub-problems<br/>Flush out ignorance"]
     B --> C["📊 OUTSIDE VIEW<br/>Start with base rates<br/>Anchor on history"]
     C --> D["🎯 INSIDE VIEW<br/>Examine specifics<br/>Test hypotheses"]
@@ -109,38 +109,6 @@ graph TD
 | **Tip-of-Your-Nose Perspective** | System 1's snap judgment — fast, automatic, and often wrong on complex questions |
 | **The Goldilocks Zone** | Questions where effort pays off — neither too easy nor impossibly hard |
 
-```d3
-{
-  "type": "treemap",
-  "data": {
-    "name": "Superforecaster Toolkit",
-    "children": [
-      {"name": "Problem Decomposition", "children": [
-        {"name": "Fermi Estimation", "value": 20},
-        {"name": "Sub-problem Identification", "value": 15}
-      ]},
-      {"name": "Calibration", "children": [
-        {"name": "Base Rate Anchoring", "value": 22},
-        {"name": "Granular Probabilities", "value": 18},
-        {"name": "Brier Score Tracking", "value": 12}
-      ]},
-      {"name": "Updating", "children": [
-        {"name": "Bayesian Revision", "value": 20},
-        {"name": "Evidence Weighing", "value": 15},
-        {"name": "Belief as Hypothesis", "value": 14}
-      ]},
-      {"name": "Mindset", "children": [
-        {"name": "Active Open-Mindedness", "value": 25},
-        {"name": "Growth Mindset", "value": 12},
-        {"name": "Intellectual Humility", "value": 18}
-      ]}
-    ]
-  },
-  "options": {
-    "title": "The Superforecaster's Cognitive Toolkit: Weighted by Predictive Importance"
-  }
-}
-```
 
 Active open-mindedness and base rate anchoring emerge as the two highest-weighted skills, reflecting Tetlock's finding that willingness to change one's mind matters more than raw analytical power.
 
@@ -160,28 +128,6 @@ Active open-mindedness and base rate anchoring emerge as the two highest-weighte
 - Foxes dramatically outperformed hedgehogs — but the media rewards hedgehogs because their confident, dramatic predictions make better television
 - The irony: the very traits that make someone a terrible forecaster — supreme confidence, ideological consistency, dramatic certainty — make them a compelling public figure
 
-```chartjs
-{
-  "type": "radar",
-  "data": {
-    "labels": ["Forecast Accuracy", "Calibration", "Belief Updating", "Self-Criticism", "Media Appeal", "Confidence Level"],
-    "datasets": [{
-      "label": "Foxes",
-      "data": [85, 80, 90, 85, 30, 45],
-      "backgroundColor": "rgba(39, 174, 96, 0.2)",
-      "borderColor": "#27ae60"
-    }, {
-      "label": "Hedgehogs",
-      "data": [35, 25, 20, 15, 90, 95],
-      "backgroundColor": "rgba(231, 76, 60, 0.2)",
-      "borderColor": "#e74c3c"
-    }]
-  },
-  "options": {
-    "plugins": { "title": { "display": true, "text": "Foxes vs Hedgehogs: The Accuracy-Confidence Inversion" } }
-  }
-}
-```
 
 The radar reveals a striking inversion: the traits that produce forecasting accuracy (self-criticism, belief updating) are precisely opposed to the traits that produce media fame (confidence, dramatic certainty).
 
@@ -213,23 +159,6 @@ The radar reveals a striking inversion: the traits that produce forecasting accu
 - Their shared trait was not brilliance or expertise — it was <b style="color: #2980b9">a distinctive way of thinking about uncertainty</b>
 - IARPA deserves credit for something remarkable: it allowed a completely unclassified competition with zero constraints on researchers' ability to publish results. Tetlock knows of "no other intelligence agency on the planet" that would have done this.
 
-```chartjs
-{
-  "type": "bar",
-  "data": {
-    "labels": ["Random Chance", "Regular Volunteers", "Prediction Markets", "Intel Analysts (Classified)", "GJP Top Forecasters", "Superforecasters (Top 2%)"],
-    "datasets": [{
-      "label": "Brier Score (lower = better)",
-      "data": [0.50, 0.37, 0.34, 0.33, 0.25, 0.17],
-      "backgroundColor": ["#95a5a6", "#e67e22", "#f39c12", "#e74c3c", "#2980b9", "#27ae60"]
-    }]
-  },
-  "options": {
-    "plugins": { "title": { "display": true, "text": "IARPA Tournament: Forecasting Accuracy by Group (Brier Score)" } },
-    "scales": { "y": { "title": { "display": true, "text": "Brier Score (lower is better)" }, "reverse": true } }
-  }
-}
-```
 
 Superforecasters achieved Brier scores roughly 65% better than chance and 30% better than intelligence analysts with classified access — proving that cognitive habits matter more than information advantages.
 
@@ -1016,7 +945,7 @@ Most of us make forecasts constantly without realizing it. When you decide wheth
 5. **Track your predictions** — even informally. Keep a simple log of predictions you make, with the date and your estimated probability. Review quarterly. The act of tracking alone improves calibration, because you start to notice your patterns of overconfidence and underconfidence.
 
 ```mermaid
-graph LR
+flowchart LR
     A["Question"] --> B["Fermi-ize<br/>Sub-problems"]
     B --> C["Outside View<br/>Base rate"]
     C --> D["Inside View<br/>Specific evidence"]
@@ -1299,7 +1228,7 @@ For readers who want the book's message in its most compressed form:
 10. <b style="color: #2980b9">The effort never ends</b> — superforecasters are perpetual beta, and that is both their burden and their advantage
 
 ```mermaid
-graph TD
+flowchart TD
     subgraph "THE SUPERFORECASTING REVOLUTION"
         A["🏥 COCHRANE<br/>Evidence beats authority<br/>in medicine"] -->|"Same principle"| B["🎯 TETLOCK<br/>Evidence beats authority<br/>in forecasting"]
         B --> C["📊 IARPA TOURNAMENT<br/>20,000+ questions<br/>4 years, controlled"]

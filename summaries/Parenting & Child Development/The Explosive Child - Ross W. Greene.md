@@ -123,45 +123,6 @@ Greene systematically debunks the conventional labels applied to challenging chi
 
 ### The Lagging Skills
 
-```chartjs
-{
-  "type": "radar",
-  "data": {
-    "labels": ["Flexibility", "Frustration Tolerance", "Problem Solving", "Emotion Regulation", "Social Skills", "Language Processing", "Attention/Focus", "Cognitive Shifting"],
-    "datasets": [
-      {
-        "label": "Typical Child",
-        "data": [85, 80, 78, 75, 82, 88, 80, 83],
-        "backgroundColor": "rgba(39, 174, 96, 0.15)",
-        "borderColor": "#27ae60",
-        "pointBackgroundColor": "#27ae60"
-      },
-      {
-        "label": "Explosive Child",
-        "data": [25, 20, 35, 22, 30, 45, 40, 28],
-        "backgroundColor": "rgba(231, 76, 60, 0.15)",
-        "borderColor": "#e74c3c",
-        "pointBackgroundColor": "#e74c3c"
-      }
-    ]
-  },
-  "options": {
-    "plugins": {
-      "title": {
-        "display": true,
-        "text": "Lagging Skills Profile: Explosive Child vs Typical Child"
-      }
-    },
-    "scales": {
-      "r": {
-        "beginAtZero": true,
-        "max": 100,
-        "ticks": { "stepSize": 20 }
-      }
-    }
-  }
-}
-```
 
 The radar chart reveals how behaviourally challenging children are not globally deficient — they show specific, measurable gaps in flexibility, frustration tolerance, and emotion regulation while maintaining relatively stronger language and attention skills.
 
@@ -288,52 +249,6 @@ Not "giving in." Not "capitulating." Plan C is intentional, thoughtful prioritis
 | **Episode risk** | Very high | Low | Very low |
 | **Problem solved?** | Rarely durably | Yes, when done well | No (deferred) |
 
-```chartjs
-{
-  "type": "bar",
-  "data": {
-    "labels": ["Reduces Explosions", "Teaches Skills", "Solves Problems Durably", "Preserves Relationship", "Child Feels Heard", "Builds Long-Term Autonomy"],
-    "datasets": [
-      {
-        "label": "Plan A (Impose Will)",
-        "data": [15, 5, 20, 10, 5, 10],
-        "backgroundColor": "rgba(231, 76, 60, 0.7)",
-        "borderColor": "#e74c3c",
-        "borderWidth": 1
-      },
-      {
-        "label": "Plan B (Collaborate)",
-        "data": [80, 85, 90, 90, 95, 85],
-        "backgroundColor": "rgba(39, 174, 96, 0.7)",
-        "borderColor": "#27ae60",
-        "borderWidth": 1
-      },
-      {
-        "label": "Plan C (Set Aside)",
-        "data": [75, 10, 5, 60, 40, 15],
-        "backgroundColor": "rgba(41, 128, 185, 0.7)",
-        "borderColor": "#2980b9",
-        "borderWidth": 1
-      }
-    ]
-  },
-  "options": {
-    "plugins": {
-      "title": {
-        "display": true,
-        "text": "Plan A vs Plan B vs Plan C: Effectiveness Across Key Outcomes"
-      }
-    },
-    "scales": {
-      "y": {
-        "beginAtZero": true,
-        "max": 100,
-        "title": { "display": true, "text": "Effectiveness (%)" }
-      }
-    }
-  }
-}
-```
 
 Plan B dominates every outcome metric — it is the only approach that simultaneously reduces explosions, teaches lagging skills, durably solves problems, and makes the child feel heard.
 
@@ -584,29 +499,6 @@ The book closes with an email from a father: his twelve-year-old daughter had be
 
 ## Best Stories
 
-```d3
-{
-  "type": "treemap",
-  "data": {
-    "name": "Lagging Skills",
-    "children": [
-      {"name": "Emotion Regulation", "value": 95, "category": "Core Deficit"},
-      {"name": "Flexibility / Shifting", "value": 90, "category": "Core Deficit"},
-      {"name": "Frustration Tolerance", "value": 88, "category": "Core Deficit"},
-      {"name": "Problem Solving", "value": 75, "category": "Thinking Skills"},
-      {"name": "Language Expression", "value": 65, "category": "Communication"},
-      {"name": "Social Cognition", "value": 60, "category": "Social"},
-      {"name": "Attention / Focus", "value": 55, "category": "Thinking Skills"},
-      {"name": "Handling Transitions", "value": 82, "category": "Core Deficit"},
-      {"name": "Black-and-White Thinking", "value": 70, "category": "Thinking Skills"},
-      {"name": "Sensory / Motor Issues", "value": 35, "category": "Sensory"}
-    ]
-  },
-  "options": {
-    "title": "Categories of Lagging Skills Weighted by Frequency in Challenging Children"
-  }
-}
-```
 
 The treemap shows that the core deficits — emotion regulation, flexibility, frustration tolerance, and handling transitions — dominate the ALSUP profiles of most challenging children, while sensory and motor issues appear less frequently but can be equally disruptive when present.
 
@@ -628,54 +520,6 @@ The treemap shows that the core deficits — emotion regulation, flexibility, fr
 
 ## Practical Application
 
-```d3
-{
-  "type": "sankey",
-  "data": {
-    "nodes": [
-      "Flexibility Deficit",
-      "Emotion Regulation Deficit",
-      "Language Processing Deficit",
-      "Problem-Solving Deficit",
-      "Social Skills Deficit",
-      "Breakfast Conflicts",
-      "Homework Meltdowns",
-      "Peer Disagreements",
-      "Transition Refusals",
-      "Bedtime Struggles",
-      "Plan A (Impose)",
-      "Plan B (Collaborate)",
-      "Plan C (Set Aside)",
-      "Explosion / Meltdown",
-      "Problem Solved",
-      "Energy Preserved"
-    ],
-    "links": [
-      {"source": "Flexibility Deficit", "target": "Breakfast Conflicts", "value": 8},
-      {"source": "Flexibility Deficit", "target": "Transition Refusals", "value": 7},
-      {"source": "Emotion Regulation Deficit", "target": "Homework Meltdowns", "value": 9},
-      {"source": "Emotion Regulation Deficit", "target": "Bedtime Struggles", "value": 6},
-      {"source": "Language Processing Deficit", "target": "Peer Disagreements", "value": 7},
-      {"source": "Problem-Solving Deficit", "target": "Homework Meltdowns", "value": 5},
-      {"source": "Social Skills Deficit", "target": "Peer Disagreements", "value": 6},
-      {"source": "Breakfast Conflicts", "target": "Plan A (Impose)", "value": 4},
-      {"source": "Breakfast Conflicts", "target": "Plan B (Collaborate)", "value": 4},
-      {"source": "Homework Meltdowns", "target": "Plan A (Impose)", "value": 5},
-      {"source": "Homework Meltdowns", "target": "Plan B (Collaborate)", "value": 9},
-      {"source": "Peer Disagreements", "target": "Plan B (Collaborate)", "value": 8},
-      {"source": "Peer Disagreements", "target": "Plan C (Set Aside)", "value": 5},
-      {"source": "Transition Refusals", "target": "Plan B (Collaborate)", "value": 7},
-      {"source": "Bedtime Struggles", "target": "Plan C (Set Aside)", "value": 6},
-      {"source": "Plan A (Impose)", "target": "Explosion / Meltdown", "value": 9},
-      {"source": "Plan B (Collaborate)", "target": "Problem Solved", "value": 28},
-      {"source": "Plan C (Set Aside)", "target": "Energy Preserved", "value": 11}
-    ]
-  },
-  "options": {
-    "title": "From Lagging Skills to Outcomes: The CPS Decision Flow"
-  }
-}
-```
 
 The sankey flow reveals the CPS system in action: lagging skills feed into predictable unsolved problems, which can be routed through Plan A (almost always producing explosions), Plan B (solving problems durably), or Plan C (preserving energy for higher-priority problems).
 

@@ -103,63 +103,9 @@ flowchart LR
 
 Siebel's biological metaphor maps directly: corporate "organisms" optimised for the pre-digital environment face extinction when cloud, AI, big data, and IoT shift the competitive landscape beneath them.
 
-```chartjs
-{
-  "type": "line",
-  "data": {
-    "labels": ["1960", "1970", "1980", "1990", "2000", "2012"],
-    "datasets": [{
-      "label": "Average S&P 500 Company Tenure (Years)",
-      "data": [60, 50, 35, 30, 25, 18],
-      "borderColor": "#e74c3c",
-      "backgroundColor": "rgba(231, 76, 60, 0.1)",
-      "fill": true,
-      "tension": 0.3
-    }]
-  },
-  "options": {
-    "plugins": { "title": { "display": true, "text": "Corporate Life Expectancy: The Accelerating Decline" } },
-    "scales": { "y": { "beginAtZero": false, "min": 10, "max": 70, "title": { "display": true, "text": "Years" } } }
-  }
-}
-```
 
 The steady decline from 60-year tenures to under 20 years visualises Siebel's punctuated equilibrium thesis — each technology wave compresses the survival window for incumbent companies.
 
-```d3
-{
-  "type": "force",
-  "data": {
-    "nodes": [
-      { "id": "Cloud", "group": "tech", "size": 25 },
-      { "id": "Big Data", "group": "tech", "size": 25 },
-      { "id": "AI", "group": "tech", "size": 25 },
-      { "id": "IoT", "group": "tech", "size": 25 },
-      { "id": "Predictive Maintenance", "group": "outcome", "size": 15 },
-      { "id": "Fraud Detection", "group": "outcome", "size": 15 },
-      { "id": "Supply Chain Optimisation", "group": "outcome", "size": 15 },
-      { "id": "Dynamic Pricing", "group": "outcome", "size": 15 },
-      { "id": "Process Reinvention", "group": "outcome", "size": 15 }
-    ],
-    "links": [
-      { "source": "Cloud", "target": "AI", "value": 5 },
-      { "source": "Cloud", "target": "Big Data", "value": 5 },
-      { "source": "Cloud", "target": "IoT", "value": 4 },
-      { "source": "Big Data", "target": "AI", "value": 5 },
-      { "source": "IoT", "target": "Big Data", "value": 5 },
-      { "source": "AI", "target": "Predictive Maintenance", "value": 3 },
-      { "source": "AI", "target": "Fraud Detection", "value": 3 },
-      { "source": "AI", "target": "Supply Chain Optimisation", "value": 3 },
-      { "source": "AI", "target": "Dynamic Pricing", "value": 3 },
-      { "source": "Big Data", "target": "Process Reinvention", "value": 3 }
-    ]
-  },
-  "options": {
-    "title": "Siebel's Four Technology Vectors: Confluence Creates Transformation",
-    "colors": { "tech": "#2980b9", "outcome": "#27ae60" }
-  }
-}
-```
 
 The force diagram reveals why Siebel insists the four vectors must be understood as a system: each technology amplifies the others, and the outcomes only emerge from their confluence — not from any single technology in isolation.
 
@@ -585,30 +531,6 @@ The contrast between ENGIE and GE is the book's most powerful illustration: use-
 
 This comparison is the most practical tool in the entire book for anyone evaluating transformation approaches.
 
-```chartjs
-{
-  "type": "bar",
-  "data": {
-    "labels": ["First Value (months)", "Investment Before Results ($B)", "Team Size Per Project", "Apps Delivered Year 1"],
-    "datasets": [
-      {
-        "label": "ENGIE (Use-Case First)",
-        "data": [6, 0.1, 5, 4],
-        "backgroundColor": "#27ae60"
-      },
-      {
-        "label": "GE Digital (Platform First)",
-        "data": [96, 7, 3000, 0],
-        "backgroundColor": "#e74c3c"
-      }
-    ]
-  },
-  "options": {
-    "plugins": { "title": { "display": true, "text": "ENGIE vs. GE Digital: The Execution Contrast" } },
-    "scales": { "y": { "type": "logarithmic", "title": { "display": true, "text": "Value (log scale)" } } }
-  }
-}
-```
 
 The logarithmic scale is necessary to fit both on one chart — underscoring just how dramatically the two approaches diverged across every measurable dimension.
 

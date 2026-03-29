@@ -68,9 +68,6 @@ The good news: <b style="color: #27ae60">EP is learnable</b>
 
 The pillars are not independent — appearance is the entrance exam, communication is the delivery mechanism, and gravitas is the substance that earns trust once you have passed the first two gates.
 
-```d3
-{"type":"force","data":{"nodes":[{"id":"ep","label":"Executive Presence","group":1},{"id":"gravitas","label":"Gravitas (67%)","group":2},{"id":"comm","label":"Communication (28%)","group":3},{"id":"appear","label":"Appearance (5%)","group":4},{"id":"grace","label":"Grace Under Fire","group":2},{"id":"decisive","label":"Decisiveness","group":2},{"id":"truth","label":"Speaking Truth to Power","group":2},{"id":"eq","label":"Emotional Intelligence","group":2},{"id":"reputation","label":"Reputation Management","group":2},{"id":"speaking","label":"Superior Speaking","group":3},{"id":"silence","label":"Strategic Silence","group":3},{"id":"reading","label":"Reading the Room","group":3},{"id":"polish","label":"Polish & Grooming","group":4},{"id":"fitness","label":"Fitness & Vitality","group":4}],"links":[{"source":"ep","target":"gravitas"},{"source":"ep","target":"comm"},{"source":"ep","target":"appear"},{"source":"gravitas","target":"grace"},{"source":"gravitas","target":"decisive"},{"source":"gravitas","target":"truth"},{"source":"gravitas","target":"eq"},{"source":"gravitas","target":"reputation"},{"source":"comm","target":"speaking"},{"source":"comm","target":"silence"},{"source":"comm","target":"reading"},{"source":"appear","target":"polish"},{"source":"appear","target":"fitness"}]},"options":{"title":"Executive Presence Component Network — Three Pillars and Their Behaviours"}}
-```
 
 The network reveals how EP decomposes from a single amorphous concept into concrete, practicable behaviours — gravitas branches into five distinct skills, communication into three, and appearance into two, each independently developable.
 
@@ -154,9 +151,6 @@ These personal stories serve a structural purpose:
 
 The weights reflect what matters *once you are already being evaluated* — but the sequential nature means appearance is the entrance exam you must pass first.
 
-```chartjs
-{"type":"doughnut","data":{"labels":["Gravitas","Communication","Appearance"],"datasets":[{"data":[67,28,5],"backgroundColor":["#2980b9","#27ae60","#e74c3c"]}]},"options":{"plugins":{"title":{"display":true,"text":"The Three Pillars of Executive Presence — Weighted Breakdown"}}}}
-```
 
 Gravitas dominates at 67% — yet appearance, despite its tiny 5% weight, functions as the first gate: fail it and neither communication nor gravitas are ever assessed.
 
@@ -206,9 +200,6 @@ Hewlett identifies six ranked behaviours that constitute gravitas, based on what
 
 The ranking reflects a post-2008 world: composure and integrity now outweigh charisma and visionary thinking.
 
-```d3
-{"type":"heatmap","data":{"xLabels":["Women's EP Rating","Men's EP Rating"],"yLabels":["Grace Under Fire","Decisiveness","Speaking Truth to Power","Emotional Intelligence","Reputation Management","Vision & Charisma"],"values":[[79,79],[70,70],[62,60],[61,58],[57,56],[40,42]]},"options":{"title":"Gravitas Behaviours — Importance Ratings by Gender (% of Senior Executives)"}}
-```
 
 Grace under fire and decisiveness dominate for both genders, while emotional intelligence shows a slight gender gap — rated 3 points higher for women's EP than men's — reflecting prescriptive stereotypes about how women leaders should behave.
 
@@ -491,9 +482,6 @@ The mechanism behind reputation curation:
 
 The data upends the conventional assumption that mastering the content is the primary communication task. Mastering the delivery is.
 
-```chartjs
-{"type":"bar","data":{"labels":["Passion","Voice Quality","Presence","Content","Other Factors"],"datasets":[{"label":"% of Persuasive Impact","data":[27,23,15,15,20],"backgroundColor":["#27ae60","#2980b9","#8e44ad","#e74c3c","#95a5a6"]}]},"options":{"plugins":{"title":{"display":true,"text":"Persuasive Impact Factors — Quantified Impressions Study (2012)"}},"scales":{"y":{"beginAtZero":true,"max":30,"title":{"display":true,"text":"% of Impact"}}},"indexAxis":"y"}}
-```
 
 Passion and voice quality together account for 50% of persuasive impact — more than three times the weight of content alone — explaining why technically brilliant presenters who lead with data consistently underperform confident but less rigorous communicators.
 

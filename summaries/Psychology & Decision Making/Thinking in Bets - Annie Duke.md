@@ -63,41 +63,6 @@ flowchart LR
 
 This diagram captures the book's central argument: outcomes are unreliable indicators of decision quality because luck intervenes between the decision and the result.
 
-```chartjs
-{
-  "type": "radar",
-  "data": {
-    "labels": ["Outcome Separation", "Calibration Skill", "Truthseeking", "Emotional Control", "Learning Speed", "Long-term Results"],
-    "datasets": [
-      {
-        "label": "Phil Ivey (Expert Bettor)",
-        "data": [95, 90, 95, 85, 90, 95],
-        "backgroundColor": "rgba(39, 174, 96, 0.15)",
-        "borderColor": "#27ae60",
-        "pointBackgroundColor": "#27ae60"
-      },
-      {
-        "label": "Phil Hellmuth (Resulting)",
-        "data": [20, 40, 25, 15, 30, 65],
-        "backgroundColor": "rgba(231, 76, 60, 0.15)",
-        "borderColor": "#e74c3c",
-        "pointBackgroundColor": "#e74c3c"
-      },
-      {
-        "label": "Average Decision-Maker",
-        "data": [15, 30, 20, 35, 25, 45],
-        "backgroundColor": "rgba(41, 128, 185, 0.15)",
-        "borderColor": "#2980b9",
-        "pointBackgroundColor": "#2980b9"
-      }
-    ]
-  },
-  "options": {
-    "plugins": { "title": { "display": true, "text": "Decision-Making Profiles: Ivey vs Hellmuth vs Average" } },
-    "scales": { "r": { "min": 0, "max": 100 } }
-  }
-}
-```
 
 Phil Ivey's dominance comes from separating outcomes from decisions and seeking truth over ego — while even a talented player like Hellmuth loses learning capacity by refusing to field outcomes accurately.
 
@@ -975,40 +940,9 @@ flowchart TD
 
 Only the two "earned" quadrants (good decision/good outcome and bad decision/bad outcome) carry useful information about your decision process. The two "luck" quadrants are noise — acting on them makes you worse.
 
-```d3
-{
-  "type": "heatmap",
-  "data": [
-    { "x": "Good Decision", "y": "Good Outcome", "value": 9 },
-    { "x": "Good Decision", "y": "Bad Outcome", "value": 2 },
-    { "x": "Bad Decision", "y": "Good Outcome", "value": 2 },
-    { "x": "Bad Decision", "y": "Bad Outcome", "value": 9 },
-    { "x": "Self-Serving Bias", "y": "Good Outcome", "value": 8 },
-    { "x": "Self-Serving Bias", "y": "Bad Outcome", "value": 8 },
-    { "x": "Resulting", "y": "Good Outcome", "value": 9 },
-    { "x": "Resulting", "y": "Bad Outcome", "value": 9 }
-  ],
-  "options": { "title": "Duke's Decision Quality Matrix: Signal vs Noise" }
-}
-```
 
 The diagonal quadrants (good decision/good outcome, bad decision/bad outcome) carry genuine signal about your process, while the off-diagonal quadrants are pure noise — yet resulting and self-serving bias treat all four as equally informative.
 
-```chartjs
-{
-  "type": "doughnut",
-  "data": {
-    "labels": ["Skill (Decision Quality)", "Luck (Random Variance)", "Hidden Information", "Other Players' Decisions"],
-    "datasets": [{
-      "data": [30, 35, 20, 15],
-      "backgroundColor": ["#27ae60", "#e74c3c", "#f39c12", "#2980b9"]
-    }]
-  },
-  "options": {
-    "plugins": { "title": { "display": true, "text": "What Actually Determines Outcomes (Single Decision)" } }
-  }
-}
-```
 
 In any single decision, skill accounts for only about 30% of the outcome — luck, hidden information, and others' choices dominate — which is precisely why resulting (judging decisions by outcomes) leads to systematically wrong conclusions.
 

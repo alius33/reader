@@ -161,48 +161,6 @@ The Three Ways form a progression: you cannot build meaningful feedback loops un
 | **Changes** | Modifications triggered by the first two types | Config changes, patches, deployments | Often invisible |
 | **Unplanned Work** | Firefighting — the work you did not plan for | Outages, security incidents, broken payroll | Completely invisible |
 
-```d3
-{
-  "type": "sankey",
-  "data": {
-    "nodes": [
-      { "id": "Business Projects" },
-      { "id": "Internal IT Projects" },
-      { "id": "Changes" },
-      { "id": "Unplanned Work" },
-      { "id": "Dev Team" },
-      { "id": "Ops Team" },
-      { "id": "Brent" },
-      { "id": "Delivered on Time" },
-      { "id": "Delayed" },
-      { "id": "Triggers More Unplanned" }
-    ],
-    "links": [
-      { "source": "Business Projects", "target": "Dev Team", "value": 8 },
-      { "source": "Business Projects", "target": "Brent", "value": 4 },
-      { "source": "Internal IT Projects", "target": "Ops Team", "value": 5 },
-      { "source": "Internal IT Projects", "target": "Brent", "value": 3 },
-      { "source": "Changes", "target": "Ops Team", "value": 6 },
-      { "source": "Changes", "target": "Brent", "value": 4 },
-      { "source": "Unplanned Work", "target": "Brent", "value": 7 },
-      { "source": "Unplanned Work", "target": "Ops Team", "value": 5 },
-      { "source": "Dev Team", "target": "Delivered on Time", "value": 5 },
-      { "source": "Dev Team", "target": "Delayed", "value": 3 },
-      { "source": "Ops Team", "target": "Delivered on Time", "value": 4 },
-      { "source": "Ops Team", "target": "Delayed", "value": 6 },
-      { "source": "Ops Team", "target": "Triggers More Unplanned", "value": 6 },
-      { "source": "Brent", "target": "Delivered on Time", "value": 6 },
-      { "source": "Brent", "target": "Delayed", "value": 8 },
-      { "source": "Brent", "target": "Triggers More Unplanned", "value": 4 }
-    ]
-  },
-  "options": {
-    "title": "How the Four Types of IT Work Flow Through Teams to Outcomes",
-    "width": 800,
-    "height": 450
-  }
-}
-```
 
 The Sankey flow reveals why Brent is the bottleneck: every type of work funnels through him, and the resulting delays feed back into more unplanned work — a self-reinforcing cycle.
 
@@ -381,47 +339,6 @@ The constraint determines throughput: it does not matter that every other team c
 | 95% | ~19x | Crisis mode |
 | 99% | ~99x | System failure |
 
-```chartjs
-{
-  "type": "line",
-  "data": {
-    "labels": ["50%", "60%", "70%", "80%", "85%", "90%", "95%", "99%"],
-    "datasets": [{
-      "label": "Wait Time Multiplier",
-      "data": [1, 1.5, 2.3, 4, 5.7, 9, 19, 99],
-      "borderColor": "#e74c3c",
-      "backgroundColor": "rgba(231, 76, 60, 0.1)",
-      "fill": true,
-      "tension": 0.4,
-      "pointBackgroundColor": "#e74c3c",
-      "pointRadius": 5,
-      "pointHoverRadius": 8
-    }]
-  },
-  "options": {
-    "responsive": true,
-    "plugins": {
-      "title": {
-        "display": true,
-        "text": "Wait Time Explosion: Why 99% Utilisation Means Infinite Queues",
-        "font": { "size": 14 }
-      },
-      "legend": { "display": false }
-    },
-    "scales": {
-      "x": {
-        "title": { "display": true, "text": "Resource Utilisation" }
-      },
-      "y": {
-        "title": { "display": true, "text": "Wait Time Multiplier (x)" },
-        "type": "logarithmic",
-        "min": 1,
-        "max": 100
-      }
-    }
-  }
-}
-```
 
 The exponential curve reveals why "just a bit more utilisation" beyond 80% causes catastrophic queue growth — the relationship is not linear but explosive.
 
@@ -888,47 +805,6 @@ This pipeline automates the path from code commit to production, with safety gat
 | Batch size | Release size |
 | Cycle time | Lead time to production |
 
-```chartjs
-{
-  "type": "radar",
-  "data": {
-    "labels": ["Visibility", "Flow", "Feedback Speed", "Deployment Frequency", "Team Morale", "Change Control"],
-    "datasets": [
-      {
-        "label": "IT Department Before",
-        "data": [1, 1.5, 1, 0.5, 2, 1],
-        "borderColor": "#e74c3c",
-        "backgroundColor": "rgba(231, 76, 60, 0.15)",
-        "pointBackgroundColor": "#e74c3c"
-      },
-      {
-        "label": "IT Department After",
-        "data": [9, 8.5, 9, 9.5, 8, 9],
-        "borderColor": "#27ae60",
-        "backgroundColor": "rgba(39, 174, 96, 0.15)",
-        "pointBackgroundColor": "#27ae60"
-      }
-    ]
-  },
-  "options": {
-    "responsive": true,
-    "plugins": {
-      "title": {
-        "display": true,
-        "text": "IT Department Transformation: Before vs After Applying Manufacturing Principles",
-        "font": { "size": 14 }
-      }
-    },
-    "scales": {
-      "r": {
-        "beginAtZero": true,
-        "max": 10,
-        "ticks": { "stepSize": 2 }
-      }
-    }
-  }
-}
-```
 
 The radar makes the transformation unmistakable: applying manufacturing discipline to IT work produced gains across every dimension, with the largest improvements in deployment frequency and feedback speed.
 
@@ -1011,45 +887,6 @@ This diagram maps the key relationships and power dynamics in the novel.
 - But each phase creates the foundation for the next: you cannot enforce WIP limits until work is visible, you cannot protect the constraint until you know who it is, you cannot automate deployment until changes are controlled
 - <b style="color: #27ae60">The key insight is that transformation is sequential, not simultaneous — trying to fix everything at once is itself a form of uncontrolled WIP</b>
 
-```chartjs
-{
-  "type": "bar",
-  "data": {
-    "labels": ["Unplanned Work %", "Major Incidents/Week", "Deployment Frequency (per month)", "Cycle Time (days)"],
-    "datasets": [
-      {
-        "label": "Before (Week 1)",
-        "data": [75, 4, 0.33, 90],
-        "backgroundColor": "#e74c3c"
-      },
-      {
-        "label": "After (Day 90)",
-        "data": [15, 0.5, 20, 3],
-        "backgroundColor": "#27ae60"
-      }
-    ]
-  },
-  "options": {
-    "responsive": true,
-    "plugins": {
-      "title": {
-        "display": true,
-        "text": "Parts Unlimited: Before vs After the 90-Day Transformation",
-        "font": { "size": 14 }
-      }
-    },
-    "scales": {
-      "x": {
-        "title": { "display": true, "text": "Metric" }
-      },
-      "y": {
-        "title": { "display": true, "text": "Value" },
-        "beginAtZero": true
-      }
-    }
-  }
-}
-```
 
 The before/after comparison shows the dramatic shift: unplanned work dropped from 75% to 15%, incidents fell by 87%, and deployment frequency went from quarterly to near-daily — all within ninety days.
 

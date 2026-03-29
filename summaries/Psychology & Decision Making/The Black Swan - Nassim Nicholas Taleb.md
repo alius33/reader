@@ -139,23 +139,6 @@ flowchart TD
   - History jumps; prediction is fundamentally limited
 - <b style="color: #e74c3c">The central error of modern thinking is applying Mediocristan tools to Extremistan problems</b>
 
-```chartjs
-{
-  "type": "bar",
-  "data": {
-    "labels": ["Height", "Weight", "IQ", "Calories", "Wealth", "Book Sales", "City Size", "War Deaths", "Stock Returns", "Web Traffic"],
-    "datasets": [{
-      "label": "Impact of Single Largest Observation on Total (%)",
-      "data": [0.3, 0.4, 0.5, 0.3, 99, 95, 85, 97, 90, 92],
-      "backgroundColor": ["#27ae60", "#27ae60", "#27ae60", "#27ae60", "#e74c3c", "#e74c3c", "#e74c3c", "#e74c3c", "#e74c3c", "#e74c3c"]
-    }]
-  },
-  "options": {
-    "plugins": { "title": { "display": true, "text": "Mediocristan vs Extremistan: How Much One Observation Dominates" } },
-    "scales": { "y": { "min": 0, "max": 100, "title": { "display": true, "text": "% of total from single largest observation" } } }
-  }
-}
-```
 
 The bar chart makes the Mediocristan/Extremistan divide visceral: in green domains, the largest single observation barely registers (adding the tallest person to 1,000 people changes nothing), while in red domains, a single observation can dominate 90-99% of the entire dataset.
 - The confusion is not innocent — it leads to systematic underestimation of risk, overconfidence in models, and catastrophic policy failures
@@ -176,34 +159,6 @@ The bar chart makes the Mediocristan/Extremistan divide visceral: in green domai
 - On the afternoon of the Wednesday before Thanksgiving, something unexpected happens
 - The turkey's confidence was at its **maximum** when the risk was at its **highest**
 
-```chartjs
-{
-  "type": "line",
-  "data": {
-    "labels": ["Day 1", "Day 100", "Day 200", "Day 500", "Day 800", "Day 999", "Day 1000"],
-    "datasets": [
-      {
-        "label": "Turkey's Confidence",
-        "data": [20, 50, 70, 85, 93, 99, 0],
-        "borderColor": "#27ae60",
-        "backgroundColor": "rgba(39, 174, 96, 0.1)",
-        "fill": true
-      },
-      {
-        "label": "Actual Risk",
-        "data": [80, 80, 80, 80, 90, 95, 100],
-        "borderColor": "#e74c3c",
-        "borderDash": [5, 5],
-        "fill": false
-      }
-    ]
-  },
-  "options": {
-    "plugins": { "title": { "display": true, "text": "The Turkey Problem: Confidence vs Actual Risk Over Time" } },
-    "scales": { "y": { "min": 0, "max": 100, "title": { "display": true, "text": "Level (%)" } } }
-  }
-}
-```
 
 The line chart captures the turkey problem perfectly: green confidence rises steadily as more feeding data accumulates, while red risk was always high and invisible — the catastrophic divergence on Day 1000 (Thanksgiving) shows that maximum confidence coincides precisely with maximum danger.
 - <b style="color: #e74c3c">The turkey problem generalizes to any situation where the same hand that feeds you can be the one that wrings your neck</b>
@@ -332,34 +287,6 @@ The mindmap organizes the five sources of blindness Taleb identifies as a reinfo
 - Bastiat's "what is seen and what is not seen" generalizes the point: governments get credit for visible actions but not blame for invisible opportunity costs
 - <b style="color: #27ae60">To correct for silent evidence, you must always ask: what is missing from this picture? Who is not in the room? What stories are not being told?</b>
 
-```d3
-{
-  "type": "treemap",
-  "data": {
-    "name": "Silent Evidence",
-    "children": [
-      { "name": "Visible Survivors", "children": [
-        { "name": "Successful Entrepreneurs", "value": 10 },
-        { "name": "Published Authors", "value": 8 },
-        { "name": "Winning Traders", "value": 7 },
-        { "name": "Celebrity Survivors", "value": 5 }
-      ]},
-      { "name": "Invisible Failures (Cemetery)", "children": [
-        { "name": "Failed Entrepreneurs", "value": 90 },
-        { "name": "Unpublished Writers", "value": 92 },
-        { "name": "Ruined Traders", "value": 85 },
-        { "name": "Forgotten Casualties", "value": 95 },
-        { "name": "Extinct Species (99.5%)", "value": 99 },
-        { "name": "Lost Civilizations", "value": 80 }
-      ]}
-    ]
-  },
-  "options": {
-    "title": "Silent Evidence: The Visible Survivors vs The Invisible Cemetery",
-    "colorScheme": ["#27ae60", "#2ecc71", "#82e0aa", "#a9dfbf", "#e74c3c", "#c0392b", "#a93226", "#922b21", "#7b241c", "#641e16"]
-  }
-}
-```
 
 The treemap makes Taleb's point about survivorship bias visceral: the tiny green sliver of visible success stories (entrepreneurs, authors, traders) sits atop a vast red cemetery of invisible failures — and we systematically build our understanding of the world from only the green portion.
 

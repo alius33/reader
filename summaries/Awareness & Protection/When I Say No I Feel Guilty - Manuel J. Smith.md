@@ -67,7 +67,7 @@ Dr. Manuel J. Smith was a clinical psychologist at UCLA, the Center for Behavior
 - Anger, fear, and depression are survival emotions — they have evolutionary value but actively interfere with verbal coping
 
 ```mermaid
-graph TD
+flowchart TD
     A[Conflict with Another Person] --> B{Which coping<br>behaviour?}
     B -->|Prehuman| C[Fight<br>Anger-Aggression]
     B -->|Prehuman| D[Flight<br>Fear-Avoidance]
@@ -119,9 +119,6 @@ graph TD
 | **Ignorance** | "Why are you always playing in the living room?" — demands for reasons you can't provide | You feel compelled to justify everything you do |
 | **Guilt** | "Good children don't do that" — shifting responsibility to external standards of right/wrong | You apologise for having your own wants |
 
-```d3
-{"type":"sankey","data":{"nodes":[{"id":"Parent"},{"id":"Anxiety"},{"id":"Ignorance"},{"id":"Guilt"},{"id":"Freeze"},{"id":"Justify"},{"id":"Comply"},{"id":"Manipulator Wins"}],"links":[{"source":"Parent","target":"Anxiety","value":35},{"source":"Parent","target":"Ignorance","value":30},{"source":"Parent","target":"Guilt","value":35},{"source":"Anxiety","target":"Freeze","value":35},{"source":"Ignorance","target":"Justify","value":30},{"source":"Guilt","target":"Comply","value":35},{"source":"Freeze","target":"Manipulator Wins","value":35},{"source":"Justify","target":"Manipulator Wins","value":30},{"source":"Comply","target":"Manipulator Wins","value":35}]},"options":{"title":"How Childhood Puppet Strings Flow into Adult Manipulation"}}
-```
 
 The three puppet strings installed in childhood — anxiety, ignorance, and guilt — each trigger a distinct automatic response that converges on the same outcome: the manipulator's goal is achieved without the victim ever making a conscious choice.
 
@@ -166,9 +163,6 @@ The three puppet strings installed in childhood — anxiety, ignorance, and guil
 | IX | You have the right to **say 'I don't understand'** | "You must anticipate others' needs without being told" |
 | X | You have the right to **say 'I don't care'** about self-improvement | "You must always strive for perfection or you are worthless" |
 
-```chartjs
-{"type":"bar","data":{"labels":["Right I: Own Judge","Right II: No Excuses","Right IV: Change Mind","Right V: Make Mistakes","Right VII: Independent of Goodwill","Right IX: Say I Don't Understand"],"datasets":[{"label":"Violation Frequency (Clinical Observation)","data":[95,85,70,75,80,60],"backgroundColor":["#e74c3c","#e67e22","#f1c40f","#27ae60","#3498db","#8e44ad"]}]},"options":{"plugins":{"title":{"display":true,"text":"Assertive Rights Most Frequently Violated in Daily Life"}},"scales":{"y":{"beginAtZero":true,"max":100,"title":{"display":true,"text":"% of Non-Assertive Adults Affected"}}}}}
-```
 
 Right I — being your own judge — is violated most frequently because it is the foundation from which all other rights derive; when you surrender this right, every other right collapses automatically.
 
@@ -177,7 +171,7 @@ Right I — being your own judge — is violated most frequently because it is t
 - Smith classifies all relationships into three types, each with different vulnerability to manipulation:
 
 ```mermaid
-graph LR
+flowchart LR
     A[Commercial<br>Most pre-structured<br>Contracts & codes] --> B[Authority<br>Partially structured<br>Boss-employee, parent-child]
     B --> C[Equal<br>Least structured<br>Friends, spouses, dates]
     A -.->|"Manipulation: importing<br>rules you didn't agree to"| D[External Structure<br>Imposed Unilaterally]
@@ -296,7 +290,7 @@ graph LR
 *The six skills are not alternatives — they are components of a single verbal machine that handles any manipulation scenario.*
 
 ```mermaid
-graph TD
+flowchart TD
     M[Manipulation Attempt] --> Q{What type?}
     Q -->|"Persistent pressure<br>to comply"| BR[BROKEN RECORD<br>Calm repetition of your want]
     Q -->|"Criticism of your<br>behaviour or character"| FG[FOGGING<br>Agree with truth, odds, or principle]
@@ -312,9 +306,6 @@ graph TD
     style WC fill:#27ae60,color:#fff
 ```
 
-```chartjs
-{"type":"radar","data":{"labels":["Commercial","Authority","Equal/Social","Intimate","Family","Workplace"],"datasets":[{"label":"Broken Record","data":[9,7,6,5,7,8],"borderColor":"#e74c3c","backgroundColor":"rgba(231,76,60,0.1)"},{"label":"Fogging","data":[6,8,8,7,9,7],"borderColor":"#3498db","backgroundColor":"rgba(52,152,219,0.1)"},{"label":"Negative Inquiry","data":[4,6,8,9,8,6],"borderColor":"#27ae60","backgroundColor":"rgba(39,174,96,0.1)"}]},"options":{"plugins":{"title":{"display":true,"text":"Top Three Assertive Skills — Effectiveness by Relationship Context"}},"scales":{"r":{"beginAtZero":true,"max":10}}}}
-```
 
 Broken Record dominates commercial encounters where persistence matters most, while Negative Inquiry peaks in intimate relationships where understanding the real grievance is more important than winning the argument.
 
@@ -444,7 +435,7 @@ Broken Record dominates commercial encounters where persistence matters most, wh
 - One cannot live in terror of hurting other people's feelings — sometimes one offends, and "that's life in the big city"
 
 ```mermaid
-graph TD
+flowchart TD
     A[Equal Relationship Conflict] --> B{Is self-respect<br>at stake?}
     B -->|Yes| C[Hold firm<br>No compromise on dignity]
     B -->|No| D[Offer WORKABLE COMPROMISE<br>Practical trade-offs]
@@ -679,7 +670,7 @@ graph TD
 - <b style="color: #27ae60">"I am my own judge. You are your own judge. You decide. If you want to."</b>
 
 ```mermaid
-graph TD
+flowchart TD
     A[The Assertive Person] --> B[Accepts imperfection<br>in self and others]
     A --> C[Chooses consequences<br>rather than avoiding them]
     A --> D[Communicates wants<br>without moral freight]
@@ -735,9 +726,6 @@ sequenceDiagram
 | "A reasonable person would…" | "I'm using logic as a weapon to override your judgment" | Ignorance |
 | "I'm only trying to help" | "I want to control your decisions under the guise of concern" | Guilt |
 
-```d3
-{"type":"force","data":{"nodes":[{"id":"guilt","label":"Guilt","group":1},{"id":"anxiety","label":"Anxiety","group":2},{"id":"ignorance","label":"Ignorance","group":3},{"id":"after_everything","label":"After everything I've done...","group":1},{"id":"if_you_loved","label":"If you really loved me...","group":1},{"id":"dont_you_care","label":"Don't you care about...?","group":1},{"id":"what_people_think","label":"What would people think?","group":2},{"id":"ill_remember","label":"I'll remember that","group":2},{"id":"not_how_done","label":"That's not how it's done","group":3},{"id":"should_know","label":"You should know better","group":3},{"id":"reasonable","label":"A reasonable person would...","group":3}],"links":[{"source":"guilt","target":"after_everything"},{"source":"guilt","target":"if_you_loved"},{"source":"guilt","target":"dont_you_care"},{"source":"anxiety","target":"what_people_think"},{"source":"anxiety","target":"ill_remember"},{"source":"ignorance","target":"not_how_done"},{"source":"ignorance","target":"should_know"},{"source":"ignorance","target":"reasonable"},{"source":"guilt","target":"if_you_loved"},{"source":"anxiety","target":"if_you_loved"}]},"options":{"title":"Manipulation Phrases Mapped to Their Puppet Strings"}}
-```
 
 Each manipulation phrase connects to one or more puppet strings — "If you really loved me" is particularly insidious because it simultaneously activates both guilt and anxiety, creating a double bind that non-assertive people find almost impossible to resist.
 
@@ -828,7 +816,7 @@ Each manipulation phrase connects to one or more puppet strings — "If you real
 ### The Master Decision Tree
 
 ```mermaid
-graph TD
+flowchart TD
     S[Someone wants you<br>to do something] --> Q1{Do you<br>want to?}
     Q1 -->|Yes| A1[Do it freely]
     Q1 -->|No| Q2{Is your self-respect<br>at stake?}

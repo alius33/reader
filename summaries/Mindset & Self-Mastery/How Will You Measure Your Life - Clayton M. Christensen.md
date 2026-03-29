@@ -161,23 +161,6 @@ Herzberg identified two categories of factors:
 | **Hygiene** | Compensation, status, job security, working conditions, management quality | Removes dissatisfaction | No additional happiness |
 | **Motivators** | Challenging work, recognition, responsibility, personal growth, meaningful contribution | Creates genuine fulfilment | Deepening satisfaction over time |
 
-```chartjs
-{
-  "type": "bar",
-  "data": {
-    "labels": ["Compensation", "Job Security", "Status", "Working Conditions", "Challenge", "Recognition", "Responsibility", "Personal Growth"],
-    "datasets": [{
-      "label": "Impact on Long-Term Fulfillment",
-      "data": [25, 20, 15, 18, 90, 82, 88, 95],
-      "backgroundColor": ["#e74c3c", "#e74c3c", "#e74c3c", "#e74c3c", "#27ae60", "#27ae60", "#27ae60", "#27ae60"]
-    }]
-  },
-  "options": {
-    "plugins": { "title": { "display": true, "text": "Herzberg's Two Factors: Hygiene vs Motivators on Long-Term Fulfillment" } },
-    "scales": { "y": { "min": 0, "max": 100, "title": { "display": true, "text": "Impact on Fulfillment (%)" } } }
-  }
-}
-```
 
 The motivators (green) cluster at 80–95% impact while hygiene factors (red) plateau at 15–25% — doubling your salary adds almost nothing to fulfilment once it is adequate.
 
@@ -412,21 +395,6 @@ The framework creates a clear toggle: stay open until you find the right fit, th
 > 5. Compare the answers to your stated priorities
 > 6. If they do not match, you do not have a strategy problem — you have a **resource allocation problem**
 
-```chartjs
-{
-  "type": "doughnut",
-  "data": {
-    "labels": ["Career", "Family", "Health", "Friendships", "Personal Growth", "Community"],
-    "datasets": [{
-      "data": [55, 15, 8, 7, 10, 5],
-      "backgroundColor": ["#e74c3c", "#3498db", "#2ecc71", "#9b59b6", "#f1c40f", "#e67e22"]
-    }]
-  },
-  "options": {
-    "plugins": { "title": { "display": true, "text": "Typical Resource Allocation: Where Time Actually Goes vs Stated Priorities" } }
-  }
-}
-```
 
 Career consumes over half of all resources while the domains people claim matter most — family, health, friendships — share the remaining scraps, perfectly illustrating the gap between stated strategy and actual allocation.
 
@@ -671,22 +639,6 @@ The framework has three components:
 | **Processes** | How you use resources — problem-solving, planning, collaborating | Less visible, often more important | How you handle conflict, manage time |
 | **Priorities** | What you choose to put first — the decision engine | Least visible, most consequential | What you sacrifice for, what you ignore |
 
-```d3
-{
-  "type": "treemap",
-  "data": {
-    "name": "Capabilities",
-    "children": [
-      { "name": "Priorities\n(Decision Engine)", "value": 50 },
-      { "name": "Processes\n(Problem-Solving)", "value": 35 },
-      { "name": "Resources\n(What You Have)", "value": 15 }
-    ]
-  },
-  "options": {
-    "title": "Capabilities Framework: Priorities Drive Processes, Processes Deploy Resources"
-  }
-}
-```
 
 Priorities dominate the framework because they determine which processes you develop and how you deploy your resources — yet they are the least visible and most neglected component.
 
@@ -966,34 +918,6 @@ The 98% path requires a new decision at every junction — and each decision is 
 
 The table reveals why 100% is actually easier than 98%: it reduces an infinite series of difficult decisions to a single one.
 
-```chartjs
-{
-  "type": "line",
-  "data": {
-    "labels": ["Year 1", "Year 2", "Year 3", "Year 5", "Year 10", "Year 20", "Year 30"],
-    "datasets": [
-      {
-        "label": "100% Commitment (Integrity Preserved)",
-        "data": [100, 100, 100, 100, 100, 100, 100],
-        "borderColor": "#27ae60",
-        "fill": false,
-        "borderDash": []
-      },
-      {
-        "label": "98% Commitment (Erosion Over Time)",
-        "data": [98, 92, 82, 65, 40, 18, 5],
-        "borderColor": "#e74c3c",
-        "fill": false,
-        "borderDash": [5, 5]
-      }
-    ]
-  },
-  "options": {
-    "plugins": { "title": { "display": true, "text": "The 100% Principle: Integrity Trajectories Over a Lifetime" } },
-    "scales": { "y": { "min": 0, "max": 100, "title": { "display": true, "text": "Integrity Remaining (%)" } } }
-  }
-}
-```
 
 The 98% line decays exponentially while 100% holds steady — each "just this once" exception accelerates the erosion, until the original principle is unrecognisable.
 

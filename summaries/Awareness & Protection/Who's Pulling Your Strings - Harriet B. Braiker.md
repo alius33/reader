@@ -242,9 +242,6 @@ Both paths lead to Jay's preferred outcome — the status quo. This is the archi
 | **Low self-reliance** | Depends on others for decisions and direction | Someone who will defer to the manipulator's judgment |
 | **External locus of control** | Believes outcomes are controlled by outside forces | Someone who feels powerless to resist |
 
-```chartjs
-{"type":"radar","data":{"labels":["People-Pleasing","Approval Addiction","Emotophobia","Can't Say No","Blurry Identity","Low Self-Reliance","External Locus"],"datasets":[{"label":"Typical Soft Target","data":[9,8,8,9,6,7,7],"borderColor":"#e74c3c","backgroundColor":"rgba(231,76,60,0.15)"},{"label":"Hardened Target (After Recovery)","data":[3,3,4,3,7,8,8],"borderColor":"#27ae60","backgroundColor":"rgba(39,174,96,0.15)"}]},"options":{"plugins":{"title":{"display":true,"text":"Vulnerability Profile: Soft Target vs Hardened Target"}},"scales":{"r":{"beginAtZero":true,"max":10}}}}
-```
 
 Recovery inverts the vulnerability profile — the soft target's highest-scoring buttons become the hardened target's lowest, while self-reliance and internal locus of control rise dramatically.
 
@@ -461,9 +458,6 @@ All seven buttons feed into the same outcome — a soft target who reinforces th
 | **Type A** | Winning and control | Hostility, impatience, intimidation | Creates urgency and stress contagion |
 | **Addictive** | Feeding the addiction | Lying, denial, rationalisation | Everything serves the next fix |
 
-```d3
-{"type":"heatmap","data":{"xLabels":["Positive Reinforcement","Negative Reinforcement","Intermittent Reward","Punishment","One-Trial Learning"],"yLabels":["Machiavellian","Narcissist","Borderline","Passive-Aggressive","Antisocial","Type A"],"values":[[7,5,8,4,3],[6,7,6,5,2],[4,8,9,3,7],[3,9,5,2,1],[5,4,6,9,8],[6,6,4,7,3]]},"options":{"title":"Manipulator Types vs Preferred Control Methods"}}
-```
 
 Borderline personalities rely most heavily on intermittent reinforcement and one-trial learning, creating the most addictive and fear-based manipulation patterns — while passive-aggressive types dominate through negative reinforcement (nagging, sulking, silent treatment).
 
@@ -678,9 +672,6 @@ The manipulative shift is the moment the carrot is replaced by the stick — and
 > - Victims may develop symptoms resembling PTSD: hypervigilance, anxiety, avoidance, emotional numbing
 > **The lesson:** A single terrifying episode can create lasting compliance — the manipulator's most efficient tool.
 
-```chartjs
-{"type":"doughnut","data":{"labels":["Positive Reinforcement","Negative Reinforcement","Intermittent Reinforcement","Punishment","One-Trial Learning"],"datasets":[{"data":[20,25,30,15,10],"backgroundColor":["#27ae60","#3498db","#e74c3c","#e67e22","#8e44ad"]}]},"options":{"plugins":{"title":{"display":true,"text":"Five Methods of Manipulative Control — Relative Prevalence"}}}}
-```
 
 Intermittent reinforcement is the most prevalent and most addictive control method — its unpredictability creates the same compulsive behaviour pattern that makes gambling so powerful.
 
@@ -810,9 +801,6 @@ flowchart TD
 
 The resistance flowchart — every interaction with a manipulator eventually leads to either a healthier dynamic or extraction.
 
-```d3
-{"type":"sankey","data":{"nodes":[{"id":"Recognize"},{"id":"PlayTime"},{"id":"BrokenRecord"},{"id":"Desensitize"},{"id":"LabelABCD"},{"id":"Disable"},{"id":"SetTerms"},{"id":"Compromise"},{"id":"Freedom"}],"links":[{"source":"Recognize","target":"PlayTime","value":40},{"source":"PlayTime","target":"BrokenRecord","value":35},{"source":"PlayTime","target":"Desensitize","value":25},{"source":"BrokenRecord","target":"LabelABCD","value":30},{"source":"Desensitize","target":"LabelABCD","value":20},{"source":"LabelABCD","target":"Disable","value":25},{"source":"LabelABCD","target":"SetTerms","value":25},{"source":"Disable","target":"Compromise","value":15},{"source":"SetTerms","target":"Compromise","value":20},{"source":"Compromise","target":"Freedom","value":35}]},"options":{"title":"Seven Resistance Tactics — Sequential Flow to Freedom"}}
-```
 
 The resistance tactics flow from recognition through increasingly assertive responses — playing for time creates space, the broken record establishes position, and setting terms culminates in either healthy compromise or extraction.
 

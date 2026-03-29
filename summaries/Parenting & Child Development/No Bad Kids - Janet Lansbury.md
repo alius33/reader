@@ -67,85 +67,10 @@ flowchart LR
 
 ---
 
-```chartjs
-{
-  "type": "polarArea",
-  "data": {
-    "labels": ["Calm Leadership", "Acknowledge Feelings", "Set Clear Limits", "Follow Through", "No Punishments", "Natural Consequences", "Unconditional Love"],
-    "datasets": [{
-      "data": [10, 9, 9, 9, 8, 8, 10],
-      "backgroundColor": [
-        "rgba(41, 128, 185, 0.6)",
-        "rgba(39, 174, 96, 0.6)",
-        "rgba(231, 76, 60, 0.6)",
-        "rgba(243, 156, 18, 0.6)",
-        "rgba(142, 68, 173, 0.6)",
-        "rgba(52, 152, 219, 0.6)",
-        "rgba(46, 204, 113, 0.6)"
-      ]
-    }]
-  },
-  "options": {
-    "title": "The RIE Discipline Framework: Core Principles (Importance 1-10)"
-  }
-}
-```
 Calm leadership and unconditional love score equally highest — the parent's emotional state is the most important variable in any discipline interaction.
 
-```d3
-{
-  "type": "heatmap",
-  "data": {
-    "xLabels": ["Hitting", "Biting", "Tantrums", "Refusing Food", "Not Sharing", "Bedtime Resistance", "Whining"],
-    "yLabels": ["Punish/Time-Out", "Yell/Threaten", "Distract/Bribe", "Ignore", "Acknowledge + Limit", "Calm CEO Approach"],
-    "values": [
-      [2, 2, 1, 1, 2, 1, 2],
-      [1, 1, 1, 2, 1, 1, 1],
-      [3, 3, 2, 4, 3, 3, 4],
-      [1, 1, 3, 2, 2, 2, 2],
-      [7, 7, 8, 7, 8, 7, 7],
-      [9, 9, 9, 8, 9, 9, 8]
-    ]
-  },
-  "options": {
-    "title": "Response Effectiveness by Toddler Behavior (1-10 Scale)",
-    "colorScale": ["#e74c3c", "#f39c12", "#27ae60"]
-  }
-}
-```
 The Calm CEO approach dominates across every behavior type — it consistently outperforms punishment, yelling, distraction, and ignoring.
 
-```chartjs
-{
-  "type": "line",
-  "data": {
-    "labels": ["12 mo", "15 mo", "18 mo", "24 mo", "30 mo", "36 mo", "42 mo", "48 mo"],
-    "datasets": [
-      {
-        "label": "Limit Testing (frequency)",
-        "data": [20, 40, 70, 90, 75, 55, 40, 25],
-        "borderColor": "#e74c3c",
-        "fill": false
-      },
-      {
-        "label": "Emotional Regulation Capacity",
-        "data": [10, 15, 20, 30, 40, 55, 65, 75],
-        "borderColor": "#27ae60",
-        "fill": false
-      },
-      {
-        "label": "Language for Feelings",
-        "data": [0, 5, 10, 25, 40, 55, 70, 80],
-        "borderColor": "#2980b9",
-        "fill": false
-      }
-    ]
-  },
-  "options": {
-    "title": "Toddler Development: Testing Peaks as Regulation Grows"
-  }
-}
-```
 Limit testing peaks around 24 months then declines as emotional regulation and language capacity grow — the most intense testing period is temporary and developmentally normal.
 
 ## The Nine Guidelines for Toddler Discipline

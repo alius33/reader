@@ -94,19 +94,6 @@ Simon identifies a spectrum of aggressive personalities:
 | **Channelled aggressive** | Competitive, driven, uses socially acceptable outlets for aggression | Mostly visible |
 | **Covert-aggressive** | Pursues dominance while hiding the pursuit under charm or victimhood | Nearly invisible |
 
-```chartjs
-{
-  "type": "radar",
-  "data": {
-    "labels": ["Visibility of Aggression", "Charm & Deception", "Accountability Avoidance", "Victim Awareness", "Strategic Planning", "Emotional Manipulation"],
-    "datasets": [
-      {"label": "Unbridled Aggressive", "data": [9, 2, 3, 9, 3, 3], "borderColor": "#e74c3c", "backgroundColor": "rgba(231,76,60,0.1)"},
-      {"label": "Covert-Aggressive", "data": [1, 9, 9, 1, 9, 9], "borderColor": "#8e44ad", "backgroundColor": "rgba(142,68,173,0.1)"}
-    ]
-  },
-  "options": {"plugins": {"title": {"display": true, "text": "Aggression Profiles: Overt vs Covert"}}, "scales": {"r": {"beginAtZero": true, "max": 10}}}
-}
-```
 
 *The radar reveals why covert aggression is so dangerous: it maximizes every dimension of stealth while minimizing the victim's ability to detect the attack.*
 
@@ -585,9 +572,6 @@ flowchart TD
 
 Each arrow marked "Works" leads back to the same outcome: the covert-aggressive continues unchecked. The entire tactical cascade is designed to prevent accountability.
 
-```d3
-{"type":"treemap","data":{"name":"Covert-Aggressive Tactics","children":[{"name":"Minimisation","value":15},{"name":"Guilt-Tripping","value":14},{"name":"Playing Victim","value":13},{"name":"Rationalization","value":12},{"name":"Diversion","value":11},{"name":"Shaming","value":10},{"name":"Lying","value":9},{"name":"Denial","value":8},{"name":"Evasion","value":8},{"name":"Vilifying Victim","value":7},{"name":"Playing Servant","value":6},{"name":"Selective Inattention","value":5},{"name":"Covert Intimidation","value":5}]},"options":{"title":"Simon's 13 Manipulation Tactics: Relative Frequency of Use"}}
-```
 
 *Minimisation, guilt-tripping, and playing the victim are the three most frequently deployed tactics — they require the least effort while producing the maximum confusion in the target.*
 
@@ -614,9 +598,6 @@ Each arrow marked "Works" leads back to the same outcome: the covert-aggressive 
 - <b style="color: #e74c3c">The covert-aggressive's greatest weapon is your own good nature</b> — the very traits that make you a good person make you a good target
 - This creates a painful irony: the qualities that make you trustworthy, kind, and fair are the exact qualities that make you vulnerable to exploitation
 
-```d3
-{"type":"heatmap","data":{"xLabels":["Minimisation","Guilt-Tripping","Playing Victim","Rationalization","Shaming","Diversion"],"yLabels":["High Conscientiousness","High Empathy","Conflict Avoidant","Self-Doubting","Over-Responsible"],"values":[[8,7,6,9,5,7],[6,8,9,5,4,6],[9,6,7,7,8,9],[7,9,8,8,9,5],[5,9,7,6,6,4]]},"options":{"title":"Target Vulnerability × Tactic Effectiveness (1-10 Impact)"}}
-```
 
 *The heatmap shows why conscientious, empathetic people are the preferred targets — their very virtues become attack surfaces for specific manipulation tactics.*
 
@@ -757,19 +738,6 @@ flowchart LR
 
 This defence sequence must be followed in order — you cannot set boundaries effectively if you haven't first identified the tactic, and you cannot enforce boundaries if you haven't accepted that the person will not change voluntarily.
 
-```chartjs
-{
-  "type": "bar",
-  "data": {
-    "labels": ["Trust Actions Over Words", "Judge Character by Pattern", "Set Clear Consequences", "Refuse to JADE", "Accept No Excuses", "Maintain Skepticism"],
-    "datasets": [
-      {"label": "Before Reading Simon", "data": [3, 2, 2, 1, 2, 2], "backgroundColor": "#e74c3c"},
-      {"label": "After Applying Framework", "data": [9, 8, 7, 8, 8, 7], "backgroundColor": "#27ae60"}
-    ]
-  },
-  "options": {"plugins": {"title": {"display": true, "text": "Defence Capability: Before vs After Simon's Framework"}}, "scales": {"y": {"beginAtZero": true, "max": 10}}}
-}
-```
 
 *Simon's framework produces the largest gains in the areas where conscientious people are weakest: trusting actions over words and refusing to justify, argue, defend, or explain.*
 

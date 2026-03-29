@@ -187,57 +187,6 @@ Ruiz introduces one more concept before presenting the agreements: the <b style=
 > - These rules feel like facts. They are not. They are sentences in a book that was written by someone else before you were old enough to hold a pen
 > **The lesson:** You are living by rules you never wrote and never agreed to. The four agreements ask you to throw out the old book and start with four pages.
 
-```d3
-{
-  "type": "treemap",
-  "data": {
-    "name": "Domestication System",
-    "children": [
-      {
-        "name": "Dream of the Planet",
-        "children": [
-          {
-            "name": "Domestication",
-            "children": [
-              {
-                "name": "The Judge",
-                "value": 30,
-                "color": "#e74c3c"
-              },
-              {
-                "name": "The Victim",
-                "value": 25,
-                "color": "#c0392b"
-              }
-            ]
-          },
-          {
-            "name": "Mitote",
-            "value": 20,
-            "color": "#e67e22"
-          },
-          {
-            "name": "Book of Law",
-            "value": 15,
-            "color": "#f39c12"
-          },
-          {
-            "name": "Emotional Body",
-            "value": 10,
-            "color": "#d35400"
-          }
-        ]
-      }
-    ]
-  },
-  "options": {
-    "title": "The Domestication System: How Suffering Is Constructed",
-    "width": 700,
-    "height": 400,
-    "colorScale": ["#e74c3c", "#c0392b", "#e67e22", "#f39c12", "#d35400"]
-  }
-}
-```
 
 The treemap reveals that the Judge and Victim together dominate the inner landscape — occupying more psychological space than the Mitote, Book of Law, and Emotional Body combined, which is why Ruiz insists awareness of this internal pair is the first step toward freedom.
 
@@ -301,51 +250,6 @@ mindmap
 
 This map shows the four agreements and their core sub-principles — each agreement addresses a distinct mechanism of suffering.
 
-```chartjs
-{
-  "type": "radar",
-  "data": {
-    "labels": ["Impeccable Word", "Not Personal", "No Assumptions", "Do Your Best"],
-    "datasets": [
-      {
-        "label": "Before Agreements (Suffering Level)",
-        "data": [85, 90, 95, 80],
-        "backgroundColor": "rgba(231, 76, 60, 0.2)",
-        "borderColor": "#e74c3c",
-        "borderWidth": 2,
-        "pointBackgroundColor": "#e74c3c",
-        "pointRadius": 5
-      },
-      {
-        "label": "After Agreements (Suffering Level)",
-        "data": [20, 15, 25, 10],
-        "backgroundColor": "rgba(39, 174, 96, 0.2)",
-        "borderColor": "#27ae60",
-        "borderWidth": 2,
-        "pointBackgroundColor": "#27ae60",
-        "pointRadius": 5
-      }
-    ]
-  },
-  "options": {
-    "plugins": {
-      "title": {
-        "display": true,
-        "text": "Suffering Levels Before vs After Practising the Four Agreements",
-        "font": { "size": 16 }
-      }
-    },
-    "scales": {
-      "r": {
-        "min": 0,
-        "max": 100,
-        "ticks": { "stepSize": 20 },
-        "pointLabels": { "font": { "size": 13 } }
-      }
-    }
-  }
-}
-```
 
 The radar shows that assumptions cause the sharpest suffering before practice, while "Always Do Your Best" provides the deepest relief — collapsing the Judge's favourite weapon, self-punishment, from 80 down to 10.
 
@@ -533,41 +437,6 @@ Ruiz's concept of "personal importance" exists on a spectrum. The more important
 
 Most people operate at Level 3-4 without realising it. The goal of Agreement 2 is to move toward Level 1-2 — not by becoming indifferent, but by accurately assessing what is and is not about you.
 
-```chartjs
-{
-  "type": "bar",
-  "data": {
-    "labels": ["Level 5: Narcissistic", "Level 4: High", "Level 3: Normal", "Level 2: Aware", "Level 1: Free"],
-    "datasets": [
-      {
-        "label": "Suffering Level (0–100)",
-        "data": [95, 75, 50, 20, 5],
-        "backgroundColor": ["#c0392b", "#e74c3c", "#e67e22", "#2980b9", "#27ae60"],
-        "borderColor": ["#922b21", "#c0392b", "#d35400", "#1f6da0", "#1e8449"],
-        "borderWidth": 2
-      }
-    ]
-  },
-  "options": {
-    "indexAxis": "y",
-    "plugins": {
-      "title": {
-        "display": true,
-        "text": "Personal Importance Scale: How Self-Centredness Drives Suffering",
-        "font": { "size": 15 }
-      },
-      "legend": { "display": false }
-    },
-    "scales": {
-      "x": {
-        "min": 0,
-        "max": 100,
-        "title": { "display": true, "text": "Suffering Level" }
-      }
-    }
-  }
-}
-```
 
 The steep drop between Level 3 (Normal) and Level 2 (Aware) illustrates Ruiz's central claim: simply recognising that most events are not about you eliminates more than half of interpersonal suffering overnight.
 
@@ -828,49 +697,6 @@ This diagram shows the reinforcement loops — each agreement strengthens the ot
 | **Don't make assumptions** | Misunderstanding, projection, silent resentment | Relationship conflict from unspoken expectations |
 | **Always do your best** | Perfectionism, regret, self-judgment | The inner critic that says "you should have done more" |
 
-```chartjs
-{
-  "type": "doughnut",
-  "data": {
-    "labels": [
-      "Self-criticism & gossip → A1: Impeccable Word",
-      "Sensitivity to opinions → A2: Not Personal",
-      "Mind-reading & stories → A3: No Assumptions",
-      "Perfectionism & regret → A4: Do Your Best",
-      "Silent resentment → A3: No Assumptions",
-      "People-pleasing → A2: Not Personal"
-    ],
-    "datasets": [
-      {
-        "data": [25, 22, 20, 13, 12, 8],
-        "backgroundColor": [
-          "#2980b9",
-          "#27ae60",
-          "#e67e22",
-          "#8e44ad",
-          "#f39c12",
-          "#16a085"
-        ],
-        "borderColor": "#ffffff",
-        "borderWidth": 2
-      }
-    ]
-  },
-  "options": {
-    "plugins": {
-      "title": {
-        "display": true,
-        "text": "Sources of Daily Suffering Mapped to the Agreement That Cures Them",
-        "font": { "size": 15 }
-      },
-      "legend": {
-        "position": "right",
-        "labels": { "font": { "size": 11 } }
-      }
-    }
-  }
-}
-```
 
 Nearly half of all daily suffering (47%) traces back to Agreements 1 and 2 — self-criticism and sensitivity to others' opinions — which explains why Ruiz calls "Be Impeccable With Your Word" the most important agreement and "Don't Take Anything Personally" the fastest to produce results.
 

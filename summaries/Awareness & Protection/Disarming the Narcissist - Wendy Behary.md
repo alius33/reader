@@ -69,9 +69,6 @@ The narcissist in your life was once a child whose emotional needs went catastro
 - Deep beneath the arrogance lies a <b style="color: #e74c3c">lonely, shame-filled child</b> who never felt unconditionally loved
 - Their masks — the bully, the show-off, the entitled one, the addictive self-soother — are all strategies to avoid feeling that child's pain
 
-```d3
-{"type":"sankey","data":{"nodes":[{"id":"Emotional Deprivation"},{"id":"Conditional Love"},{"id":"Defectiveness Schema"},{"id":"Emotional Inhibition"},{"id":"Entitlement Schema"},{"id":"Mistrust Schema"},{"id":"Show-Off Mask"},{"id":"Bully Mask"},{"id":"Entitled One"},{"id":"Self-Soother"}],"links":[{"source":"Emotional Deprivation","target":"Defectiveness Schema","value":30},{"source":"Conditional Love","target":"Entitlement Schema","value":25},{"source":"Emotional Deprivation","target":"Mistrust Schema","value":20},{"source":"Conditional Love","target":"Emotional Inhibition","value":25},{"source":"Defectiveness Schema","target":"Show-Off Mask","value":20},{"source":"Entitlement Schema","target":"Entitled One","value":25},{"source":"Mistrust Schema","target":"Bully Mask","value":20},{"source":"Emotional Inhibition","target":"Self-Soother","value":15},{"source":"Defectiveness Schema","target":"Bully Mask","value":10}]},"options":{"title":"From Childhood Wounds to Narcissistic Masks: Schema Flow"}}
-```
 
 *The sankey traces how childhood emotional deprivation and conditional love create specific schemas that crystallize into the four narcissistic masks Behary identifies.*
 
@@ -107,7 +104,7 @@ The narcissist in your life was once a child whose emotional needs went catastro
 ### The Narcissism Spectrum
 
 ```mermaid
-graph LR
+flowchart LR
     A["<b>Healthy Narcissism</b><br/>Assertiveness, self-respect<br/>Empathy present"] --> B["<b>Covert Maladaptive</b><br/>Morally righteous martyr<br/>Subtle superiority"]
     B --> C["<b>Overt Maladaptive</b><br/>In-your-face entitlement<br/>Classic narcissist"]
     C --> D["<b>Dangerous</b><br/>Violence, addiction<br/>No moral compass"]
@@ -174,20 +171,6 @@ The narcissist wears protective masks — coping modes that shield the vulnerabl
 | **The Entitled One** | Rule-breaking, demanding special treatment | Terror of being ordinary, which equals being unlovable |
 | **The Addictive Self-Soother** | Workaholism, drinking, internet, spending | Intolerable loneliness and emotional emptiness |
 
-```chartjs
-{
-  "type": "radar",
-  "data": {
-    "labels": ["Empathy", "Vulnerability", "Entitlement", "Aggression", "Self-Soothing", "Performance Need"],
-    "datasets": [
-      {"label": "Public Mask", "data": [3, 1, 8, 2, 4, 9], "borderColor": "#e74c3c", "backgroundColor": "rgba(231,76,60,0.15)"},
-      {"label": "Wounded Inner Child", "data": [2, 9, 2, 1, 1, 3], "borderColor": "#3498db", "backgroundColor": "rgba(52,152,219,0.15)"},
-      {"label": "Healthy Mode (Goal)", "data": [8, 6, 3, 2, 7, 4], "borderColor": "#27ae60", "backgroundColor": "rgba(39,174,96,0.15)"}
-    ]
-  },
-  "options": {"plugins": {"title": {"display": true, "text": "The Narcissist's Three Modes: Mask, Wound, and Health"}}, "scales": {"r": {"beginAtZero": true, "max": 10}}}
-}
-```
 
 *The radar reveals the paradox at the heart of narcissism: the public mask maximizes entitlement and performance while the wounded child beneath maximizes vulnerability — the healthy mode balances both.*
 
@@ -299,9 +282,6 @@ The 18 Early Maladaptive Schemas (Jeffrey Young):
 | Mistrust | The abuse feels like a re-enactment of the past; you know how to endure it |
 | Unrelenting Standards | You try harder to be the perfect partner, employee, or sibling |
 
-```d3
-{"type":"heatmap","data":{"xLabels":["Criticism","Silent Treatment","Rage","Charm Offensive","Entitlement Demands","Blame-Shifting"],"yLabels":["Self-Sacrifice Schema","Subjugation Schema","Abandonment Schema","Defectiveness Schema","Unrelenting Standards"],"values":[[8,5,6,4,7,9],[9,7,8,6,9,7],[5,9,7,8,4,6],[9,6,8,3,5,9],[7,3,5,4,8,6]]},"options":{"title":"Your Schema Vulnerabilities × Narcissistic Tactics (1-10 Trigger Intensity)"}}
-```
 
 *The heatmap shows why specific narcissistic tactics devastate some people more than others — your schema profile determines which triggers hit hardest.*
 
@@ -395,7 +375,7 @@ The 18 Early Maladaptive Schemas (Jeffrey Young):
 *Behary's practical framework for breaking the automatic cycle:*
 
 ```mermaid
-graph TD
+flowchart TD
     A["<b>1. OBSERVE</b><br/>Notice the specific behaviours,<br/>reactions, and interactions"] --> B["<b>2. ASSESS</b><br/>Evaluate the dynamic<br/>more accurately and impartially"]
     B --> C["<b>3. IDENTIFY</b><br/>Name the schemas provoking<br/>ineffective responses in both of you"]
     C --> D["<b>4. DIFFERENTIATE</b><br/>Separate past-driven feelings<br/>from present reality"]
@@ -602,7 +582,7 @@ Behary prescribes a specific twice-daily, five-minute practice:
 *This is the intellectual centrepiece of the book. Getting this distinction right changes everything.*
 
 ```mermaid
-graph TD
+flowchart TD
     A["<b>EMPATHY</b><br/>Understanding the other's experience<br/>— emotionally, mentally, physically<br/>Does NOT require agreement"] --> B["<b>COMPASSION</b><br/>Empathy + active desire to<br/>comfort, relieve, and heal<br/>Goes beyond understanding"]
     A --> C["<b>SYMPATHY</b><br/>Feeling sad for the other<br/>— pity, not resonance"]
     style A fill:#2980b9,color:#fff
@@ -640,7 +620,7 @@ graph TD
 The formula combines four elements into a single communication approach:
 
 ```mermaid
-graph LR
+flowchart LR
     A["<b>EMPATHY</b><br/>I understand why you<br/>react this way"] --> B["<b>IMPACT</b><br/>Here is how your<br/>behaviour affects me"]
     B --> C["<b>ACCOUNTABILITY</b><br/>This is your<br/>responsibility to change"]
     C --> D["<b>LEVERAGE</b><br/>Here are the<br/>consequences if you don't"]
@@ -757,19 +737,6 @@ graph LR
 > [!tip] The Irony of FORCE
 > Effective communication contains all elements of FORCE but cannot be *forced*. It must emerge as naturally as leaves unfold in spring. Being self-possessed does not mean being selfish — it means equalising the ratio of give and take.
 
-```chartjs
-{
-  "type": "bar",
-  "data": {
-    "labels": ["Flexibility", "Openness", "Receptivity", "Competency", "Enlightenment"],
-    "datasets": [
-      {"label": "Typical Response to Narcissist", "data": [2, 3, 2, 3, 2], "backgroundColor": "#e74c3c"},
-      {"label": "FORCE-Guided Response", "data": [8, 8, 7, 8, 9], "backgroundColor": "#27ae60"}
-    ]
-  },
-  "options": {"plugins": {"title": {"display": true, "text": "FORCE Framework: Typical vs Guided Communication Quality"}}, "scales": {"y": {"beginAtZero": true, "max": 10}}}
-}
-```
 
 *The FORCE framework transforms every dimension of communication — replacing reactive, defensive responses with strategic, empathy-informed engagement.*
 
@@ -896,7 +863,7 @@ graph LR
 - The key: be prepared to **follow through** on consequences. A consequence you won't enforce is worse than no consequence at all
 
 ```mermaid
-graph TD
+flowchart TD
     subgraph "1. UNDERSTAND"
         A["Learn the narcissist's<br/>origins and schemas"] --> B["Identify YOUR own<br/>schemas and triggers"]
     end

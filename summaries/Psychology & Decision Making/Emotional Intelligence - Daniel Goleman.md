@@ -51,38 +51,6 @@ flowchart TD
 
 The first three domains are intrapersonal — they concern your relationship with yourself — while the last two are interpersonal, concerning your relationship with others.
 
-```chartjs
-{
-  "type": "radar",
-  "data": {
-    "labels": ["Self-Awareness", "Self-Regulation", "Motivation", "Empathy", "Social Skills"],
-    "datasets": [
-      {
-        "label": "High EQ Individual",
-        "data": [9, 8, 9, 8, 9],
-        "backgroundColor": "rgba(39, 174, 96, 0.2)",
-        "borderColor": "#27ae60"
-      },
-      {
-        "label": "Average EQ Individual",
-        "data": [5, 4, 6, 5, 5],
-        "backgroundColor": "rgba(241, 196, 15, 0.2)",
-        "borderColor": "#f1c40f"
-      },
-      {
-        "label": "Low EQ Individual",
-        "data": [2, 2, 4, 2, 2],
-        "backgroundColor": "rgba(231, 76, 60, 0.2)",
-        "borderColor": "#e74c3c"
-      }
-    ]
-  },
-  "options": {
-    "plugins": { "title": { "display": true, "text": "Goleman's Five EQ Domains: High vs Average vs Low Profiles" } },
-    "scales": { "r": { "min": 0, "max": 10, "ticks": { "stepSize": 2 } } }
-  }
-}
-```
 
 The radar chart reveals that high-EQ individuals show balanced development across all five domains, while low-EQ profiles collapse inward — confirming Goleman's argument that the domains build sequentially and weakness in one undermines the rest.
 
@@ -675,30 +643,6 @@ The key insight is that anxiety is not the enemy of performance — too MUCH anx
 
 - <b style="color: #27ae60">Optimists outperform pessimists in virtually every domain</b> — not because they deny reality but because they maintain the motivation to keep trying after setbacks
 
-```chartjs
-{
-  "type": "bar",
-  "data": {
-    "labels": ["Insurance Sales", "Swimming Recovery", "Academic Grades", "Health Outcomes", "Career Advancement", "Relationship Quality"],
-    "datasets": [
-      {
-        "label": "Optimists",
-        "data": [137, 85, 78, 80, 75, 82],
-        "backgroundColor": "#27ae60"
-      },
-      {
-        "label": "Pessimists",
-        "data": [100, 55, 60, 55, 50, 55],
-        "backgroundColor": "#e74c3c"
-      }
-    ]
-  },
-  "options": {
-    "plugins": { "title": { "display": true, "text": "The Optimism Advantage: Performance Gap Across Domains (Index, Pessimist = 100)" } },
-    "scales": { "y": { "min": 0, "max": 150 } }
-  }
-}
-```
 
 The bar chart illustrates the consistency of Seligman's finding: optimists outperform pessimists in every domain measured, with the largest gap in sales (37% higher) and the pattern holding across health, relationships, and academic performance.
 - <b style="color: #2980b9">Seligman's study of MetLife insurance salespeople</b>: optimistic salespeople sold 37% more insurance in their first two years than pessimistic ones
@@ -748,28 +692,6 @@ The bar chart illustrates the consistency of Seligman's finding: optimists outpe
 - Cognitive empathy without emotional empathy can become manipulative — you understand what they feel but use that understanding instrumentally rather than compassionately
 - The ideal is all three working together — but the balance depends on the situation and the role
 
-```d3
-{
-  "type": "heatmap",
-  "data": {
-    "xLabels": ["Cognitive Empathy", "Emotional Empathy", "Empathic Concern"],
-    "yLabels": ["CEO/Executive", "Therapist", "Surgeon", "Teacher", "Salesperson", "Parent", "Negotiator"],
-    "values": [
-      [9, 4, 6],
-      [8, 9, 9],
-      [7, 3, 7],
-      [8, 7, 8],
-      [9, 5, 6],
-      [7, 9, 9],
-      [9, 3, 5]
-    ]
-  },
-  "options": {
-    "title": "Empathy Type Requirements by Role",
-    "colorScheme": "blues"
-  }
-}
-```
 
 The heatmap reveals that different roles demand different empathy blends — therapists and parents need high emotional empathy, while executives and negotiators rely more heavily on cognitive empathy, confirming Goleman's point that empathy is not one skill but three.
 - The neuroscience of empathy involves multiple brain systems:

@@ -92,65 +92,12 @@ The core choice the book presents: rely on gut instinct, or rely on tested evide
 | **Emotional state effects** | Sadness makes you overpay; cognitive depletion makes you believe everything |
 | **Interleaved practice** | Mixed practice beats blocked repetition for long-term skill retention |
 
-```chartjs
-{
-  "type": "bar",
-  "data": {
-    "labels": ["Social Proof", "Reciprocity", "Commitment", "Authority", "Scarcity", "Liking", "Cognitive Fluency", "Loss Framing", "Choice Architecture", "Fear + Action"],
-    "datasets": [{
-      "label": "Number of Strategies Using This Principle",
-      "data": [8, 7, 6, 5, 4, 4, 3, 3, 3, 2],
-      "backgroundColor": "#2980b9"
-    }]
-  },
-  "options": {
-    "plugins": { "title": { "display": true, "text": "Yes! 50 Strategies — Principle Distribution" } },
-    "scales": { "y": { "beginAtZero": true, "max": 10 } },
-    "indexAxis": "y"
-  }
-}
-```
 
 Social proof dominates the book's 50 strategies — appearing in eight different techniques — confirming Cialdini's research that what similar others are doing is the single most powerful lever of human behaviour.
 
-```d3
-{
-  "type": "treemap",
-  "data": [
-    { "name": "Hotel Towel Signs", "category": "Social Proof", "value": 33 },
-    { "name": "Post-it on Surveys", "category": "Reciprocity", "value": 75 },
-    { "name": "Labelling Positively", "category": "Commitment", "value": 45 },
-    { "name": "Loss Framing", "category": "Framing", "value": 38 },
-    { "name": "Fear + Action Plan", "category": "Fear Appeals", "value": 40 },
-    { "name": "Even a Penny", "category": "Commitment", "value": 50 },
-    { "name": "Benjamin Franklin Effect", "category": "Dissonance", "value": 42 },
-    { "name": "Precise Numbers", "category": "Anchoring", "value": 35 },
-    { "name": "Goal Gradient", "category": "Motivation", "value": 45 },
-    { "name": "Decoy Effect", "category": "Choice", "value": 30 }
-  ],
-  "options": {
-    "title": "Top 10 Strategies — Compliance Boost (%)"
-  }
-}
-```
 
 A handwritten Post-it note on a survey produced a 75% compliance boost — the largest effect in the book — demonstrating that personalised, unexpected reciprocity is the most powerful persuasion lever available.
 
-```chartjs
-{
-  "type": "doughnut",
-  "data": {
-    "labels": ["Social Proof", "Reciprocity", "Commitment & Consistency", "Authority", "Scarcity & Loss", "Other Mechanisms"],
-    "datasets": [{
-      "data": [16, 14, 12, 10, 8, 40],
-      "backgroundColor": ["#2980b9", "#27ae60", "#e74c3c", "#8e44ad", "#f39c12", "#95a5a6"]
-    }]
-  },
-  "options": {
-    "plugins": { "title": { "display": true, "text": "50 Strategies — Grouped by Primary Principle" } }
-  }
-}
-```
 
 While Cialdini's six principles account for the majority of strategies, 40% of the techniques draw on additional mechanisms — cognitive fluency, anchoring, choice architecture, and emotional state effects — showing that persuasion science extends well beyond the classic six.
 

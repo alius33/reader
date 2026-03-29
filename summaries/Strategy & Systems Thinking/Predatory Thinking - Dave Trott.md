@@ -57,60 +57,9 @@ flowchart TD
 
 This diagram captures the fundamental choice Trott presents: reactive thinking leads to incremental improvements within existing constraints, while predatory thinking redefines the constraints entirely.
 
-```chartjs
-{
-  "type": "polarArea",
-  "data": {
-    "labels": ["Reframing", "Upstream Thinking", "Simplicity as Weapon", "Breaking Format", "Doing What Others Won't", "Preparation Over Execution"],
-    "datasets": [{
-      "data": [25, 22, 20, 15, 12, 6],
-      "backgroundColor": ["rgba(39, 174, 96, 0.7)", "rgba(41, 128, 185, 0.7)", "rgba(230, 126, 34, 0.7)", "rgba(155, 89, 182, 0.7)", "rgba(231, 76, 60, 0.7)", "rgba(52, 152, 219, 0.7)"]
-    }]
-  },
-  "options": {
-    "plugins": { "title": { "display": true, "text": "Predatory Thinking Toolkit: Relative Power of Each Principle" } }
-  }
-}
-```
 
 Reframing dominates Trott's toolkit because it is the meta-skill that powers all others — if you change the context, the meaning changes automatically, making every other principle easier to deploy.
 
-```d3
-{
-  "type": "force",
-  "data": {
-    "nodes": [
-      { "id": "Predatory Thinking", "group": "core", "size": 30 },
-      { "id": "Sun Tzu", "group": "influence", "size": 18 },
-      { "id": "Darwin", "group": "influence", "size": 15 },
-      { "id": "Lateral Thinking", "group": "influence", "size": 15 },
-      { "id": "Reframing", "group": "principle", "size": 20 },
-      { "id": "Upstream Thinking", "group": "principle", "size": 18 },
-      { "id": "Simplicity", "group": "principle", "size": 16 },
-      { "id": "Avis Campaign", "group": "example", "size": 12 },
-      { "id": "D-Day Deception", "group": "example", "size": 12 },
-      { "id": "Muhammad Ali", "group": "example", "size": 12 },
-      { "id": "Helmuth von Moltke", "group": "example", "size": 12 }
-    ],
-    "links": [
-      { "source": "Sun Tzu", "target": "Predatory Thinking", "value": 5 },
-      { "source": "Darwin", "target": "Predatory Thinking", "value": 3 },
-      { "source": "Lateral Thinking", "target": "Predatory Thinking", "value": 4 },
-      { "source": "Predatory Thinking", "target": "Reframing", "value": 5 },
-      { "source": "Predatory Thinking", "target": "Upstream Thinking", "value": 4 },
-      { "source": "Predatory Thinking", "target": "Simplicity", "value": 3 },
-      { "source": "Reframing", "target": "Avis Campaign", "value": 3 },
-      { "source": "Upstream Thinking", "target": "D-Day Deception", "value": 3 },
-      { "source": "Reframing", "target": "Muhammad Ali", "value": 3 },
-      { "source": "Upstream Thinking", "target": "Helmuth von Moltke", "value": 3 }
-    ]
-  },
-  "options": {
-    "title": "Predatory Thinking: Intellectual Influences and Application Map",
-    "colors": { "core": "#27ae60", "influence": "#2980b9", "principle": "#e67e22", "example": "#95a5a6" }
-  }
-}
-```
 
 The force diagram maps how Trott's predatory thinking draws from three intellectual traditions (Sun Tzu, Darwin, lateral thinking) and flows into three core principles, each illustrated by case studies drawn from military history, sport, and advertising.
 
@@ -407,7 +356,7 @@ stateDiagram-v2
     AcceptBrief --> FollowConvention: No questioning
     FollowConvention --> CompeteSameGround: Industry norms
     CompeteSameGround --> IncrementalResult: Marginal gains
-    
+
     [*] --> PredatorMode
     PredatorMode --> QuestionBrief: Ask "is this the right problem?"
     QuestionBrief --> Reframe: Change the context

@@ -274,9 +274,6 @@ The five qualities of an effective vision:
 | **Inspirational** | Gives people a reason to care about the work | The login team is building the gateway to a customer's first experience |
 | **Memorable** | The team can recall it without looking it up | Like the best advertising slogans — simple, specific, tied to something you care about |
 
-```chartjs
-{"type":"radar","data":{"labels":["Simplifying","Intentional","Consolidated","Inspirational","Memorable"],"datasets":[{"label":"Difficulty to Achieve","data":[70,55,40,65,80],"backgroundColor":"rgba(231,76,60,0.2)","borderColor":"#e74c3c","pointBackgroundColor":"#e74c3c"},{"label":"Impact on Team Alignment","data":[85,75,50,60,90],"backgroundColor":"rgba(39,174,96,0.2)","borderColor":"#27ae60","pointBackgroundColor":"#27ae60"}]},"options":{"plugins":{"title":{"display":true,"text":"Five Qualities of Vision: Difficulty vs Impact"}},"scales":{"r":{"beginAtZero":true,"max":100}}}}
-```
 
 The radar reveals that "Memorable" and "Simplifying" are both the hardest qualities to achieve and the most impactful — which explains why most vision documents fail: teams default to the easier qualities (Consolidated, Intentional) while neglecting the two that actually drive alignment.
 
@@ -794,15 +791,9 @@ These questions are not meant for formal reports. They are a constant background
 | **Referent** | Influence from character and track record — respected, admired, followed | Most durable but slowest to build |
 | **Influence** | Ability to shape decisions through persuasion and political skill | Tactical — about how you operate, not who you are |
 
-```d3
-{"type":"treemap","data":{"name":"Political Power Taxonomy","children":[{"name":"Granted Power","children":[{"name":"Reward Power","value":35},{"name":"Coercive Power","value":20}]},{"name":"Earned Power","children":[{"name":"Knowledge Power","value":40},{"name":"Referent Power","value":50}]},{"name":"Hybrid","children":[{"name":"Influence Power","value":30}]}]},"options":{"title":"Berkun's Political Power Taxonomy: Granted vs Earned","colorScale":["#e74c3c","#e67e22","#2980b9","#27ae60","#8e44ad"]}}
-```
 
 The treemap shows that earned power (Knowledge + Referent) outweighs granted power (Reward + Coercive) in total organizational influence — Referent power, built through character and track record, is the largest single block because it is the most durable and the hardest to replicate.
 
-```chartjs
-{"type":"polarArea","data":{"labels":["Reward","Coercive","Knowledge","Referent","Influence"],"datasets":[{"data":[50,30,70,90,55],"backgroundColor":["rgba(230,126,34,0.6)","rgba(231,76,60,0.6)","rgba(41,128,185,0.6)","rgba(39,174,96,0.6)","rgba(142,68,173,0.6)"],"borderColor":["#e67e22","#e74c3c","#2980b9","#27ae60","#8e44ad"]}]},"options":{"plugins":{"title":{"display":true,"text":"Five Types of Organisational Power: Relative Durability"},"legend":{"position":"right"}}}}
-```
 
 The polar area chart sizes each power type by durability: Referent power (earned through character) dominates because it persists regardless of role changes, while Coercive power is the smallest — effective in the short term but corrosive over time and the first to evaporate when authority is removed.
 
@@ -981,9 +972,6 @@ Moving from positions to interests transforms an impasse into a solvable problem
 
 *Berkun returns throughout the book to a fundamental question — what is the PM actually for? His answer is consistent: the PM exists to create clarity from ambiguity.*
 
-```d3
-{"type":"force","data":{"nodes":[{"id":"vision","label":"Vision","group":1},{"id":"design","label":"Design & Problem Space","group":2},{"id":"decisions","label":"Decisions","group":2},{"id":"execution","label":"Execution & Schedules","group":3},{"id":"politics","label":"Political Power","group":4},{"id":"communication","label":"Communication","group":4},{"id":"pm","label":"PM (Centre)","group":5},{"id":"conflict","label":"Conflict Resolution","group":4}],"links":[{"source":"pm","target":"vision","label":"owns"},{"source":"vision","target":"design","label":"guides"},{"source":"design","target":"decisions","label":"requires"},{"source":"decisions","target":"execution","label":"drives"},{"source":"execution","target":"communication","label":"depends on"},{"source":"politics","target":"decisions","label":"constrains"},{"source":"pm","target":"politics","label":"navigates"},{"source":"pm","target":"communication","label":"ensures"},{"source":"pm","target":"conflict","label":"resolves"},{"source":"conflict","target":"decisions","label":"unblocks"},{"source":"communication","target":"vision","label":"reinforces"}]},"options":{"title":"Berkun's Project Management Concept Web","chargeStrength":-350}}
-```
 
 The force diagram shows the PM at the centre of a concept web where Vision, Design, Decisions, Execution, Politics, and Communication are all interconnected — the PM's unique value is holding this entire web together, which no single specialist can do.
 

@@ -40,39 +40,6 @@ To structure this, *The Daily Laws* introduces a taxonomy Greene calls the <b st
 | **Machiavellians** | Only power matters | Rise fast through manipulation | Hit a ceiling that requires trust and empathy |
 | **Radical Realists** | Power is real AND empathy matters | Combine strategic awareness with genuine connection | None — this is Greene's aspirational type |
 
-```chartjs
-{
-  "type": "bar",
-  "data": {
-    "labels": ["Strategic Awareness", "Empathic Connection", "Career Longevity", "Vulnerability to Betrayal", "Moral Clarity", "Adaptability"],
-    "datasets": [
-      {
-        "label": "Deniers",
-        "data": [15, 70, 40, 95, 85, 30],
-        "backgroundColor": "rgba(41, 128, 185, 0.7)"
-      },
-      {
-        "label": "Machiavellians",
-        "data": [90, 15, 55, 45, 20, 75],
-        "backgroundColor": "rgba(231, 76, 60, 0.7)"
-      },
-      {
-        "label": "Radical Realists",
-        "data": [85, 80, 95, 30, 65, 90],
-        "backgroundColor": "rgba(39, 174, 96, 0.7)"
-      }
-    ]
-  },
-  "options": {
-    "plugins": {
-      "title": { "display": true, "text": "Greene's Three Types — Capability Profile Comparison" }
-    },
-    "scales": {
-      "y": { "beginAtZero": true, "max": 100, "title": { "display": true, "text": "Score" } }
-    }
-  }
-}
-```
 
 The Radical Realist dominates across nearly every dimension — combining the Denier's empathy with the Machiavellian's strategic awareness while avoiding both types' fatal flaws.
 
@@ -116,32 +83,6 @@ The twelve months trace what Greene presents as the <b style="color: #2980b9">Ma
 | **The Guerrilla Mind** | Refusing fixed intellectual positions, treating all beliefs as provisional and updating continuously |
 | **The Cosmic Sublime** | Awe and self-transcendence that dissolve ego and reconnect you to something larger than personal narrative |
 
-```chartjs
-{
-  "type": "polarArea",
-  "data": {
-    "labels": ["Jan-Mar: Inner Foundation", "Apr-Jun: Social Battlefield", "Jul-Sep: Offensive Capability", "Oct-Nov: Emotional Mastery", "Dec: The Sublime"],
-    "datasets": [{
-      "data": [90, 75, 80, 70, 95],
-      "backgroundColor": [
-        "rgba(41, 128, 185, 0.6)",
-        "rgba(39, 174, 96, 0.6)",
-        "rgba(231, 76, 60, 0.6)",
-        "rgba(243, 156, 18, 0.6)",
-        "rgba(142, 68, 173, 0.6)"
-      ]
-    }]
-  },
-  "options": {
-    "plugins": {
-      "title": { "display": true, "text": "The Daily Laws — Relative Depth and Originality by Quarter" }
-    },
-    "scales": {
-      "r": { "beginAtZero": true, "max": 100 }
-    }
-  }
-}
-```
 
 December's Sublime material scores highest for originality because it draws on unpublished work — making it the primary reason existing Greene readers should pick up this compilation.
 
@@ -226,27 +167,6 @@ Greene is particularly sharp on what he calls <b style="color: #e74c3c">false pa
   - The need for ever-larger external rewards to sustain motivation
 - <b style="color: #e74c3c">A false path does not announce itself with dramatic unhappiness — it erodes you gradually, like water wearing down stone</b>
 
-```d3
-{
-  "type": "treemap",
-  "data": {
-    "name": "Source Books",
-    "children": [
-      { "name": "Mastery", "value": 90, "category": "Jan-Mar" },
-      { "name": "48 Laws of Power", "value": 80, "category": "Apr-Jun" },
-      { "name": "Art of Seduction", "value": 60, "category": "Jul" },
-      { "name": "Laws of Human Nature", "value": 75, "category": "May/Oct-Nov" },
-      { "name": "33 Strategies of War", "value": 65, "category": "Sep" },
-      { "name": "50th Law", "value": 45, "category": "Aug" },
-      { "name": "The Law of the Sublime (unpublished)", "value": 50, "category": "Dec" }
-    ]
-  },
-  "options": {
-    "title": "The Daily Laws — Source Material Distribution Across Greene's Canon",
-    "colorField": "category"
-  }
-}
-```
 
 Mastery and The 48 Laws of Power contribute the most material, but December's unpublished Sublime content makes that month the book's single most valuable chapter for readers already familiar with Greene's published works.
 
@@ -1025,42 +945,6 @@ The Sublime, in Greene's usage, draws on a philosophical tradition stretching ba
 - People who cultivate the Sublime develop a perspective that makes everything else — including the power dynamics that dominated the previous eleven months — more manageable and less consuming
 - <b style="color: #27ae60">They play the game without being enslaved by it</b>
 
-```d3
-{
-  "type": "force",
-  "data": {
-    "nodes": [
-      { "id": "Life's Task (Jan)", "group": "Inner" },
-      { "id": "Apprenticeship (Feb)", "group": "Inner" },
-      { "id": "Mastery (Mar)", "group": "Inner" },
-      { "id": "Courtier (Apr)", "group": "Social" },
-      { "id": "Character (May)", "group": "Social" },
-      { "id": "Indirection (Jun)", "group": "Social" },
-      { "id": "Seduction (Jul)", "group": "Offensive" },
-      { "id": "Persuasion (Aug)", "group": "Offensive" },
-      { "id": "Strategy (Sep)", "group": "Offensive" },
-      { "id": "Emotions (Oct)", "group": "Inward" },
-      { "id": "Rationality (Nov)", "group": "Inward" },
-      { "id": "Sublime (Dec)", "group": "Inward" }
-    ],
-    "links": [
-      { "source": "Life's Task (Jan)", "target": "Apprenticeship (Feb)", "label": "Foundation" },
-      { "source": "Apprenticeship (Feb)", "target": "Mastery (Mar)", "label": "Progression" },
-      { "source": "Mastery (Mar)", "target": "Courtier (Apr)", "label": "Social application" },
-      { "source": "Character (May)", "target": "Indirection (Jun)", "label": "Reading enables strategy" },
-      { "source": "Indirection (Jun)", "target": "Seduction (Jul)", "label": "Indirect power" },
-      { "source": "Seduction (Jul)", "target": "Persuasion (Aug)", "label": "Influence tools" },
-      { "source": "Strategy (Sep)", "target": "Emotions (Oct)", "label": "Action reveals emotion" },
-      { "source": "Emotions (Oct)", "target": "Rationality (Nov)", "label": "Awareness enables control" },
-      { "source": "Rationality (Nov)", "target": "Sublime (Dec)", "label": "Transcendence" },
-      { "source": "Sublime (Dec)", "target": "Life's Task (Jan)", "label": "Renewed purpose" }
-    ]
-  },
-  "options": {
-    "title": "The Daily Laws — The 12-Month Mastery Arc as a Connected System"
-  }
-}
-```
 
 The force diagram reveals the year's circular architecture — December's Sublime feeds back into January's Life's Task, creating an annual spiral where each cycle deepens the previous one's insights.
 

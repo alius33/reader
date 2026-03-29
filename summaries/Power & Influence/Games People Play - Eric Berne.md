@@ -160,75 +160,6 @@ This diagram shows the three fundamental transaction types — complementary (pr
 | **They'll Be Glad They Knew Me** | Aspiring person shares journey for encouragement | Hope, positive recognition |
 | **Homely Sage** | Shares wisdom modestly, seeks to educate | Respect, belonging |
 
-```d3
-{
-  "type": "treemap",
-  "data": {
-    "name": "Games Catalogue",
-    "children": [
-      {
-        "name": "Life Games",
-        "children": [
-          { "name": "Alcoholic", "value": 30 },
-          { "name": "Kick Me", "value": 20 },
-          { "name": "NIGYSOB", "value": 25 },
-          { "name": "SWYMD", "value": 15 },
-          { "name": "Debtor", "value": 12 }
-        ]
-      },
-      {
-        "name": "Marital Games",
-        "children": [
-          { "name": "IWFY", "value": 28 },
-          { "name": "Frigid W/M", "value": 18 },
-          { "name": "Harried", "value": 20 },
-          { "name": "Corner", "value": 15 },
-          { "name": "Uproar", "value": 16 },
-          { "name": "Courtroom", "value": 12 }
-        ]
-      },
-      {
-        "name": "Social Games",
-        "children": [
-          { "name": "Ain't It Awful", "value": 22 },
-          { "name": "YDYB", "value": 20 },
-          { "name": "Schlemiel", "value": 14 },
-          { "name": "Blemish", "value": 10 }
-        ]
-      },
-      {
-        "name": "Sexual Games",
-        "children": [
-          { "name": "Rapo", "value": 18 },
-          { "name": "LYAHF", "value": 12 },
-          { "name": "Indignation", "value": 10 }
-        ]
-      },
-      {
-        "name": "Consulting Room",
-        "children": [
-          { "name": "IOTHY", "value": 22 },
-          { "name": "Wooden Leg", "value": 16 },
-          { "name": "Psychiatry", "value": 14 },
-          { "name": "Stupid", "value": 10 }
-        ]
-      },
-      {
-        "name": "Underworld",
-        "children": [
-          { "name": "Cops & Robbers", "value": 14 },
-          { "name": "Fast One", "value": 10 },
-          { "name": "Want Out", "value": 8 }
-        ]
-      }
-    ]
-  },
-  "options": {
-    "title": "Berne's Games Catalogue by Category",
-    "color": ["#e74c3c", "#e67e22", "#3498db", "#8e44ad", "#2ecc71", "#95a5a6"]
-  }
-}
-```
 
 Marital and Life Games dominate Berne's catalogue in both number and severity — these are the games that shape entire biographies, not just evenings, which is why Berne devoted the most analytical depth to them.
 
@@ -263,48 +194,6 @@ Marital and Life Games dominate Berne's catalogue in both number and severity �
 
 - Berne insisted that ego states are not roles or performances — they are real, internally consistent states with their own memories, vocabularies, and worldviews
 
-```chartjs
-{
-  "type": "radar",
-  "data": {
-    "labels": ["Work Meeting", "Family Dinner", "Romantic Conflict", "Creative Work", "Crisis Response"],
-    "datasets": [
-      {
-        "label": "Parent Activation",
-        "data": [6, 8, 7, 2, 5],
-        "backgroundColor": "rgba(231, 76, 60, 0.15)",
-        "borderColor": "#e74c3c"
-      },
-      {
-        "label": "Adult Activation",
-        "data": [9, 4, 3, 6, 8],
-        "backgroundColor": "rgba(41, 128, 185, 0.15)",
-        "borderColor": "#2980b9"
-      },
-      {
-        "label": "Child Activation",
-        "data": [2, 5, 9, 10, 4],
-        "backgroundColor": "rgba(39, 174, 96, 0.15)",
-        "borderColor": "#27ae60"
-      }
-    ]
-  },
-  "options": {
-    "plugins": {
-      "title": {
-        "display": true,
-        "text": "Ego State Activation Patterns Across Situations"
-      }
-    },
-    "scales": {
-      "r": {
-        "min": 0,
-        "max": 10
-      }
-    }
-  }
-}
-```
 
 The Adult dominates in work meetings and crises, the Child peaks during creative work and romantic conflict, and the Parent surges at family dinners — recognising which ego state is driving you in each context is the first step of structural analysis.
 - The Parent ego state literally replays recorded parental behaviour — a person in Parent is not imitating their mother, they *are* their mother in that moment
@@ -494,51 +383,6 @@ In ulterior transactions, the hidden psychological message always determines the
 
 - <b style="color: #27ae60">Games occupy the critical zone between safe-but-boring pastimes and terrifying-but-fulfilling intimacy</b>
 
-```chartjs
-{
-  "type": "polarArea",
-  "data": {
-    "labels": [
-      "Withdrawal",
-      "Rituals",
-      "Pastimes",
-      "Activities",
-      "Games",
-      "Intimacy"
-    ],
-    "datasets": [
-      {
-        "data": [1, 2, 3, 4, 8, 10],
-        "backgroundColor": [
-          "rgba(149, 165, 166, 0.6)",
-          "rgba(52, 152, 219, 0.6)",
-          "rgba(46, 204, 113, 0.6)",
-          "rgba(241, 196, 15, 0.6)",
-          "rgba(231, 76, 60, 0.6)",
-          "rgba(142, 68, 173, 0.6)"
-        ]
-      }
-    ]
-  },
-  "options": {
-    "plugins": {
-      "title": {
-        "display": true,
-        "text": "Time Structuring — Stroke Intensity by Level"
-      },
-      "legend": {
-        "position": "right"
-      }
-    },
-    "scales": {
-      "r": {
-        "min": 0,
-        "max": 10
-      }
-    }
-  }
-}
-```
 
 Intimacy provides the highest stroke intensity but demands maximum vulnerability, while games offer nearly as much emotional charge with far less genuine exposure — which is precisely why most people settle for games instead of risking real connection.
 - Most people spend the majority of their social time in levels 2-4 (rituals, pastimes, activities)
@@ -611,39 +455,6 @@ flowchart LR
 
 Berne's game formula shows the invariable sequence — every game begins with a hook, escalates through engagement, pivots at the switch, and ends with the player collecting their familiar bad feeling.
 
-```d3
-{
-  "type": "sankey",
-  "data": {
-    "nodes": [
-      { "id": "Con", "label": "Con (The Hook)" },
-      { "id": "Gimmick", "label": "Gimmick (Weakness Targeted)" },
-      { "id": "Response", "label": "Response (Mark Engages)" },
-      { "id": "Switch", "label": "Switch (Reveal)" },
-      { "id": "Crossup", "label": "Crossup (Confusion)" },
-      { "id": "Payoff", "label": "Payoff (Bad Feeling)" },
-      { "id": "Guilt", "label": "Guilt Stamps" },
-      { "id": "Anger", "label": "Anger Stamps" },
-      { "id": "SelfPity", "label": "Self-Pity Stamps" },
-      { "id": "Superiority", "label": "Superiority Stamps" }
-    ],
-    "links": [
-      { "source": "Con", "target": "Gimmick", "value": 10 },
-      { "source": "Gimmick", "target": "Response", "value": 10 },
-      { "source": "Response", "target": "Switch", "value": 10 },
-      { "source": "Switch", "target": "Crossup", "value": 10 },
-      { "source": "Crossup", "target": "Payoff", "value": 10 },
-      { "source": "Payoff", "target": "Guilt", "value": 3 },
-      { "source": "Payoff", "target": "Anger", "value": 3 },
-      { "source": "Payoff", "target": "SelfPity", "value": 2 },
-      { "source": "Payoff", "target": "Superiority", "value": 2 }
-    ]
-  },
-  "options": {
-    "title": "Game Formula Flow — From Con to Stamp Collection"
-  }
-}
-```
 
 Every game flows through the same six-step pipeline and terminates in one of a handful of familiar stamp types — the formula is universal, only the specific emotions collected at the end vary by player and script.
 

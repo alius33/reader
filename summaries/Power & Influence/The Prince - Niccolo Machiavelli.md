@@ -54,7 +54,7 @@ year: 1532
 - The prince's job is to maximise virtù and build defences against fortuna — like building dams and dykes before the river floods
 
 ```mermaid
-graph LR
+flowchart LR
     A["<b>VIRTÙ</b><br/>Skill, Ability,<br/>Decisive Action"] -->|"Prepares for"| C["<b>SUCCESS</b><br/>State Preserved,<br/>Power Secured"]
     B["<b>FORTUNA</b><br/>Luck, Circumstance,<br/>The Uncontrollable"] -->|"Tests"| C
     A -->|"Builds defences<br/>against"| B
@@ -88,74 +88,12 @@ graph LR
 | **The Fortuna River** | Fortune is a flooding river — build dams in calm weather | 25 |
 | **Armed Prophets** | Those who can enforce their vision succeed; those who can't, perish | 6 |
 
-```chartjs
-{
-  "type": "radar",
-  "data": {
-    "labels": ["Military Self-Reliance", "Foresight", "Fox (Cunning)", "Lion (Force)", "People's Support", "Appearance Management", "Adaptability"],
-    "datasets": [
-      {
-        "label": "Cesare Borgia",
-        "data": [85, 90, 95, 80, 70, 85, 75],
-        "backgroundColor": "rgba(41, 128, 185, 0.15)",
-        "borderColor": "#2980b9"
-      },
-      {
-        "label": "Louis XII",
-        "data": [30, 15, 25, 40, 20, 35, 20],
-        "backgroundColor": "rgba(231, 76, 60, 0.15)",
-        "borderColor": "#e74c3c"
-      }
-    ]
-  },
-  "options": {
-    "plugins": { "title": { "display": true, "text": "Machiavelli's Model Prince vs Anti-Model" } },
-    "scales": { "r": { "min": 0, "max": 100 } }
-  }
-}
-```
 
 Borgia scores high across all seven dimensions while Louis XII fails on nearly every one — Machiavelli uses the contrast to demonstrate that power requires simultaneous mastery of multiple skills, and weakness in any single area creates a fatal vulnerability.
 
-```d3
-{
-  "type": "heatmap",
-  "data": {
-    "rows": ["Marcus Aurelius", "Pertinax", "Severus", "Alexander Severus", "Commodus", "Caracalla", "Maximinus"],
-    "columns": ["Virtù", "Fear (Not Hatred)", "People's Support", "Military Control", "Appearance", "Survived"],
-    "values": [
-      [9, 4, 9, 7, 8, 10],
-      [5, 3, 6, 2, 5, 0],
-      [9, 8, 5, 9, 7, 10],
-      [4, 2, 5, 2, 3, 0],
-      [3, 1, 1, 5, 1, 0],
-      [6, 1, 2, 6, 3, 0],
-      [4, 1, 1, 4, 2, 0]
-    ]
-  },
-  "options": {
-    "title": "Roman Emperors Scorecard — Machiavelli's Case Studies"
-  }
-}
-```
 
 Only Marcus Aurelius and Septimius Severus survived — and they achieved it through opposite means (gentleness vs ruthlessness), proving Machiavelli's point that there is no single formula for power, only the requirement to match your approach to the circumstances of the times.
 
-```chartjs
-{
-  "type": "doughnut",
-  "data": {
-    "labels": ["Virtù (What You Control)", "Fortuna (What Happens to You)"],
-    "datasets": [{
-      "data": [50, 50],
-      "backgroundColor": ["#27ae60", "#e74c3c"]
-    }]
-  },
-  "options": {
-    "plugins": { "title": { "display": true, "text": "Machiavelli's Central Equation — Virtù vs Fortuna" } }
-  }
-}
-```
 
 Machiavelli's most famous claim — that fortune decides about half our actions — frames the entire book as a manual for maximising the half you control while building defences against the half you cannot.
 
@@ -177,7 +115,7 @@ From banned manuscript to foundational political text — The Prince's journey t
 *The entire first half of the book is organised around a classification system. Here's the complete map of how states are acquired and the challenges each type presents.*
 
 ```mermaid
-graph TD
+flowchart TD
     A["ALL STATES"] --> B["Republics<br/>(not discussed)"]
     A --> C["Principalities"]
     C --> D["Hereditary<br/>(Ch 2)<br/>Easy to hold"]
@@ -422,7 +360,7 @@ graph TD
 - <b style="color: #27ae60">The Cruelty Calculus</b> — the chapter's real contribution:
 
 ```mermaid
-graph TD
+flowchart TD
     A["SEIZE POWER"] --> B{"How is cruelty used?"}
     B -->|"All at once,<br/>then stopped"| C["<b>WELL-USED CRUELTY</b><br/>People recover<br/>State stabilises<br/>Prince can shift to generosity"]
     B -->|"Starts small,<br/>escalates over time"| D["<b>BADLY-USED CRUELTY</b><br/>Enemies multiply<br/>Prince needs knife in hand forever<br/>State collapses"]
@@ -494,7 +432,7 @@ graph TD
 - Four types of armed force:
 
 ```mermaid
-graph TD
+flowchart TD
     A["MILITARY<br/>OPTIONS"] --> B["<b>OWN ARMY</b><br/>Citizens/Subjects"]
     A --> C["<b>MERCENARIES</b><br/>Hired soldiers"]
     A --> D["<b>AUXILIARIES</b><br/>Another ruler's troops"]
@@ -836,7 +774,7 @@ graph TD
   - Italy was "open countryside with no dams, no dykes" — if virtù had built defences (as Germany, Spain, and France had done), the foreign invasions might not have happened at all
 
 ```mermaid
-graph LR
+flowchart LR
     subgraph "CALM TIMES"
         A["Build Defences<br/>(Laws, Armies,<br/>Alliances, Reserves)"]
     end

@@ -157,9 +157,6 @@ This table captures the book's architecture at a glance — each concept builds 
 
 Each cornerstone reinforces the others — discretion protects truth-telling, revenue generation validates bold promises, and attracting talent multiplies everything.
 
-```chartjs
-{"type":"radar","data":{"labels":["Revenue Generation","Truth-Telling","Discretion","Keeping Promises","Attracting Talent"],"datasets":[{"label":"Strong Brand Executive","data":[9,8,9,9,8],"borderColor":"#27ae60","backgroundColor":"rgba(39,174,96,0.15)"},{"label":"Average Professional","data":[6,5,4,5,4],"borderColor":"#3498db","backgroundColor":"rgba(52,152,219,0.15)"},{"label":"Brand at Risk","data":[3,7,2,4,3],"borderColor":"#e74c3c","backgroundColor":"rgba(231,76,60,0.15)"}]},"options":{"plugins":{"title":{"display":true,"text":"Five Brand Cornerstones — Profile Comparison"}},"scales":{"r":{"beginAtZero":true,"max":10}}}}
-```
 
 A single weak cornerstone — particularly discretion or revenue generation — can undermine an otherwise strong brand, explaining why one indiscretion destroyed a $7 million consulting relationship.
 
@@ -260,9 +257,6 @@ Self-awareness is the starting point, not the destination — the real work begi
 
 The first four types each offer something worth extracting. The last two are dead ends — D'Alessandro's advice for both is the same: leave.
 
-```d3
-{"type":"treemap","data":{"name":"Boss Types","children":[{"name":"Mentor (High Value)","value":35},{"name":"Little League Parent","value":20},{"name":"Wastrel (Hidden Value)","value":15},{"name":"Pariah (Risky Value)","value":10},{"name":"One-Way User (Leave)","value":10},{"name":"Wimp/Know-It-All (Leave)","value":10}]},"options":{"title":"Boss Taxonomy — Relative Career Development Value"}}
-```
 
 The Mentor relationship towers over all other boss types in career development value — it is the single most valuable professional relationship, but D'Alessandro warns it must be understood as a strategic alliance, not a friendship.
 
@@ -302,9 +296,6 @@ The Mentor relationship towers over all other boss types in career development v
 | **Contrarians** | ~10% | Disagree with everything from bitterness or resentment | Advice too coloured by personal grievance to be useful |
 | **Balanced players** | ~20% | Tell the truth with courage and timing; disagree before decisions, execute after | None — this is the only group that gives advice worth trusting |
 
-```chartjs
-{"type":"bar","data":{"labels":["Sycophants","Contrarians","Balanced Players"],"datasets":[{"label":"Proportion of Workforce","data":[70,10,20],"backgroundColor":["#e74c3c","#e67e22","#27ae60"]}]},"options":{"plugins":{"title":{"display":true,"text":"Three Corporate Personalities — Distribution in Typical Organisations"}},"scales":{"y":{"beginAtZero":true,"max":100,"title":{"display":true,"text":"% of Employees"}}}}}
-```
 
 Only 20% of employees operate as balanced players — the group that tells the truth with courage and timing — yet this is the only group that decision-makers trust with nuanced information and consider for advancement.
 
@@ -570,9 +561,6 @@ The two story types require different responses — confirmation stories can be 
 | **Creative meetings** | Get something done — solve problems, generate ideas | Contribute actively; the person who stays silent is the person nobody remembers |
 | **Combat meetings** | Money on the line — negotiations, budget fights, strategy disputes | Prepare obsessively; everything you say is being evaluated at the highest stakes |
 
-```d3
-{"type":"heatmap","data":{"xLabels":["Staff Meeting","Creative Meeting","Combat Meeting","Social Event","Hallway Chat","Email"],"yLabels":["Brand Deposit Potential","Brand Damage Risk","Visibility to Decision-Makers"],"values":[[3,6,9,4,5,3],[2,3,8,9,6,7],[4,6,9,5,3,4]]},"options":{"title":"Brand Impact Matrix — Interaction Types vs Risk and Opportunity"}}
-```
 
 Combat meetings and social events carry the highest brand stakes — combat meetings offer the greatest deposit potential while social events carry the highest damage risk, explaining why D'Alessandro warns that "there is no timeout for your brand."
 

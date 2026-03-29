@@ -219,25 +219,6 @@ The <b style="color: #2980b9">Map of Consciousness</b> is Hawkins' signature con
 
 Each level is not merely an emotional state — it is an entire way of perceiving and relating to reality.
 
-```chartjs
-{
-  "type": "polarArea",
-  "data": {
-    "labels": ["Shame (20)", "Guilt (30)", "Apathy (50)", "Grief (75)", "Fear (100)", "Desire (125)", "Anger (150)", "Pride (175)", "Courage (200)", "Acceptance (350)", "Love (500)", "Peace (600)"],
-    "datasets": [{
-      "data": [20, 30, 50, 75, 100, 125, 150, 175, 200, 350, 500, 600],
-      "backgroundColor": [
-        "rgba(44, 62, 80, 0.7)", "rgba(127, 140, 141, 0.7)", "rgba(149, 165, 166, 0.7)", "rgba(108, 122, 137, 0.7)",
-        "rgba(231, 76, 60, 0.7)", "rgba(230, 126, 34, 0.7)", "rgba(241, 196, 15, 0.7)", "rgba(243, 156, 18, 0.7)",
-        "rgba(41, 128, 185, 0.7)", "rgba(39, 174, 96, 0.7)", "rgba(142, 68, 173, 0.7)", "rgba(26, 188, 156, 0.7)"
-      ]
-    }]
-  },
-  "options": {
-    "plugins": { "title": { "display": true, "text": "Hawkins' Map of Consciousness: Logarithmic Energy Levels" } }
-  }
-}
-```
 
 The polar area chart makes the logarithmic nature of Hawkins' scale visceral — the jump from Courage (200) to Love (500) to Peace (600) dwarfs the differences between the sub-200 levels, illustrating why a single person at a high level can counterbalance millions at lower ones.
 
@@ -303,35 +284,6 @@ The polar area chart makes the logarithmic nature of Hawkins' scale visceral —
 - The problem: pride needs something to look down on to sustain itself
 - <b style="color: #e74c3c">Pride is the most dangerous sub-200 level because it feels like strength but is actually a vulnerability</b> — threaten the source of pride and the person collapses into anger or fear
 
-```chartjs
-{
-  "type": "line",
-  "data": {
-    "labels": ["Shame", "Guilt", "Apathy", "Grief", "Fear", "Desire", "Anger", "Pride", "Courage", "Neutrality", "Willingness", "Acceptance", "Reason", "Love", "Joy", "Peace"],
-    "datasets": [
-      {
-        "label": "Life Energy (Calibration)",
-        "data": [20, 30, 50, 75, 100, 125, 150, 175, 200, 250, 310, 350, 400, 500, 540, 600],
-        "borderColor": "#2980b9",
-        "backgroundColor": "rgba(41, 128, 185, 0.1)",
-        "fill": true
-      },
-      {
-        "label": "Force-Power Threshold (200)",
-        "data": [200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200, 200],
-        "borderColor": "#e74c3c",
-        "borderDash": [5, 5],
-        "fill": false,
-        "pointRadius": 0
-      }
-    ]
-  },
-  "options": {
-    "plugins": { "title": { "display": true, "text": "The Force-Power Divide: Energy Acceleration Above Level 200" } },
-    "scales": { "y": { "min": 0, "max": 700, "title": { "display": true, "text": "Calibration Level" } } }
-  }
-}
-```
 
 The line chart reveals the non-linear acceleration of consciousness: below the red threshold of 200, levels increment slowly through the force territory, but above it, consciousness accelerates dramatically — the jump from Reason (400) to Love (500) to Peace (600) dwarfs all the sub-200 transitions combined.
 - Hawkins warns that many self-help programmes inadvertently keep people at Pride by encouraging superiority rather than genuine growth
@@ -486,38 +438,6 @@ This diagram shows the full Map of Consciousness as a progression. The critical 
 
 This distribution table reveals how top-heavy human consciousness is toward the lower levels — and why the rare individuals at high levels exert disproportionate influence.
 
-```d3
-{
-  "type": "treemap",
-  "data": {
-    "name": "Global Consciousness",
-    "children": [
-      { "name": "Below 200 (Force)", "children": [
-        { "name": "Shame/Guilt", "value": 15 },
-        { "name": "Apathy", "value": 15 },
-        { "name": "Fear", "value": 25 },
-        { "name": "Desire", "value": 15 },
-        { "name": "Anger/Pride", "value": 15 }
-      ]},
-      { "name": "200-499 (Power)", "children": [
-        { "name": "Courage", "value": 5 },
-        { "name": "Neutrality", "value": 3 },
-        { "name": "Willingness", "value": 2 },
-        { "name": "Reason", "value": 1 }
-      ]},
-      { "name": "500+ (Love & Beyond)", "children": [
-        { "name": "Love (500)", "value": 3 },
-        { "name": "Joy (540)", "value": 0.4 },
-        { "name": "Peace (600+)", "value": 0.1 }
-      ]}
-    ]
-  },
-  "options": {
-    "title": "Global Distribution of Consciousness Levels (Hawkins' Estimate)",
-    "colorScheme": ["#e74c3c", "#c0392b", "#d35400", "#e67e22", "#f39c12", "#2980b9", "#3498db", "#1abc9c", "#27ae60", "#27ae60", "#8e44ad", "#6c3483"]
-  }
-}
-```
 
 The treemap makes the population distribution stark: the vast majority of humanity operates in the red/orange "force" territory below 200, with the constructive "power" levels forming a thin band and the transformative levels (Love, Joy, Peace) barely visible — illustrating why Hawkins claims each person's inner work has outsized collective impact.
 

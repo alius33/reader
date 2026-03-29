@@ -49,42 +49,6 @@ The book rests on **Three Big Ideas** that thread through every chapter:
 | **Do-Over** | When you mess up (and you will), stop, apologize, and start the interaction over — models repair |
 | **North Star** | Parents as the attachment figure children orbit around; when the star moves, the child must reorient |
 
-```chartjs
-{
-  "type": "radar",
-  "data": {
-    "labels": ["Self-Soothing", "Self-Awareness", "Impulse Control", "Empathy", "Emotional Vocabulary", "Resilience Under Stress"],
-    "datasets": [
-      {
-        "label": "Emotion-Coached Children",
-        "data": [9, 8, 8, 9, 9, 8],
-        "backgroundColor": "rgba(39, 174, 96, 0.2)",
-        "borderColor": "#27ae60"
-      },
-      {
-        "label": "Uncoached Children",
-        "data": [4, 3, 3, 4, 3, 3],
-        "backgroundColor": "rgba(231, 76, 60, 0.2)",
-        "borderColor": "#e74c3c"
-      }
-    ]
-  },
-  "options": {
-    "plugins": {
-      "title": {
-        "display": true,
-        "text": "Emotional Intelligence Components: Coached vs Uncoached Children"
-      }
-    },
-    "scales": {
-      "r": {
-        "min": 0,
-        "max": 10
-      }
-    }
-  }
-}
-```
 
 Children who receive consistent emotion coaching develop dramatically stronger EQ across all dimensions — the gap is widest in self-soothing and empathy, the two skills most dependent on parental modeling.
 
@@ -232,28 +196,6 @@ Every interaction with your child is either a deposit or a withdrawal. Setting l
 
 When your child is defiant, check the account balance. Defiance isn't a discipline problem — <b style="color: #e74c3c">it's a relationship problem</b>. The child who went from defiant to eager-to-please after a single hug wasn't being manipulated. She was being refueled.
 
-```chartjs
-{
-  "type": "doughnut",
-  "data": {
-    "labels": ["Positive Interactions (Deposits)", "Neutral Interactions", "Corrections (Withdrawals)", "Conflicts (Major Withdrawals)"],
-    "datasets": [
-      {
-        "data": [70, 15, 10, 5],
-        "backgroundColor": ["#27ae60", "#95a5a6", "#f39c12", "#e74c3c"]
-      }
-    ]
-  },
-  "options": {
-    "plugins": {
-      "title": {
-        "display": true,
-        "text": "Emotional Bank Account — Ideal Interaction Ratio"
-      }
-    }
-  }
-}
-```
 
 Maintaining a 5-to-1 positive-to-negative ratio means roughly 70% of daily interactions should be warm deposits — the same ratio that predicts whether marriages survive.
 
@@ -593,32 +535,6 @@ When your child refuses to cooperate and you're about to threaten, try these ins
 11. **Engage the rational brain** — narrate the story of what happened to help them process it
 12. **Get to the root** — move in close, restate the limit with compassion, help them have their meltdown
 
-```d3
-{
-  "type": "treemap",
-  "data": {
-    "name": "12 Alternatives to Consequences",
-    "children": [
-      {"name": "Let child solve it", "value": 9, "category": "Empowering"},
-      {"name": "Partner for win/win", "value": 8, "category": "Empowering"},
-      {"name": "Invite cooperation", "value": 7, "category": "Empowering"},
-      {"name": "Offer mastery", "value": 7, "category": "Empowering"},
-      {"name": "Make it a game", "value": 9, "category": "Playful"},
-      {"name": "Playful reconnection", "value": 8, "category": "Playful"},
-      {"name": "Give wish in fantasy", "value": 6, "category": "Empathic"},
-      {"name": "Give it for real", "value": 5, "category": "Empathic"},
-      {"name": "Ask for do-over", "value": 7, "category": "Empathic"},
-      {"name": "Put child in charge", "value": 8, "category": "Structural"},
-      {"name": "Engage rational brain", "value": 6, "category": "Structural"},
-      {"name": "Get to the root", "value": 10, "category": "Structural"}
-    ]
-  },
-  "options": {
-    "title": "12 Alternatives to Consequences — Grouped by Type and Weighted by Versatility",
-    "colors": ["#27ae60", "#2980b9", "#f39c12", "#8e44ad"]
-  }
-}
-```
 
 "Get to the root" scores highest in versatility because it addresses the underlying need rather than the surface behavior — the same principle that makes emotion coaching more effective than behavioral control.
 
@@ -650,26 +566,6 @@ When your child refuses to cooperate and you're about to threaten, try these ins
 | 3-5 years | Empathy + Independence | Emotion coaching; empathic limits | Don't push false independence |
 | 6-9 years | Mastery + Connection | Support passions; maintain bond | Don't let peer culture replace you |
 
-```d3
-{
-  "type": "heatmap",
-  "data": {
-    "xLabels": ["0-13 months", "13-36 months", "3-5 years", "6-9 years"],
-    "yLabels": ["Trust", "Autonomy", "Empathy", "Mastery", "Connection"],
-    "values": [
-      [10, 6, 4, 3],
-      [3, 10, 7, 5],
-      [2, 4, 9, 7],
-      [1, 3, 6, 10],
-      [8, 8, 7, 9]
-    ]
-  },
-  "options": {
-    "title": "Intensity of Developmental Needs Across Age Stages",
-    "colorRange": ["#eaf2f8", "#2980b9"]
-  }
-}
-```
 
 Connection remains high across all stages — it never stops being critical — while other needs peak at specific developmental windows, showing why a one-size-fits-all approach fails.
 

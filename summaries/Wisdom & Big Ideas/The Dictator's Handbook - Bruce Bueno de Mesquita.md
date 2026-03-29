@@ -67,45 +67,6 @@ The selectorate approach is distinctive because it doesn't require bad people, w
 | **The autocrat's dilemma** | Need enough freedom for economic productivity, not enough for revolution |
 | **Fungibility of aid** | NGO spending displaces government spending, freeing funds for corruption |
 
-```chartjs
-{
-  "type": "bar",
-  "data": {
-    "labels": ["Autocracy", "Rigged Democracy", "Weak Democracy", "Strong Democracy"],
-    "datasets": [
-      {
-        "label": "Coalition Size (% of population)",
-        "data": [1, 5, 20, 50],
-        "backgroundColor": "#e74c3c",
-        "borderColor": "#c0392b",
-        "borderWidth": 1
-      },
-      {
-        "label": "Public Goods Provision (index 0-100)",
-        "data": [10, 25, 55, 90],
-        "backgroundColor": "#27ae60",
-        "borderColor": "#1e8449",
-        "borderWidth": 1
-      }
-    ]
-  },
-  "options": {
-    "plugins": {
-      "title": {
-        "display": true,
-        "text": "Coalition Size vs. Public Goods Provision"
-      }
-    },
-    "scales": {
-      "y": {
-        "min": 0,
-        "max": 100,
-        "title": { "display": true, "text": "Percentage / Index" }
-      }
-    }
-  }
-}
-```
 
 The near-perfect correlation between coalition size and public goods provision is the book's core empirical claim — as the winning coalition expands from 1% (autocracy) to 50% (strong democracy), leaders shift from private rewards to public goods because it becomes the only affordable survival strategy.
 
@@ -199,54 +160,6 @@ flowchart LR
 
 The nested structure of the three groups determines the balance of power in every organisation — the leader survives by paying the innermost ring and keeping the outermost ring too large and diffuse to coordinate.
 
-```d3
-{
-  "type": "treemap",
-  "data": {
-    "name": "Political Systems",
-    "children": [
-      {
-        "name": "Autocracy",
-        "children": [
-          {"name": "Interchangeables", "value": 80},
-          {"name": "Influentials", "value": 15},
-          {"name": "Essentials", "value": 5}
-        ]
-      },
-      {
-        "name": "Oligarchy",
-        "children": [
-          {"name": "Interchangeables", "value": 60},
-          {"name": "Influentials", "value": 25},
-          {"name": "Essentials", "value": 15}
-        ]
-      },
-      {
-        "name": "Weak Democracy",
-        "children": [
-          {"name": "Interchangeables", "value": 50},
-          {"name": "Influentials", "value": 30},
-          {"name": "Essentials", "value": 20}
-        ]
-      },
-      {
-        "name": "Strong Democracy",
-        "children": [
-          {"name": "Interchangeables", "value": 30},
-          {"name": "Influentials", "value": 30},
-          {"name": "Essentials", "value": 40}
-        ]
-      }
-    ]
-  },
-  "options": {
-    "title": "Selectorate Structure Across Political Systems",
-    "width": 700,
-    "height": 400,
-    "colorScale": ["#e74c3c", "#f39c12", "#2980b9", "#27ae60"]
-  }
-}
-```
 
 The treemap makes visible what selectorate theory quantifies: in autocracies the essentials block is tiny relative to the massive interchangeable pool (giving leaders maximum leverage), while in strong democracies the three groups converge in size, forcing leaders to serve broad interests.
 
@@ -316,45 +229,6 @@ flowchart TD
 
 The size of the winning coalition is the master variable — it predicts corruption levels, public goods provision, leader tenure, and quality of life more reliably than wealth, culture, or ideology.
 
-```chartjs
-{
-  "type": "radar",
-  "data": {
-    "labels": ["Keep Coalition Small", "Control Revenue", "Pay Supporters Well", "Maintain Large Selectorate", "Ignore the People"],
-    "datasets": [
-      {
-        "label": "Dictator Strategy",
-        "data": [10, 9, 8, 9, 10],
-        "backgroundColor": "rgba(231, 76, 60, 0.2)",
-        "borderColor": "#e74c3c",
-        "pointBackgroundColor": "#e74c3c"
-      },
-      {
-        "label": "Democrat Strategy",
-        "data": [2, 4, 6, 3, 2],
-        "backgroundColor": "rgba(41, 128, 185, 0.2)",
-        "borderColor": "#2980b9",
-        "pointBackgroundColor": "#2980b9"
-      }
-    ]
-  },
-  "options": {
-    "plugins": {
-      "title": {
-        "display": true,
-        "text": "The Five Rules Applied: Dictator vs. Democrat"
-      }
-    },
-    "scales": {
-      "r": {
-        "min": 0,
-        "max": 10,
-        "ticks": { "stepSize": 2 }
-      }
-    }
-  }
-}
-```
 
 The radar chart illustrates why the same five rules produce radically different outcomes — dictators max out every rule (small coalition, total revenue control, ignoring the people), while democrats are structurally constrained on each dimension because their large coalitions make those strategies unaffordable.
 

@@ -81,9 +81,6 @@ flowchart TD
 - Third Circle speakers exhaust — their audience tunes out because the energy is overwhelming and impersonal
 - <b style="color: #2980b9">Second Circle is intimate, focused, and magnetic</b> — it says "I am here, with you, right now"
 
-```chartjs
-{"type":"polarArea","data":{"labels":["First Circle (Withdrawn)","Second Circle (Present)","Third Circle (Pushing)"],"datasets":[{"data":[10,70,20],"backgroundColor":["rgba(231,76,60,0.6)","rgba(39,174,96,0.6)","rgba(243,156,18,0.6)"],"borderColor":["#e74c3c","#27ae60","#f39c12"],"borderWidth":2}]},"options":{"plugins":{"title":{"display":true,"text":"Ideal Energy Distribution Across the Three Circles"},"legend":{"position":"right"}}}}
-```
 
 The ideal speaker spends roughly 70% of their time in Second Circle — the zone of genuine presence and connection. Brief retreats into First Circle (10%) allow internal reflection, while occasional Third Circle energy (20%) can project passion to a large room. The danger is when First or Third dominates at Second Circle's expense.
 
@@ -378,9 +375,6 @@ The ideal speaker spends roughly 70% of their time in Second Circle — the zone
 
 *Goyder includes exercises throughout the book. Here are the most impactful ones consolidated into a daily practice.*
 
-```d3
-{"type":"treemap","data":{"name":"Gravitas Toolkit","children":[{"name":"Foundation (Physical)","children":[{"name":"Diaphragmatic Breathing","value":30},{"name":"Grounding (Feet)","value":25},{"name":"Vocal Warm-Up","value":20},{"name":"Shoulder Release","value":15},{"name":"Alexander Directions","value":10}]},{"name":"Presence (Psychological)","children":[{"name":"Second Circle Focus","value":28},{"name":"Level 3 Listening","value":22},{"name":"Inner Coach Redirect","value":18},{"name":"Stillness Practice","value":15},{"name":"Doorway Pause","value":12}]},{"name":"Meaning (Intentional)","children":[{"name":"Purpose Statement","value":25},{"name":"Three-Act Story","value":22},{"name":"I Believe Language","value":18},{"name":"Hedge Elimination","value":15},{"name":"Personal Story Formula","value":12}]}]},"options":{"title":"The Gravitas Toolkit — Techniques by Category"}}
-```
 
 Goyder's toolkit spans three layers: the physical foundation (breath, body, voice), the psychological presence (attention, focus, stillness), and the intentional meaning (purpose, story, language). Physical techniques form the largest base because they directly regulate the nervous system — without them, the psychological and intentional layers cannot function under pressure.
 
@@ -489,9 +483,6 @@ flowchart TD
 
 ## Deep Dive: Gravitas in Specific Situations
 
-```d3
-{"type":"heatmap","data":{"xLabels":["Presentations","Meetings","Tough Questions","Difficult Conversations","Virtual Calls","Courtroom"],"yLabels":["Deep Breathing","Grounding","Pause","Eye Contact","Vocal Resonance","Storytelling"],"values":[[9,7,8,6,8,7],[8,6,5,7,5,8],[7,8,9,8,7,9],[6,9,8,9,7,8],[9,5,6,7,9,8],[8,4,3,5,4,6]]},"options":{"title":"Gravitas Techniques by Situation — Importance Rating (1-10)","colorRange":["#f7fbff","#2980b9"]}}
-```
 
 Deep breathing and vocal resonance are universally critical across all situations, while storytelling is most valuable in presentations and least applicable in meetings. Eye contact becomes paramount in one-on-one difficult conversations, and the strategic pause is most powerful when handling tough questions under pressure.
 
@@ -1056,9 +1047,6 @@ flowchart TD
 | **Purpose** | Provides the conviction that makes technique authentic | Polished but hollow — the audience senses something is missing |
 | **Story** | Creates emotional connection and memorability | Information without impact — forgotten by the time they leave the room |
 
-```chartjs
-{"type":"radar","data":{"labels":["Breath","Ground","Voice","Second Circle","Listen","Purpose","Story"],"datasets":[{"label":"Beginner (Pre-Training)","data":[3,2,3,2,3,4,2],"borderColor":"#e74c3c","backgroundColor":"rgba(231,76,60,0.15)"},{"label":"After 30-Day Programme","data":[7,7,6,6,5,7,5],"borderColor":"#f39c12","backgroundColor":"rgba(243,156,18,0.15)"},{"label":"Integrated Practitioner","data":[9,8,8,9,8,9,8],"borderColor":"#27ae60","backgroundColor":"rgba(39,174,96,0.15)"}]},"options":{"plugins":{"title":{"display":true,"text":"The Seven Gravitas Elements — Readiness Scale"}},"scales":{"r":{"beginAtZero":true,"max":10,"ticks":{"stepSize":2}}}}}
-```
 
 Most professionals begin with strong purpose but weak physical foundations. Goyder's programme builds from the body upward: breath and grounding improve first, then voice and presence, and finally the integration of all seven elements into an automatic whole.
 

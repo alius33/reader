@@ -74,104 +74,12 @@ This diagram captures the central engine of the entire book — charisma is an i
 | **Vocal Power** | Using pitch, pace, and pauses to project confidence through sound |
 | **Alpha Body Language** | Space-claiming, stillness, and vocal depth that signal status |
 
-```chartjs
-{
-  "type": "radar",
-  "data": {
-    "labels": ["Focus Charisma", "Visionary Charisma", "Kindness Charisma", "Authority Charisma"],
-    "datasets": [
-      {
-        "label": "Bill Clinton",
-        "data": [95, 60, 70, 55],
-        "backgroundColor": "rgba(41, 128, 185, 0.15)",
-        "borderColor": "#2980b9"
-      },
-      {
-        "label": "Steve Jobs",
-        "data": [40, 95, 30, 75],
-        "backgroundColor": "rgba(231, 76, 60, 0.15)",
-        "borderColor": "#e74c3c"
-      },
-      {
-        "label": "Dalai Lama",
-        "data": [70, 50, 95, 30],
-        "backgroundColor": "rgba(39, 174, 96, 0.15)",
-        "borderColor": "#27ae60"
-      },
-      {
-        "label": "Colin Powell",
-        "data": [50, 55, 45, 95],
-        "backgroundColor": "rgba(142, 68, 173, 0.15)",
-        "borderColor": "#8e44ad"
-      }
-    ]
-  },
-  "options": {
-    "plugins": { "title": { "display": true, "text": "Four Charisma Styles — Iconic Examples" } },
-    "scales": { "r": { "min": 0, "max": 100 } }
-  }
-}
-```
 
 Each charisma icon dominates one style — Clinton's laser focus, Jobs's electrifying vision, the Dalai Lama's radiating kindness, and Powell's commanding authority — proving that charisma is not a single trait but four distinct configurations of presence, power, and warmth.
 
-```d3
-{
-  "type": "force",
-  "data": {
-    "nodes": [
-      { "id": "Internal State", "group": 1 },
-      { "id": "Presence", "group": 2 },
-      { "id": "Power", "group": 2 },
-      { "id": "Warmth", "group": 2 },
-      { "id": "Body Language", "group": 3 },
-      { "id": "Charisma", "group": 4 },
-      { "id": "Anxiety", "group": 5 },
-      { "id": "Self-Doubt", "group": 5 },
-      { "id": "Visualization", "group": 6 },
-      { "id": "Responsibility Transfer", "group": 6 }
-    ],
-    "links": [
-      { "source": "Internal State", "target": "Body Language", "value": 10 },
-      { "source": "Body Language", "target": "Charisma", "value": 9 },
-      { "source": "Presence", "target": "Internal State", "value": 8 },
-      { "source": "Power", "target": "Internal State", "value": 8 },
-      { "source": "Warmth", "target": "Internal State", "value": 8 },
-      { "source": "Anxiety", "target": "Internal State", "value": 7 },
-      { "source": "Self-Doubt", "target": "Internal State", "value": 7 },
-      { "source": "Visualization", "target": "Internal State", "value": 6 },
-      { "source": "Responsibility Transfer", "target": "Internal State", "value": 6 }
-    ]
-  },
-  "options": {
-    "title": "Cabane's Charisma Engine — Inside-Out, Not Outside-In"
-  }
-}
-```
 
 Charisma flows from internal state through body language to perception — the techniques (visualization, responsibility transfer) work by shifting the internal state, which automatically produces the right body language without conscious effort.
 
-```chartjs
-{
-  "type": "bar",
-  "data": {
-    "labels": ["Presence", "Power", "Warmth", "Visualization", "Reframing", "Goodwill Focus", "Vocal Power"],
-    "datasets": [{
-      "label": "Days to See Results",
-      "data": [1, 14, 3, 1, 7, 1, 14],
-      "backgroundColor": "#2980b9"
-    }, {
-      "label": "Weeks to Master",
-      "data": [8, 16, 6, 4, 12, 4, 12],
-      "backgroundColor": "#e74c3c"
-    }]
-  },
-  "options": {
-    "plugins": { "title": { "display": true, "text": "Charisma Skills — Speed of Results vs Mastery Time" } },
-    "scales": { "y": { "beginAtZero": true } }
-  }
-}
-```
 
 Presence and goodwill focus deliver visible results on day one — making them the ideal entry points — while power projection and vocal control require weeks of sustained practice before the internal state shifts enough to produce authentic body language.
 

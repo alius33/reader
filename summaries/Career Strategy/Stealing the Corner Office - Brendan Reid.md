@@ -62,9 +62,6 @@ Most professionals pour all their energy into the top path (work to results) and
 > [!tip] Core Insight
 > Stop investing 100% of your energy in execution. Reid prescribes 60-70% execution (enough to remain credible) with 30-40% invested in skill expansion, influence management, and strategic self-promotion. The game has two dimensions — performance and perception — and most talented people are playing only one of them.
 
-```chartjs
-{"type":"doughnut","data":{"labels":["Execution","Skill Expansion","Influence Management","Strategic Self-Promotion"],"datasets":[{"data":[60,15,15,10],"backgroundColor":["#3498db","#27ae60","#e67e22","#e74c3c"]}]},"options":{"plugins":{"title":{"display":true,"text":"Reid's Prescribed Time Allocation for Career Advancement"}}}}
-```
 
 Reid's most counterintuitive prescription is that 30-40% of professional energy should flow to non-execution activities — a radical departure from the meritocracy assumption that 100% execution produces 100% advancement.
 
@@ -191,9 +188,6 @@ flowchart LR
 
 Each archetype represents a different way that genuine competence becomes a trap — talent channelled through the wrong behaviour produces stagnation rather than advancement.
 
-```chartjs
-{"type":"radar","data":{"labels":["Technical Skill","Political Skill","Visibility","Breadth","Adaptability","Promotability"],"datasets":[{"label":"Go-to Guy","data":[9,2,4,3,3,2],"borderColor":"#e74c3c","backgroundColor":"rgba(231,76,60,0.1)"},{"label":"Passion Player","data":[8,3,7,4,4,3],"borderColor":"#e67e22","backgroundColor":"rgba(230,126,34,0.1)"},{"label":"Task Master","data":[7,2,5,5,3,2],"borderColor":"#f1c40f","backgroundColor":"rgba(241,196,15,0.1)"},{"label":"Incompetent Executive","data":[4,9,8,8,9,9],"borderColor":"#27ae60","backgroundColor":"rgba(39,174,96,0.1)"}]},"options":{"plugins":{"title":{"display":true,"text":"Smart-but-Stuck vs Incompetent Executive — Six-Dimension Profile"}},"scales":{"r":{"beginAtZero":true,"max":10}}}}
-```
 
 The incompetent executive's profile is nearly the inverse of the smart-but-stuck archetypes — low on technical skill but dominant on every dimension that actually determines promotion decisions.
 
@@ -737,9 +731,6 @@ flowchart LR
 
 Field goals keep you employed; touchdowns get you promoted. The asymmetry between the two should fundamentally reshape how you prioritise your time.
 
-```d3
-{"type":"heatmap","data":{"xLabels":["Visibility to Decision-Makers","Career Momentum","Risk of Failure","Political Capital Generated","Memory Persistence"],"yLabels":["Field Goals","Crisis Resolution","Transformational Project"],"values":[[2,1,1,1,2],[7,7,3,6,8],[9,9,7,8,9]]},"options":{"title":"Touchdown vs Field Goal — Impact Across Five Career Dimensions"}}
-```
 
 Transformational projects and crisis resolutions score dramatically higher on visibility and memory persistence — decision-makers remember the person who led the turnaround years after they have forgotten who filed accurate expense reports.
 
@@ -980,9 +971,6 @@ Reid prescribes a structured approach:
 | **Validation** | Does this person's endorsement carry weight with other influencers? |
 | **Future** | Will this person's influence grow or shrink over time? |
 
-```d3
-{"type":"force","data":{"nodes":[{"id":"you","label":"You","group":0},{"id":"boss","label":"Your Boss","group":1},{"id":"bossboss","label":"Boss's Boss","group":1},{"id":"peer1","label":"Committee Peer A","group":2},{"id":"peer2","label":"Committee Peer B","group":2},{"id":"inf1","label":"Trusted Adviser to CEO","group":3},{"id":"inf2","label":"HR Business Partner","group":3},{"id":"blocker","label":"Potential Blocker","group":4}],"links":[{"source":"you","target":"boss"},{"source":"you","target":"peer1"},{"source":"you","target":"peer2"},{"source":"you","target":"inf2"},{"source":"boss","target":"bossboss"},{"source":"peer1","target":"bossboss"},{"source":"inf1","target":"bossboss"},{"source":"inf2","target":"bossboss"},{"source":"blocker","target":"bossboss"}]},"options":{"title":"Influencer Network — Mapping Decision Paths to Your Promotion"}}
-```
 
 The network reveals that multiple paths lead to the boss's boss — the person who ultimately decides your promotion — and the potential blocker has a direct connection that must be neutralized through the critic walkthrough technique Reid prescribes.
 

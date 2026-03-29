@@ -29,7 +29,7 @@ Sun Tzu (also Sun Wu) was a military strategist from the Ch'i state who entered 
 - The general who wins makes many calculations before battle; the one who loses makes few — "how much more, no calculation at all!"
 
 ```mermaid
-graph TD
+flowchart TD
     A["<b>THE ART OF WAR</b><br/>Master Framework"] --> B["🧠 KNOW MORE<br/>Intelligence & Calculation"]
     A --> C["⚡ DECIDE FASTER<br/>Speed & Initiative"]
     A --> D["🎭 APPEAR DIFFERENT<br/>Deception & Adaptation"]
@@ -102,7 +102,7 @@ graph TD
 > The Five Factors are a **diagnostic checklist**, not a wishlist. Sun Tzu uses them comparatively: which side has stronger moral alignment? Which general is more capable? Which army is better disciplined? The side that wins more comparisons wins the war.
 
 ```mermaid
-graph LR
+flowchart LR
     ML["Moral Law<br/>Alignment"] --> H["Heaven<br/>Timing"]
     H --> E["Earth<br/>Terrain"]
     E --> C["Commander<br/>Leadership"]
@@ -129,28 +129,6 @@ graph LR
 | Training | On which side are officers and men more highly trained? |
 | Reward & Punishment | In which army is there greater consistency in both? |
 
-```chartjs
-{
-  "type": "radar",
-  "data": {
-    "labels": ["Moral Law", "Heaven (Timing)", "Earth (Terrain)", "Commander", "Method & Discipline"],
-    "datasets": [{
-      "label": "Importance for Victory",
-      "data": [95, 70, 75, 90, 80],
-      "backgroundColor": "rgba(41, 128, 185, 0.2)",
-      "borderColor": "#2980b9"
-    }, {
-      "label": "Ease of Assessment",
-      "data": [40, 60, 80, 50, 70],
-      "backgroundColor": "rgba(231, 76, 60, 0.2)",
-      "borderColor": "#e74c3c"
-    }]
-  },
-  "options": {
-    "plugins": { "title": { "display": true, "text": "The Five Constant Factors: Importance vs Assessability" } }
-  }
-}
-```
 
 Moral Law and Commander quality are the most important factors yet hardest to assess — explaining why Sun Tzu insists generals must be both wise and honest in self-evaluation.
 
@@ -170,40 +148,6 @@ Moral Law and Commander quality are the most important factors yet hardest to as
 | 3rd | **Attack the enemy in the field** | Expensive and risky, but sometimes necessary |
 | 4th | **Besiege walled cities** | Worst option: months of preparation, massive casualties, uncertain outcome |
 
-```d3
-{
-  "type": "sankey",
-  "data": {
-    "nodes": [
-      {"id": "Strategic Goal"},
-      {"id": "Balk Plans"},
-      {"id": "Isolate Forces"},
-      {"id": "Attack in Field"},
-      {"id": "Besiege Cities"},
-      {"id": "Victory (Intact)"},
-      {"id": "Victory (Costly)"},
-      {"id": "Pyrrhic Victory"},
-      {"id": "Strategic Failure"}
-    ],
-    "links": [
-      {"source": "Strategic Goal", "target": "Balk Plans", "value": 40},
-      {"source": "Strategic Goal", "target": "Isolate Forces", "value": 30},
-      {"source": "Strategic Goal", "target": "Attack in Field", "value": 20},
-      {"source": "Strategic Goal", "target": "Besiege Cities", "value": 10},
-      {"source": "Balk Plans", "target": "Victory (Intact)", "value": 40},
-      {"source": "Isolate Forces", "target": "Victory (Intact)", "value": 20},
-      {"source": "Isolate Forces", "target": "Victory (Costly)", "value": 10},
-      {"source": "Attack in Field", "target": "Victory (Costly)", "value": 12},
-      {"source": "Attack in Field", "target": "Pyrrhic Victory", "value": 8},
-      {"source": "Besiege Cities", "target": "Pyrrhic Victory", "value": 5},
-      {"source": "Besiege Cities", "target": "Strategic Failure", "value": 5}
-    ]
-  },
-  "options": {
-    "title": "Sun Tzu's Hierarchy of Strategic Options: From Least to Most Costly"
-  }
-}
-```
 
 The sankey flow reveals Sun Tzu's core calculus: the higher you intervene in the hierarchy, the more likely you achieve victory with the enemy's resources intact — the supreme strategic outcome.
 
@@ -330,7 +274,7 @@ The sankey flow reveals Sun Tzu's core calculus: the higher you intervene in the
 > Facing the army of Lung Chu across the Wei River, Han Hsin secretly had his men fill ten thousand sacks with sand and dam the river upstream. He then led half his force across and attacked, but after a brief engagement, pretended to flee back across the river. Lung Chu, elated by this apparent cowardice, pursued eagerly into the shallows. Han Hsin's men then cut the sandbag dam, releasing a torrent that swept away most of Lung Chu's army. The crossing was cheng (direct); the dam was ch'i (indirect). Lung Chu saw one and died of the other.
 
 ```mermaid
-graph TD
+flowchart TD
     A["ENGAGEMENT"] --> B["CHENG<br/>(Direct)"]
     A --> C["CH'I<br/>(Indirect)"]
     B --> D["Holds Enemy's<br/>Attention"]
@@ -421,27 +365,6 @@ graph TD
 | **Delicacy of honor** | Manipulation through shame | Use slander and disgrace to unbalance |
 | **Over-solicitude for men** | Worry and paralysis | Force decisions that sacrifice part for whole |
 
-```chartjs
-{
-  "type": "bar",
-  "data": {
-    "labels": ["Recklessness", "Cowardice", "Hasty Temper", "Delicacy of Honor", "Over-Solicitude"],
-    "datasets": [{
-      "label": "Exploitability by Enemy (1-10)",
-      "data": [9, 7, 9, 6, 5],
-      "backgroundColor": "#e74c3c"
-    }, {
-      "label": "Self-Damage Potential (1-10)",
-      "data": [8, 6, 7, 5, 8],
-      "backgroundColor": "#2980b9"
-    }]
-  },
-  "options": {
-    "plugins": { "title": { "display": true, "text": "The Five Dangerous Faults: Exploitability vs Self-Damage" } },
-    "scales": { "y": { "title": { "display": true, "text": "Score (1-10)" } } }
-  }
-}
-```
 
 Recklessness and hasty temper are the most exploitable faults because they produce predictable, manipulable behavior — confirming why Sun Tzu ranks wisdom above courage in a commander.
 
@@ -480,30 +403,6 @@ Recklessness and hasty temper are the most exploitable faults because they produ
 | **Hemmed-in** | Narrow gorges; small force can block large | Resort to stratagem |
 | **Desperate** | Survival only through fighting | Fight with everything you have |
 
-```d3
-{
-  "type": "heatmap",
-  "data": {
-    "xLabels": ["Desertion Risk", "Unit Cohesion", "Fighting Intensity", "Need for Stratagem", "Supply Difficulty"],
-    "yLabels": ["Dispersive", "Facile", "Contentious", "Open", "Intersecting", "Serious", "Difficult", "Hemmed-in", "Desperate"],
-    "values": [
-      [9, 3, 2, 3, 1],
-      [6, 5, 4, 4, 3],
-      [4, 6, 6, 5, 3],
-      [5, 5, 5, 4, 3],
-      [3, 7, 5, 5, 4],
-      [2, 8, 7, 6, 7],
-      [3, 6, 5, 7, 8],
-      [2, 7, 7, 9, 6],
-      [1, 9, 10, 5, 9]
-    ]
-  },
-  "options": {
-    "title": "Nine Grounds: Psychological and Tactical Pressures by Terrain Type",
-    "colorScale": "warm"
-  }
-}
-```
 
 The heatmap reveals Sun Tzu's key insight: as ground becomes more desperate, cohesion and fighting intensity rise while desertion risk falls — the psychology of no retreat transforms fear into ferocity.
 
@@ -620,7 +519,7 @@ The heatmap reveals Sun Tzu's key insight: as ground becomes more desperate, coh
 - The <b style="color: #2980b9">five types of spies</b> form a complete intelligence ecosystem:
 
 ```mermaid
-graph TD
+flowchart TD
     A["CONVERTED SPY<br/>(Most Important)"] --> B["LOCAL SPIES<br/>Enemy's Inhabitants"]
     A --> C["INWARD SPIES<br/>Enemy's Officials"]
     A --> D["DOOMED SPIES<br/>Fed False Info, Sacrificed"]
@@ -826,7 +725,7 @@ graph TD
 > The supreme general combines qualities that seem contradictory: compassion and ruthlessness, secrecy and transparency, obedience and independence, patience and explosive speed. Sun Tzu does not resolve these tensions — he insists that the truly great commander **holds all of them simultaneously**, deploying each as the situation demands. This is what separates the master from the merely competent.
 
 ```mermaid
-graph LR
+flowchart LR
     subgraph "The Commander's Paradoxes"
     A["Compassion"] <--> B["Ruthlessness"]
     C["Secrecy"] <--> D["Transparency"]

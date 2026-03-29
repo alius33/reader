@@ -33,9 +33,6 @@ Dr. Karyl McBride is a licensed marriage and family therapist with over three de
 - Children raised inside this system sustain four predictable forms of damage: delayed emotional development, impaired trust, suppressed individuation, and damaged self-worth — often manifesting as Complex PTSD
 - <b style="color: #e74c3c">The damage is frequently misdiagnosed</b> as depression or anxiety because clinicians treat symptoms without investigating the family system that produced them
 
-```chartjs
-{"type":"radar","data":{"labels":["Emotional Development","Trust","Individuation","Self-Worth"],"datasets":[{"label":"Healthy Family Child","data":[9,9,8,9],"borderColor":"#27ae60","backgroundColor":"rgba(39,174,96,0.15)"},{"label":"Engulfing Narcissist Child","data":[3,4,2,4],"borderColor":"#e74c3c","backgroundColor":"rgba(231,76,60,0.15)"},{"label":"Ignoring Narcissist Child","data":[3,3,4,3],"borderColor":"#e67e22","backgroundColor":"rgba(230,126,34,0.15)"}]},"options":{"plugins":{"title":{"display":true,"text":"Four Areas of Damage — Healthy vs Narcissistic Family Outcomes"}},"scales":{"r":{"beginAtZero":true,"max":10}}}}
-```
 
 Both engulfing and ignoring narcissistic parenting produce devastatingly similar damage profiles — the engulfing style particularly destroys individuation while the ignoring style most severely impairs trust and self-worth.
 - Recovery is possible but must follow a strict sequence: accept the truth about your parent's disorder, separate psychologically from the family system, re-parent your inner child, set boundaries with family, and then actively break the intergenerational cycle
@@ -211,7 +208,7 @@ Both engulfing and ignoring narcissistic parenting produce devastatingly similar
 *Every narcissistic family enforces the same code — sometimes spoken, usually not. The rules preserve the narcissist's control at the cost of everyone else's authenticity.*
 
 ```mermaid
-graph TD
+flowchart TD
     A["🏠 The Narcissistic Family Code"] --> B["Rule 1: Don't Show<br/>Your True Feelings"]
     A --> C["Rule 2: Keep Up the<br/>'Perfect Family' Image"]
     A --> D["Rule 3: Keep the<br/>Family Secrets"]
@@ -267,7 +264,7 @@ graph TD
 *The narcissistic family assigns roles the way a director casts a play. Every role serves the narcissist — and none of them serve the child.*
 
 ```mermaid
-graph TD
+flowchart TD
     N["🎭 The Narcissist<br/>(Centre Stage)"] --> EN["The Enabler<br/>(Usually Spouse)"]
     N --> SC["The Scapegoat<br/>(Truth-Teller)"]
     N --> GC["The Golden Child<br/>(Mirror Image)"]
@@ -495,9 +492,6 @@ graph TD
 | "I'm empty inside" | Emotional vessel never filled |
 | "I'm a fraud" | Forced to perform a false self; authentic self was never validated |
 
-```d3
-{"type":"treemap","data":{"name":"Negative Messages","children":[{"name":"I'm not good enough","value":30},{"name":"I'm not lovable","value":25},{"name":"I can't trust myself","value":15},{"name":"I'm invisible","value":12},{"name":"I'm empty inside","value":10},{"name":"I'm a fraud","value":8}]},"options":{"title":"Six Internalized Negative Messages — Relative Impact Weight"}}
-```
 
 "I'm not good enough" dominates as the most pervasive internalized message because it was reinforced by every interaction where the narcissistic parent's needs took precedence over the child's.
 
@@ -514,7 +508,7 @@ graph TD
   3. **Disturbance in relationships** — difficulty sustaining close connections
 
 ```mermaid
-graph LR
+flowchart LR
     T1["Childhood<br/>Trauma 1"] --> T2["Childhood<br/>Trauma 2"]
     T2 --> T3["Childhood<br/>Trauma 3"]
     T3 --> T4["Childhood<br/>Trauma 4"]
@@ -743,16 +737,13 @@ graph LR
 **The Contact Spectrum**
 
 ```mermaid
-graph LR
+flowchart LR
     NC["No Contact<br/>Complete cutoff"] --- CC["Civil Connect<br/>Low contact, diplomatic,<br/>superficial but controlled"] --- FC["Full Contact<br/>(usually not recommended<br/>without narcissist's recovery)"]
     style NC fill:#e74c3c,color:white
     style CC fill:#f39c12,color:white
     style FC fill:#95a5a6,color:white
 ```
 
-```chartjs
-{"type":"polarArea","data":{"labels":["No Contact","Civil Connect","Limited Contact","Supervised Contact","Full Contact"],"datasets":[{"data":[35,40,15,5,5],"backgroundColor":["#e74c3c","#f39c12","#f1c40f","#3498db","#95a5a6"]}]},"options":{"plugins":{"title":{"display":true,"text":"Contact Decisions — Distribution Among Recovery Clients"}}}}
-```
 
 Civil Connect is the most commonly chosen option — most adult children of narcissists prefer maintaining diplomatic, controlled contact over complete cutoff, reflecting the complex attachment bonds that narcissistic families create.
 
@@ -844,7 +835,7 @@ Civil Connect is the most commonly chosen option — most adult children of narc
 - McBride's 5-step empathic parenting model:
 
 ```mermaid
-graph TD
+flowchart TD
     A["1. Help child<br/>identify their feelings"] --> B["2. Reflect feelings back<br/>to confirm understanding"]
     B --> C["3. Validate and<br/>empathise with feelings"]
     C --> D["4. Hold the context<br/>(ignore the 'incident' until<br/>steps 1-3 are complete)"]
@@ -856,9 +847,6 @@ graph TD
     style E fill:#2980b9,color:white
 ```
 
-```d3
-{"type":"heatmap","data":{"xLabels":["Identify Feelings","Reflect Back","Validate","Hold Context","Problem-Solve"],"yLabels":["Non-Empathic Parent","Partially Empathic","Fully Empathic"],"values":[[0,0,0,0,8],[3,2,1,1,6],[9,9,8,7,7]]},"options":{"title":"Empathic Parenting — Response Quality Across Five Steps"}}
-```
 
 Non-empathic parents skip directly to problem-solving (often through punishment), while fully empathic parents invest heavily in the first three emotional steps before addressing the situation — the order matters as much as the actions themselves.
 
@@ -964,7 +952,7 @@ Non-empathic parents skip directly to problem-solving (often through punishment)
 ## The Complete Recovery Map
 
 ```mermaid
-graph TD
+flowchart TD
     S1["Step 1: Acceptance<br/>Acknowledge the disorder<br/>Grieve the parent you never had<br/>Process trauma (EMDR)"] --> S2["Step 2: Separation-Individuation<br/>Shed assigned roles<br/>Own your uniqueness<br/>Develop the observing self"]
     S2 --> S3["Step 3: Re-Parenting<br/>Nurture the inner child<br/>Build self-compassion<br/>Discover authentic identity"]
     S3 --> S4["Step 4: Boundary Management<br/>Choose no contact or civil connect<br/>Set and enforce boundaries<br/>Navigate forgiveness"]

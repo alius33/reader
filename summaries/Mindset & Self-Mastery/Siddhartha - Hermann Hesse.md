@@ -92,56 +92,6 @@ Siddhartha's journey is not a straight line from ignorance to wisdom — it is a
 
 ---
 
-```chartjs
-{
-  "type": "radar",
-  "data": {
-    "labels": ["Intellectual Knowledge", "Sensory Experience", "Emotional Depth", "Spiritual Insight", "Inner Peace", "Love Capacity"],
-    "datasets": [
-      {
-        "label": "Brahmin Phase",
-        "data": [9, 2, 3, 4, 3, 2],
-        "backgroundColor": "rgba(41, 128, 185, 0.15)",
-        "borderColor": "#2980b9",
-        "pointBackgroundColor": "#2980b9"
-      },
-      {
-        "label": "Samana Phase",
-        "data": [7, 1, 2, 6, 4, 1],
-        "backgroundColor": "rgba(142, 68, 173, 0.15)",
-        "borderColor": "#8e44ad",
-        "pointBackgroundColor": "#8e44ad"
-      },
-      {
-        "label": "Merchant Phase",
-        "data": [5, 9, 5, 2, 1, 4],
-        "backgroundColor": "rgba(231, 76, 60, 0.15)",
-        "borderColor": "#e74c3c",
-        "pointBackgroundColor": "#e74c3c"
-      },
-      {
-        "label": "Ferryman Phase",
-        "data": [8, 7, 9, 10, 10, 9],
-        "backgroundColor": "rgba(39, 174, 96, 0.15)",
-        "borderColor": "#27ae60",
-        "pointBackgroundColor": "#27ae60"
-      }
-    ]
-  },
-  "options": {
-    "plugins": {
-      "title": { "display": true, "text": "Siddhartha's Inner State Across Life Phases" }
-    },
-    "scales": {
-      "r": {
-        "beginAtZero": true,
-        "max": 10,
-        "ticks": { "stepSize": 2 }
-      }
-    }
-  }
-}
-```
 
 Only in the Ferryman phase — after decades of excess, loss, and surrender — does Siddhartha's inner state reach fullness across every dimension, revealing that wholeness required living through each lopsided stage.
 
@@ -937,40 +887,6 @@ flowchart BT
 
 Hesse's hierarchy of teachers — each level is more powerful and less controllable than the one below it.
 
-```chartjs
-{
-  "type": "polarArea",
-  "data": {
-    "labels": ["Words & Doctrine", "Discipline & Practice", "Direct Experience", "Love", "Unity / Om"],
-    "datasets": [{
-      "data": [3, 5, 7, 9, 10],
-      "backgroundColor": [
-        "rgba(41, 128, 185, 0.6)",
-        "rgba(142, 68, 173, 0.6)",
-        "rgba(243, 156, 18, 0.6)",
-        "rgba(231, 76, 60, 0.6)",
-        "rgba(39, 174, 96, 0.6)"
-      ],
-      "borderColor": [
-        "#2980b9",
-        "#8e44ad",
-        "#f39c12",
-        "#e74c3c",
-        "#27ae60"
-      ]
-    }]
-  },
-  "options": {
-    "plugins": {
-      "title": { "display": true, "text": "Hierarchy of Teachers: Transformative Power by Source" },
-      "legend": { "position": "right" }
-    },
-    "scales": {
-      "r": { "beginAtZero": true, "max": 10 }
-    }
-  }
-}
-```
 
 The expanding wedges show that Siddhartha's most transformative lessons came not from ideas he could control but from forces — love, unity — that overwhelmed his defences.
 
@@ -1022,38 +938,6 @@ The expanding wedges show that Siddhartha's most transformative lessons came not
   - This is Hesse's most nuanced point — following the rules perfectly does not guarantee arrival
   - Govinda needs the kiss at the end — the direct transmission of experience — because words alone, even the Buddha's words, were not enough for him either
 
-```chartjs
-{
-  "type": "bar",
-  "data": {
-    "labels": ["Independence", "Faith in Doctrine", "Suffering Endured", "Direct Experience", "Final Peace"],
-    "datasets": [
-      {
-        "label": "Siddhartha",
-        "data": [10, 2, 9, 10, 9],
-        "backgroundColor": "rgba(39, 174, 96, 0.7)",
-        "borderColor": "#27ae60",
-        "borderWidth": 1
-      },
-      {
-        "label": "Govinda",
-        "data": [3, 9, 5, 3, 6],
-        "backgroundColor": "rgba(41, 128, 185, 0.7)",
-        "borderColor": "#2980b9",
-        "borderWidth": 1
-      }
-    ]
-  },
-  "options": {
-    "plugins": {
-      "title": { "display": true, "text": "Siddhartha vs. Govinda: Two Paths Compared" }
-    },
-    "scales": {
-      "y": { "beginAtZero": true, "max": 10, "title": { "display": true, "text": "Intensity (0–10)" } }
-    }
-  }
-}
-```
 
 Govinda's devotion earned him discipline and structure, but Siddhartha's willingness to suffer and seek independently produced a deeper — if more painful — peace.
 
@@ -1080,37 +964,6 @@ Govinda's devotion earned him discipline and structure, but Siddhartha's willing
   - Just quiet presence, deep listening, and an inexplicable smile
   - He disappears into the forest at the end because his work is done — he has pointed Siddhartha toward the river, and the river has done the rest
 
-```d3
-{
-  "type": "sankey",
-  "data": {
-    "nodes": [
-      { "id": "Father", "color": "#2980b9" },
-      { "id": "Samanas", "color": "#8e44ad" },
-      { "id": "Buddha", "color": "#f39c12" },
-      { "id": "Kamala", "color": "#e74c3c" },
-      { "id": "Kamaswami", "color": "#d35400" },
-      { "id": "Young Siddhartha", "color": "#c0392b" },
-      { "id": "Vasudeva", "color": "#27ae60" },
-      { "id": "The River", "color": "#16a085" },
-      { "id": "Final Wisdom", "color": "#27ae60" }
-    ],
-    "links": [
-      { "source": "Father", "target": "Final Wisdom", "value": 3, "label": "Conceptual Foundation" },
-      { "source": "Samanas", "target": "Final Wisdom", "value": 4, "label": "Discipline & Endurance" },
-      { "source": "Buddha", "target": "Final Wisdom", "value": 5, "label": "Vision of the Destination" },
-      { "source": "Kamala", "target": "Final Wisdom", "value": 5, "label": "Embodied Knowledge" },
-      { "source": "Kamaswami", "target": "Final Wisdom", "value": 3, "label": "Knowledge of Samsara" },
-      { "source": "Young Siddhartha", "target": "Final Wisdom", "value": 6, "label": "Helpless Love" },
-      { "source": "Vasudeva", "target": "Final Wisdom", "value": 7, "label": "Art of Listening" },
-      { "source": "The River", "target": "Final Wisdom", "value": 8, "label": "Unity of All Things" }
-    ]
-  },
-  "options": {
-    "title": "Siddhartha's Teachers: What Each Contributed to His Final Wisdom"
-  }
-}
-```
 
 Every teacher poured a different tributary into Siddhartha's understanding — none alone was sufficient, but the river of his life carried them all into a single, integrated wisdom.
 

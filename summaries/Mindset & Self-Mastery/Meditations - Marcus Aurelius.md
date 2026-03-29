@@ -64,25 +64,6 @@ flowchart LR
 
 The green box is where all your energy should go. The red box is where most people waste theirs.
 
-```d3
-{
-  "type": "treemap",
-  "data": {
-    "name": "Stoic Focus",
-    "children": [
-      { "name": "Within Control\n(Your Judgments)", "value": 45 },
-      { "name": "Within Control\n(Your Actions)", "value": 35 },
-      { "name": "Outside Control\n(Others' Behavior)", "value": 5 },
-      { "name": "Outside Control\n(External Events)", "value": 5 },
-      { "name": "Outside Control\n(Fame & Reputation)", "value": 5 },
-      { "name": "Outside Control\n(Body & Health)", "value": 5 }
-    ]
-  },
-  "options": {
-    "title": "The Dichotomy of Control: Where Marcus Directs 80% of His Energy"
-  }
-}
-```
 
 Marcus pours 80% of his energy into the two things he can actually control — judgments and actions — while treating everything outside his control as background noise deserving minimal emotional investment.
 
@@ -105,24 +86,6 @@ Marcus pours 80% of his energy into the two things he can actually control — j
 | **Impermanence** | Everything passes — fame, empires, life itself. Act accordingly. |
 | **The Four Virtues** | Wisdom, courage, justice, temperance — the complete guide to good action |
 
-```chartjs
-{
-  "type": "radar",
-  "data": {
-    "labels": ["Dichotomy of Control", "Impermanence", "Duty & Service", "Virtue Ethics", "Death Awareness", "Judgment & Perception", "Cosmic Perspective", "Equanimity"],
-    "datasets": [{
-      "label": "Frequency Across 12 Books",
-      "data": [95, 88, 82, 90, 85, 78, 70, 92],
-      "backgroundColor": "rgba(41, 128, 185, 0.2)",
-      "borderColor": "#2980b9"
-    }]
-  },
-  "options": {
-    "plugins": { "title": { "display": true, "text": "Marcus Aurelius's Core Themes: Frequency Across the 12 Books" } },
-    "scales": { "r": { "min": 0, "max": 100 } }
-  }
-}
-```
 
 The dichotomy of control and equanimity score highest because they are the twin pillars — one tells you what to focus on, the other tells you how to feel about everything else.
 
@@ -1182,23 +1145,6 @@ Marcus closes with a reflection on the three disciplines that structure Stoic li
 
 The emotional trajectory of the twelve books mirrors a life under sustained pressure: beginning with gratitude, moving through urgency and frustration, and arriving at acceptance.
 
-```chartjs
-{
-  "type": "bar",
-  "data": {
-    "labels": ["Book 1", "Book 2", "Book 3", "Book 4", "Book 5", "Book 6", "Book 7", "Book 8", "Book 9", "Book 10", "Book 11", "Book 12"],
-    "datasets": [{
-      "label": "Dominant Theme Intensity",
-      "data": [70, 65, 80, 85, 90, 82, 75, 88, 78, 85, 80, 92],
-      "backgroundColor": ["#3498db", "#2980b9", "#2980b9", "#27ae60", "#27ae60", "#2980b9", "#9b59b6", "#27ae60", "#2980b9", "#27ae60", "#e74c3c", "#e74c3c"]
-    }]
-  },
-  "options": {
-    "plugins": { "title": { "display": true, "text": "Meditations by Book: Intensity of Self-Discipline Themes" } },
-    "scales": { "y": { "min": 0, "max": 100 } }
-  }
-}
-```
 
 The final books (11-12) show the highest intensity — Marcus was writing during his most challenging military campaigns, when the gap between Stoic ideals and brutal reality was widest.
 
@@ -1303,21 +1249,6 @@ When an event disturbs you, describe it in the most neutral terms possible:
 
 These twelve exercises, practised consistently, constitute a complete system for emotional regulation, decision-making, and character development.
 
-```chartjs
-{
-  "type": "doughnut",
-  "data": {
-    "labels": ["Morning Preparation", "Evening Review", "Negative Visualization", "View From Above", "Memento Mori", "Judgment Suspension", "Duty Focus"],
-    "datasets": [{
-      "data": [15, 18, 12, 10, 20, 13, 12],
-      "backgroundColor": ["#2980b9", "#3498db", "#1abc9c", "#27ae60", "#e74c3c", "#9b59b6", "#f39c12"]
-    }]
-  },
-  "options": {
-    "plugins": { "title": { "display": true, "text": "Marcus's Daily Stoic Toolkit: Distribution of Practices in Meditations" } }
-  }
-}
-```
 
 Memento mori (remembering death) claims the largest share — for Marcus, awareness of mortality was not morbid but motivating, the practice that gave every other exercise its urgency.
 

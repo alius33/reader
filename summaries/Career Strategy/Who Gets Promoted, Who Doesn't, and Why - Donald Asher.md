@@ -54,9 +54,6 @@ flowchart LR
 
 All six variables must align favourably — excelling on one while neglecting the others is the most common reason qualified people are passed over.
 
-```chartjs
-{"type":"radar","data":{"labels":["Perceived Future Value","Replacement Cost (Low)","Risk Profile (Low)","Timing","Visibility","Sponsorship"],"datasets":[{"label":"Typical High Performer","data":[9,3,6,4,4,3],"backgroundColor":"rgba(231,76,60,0.15)","borderColor":"#e74c3c"},{"label":"Successfully Promoted","data":[8,8,8,7,8,8],"backgroundColor":"rgba(39,174,96,0.15)","borderColor":"#27ae60"}]},"options":{"plugins":{"title":{"display":true,"text":"Promotion Decision Variables — High Performer vs Successfully Promoted"}},"scales":{"r":{"beginAtZero":true,"max":10}}}}
-```
 
 Most high performers over-index on future value while neglecting the five structural variables — replacement cost, risk, timing, visibility, and sponsorship — that govern the actual promotion decision.
 
@@ -77,9 +74,6 @@ Most high performers over-index on future value while neglecting the five struct
 | **The Stock Holding Rule** | Would you take this job today at this price? If no, start looking — past investment is sunk cost |
 | **Be Well Liked, Not Loved** | Being deeply loved makes your departure a tragedy; being well liked makes it a graduation |
 
-```d3
-{"type":"treemap","data":{"name":"Career Advancement","children":[{"name":"Investment Thesis","value":25},{"name":"Visibility & Perception","value":20},{"name":"Lifelong Learning","value":12},{"name":"All Business Is Sales","value":14},{"name":"Ascension Plan","value":15},{"name":"Boss Management","value":16},{"name":"Suction","value":10},{"name":"Guardian Angels","value":18},{"name":"Mobility & Timing","value":11},{"name":"Preparation + Luck","value":9}]},"options":{"title":"The Career Advancement Ecosystem — Relative Importance of Asher's Ten Pillars"}}
-```
 
 Asher's framework gives disproportionate weight to the investment thesis, guardian angel networks, and boss management — areas most professionals systematically underinvest in compared to raw performance and learning.
 
@@ -743,9 +737,6 @@ The key distinction is whether the contact serves the work or serves your career
 | **Superstars** | Rise steadily, build durable organisations | Moderate — sustainable upward pull | Builds things that last |
 | **Gunslingers** | Generate excitement and rapid early success | High — can only fail once, take everyone down | Creates spectacles that burn out |
 
-```chartjs
-{"type":"bar","data":{"labels":["Trajectory Sustainability","Risk Level","Team Impact","Long-Term Value","Political Capital Burn Rate"],"datasets":[{"label":"Superstars","data":[9,3,8,9,2],"backgroundColor":"#27ae60"},{"label":"Gunslingers","data":[3,9,4,2,9],"backgroundColor":"#e74c3c"}]},"options":{"plugins":{"title":{"display":true,"text":"Superstars vs Gunslingers — Career Partnership Risk Profile"}},"scales":{"y":{"beginAtZero":true,"max":10,"title":{"display":true,"text":"Score (1-10)"}}}}}
-```
 
 Superstars build sustainable trajectories with high team impact and low risk, while gunslingers burn through political capital rapidly and drag associates down when they inevitably crash.
 
@@ -785,9 +776,6 @@ Guardian angels deliver four specific things:
 | **Name mention** | A casual mention — "What about her? She did excellent work last quarter" — accumulated over time, creates a cumulative impression that you are someone to watch |
 | **Honest advice** | They can see political currents, budgetary constraints, and unspoken preferences from a strategic vantage point you cannot access |
 
-```d3
-{"type":"force","data":{"nodes":[{"id":"you","label":"You","group":1},{"id":"boss","label":"Your Boss","group":2},{"id":"ga1","label":"Guardian Angel A","group":3},{"id":"ga2","label":"Guardian Angel B","group":3},{"id":"peer1","label":"Peer Ally","group":4},{"id":"peer2","label":"Cross-Dept Peer","group":4},{"id":"room","label":"Decision Room","group":5},{"id":"warn","label":"Early Warning","group":6},{"id":"protect","label":"Protection","group":6},{"id":"mention","label":"Name Mention","group":6},{"id":"advice","label":"Honest Advice","group":6}],"links":[{"source":"you","target":"boss"},{"source":"you","target":"peer1"},{"source":"you","target":"peer2"},{"source":"you","target":"ga1"},{"source":"you","target":"ga2"},{"source":"ga1","target":"room"},{"source":"ga2","target":"room"},{"source":"boss","target":"room"},{"source":"ga1","target":"warn"},{"source":"ga1","target":"protect"},{"source":"ga2","target":"mention"},{"source":"ga2","target":"advice"}]},"options":{"title":"Guardian Angel Network — How Advocacy Reaches the Decision Room"}}
-```
 
 Guardian angels bridge the gap between your daily work and the decision rooms you never enter — they provide early warnings, protection from hostile narratives, casual name mentions, and honest strategic advice from a vantage point you cannot access directly.
 

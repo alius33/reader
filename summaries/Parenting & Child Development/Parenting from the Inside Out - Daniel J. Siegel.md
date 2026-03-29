@@ -52,42 +52,6 @@ This is Siegel's most personal work. Where *The Whole-Brain Child* gives strateg
 
 ---
 
-```chartjs
-{
-  "type": "radar",
-  "data": {
-    "labels": ["Mindsight", "Attunement", "Response Flexibility", "Coherent Narrative", "Rupture & Repair", "Emotional Regulation"],
-    "datasets": [
-      {
-        "label": "Earned Security Parents",
-        "data": [8, 7, 8, 9, 8, 7],
-        "backgroundColor": "rgba(39, 174, 96, 0.2)",
-        "borderColor": "#27ae60"
-      },
-      {
-        "label": "Continuous Security Parents",
-        "data": [9, 9, 9, 9, 8, 9],
-        "backgroundColor": "rgba(41, 128, 185, 0.2)",
-        "borderColor": "#2980b9"
-      }
-    ]
-  },
-  "options": {
-    "plugins": {
-      "title": {
-        "display": true,
-        "text": "Core Competencies of Integrated Parenting"
-      }
-    },
-    "scales": {
-      "r": {
-        "min": 0,
-        "max": 10
-      }
-    }
-  }
-}
-```
 
 Earned security parents match continuous security parents across nearly all competencies — the key finding is that the gap is small and closable through self-reflection.
 
@@ -270,40 +234,6 @@ The AAI reveals four states of mind with respect to attachment. Each produces a 
 | **Preoccupied** | Flooded by past; intrusions of leftover issues; can't stay on topic; still enmeshed | Anxious/Ambivalent |
 | **Unresolved** | Disoriented when discussing trauma/loss; sudden shifts; lapses in reasoning | Disorganized |
 
-```d3
-{
-  "type": "sankey",
-  "data": {
-    "nodes": [
-      {"id": "Secure/Autonomous"},
-      {"id": "Dismissing"},
-      {"id": "Preoccupied"},
-      {"id": "Unresolved"},
-      {"id": "Coherent Narrative"},
-      {"id": "Minimal Detail"},
-      {"id": "Flooded by Past"},
-      {"id": "Disoriented Lapses"},
-      {"id": "Secure Child"},
-      {"id": "Avoidant Child"},
-      {"id": "Anxious Child"},
-      {"id": "Disorganized Child"}
-    ],
-    "links": [
-      {"source": "Secure/Autonomous", "target": "Coherent Narrative", "value": 8},
-      {"source": "Dismissing", "target": "Minimal Detail", "value": 6},
-      {"source": "Preoccupied", "target": "Flooded by Past", "value": 5},
-      {"source": "Unresolved", "target": "Disoriented Lapses", "value": 4},
-      {"source": "Coherent Narrative", "target": "Secure Child", "value": 8},
-      {"source": "Minimal Detail", "target": "Avoidant Child", "value": 6},
-      {"source": "Flooded by Past", "target": "Anxious Child", "value": 5},
-      {"source": "Disoriented Lapses", "target": "Disorganized Child", "value": 4}
-    ]
-  },
-  "options": {
-    "title": "Adult Attachment State → Narrative Style → Child Outcome"
-  }
-}
-```
 
 Each adult attachment state produces a distinctive narrative style that predicts the child's attachment pattern with approximately 85% accuracy — the most robust finding in developmental psychology.
 
@@ -479,38 +409,6 @@ The attachment research lineage is remarkable in its depth:
 | **Anxious/Ambivalent** | Very distressed during separation; seeks proximity at reunion but isn't easily soothed; clings, doesn't return to play | "I'm not sure you'll be there for me, so I can't let go" |
 | **Disorganized** | Chaotic, contradictory behavior at reunion — approaching then freezing, rocking, falling prone | "You are both my source of comfort and my source of fear — I have no strategy" |
 
-```chartjs
-{
-  "type": "bar",
-  "data": {
-    "labels": ["Secure", "Avoidant", "Anxious/Ambivalent", "Disorganized"],
-    "datasets": [
-      {
-        "label": "Percentage in Research Samples",
-        "data": [65, 20, 10, 5],
-        "backgroundColor": ["#27ae60", "#2980b9", "#f39c12", "#e74c3c"]
-      }
-    ]
-  },
-  "options": {
-    "plugins": {
-      "title": {
-        "display": true,
-        "text": "Attachment Pattern Distribution in Non-Clinical Populations"
-      }
-    },
-    "scales": {
-      "y": {
-        "beginAtZero": true,
-        "title": {
-          "display": true,
-          "text": "Percentage of Infants (%)"
-        }
-      }
-    }
-  }
-}
-```
 
 Roughly two-thirds of infants in non-clinical samples develop secure attachment, while disorganized attachment — the most concerning pattern — remains relatively rare outside high-risk populations.
 
@@ -719,25 +617,6 @@ flowchart TB
     Coherence --> Secure["Secure attachment<br/>across generations"]
 ```
 
-```d3
-{
-  "type": "treemap",
-  "data": {
-    "name": "Five Domains of Integration",
-    "children": [
-      {"name": "Left + Right Brain", "value": 25, "category": "Neural"},
-      {"name": "Implicit + Explicit Memory", "value": 30, "category": "Memory"},
-      {"name": "Past + Present", "value": 20, "category": "Temporal"},
-      {"name": "Internal + Interpersonal", "value": 15, "category": "Relational"},
-      {"name": "Parent Mind + Child Mind", "value": 10, "category": "Dyadic"}
-    ]
-  },
-  "options": {
-    "title": "Five Domains of Integration — Weighted by Book Coverage",
-    "colors": ["#2980b9", "#e74c3c", "#27ae60", "#f39c12", "#8e44ad"]
-  }
-}
-```
 
 Memory integration (implicit + explicit) receives the most coverage because it explains the mechanism by which unprocessed childhood experiences hijack parenting in the present.
 

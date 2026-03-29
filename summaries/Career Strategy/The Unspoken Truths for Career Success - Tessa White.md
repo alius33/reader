@@ -180,9 +180,6 @@ flowchart TD
 
 The Company Alignment Model shows that every corporate decision passes through three filters — profit contribution, manager incentive alignment, and HR risk assessment — and failing at any stage kills the ask.
 
-```d3
-{"type":"sankey","data":{"nodes":[{"id":"Employee Request"},{"id":"Profit Filter"},{"id":"Manager Incentive Filter"},{"id":"HR Risk Filter"},{"id":"Approved"},{"id":"Blocked by Profit"},{"id":"Blocked by Manager"},{"id":"Blocked by HR"},{"id":"Modified by HR"}],"links":[{"source":"Employee Request","target":"Profit Filter","value":100},{"source":"Profit Filter","target":"Manager Incentive Filter","value":65},{"source":"Profit Filter","target":"Blocked by Profit","value":35},{"source":"Manager Incentive Filter","target":"HR Risk Filter","value":40},{"source":"Manager Incentive Filter","target":"Blocked by Manager","value":25},{"source":"HR Risk Filter","target":"Approved","value":25},{"source":"HR Risk Filter","target":"Modified by HR","value":10},{"source":"HR Risk Filter","target":"Blocked by HR","value":5}]},"options":{"title":"Company Alignment Model: How Employee Requests Flow Through Corporate Filters"}}
-```
 
 This sankey diagram illustrates White's core insight: of all employee requests that enter the corporate pipeline, only a fraction survive all three filters — profit contribution, manager incentive alignment, and HR risk assessment — which is why framing every ask in the company's language is essential.
 
@@ -680,9 +677,6 @@ flowchart LR
 
 The five stages show that career growth is not a single continuous climb but a series of identity shifts — each requiring you to abandon the skills and habits that previously defined your success.
 
-```chartjs
-{"type":"radar","data":{"labels":["Consistency","Initiative","Collaboration","Strategy","Vision"],"datasets":[{"label":"Stage 1: Doer","data":[9,2,2,1,1],"borderColor":"#3498db","backgroundColor":"rgba(52,152,219,0.1)"},{"label":"Stage 2: Achiever","data":[7,9,4,2,1],"borderColor":"#2ecc71","backgroundColor":"rgba(46,204,113,0.1)"},{"label":"Stage 3: Collaborator","data":[6,7,9,5,2],"borderColor":"#f39c12","backgroundColor":"rgba(243,156,18,0.1)"},{"label":"Stage 4: Builder","data":[4,6,7,9,5],"borderColor":"#e74c3c","backgroundColor":"rgba(231,76,60,0.1)"},{"label":"Stage 5: Expander","data":[3,5,6,8,9],"borderColor":"#9b59b6","backgroundColor":"rgba(155,89,182,0.1)"}]},"options":{"plugins":{"title":{"display":true,"text":"Five Stages of Career Growth: Skills Profile"}},"scales":{"r":{"beginAtZero":true,"max":10}}}}
-```
 
 Each career stage demands a fundamentally different skills profile — consistency dominates for the Doer, initiative for the Achiever, collaboration for the Collaborator, strategy for the Builder, and vision for the Expander — and clinging to the skills of a previous stage is the primary cause of career stalls.
 
@@ -733,9 +727,6 @@ Each career stage demands a fundamentally different skills profile — consisten
 > - The annual cycle gave him three percent; timing his ask to coincide with leverage gave him twelve
 > **The lesson:** When you ask matters as much as what you ask for.
 
-```chartjs
-{"type":"bar","data":{"labels":["Annual Cycle (Bottom 80%)","Annual Cycle (Top 20%)","Out-of-Cycle (Bottom 80%)","Out-of-Cycle (Top 20%)"],"datasets":[{"label":"Pay Increase %","data":[2.5,4.5,7,15],"backgroundColor":["#e74c3c","#e74c3c","#27ae60","#27ae60"],"borderColor":["#c0392b","#c0392b","#1e8449","#1e8449"],"borderWidth":1}]},"options":{"plugins":{"title":{"display":true,"text":"Annual vs Out-of-Cycle Pay Increases"},"legend":{"display":false}},"scales":{"y":{"beginAtZero":true,"title":{"display":true,"text":"Increase (%)"},"max":18}}}}
-```
 
 The contrast is stark: annual-cycle raises are constrained by pre-allocated budget pools and rarely exceed 5%, while out-of-cycle increases — triggered by leverage, competing offers, or scope changes — routinely reach 7-15%, making the timing and framing of your ask far more important than the ask itself.
 
@@ -775,9 +766,6 @@ The contrast is stark: annual-cycle raises are constrained by pre-allocated budg
 
 White adds a caution about competing offers:
 
-```d3
-{"type":"heatmap","data":{"xLabels":["Stage 1: Doer","Stage 2: Achiever","Stage 3: Collaborator","Stage 4: Builder","Stage 5: Expander"],"yLabels":["Demonstrable Results","Competitive Offer","Specialised Knowledge","Value Proposition","Scarcity of Resources","Urgency","Risk to Company"],"values":[[3,7,8,9,9],[2,5,7,8,9],[2,4,7,9,10],[1,3,6,9,10],[4,5,6,7,8],[3,5,6,8,7],[1,3,6,9,10]]},"options":{"title":"Seven Leverage Types by Career Stage: When Each Is Most Effective","colorScheme":"blues"}}
-```
 
 This heatmap reveals that leverage is not static — demonstrable results become table stakes by mid-career, while risk-based and value-proposition leverage only become powerful at senior levels where key-person dependency and strategic positioning create genuine switching costs for the company.
 

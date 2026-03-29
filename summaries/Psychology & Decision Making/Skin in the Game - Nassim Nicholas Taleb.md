@@ -43,32 +43,6 @@ year: 2018
   - **Evolutionary filtering**: systems learn by removing those who make fatal errors, not by adding knowledge
 - <b style="color: #27ae60">Without skin in the game, three things collapse simultaneously</b>: ethics (no penalty for bad advice), knowledge (no contact with reality), and survival (hidden risks accumulate until systemic blowup)
 
-```chartjs
-{
-  "type": "radar",
-  "data": {
-    "labels": ["Ethical Integrity", "Knowledge Quality", "System Survival", "Accountability", "Learning Speed", "Decision Quality"],
-    "datasets": [
-      {
-        "label": "With Skin in the Game",
-        "data": [9, 9, 9, 10, 8, 9],
-        "backgroundColor": "rgba(39, 174, 96, 0.2)",
-        "borderColor": "#27ae60"
-      },
-      {
-        "label": "Without Skin in the Game",
-        "data": [2, 3, 2, 1, 2, 3],
-        "backgroundColor": "rgba(231, 76, 60, 0.2)",
-        "borderColor": "#e74c3c"
-      }
-    ]
-  },
-  "options": {
-    "plugins": { "title": { "display": true, "text": "The Skin in the Game Effect: System Performance With vs Without" } },
-    "scales": { "r": { "min": 0, "max": 10, "ticks": { "stepSize": 2 } } }
-  }
-}
-```
 
 The radar chart visualizes Taleb's central claim: systems with skin in the game dominate on every dimension, while systems without it collapse toward the center — the gap is not marginal but catastrophic across all six performance dimensions.
 - The **Bob Rubin trade** is the archetypal violation: Robert Rubin collected $120 million from Citibank, then when the bank went insolvent in 2008, he invoked Black Swan uncertainty — heads he wins, tails the taxpayer loses
@@ -201,45 +175,6 @@ The timeline shows that skin in the game is not a modern innovation but a redisc
 - The stage light problem: speakers are blinded by lights aimed at them because "those who lecture to large audiences don't work on lighting, and light engineers don't lecture to large audiences"
 - <b style="color: #e74c3c">Skin in the game brings simplicity</b>: "people who see complicated solutions do not have an incentive to implement simplified ones"
 
-```d3
-{
-  "type": "sankey",
-  "data": {
-    "nodes": [
-      { "id": "No Skin in Game" },
-      { "id": "Hidden Risk Transfer" },
-      { "id": "Complexity Accumulation" },
-      { "id": "Bob Rubin Trade" },
-      { "id": "Interventionism" },
-      { "id": "Bureaucratic Growth" },
-      { "id": "Systemic Fragility" },
-      { "id": "Blowup" },
-      { "id": "Skin in Game" },
-      { "id": "Accountability" },
-      { "id": "Simplicity" },
-      { "id": "Antifragility" }
-    ],
-    "links": [
-      { "source": "No Skin in Game", "target": "Hidden Risk Transfer", "value": 8 },
-      { "source": "No Skin in Game", "target": "Complexity Accumulation", "value": 6 },
-      { "source": "Hidden Risk Transfer", "target": "Bob Rubin Trade", "value": 5 },
-      { "source": "Hidden Risk Transfer", "target": "Interventionism", "value": 4 },
-      { "source": "Complexity Accumulation", "target": "Bureaucratic Growth", "value": 5 },
-      { "source": "Bob Rubin Trade", "target": "Systemic Fragility", "value": 5 },
-      { "source": "Interventionism", "target": "Systemic Fragility", "value": 4 },
-      { "source": "Bureaucratic Growth", "target": "Systemic Fragility", "value": 4 },
-      { "source": "Systemic Fragility", "target": "Blowup", "value": 10 },
-      { "source": "Skin in Game", "target": "Accountability", "value": 8 },
-      { "source": "Skin in Game", "target": "Simplicity", "value": 6 },
-      { "source": "Accountability", "target": "Antifragility", "value": 7 },
-      { "source": "Simplicity", "target": "Antifragility", "value": 6 }
-    ]
-  },
-  "options": {
-    "title": "Two Paths: Skin in the Game vs Risk Transfer to Blowup"
-  }
-}
-```
 
 The Sankey diagram traces Taleb's two divergent paths: absence of skin in the game flows through hidden risk transfer, complexity, and interventionism into systemic fragility and blowup, while its presence channels through accountability and simplicity into antifragility.
 - Taleb's confession about his own learning: "When I don't have skin in the game, I am usually dumb. My knowledge of technical matters did not come from books. It came from the thrills and hormonal flush one gets while taking risks"
@@ -266,7 +201,6 @@ The Sankey diagram traces Taleb's two divergent paths: absence of skin in the ga
 - Alexandre Dumas, who ran a workshop of 45 ghostwriters, "may be the exception that confirms the rule"
 - The citizenship test: Taleb took U.S. citizenship despite higher-tax consequences because "it would have felt fake to see my bearded face on a French passport" without emotional attachment — "a country should not tolerate fair-weather friends"
 - <b style="color: #27ae60">"If you do not take risks for your opinion, you are nothing"</b>
-
 
 
 - The interventionista case is central because absence of skin in the game has both ethical AND epistemological effects
@@ -393,7 +327,6 @@ The Sankey diagram traces Taleb's two divergent paths: absence of skin in the ga
 - The deeper point: "The higher the dimension, the more disproportionally difficult it is to understand the macro from the micro"
 
 
-
 *Why employees exist, what freedom really costs, and the curious economics of human domestication.*
 
 ### The Gyrovague Monks
@@ -460,7 +393,6 @@ The Sankey diagram traces Taleb's two divergent paths: absence of skin in the ga
 - The solution is always decentralization: <b style="color: #27ae60">"It is easier to macrobull***t than microbull***t"</b>
 
 
-
 - Imagine you work for a corporation concealing a cancer-causing product — you could alert the public, but you'd lose your job, face smear campaigns, and compromise your children's future
 - <b style="color: #e74c3c">The vulnerability of people with families has been exploited throughout history</b>: samurai hostages in Edo, Roman-Hun child exchanges, Ottoman janissaries extracted from Christian families
 - James Bond is celibate for a reason — you can't have ethical dilemmas between the particular (family) and the general (humanity)
@@ -521,7 +453,6 @@ The Sankey diagram traces Taleb's two divergent paths: absence of skin in the ga
 - The IYI's central error: confusing **first-order effects** (the direct, visible consequence) with **second-order effects** (the indirect, invisible, often opposite consequence)
 - GMOs are "science" to the IYI — but he mistakes the technology for the risk category, confusing conventional breeding (thousands of years of testing) with transgenic modification (novel, untested, potentially multiplicative risk)
 - <b style="color: #e74c3c">"There is no difference between 'pseudointellectual' and 'intellectual' in the absence of skin in the game"</b>
-
 
 
 - There are two types of inequality:
@@ -586,7 +517,6 @@ The Sankey diagram traces Taleb's two divergent paths: absence of skin in the ga
 - The deli Lindy is now a tourist trap, "but Lindy's cheesecake is…much less distinguished. Odds are the deli will not survive, by the Lindy effect"
 
 
-
 *On hidden asymmetries: why surgeons shouldn't look like surgeons, why the news is fake, and why virtue requires risk.*
 
 ### Surgeons Should Not Look Like Surgeons
@@ -612,7 +542,6 @@ The Sankey diagram traces Taleb's two divergent paths: absence of skin in the ga
 - <b style="color: #2980b9">"Don't tell me what you 'think,' just tell me what's in your portfolio"</b>
 - Forecasting "bears no relation to speculation" — rich horrible forecasters and poor "good" forecasters abound
 - "What matters in life isn't how frequently one is 'right' about outcomes, but how much one makes when one is right"
-
 
 
 - After a 59-minute discussion with David Cameron about robustness and decentralization, the press reported only 20 seconds of a tangential climate remark — taken out of context
@@ -704,7 +633,6 @@ The Sankey diagram traces Taleb's two divergent paths: absence of skin in the ga
 - The genuinely dangerous case is when decorative beliefs become functional — when Salafis treat theological conclusions as engineering specifications
 - Libertarianism, like paganism, "cannot be pigeon-holed" into a party structure — it is inherently decentralized, fractal, and resistant to hierarchical organization
 - The problem with treating all religions as equivalent is that some (Salafism, Soviet Communism) extend their rules to ALL human activity and thought, while others (Christianity, Buddhism, paganism) leave large domains of life to secular governance
-
 
 
 *The book's mathematical and philosophical crescendo: why rationality is survival, why ensemble averages can kill you, and why courage and prudence are the same thing.*
@@ -800,7 +728,6 @@ flowchart TD
 - No such bound exists for pandemics or terrorism — they are multiplicative, meaning they can scale without limit
 - "Never compare a multiplicative, systemic, and fat-tailed risk to a non-multiplicative, idiosyncratic, and thin-tailed one"
 - This is why the precautionary principle applies to GMOs, pandemics, and nuclear weapons but NOT to individual health choices, traffic, or personal finance
-
 
 
 - In a seminar, Taleb asked 90 people: "What's the worst thing that can happen to you?" — 88 answered "my death"
@@ -959,7 +886,6 @@ Before making any significant decision, ask:
 - The fix is always structural: <b style="color: #27ae60">connect consequences to decisions</b>, don't try to make people "smarter" or "more ethical"
 
 
-
 - **Decentralize**: "it is easier to macrobull***t than microbull***t" — large structures accumulate hidden asymmetries
 - **Prefer legal liability to regulation**: common law (bottom-up, adaptive) beats regulation (top-down, rigid, gameable)
 - **Seek employees over contractors for critical roles**: you need dependability, and employees have skin in the game through career risk
@@ -988,7 +914,6 @@ Based on the principles in this book, these are the rules Taleb follows — expr
 - The book reads best when treated as essays — each chapter is somewhat standalone, and the political commentary dates faster than the philosophical arguments
 - Chapter 19 (The Logic of Risk Taking) is the single most important chapter in the entire Incerto — it is worth reading multiple times
 - The glossary and technical appendix are unusually valuable — the appendix contains the formal proofs of ergodicity that underpin the entire book
-
 
 
 ### The Incerto Thread
@@ -1323,5 +1248,4 @@ These five rules, combined with the mathematical substrate of ergodicity, form w
 <b style="color: #27ae60">The deepest message of the Incerto</b>: we live in a world we cannot understand (Fooled by Randomness), shaped by events we cannot predict (The Black Swan), but we can thrive in it if we build systems that gain from what we don't understand (Antifragile) — provided we never allow anyone to transfer their risks to us, and we never transfer ours to anyone else (Skin in the Game).
 
 Nothing without skin in the game. Nothing.
-
 

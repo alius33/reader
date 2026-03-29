@@ -77,21 +77,6 @@ The book is structured in three parts:
 | **Nonlinearity** | Relationships in systems are rarely proportional — doubling input does not double output |
 | **Layers of limits** | Every growing system encounters successive constraints; the binding one shifts over time |
 
-```chartjs
-{
-  "type": "polarArea",
-  "data": {
-    "labels": ["Constants/Parameters", "Buffer Sizes", "Stock-Flow Structures", "Delays", "Balancing Loops", "Reinforcing Loops", "Information Flows", "System Rules", "Self-Organization", "System Goals", "Paradigm Shifts", "Transcending Paradigms"],
-    "datasets": [{
-      "data": [10, 15, 20, 25, 35, 40, 50, 65, 75, 80, 90, 100],
-      "backgroundColor": ["#bdc3c7", "#95a5a6", "#7f8c8d", "#e67e22", "#f39c12", "#e74c3c", "#d35400", "#2980b9", "#8e44ad", "#27ae60", "#16a085", "#2c3e50"]
-    }]
-  },
-  "options": {
-    "plugins": { "title": { "display": true, "text": "Meadows' 12 Leverage Points: Ranked by Transformative Power (Weakest to Strongest)" } }
-  }
-}
-```
 
 The dramatic size difference between the inner rings (parameters, buffers) and the outer rings (paradigms, goals) reveals why most reform efforts fail — they target the weakest leverage points while ignoring the strongest.
 
@@ -155,28 +140,6 @@ Why this matters:
 > - They expect unemployment to drop immediately after new jobs are created, forgetting that the stock of unemployed people has its own inertia
 > **The lesson:** The bathtub logic applies everywhere — if inflows exceed outflows, the stock rises, regardless of good intentions.
 
-```chartjs
-{
-  "type": "radar",
-  "data": {
-    "labels": ["Public Understanding", "Policy Relevance", "Inertia/Memory", "Speed of Change", "Visibility", "Counterintuitiveness"],
-    "datasets": [{
-      "label": "Stocks",
-      "data": [35, 90, 95, 20, 80, 75],
-      "backgroundColor": "rgba(41, 128, 185, 0.2)",
-      "borderColor": "#2980b9"
-    }, {
-      "label": "Flows",
-      "data": [70, 60, 15, 90, 50, 40],
-      "backgroundColor": "rgba(231, 76, 60, 0.2)",
-      "borderColor": "#e74c3c"
-    }]
-  },
-  "options": {
-    "plugins": { "title": { "display": true, "text": "Stocks vs Flows: Why People Systematically Misunderstand System Dynamics" } }
-  }
-}
-```
 
 Stocks score highest on inertia and counterintuitiveness — which explains the persistent confusion where people expect national debt to shrink when deficits are merely reduced, or expect unemployment to vanish when new jobs are created.
 
@@ -258,37 +221,6 @@ This state diagram maps the six fundamental behavior modes that emerge from diff
 > - For most of those thirty days, the growth seemed slow and manageable — on day fifteen, only 0.003% of the pond was covered
 > **The lesson:** Reinforcing loops seem slow and manageable until suddenly they are not.
 
-```d3
-{
-  "type": "treemap",
-  "data": {
-    "name": "System Dynamics",
-    "children": [
-      {"name": "Balancing Loops", "children": [
-        {"name": "Thermostat", "value": 15},
-        {"name": "Drug Enforcement", "value": 12},
-        {"name": "Body Temperature", "value": 10},
-        {"name": "Market Price", "value": 14}
-      ]},
-      {"name": "Reinforcing Loops", "children": [
-        {"name": "Population Growth", "value": 18},
-        {"name": "Compound Interest", "value": 16},
-        {"name": "Erosion Spiral", "value": 12},
-        {"name": "Panic Selling", "value": 14}
-      ]},
-      {"name": "System Traps", "children": [
-        {"name": "Tragedy of Commons", "value": 20},
-        {"name": "Drift to Low Performance", "value": 15},
-        {"name": "Escalation", "value": 14},
-        {"name": "Fixes That Fail", "value": 16}
-      ]}
-    ]
-  },
-  "options": {
-    "title": "Meadows' Systems Vocabulary: Feedback Loops and Common Traps"
-  }
-}
-```
 
 System traps — particularly the tragedy of the commons — occupy the largest area because they represent the most consequential patterns where individually rational behavior produces collectively disastrous outcomes.
 

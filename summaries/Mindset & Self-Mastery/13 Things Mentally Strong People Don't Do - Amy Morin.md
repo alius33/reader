@@ -55,33 +55,6 @@ flowchart TD
 
 This cycle works in both directions: a negative spiral (irrational thoughts trigger painful emotions trigger destructive behaviour) or a positive one (realistic thoughts enable emotional control enable productive action).
 
-```chartjs
-{
-  "type": "doughnut",
-  "data": {
-    "labels": ["Thought-Dominant Habits", "Behavior-Dominant Habits", "Emotion-Dominant Habits"],
-    "datasets": [
-      {
-        "data": [5, 4, 4],
-        "backgroundColor": ["#2980b9", "#27ae60", "#e74c3c"],
-        "borderWidth": 2
-      }
-    ]
-  },
-  "options": {
-    "plugins": {
-      "title": {
-        "display": true,
-        "text": "Morin's Three-Pronged Model: How the 13 Habits Distribute"
-      },
-      "subtitle": {
-        "display": true,
-        "text": "Thought: 4,6,8,9,12 | Behavior: 3,5,10,11 | Emotion: 1,2,7,13"
-      }
-    }
-  }
-}
-```
 
 The roughly even distribution across thought, behavior, and emotion confirms Morin's central argument: mental strength cannot be built by addressing only one dimension — the 13 habits attack all three prongs of her model with near-equal frequency, which is why the self-reinforcing cycle between thoughts, emotions, and behaviors is so difficult to break.
 
@@ -135,63 +108,6 @@ The roughly even distribution across thought, behavior, and emotion confirms Mor
 | **Entitlement** | Expecting the world to deliver what you think you deserve |
 | **Expecting instant results** | Delayed gratification predicts success in every domain |
 
-```chartjs
-{
-  "type": "radar",
-  "data": {
-    "labels": ["Thought Impact", "Behavior Impact", "Emotion Impact"],
-    "datasets": [
-      {
-        "label": "1. Self-Pity",
-        "data": [7, 5, 10],
-        "borderColor": "#e74c3c",
-        "backgroundColor": "rgba(231,76,60,0.1)"
-      },
-      {
-        "label": "4. Controlling Uncontrollables",
-        "data": [10, 7, 8],
-        "borderColor": "#2980b9",
-        "backgroundColor": "rgba(41,128,185,0.1)"
-      },
-      {
-        "label": "5. People-Pleasing",
-        "data": [6, 10, 7],
-        "borderColor": "#f39c12",
-        "backgroundColor": "rgba(243,156,18,0.1)"
-      },
-      {
-        "label": "8. Repeating Mistakes",
-        "data": [9, 9, 4],
-        "borderColor": "#27ae60",
-        "backgroundColor": "rgba(39,174,96,0.1)"
-      },
-      {
-        "label": "13. Expecting Instant Results",
-        "data": [8, 8, 6],
-        "borderColor": "#8e44ad",
-        "backgroundColor": "rgba(142,68,173,0.1)"
-      }
-    ]
-  },
-  "options": {
-    "plugins": {
-      "title": {
-        "display": true,
-        "text": "The 13 Habits: Thought vs Behavior vs Emotion Impact"
-      }
-    },
-    "scales": {
-      "r": {
-        "min": 0,
-        "max": 10,
-        "ticks": {
-          "stepSize": 2
-        }
-      }
-    }
-  }
-}
-```
 
 Self-pity is overwhelmingly an emotional habit (score 10), while controlling uncontrollables is primarily a thought distortion (score 10) and people-pleasing is fundamentally a behavioral pattern (score 10) — confirming Morin's three-pronged model and showing why different habits require different intervention strategies.
 
@@ -258,55 +174,6 @@ The four clusters form their own cycle: emotional traps breed fear, fear undermi
 
 Understanding this cycle is practically useful: if you're struggling with a growth habit (e.g., you can't learn from mistakes), the problem may actually be an emotional trap upstream (e.g., self-pity prevents you from examining what went wrong). Similarly, if you're struggling with a fear (e.g., you can't take risks), the problem may be a boundary issue (e.g., people-pleasing makes you afraid of what others will think). The interconnection means that sometimes the fastest way to solve a problem in one cluster is to address its root in another cluster.
 
-```d3
-{
-  "type": "treemap",
-  "data": {
-    "name": "13 Destructive Mental Habits",
-    "children": [
-      {
-        "name": "Emotional Traps",
-        "children": [
-          {"name": "Self-Pity", "value": 9},
-          {"name": "Giving Away Power", "value": 8},
-          {"name": "Dwelling on Past", "value": 8},
-          {"name": "Resenting Success", "value": 7}
-        ]
-      },
-      {
-        "name": "Fear & Avoidance",
-        "children": [
-          {"name": "Avoiding Change", "value": 8},
-          {"name": "Fearing Risk", "value": 7},
-          {"name": "Giving Up After Failure", "value": 8}
-        ]
-      },
-      {
-        "name": "Boundaries & Agency",
-        "children": [
-          {"name": "Controlling Uncontrollables", "value": 9},
-          {"name": "People-Pleasing", "value": 8},
-          {"name": "Entitlement", "value": 7}
-        ]
-      },
-      {
-        "name": "Growth & Discipline",
-        "children": [
-          {"name": "Repeating Mistakes", "value": 8},
-          {"name": "Fearing Solitude", "value": 6},
-          {"name": "Expecting Instant Results", "value": 8}
-        ]
-      }
-    ]
-  },
-  "options": {
-    "title": "Morin's 13 Habits Organized by Thematic Category",
-    "width": 700,
-    "height": 400,
-    "colorScheme": "category10"
-  }
-}
-```
 
 Emotional Traps occupy the largest area because they contain four habits and carry the highest combined destructive weight — Morin explicitly positions them as the foundational cluster that enables the other three, which is why Chapter 1 (self-pity) opens the book.
 

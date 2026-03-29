@@ -57,44 +57,6 @@ They met as guest speakers at the same event and realised their knowledge fit to
 
 ---
 
-```chartjs
-{
-  "type": "radar",
-  "data": {
-    "labels": ["Autonomy", "Competence", "Self-Regulation", "Motivation", "Resilience", "Decision-Making"],
-    "datasets": [
-      {
-        "label": "High Sense of Control",
-        "data": [9, 8, 8, 9, 8, 9],
-        "backgroundColor": "rgba(39, 174, 96, 0.2)",
-        "borderColor": "#27ae60",
-        "pointBackgroundColor": "#27ae60"
-      },
-      {
-        "label": "Low Sense of Control",
-        "data": [2, 3, 3, 2, 2, 3],
-        "backgroundColor": "rgba(231, 76, 60, 0.2)",
-        "borderColor": "#e74c3c",
-        "pointBackgroundColor": "#e74c3c"
-      }
-    ]
-  },
-  "options": {
-    "plugins": {
-      "title": {
-        "display": true,
-        "text": "Sense of Control Components"
-      }
-    },
-    "scales": {
-      "r": {
-        "beginAtZero": true,
-        "max": 10
-      }
-    }
-  }
-}
-```
 
 Children with a high sense of control score strongly across every dimension — autonomy, competence, self-regulation, motivation, resilience, and decision-making — while those with a low sense of control are depleted across the board, showing how this single variable acts as a master switch for child development.
 
@@ -127,12 +89,12 @@ Here is the chilling part: **if you put a scan of Zara's brain next to Adam's, y
 Stixrud and Johnson use an accessible metaphor of four brain systems to explain the neuroscience:
 
 ```mermaid
-graph TD
+flowchart TD
     A["🧠 The Pilot<br/>(Prefrontal Cortex)"] --> B["Executive function<br/>Judgment, planning<br/>Matures ~age 25"]
     C["🦁 The Lion Fighter<br/>(Amygdala)"] --> D["Fight-or-flight<br/>Stress response<br/>Grows under chronic stress"]
     E["📣 The Cheerleader<br/>(Dopamine System)"] --> F["Motivation & drive<br/>Flow states<br/>Depleted by chronic stress"]
     G["🧘 The Buddha<br/>(Default Mode Network)"] --> H["Self-reflection<br/>Creativity & identity<br/>Uses 60-80% of brain energy"]
-    
+
     D -->|"Hijacks"| A
     D -->|"Depletes"| E
     D -->|"Impairs"| G
@@ -175,55 +137,6 @@ Depression in adolescence leaves "scars" in the brain, requiring less and less s
 
 ### "I Love You Too Much to Fight with You About Your Homework"
 
-```chartjs
-{
-  "type": "bar",
-  "data": {
-    "labels": ["Child's Autonomy", "Intrinsic Motivation", "Relationship Quality", "Stress Levels", "Long-term Resilience", "Decision-Making Skills"],
-    "datasets": [
-      {
-        "label": "Authoritarian (Boss)",
-        "data": [2, 2, 3, 8, 3, 2],
-        "backgroundColor": "rgba(231, 76, 60, 0.7)",
-        "borderColor": "#e74c3c",
-        "borderWidth": 1
-      },
-      {
-        "label": "Laissez-faire (Bystander)",
-        "data": [7, 4, 4, 5, 4, 5],
-        "backgroundColor": "rgba(243, 156, 18, 0.7)",
-        "borderColor": "#f39c12",
-        "borderWidth": 1
-      },
-      {
-        "label": "Consultant",
-        "data": [9, 9, 9, 3, 9, 8],
-        "backgroundColor": "rgba(39, 174, 96, 0.7)",
-        "borderColor": "#27ae60",
-        "borderWidth": 1
-      }
-    ]
-  },
-  "options": {
-    "plugins": {
-      "title": {
-        "display": true,
-        "text": "Consultant vs Manager vs Authoritarian Parent: Impact on Child Outcomes"
-      }
-    },
-    "scales": {
-      "y": {
-        "beginAtZero": true,
-        "max": 10,
-        "title": {
-          "display": true,
-          "text": "Score (1-10)"
-        }
-      }
-    }
-  }
-}
-```
 
 The consultant model outperforms both alternatives across every positive dimension while producing the lowest stress — note that stress is the only measure where a high score is negative, and the authoritarian style generates nearly three times the stress of the consultant approach.
 
@@ -247,7 +160,7 @@ The reframing starts with a simple question: **"Whose problem is it?"** When you
 This doesn't mean abandoning your child. It means recognising that **your job is not to solve your children's problems but to help them learn to run their own lives**.
 
 ```mermaid
-graph LR
+flowchart LR
     subgraph "Traditional Model"
         P1["Parent"] -->|"Pushes/controls"| C1["Child"]
         C1 -->|"Resists or complies<br/>without ownership"| O1["Outcome:<br/>Resentment OR<br/>Impostor Syndrome"]
@@ -258,46 +171,6 @@ graph LR
     end
 ```
 
-```d3
-{
-  "type": "sankey",
-  "data": {
-    "nodes": [
-      "Helicopter Parent",
-      "Authoritarian Parent",
-      "Consultant Parent",
-      "Low Sense of Control",
-      "Moderate Sense of Control",
-      "High Sense of Control",
-      "Anxiety & Depression",
-      "Learned Helplessness",
-      "Intrinsic Motivation",
-      "Academic Resilience",
-      "Strong Mental Health",
-      "Healthy Relationships"
-    ],
-    "links": [
-      {"source": 0, "target": 3, "value": 8},
-      {"source": 1, "target": 3, "value": 7},
-      {"source": 1, "target": 4, "value": 3},
-      {"source": 0, "target": 4, "value": 2},
-      {"source": 2, "target": 5, "value": 9},
-      {"source": 2, "target": 4, "value": 1},
-      {"source": 3, "target": 6, "value": 8},
-      {"source": 3, "target": 7, "value": 7},
-      {"source": 4, "target": 8, "value": 3},
-      {"source": 4, "target": 9, "value": 2},
-      {"source": 5, "target": 8, "value": 4},
-      {"source": 5, "target": 9, "value": 3},
-      {"source": 5, "target": 10, "value": 5},
-      {"source": 5, "target": 11, "value": 4}
-    ]
-  },
-  "options": {
-    "title": "Parenting Style → Sense of Control → Life Outcomes"
-  }
-}
-```
 
 The flow reveals a clear pattern: helicopter and authoritarian parenting funnel children toward a low sense of control — which feeds anxiety, depression, and helplessness — while the consultant model channels children toward a high sense of control that branches into motivation, resilience, mental health, and healthy relationships.
 
@@ -364,7 +237,7 @@ The authors are careful to draw boundaries:
 The authors provide a developmental roadmap:
 
 ```mermaid
-graph TD
+flowchart TD
     A["Toddlers (2-3)"] -->|"Offer 2-3 choices"| B["'Do you want the red cup or the blue cup?'"]
     C["Early Childhood (4-7)"] -->|"Expand choices,<br/>explain consequences"| D["'If you don't wear a jacket,<br/>you might get cold'"]
     E["Middle Childhood (8-12)"] -->|"Coach through<br/>informed decisions"| F["'Here are the pros and cons<br/>of each school option'"]
@@ -374,28 +247,6 @@ graph TD
 
 Even young children show surprising capability. Bill started advising parents to bring kids into the decision about repeating a grade. Kids as young as six made choices at least as good as adults would have, and often came up with solutions neither parent had considered: "I'm not ready for second grade, and if kids tease me about repeating I'll just ignore them."
 
-```d3
-{
-  "type": "heatmap",
-  "data": {
-    "xLabels": ["Toddler (2-3)", "Early Child (4-7)", "Middle Child (8-12)", "Adolescent (13-17)", "Young Adult (18+)"],
-    "yLabels": ["Homework", "Sleep Schedule", "Social Activities", "Extracurriculars", "Screen Time", "Clothing Choices", "Diet & Meals"],
-    "values": [
-      [0, 1, 4, 8, 10],
-      [0, 2, 5, 8, 10],
-      [0, 1, 5, 9, 10],
-      [0, 2, 6, 9, 10],
-      [1, 2, 5, 7, 10],
-      [3, 5, 8, 10, 10],
-      [2, 4, 6, 8, 10]
-    ]
-  },
-  "options": {
-    "title": "Age-Appropriate Autonomy Levels Across Domains",
-    "colorScale": ["#e74c3c", "#f39c12", "#f1c40f", "#2ecc71", "#27ae60"]
-  }
-}
-```
 
 The heatmap shows a developmental gradient — from red (parent-directed) to green (child-directed) — with autonomy increasing gradually across all domains as children mature, while low-stakes decisions like clothing shift to child-control much earlier than higher-stakes ones like homework and sleep.
 
@@ -447,7 +298,7 @@ Acceptance doesn't mean approving or condoning. It means acknowledging reality r
 The authors draw heavily on Edward Deci and Richard Ryan's self-determination theory (SDT), arguably the most robust framework for understanding human motivation. SDT identifies three psychological needs that must be met for intrinsic motivation to flourish:
 
 ```mermaid
-graph TD
+flowchart TD
     A["Self-Determination Theory"] --> B["🎯 Autonomy<br/>Sense of choice and volition"]
     A --> C["💪 Competence<br/>Feeling effective and capable"]
     A --> D["❤️ Relatedness<br/>Connection and belonging"]
@@ -682,7 +533,7 @@ The final chapter is a love letter to the many paths a life can take. The author
 - Mike Rowe (of *Dirty Jobs*) has crusaded against what he calls "the diploma bias" — the assumption that white-collar work is inherently more valuable than skilled trades
 
 ```mermaid
-graph TD
+flowchart TD
     A["The 'Yale or McDonald's'<br/>False Dichotomy"] -->|"Reality"| B["Hundreds of paths<br/>to meaningful work"]
     B --> C["Traditional 4-year<br/>college"]
     B --> D["Gap year →<br/>then college"]
@@ -691,7 +542,7 @@ graph TD
     B --> G["Entrepreneurship"]
     B --> H["Military or<br/>service programmes"]
     B --> I["Arts, music,<br/>athletics"]
-    
+
     style A fill:#e74c3c,color:white
     style B fill:#27ae60,color:white
 ```
@@ -723,13 +574,13 @@ The authors systematically demolish four beliefs that drive parental anxiety:
 ## The Integrated Framework — How It All Fits Together
 
 ```mermaid
-graph TD
+flowchart TD
     subgraph "The Problem"
         S["Chronic Stress"] --> LC["Low Sense<br/>of Control"]
         LC --> BD["Brain Damage:<br/>hippocampus shrinks,<br/>amygdala grows,<br/>PFC goes offline,<br/>dopamine depletes"]
         BD --> O["Outcomes:<br/>anxiety, depression,<br/>lost motivation,<br/>learned helplessness"]
     end
-    
+
     subgraph "The Solution"
         C["Parent as<br/>Consultant"] --> IYC["'It's Your Call'<br/>Informed decisions"]
         IYC --> SOC["Healthy Sense<br/>of Control"]
@@ -1003,11 +854,11 @@ The book draws on a rich body of research. Here are the key studies and their fi
 ## The Parenting Continuum — Where Do You Fall?
 
 ```mermaid
-graph LR
+flowchart LR
     A["Helicopter Parent<br/>(Over-control)"] -->|"Less control"| B["Authoritative Parent<br/>(Firm but warm)"]
     B -->|"More trust"| C["Consultant Parent<br/>(Stixrud & Johnson)"]
     C -->|"Too much detachment"| D["Laissez-faire Parent<br/>(Uninvolved)"]
-    
+
     style A fill:#e74c3c,color:white
     style B fill:#f39c12,color:white
     style C fill:#27ae60,color:white

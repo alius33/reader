@@ -67,9 +67,6 @@ The architecture of the book follows naturally from this framework. Alter walks 
 | **The Internal-External Gap** | The disconnect between how you experience yourself and how others experience you |
 | **The Duck-on-Water Principle** | Glide smoothly on the surface while paddling furiously underneath -- never self-comment on mistakes |
 
-```d3
-{"type":"treemap","data":{"name":"Credibility Behaviours","children":[{"name":"Three Pillars","children":[{"name":"Posture","value":30},{"name":"Volume","value":28},{"name":"Eye Contact","value":27}]},{"name":"Gestures","children":[{"name":"Reach (Open Palm)","value":18},{"name":"Show (Palms Up)","value":15},{"name":"Chop (Emphasis)","value":12},{"name":"Gesture Box","value":10}]},{"name":"Derailers","children":[{"name":"Filler Words","value":20},{"name":"Uptalk","value":18},{"name":"Self-Commenting","value":15},{"name":"Fidgeting","value":14},{"name":"Masking Positions","value":12}]},{"name":"Advanced Skills","children":[{"name":"AvA Calibration","value":16},{"name":"Pitcher/Catcher","value":14},{"name":"Projection","value":13},{"name":"Active Listening","value":12},{"name":"Eliciting Responses","value":10}]}]},"options":{"title":"The Credibility Behaviour Taxonomy"}}
-```
 
 Alter's framework is hierarchical: the Three Pillars (posture, volume, eye contact) form the largest, most critical foundation. Derailers — the invisible habits that silently undercut credibility — form a nearly equal block because eliminating them is as important as building positive skills. Gestures and advanced skills build on top once the foundation is solid.
 
@@ -178,9 +175,6 @@ Most professionals cluster at Level 3 across most behaviours. Level 4 is the tar
   - Another person can have commanding volume (Level 4) but no eye contact (Level 1)
   - The scale allows you to identify the weakest link and focus your practice there
 
-```chartjs
-{"type":"radar","data":{"labels":["Posture","Volume","Eye Contact","Gestures","Facial Expression","Vocal Variety"],"datasets":[{"label":"Typical Professional (Level 3)","data":[3,3,2.5,3,2.5,3],"borderColor":"#f39c12","backgroundColor":"rgba(243,156,18,0.15)"},{"label":"Optimal Target (Level 4)","data":[4,4,4,4,4,4],"borderColor":"#27ae60","backgroundColor":"rgba(39,174,96,0.15)"},{"label":"After Targeted Practice","data":[4,4,3.5,3.5,3.5,3.5],"borderColor":"#2980b9","backgroundColor":"rgba(41,128,185,0.15)"}]},"options":{"plugins":{"title":{"display":true,"text":"The 1-5 Perception Scale Diagnostic — Typical vs Optimal"}},"scales":{"r":{"beginAtZero":true,"max":5,"ticks":{"stepSize":1}}}}}
-```
 
 Most professionals cluster at Level 3 across all behaviours — adequate but forgettable. The green line shows the Level 4 target across all dimensions. Targeted practice (blue) typically improves the pillar skills (posture, volume, eye contact) fastest, while facial expression and vocal variety take longer to upgrade because they involve more deeply embedded subroutines.
 
@@ -304,9 +298,6 @@ All three pillars must reach Level 4 before any other communication behaviour ca
   - The actual risk ratio is wildly skewed -- 40 to 1
   - Almost no one overshoots, but the phantom fear of overshooting keeps millions of people stuck at Level 3
 
-```chartjs
-{"type":"bar","data":{"labels":["Speak Too Softly","Speak at Adequate Volume","Speak Too Loudly"],"datasets":[{"label":"Professionals per 200","data":[40,159,1],"backgroundColor":["rgba(231,76,60,0.7)","rgba(243,156,18,0.7)","rgba(41,128,185,0.7)"],"borderColor":["#e74c3c","#f39c12","#2980b9"],"borderWidth":2}]},"options":{"plugins":{"title":{"display":true,"text":"The Volume Asymmetry — 40:1 Ratio of Too-Soft to Too-Loud"}},"scales":{"y":{"beginAtZero":true,"title":{"display":true,"text":"Number of Professionals (per 200)"}}}}}
-```
 
 Alter's workshop data reveals a staggering 40:1 ratio: for every person who speaks too loudly, forty speak too softly. Yet the fear of overshooting into "too loud" territory keeps the vast majority of underpowered speakers from correcting. This asymmetry is one of the book's most actionable insights — the risk of increasing your volume is almost always lower than the risk of staying quiet.
 
@@ -504,9 +495,6 @@ Reach gestures are the safest default; chop gestures are the most powerful but t
 - <b style="color: #e74c3c">The danger of derailers is precisely their invisibility</b>: because the speaker is unaware of them, they persist indefinitely unless someone points them out
 - Alter catalogues several categories of derailers, each with its own mechanism of damage
 
-```d3
-{"type":"heatmap","data":{"xLabels":["Presentations","Meetings","Interviews","One-on-Ones","Virtual Calls"],"yLabels":["Filler Words","Uptalk","Fidgeting","Self-Commenting","Masking Posture","Resting Face"],"values":[[9,7,8,5,7],[8,6,9,4,7],[7,8,5,3,8],[6,4,6,3,5],[5,7,4,3,6],[4,8,7,6,9]]},"options":{"title":"Derailer Impact by Context — Severity Rating (1-10)","colorRange":["#f7fbff","#e74c3c"]}}
-```
 
 Filler words are most damaging in formal presentations where every pause is magnified. Uptalk is most devastating in interviews, where senior evaluators associate it with lack of conviction. Fidgeting and masking posture hurt most in meetings where prolonged visibility makes them cumulative. The resting face becomes the dominant derailer on virtual calls, where the camera frames only shoulders and face for extended periods.
 

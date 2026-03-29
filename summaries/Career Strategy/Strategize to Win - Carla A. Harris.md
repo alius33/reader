@@ -59,9 +59,6 @@ flowchart LR
 
 The three career phases are not sequential stages you graduate through — they are recurring cycles, and the two currencies must be invested in continuously across all of them.
 
-```chartjs
-{"type":"radar","data":{"labels":["Performance Focus","Relationship Focus","Visibility Need","Sponsor Dependence","Risk Tolerance","Compensation Leverage"],"datasets":[{"label":"Starting Out","data":[9,3,4,2,6,3],"borderColor":"#2980b9","backgroundColor":"rgba(41,128,185,0.15)"},{"label":"Stepping Up","data":[7,7,8,8,5,6],"borderColor":"#27ae60","backgroundColor":"rgba(39,174,96,0.15)"},{"label":"Starting Over","data":[5,9,9,9,8,7],"borderColor":"#e74c3c","backgroundColor":"rgba(231,76,60,0.15)"}]},"options":{"plugins":{"title":{"display":true,"text":"Career Currency Investment Profile Across Phases"}},"scales":{"r":{"beginAtZero":true,"max":10}}}}
-```
 
 At junior levels, performance currency dominates your investment portfolio. As you step up and especially when starting over, relationship currency, visibility, and sponsor dependence all surge — reflecting Harris's core thesis that what advances you early is not what advances you later.
 
@@ -152,9 +149,6 @@ At junior levels, performance currency dominates your investment portfolio. As y
 > [!tip] Core Insight
 > The power of the framework lies in the sequence. Content first. Then jobs. Then skills. Reversing the order is the single most common career-planning mistake.
 
-```d3
-{"type":"sankey","data":{"nodes":[{"id":"Content Interests"},{"id":"Analytical Skills"},{"id":"People Skills"},{"id":"Strategic Thinking"},{"id":"Module 1: Starting Out"},{"id":"Module 2: Building Expertise"},{"id":"Module 3: Stepping Up"},{"id":"Module 4: Leadership"},{"id":"Module 5: Starting Over"},{"id":"Performance Currency"},{"id":"Relationship Currency"}],"links":[{"source":"Content Interests","target":"Module 1: Starting Out","value":40},{"source":"Analytical Skills","target":"Module 1: Starting Out","value":30},{"source":"People Skills","target":"Module 2: Building Expertise","value":25},{"source":"Strategic Thinking","target":"Module 3: Stepping Up","value":35},{"source":"Module 1: Starting Out","target":"Performance Currency","value":50},{"source":"Module 2: Building Expertise","target":"Performance Currency","value":30},{"source":"Module 2: Building Expertise","target":"Relationship Currency","value":20},{"source":"Module 3: Stepping Up","target":"Relationship Currency","value":40},{"source":"Module 3: Stepping Up","target":"Module 4: Leadership","value":35},{"source":"Module 4: Leadership","target":"Module 5: Starting Over","value":30},{"source":"Module 4: Leadership","target":"Relationship Currency","value":35}]},"options":{"title":"Career Module Flow — How Skills and Currency Build Across Phases"}}
-```
 
 This flow illustrates how content interests and skills feed into successive career modules, with early modules generating primarily performance currency and later modules increasingly producing relationship currency — the shift Harris considers essential for sustained advancement.
 
@@ -468,9 +462,6 @@ flowchart TD
 
 At junior levels, performance currency dominates advancement decisions. At senior levels, where everyone already delivers strong results, relationship currency becomes the decisive factor — and it operates invisibly.
 
-```chartjs
-{"type":"doughnut","data":{"labels":["Relationship Currency","Performance Currency","Visibility & Timing","Sponsor Advocacy","Cultural Fit"],"datasets":[{"label":"Weight in Promotion Decisions","data":[30,20,18,22,10],"backgroundColor":["#27ae60","#2980b9","#f39c12","#8e44ad","#e74c3c"]}]},"options":{"plugins":{"title":{"display":true,"text":"What Actually Determines Senior Promotion Decisions"}}}}
-```
 
 Harris's central argument visualised: at senior levels, performance accounts for only about a fifth of what drives promotion decisions. Relationship currency, sponsor advocacy, and visibility collectively dwarf raw output — explaining why high performers who neglect relationships plateau.
 
@@ -494,9 +485,6 @@ Harris's central argument visualised: at senior levels, performance accounts for
 
 Harris warns that most professionals have a dangerously inaccurate map of which players occupy which roles in their career. They assume supporters are sponsors, overlook SNEPs until damage is done, and fail to identify saboteurs until the pattern is unmistakable.
 
-```d3
-{"type":"treemap","data":{"name":"Career Players","children":[{"name":"Sponsor","value":45,"description":"Spends political capital advocating for you behind closed doors"},{"name":"Supporter","value":25,"description":"Backs you informally but lacks decision-making power"},{"name":"SNEP","value":18,"description":"Reflexive sceptic who defaults to no on every proposal"},{"name":"Saboteur","value":12,"description":"Actively works against you through subtle undermining"}]},"options":{"title":"The Four Players in Your Career — Relative Impact on Trajectory"}}
-```
 
 The sponsor's outsized block reflects Harris's insistence that this is the most important person in your professional life — their impact dwarfs the other three combined. Notice the saboteur's small but real footprint: rare, but capable of disproportionate damage when undetected.
 

@@ -95,10 +95,10 @@ tags:
 ### The Three Core Practices
 
 ```mermaid
-graph LR
+flowchart LR
     A["<b>PRACTICE 1</b><br/>Acknowledge Xi<br/><i>Am I uncommon?</i>"] --> B["<b>PRACTICE 2</b><br/>Explore Xi<br/><i>How am I uncommon?</i>"]
     B --> C["<b>PRACTICE 3</b><br/>Apply Xi<br/><i>How do I use it effectively?</i>"]
-    
+
     style A fill:#2980b9,color:#fff
     style B fill:#27ae60,color:#fff
     style C fill:#e74c3c,color:#fff
@@ -152,47 +152,6 @@ The heart of the book is a five-trait identification system. You don't need all 
 | 4 | **Excessive zeal** | Inexhaustible and keyed-up while a problem is interesting, drops it when curiosity is satisfied, invests too much energy in wrong projects |
 | 5 | **Emotional-intellectual contrast** | Either emotional or intellectual self-confidence is high while the other is poorly established — can lead to perfectionism, fear of failure, or escalating know-it-all tendencies |
 
-```chartjs
-{
-  "type": "radar",
-  "data": {
-    "labels": ["Intellectually Able", "Incurably Inquisitive", "Needs Autonomy", "Excessive Zeal", "Confidence Gap"],
-    "datasets": [
-      {
-        "label": "Acknowledged XIP",
-        "data": [9, 8, 9, 7, 6],
-        "backgroundColor": "rgba(41, 128, 185, 0.2)",
-        "borderColor": "#2980b9",
-        "pointBackgroundColor": "#2980b9"
-      },
-      {
-        "label": "Unacknowledged XIP",
-        "data": [7, 8, 5, 9, 9],
-        "backgroundColor": "rgba(231, 76, 60, 0.2)",
-        "borderColor": "#e74c3c",
-        "pointBackgroundColor": "#e74c3c"
-      }
-    ]
-  },
-  "options": {
-    "plugins": {
-      "title": {
-        "display": true,
-        "text": "The Five XIP Character Traits: Acknowledged vs Unacknowledged"
-      }
-    },
-    "scales": {
-      "r": {
-        "min": 0,
-        "max": 10,
-        "ticks": {
-          "stepSize": 2
-        }
-      }
-    }
-  }
-}
-```
 
 An acknowledged XIP channels their traits productively — high intellectual ability and autonomy become strengths — while an unacknowledged XIP often experiences excessive zeal and a widening confidence gap as the dominant, destabilising traits.
 
@@ -310,7 +269,7 @@ For organizations, Ximension is a practical management tool. Innovative companie
 Once you acknowledge being an XIP, the next question is: *How are you Xi?* The answer lies in **Xidentity** — a model of nine characteristic facets that mutually influence each other:
 
 ```mermaid
-graph TD
+flowchart TD
     CENTER["<b>Degree of Xi</b><br/><i>Amplifies all other facets</i>"] --- A["Multiple<br/>Intelligences"]
     CENTER --- B["Imaginal ↔ Verbal<br/>Thinking"]
     CENTER --- C["Temperament"]
@@ -319,50 +278,10 @@ graph TD
     CENTER --- F["Extra Empathy ↔<br/>Task-Orientation"]
     CENTER --- G["Extra<br/>Receptivity"]
     CENTER --- H["Male / Female<br/>Archetypes"]
-    
+
     style CENTER fill:#2980b9,color:#fff
 ```
 
-```d3
-{
-  "type": "treemap",
-  "data": {
-    "name": "Xidentity",
-    "children": [
-      {
-        "name": "Multiple Facets",
-        "children": [
-          {"name": "Multiple Intelligences", "value": 30},
-          {"name": "Temperament", "value": 25},
-          {"name": "Extra Receptivity", "value": 25},
-          {"name": "Male/Female Archetypes", "value": 20}
-        ]
-      },
-      {
-        "name": "Polarity Facets",
-        "children": [
-          {"name": "Imaginal ↔ Verbal Thinking", "value": 30},
-          {"name": "Extravert ↔ Introvert", "value": 25},
-          {"name": "Extra Empathy ↔ Task-Orientation", "value": 30}
-        ]
-      },
-      {
-        "name": "Central Amplifier",
-        "children": [
-          {"name": "Degree of Xi", "value": 40},
-          {"name": "Xinasty (Family Dynasty)", "value": 25}
-        ]
-      }
-    ]
-  },
-  "options": {
-    "title": "The Nine Facets of Xidentity — Treemap Model",
-    "width": 700,
-    "height": 400,
-    "colorScheme": "tableau10"
-  }
-}
-```
 
 The Xidentity model groups nine facets into three categories: four "multiple" facets where you compose your own blend, three polarity facets where you sit along a continuum, and two central facets — Degree of Xi and Xinasty — that amplify and contextualise all others.
 
@@ -458,41 +377,6 @@ Drawing on Marylou Streznewski's *Gifted Grownups*, Kuipers describes three fund
 
 Independents are the group most vulnerable to stagnation. If their gifts are rejected or unvalued, they may abandon their creativity entirely. Their social breakthrough can take a very long time to manifest — and in the worst cases, it never does. Kuipers notes bluntly that this "can result in them abandoning all social links or lead to criminal behaviour and even death."
 
-```chartjs
-{
-  "type": "polarArea",
-  "data": {
-    "labels": ["Superstars — Societal Visibility", "Superstars — Self-Awareness of Xi", "Strivers — Work Ethic", "Strivers — Risk of Burnout", "Independents — Creative Potential", "Independents — Stagnation Risk"],
-    "datasets": [
-      {
-        "data": [9, 3, 9, 8, 10, 9],
-        "backgroundColor": [
-          "rgba(41, 128, 185, 0.6)",
-          "rgba(41, 128, 185, 0.3)",
-          "rgba(39, 174, 96, 0.6)",
-          "rgba(39, 174, 96, 0.3)",
-          "rgba(231, 76, 60, 0.6)",
-          "rgba(231, 76, 60, 0.3)"
-        ]
-      }
-    ]
-  },
-  "options": {
-    "plugins": {
-      "title": {
-        "display": true,
-        "text": "Three XIP Application Styles: Strengths and Vulnerabilities"
-      }
-    },
-    "scales": {
-      "r": {
-        "min": 0,
-        "max": 10
-      }
-    }
-  }
-}
-```
 
 Independents carry the highest creative potential but also the greatest stagnation risk — their gifts are the most vulnerable to rejection because they operate outside conventional reward systems that sustain Superstars and Strivers.
 
@@ -662,12 +546,12 @@ All of these require the XIP to continually re-tune their precision instrument. 
 ## The Architecture of Becoming an Effective XIP
 
 ```mermaid
-graph TD
+flowchart TD
     A["<b>ACKNOWLEDGE XI</b><br/>Am I uncommon?<br/><i>Five traits · Ximension · Reframing criticisms</i>"] --> B["<b>EXPLORE XIDENTITY</b><br/>How am I uncommon?<br/><i>Nine facets · Thinking style · Temperament</i>"]
     B --> C["<b>APPLY XI</b><br/>How do I use it effectively?<br/><i>Autonomy ↔ Rapport · Mastery · Gift vs. Market</i>"]
     C --> D["<b>EFFECTIVE XIP</b><br/>Results + Well-being + Growth<br/><i>A work in progress</i>"]
     D -.->|"Continuous<br/>rebalancing"| A
-    
+
     style A fill:#2980b9,color:#fff
     style B fill:#27ae60,color:#fff
     style C fill:#e74c3c,color:#fff

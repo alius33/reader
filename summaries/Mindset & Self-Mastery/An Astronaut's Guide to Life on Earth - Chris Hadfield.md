@@ -53,46 +53,6 @@ flowchart TD
 
 This diagram captures Hadfield's central philosophy: preparation is not sacrifice — it is the substance of a good life, regardless of whether the big moment ever arrives.
 
-```d3
-{
-  "type": "force",
-  "title": "Hadfield's Interconnected Leadership Principles",
-  "data": {
-    "nodes": [
-      { "id": "attitude", "label": "Attitude (Orientation)", "group": 1, "size": 30 },
-      { "id": "preparation", "label": "Relentless Preparation", "group": 1, "size": 28 },
-      { "id": "negative", "label": "Power of Negative Thinking", "group": 2, "size": 22 },
-      { "id": "zero", "label": "Aim to Be a Zero", "group": 2, "size": 22 },
-      { "id": "smallstuff", "label": "Sweat the Small Stuff", "group": 3, "size": 24 },
-      { "id": "expeditionary", "label": "Expeditionary Behaviour", "group": 3, "size": 22 },
-      { "id": "competence", "label": "Competence Over Fear", "group": 4, "size": 26 },
-      { "id": "simulation", "label": "Simulation & Practice", "group": 4, "size": 24 },
-      { "id": "climbing", "label": "Climbing Down the Ladder", "group": 5, "size": 18 },
-      { "id": "justincase", "label": "Just-in-Case Skills", "group": 5, "size": 20 }
-    ],
-    "links": [
-      { "source": "attitude", "target": "preparation", "strength": 0.9 },
-      { "source": "preparation", "target": "simulation", "strength": 0.9 },
-      { "source": "simulation", "target": "competence", "strength": 0.8 },
-      { "source": "competence", "target": "negative", "strength": 0.8 },
-      { "source": "negative", "target": "preparation", "strength": 0.7 },
-      { "source": "zero", "target": "expeditionary", "strength": 0.8 },
-      { "source": "expeditionary", "target": "smallstuff", "strength": 0.9 },
-      { "source": "smallstuff", "target": "preparation", "strength": 0.7 },
-      { "source": "attitude", "target": "climbing", "strength": 0.6 },
-      { "source": "justincase", "target": "preparation", "strength": 0.8 },
-      { "source": "justincase", "target": "competence", "strength": 0.6 },
-      { "source": "zero", "target": "attitude", "strength": 0.5 },
-      { "source": "climbing", "target": "zero", "strength": 0.6 }
-    ]
-  },
-  "options": {
-    "width": 700,
-    "height": 500,
-    "colorScheme": "category10"
-  }
-}
-```
 
 The force diagram reveals that Hadfield's principles are not a list but a web — Preparation sits at the centre with the most connections, reinforcing his argument that the journey of getting ready is itself the substance of a meaningful life.
 
@@ -262,47 +222,6 @@ The timeline reveals that Hadfield spent 44 years preparing for a cumulative 166
   - Each gap was filled with ground assignments that deepened his understanding of space operations far beyond what a single flight could teach
   - The trajectory from passenger to commander took 17 years — and Hadfield argues this is exactly how long it should take
 
-```chartjs
-{
-  "type": "bar",
-  "data": {
-    "labels": ["STS-74 Atlantis (1995)", "STS-100 Endeavour (2001)", "Expedition 34/35 ISS (2012-2013)"],
-    "datasets": [
-      {
-        "label": "Years of Preparation Before Mission",
-        "data": [3, 6, 11],
-        "backgroundColor": "rgba(41, 128, 185, 0.8)",
-        "borderColor": "rgba(41, 128, 185, 1)",
-        "borderWidth": 1
-      },
-      {
-        "label": "Days in Space",
-        "data": [8, 12, 146],
-        "backgroundColor": "rgba(39, 174, 96, 0.8)",
-        "borderColor": "rgba(39, 174, 96, 1)",
-        "borderWidth": 1
-      }
-    ]
-  },
-  "options": {
-    "plugins": {
-      "title": {
-        "display": true,
-        "text": "Preparation Time (Years) vs Space Time (Days) Across Hadfield's 3 Missions"
-      }
-    },
-    "scales": {
-      "y": {
-        "beginAtZero": true,
-        "title": {
-          "display": true,
-          "text": "Years (Prep) / Days (Space)"
-        }
-      }
-    }
-  }
-}
-```
 
 The bar chart makes visible the staggering asymmetry between preparation and performance: Hadfield spent 11 years preparing for his final mission that lasted 146 days — a ratio that vindicates his philosophy that the preparation itself must be the reward, not just the price of admission.
 
@@ -820,48 +739,6 @@ flowchart LR
 
 The path from zero to plus one is natural and earned. The shortcut from newcomer to hero almost always loops through minus one.
 
-```chartjs
-{
-  "type": "radar",
-  "data": {
-    "labels": ["Team Contribution", "Ego Management", "Knowledge of Context", "Trust Earned", "Long-Term Reputation", "Immediate Visibility"],
-    "datasets": [
-      {
-        "label": "Minus One (-1): The Disruptor",
-        "data": [15, 10, 15, 10, 10, 90],
-        "backgroundColor": "rgba(231, 76, 60, 0.2)",
-        "borderColor": "rgba(231, 76, 60, 1)"
-      },
-      {
-        "label": "Zero (0): The Observer",
-        "data": [50, 85, 70, 65, 75, 20],
-        "backgroundColor": "rgba(41, 128, 185, 0.2)",
-        "borderColor": "rgba(41, 128, 185, 1)"
-      },
-      {
-        "label": "Plus One (+1): The Contributor",
-        "data": [95, 80, 90, 95, 95, 60],
-        "backgroundColor": "rgba(39, 174, 96, 0.2)",
-        "borderColor": "rgba(39, 174, 96, 1)"
-      }
-    ]
-  },
-  "options": {
-    "plugins": {
-      "title": {
-        "display": true,
-        "text": "The -1 / 0 / +1 Framework: Attribute Profiles for Each Level"
-      }
-    },
-    "scales": {
-      "r": {
-        "beginAtZero": true,
-        "max": 100
-      }
-    }
-  }
-}
-```
 
 The radar chart reveals the counterintuitive truth at the heart of Hadfield's framework: the Minus One scores highest only on immediate visibility — the very trait that makes them destructive — while the Zero's patient profile naturally evolves into the Plus One's across every dimension that actually matters.
 

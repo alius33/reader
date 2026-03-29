@@ -149,32 +149,6 @@ Adams's three pillars — systems, talent stacking, and energy management — fe
 
 This table captures the fundamental emotional difference Adams is pointing to — systems keep you psychologically healthy while goals often do not.
 
-```chartjs
-{
-  "type": "radar",
-  "data": {
-    "labels": ["Daily Motivation", "Resilience to Failure", "Long-term Sustainability", "Psychological Health", "Learning Rate", "Adaptability"],
-    "datasets": [
-      {
-        "label": "Goal-Oriented Approach",
-        "data": [30, 20, 25, 15, 35, 20],
-        "backgroundColor": "rgba(231, 76, 60, 0.2)",
-        "borderColor": "#e74c3c"
-      },
-      {
-        "label": "Systems-Oriented Approach",
-        "data": [85, 90, 95, 88, 80, 92],
-        "backgroundColor": "rgba(39, 174, 96, 0.2)",
-        "borderColor": "#27ae60"
-      }
-    ]
-  },
-  "options": {
-    "plugins": { "title": { "display": true, "text": "Goals vs Systems: Psychological Performance Profile" } },
-    "scales": { "r": { "min": 0, "max": 100 } }
-  }
-}
-```
 
 Systems outperform goals across every psychological dimension — particularly in resilience and sustainability, where the gap is most dramatic.
 
@@ -392,24 +366,6 @@ Adams is blunt: most self-help books tell you to put others first. He says that 
 | Progress on something you care about | Spinning wheels on things that don't matter |
 | Feeling of control over your schedule | Feeling controlled by others' agendas |
 
-```chartjs
-{
-  "type": "doughnut",
-  "data": {
-    "labels": ["Exercise", "Creative Work", "Positive Social", "Learning", "Sleep", "Proper Nutrition", "Progress", "Schedule Control"],
-    "datasets": [{
-      "data": [20, 18, 12, 10, 15, 10, 8, 7],
-      "backgroundColor": [
-        "#27ae60", "#2ecc71", "#1abc9c", "#3498db",
-        "#2980b9", "#9b59b6", "#f1c40f", "#e67e22"
-      ]
-    }]
-  },
-  "options": {
-    "plugins": { "title": { "display": true, "text": "Energy Booster Portfolio: Contribution to Daily Energy Budget" } }
-  }
-}
-```
 
 Exercise and creative work together account for nearly 40% of daily energy — explaining why Adams insists on protecting morning hours for creative output and making exercise non-negotiable.
 
@@ -649,41 +605,6 @@ Adams's talent stack combined three ordinary skills into an extraordinary result
 | **Design** | Visual communication and aesthetic sense improve any output |
 | **Conversation** | Social skills make you likeable, and likeable people get more opportunities |
 
-```d3
-{
-  "type": "force",
-  "data": {
-    "nodes": [
-      { "id": "You", "group": 1 },
-      { "id": "Public Speaking", "group": 2 },
-      { "id": "Writing", "group": 2 },
-      { "id": "Psychology", "group": 2 },
-      { "id": "Business Basics", "group": 2 },
-      { "id": "Persuasion", "group": 2 },
-      { "id": "Technology", "group": 2 },
-      { "id": "Design", "group": 2 },
-      { "id": "Conversation", "group": 2 }
-    ],
-    "links": [
-      { "source": "You", "target": "Public Speaking", "value": 3 },
-      { "source": "You", "target": "Writing", "value": 3 },
-      { "source": "You", "target": "Psychology", "value": 3 },
-      { "source": "You", "target": "Business Basics", "value": 3 },
-      { "source": "You", "target": "Persuasion", "value": 3 },
-      { "source": "You", "target": "Technology", "value": 3 },
-      { "source": "You", "target": "Design", "value": 2 },
-      { "source": "You", "target": "Conversation", "value": 3 },
-      { "source": "Public Speaking", "target": "Persuasion", "value": 2 },
-      { "source": "Writing", "target": "Persuasion", "value": 2 },
-      { "source": "Psychology", "target": "Conversation", "value": 2 },
-      { "source": "Technology", "target": "Design", "value": 1 }
-    ]
-  },
-  "options": {
-    "title": "Universal Talent Stack: Skills That Multiply Each Other"
-  }
-}
-```
 
 The force network reveals how skills don't just add to your value — they interconnect, with persuasion and conversation acting as high-connectivity hubs that amplify everything else.
 
@@ -861,23 +782,6 @@ The diminishing returns of practice — the leap from incompetent to good (top 2
   - Most people try to increase pleasure when they should be working on their baseline happiness
   - <b style="color: #27ae60">The baseline is determined by your health, freedom, imagination, and flexibility — not by any specific achievement or possession</b>
 
-```chartjs
-{
-  "type": "bar",
-  "data": {
-    "labels": ["Health", "Freedom", "Imagination", "Flexibility", "Money", "Fame", "Status", "Possessions"],
-    "datasets": [{
-      "label": "Impact on Baseline Happiness",
-      "data": [95, 88, 75, 82, 35, 15, 20, 10],
-      "backgroundColor": ["#27ae60", "#27ae60", "#27ae60", "#27ae60", "#e74c3c", "#e74c3c", "#e74c3c", "#e74c3c"]
-    }]
-  },
-  "options": {
-    "plugins": { "title": { "display": true, "text": "Adams's Happiness Formula: What Actually Moves the Baseline" } },
-    "scales": { "y": { "min": 0, "max": 100, "title": { "display": true, "text": "Impact on Baseline Happiness (%)" } } }
-  }
-}
-```
 
 The four pillars of Adams's happiness formula (green) dramatically outweigh conventional success markers (red) in their impact on baseline happiness — confirming that what most people chase matters least.
 

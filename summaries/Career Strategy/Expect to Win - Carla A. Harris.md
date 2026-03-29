@@ -34,9 +34,6 @@ Carla A. Harris rose to Managing Director in equity capital markets at Morgan St
 
 **Performance + Political Alignment + Risk Taking = Career Advancement**
 
-```chartjs
-{"type":"radar","data":{"labels":["Performance","Perception Management","Sponsorship","Voice","Risk-Taking","Authenticity"],"datasets":[{"label":"Typical High Performer","data":[9,3,2,3,4,5],"borderColor":"#e74c3c","backgroundColor":"rgba(231,76,60,0.1)"},{"label":"Harris's Success Model","data":[8,8,9,8,7,9],"borderColor":"#27ae60","backgroundColor":"rgba(39,174,96,0.1)"}]},"options":{"plugins":{"title":{"display":true,"text":"Success Equation — Typical High Performer vs Harris's Complete Model"}},"scales":{"r":{"beginAtZero":true,"max":10}}}}
-```
 
 The typical high performer invests almost exclusively in performance while neglecting the five other dimensions that actually determine advancement — Harris's model demands balanced investment across all six.
 
@@ -419,9 +416,6 @@ The Perception Equation shows that career outcomes depend on two inputs — only
 | **Mentor** | Gives tailored developmental advice; knows your full context | Provides personalised counsel across your career arc | Helps you *think* but cannot *make things happen* |
 | **Sponsor** | Uses political and social capital on your behalf | Carries your paper into the room; argues your case behind closed doors | Requires a seat at the decision table AND willingness to spend capital |
 
-```chartjs
-{"type":"bar","data":{"labels":["Adviser","Mentor","Sponsor"],"datasets":[{"label":"Guidance Value","data":[4,8,5],"backgroundColor":"#3498db"},{"label":"Advocacy Power","data":[1,2,9],"backgroundColor":"#27ae60"},{"label":"Career Impact","data":[3,5,10],"backgroundColor":"#e74c3c"}]},"options":{"plugins":{"title":{"display":true,"text":"Sponsor vs Mentor vs Adviser — Value Across Three Dimensions"}},"scales":{"y":{"beginAtZero":true,"max":10}}}}
-```
 
 Sponsors deliver dramatically more career impact than mentors despite offering less guidance — because sponsorship operates in the rooms where decisions are made, not in the conversations where advice is given.
 
@@ -714,9 +708,6 @@ flowchart TD
 
 The risk framework reveals that inaction is itself a form of risk — latent risks accumulate whether you act or not, and only forward risks create the capital to absorb them.
 
-```d3
-{"type":"heatmap","data":{"xLabels":["New Skills","New Relationships","New Branches","Survivable Downside"],"yLabels":["Calculated Risk","Studied Risk","Step-out-on-Faith"],"values":[[8,7,6,9],[6,5,7,5],[4,4,9,2]]},"options":{"title":"Forward Risk Assessment — Three Risk Types Scored on Four Criteria"}}
-```
 
 Calculated risks score highest on survivable downside, making them the safest bet for mid-career professionals — while step-out-on-faith risks offer maximum optionality but require financial and emotional reserves most people lack.
 
@@ -745,9 +736,6 @@ flowchart TD
     E --> I[Cross-pollination & fallback options]
 ```
 
-```d3
-{"type":"force","data":{"nodes":[{"id":"you","label":"You","group":0},{"id":"ceo","label":"CEO","group":1},{"id":"vp1","label":"VP Sales","group":1},{"id":"vp2","label":"VP Ops","group":1},{"id":"peer1","label":"Peer A","group":2},{"id":"peer2","label":"Peer B","group":2},{"id":"asst","label":"EA to CEO","group":2},{"id":"jr1","label":"Junior 1","group":3},{"id":"jr2","label":"Junior 2","group":3},{"id":"ext1","label":"Industry Contact","group":4},{"id":"ext2","label":"Former Colleague","group":4}],"links":[{"source":"you","target":"ceo"},{"source":"you","target":"vp1"},{"source":"you","target":"vp2"},{"source":"you","target":"peer1"},{"source":"you","target":"peer2"},{"source":"you","target":"asst"},{"source":"you","target":"jr1"},{"source":"you","target":"jr2"},{"source":"you","target":"ext1"},{"source":"you","target":"ext2"},{"source":"asst","target":"ceo"},{"source":"peer1","target":"vp1"}]},"options":{"title":"Four-Quadrant Network — Upward, Lateral, Downward, External"}}
-```
 
 The executive assistant node connects directly to the CEO — Harris emphasizes that assistants are among the most undervalued network nodes, controlling access to the very senior leaders whose sponsorship determines your advancement.
 

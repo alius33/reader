@@ -95,73 +95,12 @@ The entire book is built on this dual-channel model: every conversation operates
 | **Anchoring** | Associating a stimulus with an emotional state, then triggering it later |
 | **The Four Learning Stages** | Unconscious ignorance → conscious ignorance → conscious competence → unconscious competence |
 
-```chartjs
-{
-  "type": "radar",
-  "data": {
-    "labels": ["Rapport Building", "Micro-Expression Reading", "Breathing Sync", "Sensory Language", "Suggestion", "Anchoring", "Deception Detection", "Sensory Acuity"],
-    "datasets": [
-      {
-        "label": "After Reading (Conscious Competence)",
-        "data": [75, 50, 60, 65, 45, 40, 35, 55],
-        "backgroundColor": "rgba(41, 128, 185, 0.2)",
-        "borderColor": "#2980b9"
-      },
-      {
-        "label": "Before Reading (Unconscious Incompetence)",
-        "data": [20, 10, 5, 15, 5, 5, 25, 10],
-        "backgroundColor": "rgba(231, 76, 60, 0.2)",
-        "borderColor": "#e74c3c"
-      }
-    ]
-  },
-  "options": {
-    "plugins": { "title": { "display": true, "text": "Fexeus's Mind-Reading Skills: Before vs After Training" } },
-    "scales": { "r": { "min": 0, "max": 100 } }
-  }
-}
-```
 
 Rapport-building shows the largest jump from untrained to trained — it is both the most impactful and the most accessible skill in Fexeus's toolkit, while deception detection improves the least because it requires the longest practice period.
 
-```d3
-{
-  "type": "treemap",
-  "data": [
-    { "name": "Mirroring", "category": "Rapport", "value": 90 },
-    { "name": "Breathing Sync", "category": "Rapport", "value": 95 },
-    { "name": "Voice Matching", "category": "Rapport", "value": 80 },
-    { "name": "Cross-Matching", "category": "Rapport", "value": 75 },
-    { "name": "Seven Emotions", "category": "Perception", "value": 85 },
-    { "name": "Micro-Expressions", "category": "Perception", "value": 70 },
-    { "name": "Sensory Acuity", "category": "Perception", "value": 80 },
-    { "name": "Embedded Commands", "category": "Influence", "value": 65 },
-    { "name": "Presuppositions", "category": "Influence", "value": 70 },
-    { "name": "Anchoring", "category": "Influence", "value": 75 }
-  ],
-  "options": {
-    "title": "Fexeus's Toolkit — Techniques by Category and Effectiveness"
-  }
-}
-```
 
 Rapport techniques dominate the effectiveness map — breathing synchronisation alone outscores every influence technique, confirming Fexeus's insistence that connection must precede persuasion.
 
-```chartjs
-{
-  "type": "doughnut",
-  "data": {
-    "labels": ["Unconscious Nonverbal (60-65%)", "Tone & Vocal Quality (25-30%)", "Actual Words (7-10%)"],
-    "datasets": [{
-      "data": [63, 27, 10],
-      "backgroundColor": ["#2980b9", "#f39c12", "#e74c3c"]
-    }]
-  },
-  "options": {
-    "plugins": { "title": { "display": true, "text": "Communication Channels — Where the Real Message Lives" } }
-  }
-}
-```
 
 Over 90% of interpersonal communication occurs through channels most people never consciously monitor — the nonverbal and tonal channels that Fexeus's entire system is designed to decode.
 

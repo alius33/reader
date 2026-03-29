@@ -47,34 +47,6 @@ flowchart TD
 
 The stage metaphor captures Rock's core argument: conscious thought is a scarce resource managed by a meta-cognitive director, not an unlimited engine you can run all day.
 
-```chartjs
-{
-  "type": "line",
-  "data": {
-    "labels": ["8am", "9am", "10am", "11am", "12pm", "1pm", "2pm", "3pm", "4pm", "5pm"],
-    "datasets": [
-      {
-        "label": "Cognitive Capacity (Typical Worker)",
-        "data": [95, 70, 55, 40, 30, 45, 35, 25, 20, 15],
-        "borderColor": "#e74c3c",
-        "backgroundColor": "rgba(231, 76, 60, 0.1)",
-        "fill": true
-      },
-      {
-        "label": "Cognitive Capacity (Optimised Schedule)",
-        "data": [95, 85, 60, 50, 35, 55, 45, 40, 35, 30],
-        "borderColor": "#27ae60",
-        "backgroundColor": "rgba(39, 174, 96, 0.1)",
-        "fill": true
-      }
-    ]
-  },
-  "options": {
-    "plugins": { "title": { "display": true, "text": "The Stage Dims: Prefrontal Cortex Capacity Through the Day" } },
-    "scales": { "y": { "title": { "display": true, "text": "% Cognitive Capacity Remaining" }, "min": 0, "max": 100 } }
-  }
-}
-```
 
 The prefrontal cortex loses capacity rapidly throughout the day — the typical worker burns through 30% of their cognitive power on email by 9am, while an optimised schedule preserves peak resources for strategic thinking.
 
@@ -112,58 +84,9 @@ The prefrontal cortex loses capacity rapidly throughout the day — the typical 
   - **Fairness** — your perception of equitable exchange
 - <b style="color: #27ae60">Managing social dynamics is not a "soft skill" — it is a biological imperative that affects cognitive performance, health, and decision-making quality</b>
 
-```chartjs
-{
-  "type": "radar",
-  "data": {
-    "labels": ["Status", "Certainty", "Autonomy", "Relatedness", "Fairness"],
-    "datasets": [
-      {
-        "label": "Threat Response Intensity",
-        "data": [85, 90, 80, 75, 88],
-        "backgroundColor": "rgba(231, 76, 60, 0.15)",
-        "borderColor": "#e74c3c",
-        "pointBackgroundColor": "#e74c3c"
-      },
-      {
-        "label": "Reward Response Intensity",
-        "data": [70, 65, 75, 80, 72],
-        "backgroundColor": "rgba(39, 174, 96, 0.15)",
-        "borderColor": "#27ae60",
-        "pointBackgroundColor": "#27ae60"
-      }
-    ]
-  },
-  "options": {
-    "plugins": { "title": { "display": true, "text": "The SCARF Model: Threat vs Reward Intensity Across Five Social Domains" } },
-    "scales": { "r": { "min": 0, "max": 100, "ticks": { "stepSize": 20 } } }
-  }
-}
-```
 
 The asymmetry is striking: threats outweigh rewards in nearly every SCARF domain, with certainty threats producing the strongest response — explaining why ambiguity about the future is so cognitively destructive.
 
-```d3
-{
-  "type": "treemap",
-  "data": [
-    { "name": "Prioritising (Most Expensive)", "value": 95, "category": "Core Cognitive" },
-    { "name": "Understanding New Ideas", "value": 80, "category": "Core Cognitive" },
-    { "name": "Decision Making", "value": 85, "category": "Core Cognitive" },
-    { "name": "Inhibiting Distractions", "value": 75, "category": "Executive" },
-    { "name": "Emotional Regulation", "value": 70, "category": "Executive" },
-    { "name": "Affect Labeling", "value": 40, "category": "Regulation" },
-    { "name": "Reappraisal", "value": 55, "category": "Regulation" },
-    { "name": "The Director (Meta-cognition)", "value": 60, "category": "Meta" },
-    { "name": "Mindfulness Practice", "value": 50, "category": "Training" },
-    { "name": "Insight Generation", "value": 65, "category": "Creative" }
-  ],
-  "options": {
-    "title": "Rock's Cognitive Energy Map: What Drains the Prefrontal Stage Most",
-    "colorField": "category"
-  }
-}
-```
 
 Prioritisation is the single most expensive cognitive operation — requiring all five prefrontal functions simultaneously — which is why Rock insists it must be done first thing in the morning when the stage is freshest.
 

@@ -53,9 +53,6 @@ year: 1997
 - Christensen uses the analogy of human flight: for centuries, people tried to fly by strapping wings to their arms and flapping. They invariably failed — not because they lacked courage or effort, but because they were fighting the laws of nature. Flight became possible only when people understood gravity, Bernoulli's principle, and the concepts of lift and drag — and designed machines that harnessed these laws rather than fighting them. <b style="color: #27ae60">Managing disruptive innovation is the same: you must understand and harness the five principles, not fight them</b>
 - The book is built on the most comprehensive database of its kind: every model of disk drive introduced by every company in the world between 1975 and 1994, supplemented by more than eighty interviews with executives who played key roles during moments of disruption
 
-```d3
-{"type":"treemap","data":{"name":"Innovator's Dilemma","children":[{"name":"Innovation Types","children":[{"name":"Sustaining Innovation","value":40,"description":"Incumbents always lead"},{"name":"Disruptive Innovation","value":60,"description":"Entrants always lead"}]},{"name":"Five Principles","children":[{"name":"Resource Dependence","value":50},{"name":"Small Markets","value":35},{"name":"Unknowable Markets","value":40},{"name":"RPV Framework","value":55},{"name":"Performance Oversupply","value":45}]},{"name":"Value Networks","children":[{"name":"Mainframe (60% margins)","value":30},{"name":"Minicomputer (40% margins)","value":35},{"name":"Desktop (25% margins)","value":45},{"name":"Portable (20% margins)","value":40}]},{"name":"Management Responses","children":[{"name":"Autonomous Org (success)","value":50},{"name":"Internal Attempt (failure)","value":35},{"name":"Discovery-Driven Planning","value":30},{"name":"Northeast Migration","value":25}]}]},"options":{"title":"The Innovator's Dilemma — Complete Framework Architecture","colorScale":["#2980b9","#27ae60","#e74c3c","#e67e22","#8e44ad","#16a085"]}}
-```
 
 The treemap reveals the book's structural balance: roughly equal weight is given to diagnosis (innovation types, value networks) and prescription (five principles, management responses), with the RPV Framework and Resource Dependence occupying the largest conceptual footprint.
 
@@ -97,9 +94,6 @@ flowchart TD
 | **First-Mover Advantages** | In disruptive markets, early entrants earned 20x the cumulative revenue of followers — leadership is critical |
 | **Downward Immobility** | Firms can easily move upmarket but are structurally unable to move down — their cost structures won't allow it |
 
-```chartjs
-{"type":"radar","data":{"labels":["Counterintuitiveness","Manager Resistance","Evidence Strength","Actionability","Predictive Power"],"datasets":[{"label":"1: Resource Dependence","data":[8,9,9,8,9],"borderColor":"#2980b9","backgroundColor":"rgba(41,128,185,0.12)"},{"label":"2: Small Markets","data":[7,8,8,7,8],"borderColor":"#27ae60","backgroundColor":"rgba(39,174,96,0.12)"},{"label":"3: Unknowable Markets","data":[9,7,7,6,7],"borderColor":"#e74c3c","backgroundColor":"rgba(231,76,60,0.12)"},{"label":"4: Capabilities = Disabilities","data":[10,6,9,8,9],"borderColor":"#e67e22","backgroundColor":"rgba(230,126,34,0.12)"},{"label":"5: Performance Oversupply","data":[8,5,10,9,10],"borderColor":"#8e44ad","backgroundColor":"rgba(142,68,173,0.12)"}]},"options":{"plugins":{"title":{"display":true,"text":"Five Principles of Disruptive Innovation — Multi-Dimensional Rating"}},"scales":{"r":{"min":0,"max":10,"ticks":{"stepSize":2}}}}}
-```
 
 Principle 4 (Capabilities = Disabilities) ranks highest on counterintuitiveness — the idea that an organisation's strengths are simultaneously its weaknesses is the most psychologically difficult for managers to accept, yet it carries enormous evidence strength across every industry Christensen studied.
 
@@ -173,9 +167,6 @@ flowchart TD
 | 8" → 5.25" | Seagate, Miniscribe | Desktop PCs | Minicomputer drive makers | Only Micropolis survived of the 4 leading 8" makers |
 | 5.25" → 3.5" | Conner Peripherals | Laptops/portables | Desktop drive makers | Seagate sold zero 3.5" drives to portable makers by 1991 |
 
-```chartjs
-{"type":"bar","data":{"labels":["14-inch (1975)","8-inch (1979)","5.25-inch (1982)","3.5-inch (1987)","2.5-inch (1991)"],"datasets":[{"label":"Incumbent Survivors (%)","data":[100,33,25,20,15],"backgroundColor":"rgba(231,76,60,0.7)","borderColor":"#e74c3c","borderWidth":1},{"label":"New Entrants (%)","data":[0,67,75,80,85],"backgroundColor":"rgba(39,174,96,0.7)","borderColor":"#27ae60","borderWidth":1}]},"options":{"plugins":{"title":{"display":true,"text":"Disk Drive Industry — Incumbent vs Entrant Market Share at Each Disruption"}},"scales":{"x":{"title":{"display":true,"text":"Drive Generation (Peak Year)"}},"y":{"beginAtZero":true,"max":100,"title":{"display":true,"text":"Market Share (%)"}}}}}
-```
 
 With each successive disruption wave, incumbents retained a smaller share of the new market — by the 2.5-inch generation, over 85% of market share belonged to entrant firms, demonstrating that the disruption pattern intensified rather than weakened over time.
 
@@ -218,9 +209,6 @@ flowchart TD
 
 - This pattern was not the result of managerial failure — it was the result of managerial excellence applied within the wrong value network
 
-```d3
-{"type":"force","data":{"nodes":[{"id":"proto","label":"Engineers Build Prototype","group":1},{"id":"test","label":"Marketing Tests with Customers","group":2},{"id":"reject","label":"Customers Reject It","group":3},{"id":"shelve","label":"Resources Redirected","group":4},{"id":"entrant","label":"Entrants Find New Markets","group":5},{"id":"invade","label":"Entrants Invade Mainstream","group":6},{"id":"cust","label":"Existing Customers","group":2},{"id":"margin","label":"Higher-Margin Projects","group":4}],"links":[{"source":"proto","target":"test","label":"Step 1→2"},{"source":"test","target":"cust","label":"Tested with"},{"source":"cust","target":"reject","label":"Don't want it"},{"source":"reject","target":"shelve","label":"Step 3→4"},{"source":"shelve","target":"margin","label":"Funds go to"},{"source":"shelve","target":"entrant","label":"Step 4→5"},{"source":"entrant","target":"invade","label":"Step 5→6"},{"source":"invade","target":"cust","label":"Steals customers"}]},"options":{"title":"The Six-Step Failure Pattern — How Incumbents Lose to Disruption","width":700,"height":500}}
-```
 
 The force diagram reveals the self-reinforcing trap: existing customers drive both the rejection of the disruptive prototype (Step 3) and the redirection of resources to sustaining projects (Step 4), while entrants circle back to capture those same customers once the disruptive technology matures.
 
@@ -458,9 +446,6 @@ The force diagram reveals the self-reinforcing trap: existing customers drive bo
 - <b style="color: #e74c3c">A product whose performance exceeds market demands suffers commodity-like pricing; a disruptive product that redefines the basis of competition commands a premium</b>
 - Geoffrey Moore's *Crossing the Chasm* model maps to the same dynamics from the customer's perspective: innovators and early adopters buy on functionality; the early majority buys on reliability; the late majority buys on convenience; and laggards buy on price
 
-```chartjs
-{"type":"line","data":{"labels":["Phase 1: Emergence","Phase 2: Growth","Phase 3: Maturity","Phase 4: Oversupply","Phase 5: Commodity","Phase 6: Disruption"],"datasets":[{"label":"Technology Supply","data":[20,50,80,95,98,99],"borderColor":"#2980b9","backgroundColor":"rgba(41,128,185,0.1)","tension":0.3,"fill":false,"borderWidth":3},{"label":"Market Demand","data":[15,35,55,70,78,82],"borderColor":"#27ae60","backgroundColor":"rgba(39,174,96,0.1)","tension":0.3,"fill":false,"borderWidth":3},{"label":"Basis of Competition","data":[null,null,null,null,null,null],"borderColor":"transparent","pointRadius":0},{"label":"Functionality Zone","data":[18,45,null,null,null,null],"borderColor":"#e67e22","borderDash":[5,5],"pointRadius":0,"fill":false},{"label":"Reliability Zone","data":[null,null,68,null,null,null],"borderColor":"#8e44ad","borderDash":[5,5],"pointRadius":0,"fill":false},{"label":"Convenience Zone","data":[null,null,null,83,null,null],"borderColor":"#16a085","borderDash":[5,5],"pointRadius":0,"fill":false},{"label":"Price Zone","data":[null,null,null,null,88,90],"borderColor":"#e74c3c","borderDash":[5,5],"pointRadius":0,"fill":false}]},"options":{"plugins":{"title":{"display":true,"text":"The Buying Hierarchy — How Performance Oversupply Shifts the Basis of Competition"}},"scales":{"y":{"beginAtZero":true,"max":100,"title":{"display":true,"text":"Performance Index"}},"x":{"title":{"display":true,"text":"Product Life Cycle Phase"}}}}}
-```
 
 The widening gap between technology supply (blue) and market demand (green) is the engine of disruption — when supply overshoots demand, customers stop paying for performance and shift to reliability, convenience, then price, opening the door for simpler, cheaper alternatives from below.
 

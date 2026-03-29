@@ -44,45 +44,6 @@ The glory of a meadow is its messiness. Different grasses and flowers flourish o
 
 ## Key Concepts at a Glance
 
-```chartjs
-{
-  "type": "radar",
-  "data": {
-    "labels": ["Predictability", "Creativity", "Resilience", "Exploration", "Control", "Adaptability", "Joy", "Variability"],
-    "datasets": [
-      {
-        "label": "Gardener Parenting",
-        "data": [45, 92, 88, 95, 20, 93, 90, 90],
-        "backgroundColor": "rgba(39, 174, 96, 0.15)",
-        "borderColor": "#27ae60",
-        "pointBackgroundColor": "#27ae60"
-      },
-      {
-        "label": "Carpenter Parenting",
-        "data": [90, 30, 35, 25, 95, 20, 35, 15],
-        "backgroundColor": "rgba(231, 76, 60, 0.15)",
-        "borderColor": "#e74c3c",
-        "pointBackgroundColor": "#e74c3c"
-      }
-    ]
-  },
-  "options": {
-    "plugins": {
-      "title": {
-        "display": true,
-        "text": "Gardener vs Carpenter: Parenting Approaches Across Key Dimensions"
-      }
-    },
-    "scales": {
-      "r": {
-        "beginAtZero": true,
-        "max": 100,
-        "ticks": { "stepSize": 20 }
-      }
-    }
-  }
-}
-```
 
 The radar chart captures Gopnik's central argument: the carpenter model maximises control and predictability at the cost of creativity, resilience, and the joy that comes from letting children explore — while the gardener model trades parental control for the adaptability and variability that evolution actually designed childhood to produce.
 
@@ -281,29 +242,6 @@ Children are also sensitive to how adults use language in ways adults themselves
 
 ### The Dude Will Figure It Out
 
-```d3
-{
-  "type": "treemap",
-  "data": {
-    "name": "How Children Learn",
-    "children": [
-      {"name": "Play (Unstructured)", "value": 95, "category": "Exploration"},
-      {"name": "Imitation & Observation", "value": 85, "category": "Social Learning"},
-      {"name": "Guided Discovery", "value": 80, "category": "Exploration"},
-      {"name": "Social Interaction", "value": 75, "category": "Social Learning"},
-      {"name": "Pretend / Counterfactual", "value": 72, "category": "Imagination"},
-      {"name": "Causal Experimentation", "value": 70, "category": "Exploration"},
-      {"name": "Testimony & Questions", "value": 68, "category": "Social Learning"},
-      {"name": "Apprenticeship", "value": 60, "category": "Mastery"},
-      {"name": "Direct Instruction", "value": 30, "category": "Mastery"},
-      {"name": "Formal Schooling", "value": 25, "category": "Mastery"}
-    ]
-  },
-  "options": {
-    "title": "Types of Children's Learning Weighted by Developmental Importance"
-  }
-}
-```
 
 The treemap reveals Gopnik's hierarchy of learning: play, observation, and guided discovery — the ancient channels — tower over formal instruction and schooling, which are culturally recent and far less central to how children's brains actually develop.
 
@@ -498,55 +436,6 @@ This is the model Gopnik recommends for all adult involvement in children's lear
 
 ### Play Is Fun (and That's the Point)
 
-```d3
-{
-  "type": "force",
-  "data": {
-    "nodes": [
-      {"id": "Childhood", "group": "core"},
-      {"id": "Evolution", "group": "biological"},
-      {"id": "Pair Bonding", "group": "biological"},
-      {"id": "Grandmothering", "group": "biological"},
-      {"id": "Alloparenting", "group": "biological"},
-      {"id": "Explore/Exploit Tradeoff", "group": "cognitive"},
-      {"id": "Bayesian Learning", "group": "cognitive"},
-      {"id": "Lantern Attention", "group": "cognitive"},
-      {"id": "Neural Plasticity", "group": "cognitive"},
-      {"id": "Rough-and-Tumble Play", "group": "play"},
-      {"id": "Exploratory Play", "group": "play"},
-      {"id": "Pretend Play", "group": "play"},
-      {"id": "Cultural Ratchet", "group": "cultural"},
-      {"id": "Imitation & Overimitation", "group": "cultural"},
-      {"id": "Language Absorption", "group": "cultural"},
-      {"id": "Secure Attachment", "group": "relationship"},
-      {"id": "Communal Caregiving", "group": "relationship"}
-    ],
-    "links": [
-      {"source": "Evolution", "target": "Childhood", "value": 5},
-      {"source": "Pair Bonding", "target": "Childhood", "value": 3},
-      {"source": "Grandmothering", "target": "Childhood", "value": 3},
-      {"source": "Alloparenting", "target": "Childhood", "value": 4},
-      {"source": "Childhood", "target": "Explore/Exploit Tradeoff", "value": 5},
-      {"source": "Childhood", "target": "Neural Plasticity", "value": 4},
-      {"source": "Neural Plasticity", "target": "Bayesian Learning", "value": 3},
-      {"source": "Neural Plasticity", "target": "Lantern Attention", "value": 3},
-      {"source": "Explore/Exploit Tradeoff", "target": "Rough-and-Tumble Play", "value": 3},
-      {"source": "Explore/Exploit Tradeoff", "target": "Exploratory Play", "value": 3},
-      {"source": "Explore/Exploit Tradeoff", "target": "Pretend Play", "value": 3},
-      {"source": "Childhood", "target": "Cultural Ratchet", "value": 4},
-      {"source": "Cultural Ratchet", "target": "Imitation & Overimitation", "value": 3},
-      {"source": "Cultural Ratchet", "target": "Language Absorption", "value": 3},
-      {"source": "Secure Attachment", "target": "Childhood", "value": 4},
-      {"source": "Communal Caregiving", "target": "Childhood", "value": 4},
-      {"source": "Alloparenting", "target": "Communal Caregiving", "value": 3},
-      {"source": "Pretend Play", "target": "Bayesian Learning", "value": 2}
-    ]
-  },
-  "options": {
-    "title": "The Network of Forces Shaping Childhood"
-  }
-}
-```
 
 The force graph maps how childhood sits at the centre of a web of evolutionary, cognitive, cultural, and relational forces — pair bonding and grandmothering make the long childhood possible, neural plasticity enables exploration and play, and the cultural ratchet turns each generation's discoveries into the next generation's invisible baseline.
 
@@ -810,37 +699,6 @@ Successful innovation-driven companies understand this. Google famously gave emp
 
 ## The Gardener's Toolkit
 
-```chartjs
-{
-  "type": "doughnut",
-  "data": {
-    "labels": ["Free Play", "Observational Learning", "Social Interaction", "Guided Discovery", "Practical Life / Chores", "Structured Academics", "Screen Time", "Sleep & Rest"],
-    "datasets": [
-      {
-        "data": [25, 15, 15, 12, 10, 8, 5, 10],
-        "backgroundColor": [
-          "#27ae60",
-          "#2980b9",
-          "#8e44ad",
-          "#f39c12",
-          "#e67e22",
-          "#e74c3c",
-          "#95a5a6",
-          "#34495e"
-        ]
-      }
-    ]
-  },
-  "options": {
-    "plugins": {
-      "title": {
-        "display": true,
-        "text": "Ideal Childhood Time Allocation (Gopnik's Evolutionary Model)"
-      }
-    }
-  }
-}
-```
 
 The doughnut chart illustrates what Gopnik's research implies about childhood: free play, observational learning, and social interaction should dominate waking hours, while structured academics — the focus of modern anxious parenting — occupies a surprisingly small slice of what children actually need.
 

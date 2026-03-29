@@ -84,39 +84,6 @@ Hill's sixteen lessons form a cycle, not a ladder — failure feeds back into a 
 | **Tolerance** | Eliminating prejudice as a barrier to alliances and clear thinking |
 | **The Golden Rule** | Ethical conduct as both moral duty and strategic advantage |
 
-```chartjs
-{
-  "type": "radar",
-  "data": {
-    "labels": ["Master Mind", "Definite Chief Aim", "Self-Confidence", "Enthusiasm", "Initiative", "Imagination", "Self-Control", "Accurate Thinking"],
-    "datasets": [{
-      "label": "Relative Impact (1-10)",
-      "data": [10, 9, 8, 8, 7, 7, 7, 6],
-      "backgroundColor": "rgba(41, 128, 185, 0.2)",
-      "borderColor": "#2980b9",
-      "pointBackgroundColor": "#2980b9",
-      "pointBorderColor": "#fff",
-      "pointHoverBackgroundColor": "#fff",
-      "pointHoverBorderColor": "#2980b9"
-    }]
-  },
-  "options": {
-    "plugins": {
-      "title": {
-        "display": true,
-        "text": "The 16 Principles — Relative Impact (Top 8)"
-      }
-    },
-    "scales": {
-      "r": {
-        "beginAtZero": true,
-        "max": 10,
-        "ticks": { "stepSize": 2 }
-      }
-    }
-  }
-}
-```
 
 The Master Mind principle towers above all others because it multiplies the effectiveness of every other principle — no individual skill compensates for the absence of a harmonious alliance.
 
@@ -145,62 +112,6 @@ The Master Mind principle towers above all others because it multiplies the effe
 
 Hill's sixteen lessons cluster into five natural groups: the directional foundation (knowing what you want and who will help), the inner game (building the psychological architecture), the action engines (creating momentum), social intelligence (working effectively with others), and mental discipline (thinking clearly and learning from setbacks).
 
-```d3
-{
-  "type": "treemap",
-  "data": {
-    "name": "16 Lessons",
-    "children": [
-      {
-        "name": "Foundation & Direction",
-        "children": [
-          { "name": "Master Mind", "value": 10 },
-          { "name": "Definite Chief Aim", "value": 9 }
-        ]
-      },
-      {
-        "name": "Inner Game",
-        "children": [
-          { "name": "Self-Confidence", "value": 8 },
-          { "name": "Habit of Saving", "value": 6 },
-          { "name": "Self-Control", "value": 7 }
-        ]
-      },
-      {
-        "name": "Action & Energy",
-        "children": [
-          { "name": "Initiative & Leadership", "value": 7 },
-          { "name": "Imagination", "value": 7 },
-          { "name": "Enthusiasm", "value": 8 },
-          { "name": "Doing More Than Paid For", "value": 6 }
-        ]
-      },
-      {
-        "name": "Social Intelligence",
-        "children": [
-          { "name": "Pleasing Personality", "value": 5 },
-          { "name": "Cooperation", "value": 6 },
-          { "name": "Tolerance", "value": 5 },
-          { "name": "Golden Rule", "value": 6 }
-        ]
-      },
-      {
-        "name": "Mental Discipline",
-        "children": [
-          { "name": "Accurate Thinking", "value": 6 },
-          { "name": "Concentration", "value": 6 },
-          { "name": "Profiting by Failure", "value": 5 }
-        ]
-      }
-    ]
-  },
-  "options": {
-    "title": "The 16 Lessons — Thematic Clusters",
-    "width": 700,
-    "height": 450
-  }
-}
-```
 
 The Action & Energy cluster contains the most lessons, reflecting Hill's emphasis that inner development must be channelled into outward momentum — ideas without action are merely daydreams.
 
@@ -515,31 +426,6 @@ The Definite Chief Aim transforms a vague desire into a specific target, which t
   - **Fear of Ill Health** — hypochondria and the habit of expecting illness
   - **Fear of Death** — the ultimate paralysing anxiety
 
-```chartjs
-{
-  "type": "doughnut",
-  "data": {
-    "labels": ["Fear of Poverty", "Fear of Criticism", "Fear of Ill Health", "Fear of Loss of Love", "Fear of Old Age", "Fear of Death"],
-    "datasets": [{
-      "data": [25, 20, 15, 15, 15, 10],
-      "backgroundColor": ["#e74c3c", "#e67e22", "#f1c40f", "#9b59b6", "#3498db", "#95a5a6"],
-      "borderColor": "#ffffff",
-      "borderWidth": 2
-    }]
-  },
-  "options": {
-    "plugins": {
-      "title": {
-        "display": true,
-        "text": "The Six Basic Fears — Relative Prevalence"
-      },
-      "legend": {
-        "position": "right"
-      }
-    }
-  }
-}
-```
 
 Hill considered the fear of poverty the most devastating because it attacks initiative directly — a person ruled by financial terror will never take the risks required for significant achievement.
 - How fear operates:

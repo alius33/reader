@@ -65,17 +65,17 @@ flowchart TB
         Stop --> Count["THE 1-2-3<br/>Count to three<br/>No talking, no emotion"]
         Count --> Consequence["At 3: Time-out<br/>(1 min/year of age)<br/>or Time-Out Alternative"]
     end
-    
+
     subgraph Job2["JOB 2: Encourage Good Behavior"]
         Start["START Behaviors<br/>(homework, bedtime, chores,<br/>getting up, eating)"]
         Start --> Seven["7 TACTICS<br/>Praise, Requests, Timers,<br/>Docking, Natural Consequences,<br/>Charting, Counting Variation"]
     end
-    
+
     subgraph Job3["JOB 3: Strengthen Relationships"]
         Relate["BONDING<br/>(the job parents forget)"]
         Relate --> Four["4 STRATEGIES<br/>Sympathetic listening,<br/>One-on-one fun,<br/>Talking/solving problems,<br/>Managing tech"]
     end
-    
+
     Job1 -.->|"Makes easier"| Job3
     Job3 -.->|"Makes easier"| Job1
     Job2 -.->|"Requires both"| Job1
@@ -84,51 +84,8 @@ flowchart TB
 
 ---
 
-```chartjs
-{
-  "type": "radar",
-  "data": {
-    "labels": ["Stop Behavior (Counting)", "Start Behavior (7 Tactics)", "Relationship Building", "No-Talking Rule", "No-Emotion Rule", "Consistency"],
-    "datasets": [
-      {
-        "label": "Before 1-2-3 Magic",
-        "data": [20, 30, 25, 10, 15, 20],
-        "backgroundColor": "rgba(231, 76, 60, 0.2)",
-        "borderColor": "#e74c3c"
-      },
-      {
-        "label": "After 1-2-3 Magic",
-        "data": [90, 75, 70, 85, 80, 90],
-        "backgroundColor": "rgba(39, 174, 96, 0.2)",
-        "borderColor": "#27ae60"
-      }
-    ]
-  },
-  "options": {
-    "title": "Parenting Skill Transformation with 1-2-3 Magic"
-  }
-}
-```
 The radar chart shows how the system dramatically improves all six core parenting dimensions, with the biggest gains in stopping obnoxious behavior and enforcing the No-Talking Rule.
 
-```d3
-{
-  "type": "treemap",
-  "data": [
-    {"name": "Badgering", "category": "Testing Tactics", "value": 30},
-    {"name": "Temper/Intimidation", "category": "Testing Tactics", "value": 25},
-    {"name": "Threat", "category": "Testing Tactics", "value": 15},
-    {"name": "Martyrdom", "category": "Testing Tactics", "value": 20},
-    {"name": "Butter Up", "category": "Testing Tactics", "value": 5},
-    {"name": "Physical", "category": "Testing Tactics", "value": 10},
-    {"name": "Whining (4-1 Combo)", "category": "Testing Tactics", "value": 35}
-  ],
-  "options": {
-    "title": "Children's Testing Tactics by Frequency",
-    "colors": ["#e74c3c", "#c0392b", "#f39c12", "#e67e22", "#27ae60", "#d35400", "#8e44ad"]
-  }
-}
-```
 Whining — the devastating 4-1 combo of Martyrdom plus Badgering — is children's all-time favorite testing tactic, followed by straight Badgering and Temper.
 
 ```mermaid
@@ -399,54 +356,8 @@ A mother perfectly endured her four-year-old's 20-minute grocery store tantrum, 
 
 ---
 
-```chartjs
-{
-  "type": "bar",
-  "data": {
-    "labels": ["Praise", "Simple Requests", "Kitchen Timers", "Docking System", "Natural Consequences", "Charting", "Counting Variation"],
-    "datasets": [
-      {
-        "label": "Effectiveness for Start Behaviors (1-10)",
-        "data": [9, 7, 8, 7, 9, 6, 5],
-        "backgroundColor": ["#2980b9", "#3498db", "#27ae60", "#e67e22", "#e74c3c", "#9b59b6", "#f39c12"]
-      }
-    ]
-  },
-  "options": {
-    "title": "Seven Start Tactics: Effectiveness Rating",
-    "scales": {
-      "y": { "beginAtZero": true, "max": 10 }
-    }
-  }
-}
-```
 Praise and Natural Consequences rank highest because they work through intrinsic motivation — the child cooperates because they feel good about it or because reality teaches the lesson.
 
-```d3
-{
-  "type": "sankey",
-  "data": {
-    "nodes": ["Child Misbehaves", "Stop Behavior", "Start Behavior", "Count 1", "Count 2", "Count 3", "Cooperation", "Time-Out", "7 Start Tactics", "Praise", "Timer", "Natural Consequence"],
-    "links": [
-      {"source": "Child Misbehaves", "target": "Stop Behavior", "value": 60},
-      {"source": "Child Misbehaves", "target": "Start Behavior", "value": 40},
-      {"source": "Stop Behavior", "target": "Count 1", "value": 60},
-      {"source": "Count 1", "target": "Cooperation", "value": 35},
-      {"source": "Count 1", "target": "Count 2", "value": 25},
-      {"source": "Count 2", "target": "Cooperation", "value": 15},
-      {"source": "Count 2", "target": "Count 3", "value": 10},
-      {"source": "Count 3", "target": "Time-Out", "value": 10},
-      {"source": "Start Behavior", "target": "7 Start Tactics", "value": 40},
-      {"source": "7 Start Tactics", "target": "Praise", "value": 15},
-      {"source": "7 Start Tactics", "target": "Timer", "value": 12},
-      {"source": "7 Start Tactics", "target": "Natural Consequence", "value": 13}
-    ]
-  },
-  "options": {
-    "title": "1-2-3 Magic: The Decision Flow of Discipline"
-  }
-}
-```
 This flow shows how the majority of stop behaviors resolve at Count 1 or 2 — the system's power lies in what happens before Count 3, not after it.
 
 ## Deep Dive: Managing Testing and the Adjustment Period
@@ -532,15 +443,15 @@ flowchart LR
     subgraph Warm["WARM & FRIENDLY"]
         J3["Job 3: Strengthen<br/>Relationships<br/>Listen, Fun, Talk"]
     end
-    
+
     subgraph Both["WARM + DEMANDING"]
         J2["Job 2: Encourage<br/>Good Behavior<br/>7 Start Tactics"]
     end
-    
+
     subgraph Firm["DEMANDING & FIRM"]
         J1["Job 1: Control<br/>Obnoxious Behavior<br/>The 1-2-3"]
     end
-    
+
     J3 -.->|"Good relationship<br/>= easier discipline"| J1
     J1 -.->|"Calm household<br/>= more fun"| J3
     J2 -.->|"Needs both<br/>orientations"| J3
@@ -567,17 +478,17 @@ Then rehearse. Role-play with the kids. Have them practice being counted. Have t
 ```mermaid
 flowchart TB
     Behavior["Child does something<br/>you don't like"] --> StopOrStart{"Is this STOP<br/>or START behavior?"}
-    
+
     StopOrStart -->|"STOP<br/>(whining, arguing,<br/>tantrums, teasing)"| Count["COUNT IT<br/>'That's 1'... 'That's 2'...<br/>'That's 3, take X'"]
-    
+
     StopOrStart -->|"START<br/>(homework, bedtime,<br/>chores, getting up)"| SevenTactics["USE 7 TACTICS<br/>Praise, Requests, Timer,<br/>Docking, Natural Consequences,<br/>Charting, Counting Variation"]
-    
+
     Count --> NoTalk["NO TALKING<br/>NO EMOTION<br/>Let the silence work"]
-    
+
     SevenTactics --> Structure["Build ROUTINES<br/>Same time, same place,<br/>same way"]
-    
+
     NoTalk --> AfterTimeout["After time-out:<br/>NOTHING.<br/>No lectures, no apologies,<br/>no rehashing"]
-    
+
     Structure --> Praise2["PRAISE cooperation<br/>3:1 positive-to-negative ratio"]
 ```
 

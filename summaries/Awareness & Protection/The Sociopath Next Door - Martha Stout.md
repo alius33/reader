@@ -126,19 +126,6 @@ Stout asks the reader to imagine waking up one morning with no conscience at all
 
 The covetous sociopath is one of Stout's most unsettling descriptions — a person who does not merely want your possessions, your job, or your partner, but wants to destroy the joy you take in having them.
 
-```chartjs
-{
-  "type": "radar",
-  "data": {
-    "labels": ["Charm", "Empathy", "Guilt Capacity", "Boredom Tolerance", "Risk-Taking", "Manipulation Skill", "Emotional Depth", "Loyalty"],
-    "datasets": [
-      {"label": "Sociopath Profile", "data": [9, 1, 0, 1, 9, 9, 1, 0], "borderColor": "#e74c3c", "backgroundColor": "rgba(231,76,60,0.15)"},
-      {"label": "Typical Person", "data": [5, 7, 8, 6, 4, 3, 8, 7], "borderColor": "#27ae60", "backgroundColor": "rgba(39,174,96,0.15)"}
-    ]
-  },
-  "options": {"plugins": {"title": {"display": true, "text": "Sociopath vs Typical Person: Psychological Profile"}}, "scales": {"r": {"beginAtZero": true, "max": 10}}}
-}
-```
 
 *The radar reveals the sociopath's paradox: maximum charm and manipulation skill paired with zero guilt, empathy, and loyalty — the combination that makes them so dangerous and so difficult to detect.*
 
@@ -351,9 +338,6 @@ This cycle — bad behaviour, rationalisation, another chance, exploitation — 
 > [!tip] Core Insight
 > If you want one single question to carry through life as a sociopath detector, it is this: does this person consistently position themselves as the victim despite evidence of their own harmful behaviour? If yes, proceed with extreme caution.
 
-```d3
-{"type":"treemap","data":{"name":"Sociopath Detection","children":[{"name":"Pity Play (Most Reliable)","value":25},{"name":"Rule of Threes","value":18},{"name":"Chronic Lying Pattern","value":15},{"name":"Charm Without Substance","value":12},{"name":"Boredom-Driven Risk","value":10},{"name":"No Genuine Remorse","value":10},{"name":"Blame Reversal","value":6},{"name":"Gaslighting by Charm","value":4}]},"options":{"title":"Sociopath Detection Signals: Reliability Ranking"}}
-```
 
 *The pity play is by far the most reliable detection signal — Stout emphasizes that consistent victim-playing in someone who shows no genuine remorse should trigger immediate wariness.*
 
@@ -494,16 +478,6 @@ flowchart LR
 
 This diagram illustrates the evolutionary equilibrium that Stout describes — sociopathy persists because it is profitable as a minority strategy, but self-limiting because it would destroy its own environment if it became common.
 
-```chartjs
-{
-  "type": "polarArea",
-  "data": {
-    "labels": ["Sociopathy (4%)", "Anorexia (3.5%)", "Colon Cancer (3%)", "Schizophrenia (1%)", "Left-Handed (10%)"],
-    "datasets": [{"data": [4, 3.5, 3, 1, 10], "backgroundColor": ["#e74c3c", "#f39c12", "#3498db", "#8e44ad", "#27ae60"]}]
-  },
-  "options": {"plugins": {"title": {"display": true, "text": "Stout's Prevalence Comparison: Sociopathy in Context"}}}
-}
-```
 
 *Stout's most striking comparison: sociopathy at 4% is more common than anorexia or colon cancer — yet most people go through life never learning to recognize it.*
 
@@ -751,9 +725,6 @@ flowchart TD
 
 This flowchart represents Stout's decision tree — the sequence from suspicion to recognition to self-protection.
 
-```d3
-{"type":"heatmap","data":{"xLabels":["Accept the Diagnosis","Trust Instincts","Rule of Threes","Question Authority","Suspect Flattery","Refuse Pity Play","No Contact","Protect Your Psyche"],"yLabels":["Difficulty for Empaths","Difficulty for Skeptics","Effectiveness"],"values":[[9,3,8,5,7,8,9,6],[3,8,4,7,5,4,5,8],[10,9,9,8,7,10,10,8]]},"options":{"title":"Stout's 13 Rules: Difficulty vs Effectiveness for Different Personalities"}}
-```
 
 *The heatmap reveals why empaths struggle most with Stout's advice — accepting the diagnosis and cutting contact are extremely effective but psychologically agonizing for people with high empathy.*
 

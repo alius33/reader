@@ -51,7 +51,7 @@ year: 1987
   - The reader can stop at any level and still have a complete (if less detailed) understanding
 
 ```mermaid
-graph TD
+flowchart TD
     A["<b>GOVERNING THOUGHT</b><br/>The one answer to the reader's question"] --> B["Key Line Point 1<br/>Answers sub-question"]
     A --> C["Key Line Point 2<br/>Answers sub-question"]
     A --> D["Key Line Point 3<br/>Answers sub-question"]
@@ -184,7 +184,7 @@ graph TD
 - The story form works because it mimics how the mind naturally processes new information — through narrative
 
 ```mermaid
-graph LR
+flowchart LR
     S["<b>SITUATION</b><br/>What the reader<br/>already knows"] --> C["<b>COMPLICATION</b><br/>What went wrong<br/>or changed"]
     C --> Q["<b>QUESTION</b><br/>The logical question<br/>this raises"]
     Q --> A["<b>ANSWER</b><br/>Your governing thought<br/>= top of pyramid"]
@@ -197,36 +197,6 @@ graph LR
     style P fill:#27ae60,color:#fff
 ```
 
-```d3
-{
-  "type": "treemap",
-  "data": {
-    "name": "Introduction Patterns",
-    "children": [
-      {"name": "Standard Direct (S-C-Q-A)", "children": [
-        {"name": "Market reports", "value": 25},
-        {"name": "Strategy memos", "value": 20},
-        {"name": "Consulting deliverables", "value": 22}
-      ]},
-      {"name": "Concern-Based (S-C-A)", "children": [
-        {"name": "Executive summaries", "value": 18},
-        {"name": "Board updates", "value": 15}
-      ]},
-      {"name": "Directive", "children": [
-        {"name": "Action requests", "value": 14},
-        {"name": "Implementation plans", "value": 12}
-      ]},
-      {"name": "Abbreviated", "children": [
-        {"name": "Follow-up memos", "value": 10},
-        {"name": "Status updates", "value": 8}
-      ]}
-    ]
-  },
-  "options": {
-    "title": "Four SCQA Introduction Patterns: Frequency by Document Type"
-  }
-}
-```
 
 The Standard Direct pattern dominates business communication because most documents answer an explicit question — the abbreviated pattern is reserved only for audiences already deeply familiar with the problem.
 
@@ -338,33 +308,6 @@ The Standard Direct pattern dominates business communication because most docume
 | **Structure** | Parts of a whole, MECE divisions | What the whole looks like |
 | **Degree** | Ranked similar items | What they share and why ranking matters |
 
-```chartjs
-{
-  "type": "radar",
-  "data": {
-    "labels": ["Ease of Use", "Reader Clarity", "Reveals Gaps", "Frequency in Business", "Structural Rigour"],
-    "datasets": [{
-      "label": "Time Order",
-      "data": [85, 80, 70, 75, 80],
-      "backgroundColor": "rgba(41, 128, 185, 0.2)",
-      "borderColor": "#2980b9"
-    }, {
-      "label": "Structural Order",
-      "data": [60, 85, 90, 60, 95],
-      "backgroundColor": "rgba(39, 174, 96, 0.2)",
-      "borderColor": "#27ae60"
-    }, {
-      "label": "Degree Order",
-      "data": [90, 70, 50, 80, 60],
-      "backgroundColor": "rgba(231, 76, 60, 0.2)",
-      "borderColor": "#e74c3c"
-    }]
-  },
-  "options": {
-    "plugins": { "title": { "display": true, "text": "The Three Logical Orders: Comparative Strengths" } }
-  }
-}
-```
 
 Structural order scores highest on rigour and gap-detection — explaining why MECE analysis is the consulting industry's most valued analytical discipline despite being harder to apply than simple ranking.
 
@@ -443,7 +386,7 @@ Structural order scores highest on rigour and gap-detection — explaining why M
     - "How should we do it?" (solution accepted, implementation needed)
 
 ```mermaid
-graph TD
+flowchart TD
     A["<b>PROBLEM DEFINITION</b>"] --> B["1. Is there a problem?"]
     B --> C["2. Where does it lie?"]
     C --> D["3. Why does it exist?"]
@@ -476,36 +419,6 @@ graph TD
 - The secret: <b style="color: #27ae60">if you define the problem and structure the analysis correctly, the pyramid practically builds itself</b>
 - The old approach — gather everything, then organize — produced McKinsey's 60% waste rate
 
-```d3
-{
-  "type": "sankey",
-  "data": {
-    "nodes": [
-      {"id": "Raw Problem"},
-      {"id": "Define Problem (SCQA)"},
-      {"id": "Structure Analysis"},
-      {"id": "Gather Data"},
-      {"id": "Build Pyramid"},
-      {"id": "Clear Communication"},
-      {"id": "Wasted Effort (60%)"},
-      {"id": "Confused Audience"}
-    ],
-    "links": [
-      {"source": "Raw Problem", "target": "Define Problem (SCQA)", "value": 50},
-      {"source": "Raw Problem", "target": "Gather Data", "value": 50},
-      {"source": "Define Problem (SCQA)", "target": "Structure Analysis", "value": 48},
-      {"source": "Structure Analysis", "target": "Gather Data", "value": 45},
-      {"source": "Gather Data", "target": "Build Pyramid", "value": 40},
-      {"source": "Build Pyramid", "target": "Clear Communication", "value": 38},
-      {"source": "Gather Data", "target": "Wasted Effort (60%)", "value": 30},
-      {"source": "Wasted Effort (60%)", "target": "Confused Audience", "value": 30}
-    ]
-  },
-  "options": {
-    "title": "Two Paths: Structured vs Unstructured Consulting Workflow"
-  }
-}
-```
 
 The sankey reveals McKinsey's original 60% waste problem — when data gathering precedes problem definition, most effort flows into irrelevance rather than clear communication.
 
@@ -744,7 +657,7 @@ The sankey reveals McKinsey's original 60% waste problem — when data gathering
 - Minto abbreviates this as <b style="color: #2980b9">MECE</b> (pronounced "me-see") — a concept now ubiquitous in consulting
 
 ```mermaid
-graph TD
+flowchart TD
     A["<b>THE WHOLE</b><br/>Akron Tire and Rubber Company"] --> B["Tire Division"]
     A --> C["Housewares Division"]
     A --> D["Sports Equipment Division"]
@@ -845,27 +758,6 @@ graph TD
 
 *Minto catalogs the specific pathologies that plague business writing — and shows how each one violates a pyramid principle.*
 
-```chartjs
-{
-  "type": "bar",
-  "data": {
-    "labels": ["Mystery Story", "Category Headings", "Laundry Lists", "Vague Activities", "Premature Data", "Mixed Logic"],
-    "datasets": [{
-      "label": "Frequency in Business Writing (%)",
-      "data": [70, 85, 75, 80, 65, 45],
-      "backgroundColor": "#e74c3c"
-    }, {
-      "label": "Damage to Comprehension (%)",
-      "data": [60, 50, 70, 55, 80, 65],
-      "backgroundColor": "#2980b9"
-    }]
-  },
-  "options": {
-    "plugins": { "title": { "display": true, "text": "Six Writing Pathologies the Pyramid Prevents: Frequency and Impact" } },
-    "scales": { "y": { "title": { "display": true, "text": "Percentage" } } }
-  }
-}
-```
 
 Category headings are the most common pathology but premature data gathering causes the most comprehension damage — the Pyramid Principle attacks both by requiring a clear governing thought before any data collection begins.
 
@@ -1011,7 +903,7 @@ Category headings are the most common pathology but premature data gathering cau
 ### The Five Questions for Problem Definition
 
 ```mermaid
-graph LR
+flowchart LR
     A["Is there<br/>a problem?"] --> B["Where does<br/>it lie?"]
     B --> C["Why does<br/>it exist?"]
     C --> D["What could<br/>we do?"]

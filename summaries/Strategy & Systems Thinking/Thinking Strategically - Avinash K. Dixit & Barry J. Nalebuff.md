@@ -90,27 +90,6 @@ This diagram captures the book's core analytical method — every strategic inte
 | **Voting paradoxes** | Collective decisions through voting can produce incoherent outcomes and manipulation opportunities |
 | **Incentive design** | Getting others to act in your interest when you cannot observe their effort directly |
 
-```d3
-{
-  "type": "heatmap",
-  "data": {
-    "xLabels": ["Backward Induction", "Dominant Strategy", "Nash Equilibrium", "Mixed Strategy", "Commitment Devices"],
-    "yLabels": ["Sequential Games", "Simultaneous Games", "Repeated Games", "Coordination Games", "Bargaining", "Information Asymmetry"],
-    "values": [
-      [10, 3, 5, 2, 7],
-      [2, 10, 9, 6, 4],
-      [5, 6, 7, 3, 8],
-      [3, 4, 8, 2, 3],
-      [7, 3, 6, 2, 9],
-      [4, 3, 5, 4, 7]
-    ]
-  },
-  "options": {
-    "title": "Game Types and Solution Methods: Applicability Matrix",
-    "colorScale": "warm"
-  }
-}
-```
 
 The heatmap reveals that no single tool dominates all game types — backward induction excels in sequential games while dominant strategy analysis is strongest in simultaneous games, confirming why Dixit and Nalebuff insist on classifying the game first.
 
@@ -369,38 +348,6 @@ The four rules form a decision cascade — start with the strongest tool and fal
 | Indefinite repeated game | Yes | Shadow of the future sustains tit-for-tat |
 | With external enforcement | Yes | Changed payoffs make defection costly |
 
-```chartjs
-{
-  "type": "radar",
-  "data": {
-    "labels": ["Sustainability", "Self-Enforcement", "Scalability", "Speed of Establishment", "Robustness to Defection"],
-    "datasets": [{
-      "label": "Repetition",
-      "data": [90, 85, 60, 40, 70],
-      "backgroundColor": "rgba(41, 128, 185, 0.2)",
-      "borderColor": "#2980b9"
-    }, {
-      "label": "Reputation",
-      "data": [80, 75, 70, 30, 65],
-      "backgroundColor": "rgba(39, 174, 96, 0.2)",
-      "borderColor": "#27ae60"
-    }, {
-      "label": "Regulation",
-      "data": [70, 40, 90, 80, 85],
-      "backgroundColor": "rgba(231, 76, 60, 0.2)",
-      "borderColor": "#e74c3c"
-    }, {
-      "label": "Small Steps",
-      "data": [85, 90, 50, 70, 80],
-      "backgroundColor": "rgba(142, 68, 173, 0.2)",
-      "borderColor": "#8e44ad"
-    }]
-  },
-  "options": {
-    "plugins": { "title": { "display": true, "text": "Four Mechanisms for Sustaining Cooperation: Comparative Profiles" } }
-  }
-}
-```
 
 Repetition and small steps score highest on self-enforcement — they don't require external authority — while regulation scales best, explaining why different cooperation challenges demand different mechanisms.
 
@@ -560,27 +507,6 @@ The authors identify <b style="color: #2980b9">eight commitment devices</b>:
 | 7 | **Teamwork & norms** | Peer pressure and culture enforce commitments | Military units where desertion dishonours the entire squad |
 | 8 | **Mandated agents** | Delegating to someone with restricted authority | A vending machine cannot haggle; a union leader bound by member vote |
 
-```chartjs
-{
-  "type": "bar",
-  "data": {
-    "labels": ["Reputation", "Contracts", "Cut Communication", "Burn Bridges", "Doomsday Device", "Small Steps", "Teamwork/Norms", "Mandated Agent"],
-    "datasets": [{
-      "label": "Credibility Strength (1-10)",
-      "data": [6, 8, 7, 10, 9, 5, 6, 9],
-      "backgroundColor": "#2980b9"
-    }, {
-      "label": "Reversibility Risk (1-10)",
-      "data": [3, 4, 5, 1, 1, 8, 7, 3],
-      "backgroundColor": "#e74c3c"
-    }]
-  },
-  "options": {
-    "plugins": { "title": { "display": true, "text": "The Eightfold Path to Credibility: Strength vs Reversibility" } },
-    "scales": { "y": { "title": { "display": true, "text": "Score (1-10)" } } }
-  }
-}
-```
 
 Burning bridges and doomsday devices achieve maximum credibility precisely because they are irreversible — but this strength becomes a fatal flaw when conditions change, as de Lesseps discovered at Panama.
 
@@ -1087,41 +1013,6 @@ flowchart TD
 
 This diagram maps the complete analytical toolkit — from identifying the game's structure through to choosing the right strategic response.
 
-```d3
-{
-  "type": "force",
-  "data": {
-    "nodes": [
-      {"id": "Backward Induction", "group": 1},
-      {"id": "Dominant Strategy", "group": 1},
-      {"id": "Nash Equilibrium", "group": 1},
-      {"id": "Commitment", "group": 2},
-      {"id": "Brinkmanship", "group": 2},
-      {"id": "Mixed Strategy", "group": 2},
-      {"id": "Prisoners Dilemma", "group": 3},
-      {"id": "Tit-for-Tat", "group": 3},
-      {"id": "BATNA", "group": 4},
-      {"id": "Signalling", "group": 4},
-      {"id": "Focal Points", "group": 5}
-    ],
-    "links": [
-      {"source": "Backward Induction", "target": "Commitment", "value": 4},
-      {"source": "Dominant Strategy", "target": "Nash Equilibrium", "value": 5},
-      {"source": "Nash Equilibrium", "target": "Mixed Strategy", "value": 4},
-      {"source": "Commitment", "target": "Brinkmanship", "value": 5},
-      {"source": "Prisoners Dilemma", "target": "Tit-for-Tat", "value": 5},
-      {"source": "Prisoners Dilemma", "target": "Commitment", "value": 3},
-      {"source": "BATNA", "target": "Commitment", "value": 3},
-      {"source": "Signalling", "target": "Commitment", "value": 4},
-      {"source": "Focal Points", "target": "Nash Equilibrium", "value": 3},
-      {"source": "Mixed Strategy", "target": "Brinkmanship", "value": 3}
-    ]
-  },
-  "options": {
-    "title": "The Game Theory Web: How Core Concepts Connect Across the Book"
-  }
-}
-```
 
 Commitment emerges as the most connected node in the network — linking backward induction, brinkmanship, the prisoner's dilemma, BATNA, and signalling — reflecting the book's argument that credibility is the master concept that ties all strategic tools together.
 

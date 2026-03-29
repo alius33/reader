@@ -215,21 +215,6 @@ Brown's 87 emotions and experiences fall into natural groupings that cut across 
 
 These clusters are not rigid categories — emotions bleed across boundaries. Shame (Chapter 8) connects to belonging (Chapter 9) because shame is the fear of disconnection. Envy (Chapter 2) connects to resentment (Chapter 2) which connects to contempt (Chapter 13). The map is interconnected, not compartmentalised.
 
-```chartjs
-{
-  "type": "doughnut",
-  "data": {
-    "labels": ["Uncertainty (7)", "Comparison (8)", "Expectations (7)", "Transcendence (6)", "Dissonance (7)", "Deep Pain (5)", "Togetherness (6)", "Self-Evaluation (9)", "Connection (7)", "Vulnerability (9)", "Positivity (8)", "Injustice (6)"],
-    "datasets": [{
-      "data": [7, 8, 7, 6, 7, 5, 6, 9, 7, 9, 8, 6],
-      "backgroundColor": ["#3498db", "#9b59b6", "#e67e22", "#1abc9c", "#34495e", "#e74c3c", "#2980b9", "#c0392b", "#27ae60", "#8e44ad", "#2ecc71", "#d35400"]
-    }]
-  },
-  "options": {
-    "plugins": { "title": { "display": true, "text": "Brown's 87 Emotions: Distribution Across 12 Thematic Clusters" } }
-  }
-}
-```
 
 The doughnut chart reveals that Self-Evaluation and Vulnerability contain the most emotions (9 each), suggesting these are the richest and most frequently confused emotional territories — exactly where greater granularity yields the biggest payoff.
 
@@ -437,44 +422,6 @@ Each of these emotions requires a different intervention, which is why collapsin
 
 - <b style="color: #27ae60">Envy is about lacking; jealousy is about losing</b>
 
-```chartjs
-{
-  "type": "radar",
-  "data": {
-    "labels": ["Self-Worth Threat", "Future-Oriented", "Other-Directed", "Body Response", "Relationship Impact", "Recovery Difficulty"],
-    "datasets": [
-      {
-        "label": "Envy",
-        "data": [9, 4, 8, 5, 6, 7],
-        "backgroundColor": "rgba(155, 89, 182, 0.2)",
-        "borderColor": "#9b59b6"
-      },
-      {
-        "label": "Jealousy",
-        "data": [5, 8, 6, 8, 9, 5],
-        "backgroundColor": "rgba(231, 76, 60, 0.2)",
-        "borderColor": "#e74c3c"
-      },
-      {
-        "label": "Admiration",
-        "data": [2, 3, 8, 2, 2, 1],
-        "backgroundColor": "rgba(39, 174, 96, 0.2)",
-        "borderColor": "#27ae60"
-      },
-      {
-        "label": "Resentment",
-        "data": [8, 6, 9, 7, 8, 9],
-        "backgroundColor": "rgba(211, 84, 0, 0.2)",
-        "borderColor": "#d35400"
-      }
-    ]
-  },
-  "options": {
-    "plugins": { "title": { "display": true, "text": "Comparison Emotions: Profile Differences Across Six Dimensions" } },
-    "scales": { "r": { "min": 0, "max": 10, "ticks": { "stepSize": 2 } } }
-  }
-}
-```
 
 The radar chart shows why Brown insists on distinguishing these four emotions: envy peaks on self-worth threat, jealousy spikes on relationship impact and body response, resentment is hardest to recover from, and admiration — the healthy comparison response — has a completely different shape.
 - Brown notes that envy is one of the emotions people are most reluctant to admit — it feels petty, and admitting it means admitting inadequacy
@@ -2435,52 +2382,6 @@ flowchart TD
 
 Brown's emotional map is not a hierarchy — it is a geography. We move between these territories constantly, often visiting several in a single conversation.
 
-```d3
-{
-  "type": "force",
-  "data": {
-    "nodes": [
-      { "id": "Shame", "group": 1 },
-      { "id": "Guilt", "group": 1 },
-      { "id": "Envy", "group": 2 },
-      { "id": "Jealousy", "group": 2 },
-      { "id": "Resentment", "group": 2 },
-      { "id": "Anger", "group": 3 },
-      { "id": "Contempt", "group": 3 },
-      { "id": "Empathy", "group": 4 },
-      { "id": "Compassion", "group": 4 },
-      { "id": "Belonging", "group": 5 },
-      { "id": "Joy", "group": 6 },
-      { "id": "Gratitude", "group": 6 },
-      { "id": "Love", "group": 5 },
-      { "id": "Trust", "group": 5 },
-      { "id": "Grief", "group": 7 }
-    ],
-    "links": [
-      { "source": "Shame", "target": "Guilt", "value": 5 },
-      { "source": "Shame", "target": "Belonging", "value": 4 },
-      { "source": "Envy", "target": "Resentment", "value": 5 },
-      { "source": "Resentment", "target": "Contempt", "value": 4 },
-      { "source": "Contempt", "target": "Anger", "value": 3 },
-      { "source": "Empathy", "target": "Compassion", "value": 5 },
-      { "source": "Empathy", "target": "Belonging", "value": 4 },
-      { "source": "Belonging", "target": "Love", "value": 5 },
-      { "source": "Love", "target": "Trust", "value": 5 },
-      { "source": "Trust", "target": "Joy", "value": 3 },
-      { "source": "Joy", "target": "Gratitude", "value": 4 },
-      { "source": "Grief", "target": "Compassion", "value": 3 },
-      { "source": "Guilt", "target": "Empathy", "value": 3 },
-      { "source": "Jealousy", "target": "Envy", "value": 4 },
-      { "source": "Shame", "target": "Envy", "value": 3 }
-    ]
-  },
-  "options": {
-    "title": "Emotional Connections: How Brown's Key Emotions Link Together",
-    "width": 700,
-    "height": 500
-  }
-}
-```
 
 The force-directed network reveals Brown's central insight: emotions are not isolated states but an interconnected web — shame links to both envy and belonging, grief connects to compassion, and the path from trust through love to joy forms the backbone of human connection.
 

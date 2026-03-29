@@ -69,43 +69,6 @@ year: 2005
 | **Checklist Methodology** | No wise pilot omits his checklist — and neither should any investor or decision-maker |
 | **Web of Deserved Trust** | The highest form of human organization — reliable people correctly trusting one another |
 
-```chartjs
-{
-  "type": "polarArea",
-  "data": {
-    "labels": ["Psychology", "Mathematics", "Economics", "Physics", "Biology & Evolution", "Engineering", "History", "Accounting"],
-    "datasets": [{
-      "data": [10, 8, 7, 6, 7, 5, 5, 4],
-      "backgroundColor": [
-        "rgba(231, 76, 60, 0.6)",
-        "rgba(41, 128, 185, 0.6)",
-        "rgba(39, 174, 96, 0.6)",
-        "rgba(243, 156, 18, 0.6)",
-        "rgba(142, 68, 173, 0.6)",
-        "rgba(44, 62, 80, 0.6)",
-        "rgba(230, 126, 34, 0.6)",
-        "rgba(149, 165, 166, 0.6)"
-      ],
-      "borderWidth": 1
-    }]
-  },
-  "options": {
-    "plugins": {
-      "title": {
-        "display": true,
-        "text": "Munger's Mental Model Disciplines by Relative Importance"
-      }
-    },
-    "scales": {
-      "r": {
-        "min": 0,
-        "max": 10,
-        "ticks": { "stepSize": 2 }
-      }
-    }
-  }
-}
-```
 
 Psychology dominates Munger's mental model hierarchy because, as he repeatedly argues, the ways the human brain systematically misfunctions are the most neglected and most powerful models — understanding incentive-caused bias alone is worth more than most MBAs.
 
@@ -144,7 +107,7 @@ Psychology dominates Munger's mental model hierarchy because, as he repeatedly a
 - The man-with-a-hammer tendency: <b style="color: #e74c3c">"To a man with only a hammer, every problem looks pretty much like a nail"</b> — this is a perfectly disastrous way to operate in the world
 
 ```mermaid
-graph TD
+flowchart TD
     A[Mental Models Latticework] --> B[Mathematics]
     A --> C[Physics & Engineering]
     A --> D[Biology & Evolution]
@@ -171,41 +134,6 @@ graph TD
     style E fill:#e74c3c,color:white
 ```
 
-```d3
-{
-  "type": "force",
-  "data": {
-    "nodes": [
-      { "id": "Incentives", "group": 1 },
-      { "id": "Inversion", "group": 2 },
-      { "id": "Circle of Competence", "group": 2 },
-      { "id": "Second-Order Effects", "group": 3 },
-      { "id": "Feedback Loops", "group": 3 },
-      { "id": "Social Proof", "group": 1 },
-      { "id": "Lollapalooza Effect", "group": 4 },
-      { "id": "Compound Interest", "group": 3 },
-      { "id": "Margin of Safety", "group": 2 },
-      { "id": "Reciprocation", "group": 1 }
-    ],
-    "links": [
-      { "source": "Incentives", "target": "Social Proof", "value": 4 },
-      { "source": "Incentives", "target": "Reciprocation", "value": 3 },
-      { "source": "Social Proof", "target": "Lollapalooza Effect", "value": 5 },
-      { "source": "Incentives", "target": "Lollapalooza Effect", "value": 5 },
-      { "source": "Reciprocation", "target": "Lollapalooza Effect", "value": 4 },
-      { "source": "Second-Order Effects", "target": "Feedback Loops", "value": 4 },
-      { "source": "Feedback Loops", "target": "Compound Interest", "value": 3 },
-      { "source": "Inversion", "target": "Circle of Competence", "value": 3 },
-      { "source": "Circle of Competence", "target": "Margin of Safety", "value": 4 },
-      { "source": "Inversion", "target": "Margin of Safety", "value": 3 },
-      { "source": "Feedback Loops", "target": "Lollapalooza Effect", "value": 4 }
-    ]
-  },
-  "options": {
-    "title": "Munger's Mental Model Network: How Key Models Interconnect"
-  }
-}
-```
 
 The force-directed graph reveals what Munger means by a "latticework" — mental models are not isolated tools but a densely connected network where Incentives, Social Proof, and Reciprocation cluster together to feed the Lollapalooza Effect, while Inversion and Circle of Competence form a defensive cluster around Margin of Safety.
 
@@ -383,7 +311,7 @@ Munger's investment checklist branches from four root criteria — but notice th
 - Charlie's solution uses only freshman-level academic knowledge:
 
 ```mermaid
-graph LR
+flowchart LR
     A[Start: $2M in 1884] --> B[Strong Trademark:<br>Coca-Cola]
     B --> C[Operant Conditioning:<br>Calories + Flavor +<br>Caffeine + Cooling]
     C --> D[Pavlovian Conditioning:<br>Associate with everything<br>consumers admire]
@@ -481,51 +409,6 @@ graph LR
 
 ### The 25 Standard Causes of Human Misjudgment
 
-```chartjs
-{
-  "type": "bar",
-  "data": {
-    "labels": [
-      "Incentive-Caused Bias",
-      "Deprival Superreaction",
-      "Social Proof",
-      "Inconsistency Avoidance",
-      "Excessive Self-Regard",
-      "Influence from Association",
-      "Doubt Avoidance",
-      "Envy/Jealousy",
-      "Reciprocation",
-      "Liking/Loving"
-    ],
-    "datasets": [{
-      "label": "Danger Rating (Munger's emphasis, 1-10)",
-      "data": [10, 9, 9, 8, 8, 7, 7, 7, 6, 6],
-      "backgroundColor": [
-        "#c0392b", "#e74c3c", "#e74c3c", "#e67e22", "#e67e22",
-        "#f39c12", "#f39c12", "#f39c12", "#27ae60", "#27ae60"
-      ],
-      "borderColor": "#2c3e50",
-      "borderWidth": 1
-    }]
-  },
-  "options": {
-    "indexAxis": "y",
-    "plugins": {
-      "title": {
-        "display": true,
-        "text": "Top 10 Most Dangerous Psychological Tendencies (per Munger)"
-      }
-    },
-    "scales": {
-      "x": {
-        "min": 0,
-        "max": 10,
-        "title": { "display": true, "text": "Danger Rating" }
-      }
-    }
-  }
-}
-```
 
 Munger places Incentive-Caused Bias at the absolute top because even he — "in the top 5% of my age cohort in understanding incentives" — admits to constantly underestimating its power; Deprival Superreaction and Social Proof follow closely because they operate almost entirely below conscious awareness.
 
@@ -939,7 +822,7 @@ Munger places Incentive-Caused Bias at the absolute top because even he — "in 
 ### The Seven Pillars of Worldly Wisdom
 
 ```mermaid
-graph TD
+flowchart TD
     A[The Munger Code] --> B[1. Lifelong Learning]
     A --> C[2. Radical Honesty]
     A --> D[3. Extreme Reliability]
@@ -1332,7 +1215,7 @@ graph TD
 - <b style="color: #e74c3c">This tendency was not in any psychology text Charlie examined — yet it dominates life</b>
 
 ```mermaid
-graph TD
+flowchart TD
     M[Milgram Experiment] --> A[Authority-Misinfluence]
     M --> B[Social Proof from<br>inactive bystanders]
     M --> C[Commitment &<br>Consistency]
@@ -1392,7 +1275,7 @@ graph TD
 - **Anti-bureaucracy solutions:** GE under Jack Welch — decentralized units, fanatic motivation, "#1 or #2 or out" in every field
 
 ```mermaid
-graph TD
+flowchart TD
     S[Scale Advantages] --> W[Winner: Dominance]
     S --> L[Loser: Bureaucracy]
     W --> W1[Experience curve]
