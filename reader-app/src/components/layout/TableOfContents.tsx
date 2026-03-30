@@ -7,6 +7,11 @@ import { cn } from "@/lib/utils";
 import { List, X } from "lucide-react";
 import type { TocEntry } from "@/types";
 
+/** Find the book content scroll container */
+function getScrollContainer(): HTMLElement | null {
+  return document.querySelector("[data-scroll-container]");
+}
+
 export function TableOfContents({ entries }: { entries: TocEntry[] }) {
   const tocOpen = useStore((s) => s.tocOpen);
   const toggleToc = useStore((s) => s.toggleToc);
@@ -14,32 +19,30 @@ export function TableOfContents({ entries }: { entries: TocEntry[] }) {
   const [activeId, setActiveId] = useState<string>("");
 
   // Build a map from TOC entry text → heading DOM element
-  const headingMapRef = useRef<Map<string, Element>>(new Map());
-
   const buildHeadingMap = useCallback(() => {
-    const map = new Map<string, Element>();
+    const map = new Map<string, HTMLElement>();
     const headings = document.querySelectorAll(
       ".ProseMirror h1, .ProseMirror h2, .ProseMirror h3, .ProseMirror h4"
     );
     for (const h of headings) {
       const text = (h.textContent || "").trim();
-      if (text) map.set(text, h);
+      if (text) map.set(text, h as HTMLElement);
     }
-    headingMapRef.current = map;
     return map;
   }, []);
 
   // Intersection observer to track active heading
   useEffect(() => {
-    // Delay so EditorContent has mounted
+    let observer: IntersectionObserver | null = null;
+
     const timer = setTimeout(() => {
       const map = buildHeadingMap();
+      const scroller = getScrollContainer();
 
-      const observer = new IntersectionObserver(
+      observer = new IntersectionObserver(
         (observerEntries) => {
           for (const obsEntry of observerEntries) {
             if (obsEntry.isIntersecting) {
-              // Find matching TOC entry by element reference
               for (const [text, el] of map.entries()) {
                 if (el === obsEntry.target) {
                   const match = entries.find((e) => e.text.trim() === text);
@@ -50,18 +53,19 @@ export function TableOfContents({ entries }: { entries: TocEntry[] }) {
             }
           }
         },
-        { rootMargin: "-80px 0px -80% 0px" }
+        { root: scroller, rootMargin: "-80px 0px -80% 0px" }
       );
 
       for (const tocEntry of entries) {
         const el = map.get(tocEntry.text.trim());
         if (el) observer.observe(el);
       }
+    }, 300);
 
-      return () => observer.disconnect();
-    }, 200);
-
-    return () => clearTimeout(timer);
+    return () => {
+      clearTimeout(timer);
+      observer?.disconnect();
+    };
   }, [entries, buildHeadingMap]);
 
   // Close on Escape key
@@ -75,13 +79,17 @@ export function TableOfContents({ entries }: { entries: TocEntry[] }) {
   }, [tocOpen, toggleToc]);
 
   const handleLinkClick = (entry: TocEntry) => {
-    // Rebuild map in case content shifted
     const map = buildHeadingMap();
-    const el = map.get(entry.text.trim());
-    if (el) {
-      el.scrollIntoView({ behavior: "smooth", block: "start" });
+    const heading = map.get(entry.text.trim());
+    const scroller = getScrollContainer();
+    if (heading && scroller) {
+      // Calculate heading's position relative to the scroll container
+      const headingRect = heading.getBoundingClientRect();
+      const scrollerRect = scroller.getBoundingClientRect();
+      const targetScroll =
+        scroller.scrollTop + (headingRect.top - scrollerRect.top) - 8;
+      scroller.scrollTo({ top: targetScroll, behavior: "smooth" });
     }
-    // Auto-close on mobile after clicking a heading
     if (isMobile && tocOpen) {
       toggleToc();
     }
@@ -150,11 +158,9 @@ export function TableOfContents({ entries }: { entries: TocEntry[] }) {
     </nav>
   );
 
-  // On mobile, wrap with backdrop
   if (isMobile) {
     return (
       <>
-        {/* Backdrop */}
         <div
           className="fixed inset-0 z-30 bg-black/50"
           onClick={toggleToc}

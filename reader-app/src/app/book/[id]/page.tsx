@@ -4,12 +4,33 @@ import { useEffect, useCallback, useRef, useState } from "react";
 import { useParams } from "next/navigation";
 import { useQuery, useMutation, useQueryClient } from "@tanstack/react-query";
 import dynamic from "next/dynamic";
-import { Pencil, BookOpen } from "lucide-react";
+import { Pencil, BookOpen, MessageSquare } from "lucide-react";
 import { AppShell } from "@/components/layout/AppShell";
 import { TableOfContents } from "@/components/layout/TableOfContents";
 import { CommentsPanel } from "@/components/layout/CommentsPanel";
 import { useStore } from "@/lib/store";
 import type { BookFull, TiptapDoc } from "@/types";
+
+/* ------------------------------------------------------------------ */
+/*  Scroll position persistence helpers                                */
+/* ------------------------------------------------------------------ */
+
+const SCROLL_KEY_PREFIX = "reader-scroll-";
+
+function saveScrollPosition(bookId: string, position: number) {
+  try {
+    localStorage.setItem(`${SCROLL_KEY_PREFIX}${bookId}`, String(position));
+  } catch { /* quota exceeded — ignore */ }
+}
+
+function getSavedScrollPosition(bookId: string): number {
+  try {
+    const val = localStorage.getItem(`${SCROLL_KEY_PREFIX}${bookId}`);
+    return val ? Number(val) : 0;
+  } catch {
+    return 0;
+  }
+}
 
 const Editor = dynamic(
   () => import("@/components/editor/Editor").then((m) => ({ default: m.Editor })),
@@ -27,6 +48,9 @@ export default function BookPage() {
   const [saveStatus, setSaveStatus] = useState<"saved" | "saving" | "unsaved">("saved");
   const saveTimeoutRef = useRef<NodeJS.Timeout | null>(null);
   const lastUpdatedAt = useRef<string>("");
+  const scrollContainerRef = useRef<HTMLDivElement>(null);
+  const scrollSaveTimerRef = useRef<NodeJS.Timeout | null>(null);
+  const hasRestoredScroll = useRef(false);
 
   const { data: book, isLoading, error } = useQuery<BookFull>({
     queryKey: ["book", id],
@@ -90,6 +114,55 @@ export default function BookPage() {
     []
   );
 
+  // Restore scroll position when book content loads
+  useEffect(() => {
+    if (!book || !scrollContainerRef.current || hasRestoredScroll.current) return;
+    hasRestoredScroll.current = true;
+    const saved = getSavedScrollPosition(id);
+    if (saved > 0) {
+      // The Tiptap editor renders asynchronously — poll until the container has
+      // enough content, then restore.  Try several times with increasing delays.
+      const delays = [200, 500, 1000, 2000];
+      const timers: NodeJS.Timeout[] = [];
+      for (const delay of delays) {
+        timers.push(
+          setTimeout(() => {
+            const c = scrollContainerRef.current;
+            if (c && c.scrollHeight > saved) {
+              c.scrollTop = saved;
+            }
+          }, delay)
+        );
+      }
+      return () => timers.forEach(clearTimeout);
+    }
+  }, [book, id]);
+
+  // Save scroll position on scroll (debounced)
+  // Depends on `book` so the listener attaches after loading resolves and the ref mounts
+  useEffect(() => {
+    const container = scrollContainerRef.current;
+    if (!container || !id || !book) return;
+
+    const handleScroll = () => {
+      if (scrollSaveTimerRef.current) clearTimeout(scrollSaveTimerRef.current);
+      scrollSaveTimerRef.current = setTimeout(() => {
+        saveScrollPosition(id, container.scrollTop);
+      }, 500);
+    };
+
+    container.addEventListener("scroll", handleScroll, { passive: true });
+    return () => {
+      container.removeEventListener("scroll", handleScroll);
+      if (scrollSaveTimerRef.current) clearTimeout(scrollSaveTimerRef.current);
+    };
+  }, [id, book]);
+
+  // Reset scroll restoration flag when switching books
+  useEffect(() => {
+    hasRestoredScroll.current = false;
+  }, [id]);
+
   // beforeunload warning
   useEffect(() => {
     const handler = (e: BeforeUnloadEvent) => {
@@ -134,7 +207,7 @@ export default function BookPage() {
   if (isLoading) {
     return (
       <AppShell>
-        <div className="mx-auto max-w-4xl p-8">
+        <div className="p-8">
           <div className="mb-6 h-10 w-96 animate-pulse rounded bg-muted" />
           <EditorSkeleton />
         </div>
@@ -158,16 +231,21 @@ export default function BookPage() {
     <AppShell>
       <div className="flex h-full">
         {/* Main content */}
-        <div className="flex-1 overflow-y-auto">
+        <div ref={scrollContainerRef} data-scroll-container className="flex-1 overflow-y-auto">
           {/* Book header */}
-          <div className="border-b border-border px-4 py-3 sm:px-8 sm:py-6">
-            <div className="mx-auto max-w-4xl">
+          <div className="border-b border-border px-3 py-2 sm:px-8 sm:py-6">
+            <div>
               <div className="flex flex-col gap-2 sm:flex-row sm:items-center sm:justify-between">
-                <div>
-                  <h1 className="text-xl font-bold sm:text-2xl">{book.title}</h1>
-                  <p className="mt-1 text-muted-foreground">
-                    {book.author}
-                    {book.year && ` (${book.year})`}
+                <div className="min-w-0">
+                  <h1 className="text-lg font-bold sm:text-2xl leading-tight">{book.title}</h1>
+                  <p className="mt-0.5 sm:mt-1 text-sm sm:text-base text-muted-foreground flex items-center gap-2 flex-wrap">
+                    <span>
+                      {book.author}
+                      {book.year && ` (${book.year})`}
+                    </span>
+                    <span className="rounded-full bg-primary/10 px-2 py-0.5 text-xs font-medium sm:hidden">
+                      {book.categoryName}
+                    </span>
                   </p>
                 </div>
                 <div className="flex items-center gap-3">
@@ -195,13 +273,26 @@ export default function BookPage() {
                       </>
                     )}
                   </button>
-                  <span className="rounded-full bg-primary/10 px-3 py-1 text-xs font-medium">
+                  <button
+                    onClick={toggleCommentsPanel}
+                    className="relative flex items-center gap-1.5 rounded-md border border-border px-3 py-1.5 text-xs font-medium hover:bg-muted transition-colors"
+                    title="Toggle comments"
+                  >
+                    <MessageSquare className="h-3.5 w-3.5" />
+                    Comments
+                    {(book.comments?.length ?? 0) > 0 && (
+                      <span className="ml-1 rounded-full bg-primary px-1.5 text-[10px] text-primary-foreground">
+                        {book.comments.length}
+                      </span>
+                    )}
+                  </button>
+                  <span className="hidden sm:inline rounded-full bg-primary/10 px-3 py-1 text-xs font-medium">
                     {book.categoryName}
                   </span>
                 </div>
               </div>
               {(book.tags ?? []).length > 0 && (
-                <div className="mt-3 flex flex-wrap gap-1.5">
+                <div className="mt-3 hidden sm:flex flex-wrap gap-1.5">
                   {(book.tags ?? []).slice(0, 8).map((tag) => (
                     <span
                       key={tag}
@@ -216,7 +307,7 @@ export default function BookPage() {
           </div>
 
           {/* Editor */}
-          <div className="mx-auto max-w-4xl">
+          <div>
             <Editor
               content={book.content}
               onUpdate={handleUpdate}
