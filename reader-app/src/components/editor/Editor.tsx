@@ -118,12 +118,13 @@ export function Editor({ content, onUpdate, mode = "read", onComment }: EditorPr
       });
     };
 
-    // Set on initial render
-    setHeadingIds();
+    // Delay initial call so EditorContent has mounted the DOM
+    const timer = setTimeout(setHeadingIds, 50);
 
     // Re-set after content changes (e.g. edits)
     editor.on("update", setHeadingIds);
     return () => {
+      clearTimeout(timer);
       editor.off("update", setHeadingIds);
     };
   }, [editor]);
