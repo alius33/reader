@@ -101,34 +101,6 @@ export function Editor({ content, onUpdate, mode = "read", onComment }: EditorPr
     }
   }, [editor, editable]);
 
-  // Set id attributes on heading elements so TOC links can scroll to them
-  useEffect(() => {
-    if (!editor) return;
-
-    const setHeadingIds = () => {
-      const el = editor.view.dom;
-      el.querySelectorAll("h1, h2, h3, h4").forEach((heading) => {
-        const text = heading.textContent || "";
-        heading.id = text
-          .toLowerCase()
-          .replace(/[^\w\s-]/g, "")
-          .replace(/\s+/g, "-")
-          .replace(/-+/g, "-")
-          .trim();
-      });
-    };
-
-    // Delay initial call so EditorContent has mounted the DOM
-    const timer = setTimeout(setHeadingIds, 50);
-
-    // Re-set after content changes (e.g. edits)
-    editor.on("update", setHeadingIds);
-    return () => {
-      clearTimeout(timer);
-      editor.off("update", setHeadingIds);
-    };
-  }, [editor]);
-
   // Ctrl+S / Cmd+S → toggle yellow highlight on selection
   // Ctrl+H / Cmd+H → toggle yellow highlight on selection
   useEffect(() => {

@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef, useCallback } from "react";
 import { useStore } from "@/lib/store";
 import { useIsMobile } from "@/lib/useMediaQuery";
 import { cn } from "@/lib/utils";
@@ -13,26 +13,56 @@ export function TableOfContents({ entries }: { entries: TocEntry[] }) {
   const isMobile = useIsMobile();
   const [activeId, setActiveId] = useState<string>("");
 
+  // Build a map from TOC entry text → heading DOM element
+  const headingMapRef = useRef<Map<string, Element>>(new Map());
+
+  const buildHeadingMap = useCallback(() => {
+    const map = new Map<string, Element>();
+    const headings = document.querySelectorAll(
+      ".ProseMirror h1, .ProseMirror h2, .ProseMirror h3, .ProseMirror h4"
+    );
+    for (const h of headings) {
+      const text = (h.textContent || "").trim();
+      if (text) map.set(text, h);
+    }
+    headingMapRef.current = map;
+    return map;
+  }, []);
+
   // Intersection observer to track active heading
   useEffect(() => {
-    const observer = new IntersectionObserver(
-      (observerEntries) => {
-        for (const entry of observerEntries) {
-          if (entry.isIntersecting) {
-            setActiveId(entry.target.id);
+    // Delay so EditorContent has mounted
+    const timer = setTimeout(() => {
+      const map = buildHeadingMap();
+
+      const observer = new IntersectionObserver(
+        (observerEntries) => {
+          for (const obsEntry of observerEntries) {
+            if (obsEntry.isIntersecting) {
+              // Find matching TOC entry by element reference
+              for (const [text, el] of map.entries()) {
+                if (el === obsEntry.target) {
+                  const match = entries.find((e) => e.text.trim() === text);
+                  if (match) setActiveId(match.id);
+                  break;
+                }
+              }
+            }
           }
-        }
-      },
-      { rootMargin: "-80px 0px -80% 0px" }
-    );
+        },
+        { rootMargin: "-80px 0px -80% 0px" }
+      );
 
-    for (const tocEntry of entries) {
-      const el = document.getElementById(tocEntry.id);
-      if (el) observer.observe(el);
-    }
+      for (const tocEntry of entries) {
+        const el = map.get(tocEntry.text.trim());
+        if (el) observer.observe(el);
+      }
 
-    return () => observer.disconnect();
-  }, [entries]);
+      return () => observer.disconnect();
+    }, 200);
+
+    return () => clearTimeout(timer);
+  }, [entries, buildHeadingMap]);
 
   // Close on Escape key
   useEffect(() => {
@@ -44,11 +74,13 @@ export function TableOfContents({ entries }: { entries: TocEntry[] }) {
     return () => window.removeEventListener("keydown", handler);
   }, [tocOpen, toggleToc]);
 
-  const handleLinkClick = (id: string) => {
-    document.getElementById(id)?.scrollIntoView({
-      behavior: "smooth",
-      block: "start",
-    });
+  const handleLinkClick = (entry: TocEntry) => {
+    // Rebuild map in case content shifted
+    const map = buildHeadingMap();
+    const el = map.get(entry.text.trim());
+    if (el) {
+      el.scrollIntoView({ behavior: "smooth", block: "start" });
+    }
     // Auto-close on mobile after clicking a heading
     if (isMobile && tocOpen) {
       toggleToc();
@@ -100,7 +132,7 @@ export function TableOfContents({ entries }: { entries: TocEntry[] }) {
               href={`#${entry.id}`}
               onClick={(e) => {
                 e.preventDefault();
-                handleLinkClick(entry.id);
+                handleLinkClick(entry);
               }}
               className={cn(
                 "block truncate rounded px-2 py-1 text-xs transition-colors hover:text-foreground",
