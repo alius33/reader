@@ -28,7 +28,10 @@ import { CommentMark } from "./extensions/CommentMark";
 import { SearchAndReplace } from "./extensions/SearchAndReplace";
 import { Ribbon } from "./ribbon/Ribbon";
 import { ReadToolbar } from "./ReadToolbar";
+import { ZoomControls } from "./ZoomControls";
 import { FindReplacePanel } from "./ribbon/controls/FindReplacePanel";
+import { DEFAULT_HIGHLIGHT_COLOR } from "./ribbon/controls/ColorPicker";
+import { useStore } from "@/lib/store";
 import type { TiptapDoc } from "@/types";
 
 interface EditorProps {
@@ -42,9 +45,12 @@ export function Editor({ content, onUpdate, mode = "read", onComment }: EditorPr
   const onUpdateRef = useRef(onUpdate);
   onUpdateRef.current = onUpdate;
 
-  const editable = mode === "edit";
+  // Editor is always editable so inline formatting (bold, italic, highlight)
+  // works in read mode. The toolbar controls what actions are available.
+  const editable = true;
 
   const [findReplaceOpen, setFindReplaceOpen] = useState(false);
+  const contentZoom = useStore((s) => s.contentZoom);
 
   const editor = useEditor({
     extensions: [
@@ -95,20 +101,21 @@ export function Editor({ content, onUpdate, mode = "read", onComment }: EditorPr
     }
   }, [editor, editable]);
 
-  // Ctrl+H / Cmd+H to toggle Find & Replace
+  // Ctrl+S / Cmd+S → toggle yellow highlight on selection
+  // Ctrl+H / Cmd+H → toggle yellow highlight on selection
   useEffect(() => {
-    if (mode !== "edit") return;
+    if (!editor) return;
 
     const handler = (e: KeyboardEvent) => {
       const mod = e.metaKey || e.ctrlKey;
-      if (mod && e.key === "h") {
+      if (mod && (e.key === "s" || e.key === "h")) {
         e.preventDefault();
-        setFindReplaceOpen((prev) => !prev);
+        editor.chain().focus().toggleHighlight({ color: DEFAULT_HIGHLIGHT_COLOR }).run();
       }
     };
     window.addEventListener("keydown", handler);
     return () => window.removeEventListener("keydown", handler);
-  }, [mode]);
+  }, [editor]);
 
   const handleOpenFindReplace = useCallback(() => {
     setFindReplaceOpen(true);
@@ -119,21 +126,35 @@ export function Editor({ content, onUpdate, mode = "read", onComment }: EditorPr
   }, []);
 
   return (
-    <div className="flex flex-col">
+    <>
       {mode === "edit" && editor && (
-        <Ribbon
-          editor={editor}
-          onComment={onComment}
-          onOpenFindReplace={handleOpenFindReplace}
-        />
+        <div className="sticky top-0 z-20">
+          <Ribbon
+            editor={editor}
+            onComment={onComment}
+            onOpenFindReplace={handleOpenFindReplace}
+          />
+        </div>
       )}
-      {mode === "read" && editor && <ReadToolbar editor={editor} />}
-      <div className="relative">
+      {mode === "read" && editor && (
+        <>
+          <div className="hidden sm:block sticky top-0 z-20">
+            <ReadToolbar editor={editor} />
+          </div>
+          <div className="flex sm:hidden sticky top-0 z-20 border-b border-border bg-card px-3 py-1 justify-end">
+            <ZoomControls />
+          </div>
+        </>
+      )}
+      <div
+        className="relative"
+        style={{ "--content-zoom": contentZoom / 100 } as React.CSSProperties}
+      >
         {findReplaceOpen && editor && (
           <FindReplacePanel editor={editor} onClose={handleCloseFindReplace} />
         )}
         <EditorContent editor={editor} />
       </div>
-    </div>
+    </>
   );
 }

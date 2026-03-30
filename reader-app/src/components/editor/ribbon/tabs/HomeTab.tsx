@@ -28,8 +28,8 @@ import {
 import { FontSizeSelect } from "../controls/FontSizeSelect";
 import {
   ColorPicker,
+  HighlightPicker,
   TEXT_COLORS,
-  HIGHLIGHT_COLORS,
 } from "../controls/ColorPicker";
 
 /* ------------------------------------------------------------------ */
@@ -186,14 +186,12 @@ export function HomeTab({ editor }: HomeTabProps) {
           icon={<Highlighter className="h-4 w-4" />}
           active={editor.isActive("highlight")}
         >
-          <ColorPicker
-            colors={HIGHLIGHT_COLORS}
+          <HighlightPicker
             activeColor={activeHighlightColor}
             onSelect={(color) =>
               editor.chain().focus().toggleHighlight({ color }).run()
             }
             onClear={() => editor.chain().focus().unsetHighlight().run()}
-            clearLabel="Remove"
           />
         </ToolbarDropdown>
       </RibbonGroup>
