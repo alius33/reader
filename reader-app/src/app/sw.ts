@@ -17,7 +17,7 @@ const serwist = new Serwist({
   runtimeCaching: [
     // Audio streaming must bypass SW caching entirely
     {
-      urlPattern: /\/api\/audio\/.*/,
+      matcher: ({ url }: { url: URL }) => url.pathname.startsWith("/api/audio/"),
       handler: new NetworkOnly(),
     },
     ...defaultCache,
