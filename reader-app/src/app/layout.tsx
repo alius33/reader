@@ -1,16 +1,27 @@
 import type { Metadata, Viewport } from "next";
 import Providers from "@/components/Providers";
+import InstallPrompt from "@/components/InstallPrompt";
 import { Toaster } from "sonner";
 import "./globals.css";
 
 export const metadata: Metadata = {
   title: "Reader — Book Summary Library",
   description: "A personal library of comprehensive book summaries",
+  appleWebApp: {
+    capable: true,
+    statusBarStyle: "black-translucent",
+    title: "Reader",
+  },
+  icons: {
+    icon: "/favicon.ico",
+    apple: "/apple-touch-icon.png",
+  },
 };
 
 export const viewport: Viewport = {
   width: "device-width",
   initialScale: 1,
+  themeColor: "#1e1e1e",
 };
 
 export default function RootLayout({
@@ -35,6 +46,7 @@ export default function RootLayout({
       <body className="min-h-screen bg-background antialiased">
         <Providers>{children}</Providers>
         <Toaster position="bottom-right" richColors />
+        <InstallPrompt />
       </body>
     </html>
   );

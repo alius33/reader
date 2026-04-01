@@ -73,7 +73,7 @@
 
 .reader-content {
   font-family: var(--font-reading);
-  font-size: 16px;
+  font-size: calc(16px * var(--content-zoom, 1));
   line-height: 1.75;
   font-weight: 400;
   color: var(--color-foreground);
@@ -193,27 +193,37 @@
 .reader-content table[data-table-align="center"] { margin-left: auto; margin-right: auto; }
 .reader-content table[data-table-align="right"] { margin-left: auto; }
 
-/* Mermaid — no constraints */
-.reader-content [data-mermaid-diagram] { max-width: none; }
-.reader-content [data-mermaid-diagram] svg {
-  width: 100%;
-  height: auto;
-  max-width: 100%;
+/* Diagram blocks — Wikipedia-style: float right, text wraps around */
+.reader-content [data-mermaid-diagram],
+.reader-content [data-chart-diagram],
+.reader-content [data-d3-diagram] {
+  float: right;
+  clear: right;
+  width: 50%;
+  margin: 0.4em 0 1em 1.5em;
 }
 
-/* Chart.js — no constraints */
-.reader-content [data-chart-diagram] { max-width: none; }
-.reader-content [data-chart-diagram] canvas {
-  max-width: 100%;
-  height: auto;
+/* On narrow screens, diagrams go full-width stacked */
+@media (max-width: 768px) {
+  .reader-content [data-mermaid-diagram],
+  .reader-content [data-chart-diagram],
+  .reader-content [data-d3-diagram] {
+    float: none;
+    width: 100%;
+    margin: 0.8em 0;
+  }
 }
 
-/* D3.js — no constraints */
-.reader-content [data-d3-diagram] { max-width: none; }
+.reader-content [data-mermaid-diagram] svg,
 .reader-content [data-d3-diagram] svg {
   width: 100%;
   height: auto;
   max-width: 100%;
+}
+
+.reader-content [data-chart-diagram] canvas {
+  max-width: 100%;
+  height: auto;
 }
 
 /*

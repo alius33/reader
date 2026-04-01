@@ -44,6 +44,13 @@ function PrefsInit() {
       if (tocStored === "true") {
         useStore.setState({ tocOpen: true });
       }
+      const zoomStored = localStorage.getItem("contentZoom");
+      if (zoomStored) {
+        const zoom = Number(zoomStored);
+        if (zoom >= 50 && zoom <= 200) {
+          useStore.setState({ contentZoom: zoom });
+        }
+      }
       if (window.innerWidth < 1024) {
         useStore.setState({ sidebarOpen: false });
       }

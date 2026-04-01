@@ -14,6 +14,7 @@ model Book {
   year             Int?
   categoryId       String
   category         Category         @relation(fields: [categoryId], references: [id])
+  subcategory      String?          // e.g. "Civilization", "Geo-Strategy" within Lectures
   tags             Json             // string[]
   content          Json             // Tiptap JSON document
   plainText        String           // stripped text for full-text search
@@ -25,6 +26,7 @@ model Book {
   comments         Comment[]
   crossReferences  CrossReference[] @relation("sourceBook")
   referencedBy     CrossReference[] @relation("targetBook")
+  audioChapters    Json?            // AudioChapter[] — [{ number, title, url }]
   lastViewedAt     DateTime?
   createdAt        DateTime         @default(now())
   updatedAt        DateTime         @updatedAt

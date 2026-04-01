@@ -11,6 +11,7 @@ export async function GET() {
         year: true,
         categoryId: true,
         category: { select: { name: true } },
+        subcategory: true,
         tags: true,
         wordCount: true,
         summary: true,

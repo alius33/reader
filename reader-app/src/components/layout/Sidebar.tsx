@@ -35,15 +35,30 @@ export function Sidebar() {
     queryFn: () => fetch("/api/books").then((r) => r.json()),
   });
 
+  type CategoryEntry = {
+    name: string;
+    books: BookMeta[];
+    subcategories: Map<string, BookMeta[]>;
+  };
+
   const categorized = useMemo(() => {
-    const map = new Map<string, BookMeta[]>();
+    const map = new Map<string, CategoryEntry>();
     for (const book of books) {
       const cat = book.categoryName;
-      if (!map.has(cat)) map.set(cat, []);
-      map.get(cat)!.push(book);
+      if (!map.has(cat)) map.set(cat, { name: cat, books: [], subcategories: new Map() });
+      const entry = map.get(cat)!;
+      if (book.subcategory) {
+        if (!entry.subcategories.has(book.subcategory)) entry.subcategories.set(book.subcategory, []);
+        entry.subcategories.get(book.subcategory)!.push(book);
+      } else {
+        entry.books.push(book);
+      }
     }
-    return Array.from(map.entries()).sort((a, b) => a[0].localeCompare(b[0]));
+    return Array.from(map.values()).sort((a, b) => a.name.localeCompare(b.name));
   }, [books]);
+
+  const totalBooksInCategory = (entry: CategoryEntry) =>
+    entry.books.length + Array.from(entry.subcategories.values()).reduce((sum, b) => sum + b.length, 0);
 
   const recentBooks = useMemo(() => {
     return [...books]
@@ -59,16 +74,19 @@ export function Sidebar() {
   const filteredCategorized = useMemo(() => {
     if (!searchQuery.trim()) return categorized;
     const q = searchQuery.toLowerCase();
+    const matchBook = (b: BookMeta) =>
+      b.title.toLowerCase().includes(q) || b.author.toLowerCase().includes(q);
     return categorized
-      .map(([cat, catBooks]) => {
-        const filtered = catBooks.filter(
-          (b) =>
-            b.title.toLowerCase().includes(q) ||
-            b.author.toLowerCase().includes(q)
-        );
-        return [cat, filtered] as [string, BookMeta[]];
+      .map((entry) => {
+        const filteredBooks = entry.books.filter(matchBook);
+        const filteredSubs = new Map<string, BookMeta[]>();
+        for (const [sub, subBooks] of entry.subcategories) {
+          const filtered = subBooks.filter(matchBook);
+          if (filtered.length > 0) filteredSubs.set(sub, filtered);
+        }
+        return { ...entry, books: filteredBooks, subcategories: filteredSubs } as CategoryEntry;
       })
-      .filter(([, catBooks]) => catBooks.length > 0);
+      .filter((entry) => entry.books.length > 0 || entry.subcategories.size > 0);
   }, [categorized, searchQuery]);
 
   const toggleCategory = (cat: string) => {
@@ -81,6 +99,8 @@ export function Sidebar() {
   };
 
   if (!sidebarOpen) {
+    // On mobile, hide the collapsed rail entirely — TopBar has the toggle
+    if (isMobile) return null;
     return (
       <div className="flex w-12 flex-col items-center border-r border-border bg-card py-3">
         <button
@@ -153,25 +173,66 @@ export function Sidebar() {
         )}
 
         {/* Categories */}
-        {filteredCategorized.map(([cat, catBooks]) => (
-          <div key={cat} className="mb-1">
+        {filteredCategorized.map((entry) => (
+          <div key={entry.name} className="mb-1">
             <button
-              onClick={() => toggleCategory(cat)}
+              onClick={() => toggleCategory(entry.name)}
               className="flex w-full items-center gap-1 rounded-md px-2 py-1 text-sm font-medium hover:bg-accent"
             >
-              {expandedCategories.has(cat) ? (
+              {expandedCategories.has(entry.name) ? (
                 <ChevronDown className="h-3.5 w-3.5 shrink-0" />
               ) : (
                 <ChevronRight className="h-3.5 w-3.5 shrink-0" />
               )}
-              <span className="truncate">{cat}</span>
+              <span className="truncate">{entry.name}</span>
               <span className="ml-auto text-xs text-muted-foreground">
-                {catBooks.length}
+                {totalBooksInCategory(entry)}
               </span>
             </button>
-            {expandedCategories.has(cat) && (
+            {expandedCategories.has(entry.name) && (
               <div className="ml-3 border-l border-border pl-2">
-                {catBooks
+                {/* Subcategories (e.g. Civilization, Geo-Strategy, Secret History) */}
+                {Array.from(entry.subcategories.entries())
+                  .sort((a, b) => a[0].localeCompare(b[0]))
+                  .map(([sub, subBooks]) => (
+                    <div key={sub} className="mb-0.5">
+                      <button
+                        onClick={() => toggleCategory(`${entry.name}/${sub}`)}
+                        className="flex w-full items-center gap-1 rounded-md px-2 py-1 text-sm font-medium text-muted-foreground hover:bg-accent hover:text-foreground"
+                      >
+                        {expandedCategories.has(`${entry.name}/${sub}`) ? (
+                          <ChevronDown className="h-3 w-3 shrink-0" />
+                        ) : (
+                          <ChevronRight className="h-3 w-3 shrink-0" />
+                        )}
+                        <span className="truncate">{sub}</span>
+                        <span className="ml-auto text-xs text-muted-foreground">
+                          {subBooks.length}
+                        </span>
+                      </button>
+                      {expandedCategories.has(`${entry.name}/${sub}`) && (
+                        <div className="ml-3 border-l border-border pl-2">
+                          {subBooks
+                            .sort((a, b) => a.title.localeCompare(b.title))
+                            .map((book) => (
+                              <Link
+                                key={book.id}
+                                href={`/book/${book.id}`}
+                                onClick={handleNavClick}
+                                className={cn(
+                                  "block truncate rounded-md px-2 py-1 text-sm hover:bg-accent",
+                                  activeBookId === book.id && "bg-accent font-medium"
+                                )}
+                              >
+                                {book.title}
+                              </Link>
+                            ))}
+                        </div>
+                      )}
+                    </div>
+                  ))}
+                {/* Direct books (no subcategory) */}
+                {entry.books
                   .sort((a, b) => a.title.localeCompare(b.title))
                   .map((book) => (
                     <Link

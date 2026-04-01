@@ -28,7 +28,7 @@ import { CommentMark } from "./extensions/CommentMark";
 import { SearchAndReplace } from "./extensions/SearchAndReplace";
 import { Ribbon } from "./ribbon/Ribbon";
 import { ReadToolbar } from "./ReadToolbar";
-import { ZoomControls } from "./ZoomControls";
+import { FloatingToolbar } from "./FloatingToolbar";
 import { FindReplacePanel } from "./ribbon/controls/FindReplacePanel";
 import { DEFAULT_HIGHLIGHT_COLOR } from "./ribbon/controls/ColorPicker";
 import { useStore } from "@/lib/store";
@@ -39,9 +39,11 @@ interface EditorProps {
   onUpdate?: (doc: TiptapDoc) => void;
   mode?: "read" | "edit";
   onComment?: (markId: string, selectedText: string) => void;
+  focusMode?: boolean;
+  bookId?: string;
 }
 
-export function Editor({ content, onUpdate, mode = "read", onComment }: EditorProps) {
+export function Editor({ content, onUpdate, mode = "read", onComment, focusMode = false, bookId = "" }: EditorProps) {
   const onUpdateRef = useRef(onUpdate);
   onUpdateRef.current = onUpdate;
 
@@ -127,7 +129,8 @@ export function Editor({ content, onUpdate, mode = "read", onComment }: EditorPr
 
   return (
     <>
-      {mode === "edit" && editor && (
+      {/* Normal toolbars — hidden in focus mode */}
+      {!focusMode && mode === "edit" && editor && (
         <div className="sticky top-0 z-20">
           <Ribbon
             editor={editor}
@@ -136,16 +139,22 @@ export function Editor({ content, onUpdate, mode = "read", onComment }: EditorPr
           />
         </div>
       )}
-      {mode === "read" && editor && (
-        <>
-          <div className="hidden sm:block sticky top-0 z-20">
-            <ReadToolbar editor={editor} />
-          </div>
-          <div className="flex sm:hidden sticky top-0 z-20 border-b border-border bg-card px-3 py-1 justify-end">
-            <ZoomControls />
-          </div>
-        </>
+      {!focusMode && mode === "read" && editor && (
+        <div className="sticky top-0 z-20">
+          <ReadToolbar editor={editor} />
+        </div>
       )}
+
+      {/* Floating toolbar in focus mode */}
+      {focusMode && editor && (
+        <FloatingToolbar
+          editor={editor}
+          mode={mode}
+          bookId={bookId}
+          onComment={onComment}
+        />
+      )}
+
       <div
         className="relative"
         style={{ "--content-zoom": contentZoom / 100 } as React.CSSProperties}

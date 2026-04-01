@@ -5,6 +5,7 @@ export interface BookMeta {
   year: number | null;
   categoryId: string;
   categoryName: string;
+  subcategory: string | null;
   tags: string[];
   wordCount: number | null;
   summary: string | null;
@@ -14,11 +15,18 @@ export interface BookMeta {
   updatedAt: string;
 }
 
+export interface AudioChapter {
+  number: number;
+  title: string;
+  url: string;
+}
+
 export interface BookFull extends BookMeta {
   content: TiptapDoc;
   plainText: string;
   originalMarkdown: string | null;
   toc: TocEntry[] | null;
+  audioChapters: AudioChapter[] | null;
   comments: CommentData[];
   crossReferences: CrossRefData[];
   referencedBy: CrossRefData[];

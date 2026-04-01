@@ -3,9 +3,7 @@
 import { useState } from "react";
 import { useQuery, useMutation, useQueryClient } from "@tanstack/react-query";
 import { useStore } from "@/lib/store";
-import { useIsMobile } from "@/lib/useMediaQuery";
-import { cn } from "@/lib/utils";
-import { MessageSquare, X, Pencil, Trash2, ChevronRight } from "lucide-react";
+import { MessageSquare, X, Pencil, Trash2 } from "lucide-react";
 import type { CommentData } from "@/types";
 
 interface CommentsPanelProps {
@@ -16,7 +14,6 @@ interface CommentsPanelProps {
 export function CommentsPanel({ bookId, comments }: CommentsPanelProps) {
   const commentsPanelOpen = useStore((s) => s.commentsPanelOpen);
   const toggleCommentsPanel = useStore((s) => s.toggleCommentsPanel);
-  const isMobile = useIsMobile();
   const queryClient = useQueryClient();
   const [editingId, setEditingId] = useState<string | null>(null);
   const [editText, setEditText] = useState("");
@@ -48,20 +45,7 @@ export function CommentsPanel({ bookId, comments }: CommentsPanelProps) {
   });
 
   if (!commentsPanelOpen) {
-    return (
-      <button
-        onClick={toggleCommentsPanel}
-        className="flex w-10 flex-col items-center border-l border-border bg-card pt-3"
-        title="Open comments"
-      >
-        <MessageSquare className="h-4 w-4" />
-        {comments.length > 0 && (
-          <span className="mt-1 rounded-full bg-primary px-1.5 text-[10px] text-primary-foreground">
-            {comments.length}
-          </span>
-        )}
-      </button>
-    );
+    return null;
   }
 
   const panelContent = (
@@ -170,20 +154,12 @@ export function CommentsPanel({ bookId, comments }: CommentsPanelProps) {
     </>
   );
 
-  if (isMobile) {
-    return (
-      <>
-        <div className="fixed inset-0 z-30 bg-black/50" onClick={toggleCommentsPanel} />
-        <aside className="fixed inset-y-0 right-0 z-40 flex w-80 max-w-[calc(100vw-3rem)] flex-col border-l border-border bg-card shadow-xl">
-          {panelContent}
-        </aside>
-      </>
-    );
-  }
-
   return (
-    <aside className="flex w-80 flex-col border-l border-border bg-card">
-      {panelContent}
-    </aside>
+    <>
+      <div className="fixed inset-0 z-30 bg-black/50" onClick={toggleCommentsPanel} />
+      <aside className="fixed inset-y-0 right-0 z-40 flex w-80 max-w-[calc(100vw-3rem)] flex-col border-l border-border bg-card shadow-xl">
+        {panelContent}
+      </aside>
+    </>
   );
 }

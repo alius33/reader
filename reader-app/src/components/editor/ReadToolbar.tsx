@@ -9,6 +9,7 @@ import {
   Underline,
   Strikethrough,
   Palette,
+  Maximize2,
 } from "lucide-react";
 import { ToolbarButton, ToolbarDivider, ToolbarDropdown } from "./ribbon/shared";
 import {
@@ -17,6 +18,8 @@ import {
   TEXT_COLORS,
 } from "./ribbon/controls/ColorPicker";
 import { ZoomControls } from "./ZoomControls";
+import { useIsMobile } from "@/lib/useMediaQuery";
+import { useStore } from "@/lib/store";
 
 /* ------------------------------------------------------------------ */
 /*  ReadToolbar                                                        */
@@ -27,15 +30,18 @@ interface ReadToolbarProps {
 }
 
 export function ReadToolbar({ editor }: ReadToolbarProps) {
+  const isMobile = useIsMobile();
+  const toggleFocusMode = useStore((s) => s.toggleFocusMode);
+
   const activeTextColor =
     (editor.getAttributes("textStyle").color as string | undefined) ?? null;
 
   const activeHighlightColor =
     (editor.getAttributes("highlight").color as string | undefined) ?? null;
 
-  return (
-    <div className="sticky top-0 z-20 border-b border-border bg-card px-4 py-1 flex items-center gap-1">
-      {/* Formatting tools */}
+  /* ---- Shared formatting tools ---- */
+  const formattingTools = (
+    <>
       <ToolbarDropdown
         icon={<Highlighter className="h-4 w-4" />}
         active={editor.isActive("highlight")}
@@ -50,7 +56,6 @@ export function ReadToolbar({ editor }: ReadToolbarProps) {
         />
       </ToolbarDropdown>
 
-      {/* Text colour */}
       <ToolbarDropdown
         icon={<Palette className="h-4 w-4" />}
         active={!!activeTextColor}
@@ -69,7 +74,6 @@ export function ReadToolbar({ editor }: ReadToolbarProps) {
 
       <ToolbarDivider />
 
-      {/* Text formatting */}
       <ToolbarButton
         icon={<Bold className="h-4 w-4" />}
         onClick={() => editor.chain().focus().toggleBold().run()}
@@ -94,6 +98,36 @@ export function ReadToolbar({ editor }: ReadToolbarProps) {
         active={editor.isActive("strike")}
         tooltip="Strikethrough"
       />
+    </>
+  );
+
+  /* ---- Mobile: two-row compact layout ---- */
+  if (isMobile) {
+    return (
+      <div className="sticky top-0 z-20 border-b border-border bg-card">
+        {/* Row 1: formatting tools */}
+        <div className="flex items-center gap-1 px-3 py-0.5">
+          {formattingTools}
+        </div>
+        {/* Row 2: zoom + focus */}
+        <div className="flex items-center gap-1 px-3 py-0.5 border-t border-border/50">
+          <ZoomControls />
+          <div className="ml-auto">
+            <ToolbarButton
+              icon={<Maximize2 className="h-4 w-4" />}
+              onClick={toggleFocusMode}
+              tooltip="Focus mode"
+            />
+          </div>
+        </div>
+      </div>
+    );
+  }
+
+  /* ---- Desktop: single-row layout ---- */
+  return (
+    <div className="sticky top-0 z-20 border-b border-border bg-card px-4 py-1 flex items-center gap-1">
+      {formattingTools}
 
       <ToolbarDivider />
 
@@ -105,9 +139,15 @@ export function ReadToolbar({ editor }: ReadToolbarProps) {
         tooltip="Switch to Edit mode to add comments"
       />
 
-      {/* Zoom — pushed to right */}
-      <div className="ml-auto border-l border-border pl-2">
+      {/* Zoom + Focus — pushed to right */}
+      <div className="ml-auto flex items-center gap-1 border-l border-border pl-2">
         <ZoomControls />
+        <ToolbarDivider />
+        <ToolbarButton
+          icon={<Maximize2 className="h-4 w-4" />}
+          onClick={toggleFocusMode}
+          tooltip="Focus mode"
+        />
       </div>
     </div>
   );

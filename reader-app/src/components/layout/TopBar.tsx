@@ -3,7 +3,8 @@
 import Link from "next/link";
 import { useStore, FONT_OPTIONS } from "@/lib/store";
 import type { FontFamily } from "@/lib/store";
-import { Moon, Sun, Type } from "lucide-react";
+import { useIsMobile } from "@/lib/useMediaQuery";
+import { Moon, Sun, Type, Menu } from "lucide-react";
 
 interface TopBarProps {
   title?: string;
@@ -16,10 +17,21 @@ export function TopBar({ title, breadcrumbs, saveStatus }: TopBarProps) {
   const toggleDarkMode = useStore((s) => s.toggleDarkMode);
   const fontFamily = useStore((s) => s.fontFamily);
   const setFontFamily = useStore((s) => s.setFontFamily);
+  const toggleSidebar = useStore((s) => s.toggleSidebar);
+  const isMobile = useIsMobile();
 
   return (
-    <header className="flex h-12 shrink-0 items-center justify-between border-b border-border bg-card px-4">
+    <header className="flex h-10 sm:h-12 shrink-0 items-center justify-between border-b border-border bg-card px-3 sm:px-4">
       <div className="flex items-center gap-2 text-sm">
+        {isMobile && (
+          <button
+            onClick={toggleSidebar}
+            className="rounded-md p-1.5 hover:bg-accent"
+            title="Open sidebar"
+          >
+            <Menu className="h-4 w-4" />
+          </button>
+        )}
         {breadcrumbs?.map((crumb, i) => (
           <span key={i} className="flex items-center gap-2">
             {i > 0 && <span className="text-muted-foreground">/</span>}

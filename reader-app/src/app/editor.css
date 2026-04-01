@@ -224,7 +224,7 @@
   color: var(--color-foreground, #dcddde);
 }
 
-/* Mermaid SVG fills container width */
+/* Mermaid SVG — fill container */
 .mermaid-block svg,
 .ProseMirror [data-mermaid-diagram] svg {
   width: 100%;
@@ -286,6 +286,20 @@
 /* Table alignment */
 .ProseMirror table[data-table-align="center"] { margin-left: auto !important; margin-right: auto !important; }
 .ProseMirror table[data-table-align="right"] { margin-left: auto !important; }
+
+/* Highlighted text should always use dark text for readability on light backgrounds.
+   Without this, dark mode's light text color is unreadable on pastel highlight backgrounds. */
+.ProseMirror mark {
+  color: #1a1a1a !important;
+}
+.ProseMirror mark strong,
+.ProseMirror mark em,
+.ProseMirror mark u,
+.ProseMirror mark s,
+.ProseMirror mark code,
+.ProseMirror mark a {
+  color: inherit !important;
+}
 
 /* Search & Replace highlights */
 .search-match {
@@ -469,4 +483,25 @@
 .dark .d3-textarea {
   background: var(--color-background, #1e1e1e);
   color: var(--color-foreground, #dcddde);
+}
+
+/* Wikipedia-style: float diagrams right, text wraps around */
+.ProseMirror .mermaid-block,
+.ProseMirror .chart-block,
+.ProseMirror .d3-block {
+  float: right;
+  clear: right;
+  width: 50%;
+  margin: 0.4em 0 1em 1.5em;
+}
+
+/* On narrow screens, stack diagrams full-width */
+@media (max-width: 768px) {
+  .ProseMirror .mermaid-block,
+  .ProseMirror .chart-block,
+  .ProseMirror .d3-block {
+    float: none;
+    width: 100%;
+    margin: 0.8em 0;
+  }
 }
