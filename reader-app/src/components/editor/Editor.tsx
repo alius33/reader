@@ -31,7 +31,9 @@ import { ReadToolbar } from "./ReadToolbar";
 import { FloatingToolbar } from "./FloatingToolbar";
 import { FindReplacePanel } from "./ribbon/controls/FindReplacePanel";
 import { DEFAULT_HIGHLIGHT_COLOR } from "./ribbon/controls/ColorPicker";
+import { MobileSelectionBubble } from "./MobileSelectionBubble";
 import { useStore } from "@/lib/store";
+import { useIsMobile } from "@/lib/useMediaQuery";
 import type { TiptapDoc } from "@/types";
 
 interface EditorProps {
@@ -51,6 +53,7 @@ export function Editor({ content, onUpdate, mode = "read", onComment, focusMode 
   // works in read mode. The toolbar controls what actions are available.
   const editable = true;
 
+  const isMobile = useIsMobile();
   const [findReplaceOpen, setFindReplaceOpen] = useState(false);
   const contentZoom = useStore((s) => s.contentZoom);
 
@@ -119,6 +122,19 @@ export function Editor({ content, onUpdate, mode = "read", onComment, focusMode 
     return () => window.removeEventListener("keydown", handler);
   }, [editor]);
 
+  // In read mode on mobile, prevent the virtual keyboard from appearing when
+  // the user selects text. The editor stays editable so Tiptap commands work,
+  // but inputmode="none" tells the browser not to open the keyboard.
+  useEffect(() => {
+    if (!editor || !isMobile) return;
+    const el = editor.view.dom as HTMLElement;
+    if (mode === "read") {
+      el.setAttribute("inputmode", "none");
+    } else {
+      el.removeAttribute("inputmode");
+    }
+  }, [editor, isMobile, mode]);
+
   const handleOpenFindReplace = useCallback(() => {
     setFindReplaceOpen(true);
   }, []);
@@ -143,6 +159,10 @@ export function Editor({ content, onUpdate, mode = "read", onComment, focusMode 
         <div className="sticky top-0 z-20">
           <ReadToolbar editor={editor} />
         </div>
+      )}
+      {/* Mobile: bubble appears above selected text with colour swatches — no toolbar tap needed */}
+      {isMobile && mode === "read" && editor && (
+        <MobileSelectionBubble editor={editor} />
       )}
 
       {/* Floating toolbar in focus mode */}
