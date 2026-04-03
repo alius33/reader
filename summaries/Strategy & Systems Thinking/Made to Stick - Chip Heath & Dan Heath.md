@@ -92,7 +92,7 @@ reading-time: "55-65 min"
 ### The Framework: SUCCESs
 
 ```mermaid
-flowchart LR
+flowchaflowchart LR
     S["Simple<br/>Find the core"] --> U["Unexpected<br/>Break patterns"]
     U --> C1["Concrete<br/>Sensory & specific"]
     C1 --> C2["Credible<br/>Let them verify"]

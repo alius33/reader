@@ -923,3 +923,4 @@ Everything else — the R-E-D-I-R-E-C-T strategies, the three questions, the twe
 4. **Use a conditional yes instead of a no.** "Yes, you can have ice cream — right after dinner." Same boundary, different brain response.
 
 5. **When you flip your lid (and you will), repair within the hour.** Go back and say: "I'm sorry I raised my voice. I was frustrated. That wasn't fair to you." This models the exact skill you want your child to learn.
+

@@ -922,3 +922,4 @@ The data are clear. The essentials are simple. And they are available to every p
 Everything else is noise.
 
 *The brain was forged in a world that was not only pre-Internet but pre-Ice Age. Its needs are ancient. Meet them, and you will raise a child who is both smart and happy — which, in the end, is the same thing.*
+

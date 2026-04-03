@@ -867,3 +867,4 @@ If you change nothing else, change this: your response to misbehaviour. Not the 
 Not obedience. Not compliance. Not silence. **Joy in cooperation.** A child who helps because they want to. Who follows rules because they understand them. Who controls their impulses not from fear, but from internal capacity.
 
 This is what respectful discipline builds. One calm, honest, unruffled interaction at a time.
+

@@ -23,18 +23,18 @@ Prof. Jiang Xueqin teaches history with a focus on the grand narrative — why c
 | # | Title | Status | Key Topic |
 |---|-------|--------|-----------|
 | 1 | [[01 - Explaining Humanity's Transition to Agriculture]] | Summarised | Religion, not material advantage, drove the transition to agriculture |
-| 2 | [[02 - Religion and the Dawn of Society]] | Pending | How religion shaped early social structures |
-| 3 | [[03 - The Religious Imagination]] | Pending | Origins of religious thought |
-| 4 | [[04 - The Paradise Lost of Marija Gimbutas]] | Pending | Gimbutas and the Old European civilization |
-| 5 | [[05 - The Yamnaya Conquest of Europe]] | Pending | Indo-European migration and cultural transformation |
-| 6 | [[06 - Elite Overproduction and the Bronze Age Collapse]] | Pending | Why the Bronze Age civilizations collapsed |
-| 7 | [[07 - Homer's Iliad and the Birth of Greek Civilization]] | Pending | Homer as foundation of Greek identity |
-| 8 | [[08 - Rat Utopia and the Peloponnesian War]] | Pending | Social decay and Greek civil war |
-| 9 | [[09 - Aeschylus, Sophocles, and Euripides as Prophets of Democracy]] | Pending | Greek tragedy as political commentary |
-| 10 | [[10 - The Trial of Socrates and Plato's Allegory of the Cave]] | Pending | Philosophy vs. democracy in Athens |
-| 11 | [[11 - The Greatness of Philip II of Macedon]] | Pending | Macedonia's rise to power |
-| 12 | [[12 - The Tyranny of Alexander the Great]] | Pending | Alexander's conquests and legacy |
-| 13 | [[13 - Aristotle and the Greek Legacy]] | Pending | Greek intellectual legacy |
+| 2 | [[02 - Religion and the Dawn of Society]] | Summarised | Animism, Ice Age cave paintings, and religion as the foundation of society |
+| 3 | [[03 - The Religious Imagination]] | Summarised | Anthropology reveals the pre-modern religious imagination — animist worldview, collective belief as reality |
+| 4 | [[04 - The Paradise Lost of Marija Gimbutas]] | Summarised | Gimbutas's Old Europe — matriarchal, peaceful civilisation before Yamnaya conquest |
+| 5 | [[05 - The Yamnaya Conquest of Europe]] | Summarised | Indo-European migration and cultural transformation |
+| 6 | [[06 - Elite Overproduction and the Bronze Age Collapse]] | Summarised | Elite overproduction and rent-seeking as universal mechanism of civilisational collapse |
+| 7 | [[07 - Homer's Iliad and the Birth of Greek Civilization]] | Summarised | Three revolutions (polis, alphabet, Homer) born from Bronze Age destruction created Greek civilization |
+| 8 | [[08 - Rat Utopia and the Peloponnesian War]] | Summarised | Rat Utopia experiment explains why wealthy societies self-destruct — the Peloponnesian War as internal elite conflict, not external rivalry |
+| 9 | [[09 - Aeschylus, Sophocles, and Euripides as Prophets of Democracy]] | Summarised | Theatre as democratic institution — Aeschylus (divine gift), Sophocles (hubris of kings), Euripides (imperial self-criticism) |
+| 10 | [[10 - The Trial of Socrates and Plato's Allegory of the Cave]] | Summarised | Socrates's deliberate martyrdom proved democracy cannot reason; Plato's Allegory of the Cave redeemed Socrates, prefigured Christ, and became Christianity's intellectual framework |
+| 11 | [[11 - The Greatness of Philip II of Macedon]] | Summarised | Philip II as father-archetype — military innovation, meritocracy, and diplomacy transform poor Macedon into Greece's dominant power |
+| 12 | [[12 - The Tyranny of Alexander the Great]] | Summarised | Father-Son model predicts Alexander's tyranny — reckless expansion, elimination of talent, boundless ambition; accidental creation of Hellenistic world and path to Christianity |
+| 13 | [[13 - Aristotle and the Greek Legacy]] | Summarised | Aristotle as political censor — resolving three paradoxes; Greek legacy: liberal arts mind, standardised knowledge, syncretisation → Christianity |
 | 14 | [[14 - Hannibal Barca, Lucius Brutus, and the Triumph of Rome]] | Pending | Rome's rise through adversity |
 | 15 | [[15 - The Myth-Making Genius of Julius Caesar]] | Pending | Caesar as political mythmaker |
 | 16 | [[16 - Julius Caesar's Will and Octavian's Birth of Empire]] | Pending | Transition from Republic to Empire |
@@ -109,3 +109,15 @@ Prof. Jiang Xueqin teaches history with a focus on the grand narrative — why c
 | **Debunking traditional narratives** | Lecture 1 | Prof. Jiang's method: present the standard story, then show why evidence contradicts it |
 | **Theory evaluation** | Lecture 1 | Present multiple theories, evaluate evidence for/against each, reach a verdict |
 | **Humans and nature as equal** | Lecture 1 | Pre-agricultural worldview where animals, trees, and humans were not hierarchically separated |
+| **Elite overproduction** | Lecture 6 | Societies collapse when too many elites compete for finite resources — rent-seeking, debt, and instability make collapse inevitable |
+| **Rent-seeking behaviour** | Lecture 6 | Extracting value through ownership rather than productive work — the mechanism by which elites destabilise society |
+| **Rat Utopia / Status lock-in** | Lecture 8 | When abundance lets incumbents hold power indefinitely, the young cannot rise — frustration produces self-destructive violence that collapses the entire society |
+| **Rise-and-fall paradox** | Lecture 8 | The culture that causes a civilization to rise (e.g. eudaimonia) is the same culture that causes it to decline |
+| **Hubris** | Lecture 9 | Power inevitably produces arrogance — the core argument of Greek tragedy for why distributed democratic power is preferable to monarchy |
+| **Tolerance-to-persecution arc** | Lecture 10 | Prosperous societies tolerate dissent; crisis turns them against their own critics — Athens tolerated Socrates until defeat, then executed him |
+| **Philosophy as proto-religion** | Lecture 10 | Plato's Allegory of the Cave and Theory of Forms supplied Christianity's intellectual framework — philosophy creates the architecture that religion later inhabits |
+| **Father-Son archetype** | Lecture 11 | Builders (fathers) create institutions through vision, innovation, and selflessness; expanders (sons) inherit and grow through aggression, loyalty networks, and personal glory — but sons get the credit |
+| **Poor-conquers-rich dynamic** | Lecture 11 | Hungry, united, obedient poor nations overwhelm wealthy, divided, complacent rich nations — Macedon vs. Greek city-states, North Korea vs. South Korea |
+| **Three qualities of great leaders** | Lecture 11 | Strategic/visionary, innovative/revolutionary, disciplined/selfless — the recurring profile of world-changing figures (Philip, Genghis Khan, Muhammad, Napoleon, Caesar) |
+| **Cohesion-discipline-devotion** | Lecture 12 | The real metrics for military superiority — tribal armies with cultural unity, battle experience, and leader loyalty consistently defeat larger imperial forces |
+| **Incremental tyranny** | Lecture 12 | Tyranny escalates step by step: each elimination of restraint (terror, self-deification, purging talent) makes the next step easier until assassination is the only remaining check |

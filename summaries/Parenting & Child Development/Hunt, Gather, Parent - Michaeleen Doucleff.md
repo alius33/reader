@@ -837,3 +837,4 @@ This insight unlocks every other principle — Maya togetherness, Inuit calm, Ha
 Open the door. Include your children. Stay calm. Trust their competence. Do less. Belong more.
 
 *The best parenting tools are not modern inventions. They are ancient recoveries.*
+

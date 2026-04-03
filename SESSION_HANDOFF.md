@@ -1,86 +1,75 @@
-# Session Handoff — Parenting Books Pipeline
+# Session Handoff — Audio Player Feature
 
-**Date:** 2026-03-27  
-**Status:** 11 of 15 books complete (analysis + 800+ line summaries)
-
----
-
-## Completed Books (11 of 15)
-
-| # | Book | Analysis | Summary Lines |
-|---|------|----------|:------------:|
-| 1 | The Whole-Brain Child - Daniel J. Siegel | Done | 901 |
-| 2 | No-Drama Discipline - Daniel J. Siegel | Done | 903 |
-| 3 | The Montessori Toddler - Simone Davies | Done | 900 |
-| 4 | No Bad Kids - Janet Lansbury | Done | 863 |
-| 5 | Hunt, Gather, Parent - Michaeleen Doucleff | Done | 812 |
-| 6 | Brain Rules for Baby - John Medina | Done | 753 |
-| 7 | The Gardener and the Carpenter - Alison Gopnik | Done | 900 |
-| 8 | Unconditional Parenting - Alfie Kohn | Done | 901 |
-| 9 | Parenting from the Inside Out - Daniel J. Siegel | Done | 900 |
-| 10 | Cribsheet - Emily Oster | Done | 900 |
-| 11 | How to Talk So Little Kids Will Listen - Faber & King | Done | 902 |
-
-## In Progress
-
-| # | Book | Analysis | Summary Lines | Status |
-|---|------|----------|:------------:|--------|
-| 12 | The Danish Way of Parenting - Alexander & Sandahl | Done | 407 | Needs expansion to 900+ |
-
-## Remaining (Not Yet Started)
-
-| # | Book | EPUB in inbox |
-|---|------|--------------|
-| 13 | Simplicity Parenting - Kim John Payne | `Simplicity Parenting - Kim John Payne.epub` |
-| 14 | How to Talk So Kids Will Listen - Adele Faber & Elaine Mazlish | `How to Talk So Kids Will Listen - Adele Faber & Elaine Mazlish.epub` |
-| 15 | The Self-Driven Child - William Stixrud & Ned Johnson | `The Self-Driven Child - William Stixrud & Ned Johnson.epub` |
-
-## After All 15 Done
-
-- Update `summaries/_index.md`: change Parenting & Child Development count from 0 to 15, total from 129 to 144
-- All 15 entries are already listed in the table — just need the counts updated
+**Date:** 2026-04-01  
+**Status:** Implementation complete, needs browser testing
 
 ---
 
-## Key Technical Notes
+## What was built
 
-### Book 12 Current State
-- `analysis/alexander_danish-way-parenting.md` — complete
-- `summaries/Parenting & Child Development/The Danish Way of Parenting - Jessica Joelle Alexander.md` — 407 lines
-- Has all structural elements (frontmatter, Big Idea, Key Concepts, 30-Second, mermaid, PARENT chapters, Verdict, FAQ, Five Things, Key Phrases, closing quote)
-- Needs expansion of each PARENT chapter, more examples, more callout boxes, before/after tables
-- This is a shorter book (253K chars) so reaching 900 requires more creative expansion
+An audio player for the reader app that streams MP3 files from Cloudflare R2.
 
-### Proven Workflow
-- Extract EPUB → read key sections → write analysis (single Write) → write summary initial chunk → expand with StrReplace → check count → repeat until 900+
-- Each StrReplace chunk: 100-150 lines max
-- Check count: `(Get-Content "filepath").Count`
-- PowerShell on Windows
+### New files
+| File | Purpose |
+|------|---------|
+| `reader-app/src/components/audio/AudioPlayerBar.tsx` | Fixed bottom player bar (play/pause, chapter skip, scrubber, volume, chapter list) |
+| `reader-app/src/components/audio/ChapterList.tsx` | Chapter list overlay |
+| `reader-app/src/app/api/audio/[...key]/route.ts` | Signed URL redirect endpoint (fallback, currently unused) |
+| `reader-app/src/app/api/books/[id]/audio/route.ts` | PATCH endpoint to register audio chapters |
+| `reader-app/scripts/register-audio.ts` | One-time script to populate chapter URLs |
 
-### EPUB Extraction Command
-```python
-python -c "
-import ebooklib
-from ebooklib import epub
-from bs4 import BeautifulSoup
-book = epub.read_epub(r'inbox/FILENAME.epub')
-text_parts = []
-for item in book.get_items_of_type(ebooklib.ITEM_DOCUMENT):
-    soup = BeautifulSoup(item.get_content(), 'html.parser')
-    text = soup.get_text(separator='\n', strip=True)
-    if len(text) > 50:
-        text_parts.append(text)
-full_text = '\n\n---\n\n'.join(text_parts)
-with open('temp_extract.txt', 'w', encoding='utf-8') as f:
-    f.write(full_text)
-print(f'Extracted {len(full_text)} characters, {len(text_parts)} sections')
-"
-```
+### Modified files
+| File | Change |
+|------|--------|
+| `prisma/schema.prisma` | Added `audioChapters Json?` to Book model |
+| `src/types/index.ts` | Added `AudioChapter` interface, extended `BookFull` |
+| `src/lib/store.ts` | Full audio state slice (audioBookId, chapters, playback, volume, pendingSeekTime) + actions |
+| `src/components/layout/AppShell.tsx` | Mounts `AudioPlayerBar`, adds `pb-16` when audio active |
+| `src/app/book/[id]/page.tsx` | Listen/Pause/Resume button in book header, `pb-16` to scroll container |
 
-### Next Session Plan
-1. Expand Book 12 (Danish Way) from 407 to 900+ lines
-2. Extract + analyse + summarize Book 13 (Simplicity Parenting)
-3. Extract + analyse + summarize Book 14 (How to Talk So Kids Will Listen)
-4. Extract + analyse + summarize Book 15 (The Self-Driven Child)
-5. Update `summaries/_index.md` counts (0→15, 129→144)
-6. Optionally expand Books 4-6 to 900+ lines
+### Dependencies added
+- `aws4fetch` — S3v4 request signing (for the signed URL route, lightweight)
+
+---
+
+## Current state
+
+- Prisma migration applied (`add_audio_chapters`), client regenerated
+- R2 credentials in `.env`
+- 6 chapters registered for "The 33 Strategies of War" (ID: `cmn942spz006lubx8fdy4dtk8`)
+- Chapter URLs are direct public R2 URLs: `https://pub-52bbb41d6274422ca4ef5c93bf26d230.r2.dev/33%20Startegies%20-%20Audio/01_Chapter%201.mp3`
+- Dev server should be running at `http://localhost:3000` (run `npm run dev` in `reader-app/` if not)
+
+---
+
+## What needs testing
+
+Use the Chrome MCP extension to verify:
+
+1. **Open "The 33 Strategies of War"** book page
+2. **Listen button** appears in the header (next to Edit and Comments buttons)
+3. **Click Listen** — verify:
+   - Bottom player bar appears with: play/pause, skip back/forward, scrubber, time display, volume, chapter list, close
+   - Audio starts playing Chapter 1 from R2
+   - Scrubber and time display update during playback
+4. **Chapter navigation** — skip forward/backward buttons, chapter list overlay (click the list icon)
+5. **Volume** — slider and mute toggle work
+6. **Space bar** toggles play/pause when not focused on an input/editor
+7. **Navigate away** from the book — audio keeps playing
+8. **Return to the book** — Listen button shows "Pause" state (highlighted)
+9. **Close player** (X button) — audio stops, player bar disappears
+10. **Reopen** — resumes from saved position (progress saved to localStorage)
+
+### If audio doesn't play
+- Check browser console for CORS errors or 403s from R2
+- Verify R2 public access is still enabled at `https://pub-52bbb41d6274422ca4ef5c93bf26d230.r2.dev`
+- Try accessing a file URL directly in the browser to confirm R2 is serving
+
+---
+
+## R2 bucket
+- **Bucket:** `reader-audio`
+- **Public URL:** `https://pub-52bbb41d6274422ca4ef5c93bf26d230.r2.dev`
+- **Folder:** `33 Startegies - Audio/` (yes, "Startegies" is the actual folder name)
+- **Files:** `01_Chapter 1.mp3` through `06_Chapter 6.mp3` (7–46 MB each)
+- **Note:** Dev URL is rate-limited; for production, add a custom domain

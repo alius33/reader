@@ -22,11 +22,11 @@ Prof. Jiang Xueqin brings a historian's perspective to the mechanics of power an
 
 | # | Title | Status | Key Topic |
 |---|-------|--------|-----------|
-| 1 | [[01 - How Power Works]] | Pending | Mechanics of power |
-| 2 | [[02 - How Societies Collapse]] | Pending | Patterns of societal failure |
-| 3 | [[03 - Death by Gerontocracy]] | Pending | Aging leadership and decline |
-| 4 | [[04 - How Evil Triumphs]] | Pending | Mechanisms of evil's success |
-| 5 | [[05 - The Birth of Evil]] | Pending | Origins of evil |
+| 1 | [[01 - How Power Works]] | Done | Paradigms, money creation, scarcity illusion, compulsory education as brainwashing |
+| 2 | [[02 - How Societies Collapse]] | Done | Piketty's financialization, Turchin's elite overproduction, Spengler's civilizational life cycle |
+| 3 | [[03 - Death by Gerontocracy]] | Done | Ten symptoms of Western decline, cui bono analysis pointing to elderly pensioners |
+| 4 | [[04 - How Evil Triumphs]] | Done | Ritual sacrifice, cohesion through adversity, transgression as game-theoretic strategy |
+| 5 | [[05 - The Birth of Evil]] | Done | Three stages of Western religion, Gnostic cosmology, Bible as propaganda |
 | 6 | [[06 - The Psychology of Evil]] | Pending | Psychological roots of evil |
 | 7 | [[07 - Death by Meritocracy]] | Pending | Failures of meritocratic systems |
 | 8 | [[08 - Death by Bureaucracy]] | Pending | Bureaucratic decay |

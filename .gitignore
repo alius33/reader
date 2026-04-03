@@ -12,3 +12,13 @@ reader-app/node_modules/
 reader-app/.next/
 reader-app/.env
 reader-app/tsconfig.tsbuildinfo
+reader-app/public/sw.js
+
+# Inbox binary source files (too large for git)
+inbox/*.pdf
+inbox/*.epub
+inbox/*.mobi
+inbox/*.azw3
+
+# Working folders (source material, not needed in deployment)
+test 496/

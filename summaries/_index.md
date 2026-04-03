@@ -23,10 +23,14 @@ Comprehensive, general-purpose book summaries — Shortform-style depth that mak
 | [[Psychology & Decision Making]] | 16 | Cognitive biases, behavioural science, decision-making |
 | [[Mindset & Self-Mastery]] | 31 | Personal growth, resilience, focus, learning |
 | [[Personal Brand & Presence]] | 5 | Executive presence, credibility, networking |
-| [[Awareness & Protection]] | 14 | Manipulation, dark psychology, defensive social intelligence |
+| [[Awareness & Protection]] | 15 | Manipulation, dark psychology, defensive social intelligence |
 | [[Wisdom & Big Ideas]] | 10 | Collected wisdom, history, economics, broad perspective |
 | [[Parenting & Child Development]] | 23 | Brain science, discipline, communication, raising resilient kids |
-| **Total** | **181** | |
+| [[British History]] | 15 | Full sweep — Anglo-Saxons to modern Britain, including Empire and its reckoning |
+| [[World War 1]] | 10 | Origins, the fighting, the cultural cost, and the peace that failed |
+| [[World War 2]] | 10 | All theatres, all dimensions — from the Third Reich to the atomic age |
+| [[Britain & The World Wars]] | — | Synthesis — thematic and chronological connections across all 31 books |
+| **Total** | **217** | |
 
 ---
 
@@ -246,6 +250,7 @@ Start here. These are foundational reads.
 | [[Recovering From Emotionally Immature Parents - Lindsay C. Gibson]] | Lindsay C. Gibson |
 | [[Toxic Parents - Susan Forward]] | Susan Forward |
 | [[When I Say No I Feel Guilty - Manuel J. Smith]] | Manuel J. Smith |
+| [[Why Does He Do That - Lundy Bancroft]] | Lundy Bancroft |
 
 ---
 
@@ -293,3 +298,59 @@ Start here. These are foundational reads.
 | [[Positive Parenting in the Muslim Home - Noha Alshugairi & Munira Lekovic Ezzeldine]] | Noha Alshugairi & Munira Lekovic Ezzeldine |
 | [[Raising Your Spirited Child - Mary Sheedy Kurcinka]] | Mary Sheedy Kurcinka |
 | [[Nurturing Eeman in Children - Aisha Hamdan]] | Aisha Hamdan |
+
+---
+
+## British History
+
+| Title | Author |
+|-------|--------|
+| [[The English and Their History - Robert Tombs]] | Robert Tombs |
+| [[The Anglo-Saxons - Marc Morris]] | Marc Morris |
+| [[The Norman Conquest - Marc Morris]] | Marc Morris |
+| [[The Plantagenets - Dan Jones]] | Dan Jones |
+| [[The Wars of the Roses - Dan Jones]] | Dan Jones |
+| [[Foundation - Peter Ackroyd]] | Peter Ackroyd |
+| [[Tudors - Peter Ackroyd]] | Peter Ackroyd |
+| [[Revolution - Peter Ackroyd]] | Peter Ackroyd |
+| [[A History of Britain Vol 1 - Simon Schama]] | Simon Schama |
+| [[A History of Britain Vol 2 - Simon Schama]] | Simon Schama |
+| [[A History of Britain Vol 3 - Simon Schama]] | Simon Schama |
+| [[Empire - Niall Ferguson]] | Niall Ferguson |
+| [[Black and British - David Olusoga]] | David Olusoga |
+| [[The Victorians - A.N. Wilson]] | A.N. Wilson |
+| [[A History of Modern Britain - Andrew Marr]] | Andrew Marr |
+
+---
+
+## World War 1
+
+| Title | Author |
+|-------|--------|
+| [[The Sleepwalkers - Christopher Clark]] | Christopher Clark |
+| [[The War That Ended Peace - Margaret MacMillan]] | Margaret MacMillan |
+| [[The First World War - John Keegan]] | John Keegan |
+| [[A World Undone - G.J. Meyer]] | G.J. Meyer |
+| [[The Guns of August - Barbara Tuchman]] | Barbara Tuchman |
+| [[The Price of Glory Verdun 1916 - Alistair Horne]] | Alistair Horne |
+| [[The Great War - Peter Hart]] | Peter Hart |
+| [[The Great War and Modern Memory - Paul Fussell]] | Paul Fussell |
+| [[Testament of Youth - Vera Brittain]] | Vera Brittain |
+| [[Paris 1919 - Margaret MacMillan]] | Margaret MacMillan |
+
+---
+
+## World War 2
+
+| Title | Author |
+|-------|--------|
+| [[The Second World War - Antony Beevor]] | Antony Beevor |
+| [[All Hell Let Loose - Max Hastings]] | Max Hastings |
+| [[Why The Allies Won - Richard Overy]] | Richard Overy |
+| [[The Rise and Fall of the Third Reich - William Shirer]] | William Shirer |
+| [[Hitler - Ian Kershaw]] | Ian Kershaw |
+| [[Stalingrad - Antony Beevor]] | Antony Beevor |
+| [[An Army at Dawn - Rick Atkinson]] | Rick Atkinson |
+| [[D-Day The Battle for Normandy - Antony Beevor]] | Antony Beevor |
+| [[Retribution The Battle for Japan - Max Hastings]] | Max Hastings |
+| [[Postwar - Tony Judt]] | Tony Judt |

@@ -1624,3 +1624,4 @@ Yet the core ideas are timeless. The output equation, the leverage concept, the 
 - [[Thinking in Bets - Annie Duke|Thinking in Bets]] — decision quality vs. outcome quality; parallels Grove's Columbus MBO example where key results were met but the objective was missed
 - [[How to Win Friends and Influence People - Dale Carnegie|How to Win Friends and Influence People]] — the interpersonal skills foundation underlying effective one-on-ones and performance reviews
 - [[Influence - Robert Cialdini|Influence]] — social dynamics, peer pressure, and the peer-group syndrome in organizational decision-making
+
