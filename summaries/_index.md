@@ -30,7 +30,32 @@ Comprehensive, general-purpose book summaries — Shortform-style depth that mak
 | [[World War 1]] | 10 | Origins, the fighting, the cultural cost, and the peace that failed |
 | [[World War 2]] | 10 | All theatres, all dimensions — from the Third Reich to the atomic age |
 | [[Britain & The World Wars]] | — | Synthesis — thematic and chronological connections across all 31 books |
-| **Total** | **217** | |
+| [[Podcasts]] | 16 | Long-form podcast summaries — career, strategy, psychology |
+| [[Essays]] | 1 | Long-form essay summaries — canonical essays and articles |
+| **Total** | **234** | |
+
+---
+
+## Podcasts
+
+| Series | Episode | Guest | Topic |
+|--------|---------|-------|-------|
+| The Peterman Pod | [[How Corporate Politics Work - Best]] | Ethan Evans | Corporate politics, empire building, Amazon VP lessons |
+| The Peterman Pod | [[25 Year Old Staff Eng at Meta - Evan King]] | Evan King | IC3→IC6 in 3 years, speed budget, simple beats complex, startup humbling |
+| The Peterman Pod | [[Frontline Manager to Senior Director in 3 Years - Rome]] | Rome | IC→manager→Sr Director at Snapchat in 3 years, directing vs managing |
+| The Peterman Pod | [[Meta Senior Manager on Career Growth PIPs and Culture - Stefan Mai]] | Stefan Mai | M1→M2 growth, PIPs, Amazon vs Meta culture, 3X framework |
+| The Peterman Pod | [[Amazon VP on Stack Ranking PIPs and Bezos - Ethan Evans]] | Ethan Evans | Stack ranking, PIPs, Magic Loop, working with Bezos, career escalator |
+| The Peterman Pod | [[Meta IC9 on Influencing Engineers Failures and Learnings]] | Adam Ernst | Influence at IC9, ComponentKit, failures, depth-building |
+| The Peterman Pod | [[Retired Netflix Eng Director on Leetcode Regrets and Hiring]] | David Rumpka | Netflix culture, hiring, regrets, 12-year director career |
+| The Peterman Pod | [[Ex-Stripe CTO on Career Growth and Coding as a Leader]] | David Singleton | Hiring without LeetCode, coding as a leader, Stripe/Google career |
+| The Peterman Pod | [[Meta IC7 on Zuck Stories Rapid Growth and Code Machine Archetype]] | Michael Novati | Zuck interactions, code machine archetype, rapid IC7 growth |
+| The Peterman Pod | [[GoogleX Chief Scientist on Imposter Syndrome and Project Taste - Carey Nachenberg]] | Carey Nachenberg | Imposter syndrome, project taste, GoogleX, Norton Antivirus |
+| The Peterman Pod | [[26 Year Old Meta Staff on Promotions and Equity Bonuses]] | Unknown | IC6 by 26, equity bonuses, redefining expectations |
+| The Peterman Pod | [[Kubernetes Co-Creator on Engineering-Led Direction - Brendan Burns]] | Brendan Burns | Kubernetes origin, open source strategy, engineering-led direction |
+| The Peterman Pod | [[New Grad to Principal Engineer IC8 at Meta]] | Unknown | IC3→IC8 full arc, Bento framework, technical leadership |
+| The Peterman Pod | [[Airbnb Staff Eng on Calibrations and Getting Past Senior]] | Laurent | Calibration secrets, surprise factor, getting unstuck at senior |
+| The Peterman Pod | [[Industry Secrets Staff Engineers Wish They Knew - UCLA Panel]] | Panel | Career secrets from Staff engineers, advice to new grads |
+| The Peterman Pod | [[Meta IC7 Honest Demotion Story]] | Igor | Demotion from IC7, recovery, Google/Cruise/Meta career |
 
 ---
 
@@ -268,7 +293,6 @@ Start here. These are foundational reads.
 | [[Tribe of Mentors - Timothy Ferriss]] | Timothy Ferriss |
 | [[The Richest Man in Babylon - George C. Clason]] | George S. Clason |
 | [[Poor Charlie's Almanack - Charles T. Munger]] | Charles T. Munger |
-
 ---
 
 ## Parenting & Child Development
@@ -354,3 +378,11 @@ Start here. These are foundational reads.
 | [[D-Day The Battle for Normandy - Antony Beevor]] | Antony Beevor |
 | [[Retribution The Battle for Japan - Max Hastings]] | Max Hastings |
 | [[Postwar - Tony Judt]] | Tony Judt |
+
+---
+
+## Essays
+
+| Title | Author | Topic |
+|-------|--------|-------|
+| [[The AI Revolution - Tim Urban]] | Tim Urban | AI, exponential progress, existential risk |

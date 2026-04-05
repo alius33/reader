@@ -5,8 +5,10 @@ allowed-tools: Read, Write, Edit, Glob, Grep, Bash, WebSearch, WebFetch, Agent
 
 # /podcast-summarize — Podcast Summary Generation
 
-Generate a comprehensive, lecture-style podcast summary from an analysis file.
+Generate a comprehensive, chronological narrative podcast summary from an analysis file.
 This is Step 3 of the podcast pipeline: podcast-transcribe → podcast-analyse → **podcast-summarize**.
+
+**Structure:** Follow `.claude/rules/narrative-summary-structure.md` — chronological sections with collapsible exchange-by-exchange detail, NOT thematic reorganisation.
 
 **Usage:**
 - `/podcast-summarize <search term>` — summarize a specific analysis (e.g. `/podcast-summarize fridman_367`)

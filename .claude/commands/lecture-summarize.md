@@ -5,8 +5,10 @@ allowed-tools: Read, Write, Edit, Glob, Grep, Bash, WebSearch, WebFetch, Agent
 
 # /lecture-summarize — Lecture Summary
 
-Generate a comprehensive, diagram-rich lecture summary for human reading.
+Generate a comprehensive, chronological narrative lecture summary for human reading.
 These capture Prof. Jiang Xueqin's arguments, evidence, and historical narratives as he presented them.
+
+**Structure:** Follow `.claude/rules/narrative-summary-structure.md` — chronological sections with collapsible exchange-by-exchange detail, NOT thematic reorganisation. For lectures, the "exchange" is Prof. Jiang's argument flow and any Q&A.
 
 This is Step 2 of the lecture pipeline: lecture-analyse → **lecture-summarize**.
 
