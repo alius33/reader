@@ -106,6 +106,7 @@ export interface ReelMeta {
   tags: string[];
   topic: string | null;
   duration: number | null;
+  slideCount: number | null;
   createdAt: string;
   updatedAt: string;
 }

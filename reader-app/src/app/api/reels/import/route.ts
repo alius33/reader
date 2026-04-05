@@ -18,7 +18,7 @@ export async function POST(request: NextRequest) {
     userId = session.user.id;
   }
 
-  const { title, sourceUrl, sourceHandle, caption, transcript, summary, keyPoints, tags, topic, duration } =
+  const { title, sourceUrl, sourceHandle, caption, transcript, summary, keyPoints, tags, topic, duration, slideCount } =
     await request.json();
 
   if (!title || !summary) {
@@ -50,6 +50,7 @@ export async function POST(request: NextRequest) {
       tags: tags || [],
       topic: topic || null,
       duration: duration || null,
+      slideCount: slideCount || null,
       ownerId: userId,
     },
   });

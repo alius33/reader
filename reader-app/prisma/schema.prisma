@@ -259,6 +259,7 @@ model Reel {
   tags          Json     // string[]
   topic         String?
   duration      Int?
+  slideCount    Int?
   ownerId       String
   owner         User     @relation(fields: [ownerId], references: [id])
   createdAt     DateTime @default(now())

@@ -26,6 +26,7 @@ export async function GET(request: NextRequest) {
       tags: true,
       topic: true,
       duration: true,
+      slideCount: true,
       createdAt: true,
       updatedAt: true,
     },

@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { Clock, Film } from "lucide-react";
+import { Clock, Film, Images } from "lucide-react";
 import type { ReelMeta } from "@/types";
 import { cn } from "@/lib/utils";
 
@@ -90,12 +90,17 @@ export function ReelCard({ reel }: { reel: ReelMeta }) {
       )}
 
       <div className="mt-auto flex flex-wrap items-center gap-1.5">
-        {reel.duration && (
+        {reel.duration ? (
           <span className="flex items-center gap-0.5 text-[10px] text-muted-foreground">
             <Clock className="h-3 w-3" />
             {formatDuration(reel.duration)}
           </span>
-        )}
+        ) : reel.slideCount ? (
+          <span className="flex items-center gap-0.5 text-[10px] text-muted-foreground">
+            <Images className="h-3 w-3" />
+            {reel.slideCount} slides
+          </span>
+        ) : null}
         <span className="flex items-center gap-0.5 text-[10px] text-muted-foreground">
           <Film className="h-3 w-3" />
           {timeAgo(reel.createdAt)}

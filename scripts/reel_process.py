@@ -21,6 +21,9 @@ import tempfile
 import time
 from pathlib import Path
 
+import base64
+import shutil
+
 import requests
 from anthropic import Anthropic
 from dotenv import load_dotenv
@@ -189,6 +192,108 @@ def download_reel(url: str, cookies_browser: str | None = None) -> dict:
 
 
 # ---------------------------------------------------------------------------
+# Carousel pipeline (instaloader + Claude Vision)
+# ---------------------------------------------------------------------------
+
+
+def process_carousel(url: str) -> dict:
+    """Extract content from an Instagram carousel/image post using instaloader + Claude Vision."""
+    import instaloader
+    from instaloader import Post
+
+    # Extract shortcode from URL
+    shortcode = url.rstrip("/").split("/")[-1]
+
+    print(f"  Fetching carousel metadata...")
+    L = instaloader.Instaloader()
+    post = Post.from_shortcode(L.context, shortcode)
+
+    caption = post.caption or ""
+    source_handle = f"@{post.owner_username}" if post.owner_username else ""
+
+    # Collect slide image URLs
+    slide_urls = []
+    if post.typename == "GraphSidecar":
+        for node in post.get_sidecar_nodes():
+            if not node.is_video:
+                slide_urls.append(node.display_url)
+    elif not post.is_video:
+        slide_urls.append(post.url)
+
+    slide_count = len(slide_urls)
+    print(f"  Carousel: {slide_count} image slides")
+
+    if not slide_urls and not caption:
+        return {"skipped": True, "reason": "No images or caption found"}
+
+    # Extract text from each slide using Claude Vision
+    slide_texts = []
+    if slide_urls:
+        client = Anthropic(api_key=ANTHROPIC_API_KEY)
+        for i, img_url in enumerate(slide_urls):
+            try:
+                img_data = requests.get(img_url, timeout=15).content
+                b64 = base64.standard_b64encode(img_data).decode("utf-8")
+
+                resp = client.messages.create(
+                    model="claude-haiku-4-5-20251001",
+                    max_tokens=1024,
+                    messages=[{
+                        "role": "user",
+                        "content": [
+                            {"type": "image", "source": {"type": "base64", "media_type": "image/jpeg", "data": b64}},
+                            {"type": "text", "text": "Extract ALL text from this Instagram carousel slide. Return only the text content, preserving structure. If there is no text, say 'No text'."},
+                        ],
+                    }],
+                )
+                text = resp.content[0].text.strip()
+                if text.lower() != "no text" and len(text) > 5:
+                    slide_texts.append(f"[Slide {i + 1}]\n{text}")
+                    print(f"    Slide {i + 1}: {len(text)} chars extracted")
+                else:
+                    print(f"    Slide {i + 1}: no text")
+            except Exception as e:
+                print(f"    Slide {i + 1}: failed ({e})")
+
+    # Combine all content for summarization
+    combined = ""
+    if caption:
+        combined += f"Caption:\n{caption}\n\n"
+    if slide_texts:
+        combined += "Slide content:\n" + "\n\n".join(slide_texts)
+
+    if not combined.strip():
+        return {"skipped": True, "reason": "No extractable content"}
+
+    # Summarize
+    print(f"  Summarizing carousel...")
+    summary_data = summarize_reel(combined, None)
+
+    # Import
+    import_data = {
+        "title": summary_data.get("title", "Untitled Post"),
+        "sourceUrl": url,
+        "sourceHandle": source_handle,
+        "caption": caption,
+        "transcript": "\n\n".join(slide_texts) if slide_texts else None,
+        "summary": summary_data.get("summary", ""),
+        "keyPoints": summary_data.get("keyPoints", []),
+        "tags": summary_data.get("tags", []),
+        "topic": summary_data.get("topic"),
+        "duration": None,
+        "slideCount": slide_count,
+    }
+
+    print(f"  Importing: {import_data['title']}")
+    result = import_reel(import_data)
+
+    if result.get("skipped"):
+        return {"skipped": True, "reason": "Duplicate URL", "title": result.get("title")}
+
+    return {"imported": True, "id": result.get("id"), "title": import_data["title"]}
+
+
+# ---------------------------------------------------------------------------
 # Claude summarization
 # ---------------------------------------------------------------------------
 
@@ -238,9 +343,15 @@ def import_reel(data: dict) -> dict:
 
 
 def process_reel_from_url(url: str, cookies_browser: str | None, use_best: bool) -> dict:
-    """Full pipeline for a single reel URL."""
+    """Full pipeline for a single reel URL. Falls back to carousel pipeline for image posts."""
     print(f"\n  Downloading: {url}")
-    meta = download_reel(url, cookies_browser)
+    try:
+        meta = download_reel(url, cookies_browser)
+    except RuntimeError as e:
+        if "No video file found" in str(e):
+            print(f"  No video — trying carousel pipeline...")
+            return process_carousel(url)
+        raise
 
     return _process_reel(
         video_path=meta["video_path"],
