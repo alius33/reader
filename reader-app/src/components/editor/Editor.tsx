@@ -2,30 +2,7 @@
 
 import { useEffect, useRef, useState, useCallback } from "react";
 import { useEditor, EditorContent } from "@tiptap/react";
-import StarterKit from "@tiptap/starter-kit";
-import Underline from "@tiptap/extension-underline";
-import { TableWithAlignment } from "./extensions/TableAlignment";
-import TableRow from "@tiptap/extension-table-row";
-import TableCell from "@tiptap/extension-table-cell";
-import TableHeader from "@tiptap/extension-table-header";
-import Highlight from "@tiptap/extension-highlight";
-import TextStyle from "@tiptap/extension-text-style";
-import Color from "@tiptap/extension-color";
-import TextAlign from "@tiptap/extension-text-align";
-import Placeholder from "@tiptap/extension-placeholder";
-import Typography from "@tiptap/extension-typography";
-import Link from "@tiptap/extension-link";
-import Superscript from "@tiptap/extension-superscript";
-import Subscript from "@tiptap/extension-subscript";
-import { FontSize } from "./extensions/FontSize";
-import { Indent } from "./extensions/Indent";
-import { CalloutNode } from "./extensions/CalloutNode";
-import { MermaidNode } from "./extensions/MermaidNode";
-import { ChartNode } from "./extensions/ChartNode";
-import { D3Node } from "./extensions/D3Node";
-import { WikilinkMark } from "./extensions/WikilinkMark";
-import { CommentMark } from "./extensions/CommentMark";
-import { SearchAndReplace } from "./extensions/SearchAndReplace";
+import { getEditorExtensions } from "./extensions";
 import { Ribbon } from "./ribbon/Ribbon";
 import { ReadToolbar } from "./ReadToolbar";
 import { FloatingToolbar } from "./FloatingToolbar";
@@ -58,34 +35,7 @@ export function Editor({ content, onUpdate, mode = "read", onComment, focusMode 
   const contentZoom = useStore((s) => s.contentZoom);
 
   const editor = useEditor({
-    extensions: [
-      StarterKit.configure({
-        heading: { levels: [1, 2, 3, 4] },
-      }),
-      Underline,
-      TableWithAlignment.configure({ resizable: true }),
-      TableRow,
-      TableCell,
-      TableHeader,
-      Highlight.configure({ multicolor: true }),
-      TextStyle,
-      Color,
-      TextAlign.configure({ types: ["heading", "paragraph"] }),
-      Placeholder.configure({ placeholder: "Start writing..." }),
-      Typography,
-      Link.configure({ openOnClick: false, HTMLAttributes: { target: "_blank" } }),
-      CalloutNode,
-      MermaidNode,
-      ChartNode,
-      D3Node,
-      WikilinkMark,
-      CommentMark,
-      Superscript,
-      Subscript,
-      FontSize,
-      Indent,
-      SearchAndReplace,
-    ],
+    extensions: getEditorExtensions(),
     content,
     editable,
     onUpdate: ({ editor: ed }) => {
@@ -125,11 +75,21 @@ export function Editor({ content, onUpdate, mode = "read", onComment, focusMode 
   // In read mode on mobile, prevent the virtual keyboard from appearing when
   // the user selects text. The editor stays editable so Tiptap commands work,
   // but inputmode="none" tells the browser not to open the keyboard.
+  // Also suppress the native context menu so our custom bubble takes priority.
   useEffect(() => {
     if (!editor || !isMobile) return;
     const el = editor.view.dom as HTMLElement;
     if (mode === "read") {
       el.setAttribute("inputmode", "none");
+      // Suppress native context menu (Android "Cut/Copy/Paste" bar)
+      const suppressMenu = (e: Event) => {
+        const sel = window.getSelection();
+        if (sel && !sel.isCollapsed) {
+          e.preventDefault();
+        }
+      };
+      el.addEventListener("contextmenu", suppressMenu);
+      return () => el.removeEventListener("contextmenu", suppressMenu);
     } else {
       el.removeAttribute("inputmode");
     }
@@ -162,7 +122,7 @@ export function Editor({ content, onUpdate, mode = "read", onComment, focusMode 
       )}
       {/* Mobile: bubble appears above selected text with colour swatches — no toolbar tap needed */}
       {isMobile && mode === "read" && editor && (
-        <MobileSelectionBubble editor={editor} />
+        <MobileSelectionBubble editor={editor} onComment={onComment} />
       )}
 
       {/* Floating toolbar in focus mode */}

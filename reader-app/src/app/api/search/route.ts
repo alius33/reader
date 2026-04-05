@@ -1,9 +1,12 @@
 import { NextRequest, NextResponse } from "next/server";
 import { prisma } from "@/lib/db";
+import { requireAuth } from "@/lib/auth-helpers";
 import type { SearchResult } from "@/types";
 
 export async function GET(request: NextRequest) {
   try {
+    const { error } = await requireAuth();
+    if (error) return error;
     const q = request.nextUrl.searchParams.get("q")?.trim();
 
     if (!q) {

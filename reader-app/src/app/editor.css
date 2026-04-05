@@ -288,16 +288,17 @@
 .ProseMirror table[data-table-align="right"] { margin-left: auto !important; }
 
 /* Highlighted text should always use dark text for readability on light backgrounds.
-   Without this, dark mode's light text color is unreadable on pastel highlight backgrounds. */
+   Without this, dark mode's light text color is unreadable on pastel highlight backgrounds.
+   Exception: elements with explicit inline color (e.g. <b style="color: #e74c3c">) keep their color. */
 .ProseMirror mark {
   color: #1a1a1a !important;
 }
-.ProseMirror mark strong,
-.ProseMirror mark em,
-.ProseMirror mark u,
-.ProseMirror mark s,
-.ProseMirror mark code,
-.ProseMirror mark a {
+.ProseMirror mark strong:not([style*="color"]),
+.ProseMirror mark em:not([style*="color"]),
+.ProseMirror mark u:not([style*="color"]),
+.ProseMirror mark s:not([style*="color"]),
+.ProseMirror mark code:not([style*="color"]),
+.ProseMirror mark a:not([style*="color"]) {
   color: inherit !important;
 }
 

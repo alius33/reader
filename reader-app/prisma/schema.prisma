@@ -7,6 +7,69 @@ datasource db {
   url      = env("DATABASE_URL")
 }
 
+enum UserRole {
+  ADULT
+  CHILD
+}
+
+model User {
+  id            String    @id @default(cuid())
+  name          String?
+  email         String?   @unique
+  emailVerified DateTime?
+  image         String?
+  role          UserRole  @default(ADULT)
+  accounts      Account[]
+  sessions      Session[]
+  shareLinks       ShareLink[]
+  epubHighlights   EpubHighlight[]
+  epubBookmarks    EpubBookmark[]
+  readingProgress  ReadingProgress[]
+  readingPreference ReadingPreference?
+  ownedBooks       Book[]
+  bookViews        BookView[]
+  comments         Comment[]
+  mentionsSent     Mention[]  @relation("mentionFrom")
+  mentionsReceived Mention[]  @relation("mentionTo")
+  reels            Reel[]
+  createdAt     DateTime  @default(now())
+  updatedAt     DateTime  @updatedAt
+}
+
+model Account {
+  id                String  @id @default(cuid())
+  userId            String
+  type              String
+  provider          String
+  providerAccountId String
+  refresh_token     String?
+  access_token      String?
+  expires_at        Int?
+  token_type        String?
+  scope             String?
+  id_token          String?
+  session_state     String?
+  user              User    @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@unique([provider, providerAccountId])
+}
+
+model Session {
+  id           String   @id @default(cuid())
+  sessionToken String   @unique
+  userId       String
+  expires      DateTime
+  user         User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+}
+
+model VerificationToken {
+  identifier String
+  token      String   @unique
+  expires    DateTime
+
+  @@unique([identifier, token])
+}
+
 model Book {
   id               String           @id @default(cuid())
   title            String
@@ -27,6 +90,18 @@ model Book {
   crossReferences  CrossReference[] @relation("sourceBook")
   referencedBy     CrossReference[] @relation("targetBook")
   audioChapters    Json?            // AudioChapter[] — [{ number, title, url }]
+  private          Boolean          @default(false) // Only visible to owner (your account)
+  ownerId          String?          // User who owns private books
+  owner            User?            @relation(fields: [ownerId], references: [id])
+  originalFileKey  String?          // R2 object key for EPUB/PDF
+  originalFileType String?          // "epub" or "pdf"
+  coverImageKey    String?          // R2 key for extracted cover
+  shareLinks       ShareLink[]
+  epubHighlights   EpubHighlight[]
+  epubBookmarks    EpubBookmark[]
+  readingProgress  ReadingProgress[]
+  bookViews        BookView[]
+  mentions         Mention[]
   lastViewedAt     DateTime?
   createdAt        DateTime         @default(now())
   updatedAt        DateTime         @updatedAt
@@ -44,16 +119,20 @@ model Category {
 }
 
 model Comment {
-  id           String   @id @default(cuid())
+  id           String    @id @default(cuid())
   markId       String
   bookId       String
-  book         Book     @relation(fields: [bookId], references: [id], onDelete: Cascade)
+  book         Book      @relation(fields: [bookId], references: [id], onDelete: Cascade)
+  userId       String
+  user         User      @relation(fields: [userId], references: [id], onDelete: Cascade)
   selectedText String
   commentText  String
-  createdAt    DateTime @default(now())
-  updatedAt    DateTime @updatedAt
+  mentions     Mention[]
+  createdAt    DateTime  @default(now())
+  updatedAt    DateTime  @updatedAt
 
-  @@unique([bookId, markId])
+  @@unique([bookId, markId, userId])
+  @@index([userId, bookId])
 }
 
 model CrossReference {
@@ -66,4 +145,125 @@ model CrossReference {
   context      String?
 
   @@unique([sourceBookId, targetTitle])
+}
+
+model ShareLink {
+  id        String    @id @default(cuid())
+  token     String    @unique
+  bookId    String
+  book      Book      @relation(fields: [bookId], references: [id], onDelete: Cascade)
+  userId    String
+  user      User      @relation(fields: [userId], references: [id])
+  active    Boolean   @default(true)
+  viewCount Int       @default(0)
+  expiresAt DateTime?
+  createdAt DateTime  @default(now())
+
+  @@index([token])
+  @@index([bookId])
+}
+
+model EpubHighlight {
+  id       String   @id @default(cuid())
+  userId   String
+  user     User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  bookId   String
+  book     Book     @relation(fields: [bookId], references: [id], onDelete: Cascade)
+  cfiRange String
+  color    String   @default("#fef08a")
+  text     String
+  note     String?
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  @@index([userId, bookId])
+}
+
+model EpubBookmark {
+  id      String   @id @default(cuid())
+  userId  String
+  user    User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  bookId  String
+  book    Book     @relation(fields: [bookId], references: [id], onDelete: Cascade)
+  cfi     String
+  label   String?
+  createdAt DateTime @default(now())
+
+  @@index([userId, bookId])
+}
+
+model ReadingProgress {
+  id         String   @id @default(cuid())
+  userId     String
+  user       User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  bookId     String
+  book       Book     @relation(fields: [bookId], references: [id], onDelete: Cascade)
+  cfi        String?
+  page       Int?
+  percentage Float    @default(0)
+  updatedAt  DateTime @updatedAt
+
+  @@unique([userId, bookId])
+}
+
+model ReadingPreference {
+  id         String @id @default(cuid())
+  userId     String @unique
+  user       User   @relation(fields: [userId], references: [id], onDelete: Cascade)
+  fontSize   Int    @default(18)
+  fontFamily String @default("system")
+  theme      String @default("light")
+  lineHeight Float  @default(1.6)
+  margins    String @default("medium")
+}
+
+model BookView {
+  id       String   @id @default(cuid())
+  userId   String
+  user     User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  bookId   String
+  book     Book     @relation(fields: [bookId], references: [id], onDelete: Cascade)
+  viewedAt DateTime @default(now())
+
+  @@unique([userId, bookId])
+  @@index([userId, viewedAt])
+}
+
+model Mention {
+  id         String   @id @default(cuid())
+  fromUserId String
+  fromUser   User     @relation("mentionFrom", fields: [fromUserId], references: [id], onDelete: Cascade)
+  toUserId   String
+  toUser     User     @relation("mentionTo", fields: [toUserId], references: [id], onDelete: Cascade)
+  bookId     String
+  book       Book     @relation(fields: [bookId], references: [id], onDelete: Cascade)
+  commentId  String?
+  comment    Comment? @relation(fields: [commentId], references: [id], onDelete: SetNull)
+  text       String   // Preview of the comment/highlight text
+  read       Boolean  @default(false)
+  createdAt  DateTime @default(now())
+
+  @@index([toUserId, read])
+}
+
+model Reel {
+  id            String   @id @default(cuid())
+  title         String
+  sourceUrl     String?  @unique
+  sourceHandle  String?
+  caption       String?
+  transcript    String?
+  plainText     String
+  summary       String
+  keyPoints     Json     // string[]
+  tags          Json     // string[]
+  topic         String?
+  duration      Int?
+  ownerId       String
+  owner         User     @relation(fields: [ownerId], references: [id])
+  createdAt     DateTime @default(now())
+  updatedAt     DateTime @updatedAt
+
+  @@index([ownerId])
+  @@index([topic])
 }

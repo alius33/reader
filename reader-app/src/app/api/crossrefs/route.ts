@@ -1,8 +1,11 @@
 import { NextResponse } from "next/server";
 import { prisma } from "@/lib/db";
+import { requireAuth } from "@/lib/auth-helpers";
 
 export async function GET() {
   try {
+    const { error } = await requireAuth();
+    if (error) return error;
     const crossRefs = await prisma.crossReference.findMany({
       where: { targetBookId: { not: null } },
       select: {

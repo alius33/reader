@@ -27,6 +27,9 @@ export interface BookFull extends BookMeta {
   originalMarkdown: string | null;
   toc: TocEntry[] | null;
   audioChapters: AudioChapter[] | null;
+  originalFileKey: string | null;
+  originalFileType: string | null;
+  coverImageKey: string | null;
   comments: CommentData[];
   crossReferences: CrossRefData[];
   referencedBy: CrossRefData[];
@@ -67,8 +70,11 @@ export interface CommentData {
   id: string;
   markId: string;
   bookId: string;
+  userId: string;
   selectedText: string;
   commentText: string;
+  isMention?: boolean;
+  user?: { name: string | null; image: string | null };
   createdAt: string;
   updatedAt: string;
 }
@@ -88,4 +94,24 @@ export interface SearchResult {
   categoryName: string;
   snippet: string;
   rank: number;
+}
+
+export interface ReelMeta {
+  id: string;
+  title: string;
+  sourceUrl: string | null;
+  sourceHandle: string | null;
+  summary: string;
+  keyPoints: string[];
+  tags: string[];
+  topic: string | null;
+  duration: number | null;
+  createdAt: string;
+  updatedAt: string;
+}
+
+export interface ReelFull extends ReelMeta {
+  caption: string | null;
+  transcript: string | null;
+  plainText: string;
 }

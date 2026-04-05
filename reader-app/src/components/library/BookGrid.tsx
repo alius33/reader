@@ -6,16 +6,20 @@ import { BookCard } from "./BookCard";
 import { Search } from "lucide-react";
 import type { BookMeta } from "@/types";
 
-type SortKey = "title" | "author" | "year" | "category" | "updatedAt";
+type SortKey = "title" | "author" | "year" | "category" | "updatedAt" | "lastRead" | "progress";
 
 export function BookGrid() {
   const [search, setSearch] = useState("");
   const [sortBy, setSortBy] = useState<SortKey>("title");
   const [filterCategory, setFilterCategory] = useState<string>("all");
+  const [filterStatus, setFilterStatus] = useState<string>("all");
 
   const { data: books = [], isLoading } = useQuery<BookMeta[]>({
     queryKey: ["books"],
-    queryFn: () => fetch("/api/books").then((r) => r.json()),
+    queryFn: () => fetch("/api/books").then((r) => {
+      if (!r.ok) return [];
+      return r.json();
+    }),
   });
 
   const categories = useMemo(() => {
@@ -28,6 +32,18 @@ export function BookGrid() {
 
     if (filterCategory !== "all") {
       result = result.filter((b) => b.categoryName === filterCategory);
+    }
+
+    if (filterStatus !== "all") {
+      result = result.filter((b) => {
+        const pct = (b as BookMeta & { readingPercentage?: number | null }).readingPercentage ?? null;
+        const hasFile = !!(b as BookMeta & { originalFileType?: string }).originalFileType;
+        if (filterStatus === "epub") return hasFile;
+        if (filterStatus === "in-progress") return pct !== null && pct > 0 && pct < 100;
+        if (filterStatus === "not-started") return pct === null || pct === 0;
+        if (filterStatus === "completed") return pct !== null && pct >= 100;
+        return true;
+      });
     }
 
     if (search.trim()) {
@@ -55,13 +71,23 @@ export function BookGrid() {
             new Date(b.updatedAt).getTime() -
             new Date(a.updatedAt).getTime()
           );
+        case "lastRead": {
+          const aRead = (a as BookMeta & { lastReadAt?: string | null }).lastReadAt;
+          const bRead = (b as BookMeta & { lastReadAt?: string | null }).lastReadAt;
+          return (bRead ? new Date(bRead).getTime() : 0) - (aRead ? new Date(aRead).getTime() : 0);
+        }
+        case "progress": {
+          const aPct = (a as BookMeta & { readingPercentage?: number | null }).readingPercentage ?? 0;
+          const bPct = (b as BookMeta & { readingPercentage?: number | null }).readingPercentage ?? 0;
+          return bPct - aPct;
+        }
         default:
           return 0;
       }
     });
 
     return result;
-  }, [books, search, sortBy, filterCategory]);
+  }, [books, search, sortBy, filterCategory, filterStatus]);
 
   if (isLoading) {
     return (
@@ -114,6 +140,20 @@ export function BookGrid() {
           <option value="year">Sort by year</option>
           <option value="category">Sort by category</option>
           <option value="updatedAt">Sort by date added</option>
+          <option value="lastRead">Sort by recently read</option>
+          <option value="progress">Sort by progress</option>
+        </select>
+
+        <select
+          value={filterStatus}
+          onChange={(e) => setFilterStatus(e.target.value)}
+          className="rounded-md border border-border bg-background px-3 py-2 text-sm focus:outline-none focus:ring-1 focus:ring-ring"
+        >
+          <option value="all">All status</option>
+          <option value="epub">Has EPUB/PDF</option>
+          <option value="in-progress">In progress</option>
+          <option value="not-started">Not started</option>
+          <option value="completed">Completed</option>
         </select>
 
         <span className="text-sm text-muted-foreground">

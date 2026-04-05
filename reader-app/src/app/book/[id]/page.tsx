@@ -12,7 +12,10 @@ import {
   ArrowLeft,
   Headphones,
   Pause,
+  Share2,
 } from "lucide-react";
+import { toast } from "sonner";
+import Link from "next/link";
 import { AppShell } from "@/components/layout/AppShell";
 import { TableOfContents } from "@/components/layout/TableOfContents";
 import { CommentsPanel } from "@/components/layout/CommentsPanel";
@@ -339,6 +342,15 @@ export default function BookPage() {
                         </>
                       )}
                     </button>
+                    {book.originalFileKey && (
+                      <Link
+                        href={`/read/${id}`}
+                        className="flex items-center gap-1.5 rounded-md border border-border px-3 py-1.5 text-xs font-medium hover:bg-muted transition-colors"
+                      >
+                        <BookOpen className="h-3.5 w-3.5" />
+                        Read {(book.originalFileType ?? "").toUpperCase()}
+                      </Link>
+                    )}
                     {(book.audioChapters?.length ?? 0) > 0 && (
                       <button
                         onClick={handleListen}
@@ -355,6 +367,29 @@ export default function BookPage() {
                         {audioBookId === book.id ? (isPlaying ? "Pause" : "Resume") : "Listen"}
                       </button>
                     )}
+                    <button
+                      onClick={async () => {
+                        try {
+                          const res = await fetch("/api/shares", {
+                            method: "POST",
+                            headers: { "Content-Type": "application/json" },
+                            body: JSON.stringify({ bookId: id }),
+                          });
+                          if (!res.ok) throw new Error("Failed to create link");
+                          const link = await res.json();
+                          const url = `${window.location.origin}/s/${link.token}`;
+                          await navigator.clipboard.writeText(url);
+                          toast.success("Share link copied to clipboard");
+                        } catch {
+                          toast.error("Failed to create share link");
+                        }
+                      }}
+                      className="flex items-center gap-1.5 rounded-md border border-border px-3 py-1.5 text-xs font-medium hover:bg-muted transition-colors"
+                      title="Create share link"
+                    >
+                      <Share2 className="h-3.5 w-3.5" />
+                      Share
+                    </button>
                     <button
                       onClick={toggleCommentsPanel}
                       className="relative flex items-center gap-1.5 rounded-md border border-border px-3 py-1.5 text-xs font-medium hover:bg-muted transition-colors"

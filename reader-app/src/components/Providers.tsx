@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import { SessionProvider } from "next-auth/react";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { useStore, FONT_OPTIONS } from "@/lib/store";
 import type { FontFamily } from "@/lib/store";
@@ -71,12 +72,14 @@ export default function Providers({ children }: { children: React.ReactNode }) {
   );
 
   return (
-    <QueryClientProvider client={queryClient}>
-      <PrefsInit />
-      <DarkModeSync />
-      <FontSync />
-      <CommandPalette />
-      {children}
-    </QueryClientProvider>
+    <SessionProvider>
+      <QueryClientProvider client={queryClient}>
+        <PrefsInit />
+        <DarkModeSync />
+        <FontSync />
+        <CommandPalette />
+        {children}
+      </QueryClientProvider>
+    </SessionProvider>
   );
 }

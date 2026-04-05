@@ -1,8 +1,12 @@
 import { NextRequest, NextResponse } from "next/server";
 import { prisma } from "@/lib/db";
+import { requireAuth } from "@/lib/auth-helpers";
+import { parseMentions } from "@/lib/mentions";
 
 export async function POST(request: NextRequest) {
   try {
+    const { session, error } = await requireAuth();
+    if (error) return error;
     const body = await request.json();
     const { bookId, markId, selectedText, commentText } = body;
 
@@ -14,8 +18,22 @@ export async function POST(request: NextRequest) {
     }
 
     const comment = await prisma.comment.create({
-      data: { bookId, markId, selectedText, commentText },
+      data: { bookId, markId, selectedText, commentText, userId: session.user.id },
     });
+
+    // Parse @mentions and create Mention records
+    const mentions = await parseMentions(commentText, session.user.id);
+    if (mentions.length > 0) {
+      await prisma.mention.createMany({
+        data: mentions.map((m) => ({
+          fromUserId: session.user.id,
+          toUserId: m.userId,
+          bookId,
+          commentId: comment.id,
+          text: commentText.slice(0, 200),
+        })),
+      });
+    }
 
     return NextResponse.json(comment, { status: 201 });
   } catch (error) {

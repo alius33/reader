@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { BookOpen } from "lucide-react";
+import { BookOpen, BookText } from "lucide-react";
 import type { BookMeta } from "@/types";
 import { cn } from "@/lib/utils";
 
@@ -20,16 +20,36 @@ const CATEGORY_COLORS: Record<string, string> = {
   "Workplace Navigation": "bg-cyan-100 text-cyan-700 dark:bg-cyan-900/30 dark:text-cyan-400",
 };
 
+type BookWithExtras = BookMeta & {
+  originalFileType?: string | null;
+  coverImageKey?: string | null;
+  readingPercentage?: number | null;
+  lastReadAt?: string | null;
+};
+
 export function BookCard({ book }: { book: BookMeta }) {
+  const ext = book as BookWithExtras;
   const colorClass =
     CATEGORY_COLORS[book.categoryName] ||
     "bg-gray-100 text-gray-700 dark:bg-gray-900/30 dark:text-gray-400";
+  const readPct = ext.readingPercentage ?? null;
 
   return (
     <Link
       href={`/book/${book.id}`}
-      className="group flex flex-col rounded-lg border border-border bg-card p-4 transition-shadow hover:shadow-md"
+      className="group relative flex flex-col rounded-lg border border-border bg-card p-4 transition-shadow hover:shadow-md overflow-hidden"
     >
+      {/* Cover image */}
+      {ext.coverImageKey && (
+        <div className="mb-3 h-32 w-full rounded overflow-hidden bg-muted">
+          <img
+            src={`/api/books/cover/${ext.coverImageKey}`}
+            alt=""
+            className="h-full w-full object-cover"
+          />
+        </div>
+      )}
+
       <div className="mb-2 flex items-start justify-between gap-2">
         <h3 className="text-sm font-semibold leading-tight group-hover:text-primary">
           {book.title}
@@ -54,6 +74,13 @@ export function BookCard({ book }: { book: BookMeta }) {
             {Math.round(book.wordCount / 1000)}k words
           </span>
         )}
+
+        {ext.originalFileType && (
+          <span className="flex items-center gap-0.5 text-[10px] text-muted-foreground">
+            <BookText className="h-3 w-3" />
+            {ext.originalFileType.toUpperCase()}
+          </span>
+        )}
       </div>
 
       {(book.tags ?? []).length > 0 && (
@@ -71,6 +98,15 @@ export function BookCard({ book }: { book: BookMeta }) {
               +{(book.tags ?? []).length - 4}
             </span>
           )}
+        </div>
+      )}
+      {/* Progress bar */}
+      {readPct !== null && readPct > 0 && (
+        <div className="absolute bottom-0 left-0 right-0 h-1 bg-muted">
+          <div
+            className="h-full bg-primary transition-all"
+            style={{ width: `${Math.min(readPct, 100)}%` }}
+          />
         </div>
       )}
     </Link>

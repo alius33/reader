@@ -2,6 +2,7 @@
 
 import { useState, useMemo } from "react";
 import Link from "next/link";
+import { useSession, signOut } from "next-auth/react";
 import { useQuery } from "@tanstack/react-query";
 import { useStore } from "@/lib/store";
 import { useIsMobile } from "@/lib/useMediaQuery";
@@ -13,10 +14,15 @@ import {
   PanelLeftClose,
   PanelLeft,
   Clock,
+  LogOut,
+  Share2,
+  AtSign,
+  Film,
 } from "lucide-react";
 import type { BookMeta } from "@/types";
 
 export function Sidebar() {
+  const { data: session } = useSession();
   const sidebarOpen = useStore((s) => s.sidebarOpen);
   const toggleSidebar = useStore((s) => s.toggleSidebar);
   const activeBookId = useStore((s) => s.activeBookId);
@@ -30,9 +36,20 @@ export function Sidebar() {
     new Set()
   );
 
+  const { data: mentionCount = 0 } = useQuery<number>({
+    queryKey: ["mentions-count"],
+    queryFn: () => fetch("/api/mentions").then((r) => r.ok ? r.json() : []).then((m: unknown[]) => m.length),
+    enabled: !!session,
+    refetchInterval: 60000,
+  });
+
   const { data: books = [] } = useQuery<BookMeta[]>({
     queryKey: ["books"],
-    queryFn: () => fetch("/api/books").then((r) => r.json()),
+    queryFn: () => fetch("/api/books").then((r) => {
+      if (!r.ok) return [];
+      return r.json();
+    }),
+    enabled: !!session,
   });
 
   type CategoryEntry = {
@@ -147,6 +164,38 @@ export function Sidebar() {
         </div>
       </div>
 
+      {/* Quick links */}
+      <div className="border-b border-border px-3 py-2 space-y-0.5">
+        <Link
+          href="/reels"
+          onClick={handleNavClick}
+          className="flex items-center gap-2 rounded-md px-2 py-1 text-sm text-muted-foreground hover:bg-accent hover:text-foreground"
+        >
+          <Film className="h-3.5 w-3.5" />
+          Reels
+        </Link>
+        <Link
+          href="/shares"
+          onClick={handleNavClick}
+          className="flex items-center gap-2 rounded-md px-2 py-1 text-sm text-muted-foreground hover:bg-accent hover:text-foreground"
+        >
+          <Share2 className="h-3.5 w-3.5" />
+          Shared Links
+        </Link>
+        {mentionCount > 0 && (
+          <button
+            onClick={handleNavClick}
+            className="flex w-full items-center gap-2 rounded-md px-2 py-1 text-sm text-primary hover:bg-accent"
+          >
+            <AtSign className="h-3.5 w-3.5" />
+            Mentions
+            <span className="ml-auto rounded-full bg-primary px-1.5 text-[10px] text-primary-foreground">
+              {mentionCount}
+            </span>
+          </button>
+        )}
+      </div>
+
       {/* Content */}
       <div className="flex-1 overflow-y-auto px-2 py-2">
         {/* Recent */}
@@ -255,8 +304,31 @@ export function Sidebar() {
       </div>
 
       {/* Footer */}
-      <div className="border-t border-border px-4 py-2 text-xs text-muted-foreground">
-        {books.length} books
+      <div className="border-t border-border px-3 py-2">
+        <div className="flex items-center gap-2">
+          {session?.user?.image ? (
+            <img
+              src={session.user.image}
+              alt=""
+              className="h-6 w-6 rounded-full"
+              referrerPolicy="no-referrer"
+            />
+          ) : (
+            <div className="flex h-6 w-6 items-center justify-center rounded-full bg-accent text-xs font-medium">
+              {session?.user?.name?.[0] ?? "?"}
+            </div>
+          )}
+          <span className="flex-1 truncate text-xs text-muted-foreground">
+            {session?.user?.name ?? session?.user?.email ?? `${books.length} books`}
+          </span>
+          <button
+            onClick={() => signOut()}
+            className="rounded-md p-1 hover:bg-accent"
+            title="Sign out"
+          >
+            <LogOut className="h-3.5 w-3.5 text-muted-foreground" />
+          </button>
+        </div>
       </div>
     </aside>
   );

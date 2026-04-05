@@ -1,4 +1,5 @@
 import { NextRequest, NextResponse } from "next/server";
+import { requireAuth } from "@/lib/auth-helpers";
 
 const R2_PUBLIC = "https://pub-52bbb41d6274422ca4ef5c93bf26d230.r2.dev";
 
@@ -9,6 +10,9 @@ type RouteContext = { params: Promise<{ key: string[] }> };
  * Supports Range requests so the browser can seek.
  */
 export async function GET(request: NextRequest, context: RouteContext) {
+  const { error } = await requireAuth();
+  if (error) return error;
+
   const { key } = await context.params;
   const objectKey = key.map(decodeURIComponent).join("/");
   const r2Url = `${R2_PUBLIC}/${encodeURIComponent(objectKey).replace(/%2F/g, "/")}`;

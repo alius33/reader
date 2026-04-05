@@ -1,5 +1,6 @@
 import { NextRequest, NextResponse } from "next/server";
 import { prisma } from "@/lib/db";
+import { requireAuth } from "@/lib/auth-helpers";
 
 type RouteContext = { params: Promise<{ id: string }> };
 
@@ -8,6 +9,8 @@ export async function GET(
   context: RouteContext,
 ) {
   try {
+    const { error } = await requireAuth();
+    if (error) return error;
     const { id } = await context.params;
 
     const book = await prisma.book.findUnique({
