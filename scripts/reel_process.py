@@ -192,11 +192,82 @@ def download_reel(url: str, cookies_browser: str | None = None) -> dict:
 
 
 # ---------------------------------------------------------------------------
+# Video frame text extraction (Claude Vision)
+# ---------------------------------------------------------------------------
+
+
+def extract_text_from_video_frames(video_path: str, num_frames: int = 4) -> str | None:
+    """Extract frames from a video and use Claude Vision to read on-screen text."""
+    tmpdir = tempfile.mkdtemp(prefix="frames_")
+    try:
+        # Get video duration
+        probe = subprocess.run(
+            ["ffmpeg", "-i", video_path, "-f", "null", "-"],
+            capture_output=True, text=True, timeout=30,
+        )
+        duration_match = re.search(r"Duration: (\d+):(\d+):(\d+)", probe.stderr)
+        total_seconds = 10  # default
+        if duration_match:
+            h, m, s = int(duration_match.group(1)), int(duration_match.group(2)), int(duration_match.group(3))
+            total_seconds = max(h * 3600 + m * 60 + s, 1)
+
+        # Extract frames at evenly spaced intervals
+        interval = max(total_seconds / (num_frames + 1), 1)
+        timestamps = [interval * (i + 1) for i in range(num_frames)]
+
+        frame_paths = []
+        for i, ts in enumerate(timestamps):
+            out_path = os.path.join(tmpdir, f"frame_{i}.jpg")
+            subprocess.run(
+                ["ffmpeg", "-y", "-ss", str(ts), "-i", video_path, "-frames:v", "1", "-q:v", "2", out_path],
+                capture_output=True, timeout=30,
+            )
+            if os.path.exists(out_path) and os.path.getsize(out_path) > 1000:
+                frame_paths.append(out_path)
+
+        if not frame_paths:
+            return None
+
+        # Use Claude Vision to extract text from each frame
+        client = Anthropic(api_key=ANTHROPIC_API_KEY)
+        texts = []
+        seen = set()
+
+        for fpath in frame_paths:
+            with open(fpath, "rb") as f:
+                img_data = f.read()
+            b64 = base64.standard_b64encode(img_data).decode("utf-8")
+
+            resp = client.messages.create(
+                model="claude-haiku-4-5-20251001",
+                max_tokens=1024,
+                messages=[{
+                    "role": "user",
+                    "content": [
+                        {"type": "image", "source": {"type": "base64", "media_type": "image/jpeg", "data": b64}},
+                        {"type": "text", "text": "Extract ALL text visible in this video frame. Return only the text, preserving structure. If no text, say 'No text'."},
+                    ],
+                }],
+            )
+            text = resp.content[0].text.strip()
+            # Deduplicate similar frames
+            text_key = text[:50].lower()
+            if text.lower() != "no text" and len(text) > 5 and text_key not in seen:
+                texts.append(text)
+                seen.add(text_key)
+
+        return "\n\n".join(texts) if texts else None
+
+    finally:
+        shutil.rmtree(tmpdir, ignore_errors=True)
+
+
+# ---------------------------------------------------------------------------
 # Carousel pipeline (instaloader + Claude Vision)
 # ---------------------------------------------------------------------------
 
 
-def process_carousel(url: str) -> dict:
+def process_carousel(url: str, topic_override: str | None = None) -> dict:
     """Extract content from an Instagram carousel/image post using instaloader + Claude Vision."""
     import instaloader
     from instaloader import Post
@@ -279,7 +350,7 @@ def process_carousel(url: str) -> dict:
         "summary": summary_data.get("summary", ""),
         "keyPoints": summary_data.get("keyPoints", []),
         "tags": summary_data.get("tags", []),
-        "topic": summary_data.get("topic"),
+        "topic": topic_override or summary_data.get("topic"),
         "duration": None,
         "slideCount": slide_count,
     }
@@ -342,15 +413,15 @@ def import_reel(data: dict) -> dict:
 # ---------------------------------------------------------------------------
 
 
-def process_reel_from_url(url: str, cookies_browser: str | None, use_best: bool) -> dict:
+def process_reel_from_url(url: str, cookies_browser: str | None, use_best: bool, topic_override: str | None = None) -> dict:
     """Full pipeline for a single reel URL. Falls back to carousel pipeline for image posts."""
     print(f"\n  Downloading: {url}")
     try:
         meta = download_reel(url, cookies_browser)
     except RuntimeError as e:
-        if "No video file found" in str(e):
+        if "No video file found" in str(e) or "no video in this post" in str(e).lower():
             print(f"  No video — trying carousel pipeline...")
-            return process_carousel(url)
+            return process_carousel(url, topic_override=topic_override)
         raise
 
     return _process_reel(
@@ -361,6 +432,7 @@ def process_reel_from_url(url: str, cookies_browser: str | None, use_best: bool)
         duration=meta["duration"],
         use_best=use_best,
         tmpdir=meta.get("tmpdir"),
+        topic_override=topic_override,
     )
 
 
@@ -399,6 +471,7 @@ def _process_reel(
     duration: int | None,
     use_best: bool,
     tmpdir: str | None = None,
+    topic_override: str | None = None,
 ) -> dict:
     """Core processing: extract audio, transcribe, summarize, import."""
     try:
@@ -422,8 +495,16 @@ def _process_reel(
         has_transcript = word_count >= 10
         has_caption = bool(caption and len(caption.strip()) > 20)
 
+        # If no speech and no caption, try extracting text from video frames
         if not has_transcript and not has_caption:
-            return {"skipped": True, "reason": "No meaningful transcript or caption"}
+            print(f"  No speech or caption — extracting text from video frames...")
+            frame_text = extract_text_from_video_frames(video_path)
+            if frame_text:
+                has_caption = True
+                caption = frame_text
+                print(f"  Extracted {len(frame_text)} chars from video frames")
+            else:
+                return {"skipped": True, "reason": "No meaningful transcript, caption, or on-screen text"}
 
         if not has_transcript:
             print(f"  Short transcript ({word_count} words) — using caption only")
@@ -443,7 +524,7 @@ def _process_reel(
             "summary": summary_data.get("summary", ""),
             "keyPoints": summary_data.get("keyPoints", []),
             "tags": summary_data.get("tags", []),
-            "topic": summary_data.get("topic"),
+            "topic": topic_override or summary_data.get("topic"),
             "duration": duration,
         }
 
@@ -458,7 +539,6 @@ def _process_reel(
     finally:
         # Clean up temp directory from yt-dlp downloads
         if tmpdir:
-            import shutil
             shutil.rmtree(tmpdir, ignore_errors=True)
 
 
@@ -489,6 +569,7 @@ def main():
 
     parser.add_argument("--best", action="store_true", help="Use AssemblyAI Best model")
     parser.add_argument("--dry-run", action="store_true", help="Estimate cost without processing")
+    parser.add_argument("--topic", help="Override topic for all reels (e.g. 'career', 'ai')")
     parser.add_argument("--cookies-from-browser", help="Browser to get Instagram cookies from (e.g. chrome)")
     args = parser.parse_args()
 
@@ -551,7 +632,7 @@ def main():
         print(f"\n--- [{i + 1}/{len(items)}] ---")
         try:
             if mode == "url":
-                result = process_reel_from_url(item, args.cookies_from_browser, args.best)
+                result = process_reel_from_url(item, args.cookies_from_browser, args.best, topic_override=args.topic)
             else:
                 result = process_reel_from_file(Path(item), args.best)
 
