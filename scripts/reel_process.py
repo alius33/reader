@@ -49,11 +49,11 @@ ASSEMBLYAI_BASE = "https://api.assemblyai.com/v2"
 VIDEO_EXTS = {".mp4", ".mov", ".mkv", ".avi", ".webm"}
 AUDIO_EXTS = {".mp3", ".m4a", ".wav", ".ogg", ".flac", ".aac"}
 
-SUMMARIZE_SYSTEM = """You extract structured summaries from Instagram reel content.
+SUMMARIZE_SYSTEM = """You extract detailed, comprehensive summaries from Instagram reel content.
 Given a transcript and optional caption, produce a JSON response with exactly these fields:
 - title: a clear, descriptive title (5-12 words, not the caption verbatim)
-- summary: 2-4 sentences capturing the core message
-- keyPoints: array of 3-7 actionable insights or key claims (short bullet-point strings)
+- summary: 4-8 sentences providing a thorough overview of the content, including the core message, key arguments, and practical takeaways. Be specific — include names, numbers, and concrete details rather than vague descriptions.
+- keyPoints: array of 5-12 actionable insights or key claims. Each point should be a full sentence that stands alone and teaches something specific. Don't just list topics — explain the insight.
 - tags: array of 3-8 relevant topic tags (lowercase, no hashtags)
 - topic: single primary topic category. Pick the best fit from: parenting, productivity, finance, psychology, career, leadership, health, relationships, philosophy, technology, education. Use "other" only if nothing fits.
 
@@ -136,7 +136,7 @@ def poll_transcription(transcript_id: str) -> dict:
 # ---------------------------------------------------------------------------
 
 
-def download_reel(url: str, cookies_browser: str | None = None) -> dict:
+def download_reel(url: str, cookies_browser: str | None = None, cookies_file: str | None = None) -> dict:
     """Download an Instagram reel via yt-dlp. Returns metadata dict + video path."""
     tmpdir = tempfile.mkdtemp(prefix="reel_")
     outtmpl = os.path.join(tmpdir, "%(id)s.%(ext)s")
@@ -148,7 +148,9 @@ def download_reel(url: str, cookies_browser: str | None = None) -> dict:
         "-o", outtmpl,
         "--format", "best[ext=mp4]/best",
     ]
-    if cookies_browser:
+    if cookies_file:
+        cmd += ["--cookies", cookies_file]
+    elif cookies_browser:
         cmd += ["--cookies-from-browser", cookies_browser]
     cmd.append(url)
 
@@ -239,7 +241,7 @@ def extract_text_from_video_frames(video_path: str, num_frames: int = 4) -> str 
             b64 = base64.standard_b64encode(img_data).decode("utf-8")
 
             resp = client.messages.create(
-                model="claude-haiku-4-5-20251001",
+                model="claude-sonnet-4-6",
                 max_tokens=1024,
                 messages=[{
                     "role": "user",
@@ -267,29 +269,54 @@ def extract_text_from_video_frames(video_path: str, num_frames: int = 4) -> str 
 # ---------------------------------------------------------------------------
 
 
-def process_carousel(url: str, topic_override: str | None = None) -> dict:
-    """Extract content from an Instagram carousel/image post using instaloader + Claude Vision."""
-    import instaloader
-    from instaloader import Post
-
-    # Extract shortcode from URL
+def process_carousel(url: str, topic_override: str | None = None, cookies_path: str | None = None) -> dict:
+    """Extract content from an Instagram carousel/image post using yt-dlp metadata + Claude Vision."""
     shortcode = url.rstrip("/").split("/")[-1]
 
-    print(f"  Fetching carousel metadata...")
-    L = instaloader.Instaloader()
-    post = Post.from_shortcode(L.context, shortcode)
+    print(f"  Fetching carousel metadata via yt-dlp...")
+    # Use yt-dlp to get metadata (--skip-download) — it can handle image posts for metadata
+    tmpdir = tempfile.mkdtemp(prefix="carousel_")
+    cmd = [
+        sys.executable, "-m", "yt_dlp",
+        "--skip-download",
+        "--write-info-json",
+        "-o", os.path.join(tmpdir, "%(id)s.%(ext)s"),
+    ]
+    if cookies_path:
+        cmd += ["--cookies", cookies_path]
+    cmd.append(url)
 
-    caption = post.caption or ""
-    source_handle = f"@{post.owner_username}" if post.owner_username else ""
+    result = subprocess.run(cmd, capture_output=True, text=True, timeout=60)
 
-    # Collect slide image URLs
+    # Try to find info JSON even if yt-dlp returned error (it may still write metadata)
+    info_file = None
+    for f in Path(tmpdir).iterdir():
+        if f.suffix == ".json":
+            info_file = f
+            break
+
+    caption = ""
+    source_handle = ""
     slide_urls = []
-    if post.typename == "GraphSidecar":
-        for node in post.get_sidecar_nodes():
-            if not node.is_video:
-                slide_urls.append(node.display_url)
-    elif not post.is_video:
-        slide_urls.append(post.url)
+
+    if info_file:
+        with open(info_file, encoding="utf-8") as fh:
+            info = json.load(fh)
+        caption = info.get("description") or info.get("title") or ""
+        uploader = info.get("uploader") or info.get("channel") or ""
+        source_handle = f"@{uploader}" if uploader and not uploader.startswith("@") else uploader
+        # Get thumbnail/image URLs
+        thumbnails = info.get("thumbnails", [])
+        if thumbnails:
+            # Get the highest resolution thumbnail
+            best = max(thumbnails, key=lambda t: t.get("width", 0) * t.get("height", 0))
+            slide_urls.append(best["url"])
+    else:
+        # No metadata from yt-dlp — try to get caption from the page
+        print(f"  No yt-dlp metadata, caption-only mode...")
+
+    # Clean up
+    shutil.rmtree(tmpdir, ignore_errors=True)
 
     slide_count = len(slide_urls)
     print(f"  Carousel: {slide_count} image slides")
@@ -307,7 +334,7 @@ def process_carousel(url: str, topic_override: str | None = None) -> dict:
                 b64 = base64.standard_b64encode(img_data).decode("utf-8")
 
                 resp = client.messages.create(
-                    model="claude-haiku-4-5-20251001",
+                    model="claude-sonnet-4-6",
                     max_tokens=1024,
                     messages=[{
                         "role": "user",
@@ -376,7 +403,7 @@ def summarize_reel(transcript: str, caption: str | None) -> dict:
     user_msg = f"Caption: {caption or 'Not available'}\n\nTranscript: {transcript or 'Not available'}"
 
     response = client.messages.create(
-        model="claude-haiku-4-5-20251001",
+        model="claude-sonnet-4-6",
         max_tokens=1024,
         system=SUMMARIZE_SYSTEM,
         messages=[{"role": "user", "content": user_msg}],
@@ -413,15 +440,16 @@ def import_reel(data: dict) -> dict:
 # ---------------------------------------------------------------------------
 
 
-def process_reel_from_url(url: str, cookies_browser: str | None, use_best: bool, topic_override: str | None = None) -> dict:
+def process_reel_from_url(url: str, cookies_browser: str | None, use_best: bool, topic_override: str | None = None, cookies_file: str | None = None) -> dict:
     """Full pipeline for a single reel URL. Falls back to carousel pipeline for image posts."""
     print(f"\n  Downloading: {url}")
     try:
-        meta = download_reel(url, cookies_browser)
+        meta = download_reel(url, cookies_browser, cookies_file=cookies_file)
     except RuntimeError as e:
-        if "No video file found" in str(e) or "no video in this post" in str(e).lower():
+        err = str(e).lower()
+        if "no video file found" in err or "no video in this post" in err or "no video formats found" in err:
             print(f"  No video — trying carousel pipeline...")
-            return process_carousel(url, topic_override=topic_override)
+            return process_carousel(url, topic_override=topic_override, cookies_path=cookies_file)
         raise
 
     return _process_reel(
@@ -571,6 +599,7 @@ def main():
     parser.add_argument("--dry-run", action="store_true", help="Estimate cost without processing")
     parser.add_argument("--topic", help="Override topic for all reels (e.g. 'career', 'ai')")
     parser.add_argument("--cookies-from-browser", help="Browser to get Instagram cookies from (e.g. chrome)")
+    parser.add_argument("--cookies", help="Path to Netscape-format cookies.txt file")
     args = parser.parse_args()
 
     validate_env()
@@ -632,7 +661,7 @@ def main():
         print(f"\n--- [{i + 1}/{len(items)}] ---")
         try:
             if mode == "url":
-                result = process_reel_from_url(item, args.cookies_from_browser, args.best, topic_override=args.topic)
+                result = process_reel_from_url(item, args.cookies_from_browser, args.best, topic_override=args.topic, cookies_file=args.cookies)
             else:
                 result = process_reel_from_file(Path(item), args.best)
 

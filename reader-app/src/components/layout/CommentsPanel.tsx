@@ -1,9 +1,10 @@
 "use client";
 
 import { useState } from "react";
-import { useQuery, useMutation, useQueryClient } from "@tanstack/react-query";
+import { useMutation, useQueryClient } from "@tanstack/react-query";
+import { useSession } from "next-auth/react";
 import { useStore } from "@/lib/store";
-import { MessageSquare, X, Pencil, Trash2 } from "lucide-react";
+import { MessageSquare, X, Pencil, Trash2, AtSign } from "lucide-react";
 import type { CommentData } from "@/types";
 
 interface CommentsPanelProps {
@@ -12,11 +13,13 @@ interface CommentsPanelProps {
 }
 
 export function CommentsPanel({ bookId, comments }: CommentsPanelProps) {
+  const { data: session } = useSession();
   const commentsPanelOpen = useStore((s) => s.commentsPanelOpen);
   const toggleCommentsPanel = useStore((s) => s.toggleCommentsPanel);
   const queryClient = useQueryClient();
   const [editingId, setEditingId] = useState<string | null>(null);
   const [editText, setEditText] = useState("");
+  const currentUserId = session?.user?.id;
 
   const updateMutation = useMutation({
     mutationFn: async ({ id, commentText }: { id: string; commentText: string }) => {
@@ -75,6 +78,13 @@ export function CommentsPanel({ bookId, comments }: CommentsPanelProps) {
           <div className="divide-y divide-border">
             {comments.map((comment) => (
               <div key={comment.id} className="px-4 py-3">
+                {/* Mention badge */}
+                {comment.isMention && (
+                  <div className="mb-1 flex items-center gap-1 text-[10px] text-primary">
+                    <AtSign className="h-3 w-3" />
+                    <span>Tagged by {comment.user?.name ?? "someone"}</span>
+                  </div>
+                )}
                 {/* Selected text */}
                 <div className="mb-2 rounded bg-yellow-50 px-2 py-1 text-xs text-yellow-800 dark:bg-yellow-900/20 dark:text-yellow-200">
                   &ldquo;{comment.selectedText.slice(0, 100)}
@@ -121,29 +131,31 @@ export function CommentsPanel({ bookId, comments }: CommentsPanelProps) {
                     <span className="text-[10px] text-muted-foreground">
                       {new Date(comment.createdAt).toLocaleDateString()}
                     </span>
-                    <div className="ml-auto flex gap-1">
-                      <button
-                        onClick={() => {
-                          setEditingId(comment.id);
-                          setEditText(comment.commentText);
-                        }}
-                        className="rounded p-1 hover:bg-accent"
-                        title="Edit"
-                      >
-                        <Pencil className="h-3 w-3" />
-                      </button>
-                      <button
-                        onClick={() => {
-                          if (confirm("Delete this comment?")) {
-                            deleteMutation.mutate(comment.id);
-                          }
-                        }}
-                        className="rounded p-1 hover:bg-accent text-destructive"
-                        title="Delete"
-                      >
-                        <Trash2 className="h-3 w-3" />
-                      </button>
-                    </div>
+                    {comment.userId === currentUserId && (
+                      <div className="ml-auto flex gap-1">
+                        <button
+                          onClick={() => {
+                            setEditingId(comment.id);
+                            setEditText(comment.commentText);
+                          }}
+                          className="rounded p-1 hover:bg-accent"
+                          title="Edit"
+                        >
+                          <Pencil className="h-3 w-3" />
+                        </button>
+                        <button
+                          onClick={() => {
+                            if (confirm("Delete this comment?")) {
+                              deleteMutation.mutate(comment.id);
+                            }
+                          }}
+                          className="rounded p-1 hover:bg-accent text-destructive"
+                          title="Delete"
+                        >
+                          <Trash2 className="h-3 w-3" />
+                        </button>
+                      </div>
+                    )}
                   </div>
                 )}
               </div>

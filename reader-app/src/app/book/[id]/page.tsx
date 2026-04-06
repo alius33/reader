@@ -345,10 +345,10 @@ export default function BookPage() {
                     {book.originalFileKey && (
                       <Link
                         href={`/read/${id}`}
-                        className="flex items-center gap-1.5 rounded-md border border-border px-3 py-1.5 text-xs font-medium hover:bg-muted transition-colors"
+                        className="flex items-center gap-1.5 rounded-md bg-emerald-600 px-3 py-1.5 text-xs font-semibold text-white shadow-sm hover:bg-emerald-700 transition-colors"
                       >
                         <BookOpen className="h-3.5 w-3.5" />
-                        Read {(book.originalFileType ?? "").toUpperCase()}
+                        Read Book
                       </Link>
                     )}
                     {(book.audioChapters?.length ?? 0) > 0 && (

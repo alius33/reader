@@ -4,7 +4,7 @@ import { TableWithAlignment } from "./TableAlignment";
 import TableRow from "@tiptap/extension-table-row";
 import TableCell from "@tiptap/extension-table-cell";
 import TableHeader from "@tiptap/extension-table-header";
-import Highlight from "@tiptap/extension-highlight";
+import { HighlightWithColor } from "./HighlightWithColor";
 import TextStyle from "@tiptap/extension-text-style";
 import Color from "@tiptap/extension-color";
 import TextAlign from "@tiptap/extension-text-align";
@@ -32,7 +32,7 @@ export function getEditorExtensions(options?: { placeholder?: string }): Extensi
     TableRow,
     TableCell,
     TableHeader,
-    Highlight.configure({ multicolor: true }),
+    HighlightWithColor.configure({ multicolor: true }),
     TextStyle,
     Color,
     TextAlign.configure({ types: ["heading", "paragraph"] }),
