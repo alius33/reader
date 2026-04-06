@@ -11,7 +11,6 @@ import {
   LayoutGrid,
   List,
   ArrowUpDown,
-  ExternalLink,
 } from "lucide-react";
 import Link from "next/link";
 import type { ReelMeta } from "@/types";
