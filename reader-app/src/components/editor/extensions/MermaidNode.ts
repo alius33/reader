@@ -35,7 +35,7 @@ async function getMermaid(isDark?: boolean) {
     theme: desiredTheme,
     securityLevel: "loose",
     flowchart: {
-      useMaxWidth: true,
+      useMaxWidth: false,
       htmlLabels: true,
       padding: 15,
       nodeSpacing: 50,
@@ -120,10 +120,28 @@ export const MermaidNode = Node.create<MermaidOptions>({
       label.textContent = "Mermaid Diagram";
       header.appendChild(label);
 
+      const headerRight = document.createElement("div");
+      headerRight.style.display = "flex";
+      headerRight.style.gap = "6px";
+      headerRight.style.alignItems = "center";
+
+      const expandBtn = document.createElement("button");
+      expandBtn.className = "mermaid-edit-btn mermaid-expand-btn";
+      expandBtn.innerHTML = "&#x26F6;";
+      expandBtn.title = "Expand diagram";
+      expandBtn.addEventListener("click", (e) => {
+        e.stopPropagation();
+        const isExpanded = dom.classList.toggle("mermaid-expanded");
+        expandBtn.innerHTML = isExpanded ? "&#x2716;" : "&#x26F6;";
+        expandBtn.title = isExpanded ? "Collapse diagram" : "Expand diagram";
+      });
+      headerRight.appendChild(expandBtn);
+
       const editBtn = document.createElement("button");
       editBtn.textContent = "Edit Source";
       editBtn.className = "mermaid-edit-btn";
-      header.appendChild(editBtn);
+      headerRight.appendChild(editBtn);
+      header.appendChild(headerRight);
       dom.appendChild(header);
 
       // Rendered diagram container
@@ -150,18 +168,18 @@ export const MermaidNode = Node.create<MermaidOptions>({
           const { svg } = await mermaid.render(id, source);
           diagramContainer.innerHTML = svg;
           const svgEl = diagramContainer.querySelector("svg");
-          // Ensure SVG has a viewBox for proper scaling
-          if (svgEl && !svgEl.getAttribute("viewBox")) {
-            const w = svgEl.getAttribute("width");
-            const h = svgEl.getAttribute("height");
-            if (w && h) {
-              svgEl.setAttribute("viewBox", `0 0 ${parseFloat(w)} ${parseFloat(h)}`);
-            }
-          }
           if (svgEl) {
-            svgEl.style.width = "100%";
-            svgEl.style.height = "auto";
+            const intrinsicW = parseFloat(svgEl.getAttribute("width") || "0");
+            const intrinsicH = parseFloat(svgEl.getAttribute("height") || "0");
+            // Set viewBox if missing so the SVG can scale down when capped
+            if (!svgEl.getAttribute("viewBox") && intrinsicW && intrinsicH) {
+              svgEl.setAttribute("viewBox", `0 0 ${intrinsicW} ${intrinsicH}`);
+            }
+            // Keep intrinsic width so narrow diagrams don't stretch,
+            // but cap at container width so wide ones shrink
+            svgEl.style.width = `${intrinsicW}px`;
             svgEl.style.maxWidth = "100%";
+            svgEl.style.height = "auto";
           }
           diagramContainer.style.display = "flex";
           pre.style.display = "none";

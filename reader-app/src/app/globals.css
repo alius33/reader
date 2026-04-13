@@ -196,32 +196,30 @@
 .reader-content table[data-table-align="center"] { margin-left: auto; margin-right: auto; }
 .reader-content table[data-table-align="right"] { margin-left: auto; }
 
-/* Diagram blocks — Wikipedia-style: float right, text wraps around */
+/* Diagram blocks — inline, centered, constrained */
 .reader-content [data-mermaid-diagram],
 .reader-content [data-chart-diagram],
 .reader-content [data-d3-diagram] {
-  float: right;
-  clear: right;
-  width: 50%;
-  margin: 0.4em 0 1em 1.5em;
+  display: block;
+  width: 100%;
+  max-width: 800px;
+  max-height: 500px;
+  overflow: auto;
+  margin: 1em auto;
 }
 
-/* On narrow screens, diagrams go full-width stacked */
-@media (max-width: 768px) {
-  .reader-content [data-mermaid-diagram],
-  .reader-content [data-chart-diagram],
-  .reader-content [data-d3-diagram] {
-    float: none;
-    width: 100%;
-    margin: 0.8em 0;
-  }
+/* Expanded diagram — remove size constraints */
+.reader-content [data-mermaid-diagram].mermaid-expanded,
+.reader-content [data-chart-diagram].mermaid-expanded,
+.reader-content [data-d3-diagram].mermaid-expanded {
+  max-width: none;
+  max-height: none;
 }
 
 .reader-content [data-mermaid-diagram] svg,
 .reader-content [data-d3-diagram] svg {
-  width: 100%;
-  height: auto;
   max-width: 100%;
+  height: auto;
 }
 
 .reader-content [data-chart-diagram] canvas {

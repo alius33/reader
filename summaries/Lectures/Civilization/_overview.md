@@ -35,21 +35,21 @@ Prof. Jiang Xueqin teaches history with a focus on the grand narrative — why c
 | 11 | [[11 - The Greatness of Philip II of Macedon]] | Summarised | Philip II as father-archetype — military innovation, meritocracy, and diplomacy transform poor Macedon into Greece's dominant power |
 | 12 | [[12 - The Tyranny of Alexander the Great]] | Summarised | Father-Son model predicts Alexander's tyranny — reckless expansion, elimination of talent, boundless ambition; accidental creation of Hellenistic world and path to Christianity |
 | 13 | [[13 - Aristotle and the Greek Legacy]] | Summarised | Aristotle as political censor — resolving three paradoxes; Greek legacy: liberal arts mind, standardised knowledge, syncretisation → Christianity |
-| 14 | [[14 - Hannibal Barca, Lucius Brutus, and the Triumph of Rome]] | Pending | Rome's rise through adversity |
-| 15 | [[15 - The Myth-Making Genius of Julius Caesar]] | Pending | Caesar as political mythmaker |
-| 16 | [[16 - Julius Caesar's Will and Octavian's Birth of Empire]] | Pending | Transition from Republic to Empire |
-| 17 | [[17 - Homer, Vergil, and the War for the Soul of Rome]] | Pending | Roman identity through literature |
-| 18 | [[18 - The Great Pyramid as Ancient Egypt's Manhattan Project]] | Pending | Egypt's pyramid-building as state project |
-| 19 | [[19 - Gilgamesh and Mesopotamia's Quest for Immortality]] | Pending | Mesopotamian civilization and literature |
-| 20 | [[20 - The Proto-Buddhists of the Indus Valley Civilization]] | Pending | Harappan civilization and early spirituality |
-| 21 | [[21 - The Apology of King David of Israel]] | Pending | David and Israelite kingship |
-| 22 | [[22 - The Literary Genesis of the Yahwist]] | Pending | Authorship and origins of Genesis |
-| 23 | [[23 - Cyrus the Great as Messiah]] | Pending | Persian empire and Jewish messianic thought |
-| 24 | [[24 - Resurrecting the Gnostic Jesus]] | Pending | Gnostic Christianity and alternative gospels |
-| 25 | [[25 - Paul of Tarsus, Messiah of Rome]] | Pending | Paul's role in shaping Christianity |
-| 26 | [[26 - Constantine's Monotheistic Revolution]] | Pending | Christianity becomes state religion |
-| 27 | [[27 - Augustine's Empire of God]] | Pending | Augustine's theological framework |
-| 28 | [[28 - Muhammad's Revolution of God]] | Pending | Origins and power of Islam |
+| 14 | [[14 - Hannibal Barca, Lucius Brutus, and the Triumph of Rome]] | Summarised | Character over resources — pietas, libertas, and res publica explain why Rome defeated Carthage and Greece; Hannibal's genius lost to a civilisation whose value system produced total devotion |
+| 15 | [[15 - The Myth-Making Genius of Julius Caesar]] | Summarised | Caesar as myth maker — constructing a new reality through words and actions; the Imperial Republic's fatal contradiction; cognitive dissonance as the cause of assassination |
+| 16 | [[16 - Julius Caesar's Will and Octavian's Birth of Empire]] | Summarised | Caesar's death made his myth unchallengeable — paralysed his enemies, propelled Octavian from teenager to emperor |
+| 17 | [[17 - Homer, Vergil, and the War for the Soul of Rome]] | Summarised | Augustus Caesar commissions Vergil's Aeneid to replace Homer — love vs. piety as the basis of civilisation |
+| 18 | [[18 - The Great Pyramid as Ancient Egypt's Manhattan Project]] | Summarised | The Great Pyramid as Egypt's Manhattan Project — channelling divine energy for eternal peace; pyramid economy's rise and collapse |
+| 19 | [[19 - Gilgamesh and Mesopotamia's Quest for Immortality]] | Summarised | Geography as destiny — Mesopotamia's open borders forged a mythology of struggle; the Epic of Gilgamesh redefines immortality as memory earned through service |
+| 20 | [[20 - The Proto-Buddhists of the Indus Valley Civilization]] | Summarised | The IVC as peaceful, egalitarian trade civilization; the dialectic; proto-Buddhism as the lost IVC religion; syncretisation creating Hinduism and Buddhism |
+| 21 | [[21 - The Apology of King David of Israel]] | Summarised | Three myths about the Bible demolished; David's Apology as political propaganda that became foundational literature |
+| 22 | [[22 - The Literary Genesis of the Yahwist]] | Summarised | The Bible as cosmology not chronology; the Yahwist as female literary genius; Adam and Eve as domestic comedy; God as fallible poet seeking friendship |
+| 23 | [[23 - Cyrus the Great as Messiah]] | Summarised | Cyrus's mercy revolution, Zoroastrianism as first complete religion, Persian-Jewish merger produces eschatology, cosmic good-vs-evil, and the Messiah concept |
+| 24 | [[24 - Resurrecting the Gnostic Jesus]] | Summarised | Jesus was a Gnostic, not a Christian — his secret teaching: material reality is a prison created by a monster god; liberation through knowledge and the divine spark |
+| 25 | [[25 - Paul of Tarsus, Messiah of Rome]] | Summarised | Paul as Roman agent — neutralising Jewish fanaticism by transforming Jesus's spiritual movement into a universalist, empire-compatible religion |
+| 26 | [[26 - Constantine's Monotheistic Revolution]] | Summarised | The Godhead as equation, not story — monotheism creates capitalism, science, and the nation state |
+| 27 | [[27 - Augustine's Empire of God]] | Summarised | Augustine as intellectual architect of the Catholic Church — original sin radicalised, curiosity as evil, the Church placed outside history, Dark Ages launched, dissenters flee to Arabia seeding Islam |
+| 28 | [[28 - Muhammad's Revolution of God]] | Summarised | Islam as the world's first global revolution — Muhammad as revolutionary leader uniting Arabs, Jews, and Christians against weakened empires |
 | 29 | [[29 - Dante's Divine Comedy and the Liberation of the Human Imagination]] | Pending | Dante's literary revolution |
 | 30 | [[30 - Dante as the Second Coming of Homer]] | Pending | Dante's relationship to the classical tradition |
 | 31 | [[31 - The Oceanic Currents of History]] | Pending | Geographic forces shaping civilization |
@@ -121,3 +121,6 @@ Prof. Jiang Xueqin teaches history with a focus on the grand narrative — why c
 | **Three qualities of great leaders** | Lecture 11 | Strategic/visionary, innovative/revolutionary, disciplined/selfless — the recurring profile of world-changing figures (Philip, Genghis Khan, Muhammad, Napoleon, Caesar) |
 | **Cohesion-discipline-devotion** | Lecture 12 | The real metrics for military superiority — tribal armies with cultural unity, battle experience, and leader loyalty consistently defeat larger imperial forces |
 | **Incremental tyranny** | Lecture 12 | Tyranny escalates step by step: each elimination of restraint (terror, self-deification, purging talent) makes the next step easier until assassination is the only remaining check |
+| **Myth as political force** | Lecture 16 | Political change is a war of myths — Caesar's death made his myth unchallengeable, and whoever inherits the dominant myth inherits power regardless of personal ability |
+| **Transfer of devotion** | Lecture 16 | Love and loyalty transfer from a dead leader to their heir — the mechanism by which dynasties and political movements outlive their founders (Caesar → Octavian, Pierre → Justin Trudeau) |
+| **Taboo as social architecture** | Lecture 16 | Sacred prohibitions (the pomerium, Senate sacrosanctity, the ban on kingship) structure what is psychologically possible — they protect leaders but also constrain them |
