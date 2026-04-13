@@ -50,21 +50,21 @@ Prof. Jiang Xueqin teaches history with a focus on the grand narrative — why c
 | 26 | [[26 - Constantine's Monotheistic Revolution]] | Summarised | The Godhead as equation, not story — monotheism creates capitalism, science, and the nation state |
 | 27 | [[27 - Augustine's Empire of God]] | Summarised | Augustine as intellectual architect of the Catholic Church — original sin radicalised, curiosity as evil, the Church placed outside history, Dark Ages launched, dissenters flee to Arabia seeding Islam |
 | 28 | [[28 - Muhammad's Revolution of God]] | Summarised | Islam as the world's first global revolution — Muhammad as revolutionary leader uniting Arabs, Jews, and Christians against weakened empires |
-| 29 | [[29 - Dante's Divine Comedy and the Liberation of the Human Imagination]] | Pending | Dante's literary revolution |
-| 30 | [[30 - Dante as the Second Coming of Homer]] | Pending | Dante's relationship to the classical tradition |
-| 31 | [[31 - The Oceanic Currents of History]] | Pending | Geographic forces shaping civilization |
-| 32 | [[32 - Rome's Rise, Fall, and Legacy]] | Pending | Patterns in Roman history |
-| 33 | [[33 - The Rise and Fall of the Byzantine Empire]] | Pending | Eastern Rome's thousand-year survival |
-| 34 | [[34 - The Useful Fiction of the Holy Roman Empire]] | Pending | Medieval European political order |
-| 35 | [[35 - The Viking Legacy]] | Pending | Norse expansion and influence |
-| 36 | [[36 - Memory of the Norse]] | Pending | Norse mythology and cultural memory |
-| 37 | [[37 - The Golden Age of Islam]] | Pending | Islamic civilization at its peak |
-| 38 | [[38 - Twilight of the Middle Kingdom]] | Pending | China's civilizational arc |
-| 39 | [[39 - Genghis Khan, World Shatterer]] | Pending | Mongol empire and world transformation |
-| 40 | [[40 - Church and Empire]] | Pending | Medieval tension between religious and secular power |
-| 41 | [[41 - Dante's Quiet Revolution]] | Pending | Dante's political and intellectual impact |
-| 42 | [[42 - The Protestant Reformation and the Birth of Capitalism]] | Pending | How Protestantism enabled capitalism |
-| 43 | [[43 - The Structure of Scientific Revolutions]] | Pending | How scientific paradigms shift |
+| 29 | [[29 - Dante's Divine Comedy and the Liberation of the Human Imagination]] | Summarised | Dante's Divine Comedy as a systematic rebuttal of Augustine — God is love, the human effigy is inside the Holy Trinity, imagination is divine |
+| 30 | [[30 - Dante as the Second Coming of Homer]] | Summarised | Dante's literary coup: making Virgil the unreliable hero to displace the Aeneid and seed the Renaissance, Reformation, and Scientific Revolution |
+| 31 | [[31 - The Oceanic Currents of History]] | Summarised | Oceanic currents model — cultural ecosystems, empire-borderland pattern, three boundary conditions (financialism, rat utopia, elite overproduction) |
+| 32 | [[32 - Rome's Rise, Fall, and Legacy]] | Summarised | Rome as war machine — republic vs. democracy, flexible citizenship as military weapon, the republic-empire paradox, Edict of Caracalla as true death of Rome, parallels to America |
+| 33 | [[33 - The Rise and Fall of the Byzantine Empire]] | Summarised | Constantine's cultural escape — you cannot reform culture from within; pagan vs. Christian worldview; bureaucracy lifecycle; the Godhead as bureaucratic invention |
+| 34 | [[34 - The Useful Fiction of the Holy Roman Empire]] | Summarised | Charlemagne's Holy Roman Empire as a useful fiction — legitimacy through the Catholic Church because Europe's geography made military unification impossible |
+| 35 | [[35 - The Viking Legacy]] | Summarised | Vikings as Western civilization's fifth pillar — oceanic currents of history, empire vs. borderlands, monasteries as targets, community as stories |
+| 36 | [[36 - Memory of the Norse]] | Summarised | Viking worldview as shared stories; Norse mythology as greatest cosmological system; oral tradition vs literary culture; funerals as memory-making; the Fall from Eden |
+| 37 | [[37 - The Golden Age of Islam]] | Summarised | Islam as the hidden pool of modernity — Aristotle vs. Plato, the House of Wisdom, and why the Renaissance, Reformation, and Scientific Revolution were Europeans emulating Muslims |
+| 38 | [[38 - Twilight of the Middle Kingdom]] | Summarised | Death of open cooperative competition — keju as divide-and-conquer, bureaucracy's triple monopoly, four inventions unexploited |
+| 39 | [[39 - Genghis Khan, World Shatterer]] | Summarised | Game theory proves Mongol brutality was optimal strategy; proto-Indo-European myth structure across conquerors; people as infinite resource; freedom/egalitarianism as both strength and fatal weakness |
+| 40 | [[40 - Church and Empire]] | Summarised | Catholic Church from poverty religion to wealthiest institution; Crusades as political calculation; scapegoating, inquisition, 14th-century collapse setting stage for Reformation |
+| 41 | [[41 - Dante's Quiet Revolution]] | Summarised | Dante's Divine Comedy as the true catalyst of the Renaissance; Augustine's paralysing theology; humanism; Medici patronage; freedom of the will; love as the unifying force |
+| 42 | [[42 - The Protestant Reformation and the Birth of Capitalism]] | Summarised | Protestant anxiety → money as God's replacement → capitalism as iron cage; Weber, Simmel, Durkheim diagnose zombie civilisation |
+| 43 | [[43 - The Structure of Scientific Revolutions]] | Summarised | Monotheism's three theological assumptions made science possible; Kuhn's paradigm shifts require faith not evidence; science has become an imperial bureaucracy incapable of producing the next Galileo |
 | 44 | [[44 - The Spanish Conquest of the New World]] | Pending | European colonization of the Americas |
 | 45 | [[45 - The Gunpowder Revolution]] | Pending | Military technology transforming politics |
 | 46 | [[46 - The Revolution of Reason]] | Pending | The Enlightenment |
