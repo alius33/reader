@@ -24,6 +24,7 @@ export interface ImportResult {
   wordCount: number;
   toc: TocEntry[];
   contentStats: ContentStats;
+  lectureNumber: number | null;
 }
 
 export function processFile(
@@ -59,5 +60,6 @@ export function processFile(
     wordCount,
     toc,
     contentStats,
+    lectureNumber: frontmatter.lectureNumber,
   };
 }

@@ -102,6 +102,7 @@ model Book {
   readingProgress  ReadingProgress[]
   bookViews        BookView[]
   mentions         Mention[]
+  sortOrder        Int?             // For ordered series (lectures, podcasts): lecture-number from frontmatter
   lastViewedAt     DateTime?
   createdAt        DateTime         @default(now())
   updatedAt        DateTime         @updatedAt

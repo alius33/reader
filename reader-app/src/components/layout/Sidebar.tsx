@@ -262,7 +262,12 @@ export function Sidebar() {
                       {expandedCategories.has(`${entry.name}/${sub}`) && (
                         <div className="ml-3 border-l border-border pl-2">
                           {subBooks
-                            .sort((a, b) => a.title.localeCompare(b.title))
+                            .sort((a, b) => {
+                              if (a.sortOrder != null && b.sortOrder != null) return a.sortOrder - b.sortOrder;
+                              if (a.sortOrder != null) return -1;
+                              if (b.sortOrder != null) return 1;
+                              return a.title.localeCompare(b.title);
+                            })
                             .map((book) => (
                               <Link
                                 key={book.id}
@@ -282,7 +287,12 @@ export function Sidebar() {
                   ))}
                 {/* Direct books (no subcategory) */}
                 {entry.books
-                  .sort((a, b) => a.title.localeCompare(b.title))
+                  .sort((a, b) => {
+                    if (a.sortOrder != null && b.sortOrder != null) return a.sortOrder - b.sortOrder;
+                    if (a.sortOrder != null) return -1;
+                    if (b.sortOrder != null) return 1;
+                    return a.title.localeCompare(b.title);
+                  })
                   .map((book) => (
                     <Link
                       key={book.id}

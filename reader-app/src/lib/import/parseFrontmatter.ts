@@ -7,6 +7,7 @@ export interface BookFrontmatter {
   tags: string[];
   date: string | null;
   type: string | null;
+  lectureNumber: number | null;
 }
 
 export function parseFrontmatter(markdown: string): {
@@ -23,6 +24,7 @@ export function parseFrontmatter(markdown: string): {
       tags: Array.isArray(data.tags) ? data.tags.map(String) : [],
       date: data.date ? String(data.date) : null,
       type: data.type ? String(data.type) : null,
+      lectureNumber: data['lecture-number'] != null ? Number(data['lecture-number']) : null,
     },
     content,
   };

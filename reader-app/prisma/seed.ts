@@ -192,6 +192,7 @@ async function importFile(
       toc: result.toc as any,
       contentStats: result.contentStats as any,
       year: result.year,
+      sortOrder: result.lectureNumber ?? undefined,
     },
     create: {
       title,
@@ -207,6 +208,7 @@ async function importFile(
       wordCount: result.wordCount,
       toc: result.toc as any,
       contentStats: result.contentStats as any,
+      sortOrder: result.lectureNumber ?? undefined,
     },
   });
 

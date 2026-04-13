@@ -28,6 +28,7 @@ export async function GET() {
         wordCount: true,
         summary: true,
         contentStats: true,
+        sortOrder: true,
         originalFileKey: true,
         originalFileType: true,
         coverImageKey: true,
@@ -42,7 +43,7 @@ export async function GET() {
           select: { viewedAt: true },
         },
       },
-      orderBy: { title: "asc" },
+      orderBy: [{ sortOrder: "asc" }, { title: "asc" }],
     });
 
     const result = books.map((b) => ({

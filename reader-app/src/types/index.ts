@@ -10,6 +10,7 @@ export interface BookMeta {
   wordCount: number | null;
   summary: string | null;
   contentStats: ContentStats | null;
+  sortOrder: number | null;
   lastViewedAt: string | null;
   createdAt: string;
   updatedAt: string;
