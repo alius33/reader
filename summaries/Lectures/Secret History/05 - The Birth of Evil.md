@@ -5,7 +5,7 @@ tags: [lecture-summary, secret-history, religion, evil, christianity, gnosticism
 lecturer: Jiang Xueqin
 series: Secret History
 lecture-number: 5
-title: "The Birth of Evil"
+title: "05 - The Birth of Evil"
 ---
 
 # The Birth of Evil

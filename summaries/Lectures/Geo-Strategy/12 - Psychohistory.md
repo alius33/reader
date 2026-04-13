@@ -5,7 +5,7 @@ tags: [lecture-summary, geo-strategy, psychohistory, asimov, foundation, cliodyn
 lecturer: Jiang Xueqin
 series: Geo-Strategy
 lecture-number: 12
-title: "Psychohistory"
+title: "12 - Psychohistory"
 ---
 
 # Psychohistory (The Science of Imagining the Future)

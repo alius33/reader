@@ -5,7 +5,7 @@ tags: [lecture-summary, civilization, greece, homer, iliad, alphabet, polis, dem
 lecturer: Jiang Xueqin
 series: Civilization
 lecture-number: 7
-title: "Homer's Iliad and the Birth of Greek Civilization"
+title: "07 - Homer's Iliad and the Birth of Greek Civilization"
 ---
 
 # Homer's Iliad and the Birth of Greek Civilization

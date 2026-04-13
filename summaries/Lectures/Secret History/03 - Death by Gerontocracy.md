@@ -5,7 +5,7 @@ tags: [lecture-summary, secret-history, gerontocracy, decline, immigration, euth
 lecturer: Jiang Xueqin
 series: Secret History
 lecture-number: 3
-title: "Death by Gerontocracy"
+title: "03 - Death by Gerontocracy"
 ---
 
 # Death by Gerontocracy

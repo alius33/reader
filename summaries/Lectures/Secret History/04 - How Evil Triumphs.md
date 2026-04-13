@@ -5,7 +5,7 @@ tags: [lecture-summary, secret-history, evil, transgression, ritual-sacrifice, g
 lecturer: Jiang Xueqin
 series: Secret History
 lecture-number: 4
-title: "How Evil Triumphs"
+title: "04 - How Evil Triumphs"
 ---
 
 # How Evil Triumphs

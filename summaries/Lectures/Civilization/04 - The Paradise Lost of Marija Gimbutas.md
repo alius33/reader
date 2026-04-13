@@ -5,7 +5,7 @@ tags: [lecture-summary, civilization, old-europe, gimbutas, proto-indo-european,
 lecturer: Jiang Xueqin
 series: Civilization
 lecture-number: 4
-title: "The Paradise Lost of Marija Gimbutas"
+title: "04 - The Paradise Lost of Marija Gimbutas"
 ---
 
 # The Paradise Lost of Marija Gimbutas

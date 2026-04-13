@@ -5,7 +5,7 @@ tags: [lecture-summary, geo-strategy, iran, invasion, shock-and-awe, asymmetric-
 lecturer: Jiang Xueqin
 series: Geo-Strategy
 lecture-number: 8
-title: "The Iran Trap"
+title: "08 - The Iran Trap"
 ---
 
 # The Iran Trap

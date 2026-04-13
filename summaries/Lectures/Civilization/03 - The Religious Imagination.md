@@ -5,7 +5,7 @@ tags: [lecture-summary, civilization, religion, imagination, animism, barasana, 
 lecturer: Jiang Xueqin
 series: Civilization
 lecture-number: 3
-title: "The Religious Imagination"
+title: "03 - The Religious Imagination"
 ---
 
 # The Religious Imagination

@@ -5,7 +5,7 @@ tags: [lecture-summary, civilization, greece, aristotle, plato, philosophy, rati
 lecturer: Jiang Xueqin
 series: Civilization
 lecture-number: 13
-title: "Aristotle and the Greek Legacy"
+title: "13 - Aristotle and the Greek Legacy"
 ---
 
 # Aristotle and the Greek Legacy

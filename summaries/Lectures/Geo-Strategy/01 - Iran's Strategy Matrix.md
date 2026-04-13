@@ -5,7 +5,7 @@ tags: [lecture-summary, geo-strategy, iran, asymmetrical-warfare, middle-east, m
 lecturer: Jiang Xueqin
 series: Geo-Strategy
 lecture-number: 1
-title: "Iran's Strategy Matrix"
+title: "01 - Iran's Strategy Matrix"
 ---
 
 # Iran's Strategy Matrix

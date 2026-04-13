@@ -5,7 +5,7 @@ tags: [lecture-summary, geo-strategy, civil-war, america, trump, polarisation, m
 lecturer: Jiang Xueqin
 series: Geo-Strategy
 lecture-number: 11
-title: "The Second American Civil War"
+title: "11 - The Second American Civil War"
 ---
 
 # The Second American Civil War

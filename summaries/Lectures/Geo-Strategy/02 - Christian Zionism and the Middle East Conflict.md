@@ -5,7 +5,7 @@ tags: [lecture-summary, geo-strategy, christian-zionism, israel-lobby, middle-ea
 lecturer: Jiang Xueqin
 series: Geo-Strategy
 lecture-number: 2
-title: "Christian Zionism and the Middle East Conflict"
+title: "02 - Christian Zionism and the Middle East Conflict"
 ---
 
 # Christian Zionism and the Middle East Conflict

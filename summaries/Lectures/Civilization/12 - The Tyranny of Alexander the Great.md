@@ -5,7 +5,7 @@ tags: [lecture-summary, civilization, greece, macedon, alexander-the-great, pers
 lecturer: Jiang Xueqin
 series: Civilization
 lecture-number: 12
-title: "The Tyranny of Alexander the Great"
+title: "12 - The Tyranny of Alexander the Great"
 ---
 
 # The Tyranny of Alexander the Great

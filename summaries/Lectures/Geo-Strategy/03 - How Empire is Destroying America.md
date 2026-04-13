@@ -5,7 +5,7 @@ tags: [lecture-summary, geo-strategy, american-empire, financialisation, petrodo
 lecturer: Jiang Xueqin
 series: Geo-Strategy
 lecture-number: 3
-title: "How Empire is Destroying America"
+title: "03 - How Empire is Destroying America"
 ---
 
 # How Empire is Destroying America

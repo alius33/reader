@@ -5,7 +5,7 @@ tags: [lecture-summary, geo-strategy, russia, putin, putinism, ukraine, warrior-
 lecturer: Jiang Xueqin
 series: Geo-Strategy
 lecture-number: 9
-title: "Putin's War for the Soul of Russia"
+title: "09 - Putin's War for the Soul of Russia"
 ---
 
 # Putin's War for the Soul of Russia

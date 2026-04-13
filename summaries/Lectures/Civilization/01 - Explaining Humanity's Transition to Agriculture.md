@@ -5,7 +5,7 @@ tags: [lecture-summary, civilization, agriculture, religion, archaeology, neolit
 lecturer: Jiang Xueqin
 series: Civilization
 lecture-number: 1
-title: "Explaining Humanity's Transition to Agriculture"
+title: "01 - Explaining Humanity's Transition to Agriculture"
 ---
 
 # Explaining Humanity's Transition to Agriculture

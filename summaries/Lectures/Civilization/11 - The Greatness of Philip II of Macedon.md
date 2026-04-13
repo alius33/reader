@@ -5,7 +5,7 @@ tags: [lecture-summary, civilization, greece, macedon, philip-ii, military-innov
 lecturer: Jiang Xueqin
 series: Civilization
 lecture-number: 11
-title: "The Greatness of Philip II of Macedon"
+title: "11 - The Greatness of Philip II of Macedon"
 ---
 
 # The Greatness of Philip II of Macedon

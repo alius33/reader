@@ -5,7 +5,7 @@ tags: [lecture-summary, geo-strategy, russia, putin, stalin, ukraine, empire, ga
 lecturer: Jiang Xueqin
 series: Geo-Strategy
 lecture-number: 10
-title: "Putin's Strategic Imagination"
+title: "10 - Putin's Strategic Imagination"
 ---
 
 # Putin's Strategic Imagination

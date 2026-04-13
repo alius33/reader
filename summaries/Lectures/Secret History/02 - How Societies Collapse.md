@@ -5,7 +5,7 @@ tags: [lecture-summary, secret-history, societal-collapse, financialization, eli
 lecturer: Jiang Xueqin
 series: Secret History
 lecture-number: 2
-title: "How Societies Collapse"
+title: "02 - How Societies Collapse"
 ---
 
 # How Societies Collapse

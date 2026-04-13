@@ -5,7 +5,7 @@ tags: [lecture-summary, geo-strategy, american-politics, trump, elections, coali
 lecturer: Jiang Xueqin
 series: Geo-Strategy
 lecture-number: 5
-title: "Why Trump Will Win"
+title: "05 - Why Trump Will Win"
 ---
 
 # Why Trump Will Win

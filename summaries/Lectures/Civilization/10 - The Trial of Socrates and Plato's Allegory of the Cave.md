@@ -5,7 +5,7 @@ tags: [lecture-summary, civilization, greece, philosophy, socrates, plato, democ
 lecturer: Jiang Xueqin
 series: Civilization
 lecture-number: 10
-title: "The Trial of Socrates and Plato's Allegory of the Cave"
+title: "10 - The Trial of Socrates and Plato's Allegory of the Cave"
 ---
 
 # The Trial of Socrates and Plato's Allegory of the Cave

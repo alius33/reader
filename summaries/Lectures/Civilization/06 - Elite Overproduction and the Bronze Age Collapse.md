@@ -5,7 +5,7 @@ tags: [lecture-summary, civilization, bronze-age, collapse, elite-overproduction
 lecturer: Jiang Xueqin
 series: Civilization
 lecture-number: 6
-title: "Elite Overproduction and the Bronze Age Collapse"
+title: "06 - Elite Overproduction and the Bronze Age Collapse"
 ---
 
 # Elite Overproduction and the Bronze Age Collapse

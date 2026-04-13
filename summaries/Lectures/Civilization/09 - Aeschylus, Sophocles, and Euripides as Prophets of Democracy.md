@@ -5,7 +5,7 @@ tags: [lecture-summary, civilization, greece, theatre, tragedy, democracy, aesch
 lecturer: Jiang Xueqin
 series: Civilization
 lecture-number: 9
-title: "Aeschylus, Sophocles, and Euripides as Prophets of Democracy"
+title: "09 - Aeschylus, Sophocles, and Euripides as Prophets of Democracy"
 ---
 
 # Aeschylus, Sophocles, and Euripides as Prophets of Democracy

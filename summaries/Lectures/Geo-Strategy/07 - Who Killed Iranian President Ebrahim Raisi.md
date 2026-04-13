@@ -5,7 +5,7 @@ tags: [lecture-summary, geo-strategy, iran, irgc, raisi, game-theory, succession
 lecturer: Jiang Xueqin
 series: Geo-Strategy
 lecture-number: 7
-title: "Who Killed Iranian President Ebrahim Raisi"
+title: "07 - Who Killed Iranian President Ebrahim Raisi"
 ---
 
 # Who Killed Iranian President Ebrahim Raisi

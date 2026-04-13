@@ -5,7 +5,7 @@ tags: [lecture-summary, civilization, yamnaya, steppe, indo-european, patriarchy
 lecturer: Jiang Xueqin
 series: Civilization
 lecture-number: 5
-title: "The Yamnaya Conquest of Europe"
+title: "05 - The Yamnaya Conquest of Europe"
 ---
 
 # The Yamnaya Conquest of Europe

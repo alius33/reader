@@ -5,7 +5,7 @@ tags: [lecture-summary, geo-strategy, saudi-arabia, iran, middle-east, proxy-war
 lecturer: Jiang Xueqin
 series: Geo-Strategy
 lecture-number: 4
-title: "Saudi Arabia's Trump Card Against Iran"
+title: "04 - Saudi Arabia's Trump Card Against Iran"
 ---
 
 # Saudi Arabia's Trump Card Against Iran

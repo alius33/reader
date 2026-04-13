@@ -5,7 +5,7 @@ tags: [lecture-summary, civilization, religion, animism, cave-paintings, shamans
 lecturer: Jiang Xueqin
 series: Civilization
 lecture-number: 2
-title: "Religion and the Dawn of Society"
+title: "02 - Religion and the Dawn of Society"
 ---
 
 # Religion and the Dawn of Society

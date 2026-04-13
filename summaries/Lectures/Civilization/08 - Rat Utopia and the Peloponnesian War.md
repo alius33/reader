@@ -5,7 +5,7 @@ tags: [lecture-summary, civilization, greece, sparta, athens, peloponnesian-war,
 lecturer: Jiang Xueqin
 series: Civilization
 lecture-number: 8
-title: "Rat Utopia and the Peloponnesian War"
+title: "08 - Rat Utopia and the Peloponnesian War"
 ---
 
 # Rat Utopia and the Peloponnesian War

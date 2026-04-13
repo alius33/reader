@@ -5,7 +5,7 @@ tags: [lecture-summary, secret-history, power, money, individualism, nation-stat
 lecturer: Jiang Xueqin
 series: Secret History
 lecture-number: 1
-title: "How Power Works"
+title: "01 - How Power Works"
 ---
 
 # How Power Works

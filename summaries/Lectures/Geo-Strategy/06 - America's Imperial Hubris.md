@@ -5,7 +5,7 @@ tags: [lecture-summary, geo-strategy, american-empire, hubris, iraq-war, shock-a
 lecturer: Jiang Xueqin
 series: Geo-Strategy
 lecture-number: 6
-title: "America's Imperial Hubris"
+title: "06 - America's Imperial Hubris"
 ---
 
 # America's Imperial Hubris
