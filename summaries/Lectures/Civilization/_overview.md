@@ -65,23 +65,23 @@ Prof. Jiang Xueqin teaches history with a focus on the grand narrative — why c
 | 41 | [[41 - Dante's Quiet Revolution]] | Summarised | Dante's Divine Comedy as the true catalyst of the Renaissance; Augustine's paralysing theology; humanism; Medici patronage; freedom of the will; love as the unifying force |
 | 42 | [[42 - The Protestant Reformation and the Birth of Capitalism]] | Summarised | Protestant anxiety → money as God's replacement → capitalism as iron cage; Weber, Simmel, Durkheim diagnose zombie civilisation |
 | 43 | [[43 - The Structure of Scientific Revolutions]] | Summarised | Monotheism's three theological assumptions made science possible; Kuhn's paradigm shifts require faith not evidence; science has become an imperial bureaucracy incapable of producing the next Galileo |
-| 44 | [[44 - The Spanish Conquest of the New World]] | Pending | European colonization of the Americas |
-| 45 | [[45 - The Gunpowder Revolution]] | Pending | Military technology transforming politics |
-| 46 | [[46 - The Revolution of Reason]] | Pending | The Enlightenment |
-| 47 | [[47 - The Passion of Robespierre]] | Pending | French Revolution and terror |
-| 48 | [[48 - Napoleon's Empire of Myth]] | Pending | Napoleon's legacy and mythmaking |
-| 49 | [[49 - The Dutch Golden Age and the Rise of the Middle Class]] | Pending | Dutch commercial civilization |
-| 50 | [[50 - Rule, Britannia!]] | Pending | British Empire |
-| 51 | [[51 - Shakespeare's Language of Empire]] | Pending | Shakespeare and English imperial identity |
-| 52 | [[52 - Empire of Democracy]] | Pending | American democratic empire |
-| 53 | [[53 - Dostoevsky and the Soul of Russia]] | Pending | Russian civilization through literature |
-| 54 | [[54 - The German Will to Power]] | Pending | German nationalism and power |
-| 55 | [[55 - Kant, Hegel, and the Theory of Everything]] | Pending | German philosophy |
-| 56 | [[56 - What Marx Got Wrong]] | Pending | Critique of Marxism |
-| 57 | [[57 - How Modernism Ruined Everything]] | Pending | Modernism's failures |
-| 58 | [[58 - Birth of the Nation-State]] | Pending | Rise of the nation-state system |
-| 59 | [[59 - The Man of Steel]] | Pending | Stalin and Soviet power |
-| 60 | [[60 - The Decline and Fall of the American Empire]] | Pending | America's imperial decline |
+| 44 | [[44 - The Spanish Conquest of the New World]] | Summarised | Religion as structural vulnerability -- game theory, the ultimate taboo, and why strict hierarchy made Aztec, Inca, and Mayan civilisations defenceless against the Spanish |
+| 45 | [[45 - The Gunpowder Revolution]] | Summarised | Gunpowder demanded a whole-society transformation -- feudalism to nation state, agriculture to industry, religion to science -- and only Europe's perpetual internal competition made that transformation inevitable |
+| 46 | [[46 - The Revolution of Reason]] | Summarised | Four worldviews, the Enlightenment as middle-class identity project, Descartes/Goethe/Kant/Rousseau — reason replaces love as civilisation's organising principle |
+| 47 | [[47 - The Passion of Robespierre]] | Summarised | Robespierre modelled his death on the Passion of Christ — scapegoat, martyr, paragon — to purify the revolution's violent energy |
+| 48 | [[48 - Napoleon's Empire of Myth]] | Summarised | Robespierre's meritocracy created Napoleon's army; Napoleon's true genius was myth-making, not generalship; the republic-destroyer pattern: Caesar, Napoleon, Hitler, Trump |
+| 49 | [[49 - The Dutch Golden Age and the Rise of the Middle Class]] | Summarised | Spain's gold curse, VOC as first multinational corporation, Calvinism turns wealth into proof of faith, middle-class anxiety creates the art market, Vermeer exposes the hypocrisy |
+| 50 | [[50 - Rule, Britannia!]] | Summarised | Geography, creative destruction, Bank of England, political philosophy — how a poor island built the world's greatest empire |
+| 51 | [[51 - Shakespeare's Language of Empire]] | Summarised | Shakespeare as civilisation founder — diction, iambic pentameter, and rhetoric transform English into the world's "linguistic internet"; antithesis vs. chiasmus as neurological surgery; Homer, Dante, Shakespeare compared |
+| 52 | [[52 - Empire of Democracy]] | Summarised | America as anti-civilization -- a game replacing culture with competition; Lincoln fuses Jefferson's democracy with Hamilton's empire; Tocqueville prophesies atomized, uniform, mediocre world |
+| 53 | [[53 - Dostoevsky and the Soul of Russia]] | Summarised | Russian civilisation through Dostoevsky and Tolstoy -- three contradictions (European/Asian, Christian/pagan, Enlightenment/Empire); Orthodox theology; reason vs. heart; Putin's Ukraine invasion as clash of civilisations |
+| 54 | [[54 - The German Will to Power]] | Summarised | Prussia as humanistic civilisation, Schopenhauer/Nietzsche/Wagner's philosophy of the Will, Bismarck's welfare state, Hitler as army-created Ubermensch, destruction of Konigsberg |
+| 55 | [[55 - Kant, Hegel, and the Theory of Everything]] | Summarised | Kant systematises Dante's thesis (imagination as animating force) into transcendental idealism; Hegel resolves Kant's three problems with the Geist and dialectic; legacy in neuroscience, AI, quantum mechanics |
+| 56 | [[56 - What Marx Got Wrong]] | Summarised | Marx's diagnosis of capitalism's four alienations is brilliant but his theory of history is fatally wrong — religion not economics drives history, people want status not class, and the Vanguard problem guarantees communist states become theocratic dictatorships |
+| 57 | [[57 - How Modernism Ruined Everything]] | Summarised | Freud's betrayal of abused patients to protect powerful men; Carl Jung's systematisation of the unconscious; the cult of the self as modernism's core; CIA weaponisation of individualist art against communism; social media as democratised narcissism; Bakunin's counter-vision of collective freedom |
+| 58 | [[58 - Birth of the Nation-State]] | Summarised | Three converging crises (religious, economic, socio-cultural) birth the nation-state; French Enlightenment vs. German Romantic nationalism; game theory of forced coordination; Dreyfus vs. Holocaust; eugenics from America to Hitler; Japan's cohesion; fascism and the Pax Americana's contradictions |
+| 59 | [[59 - The Man of Steel]] | Summarised | Stalin as Ubermensch — secret police incubation of Bolsheviks, priest vs. spy framework, game theory of World War Two, the one scenario where the Soviet Union survives |
+| 60 | [[60 - The Decline and Fall of the American Empire]] | Summarised | Central banking as imperial architecture; easy money destroys nations; Peloponnesian War parallel — Athens's descent from democracy to mafia state mirrors America; Iran war as inevitable overreach |
 
 ---
 

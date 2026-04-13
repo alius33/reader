@@ -27,19 +27,19 @@ Prof. Jiang Xueqin brings a historian's perspective to the mechanics of power an
 | 3 | [[03 - Death by Gerontocracy]] | Done | Ten symptoms of Western decline, cui bono analysis pointing to elderly pensioners |
 | 4 | [[04 - How Evil Triumphs]] | Done | Ritual sacrifice, cohesion through adversity, transgression as game-theoretic strategy |
 | 5 | [[05 - The Birth of Evil]] | Done | Three stages of Western religion, Gnostic cosmology, Bible as propaganda |
-| 6 | [[06 - The Psychology of Evil]] | Pending | Psychological roots of evil |
-| 7 | [[07 - Death by Meritocracy]] | Pending | Failures of meritocratic systems |
-| 8 | [[08 - Death by Bureaucracy]] | Pending | Bureaucratic decay |
-| 9 | [[09 - The Theory of Everything]] | Pending | Unified framework |
-| 10 | [[10 - The Conspiracy of Evil]] | Pending | Organized evil |
-| 11 | [[11 - Dawn of the Human Imagination]] | Pending | Origins of human creativity |
-| 12 | [[12 - Heaven on Earth]] | Pending | Utopian impulses |
-| 13 | [[13 - Mandate of Heaven]] | Pending | Chinese political philosophy |
-| 14 | [[14 - Legacy of the Steppes]] | Pending | Steppe civilizations |
-| 15 | [[15 - Capital and the Bronze Age Collapse]] | Pending | Economic forces and collapse |
-| 16 | [[16 - The Big Bang of Greek Civilization]] | Pending | Greek civilizational origins |
-| 17 | [[17 - Literary Genesis]] | Pending | Origins of literature |
-| 18 | [[18 - Thus Spoke Zarathustra]] | Pending | Zoroastrianism and its influence |
+| 6 | [[06 - The Psychology of Evil]] | Done | Dissociation as master skill of power, Egyptian mythology as programming script, Abu Ghraib/MK Ultra as modern applications |
+| 7 | [[07 - Death by Meritocracy]] | Done | Ivy League as venture capital firm, admissions screening for dissociation, meritocracy destroying America |
+| 8 | [[08 - Death by Bureaucracy]] | Done | Yale incidents, rent-seeking, Kafka, Arendt, Scott -- bureaucracy as universal institutional parasitism |
+| 9 | [[09 - The Theory of Everything]] | Done | Scientific worldview debunked, Kant/Hegel/quantum mechanics, Dante's vibrational cosmology, inversion as control strategy |
+| 10 | [[10 - The Conspiracy of Evil]] | Done | Revelation of method, secret societies as bureaucratic parasites, numerology of 33, three divine acts |
+| 11 | [[11 - Dawn of the Human Imagination]] | Done | Darwin as theology, cave paintings as religious art, pre-literate empathic superiority, Romito 2 compassion |
+| 12 | [[12 - Heaven on Earth]] | Done | Five myths debunked, pyramids as temples, heaven-on-earth impulse, settlement cycle, indigenous cosmologies |
+| 13 | [[13 - Mandate of Heaven]] | Done | Marxist paradigm demolished, civilization as gaslighting device, Enuma Elish, Gilgamesh as bureaucratic creation, Zeus myth as usurper template |
+| 14 | [[14 - Legacy of the Steppes]] | Done | Civilisation-vs-barbarism inversion, Yamnaya genocide, patriarchy-money-war triad, open cooperative competition, steppe innovations |
+| 15 | [[15 - Capital and the Bronze Age Collapse]] | Done | Bronze as first capital, proto-capitalism, globalisation-collapse cycle, Graeber's debt theory |
+| 16 | [[16 - The Big Bang of Greek Civilization]] | Done | Homer as father of Greek civilization, the Iliad's insight on forgiveness, Jaynes' bicameral mind, oral culture |
+| 17 | [[17 - Literary Genesis]] | Done | Bible as political propaganda, Yahwist as female literary genius, Jewish creativity through debate |
+| 18 | [[18 - Thus Spoke Zarathustra]] | Done | Zarathustra as most influential person, Asha/categorical imperative, Plato's cave, Rumi, Nietzsche — monotheism's Zoroastrian origins |
 | 19 | [[19 - Dawn of the Jews]] | Pending | Jewish civilizational origins |
 | 20 | [[20 - The Hellenistic World]] | Pending | Post-Alexander civilization |
 | 21 | [[21 - Roman Anti-Civilization]] | Pending | Rome as destruction of civilization |
