@@ -40,13 +40,13 @@ Prof. Jiang Xueqin brings a historian's perspective to the mechanics of power an
 | 16 | [[16 - The Big Bang of Greek Civilization]] | Done | Homer as father of Greek civilization, the Iliad's insight on forgiveness, Jaynes' bicameral mind, oral culture |
 | 17 | [[17 - Literary Genesis]] | Done | Bible as political propaganda, Yahwist as female literary genius, Jewish creativity through debate |
 | 18 | [[18 - Thus Spoke Zarathustra]] | Done | Zarathustra as most influential person, Asha/categorical imperative, Plato's cave, Rumi, Nietzsche — monotheism's Zoroastrian origins |
-| 19 | [[19 - Dawn of the Jews]] | Pending | Jewish civilizational origins |
-| 20 | [[20 - The Hellenistic World]] | Pending | Post-Alexander civilization |
-| 21 | [[21 - Roman Anti-Civilization]] | Pending | Rome as destruction of civilization |
-| 22 | [[22 - The Divine Spark of Jesus]] | Pending | Jesus in historical context |
-| 23 | [[23 - The Organization of Evil]] | Pending | How evil becomes institutional |
-| 24 | [[24 - Empire of Church]] | Pending | Church as imperial power |
-| 25 | [[25 - Capital of Evil]] | Pending | Economic roots of evil |
+| 19 | [[19 - Dawn of the Jews]] | Done | Jewish identity as Persian imperial construct, divide-and-rule, Ezra/Nehemiah, Balfour parallel |
+| 20 | [[20 - The Hellenistic World]] | Done | Equilibrium trap, Persian Wars, Athens liberty-to-empire arc, Philip II's anvil-and-hammer, Alexander as Son of God, cultural imperialism, Greek-Jewish-Persian syncretism producing Christianity |
+| 21 | [[21 - Roman Anti-Civilization]] | Done | Rome as anti-civilization built on war, hatred, and trauma; Cannae fabricated by Polybius; Augustus commissions Virgil/Livy to replace Greek love with Roman hate; trauma as a drug; secret societies |
+| 22 | [[22 - The Divine Spark of Jesus]] | Done | Gospel of Thomas as true teachings, divine spark in everyone, Dostoevsky's Grand Inquisitor paradox, Dante's sacrifice logic, Roman authorship of the Bible |
+| 23 | [[23 - The Organization of Evil]] | Done | Paul's sophistry, paterfamilias → church franchise, Eucharist from Dionysus, Augustine codifies obedience |
+| 24 | [[24 - Empire of Church]] | Done | Holy Trinity as intellectual weapon, Byzantine orthodoxy drives Nestorians/Jews to Arabia, Muhammad's religious tolerance, Church as divine bureaucracy, Crusades, Inquisition, Black Death seeds Reformation |
+| 25 | [[25 - Capital of Evil]] | Done | Capital as energy extraction, three mechanisms (freedom/abstraction/anxiety), Venice-Dutch-England-America migration, Protestant Reformation as economic engine, secret societies as transnational glue |
 | 26 | [[26 - Faith of Evil]] | Pending | Religious dimensions of evil |
 | 27 | [[27 - Empire of Evil]] | Pending | Evil at imperial scale |
 | 28 | [[28 - Pax Judaica]] | Pending | Jewish civilizational influence |
