@@ -18,6 +18,7 @@ import {
   Share2,
   AtSign,
   Film,
+  Library,
 } from "lucide-react";
 import type { BookMeta } from "@/types";
 
@@ -166,6 +167,14 @@ export function Sidebar() {
 
       {/* Quick links */}
       <div className="border-b border-border px-3 py-2 space-y-0.5">
+        <Link
+          href="/library"
+          onClick={handleNavClick}
+          className="flex items-center gap-2 rounded-md px-2 py-1 text-sm text-muted-foreground hover:bg-accent hover:text-foreground"
+        >
+          <Library className="h-3.5 w-3.5" />
+          All Books
+        </Link>
         <Link
           href="/reels"
           onClick={handleNavClick}

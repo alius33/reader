@@ -8,11 +8,17 @@ import type { BookMeta } from "@/types";
 
 type SortKey = "title" | "author" | "year" | "category" | "updatedAt" | "lastRead" | "progress";
 
-export function BookGrid() {
+interface BookGridProps {
+  /** When set, locks the category filter to this name and hides the dropdown. */
+  defaultCategoryFilter?: string;
+}
+
+export function BookGrid({ defaultCategoryFilter }: BookGridProps = {}) {
   const [search, setSearch] = useState("");
   const [sortBy, setSortBy] = useState<SortKey>("title");
-  const [filterCategory, setFilterCategory] = useState<string>("all");
+  const [filterCategory, setFilterCategory] = useState<string>(defaultCategoryFilter ?? "all");
   const [filterStatus, setFilterStatus] = useState<string>("all");
+  const lockCategory = !!defaultCategoryFilter;
 
   const { data: books = [], isLoading } = useQuery<BookMeta[]>({
     queryKey: ["books"],
@@ -117,18 +123,20 @@ export function BookGrid() {
           />
         </div>
 
-        <select
-          value={filterCategory}
-          onChange={(e) => setFilterCategory(e.target.value)}
-          className="rounded-md border border-border bg-background px-3 py-2 text-sm focus:outline-none focus:ring-1 focus:ring-ring"
-        >
-          <option value="all">All categories</option>
-          {categories.map((cat) => (
-            <option key={cat} value={cat}>
-              {cat}
-            </option>
-          ))}
-        </select>
+        {!lockCategory && (
+          <select
+            value={filterCategory}
+            onChange={(e) => setFilterCategory(e.target.value)}
+            className="rounded-md border border-border bg-background px-3 py-2 text-sm focus:outline-none focus:ring-1 focus:ring-ring"
+          >
+            <option value="all">All categories</option>
+            {categories.map((cat) => (
+              <option key={cat} value={cat}>
+                {cat}
+              </option>
+            ))}
+          </select>
+        )}
 
         <select
           value={sortBy}

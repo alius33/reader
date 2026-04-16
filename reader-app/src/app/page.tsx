@@ -1,12 +1,15 @@
+import { Suspense } from "react";
 import { AppShell } from "@/components/layout/AppShell";
-import { BookGrid } from "@/components/library/BookGrid";
+import { HomeDashboard } from "@/components/home/HomeDashboard";
 
 export const dynamic = "force-dynamic";
 
 export default function HomePage() {
   return (
     <AppShell>
-      <BookGrid />
+      <Suspense fallback={null}>
+        <HomeDashboard />
+      </Suspense>
     </AppShell>
   );
 }
